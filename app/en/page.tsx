@@ -5,6 +5,7 @@ import ServiceCards from '@/components/home/ServiceCards';
 import FleetCards from '@/components/home/FleetCards';
 import WhyUs from '@/components/home/WhyUs';
 import TrustSection from '@/components/home/TrustSection';
+import ReviewsBanner from '@/components/home/ReviewsBanner';
 import BookingPreview from '@/components/home/BookingPreview';
 import LocationSection from '@/components/home/LocationSection';
 import ClosingCTA from '@/components/home/ClosingCTA';
@@ -43,6 +44,17 @@ export default function HomeEn() {
       <WhyUs data={homeDataEn.whyUs} />
       <TikTokSection t={{ title: 'Follow us on TikTok', subtitle: 'The sea, the coves and life on board — from the inside.' }} />
       <TrustSection data={homeDataEn.trust} />
+      <ReviewsBanner
+        title="We love what we do"
+        subtitle="We're improving our website for you"
+        rating={5}
+        reviewCount={190}
+        googleMapsUrl="https://maps.google.com/?q=Experience+Boat+Roses"
+        phoneNumber="+34623995700"
+        ctaText="See reviews on Google Maps"
+        callButtonText="Call now"
+        footerText="We love what we do. Let us know your experience on Google Maps or contact us directly to close your booking manually."
+      />
       <BookingPreview translations={homeDataEn.booking} />
       <LocationSection
         data={{
