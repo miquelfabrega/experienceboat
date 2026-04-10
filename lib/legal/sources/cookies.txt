@@ -1,0 +1,441 @@
+Política de cookies (UE)
+Esta política de cookies fue actualizada por última vez el 23 de mayo de 2025 y se aplica a los ciudadanos y residentes legales permanentes del Espacio Económico Europeo y Suiza.
+1. Introducción
+Nuestra web, https://experienceboat.es (en adelante: «la web») utiliza cookies y otras tecnologías relacionadas (para mayor comodidad, todas las tecnologías se denominan «cookies»). Las cookies también son colocadas por terceros a los que hemos contratado. En el siguiente documento te informamos sobre el uso de cookies en nuestra web.
+2. ¿Qué son las cookies?
+Una cookie es un pequeño archivo que se envía junto con las páginas de esta web y que tu navegador almacena en el disco duro de su ordenador u otro dispositivo. La información almacenada puede ser devuelta a nuestros servidores o a los servidores de terceros apropiados durante una visita posterior.
+3. ¿Qué son los scripts?
+Un script es un fragmento de código de programa que se utiliza para hacer que nuestra web funcione correctamente y de forma interactiva. Este código se ejecuta en nuestro servidor o en tu dispositivo.
+4. ¿Qué es una baliza web?
+Una baliza web (o una etiqueta de píxel) es una pequeña e invisible pieza de texto o imagen en una web que se utiliza para monitorear el tráfico en una web. Para ello, se almacenan varios datos sobre usted mediante estas balizas web.
+5. Cookies
+5.1 Cookies técnicas o funcionales
+Algunas cookies aseguran que ciertas partes de la web funcionen correctamente y que tus preferencias de usuario sigan recordándose. Al colocar cookies funcionales, te facilitamos la visita a nuestra web. De esta manera, no necesitas introducir repetidamente la misma información cuando visitas nuestra web y, por ejemplo, los artículos permanecen en tu cesta de la compra hasta que hayas pagado. Podemos colocar estas cookies sin tu consentimiento.
+5.2 Cookies de estadísticas
+Utilizamos cookies estadísticas para optimizar la experiencia de la web para nuestros usuarios. Con estas cookies estadísticas obtenemos información sobre el uso de nuestra web. Te pedimos tu permiso para colocar cookies de estadísticas.
+5.3 Cookies de marketing/seguimiento
+Las cookies de marketing/seguimiento son cookies, o cualquier otra forma de almacenamiento local, usadas para crear perfiles de usuario para mostrar publicidad o para hacer el seguimiento del usuario en esta web o en varias webs con fines de marketing similares.
+6. Cookies usadas
+WordPress
+Funcional
+Consent to service wordpress
+Uso
+Usamos WordPress para desarrollo de sitios web. Leer más
+ 
+Compartir datos
+Estos datos no se comparten con terceros.
+Funcional
+Nombre
+WP_PREFERENCES_USER_*
+Caducidad
+persistente
+Función
+Guardar las preferencias de los usuarios
+Nombre
+wpEmojiSettingsSupports
+Caducidad
+sesión
+Función
+Guardar detalles del navegador
+Nombre
+wordpress_test_cookie
+Caducidad
+sesión
+Función
+Chequear si se pueden instalar cookies
+Nombre
+wp-settings-time-*
+Caducidad
+1 año
+Función
+Guardar las preferencias de los usuarios
+Nombre
+wp-settings-*
+Caducidad
+persistente
+Función
+Guardar las preferencias de los usuarios
+Nombre
+wordpress_logged_in_*
+Caducidad
+persistente
+Función
+Mantener los usuarios logeados
+Elementor
+Estadísticas (anónimas)
+Consent to service elementor
+Uso
+Usamos Elementor para creación de contenido. Leer más
+ 
+Compartir datos
+Estos datos no se comparten con terceros.
+Estadísticas (anónimas)
+Nombre
+elementor
+Caducidad
+persistente
+Función
+Guardar acciones hechas por usuarios en el sitio web
+Intercom Messenger
+Funcional, Marketing
+Consent to service intercom-messenger
+Uso
+Usamos Intercom Messenger para soporte por chat. Leer más
+ 
+Compartir datos
+Para más información, por favor, lee la política de privacidad de Intercom Messenger.
+Funcional
+Nombre
+intercom-id-*
+Caducidad
+9 meses
+Función
+Nombre
+intercom-session-*
+Caducidad
+1 semana
+Función
+Marketing
+Nombre
+intercom-device-id-*
+Caducidad
+9 meses
+Función
+Almacenar un ID de usuario único
+Google Fonts
+Propósito pendiente de investigación
+Consent to service google-fonts
+Uso
+Usamos Google Fonts para mostrar fuentes web. Leer más
+ 
+Compartir datos
+Para más información, por favor, lee la política de privacidad de Google Fonts.
+Propósito pendiente de investigación
+Nombre
+Google Fonts API
+Caducidad
+Función
+Google Maps
+Propósito pendiente de investigación
+Consent to service google-maps
+Uso
+Usamos Google Maps para mostrar mapas. Leer más
+ 
+Compartir datos
+Para más información, por favor, lee la política de privacidad de Google Maps.
+Propósito pendiente de investigación
+Nombre
+Google Maps API
+Caducidad
+Función
+Varios
+Propósito pendiente de investigación
+Consent to service varios
+Uso
+ 
+Compartir datos
+El intercambio de datos está pendiente de investigación
+Propósito pendiente de investigación
+Nombre
+ht_ctc_admin
+Caducidad
+Función
+Nombre
+e_wp
+Caducidad
+Función
+Nombre
+e_kit-elements-defaults
+Caducidad
+Función
+Nombre
+loglevel
+Caducidad
+Función
+Nombre
+cf_*
+Caducidad
+Función
+Nombre
+e_event-tracker
+Caducidad
+Función
+Nombre
+wc_cart_hash_f0952ee6d651088f21747fbc9103ff77
+Caducidad
+Función
+Nombre
+joinchat_country_code
+Caducidad
+Función
+Nombre
+joinchat_views
+Caducidad
+Función
+Nombre
+WP_DATA_USER_2
+Caducidad
+Función
+Nombre
+YufbCK2Xh8IZELL15f49,34623995700
+Caducidad
+Función
+Nombre
+wistia
+Caducidad
+Función
+Nombre
+persist:hs-beacon-44cc73fb-7636-4206-b115-c7b33823551b
+Caducidad
+Función
+Nombre
+wistia-video-progress-j042jylrre
+Caducidad
+Función
+Nombre
+wistia-video-progress-z1qxl7s2zn
+Caducidad
+Función
+Nombre
+wistia-video-progress-fj42vucf99
+Caducidad
+Función
+Nombre
+wpr-show-sidebar
+Caducidad
+Función
+Nombre
+cart-session
+Caducidad
+Función
+Nombre
+wistia-video-progress-7seqacq2ol
+Caducidad
+Función
+Nombre
+lastExternalReferrer
+Caducidad
+Función
+Nombre
+lastExternalReferrerTime
+Caducidad
+Función
+Nombre
+wpr-hash
+Caducidad
+Función
+Nombre
+YufbCK2Xh8IZELL15f49,34623995700_expiresAt
+Caducidad
+Función
+Nombre
+persist:hs-beacon-message-44cc73fb-7636-4206-b115-c7b33823551b
+Caducidad
+Función
+Nombre
+_fbp
+Caducidad
+Función
+Nombre
+cmplz_banner-status
+Caducidad
+365 días
+Función
+Nombre
+__stripe_mid
+Caducidad
+Función
+Nombre
+__stripe_sid
+Caducidad
+Función
+Nombre
+_ga
+Caducidad
+Función
+Nombre
+_gcl_au
+Caducidad
+Función
+Nombre
+_ga_RENN41ZP72
+Caducidad
+Función
+Nombre
+cmplz_functional
+Caducidad
+365 días
+Función
+Nombre
+cmplz_statistics
+Caducidad
+365 días
+Función
+Nombre
+cmplz_preferences
+Caducidad
+365 días
+Función
+Nombre
+cmplz_marketing
+Caducidad
+365 días
+Función
+Nombre
+wp_lang
+Caducidad
+Función
+Nombre
+wc_cart_hash_c3fa17b699454de48f1bd8867a93b97c
+Caducidad
+Función
+Nombre
+cmplz_consented_services
+Caducidad
+365 días
+Función
+Nombre
+cmplz_policy_id
+Caducidad
+365 días
+Función
+Nombre
+wp_consent_marketing
+Caducidad
+Función
+Nombre
+wp_consent_statistics
+Caducidad
+Función
+Nombre
+wp_consent_statistics-anonymous
+Caducidad
+Función
+Nombre
+wp_consent_preferences
+Caducidad
+Función
+Nombre
+wp_consent_functional
+Caducidad
+Función
+Nombre
+__mpq_b8a5cdd3b9d58784badb740dbe611314_pp
+Caducidad
+Función
+Nombre
+__mpq_b8a5cdd3b9d58784badb740dbe611314_ev
+Caducidad
+Función
+Nombre
+topicsLastReferenceTime
+Caducidad
+Función
+Nombre
+_gcl_ls
+Caducidad
+Función
+Nombre
+__mpq_b8a5cdd3b9d58784badb740dbe611314_gr
+Caducidad
+Función
+Nombre
+set_current_workspace_action
+Caducidad
+Función
+Nombre
+_lr_id_
+Caducidad
+Función
+Nombre
+_lr_dat_
+Caducidad
+Función
+Nombre
+_lr5_
+Caducidad
+Función
+Nombre
+adobeCleanFontAdded
+Caducidad
+Función
+Nombre
+_lr_hb_-xfjvkg/markup-production
+Caducidad
+Función
+Nombre
+mp_b8a5cdd3b9d58784badb740dbe611314_mixpanel
+Caducidad
+Función
+Nombre
+_lr_tabs_-xfjvkg/markup-production
+Caducidad
+Función
+Nombre
+_lr_hb_-xfjvkgmarkup-production
+Caducidad
+Función
+Nombre
+_lr_tabs_-xfjvkgmarkup-production
+Caducidad
+Función
+Nombre
+e_site-editor
+Caducidad
+Función
+Nombre
+ea11y_introduction_notice
+Caducidad
+Función
+Nombre
+_ga_2WLV59MF0S
+Caducidad
+Función
+Nombre
+regiondo-cart-sync
+Caducidad
+Función
+Nombre
+e_my_templates_source
+Caducidad
+Función
+Nombre
+wpcode_scroll_position
+Caducidad
+Función
+7. Consentimiento
+Cuando visites nuestra web por primera vez, te mostraremos una ventana emergente con una explicación sobre las cookies. Tan pronto como hagas clic en «Guardar preferencias», aceptas que usemos las categorías de cookies y plugins que has seleccionado en la ventana emergente, tal y como se describe en esta política de cookies. Puedes desactivar el uso de cookies a través de tu navegador, pero, por favor, ten en cuenta que nuestra web puede dejar de funcionar correctamente.
+7.1 Gestiona tus ajustes de consentimiento
+Funcional  
+Funcional
+ Siempre activo 
+El almacenamiento o acceso técnico es estrictamente necesario para el propósito legítimo de permitir el uso de un servicio específico explícitamente solicitado por el abonado o usuario, o con el único propósito de llevar a cabo la transmisión de una comunicación a través de una red de comunicaciones electrónicas.
+Preferencias  
+Preferencias
+ 
+El almacenamiento o acceso técnico es necesario para la finalidad legítima de almacenar preferencias no solicitadas por el abonado o usuario.
+Estadísticas  
+Estadísticas
+ 
+El almacenamiento o acceso técnico que es utilizado exclusivamente con fines estadísticos.
+Marketing  
+Marketing
+ 
+El almacenamiento o acceso técnico es necesario para crear perfiles de usuario para enviar publicidad, o para rastrear al usuario en una web o en varias web con fines de marketing similares.
+8. Activación/desactivación y borrado de cookies
+Puedes utilizar tu navegador de Internet para eliminar las cookies de forma automática o manual. También puedes especificar que ciertas cookies no pueden ser colocadas. Otra opción es cambiar los ajustes de tu navegador de Internet para que recibas un mensaje cada vez que se coloca una cookie. Para obtener más información sobre estas opciones, consulta las instrucciones de la sección «Ayuda» de tu navegador.
+Ten en cuenta que nuestra web puede no funcionar correctamente si todas las cookies están desactivadas. Si borras las cookies de tu navegador, se volverán a colocar después de tu consentimiento cuando vuelvas a visitar nuestras webs.
+9. Tus derechos con respecto a los datos personales
+Tienes los siguientes derechos con respecto a tus datos personales:
+	•	Tiene derecho a saber por qué se necesitan tus datos personales, qué sucederá con ellos y durante cuánto tiempo se conservarán.
+	•	Derecho de acceso: tienes derecho a acceder a tus datos personales que conocemos.
+	•	Derecho de rectificación: tienes derecho a completar, rectificar, borrar o bloquear tus datos personales cuando lo desees.
+	•	Si nos das tu consentimiento para procesar tus datos, tienes derecho a revocar dicho consentimiento y a que se eliminen tus datos personales.
+	•	Derecho de cesión de tus datos: tienes derecho a solicitar todos tus datos personales al responsable del tratamiento y a transferirlos íntegramente a otro responsable del tratamiento.
+	•	Derecho de oposición: puedes oponerte al tratamiento de tus datos. Nosotros cumplimos con esto, a menos que existan motivos justificados para el procesamiento.
+Para ejercer estos derechos, por favor, contacta con nosotros. Por favor, consulta los detalles de contacto en la parte inferior de esta política de cookies. Si tienes alguna queja sobre cómo gestionamos tus datos, nos gustaría que nos la hicieras saber, pero también tienes derecho a enviar una queja a la autoridad supervisora (la autoridad de protección de datos).
+10. Datos de contacto
+Para preguntas y/o comentarios sobre nuestra política de cookies y esta declaración, por favor, contacta con nosotros usando los siguientes datos de contacto:
+EXPERIENCE BOAT SL AVDA MAS MATAS, NUM 16 España Web: https://experienceboat.es Correo electrónico: info@experienceboat.es Número de teléfono: ‪+34 623 99 57 00‬
+Esta política de cookies se ha sincronizado con cookiedatabase.org el 4 de julio de 2024.
+
