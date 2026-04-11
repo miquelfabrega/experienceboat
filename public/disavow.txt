@@ -1,0 +1,20 @@
+# Archivo Disavow — experienceboat.es
+# Generado: 2026-04-11
+# Instrucciones: Sube este archivo en Google Search Console
+# → Search Console → Herramientas Legacy → Disavow Links
+# ⚠️ MANTENER: provenexpert.com (DR 91) e informa.es (DR 67) — son legítimos
+
+# Dominios spam / PBN / 0 tráfico
+domain:rank-your.site
+domain:sport-life.club
+domain:sovereignmedia.co.za
+domain:ageddomainsforeverytaste.club
+domain:veethemes.co.in
+domain:dsnylu.com
+domain:jobsapp.info
+domain:qhtycw.com
+domain:sitescooponline.com
+domain:hzdlpq.com
+domain:nettools.guru
+domain:obmain.com
+domain:seo-revealed.club
