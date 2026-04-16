@@ -16,11 +16,11 @@ function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     name: 'Experience Boat',
     description:
       'Empresa de alquiler de barcos y excursiones náuticas en Roses, Costa Brava. Alquiler sin licencia, con licencia y excursiones privadas con patrón por la bahía de Roses y el Cap de Creus.',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     address: {
       '@type': 'PostalAddress',
@@ -53,12 +53,12 @@ export const metadata: Metadata = {
   title: 'Sobre nosotros — Experience Boat, Roses, Costa Brava',
   description: 'Somos tu empresa de alquiler de barcos en Roses, Costa Brava. Navegamos la bahía y el Cap de Creus con pasión, calidad y seguridad.',
   alternates: {
-    canonical: 'https://experienceboat.es/sobre-nosotros',
+    canonical: 'https://www.experienceboat.es/sobre-nosotros',
   },
   openGraph: {
     title: 'Sobre nosotros — Experience Boat, Roses, Costa Brava',
     description: 'Somos tu empresa de alquiler de barcos en Roses, Costa Brava. Navegamos la bahía y el Cap de Creus con pasión, calidad y seguridad.',
-    url: 'https://experienceboat.es/sobre-nosotros',
+    url: 'https://www.experienceboat.es/sobre-nosotros',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',

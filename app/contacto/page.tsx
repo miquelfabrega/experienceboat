@@ -8,21 +8,21 @@ const GOOGLE_FORM_EMBED_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform?embedded=true';
 
 export const metadata: Metadata = {
-  title: 'Contacta con Experience Boat — Alquiler de barcos en Roses',
+  title: 'Contacto — Alquiler de barcos en Roses',
   description: 'Contáctanos para reservar tu barco en Roses o resolver cualquier duda. Estamos en la Marina de Santa Margarita. Respondemos en menos de 24 horas.',
   alternates: {
-    canonical: 'https://experienceboat.es/contacto',
+    canonical: 'https://www.experienceboat.es/contacto',
     languages: {
-      'x-default': 'https://experienceboat.es/contacto',
-      es: 'https://experienceboat.es/contacto',
-      fr: 'https://experienceboat.es/fr/contact',
-      en: 'https://experienceboat.es/en/contact',
+      'x-default': 'https://www.experienceboat.es/contacto',
+      es: 'https://www.experienceboat.es/contacto',
+      fr: 'https://www.experienceboat.es/fr/contact',
+      en: 'https://www.experienceboat.es/en/contact',
     },
   },
   openGraph: {
-    title: 'Contacta con Experience Boat — Alquiler de barcos en Roses',
+    title: 'Contacto — Alquiler de barcos en Roses',
     description: 'Contáctanos para reservar tu barco en Roses o resolver cualquier duda. Estamos en la Marina de Santa Margarita. Respondemos en menos de 24 horas.',
-    url: 'https://experienceboat.es/contacto',
+    url: 'https://www.experienceboat.es/contacto',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',

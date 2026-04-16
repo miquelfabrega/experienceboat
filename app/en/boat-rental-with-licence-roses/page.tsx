@@ -17,27 +17,27 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Boat Rental with Licence in Roses (Costa Brava)',
   description:
-    'Rent a boat with your nautical licence in Roses and explore Cap de Creus, the Bay of Roses and the wildest coves of the Costa Brava. Departure from Marina de Santa Margarita.',
+    'Rent a boat with your licence in Roses. Explore Cap de Creus, the Bay of Roses and wild Costa Brava coves. Marina de Santa Margarita.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
+    canonical: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     },
   },
   openGraph: {
 title: 'Boat Rental with Licence in Roses',
     description:
       'Use your nautical licence to rent a boat in Roses and head to Cap de Creus, the wild coves of the Costa Brava and the Bay of Roses. Private, flexible, unforgettable.',
-    url: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
+    url: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: 'https://experienceboat.es/og-boat-rental-licence-roses.jpg',
+        url: 'https://www.experienceboat.es/og-boat-rental-licence-roses.jpg',
         width: 1200,
         height: 630,
         alt: 'Motorboat with licence sailing in the Bay of Roses towards Cap de Creus',
@@ -49,9 +49,9 @@ title: 'Boat Rental with Licence in Roses',
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://experienceboat.es/#local-business',
+  '@id': 'https://www.experienceboat.es/#local-business',
   name: 'Experience Boat',
-  url: 'https://experienceboat.es',
+  url: 'https://www.experienceboat.es',
   telephone: '+34623995700',
   email: 'info@experienceboat.es',
   priceRange: '€€',

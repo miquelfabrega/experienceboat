@@ -19,19 +19,19 @@ title: 'Excursiones privadas en barco en Roses',
   description:
     'Excursiones privadas en barco desde Roses con patrón incluido. Cap de Creus, calas vírgenes y bahía de Roses. Solo tu grupo a bordo. Reserva online ya.',
   alternates: {
-    canonical: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    canonical: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     languages: {
-      'x-default': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     },
   },
   openGraph: {
 title: 'Excursiones privadas en barco en Roses',
     description:
       'Excursiones privadas en barco desde Roses con patrón incluido. Cap de Creus, calas vírgenes y bahía de Roses. Solo tu grupo a bordo.',
-    url: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    url: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -85,18 +85,18 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    '@id': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     name: 'Excursiones privadas en barco en Roses con patrón',
-    url: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    url: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     description: 'Excursión privada en barco por el Cap de Creus, calas y bahía de Roses. Patrón incluido, ruta adaptada al grupo. Medio día o día completo.',
     duration: 'PT4H',
     inLanguage: 'es',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     'name': 'Experience Boat',
     'telephone': '+34623995700',
-    'url': 'https://experienceboat.es',
+    'url': 'https://www.experienceboat.es',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Av. Clot Franquest Nord',
@@ -119,7 +119,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://experienceboat.es/reservas',
+      url: 'https://www.experienceboat.es/reservas',
     },
   };
 
@@ -140,19 +140,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Experiencias en barco en Roses',
-        item: 'https://experienceboat.es/experiencias-barco-roses',
+        item: 'https://www.experienceboat.es/experiencias-barco-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Excursiones privadas en barco en Roses',
-        item: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+        item: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
       },
     ],
   };
@@ -236,7 +236,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/fleet/con-licencia/zodiac-medline-i.jpg"
+                    src="/images/boats/zodiac-medline-1.jpg"
                     alt="Neumática con patrón — Zodiac Medline"
                     fill
                     className="object-cover"
@@ -271,7 +271,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/fleet/con-licencia/spirit-of-the-sea.jpg"
+                    src="/images/boats/spirit.jpg"
                     alt="Lancha con patrón — Spirit of the Sea"
                     fill
                     className="object-cover"

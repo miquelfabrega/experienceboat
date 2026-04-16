@@ -11,19 +11,19 @@ title: 'Qué ver en los canales de Santa Margarita',
   description:
     'Descubre todo lo que esconden los canales de Santa Margarita desde el agua. Casas, fauna y la Costa Brava más auténtica. Salidas privadas desde Roses.',
   alternates: {
-    canonical: 'https://experienceboat.es/canales-santa-margarita/que-ver',
+    canonical: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
     languages: {
-      'x-default': 'https://experienceboat.es/canales-santa-margarita/que-ver',
-      es: 'https://experienceboat.es/canales-santa-margarita/que-ver',
-      fr: 'https://experienceboat.es/fr/canaux-santa-margarita/que-voir',
-      en: 'https://experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
+      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
+      es: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
+      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
+      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
     },
   },
   openGraph: {
 title: 'Qué ver en los canales de Santa Margarita',
     description:
       'Descubre todo lo que esconden los canales de Santa Margarita desde el agua. Casas, fauna y la Costa Brava más auténtica. Salidas privadas desde Roses.',
-    url: 'https://experienceboat.es/canales-santa-margarita/que-ver',
+    url: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'article',
@@ -71,19 +71,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Canales de Santa Margarita en barco',
-        item: 'https://experienceboat.es/canales-santa-margarita',
+        item: 'https://www.experienceboat.es/canales-santa-margarita',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Qué ver en los canales de Santa Margarita',
-        item: 'https://experienceboat.es/canales-santa-margarita/que-ver',
+        item: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
       },
     ],
   };

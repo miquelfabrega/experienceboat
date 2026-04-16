@@ -25,20 +25,20 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
 title: 'Nuestros barcos en Roses — Con y sin licencia',
-  description: 'Consulta toda la flota de Experience Boat en Roses. Barcos con licencia, sin licencia y opciones premium. Salimos desde la Marina de Santa Margarita, Costa Brava.',
+  description: 'Toda la flota Experience Boat en Roses: barcos con licencia, sin licencia y opciones premium. Salimos desde la Marina de Santa Margarita.',
   alternates: {
-    canonical: 'https://experienceboat.es/barcos',
+    canonical: 'https://www.experienceboat.es/barcos',
     languages: {
-      'x-default': 'https://experienceboat.es/barcos',
-      es: 'https://experienceboat.es/barcos',
-      fr: 'https://experienceboat.es/fr/bateaux',
-      en: 'https://experienceboat.es/en/boats',
+      'x-default': 'https://www.experienceboat.es/barcos',
+      es: 'https://www.experienceboat.es/barcos',
+      fr: 'https://www.experienceboat.es/fr/bateaux',
+      en: 'https://www.experienceboat.es/en/boats',
     },
   },
   openGraph: {
 title: 'Nuestros barcos en Roses — Con y sin licencia',
-    description: 'Consulta toda la flota de Experience Boat en Roses. Barcos con licencia, sin licencia y opciones premium. Salimos desde la Marina de Santa Margarita, Costa Brava.',
-    url: 'https://experienceboat.es/barcos',
+    description: 'Toda la flota Experience Boat en Roses: barcos con licencia, sin licencia y opciones premium. Salimos desde la Marina de Santa Margarita.',
+    url: 'https://www.experienceboat.es/barcos',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',

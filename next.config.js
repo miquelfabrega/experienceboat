@@ -70,9 +70,12 @@ const nextConfig = {
       // ── Experiencia antigua ──
       { source: '/experiencias-barco-roses/calas-cap-de-creus', destination: '/blog/ruta-barco-cap-de-creus-roses/', permanent: true },
       // ── Páginas EN antiguas ──
-      { source: '/en/boat-hire-no-licence-roses', destination: '/en/boat-rental-no-licence-roses/', permanent: true },
+      { source: '/en/boat-hire-no-licence-roses', destination: '/en/boat-rental-without-licence-roses/', permanent: true },
+      { source: '/en/boat-rental-no-licence-roses', destination: '/en/boat-rental-without-licence-roses/', permanent: true },
       { source: '/en/boat-hire-with-licence-roses', destination: '/en/boat-rental-with-licence-roses/', permanent: true },
       { source: '/en/santa-margarita-canals', destination: '/en/santa-margarita-canals-roses/', permanent: true },
+      // ── URL ES usada en contexto FR ──
+      { source: '/fr/experiencias-barco-roses', destination: '/fr/experiences-bateau-roses/', permanent: true },
     ];
   },
 };

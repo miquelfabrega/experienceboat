@@ -6,21 +6,21 @@ import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Ruta en barco al Cap de Creus desde Roses — Guía completa',
+  title: 'Ruta en barco al Cap de Creus desde Roses',
   description: 'Guía de la ruta en barco desde los canales de Santa Margarita hasta el Cap de Creus. Calas, paradas, chiringuito y todo lo que necesitas saber antes de salir.',
   alternates: {
-    canonical: 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+    canonical: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
+      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
+      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
     },
   },
   openGraph: {
-    title: 'Ruta en barco al Cap de Creus desde Roses — Guía completa',
+    title: 'Ruta en barco al Cap de Creus desde Roses',
     description: 'Guía de la ruta en barco desde los canales de Santa Margarita hasta el Cap de Creus. Calas, paradas y todo lo que necesitas saber.',
-    url: 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+    url: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
     locale: 'es_ES',
     type: 'article',
   },
@@ -65,10 +65,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/hero/hero-2.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses' },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/hero/hero-2.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses' },
     inLanguage: 'es',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

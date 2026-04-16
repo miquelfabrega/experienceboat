@@ -22,19 +22,19 @@ title: 'Boat Rental without Licence in Roses (Costa Brava)',
   description:
     'Rent a boat without a licence in Roses and explore the Bay of Roses, the Santa Margarita canals and Cap de Creus. No experience needed. Fully private. Book now.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+    canonical: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
     },
   },
   openGraph: {
 title: 'Boat Rental without Licence in Roses',
     description:
       'No licence, no experience needed. Rent a boat in Roses and explore the Santa Margarita canals, the Bay of Roses and Cap de Creus. Fully private.',
-    url: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+    url: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -67,13 +67,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://experienceboat.es/en',
+        item: 'https://www.experienceboat.es/en',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Boat rental without licence in Roses',
-        item: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+        item: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
       },
     ],
   };

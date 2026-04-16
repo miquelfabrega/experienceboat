@@ -1,16 +1,16 @@
 export const navData = {
   barcosConLicencia: [
-    { name: 'Jeanneau 595 Reineta', price: 195, url: '/barcos/jeanneau-595-reineta/', premium: false },
-    { name: 'Zodiac Medline I', price: 181, url: '/barcos/zodiac-medline-i/', premium: false },
-    { name: 'Zodiac Medline II', price: 235, url: '/barcos/zodiac-medline-ii/', premium: false },
-    { name: 'Spirit of the Sea', price: 260, url: '/barcos/spirit-of-the-sea/', premium: false },
-    { name: 'Costa Brava Boat', price: 320, url: '/barcos/costa-brava-boat/', premium: false },
-    { name: 'Tio Marc Mano', price: 245, url: '/barcos/tio-marc-mano/', premium: false },
-    { name: 'Sessa Marine C35', price: 618, url: '/barcos/sessa-marine-c35/', premium: true },
+    { name: 'Jeanneau 595 Reineta', price: 195, url: '/barcos/', premium: false },
+    { name: 'Zodiac Medline I', price: 181, url: '/barcos/', premium: false },
+    { name: 'Zodiac Medline II', price: 235, url: '/barcos/', premium: false },
+    { name: 'Spirit of the Sea', price: 260, url: '/barcos/', premium: false },
+    { name: 'Costa Brava Boat', price: 320, url: '/barcos/', premium: false },
+    { name: 'Tio Marc Mano', price: 245, url: '/barcos/', premium: false },
+    { name: 'Sessa Marine C35', price: 618, url: '/barcos/', premium: true },
   ],
   barcosSinLicencia: [
-    { name: 'Remus 450', price: 90, url: '/barcos/remus-450/', premium: false },
-    { name: 'Dream Point Boat', price: 71, url: '/barcos/dream-point-boat/', premium: false },
+    { name: 'Remus 450', price: 90, url: '/barcos/', premium: false },
+    { name: 'Dream Point Boat', price: 71, url: '/barcos/', premium: false },
   ],
   /** Menú de experiencias por idioma. */
   experiencias: {

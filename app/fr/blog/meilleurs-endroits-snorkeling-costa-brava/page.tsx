@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',
   description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava. Cala Montjoi, îles Medas, Cap de Creus et plus encore.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+    canonical: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
     languages: {
-      'x-default': 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      es: 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      fr: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
-      en: 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
+      'x-default': 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      es: 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      fr: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+      en: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
     },
   },
   openGraph: {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',
     description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava nord.',
-    url: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+    url: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
     locale: 'fr_FR',
     type: 'article',
   },
@@ -54,10 +54,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/services/canales.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava' },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/services/canales.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava' },
     inLanguage: 'fr',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
@@ -185,7 +185,7 @@ export default function ArticleSnorkelingFr() {
               La côte escarpée du <strong>Parc Naturel du Cap de Creus</strong> est parsemée de criques cachées et de grottes marines, en faisant l&apos;endroit idéal pour ceux qui cherchent une aventure sauvage.
             </p>
             <p>
-              La zone se distingue par la transparence de l&apos;eau, filtrée naturellement par les herbiers de posidonie. Gardez les yeux ouverts pour voir des murènes, des étoiles de mer rouges, des oursins et des nudibranches qui habitent les fonds rocheux. Comme l&apos;accès par terre est long et compliqué pour beaucoup de ses criques, <Link href="/experiencias-barco-roses">arriver en bateau est la meilleure option</Link> pour explorer les meilleurs spots de snorkeling de la réserve.
+              La zone se distingue par la transparence de l&apos;eau, filtrée naturellement par les herbiers de posidonie. Gardez les yeux ouverts pour voir des murènes, des étoiles de mer rouges, des oursins et des nudibranches qui habitent les fonds rocheux. Comme l&apos;accès par terre est long et compliqué pour beaucoup de ses criques, <Link href="/fr/experiences-bateau-roses">arriver en bateau est la meilleure option</Link> pour explorer les meilleurs spots de snorkeling de la réserve.
             </p>
 
             {/* H2 #4 */}

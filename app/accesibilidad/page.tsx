@@ -6,8 +6,8 @@ const title = 'Accesibilidad';
 
 export const metadata: Metadata = {
   title: title,
-  description: 'Declaración de accesibilidad del sitio web experienceboat.es.',
-  alternates: { canonical: 'https://experienceboat.es/accesibilidad' },
+  description: 'Declaración de accesibilidad de experienceboat.es. Conoce nuestro compromiso con la accesibilidad web y las medidas adoptadas para garantizar la inclusión digital.',
+  alternates: { canonical: 'https://www.experienceboat.es/accesibilidad' },
 };
 
 export default async function AccesibilidadPage() {

@@ -6,21 +6,21 @@ import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Itinéraire en bateau au Cap de Creus depuis Roses — Guide complet',
-  description: 'Guide de l\'itinéraire en bateau depuis les canaux de Santa Margarita jusqu\'au Cap de Creus. Criques, haltes gastronomiques et tout ce qu\'il faut savoir avant de partir.',
+  title: 'Itinéraire bateau Cap de Creus depuis Roses',
+  description: 'Itinéraire en bateau des canaux de Santa Margarita au Cap de Creus. Criques, haltes et tout ce qu\'il faut savoir avant de partir.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
+    canonical: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
+      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
+      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
     },
   },
   openGraph: {
-    title: 'Itinéraire en bateau au Cap de Creus depuis Roses — Guide complet',
+    title: 'Itinéraire bateau Cap de Creus depuis Roses',
     description: 'Guide de l\'itinéraire en bateau depuis les canaux de Santa Margarita jusqu\'au Cap de Creus. Criques, haltes et tout ce qu\'il faut savoir.',
-    url: 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
+    url: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
     locale: 'fr_FR',
     type: 'article',
   },
@@ -65,10 +65,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/hero/hero-2.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses' },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/hero/hero-2.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses' },
     inLanguage: 'fr',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
@@ -307,7 +307,7 @@ export default function ArticleCapDeCreusFr() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/experiencias-barco-roses"
+              href="/fr/experiences-bateau-roses"
               className="px-8 py-4 rounded-full bg-white text-gray-900 font-bold hover:bg-gray-100 transition-colors shadow-md"
             >
               Voir les excursions avec skipper →

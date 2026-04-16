@@ -20,21 +20,21 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Alquiler de barco sin licencia en Roses',
   description:
-    'Alquila un barco sin licencia en Roses y navega por la bahía, los canales de Santa Margarita y el Cap de Creus. Sin experiencia previa. Todo privado. Reserva ya.',
+    'Barco sin licencia en Roses: bahía, canales de Santa Margarita y Cap de Creus. Sin experiencia previa, todo privado. Reserva ya.',
   alternates: {
-    canonical: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
+    canonical: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
     },
   },
   openGraph: {
 title: 'Alquiler de barco sin licencia en Roses',
     description:
-      'Alquila un barco sin licencia en Roses y navega por la bahía, los canales de Santa Margarita y el Cap de Creus. Sin experiencia previa. Todo privado. Reserva ya.',
-    url: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
+      'Barco sin licencia en Roses: bahía, canales de Santa Margarita y Cap de Creus. Sin experiencia previa, todo privado. Reserva ya.',
+    url: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -72,7 +72,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {
@@ -135,13 +135,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Alquiler de barco sin licencia en Roses',
-        item: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
+        item: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
       },
     ],
   };

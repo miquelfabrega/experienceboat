@@ -6,8 +6,8 @@ const title = 'Política de cookies';
 
 export const metadata: Metadata = {
   title: title,
-  description: 'Uso de cookies en experienceboat.es.',
-  alternates: { canonical: 'https://experienceboat.es/cookies' },
+  description: 'Política de cookies de experienceboat.es. Tipos de cookies que utilizamos, finalidad de cada una y cómo gestionar tus preferencias de navegación.',
+  alternates: { canonical: 'https://www.experienceboat.es/cookies' },
 };
 
 export default async function CookiesPage() {

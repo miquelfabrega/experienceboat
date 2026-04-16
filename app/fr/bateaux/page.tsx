@@ -24,20 +24,20 @@ const BateauxClient = dynamic(() => import('./BateauxClient'), {
 
 export const metadata: Metadata = {
 title: 'Nos bateaux à Roses — Avec et sans permis',
-  description: 'Découvrez toute la flotte d\'Experience Boat à Roses. Bateaux avec permis, sans permis et options premium. Départ depuis la Marina de Santa Margarita, Costa Brava.',
+  description: 'Toute la flotte Experience Boat à Roses : bateaux avec permis, sans permis et options premium. Départ Marina de Santa Margarita.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/bateaux',
+    canonical: 'https://www.experienceboat.es/fr/bateaux',
     languages: {
-      'x-default': 'https://experienceboat.es/barcos',
-      es: 'https://experienceboat.es/barcos',
-      fr: 'https://experienceboat.es/fr/bateaux',
-      en: 'https://experienceboat.es/en/boats',
+      'x-default': 'https://www.experienceboat.es/barcos',
+      es: 'https://www.experienceboat.es/barcos',
+      fr: 'https://www.experienceboat.es/fr/bateaux',
+      en: 'https://www.experienceboat.es/en/boats',
     },
   },
   openGraph: {
 title: 'Nos bateaux à Roses — Avec et sans permis',
-    description: 'Découvrez toute la flotte d\'Experience Boat à Roses. Bateaux avec permis, sans permis et options premium. Départ depuis la Marina de Santa Margarita, Costa Brava.',
-    url: 'https://experienceboat.es/fr/bateaux',
+    description: 'Toute la flotte Experience Boat à Roses : bateaux avec permis, sans permis et options premium. Départ Marina de Santa Margarita.',
+    url: 'https://www.experienceboat.es/fr/bateaux',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',

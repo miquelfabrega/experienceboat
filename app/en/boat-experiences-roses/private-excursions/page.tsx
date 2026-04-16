@@ -12,19 +12,19 @@ title: 'Private Boat Excursions in Roses',
   description:
     'Private boat excursions from Roses with skipper included. Cap de Creus, unspoilt coves and Roses Bay. Your group only on board. Book online now.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+    canonical: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     languages: {
-      'x-default': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     },
   },
   openGraph: {
 title: 'Private Boat Excursions in Roses',
     description:
       'Private boat excursions from Roses with skipper included. Cap de Creus, unspoilt coves and Roses Bay. Your group only on board.',
-    url: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+    url: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -78,18 +78,18 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+    '@id': 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     name: 'Private boat excursions in Roses with skipper',
-    url: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+    url: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
     description: 'Private boat excursion to Cap de Creus, hidden coves and the Bay of Roses. Skipper included, route tailored to your group. Half day or full day.',
     duration: 'PT4H',
     inLanguage: 'en',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     'name': 'Experience Boat',
     'telephone': '+34623995700',
-    'url': 'https://experienceboat.es',
+    'url': 'https://www.experienceboat.es',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Av. Clot Franquest Nord',
@@ -112,7 +112,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://experienceboat.es/reservas',
+      url: 'https://www.experienceboat.es/reservas',
     },
   };
 
@@ -135,19 +135,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://experienceboat.es/en',
+        item: 'https://www.experienceboat.es/en',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Boat experiences in Roses',
-        item: 'https://experienceboat.es/en/boat-experiences-roses',
+        item: 'https://www.experienceboat.es/en/boat-experiences-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Private boat excursions in Roses',
-        item: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
+        item: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
       },
     ],
   };
@@ -233,7 +233,7 @@ export default function PrivateExcursionsRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/fleet/con-licencia/zodiac-medline-i.jpg"
+                    src="/images/boats/zodiac-medline-1.jpg"
                     alt="RIB with skipper — Zodiac Medline"
                     fill
                     className="object-cover"
@@ -268,7 +268,7 @@ export default function PrivateExcursionsRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/fleet/con-licencia/spirit-of-the-sea.jpg"
+                    src="/images/boats/spirit.jpg"
                     alt="Motorboat with skipper — Spirit of the Sea"
                     fill
                     className="object-cover"

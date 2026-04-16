@@ -20,21 +20,21 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Location de bateau sans permis à Roses',
   description:
-    'Louez un bateau sans permis à Roses et naviguez dans la baie, les canaux de Santa Margarita et le Cap de Creus. Sans expérience préalable. Tout privatif. Réservez dès maintenant.',
+    'Louez un bateau sans permis à Roses : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
+    canonical: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
     },
   },
   openGraph: {
 title: 'Location de bateau sans permis à Roses',
     description:
-      'Louez un bateau sans permis à Roses et naviguez dans la baie, les canaux de Santa Margarita et le Cap de Creus. Sans expérience préalable. Tout privatif.',
-    url: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
+      'Louez un bateau sans permis à Roses : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
+    url: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -67,13 +67,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://experienceboat.es/fr',
+        item: 'https://www.experienceboat.es/fr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Location de bateau sans permis à Roses',
-        item: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses',
+        item: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
       },
     ],
   };

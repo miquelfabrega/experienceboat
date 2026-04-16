@@ -16,19 +16,19 @@ title: 'Canal Tour Santa Margarita à Roses',
   description:
     'Soyez vous-même le capitaine dans cette aventure sur les canaux de Santa Margarita. Promenade de 90 minutes sans permis nautique requis.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    canonical: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
     languages: {
-      'x-default': 'https://experienceboat.es/experiencias-barco-roses/canal-tour-santa-margarita',
-      es: 'https://experienceboat.es/experiencias-barco-roses/canal-tour-santa-margarita',
-      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
-      en: 'https://experienceboat.es/en/boat-experiences-roses/canal-tour-santa-margarita',
+      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/canal-tour-santa-margarita',
+      es: 'https://www.experienceboat.es/experiencias-barco-roses/canal-tour-santa-margarita',
+      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+      en: 'https://www.experienceboat.es/en/boat-experiences-roses/canal-tour-santa-margarita',
     },
   },
   openGraph: {
 title: 'Canal Tour Santa Margarita à Roses',
     description:
       'Soyez vous-même le capitaine dans cette aventure sur les canaux de Santa Margarita. Promenade de 90 minutes sans permis nautique requis.',
-    url: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -41,18 +41,18 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    '@id': 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
     name: 'Canal Tour Santa Margarita — bateau sans permis à Roses',
-    url: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
     description: 'Promenade de 90 minutes en bateau sans permis dans les canaux de Santa Margarita à Roses. Moteur Mercury 15 CV, 4 à 6 places. Aucune expérience requise.',
     duration: 'PT1H30M',
     inLanguage: 'fr',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     'name': 'Experience Boat',
     'telephone': '+34623995700',
-    'url': 'https://experienceboat.es',
+    'url': 'https://www.experienceboat.es',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Av. Clot Franquest Nord',
@@ -75,7 +75,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://experienceboat.es/reservas',
+      url: 'https://www.experienceboat.es/reservas',
     },
   };
 
@@ -95,7 +95,7 @@ function TouristAttractionSchema() {
     '@type': 'TouristAttraction',
     name: 'Canal Tour Santa Margarita',
     description: 'Promenade en bateau de 90 minutes sur les canaux de Santa Margarita à Roses, sans permis nautique requis.',
-    url: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
     touristType: 'Famille, Couples, Groupes',
     availableLanguage: ['Espagnol', 'Français', 'Anglais'],
     address: {
@@ -133,19 +133,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://experienceboat.es/fr',
+        item: 'https://www.experienceboat.es/fr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Expériences en bateau à Roses',
-        item: 'https://experienceboat.es/fr/experiences-bateau-roses',
+        item: 'https://www.experienceboat.es/fr/experiences-bateau-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Canal Tour Santa Margarita',
-        item: 'https://experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+        item: 'https://www.experienceboat.es/fr/experiences-bateau-roses/canal-tour-santa-margarita',
       },
     ],
   };

@@ -12,9 +12,9 @@ export default function SchemaOrg() {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://experienceboat.es/#local-business",
+    "@id": "https://www.experienceboat.es/#local-business",
     "name": "Experience Boat",
-    "url": "https://experienceboat.es",
+    "url": "https://www.experienceboat.es",
     "telephone": "+34623995700",
     "address": {
       "@type": "PostalAddress",
@@ -54,10 +54,10 @@ export default function SchemaOrg() {
   const touristAttraction = {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
-    "@id": "https://experienceboat.es/#tourist-attraction",
+    "@id": "https://www.experienceboat.es/#tourist-attraction",
     "name": "Experience Boat — Alquiler de barcos en Roses",
     "description": "Alquiler de barcos con y sin licencia en Roses, Costa Brava. Excursiones, sunset experience y canal tour por los canales de Santa Margarita.",
-    "url": "https://experienceboat.es",
+    "url": "https://www.experienceboat.es",
     "touristType": ["Aventura", "Náutica", "Naturaleza"],
     "isAccessibleForFree": false,
     "availableLanguage": ["Spanish", "French", "English", "Catalan"],

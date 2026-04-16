@@ -1,10 +1,10 @@
 # Archivo Disavow — experienceboat.es
-# Generado: 2026-04-11
+# Generado: 2026-04-11 — Fuente: Ahrefs (is_spam: true)
 # Instrucciones: Sube este archivo en Google Search Console
-# → Search Console → Herramientas Legacy → Disavow Links
-# ⚠️ MANTENER: provenexpert.com (DR 91) e informa.es (DR 67) — son legítimos
+# → search.google.com/search-console/disavow-links
+# ⚠️ EXCLUIDOS (legítimos): provenexpert.com, informa.es, localitybiz.es
 
-# Dominios spam / PBN / 0 tráfico
+# Dominios spam / PBN / sin tráfico — marcados is_spam:true por Ahrefs
 domain:rank-your.site
 domain:sport-life.club
 domain:sovereignmedia.co.za
@@ -18,3 +18,12 @@ domain:hzdlpq.com
 domain:nettools.guru
 domain:obmain.com
 domain:seo-revealed.club
+domain:bmwyng.com
+domain:conference.delhi.in
+domain:browseallexpireddomains.us
+domain:all-aged-domains.com
+domain:full-expired-domain-lists.us
+domain:sergechel.info
+domain:boost-your-site-with-homepage-backlinks.us
+domain:sunnyside-pbn-domains.club
+domain:kompromat100.info

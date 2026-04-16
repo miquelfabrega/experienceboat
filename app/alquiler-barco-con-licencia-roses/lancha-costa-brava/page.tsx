@@ -20,22 +20,22 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Alquiler de lancha en la Costa Brava — Roses',
   description:
-    'Alquila una lancha en la Costa Brava desde los canales de Santa Margarita en Roses. Con licencia o con patrón. Acceso directo al Cap de Creus y la bahía de Roses.',
+    'Alquila una lancha en la Costa Brava desde Santa Margarita, Roses. Con licencia o patrón. Acceso directo al Cap de Creus y bahía.',
   alternates: {
     canonical:
-      'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
     },
   },
   openGraph: {
 title: 'Alquiler de lancha en la Costa Brava — Roses',
     description:
-      'Alquila una lancha en la Costa Brava desde los canales de Santa Margarita en Roses. Con licencia o con patrón. Acceso directo al Cap de Creus y la bahía de Roses.',
-    url: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      'Alquila una lancha en la Costa Brava desde Santa Margarita, Roses. Con licencia o patrón. Acceso directo al Cap de Creus y bahía.',
+    url: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -53,19 +53,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Alquiler barco con licencia Roses',
-        item: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
+        item: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Alquiler de lancha en la Costa Brava',
-        item: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+        item: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
       },
     ],
   };
@@ -158,7 +158,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {

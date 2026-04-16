@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://experienceboat.es';
+const BASE_URL = 'https://www.experienceboat.es';
 
 // Fecha de última modificación para cada grupo
 const NOW = new Date();

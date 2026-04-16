@@ -6,21 +6,21 @@ import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Tips for planning the perfect boat trip on the Costa Brava',
+  title: 'Tips for planning a boat trip Costa Brava',
   description: 'Practical guide to planning your boat outing on the Costa Brava: choosing the right vessel, routes, weather, safety and provisions.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
+    canonical: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
     languages: {
-      'x-default': 'https://experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      es: 'https://experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      fr: 'https://experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
-      en: 'https://experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
+      'x-default': 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
+      es: 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
+      fr: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
+      en: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
     },
   },
   openGraph: {
-    title: 'Tips for planning the perfect boat trip on the Costa Brava',
+    title: 'Tips for planning a boat trip Costa Brava',
     description: 'Practical guide to planning your boat outing: vessel choice, weather, safety and provisions.',
-    url: 'https://experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
+    url: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
     locale: 'en_GB',
     type: 'article',
   },
@@ -47,10 +47,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/services/sin-licencia.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava' },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/services/sin-licencia.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava' },
     inLanguage: 'en',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

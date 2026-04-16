@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: 'Blog de navigation en bateau — Roses',
   description: 'Guides, conseils et itinéraires pour profiter de la mer à Roses. Tout ce que vous devez savoir sur la location de bateaux et les excursions sur la Costa Brava.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/blog',
+    canonical: 'https://www.experienceboat.es/fr/blog',
     languages: {
-      'x-default': 'https://experienceboat.es/blog',
-      es: 'https://experienceboat.es/blog',
-      fr: 'https://experienceboat.es/fr/blog',
-      en: 'https://experienceboat.es/en/blog',
+      'x-default': 'https://www.experienceboat.es/blog',
+      es: 'https://www.experienceboat.es/blog',
+      fr: 'https://www.experienceboat.es/fr/blog',
+      en: 'https://www.experienceboat.es/en/blog',
     },
   },
 };

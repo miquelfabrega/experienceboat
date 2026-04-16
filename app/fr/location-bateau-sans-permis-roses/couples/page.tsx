@@ -21,21 +21,21 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Location bateau sans permis à Roses pour couples',
   description:
-    'Le plan le plus exclusif pour couples sur la Costa Brava. Louez un bateau sans permis, parcourez les canaux de Santa Margarita et découvrez des criques inaccessibles à votre rythme.',
+    'Plan exclusif pour couples sur la Costa Brava. Bateau sans permis dans les canaux de Santa Margarita et criques cachées à votre rythme.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
+    canonical: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
     },
   },
   openGraph: {
 title: 'Location bateau sans permis à Roses pour couples',
     description:
-      'Le plan le plus exclusif pour couples sur la Costa Brava. Louez un bateau sans permis, parcourez les canaux de Santa Margarita et découvrez des criques inaccessibles à votre rythme.',
-    url: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
+      'Plan exclusif pour couples sur la Costa Brava. Bateau sans permis dans les canaux de Santa Margarita et criques cachées à votre rythme.',
+    url: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -49,9 +49,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
-      { '@type': 'ListItem', position: 2, name: 'Location bateau sans permis Roses', item: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses' },
-      { '@type': 'ListItem', position: 3, name: 'Spécial couples', item: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 2, name: 'Location bateau sans permis Roses', item: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses' },
+      { '@type': 'ListItem', position: 3, name: 'Spécial couples', item: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
