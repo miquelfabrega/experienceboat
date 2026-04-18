@@ -11,7 +11,7 @@ export interface IntroParejasT {
 const defaults: Required<IntroParejasT> = {
   h2: 'El plan más exclusivo de la Costa Brava',
   linkText: 'alquiler de barco sin licencia',
-  linkHref: '/alquiler-barco-sin-licencia-roses/',
+  linkHref: '/alquiler-barco-sin-licencia-roses',
   text: 'en Roses en pareja, hay pocas experiencias en la Costa Brava que igualen la de pasar un día en el mar con la persona que quieres, sin compartir espacio con nadie más, a vuestro ritmo y con el Cap de Creus como fondo. En Experience Boat podéis alquilar un barco sin licencia en Roses sin necesitar experiencia náutica previa y salir directamente desde los canales de Santa Margarita hacia las calas más espectaculares de la Costa Brava norte. Vosotros solos, sin grupos, sin horarios fijos.',
 };
 

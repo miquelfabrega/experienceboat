@@ -19,7 +19,7 @@ const defaultTranslations: FleetTranslations = {
   conLicenciaBadge: 'Titulación necesaria',
   guideLink: 'Ver guía completa →',
   guideLinkFull: 'Ver guía completa de alquiler con licencia →',
-  guideLinkHref: '/alquiler-barco-con-licencia-roses/',
+  guideLinkHref: '/alquiler-barco-con-licencia-roses',
 };
 
 export default function FleetCards({ translations }: { translations?: FleetTranslations } = {}) {

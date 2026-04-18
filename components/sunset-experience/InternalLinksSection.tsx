@@ -8,19 +8,19 @@ const translations = {
       {
         title: 'Excursiones privadas de día',
         desc: 'Para explorar el Cap de Creus y las calas más espectaculares de la Costa Brava norte con toda la jornada por delante.',
-        href: '/experiencias-barco-roses/',
+        href: '/experiencias-barco-roses',
         icon: Compass,
       },
       {
         title: 'Alquiler sin licencia',
         desc: 'Para quienes quieren salir a su ritmo sin patrón y sin necesidad de titulación náutica.',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/alquiler-barco-sin-licencia-roses',
         icon: Key,
       },
       {
         title: 'Los canales de Santa Margarita',
         desc: 'Si el recorrido nocturno por los canales te ha llamado la atención, descubre todo lo que esconden en su versión de día.',
-        href: '/canales-santa-margarita/',
+        href: '/canales-santa-margarita',
         icon: Anchor,
       },
     ]
@@ -31,19 +31,19 @@ const translations = {
       {
         title: 'Excursions privées de jour',
         desc: 'Pour explorer le Cap de Creus et les criques les plus spectaculaires de la Côte Brava nord avec toute la journée devant vous.',
-        href: '/experiencias-barco-roses/',
+        href: '/experiencias-barco-roses',
         icon: Compass,
       },
       {
         title: 'Location sans permis',
         desc: 'Pour ceux qui veulent sortir à leur propre rythme sans skipper et sans permis nautique.',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/alquiler-barco-sin-licencia-roses',
         icon: Key,
       },
       {
         title: 'Les canaux de Santa Margarita',
         desc: 'Si la visite nocturne des canaux vous a intéressé, découvrez tout ce qu\'ils cachent dans leur version de jour.',
-        href: '/canales-santa-margarita/',
+        href: '/canales-santa-margarita',
         icon: Anchor,
       },
     ]
@@ -54,19 +54,19 @@ const translations = {
       {
         title: 'Private day excursions',
         desc: 'To explore Cap de Creus and the most spectacular coves of the northern Costa Brava with the whole day ahead of you.',
-        href: '/experiencias-barco-roses/',
+        href: '/experiencias-barco-roses',
         icon: Compass,
       },
       {
         title: 'No-licence rental',
         desc: 'For those who want to go at their own pace without a skipper and without a boat licence.',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/alquiler-barco-sin-licencia-roses',
         icon: Key,
       },
       {
         title: 'Santa Margarita canals',
         desc: 'If the night tour of the canals caught your attention, discover all the wonders they hold in their daytime version.',
-        href: '/canales-santa-margarita/',
+        href: '/canales-santa-margarita',
         icon: Anchor,
       },
     ]

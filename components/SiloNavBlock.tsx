@@ -3,12 +3,12 @@ import { ArrowRight } from 'lucide-react';
 export const SILO_LICENCIA_CHILDREN = [
   {
     title: 'Navegar por la bahía de Roses con licencia',
-    href: '/alquiler-barco-con-licencia-roses/bahia-de-roses/',
+    href: '/alquiler-barco-con-licencia-roses/bahia-de-roses',
     description: 'Espacio, calas y el Cap de Creus a 45 min.',
   },
   {
     title: 'Alquiler de lancha en la Costa Brava',
-    href: '/alquiler-barco-con-licencia-roses/lancha-costa-brava/',
+    href: '/alquiler-barco-con-licencia-roses/lancha-costa-brava',
     description: 'La ruta clásica de los canales al cabo.',
   },
 ] as const;
@@ -16,12 +16,12 @@ export const SILO_LICENCIA_CHILDREN = [
 export const SILO_SIN_LICENCIA_CHILDREN = [
   {
     title: 'Barco sin licencia en los canales de Santa Margarita',
-    href: '/alquiler-barco-sin-licencia-roses/canales-santa-margarita/',
+    href: '/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
     description: 'Aguas tranquilas, casas frente al agua y el mejor punto de partida para debutantes.',
   },
   {
     title: 'Alquiler de barco sin licencia en Roses para parejas',
-    href: '/alquiler-barco-sin-licencia-roses/parejas/',
+    href: '/alquiler-barco-sin-licencia-roses/parejas',
     description: 'Privacidad total, calas y rutas para celebrar un día especial.',
   },
 ] as const;
@@ -30,18 +30,18 @@ export const SILO_SIN_LICENCIA_CHILDREN = [
 export const SILO_CANALES_CHILDREN = [
   {
     title: 'Guía completa: los canales de Santa Margarita',
-    href: '/canales-santa-margarita/',
+    href: '/canales-santa-margarita',
     description:
       'Por qué navegar por los canales, opciones de salida y todo lo que necesitas saber antes de reservar.',
   },
   {
     title: 'Qué ver en los canales de Santa Margarita desde el agua',
-    href: '/canales-santa-margarita/que-ver/',
+    href: '/canales-santa-margarita/que-ver',
     description: 'Casas sobre el agua, fauna y la luz del amanecer y el atardecer.',
   },
   {
     title: 'Ruta en barco: canales de Santa Margarita al Cap de Creus',
-    href: '/canales-santa-margarita/ruta-cap-de-creus/',
+    href: '/canales-santa-margarita/ruta-cap-de-creus',
     description: 'La ruta náutica completa desde los canales hasta el parque natural.',
   },
 ] as const;

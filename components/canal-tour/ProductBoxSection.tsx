@@ -62,9 +62,9 @@ interface ProductBoxSectionProps {
 
 export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProps) {
   const t = translations[lang];
-  const reserveLink = lang === 'es' ? '/experiencias-barco-roses/canal-tour-santa-margarita/' : 
-                      lang === 'fr' ? '/fr/experiences-bateau-roses/canal-tour-santa-margarita/' : 
-                      '/en/boat-experiences-roses/canal-tour-santa-margarita/';
+  const reserveLink = lang === 'es' ? '/experiencias-barco-roses/canal-tour-santa-margarita' : 
+                      lang === 'fr' ? '/fr/experiences-bateau-roses/canal-tour-santa-margarita' : 
+                      '/en/boat-experiences-roses/canal-tour-santa-margarita';
 
   return (
     <section className="py-16 bg-gradient-to-b from-slate-50 to-white border-b border-slate-100" id="producto">

@@ -29,7 +29,7 @@ const defaults: Required<DuracionParejasT> = {
   fullDayPriceLabel: 'Precio aproximado',
   fullDayPrice: 'desde 350 €',
   cta: 'Ver barcos disponibles y reservar',
-  ctaHref: '/alquiler-barco-sin-licencia-roses/',
+  ctaHref: '/alquiler-barco-sin-licencia-roses',
 };
 
 export default function DuracionParejas({ t }: { t?: DuracionParejasT }) {

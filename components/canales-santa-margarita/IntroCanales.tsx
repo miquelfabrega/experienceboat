@@ -11,7 +11,7 @@ export interface IntroCanalesT {
 const defaults: Required<IntroCanalesT> = {
   h2: 'El inicio perfecto para tu primera vez',
   linkText: 'alquiler de barco sin licencia',
-  linkHref: '/alquiler-barco-sin-licencia-roses/',
+  linkHref: '/alquiler-barco-sin-licencia-roses',
   text: 'en Roses, los canales de Santa Margarita son el entorno perfecto para quien alquila un barco por primera vez. Aguas tranquilas, sin oleaje, sin corrientes y con un paisaje que no esperas encontrar en la Costa Brava: casas con embarcadero privado, puentes bajos de piedra y una calma que contrasta con el mar abierto. En Experience Boat salimos desde aquí — y para los debutantes, es el mejor comienzo posible.',
 };
 

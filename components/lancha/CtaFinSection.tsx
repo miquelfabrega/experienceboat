@@ -12,8 +12,8 @@ const t: Record<Lang, Record<string, string>> = {
     subtitle: 'Dos formas de navegar la Costa Brava norte. Las dos salen desde los canales de Santa Margarita. Las dos son privadas.',
     buttonLicense: 'Con licencia',
     buttonSkipper: 'Con patrón',
-    licenseLink: '/alquiler-barco-con-licencia-roses/',
-    skipperLink: '/experiencias-barco-roses/',
+    licenseLink: '/alquiler-barco-con-licencia-roses',
+    skipperLink: '/experiencias-barco-roses',
   },
   fr: {
     title: 'Prêt à partir ?',

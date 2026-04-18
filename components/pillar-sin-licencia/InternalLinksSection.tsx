@@ -18,12 +18,12 @@ const defaults: Required<InternalLinksSectionT> = {
   card1Title: 'Excursiones privadas con patrón',
   card1Desc: 'Si prefieres que alguien más lleve el timón y tú solo te preocupes de disfrutar, tenemos esa opción también. Salen desde los mismos canales de Santa Margarita.',
   card1Cta: 'Ver excursiones con patrón',
-  card1Href: '/experiencias-barco-roses/',
+  card1Href: '/experiencias-barco-roses',
   card2Label: '¿Tienes titulación náutica?',
   card2Title: 'Alquiler de barco con licencia',
   card2Desc: 'Si tienes la titulación, disponemos de embarcaciones potentes para navegar libremente por la bahía de Roses y llegar hasta el Cap de Creus más rápido.',
   card2Cta: 'Ver barcos con licencia',
-  card2Href: '/alquiler-barco-con-licencia-roses/',
+  card2Href: '/alquiler-barco-con-licencia-roses',
 };
 
 export default function InternalLinksSection({ t }: { t?: InternalLinksSectionT }) {

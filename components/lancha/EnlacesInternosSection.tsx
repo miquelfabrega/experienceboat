@@ -9,27 +9,27 @@ interface EnlacesInternosSectionProps {
 const getEnlaces = (lang: Lang) => [
   {
     anchor: lang === 'es' ? 'Alquiler barco con licencia en Roses' : 'Location bateau avec permis à Roses',
-    href: lang === 'es' ? '/alquiler-barco-con-licencia-roses/' : '/fr/location-bateau-avec-permis-roses/',
+    href: lang === 'es' ? '/alquiler-barco-con-licencia-roses' : '/fr/location-bateau-avec-permis-roses',
     desc: lang === 'es' ? 'Toda la flota con licencia disponible desde Santa Margarita' : 'Toute la flotte avec permis disponible depuis Santa Margarita',
   },
   {
     anchor: lang === 'es' ? 'Excursiones privadas con patrón' : 'Excursions privées avec capitaine',
-    href: lang === 'es' ? '/experiencias-barco-roses/' : '/fr/experiencias-barco-roses/',
+    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiencias-barco-roses',
     desc: lang === 'es' ? 'Salidas privadas con Tomàs o Max — sin titulación necesaria' : 'Sorties privées avec Tomàs ou Max — aucune qualification nécessaire',
   },
   {
     anchor: lang === 'es' ? 'Canales de Santa Margarita' : 'Canaux de Santa Margarita',
-    href: lang === 'es' ? '/canales-santa-margarita/' : '/fr/canaux-santa-margarita/',
+    href: lang === 'es' ? '/canales-santa-margarita' : '/fr/canaux-santa-margarita',
     desc: lang === 'es' ? 'El punto de salida más singular de la Costa Brava norte' : 'Le point de départ le plus unique de la Costa Brava nord',
   },
   {
     anchor: lang === 'es' ? 'Barco sin licencia' : 'Bateau sans permis',
-    href: lang === 'es' ? '/alquiler-barco-sin-licencia-roses/' : '/fr/location-bateau-sans-permis-roses/',
+    href: lang === 'es' ? '/alquiler-barco-sin-licencia-roses' : '/fr/location-bateau-sans-permis-roses',
     desc: lang === 'es' ? 'Opciones de alquiler incluido patrón para toda la familia' : 'Options de location incluant capitaine pour toute la famille',
   },
   {
     anchor: lang === 'es' ? 'Cap de Creus' : 'Cap de Creus',
-    href: lang === 'es' ? '/experiencias-barco-roses/' : '/fr/experiencias-barco-roses/',
+    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiencias-barco-roses',
     desc: lang === 'es' ? 'El parque natural que convierte cada jornada en una aventura' : 'Le parc naturel qui transforme chaque journée en une aventure',
   },
 ];

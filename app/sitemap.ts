@@ -62,6 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── Empresa ────────────────────────────────────────────────────────────
     url('/sobre-nosotros', 0.5, 'yearly'),
     url('/contacto', 0.6, 'monthly'),
+    url('/reservas', 0.7, 'monthly'),
+
+    // ─── Legales ───────────────────────────────────────────────────────────
+    url('/accesibilidad', 0.2, 'yearly'),
+    url('/politica-privacidad', 0.2, 'yearly'),
+    url('/aviso-legal', 0.2, 'yearly'),
+    url('/cookies', 0.2, 'yearly'),
 
     // ─── FR — Location bateau sans permis ───────────────────────────────────
     url('/fr', 0.8, 'weekly', NOW),
@@ -95,6 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── FR — Empresa ────────────────────────────────────────────────────────
     url('/fr/a-propos', 0.4, 'yearly'),
     url('/fr/contact', 0.6, 'monthly'),
+    url('/fr/bateaux', 0.5, 'monthly'),
 
     // ─── EN — Boat rental ────────────────────────────────────────────────────
     url('/en', 0.7, 'weekly', NOW),
@@ -128,7 +136,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/en/boats', 0.5, 'monthly'),
     url('/en/contact', 0.6, 'monthly'),
 
-    // ─── EXCLUIDAS (noindex): /test/, /accesibilidad/, /aviso-legal/,
-    //     /cookies/, /politica-privacidad/ — NO aparecen en este sitemap.
+    // ─── EXCLUIDAS: /test/ (bloqueada en robots.ts) — NO aparece en este sitemap.
   ];
 }

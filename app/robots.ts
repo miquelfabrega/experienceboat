@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/test/', '/api/', '/_next/image/', '/_next/static/'],
+        disallow: ['/test', '/api', '/_next/image/', '/_next/static/'],
       },
     ],
     sitemap: 'https://www.experienceboat.es/sitemap.xml',

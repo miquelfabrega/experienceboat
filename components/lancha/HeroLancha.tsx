@@ -16,7 +16,7 @@ const t: Record<Lang, Record<string, string>> = {
     buttonWhatsApp: 'Hablar por WhatsApp',
     altText: 'Alquiler de lancha en la Costa Brava desde Roses',
     boatsAnchor: '#barcos',
-    breadcrumbAnchor: '/alquiler-barco-con-licencia-roses/',
+    breadcrumbAnchor: '/alquiler-barco-con-licencia-roses',
     whatsappText: 'Hola%2C%20me%20interesa%20alquilar%20una%20lancha%20en%20la%20Costa%20Brava%20desde%20Roses',
     subtext: '500+ salidas · 5★ Google · Salida desde Santa Margarita',
     aria: 'Ruta de navegación',
@@ -30,7 +30,7 @@ const t: Record<Lang, Record<string, string>> = {
     buttonWhatsApp: 'Nous contacter sur WhatsApp',
     altText: 'Location de vedette sur la Costa Brava depuis Roses',
     boatsAnchor: '#bateaux',
-    breadcrumbAnchor: '/fr/location-bateau-avec-permis-roses/',
+    breadcrumbAnchor: '/fr/location-bateau-avec-permis-roses',
     whatsappText: 'Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20location%20d%27une%20vedette%20sur%20la%20Costa%20Brava%20depuis%20Roses',
     subtext: '500+ sorties · 5★ Google · Départ depuis Santa Margarita',
     aria: 'Fil d\'Ariane',
@@ -56,7 +56,7 @@ export default function HeroLancha({ lang = 'es' }: HeroLanchaProps) {
         <nav aria-label={labels.aria} className="w-full text-sm text-gray-300 mb-8">
           <ol className="flex flex-wrap justify-center items-center gap-2">
             <li>
-              <a href={lang === 'es' ? '/' : '/fr/'} className="hover:text-white transition-colors">
+              <a href={lang === 'es' ? '/' : '/fr'} className="hover:text-white transition-colors">
                 {labels.home}
               </a>
             </li>

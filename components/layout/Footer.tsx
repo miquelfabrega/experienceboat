@@ -167,6 +167,18 @@ export default function Footer() {
             <Link href="/fr" hrefLang="fr" className="hover:text-white transition-colors">
               Version française
             </Link>
+            <span className="text-gray-600 select-none" aria-hidden>·</span>
+            <Link href="/en" hrefLang="en" className="hover:text-white transition-colors">
+              English version
+            </Link>
+            <span className="text-gray-600 select-none" aria-hidden>·</span>
+            <Link href="/fr/a-propos" hrefLang="fr" className="hover:text-white transition-colors">
+              À propos
+            </Link>
+            <span className="text-gray-600 select-none" aria-hidden>·</span>
+            <Link href="/en/about" hrefLang="en" className="hover:text-white transition-colors">
+              About us
+            </Link>
           </nav>
         </div>
       </div>

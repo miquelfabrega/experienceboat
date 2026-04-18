@@ -3,27 +3,27 @@ import { ArrowRight } from 'lucide-react';
 const enlaces = [
   {
     anchor: 'Alquiler barco con licencia en Roses',
-    href: '/alquiler-barco-con-licencia-roses/',
+    href: '/alquiler-barco-con-licencia-roses',
     desc: 'Página principal — todos los barcos con licencia disponibles',
   },
   {
     anchor: 'Canales de Santa Margarita',
-    href: '/canales-santa-margarita/',
+    href: '/canales-santa-margarita',
     desc: 'Descubre el punto de salida más singular de Roses',
   },
   {
     anchor: 'Excursiones privadas con patrón',
-    href: '/experiencias-barco-roses/',
+    href: '/experiencias-barco-roses',
     desc: 'Navega sin necesidad de licencia con un patrón experto',
   },
   {
     anchor: 'Parque Natural del Cap de Creus',
-    href: '/experiencias-barco-roses/',
+    href: '/experiencias-barco-roses',
     desc: 'El destino estrella desde la bahía de Roses',
   },
   {
     anchor: 'Barco sin licencia',
-    href: '/alquiler-barco-sin-licencia-roses/',
+    href: '/alquiler-barco-sin-licencia-roses',
     desc: 'Alquiler incluido patrón — sin titulación requerida',
   },
 ];

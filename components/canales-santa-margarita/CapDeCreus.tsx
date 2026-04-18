@@ -16,7 +16,7 @@ const defaults: Required<CapDeCreusT> = {
   text: 'Sí, aunque con matices. Nuestros barcos sin licencia están diseñados para navegación costera tranquila. La bahía de Roses es perfectamente accesible y muy recomendable. Las calas más cercanas del Cap de Creus también están al alcance si las condiciones del mar son buenas.',
   infoText: 'Para adentrarse en el Parque Natural del Cap de Creus con más profundidad, recomendamos una de nuestras excursiones privadas con patrón — Tomàs o Max conocen las rutas y las calas que merecen la pena según la época del año.',
   linkText: 'Ver excursiones privadas con patrón',
-  linkHref: '/experiencias-barco-roses/',
+  linkHref: '/experiencias-barco-roses',
 };
 
 export default function CapDeCreus({ t }: { t?: CapDeCreusT }) {

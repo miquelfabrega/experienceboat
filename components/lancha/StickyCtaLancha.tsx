@@ -17,8 +17,8 @@ const t: Record<Lang, Record<string, string>> = {
     mobileButton: 'Reservar',
     cta1Label: 'Con licencia',
     cta2Label: 'Con patrón',
-    cta1Href: '/alquiler-barco-con-licencia-roses/',
-    cta2Href: '/experiencias-barco-roses/',
+    cta1Href: '/alquiler-barco-con-licencia-roses',
+    cta2Href: '/experiencias-barco-roses',
     headerLabel: 'Elige tu experiencia',
   },
   fr: {

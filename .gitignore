@@ -1,0 +1,52 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# bundler analyzer
+.next/analyze/
+
+# Ahrefs audit folders (local only)
+experienceboat_*_all-issues_*/
+experiecne*_all-issues_*/
+experienceboat@0.1.0
+Auditoria_SEO_ExperienceBoat_2026.docx
+ExperienceBoat_Brand_Guidelines.pdf
+experienceboat*.md
+experienceboat_*.xlsx
+experienceboat_*.js

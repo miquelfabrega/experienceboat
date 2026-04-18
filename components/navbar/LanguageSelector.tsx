@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const languages = [
   { code: 'ES', name: 'Español', url: '/' },
-  { code: 'FR', name: 'Français', url: '/fr/' },
-  { code: 'EN', name: 'English', url: '/en/' },
+  { code: 'FR', name: 'Français', url: '/fr' },
+  { code: 'EN', name: 'English', url: '/en' },
 ];
 
 export function LanguageSelector() {

@@ -41,7 +41,7 @@ const defaultTranslations: BookingTranslations = {
   resultReset: 'Empezar de nuevo',
   resultEmpty: 'No encontramos barcos exactos para estos criterios. Contáctanos.',
   resultCTA: 'Ver disponibilidad completa',
-  resultCTAHref: '/reservas/',
+  resultCTAHref: '/reservas',
   priceFrom: 'Desde',
 };
 

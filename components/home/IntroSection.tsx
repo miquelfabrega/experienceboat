@@ -21,22 +21,22 @@ const defaultTranslations: IntroTranslations = {
     {
       title: 'Sin licencia',
       text: 'Sal al mar sin necesitar titulación. Barcos fáciles de llevar para todos los perfiles.',
-      href: '/alquiler-barco-sin-licencia-roses/',
+      href: '/alquiler-barco-sin-licencia-roses',
     },
     {
       title: 'Con licencia',
       text: 'Embarcaciones potentes para navegar libremente por la Costa Brava norte.',
-      href: '/alquiler-barco-con-licencia-roses/',
+      href: '/alquiler-barco-con-licencia-roses',
     },
     {
       title: 'Con patrón',
       text: 'Excursiones privadas guiadas. Nosotros llevamos el timón, tú disfrutas el paisaje.',
-      href: '/experiencias-barco-roses/',
+      href: '/experiencias-barco-roses',
     },
     {
       title: 'Canal Tour',
       text: 'Descubre los canales de Santa Margarita desde el agua. Una experiencia única en Roses.',
-      href: '/canales-santa-margarita/',
+      href: '/canales-santa-margarita',
     },
   ],
 };
