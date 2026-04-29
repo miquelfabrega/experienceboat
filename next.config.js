@@ -24,6 +24,21 @@ const nextConfig = {
         hostname: 'picsum.photos',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [360, 640, 750, 828, 1080, 1280, 1600],
+    imageSizes: [16, 32, 64, 96, 128, 256, 384],
+  },
+  async headers() {
+    return [
+      {
+        source: '/_next/image(.*)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/images/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+    ];
   },
   async redirects() {
     return [

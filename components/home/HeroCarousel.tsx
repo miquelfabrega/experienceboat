@@ -32,8 +32,11 @@ export default function HeroCarousel({ data }: { data?: HeroData } = {}) {
             src={slide.src}
             alt={slide.alt}
             fill
+            sizes="100vw"
+            quality={65}
             className="object-cover"
             priority={index === 0}
+            fetchPriority={index === 0 ? 'high' : 'auto'}
           />
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black/50" />
