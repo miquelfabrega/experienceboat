@@ -14,6 +14,7 @@ import {
   PackageCheck,
 } from 'lucide-react';
 import type { Barco } from '@/lib/data/fleet';
+import { EXTRAS_DISPONIBLES } from '@/lib/data/fleet';
 import FleetCard from '@/components/home/FleetCard';
 
 const formatPrecio = (n: number | null) =>
@@ -323,36 +324,34 @@ export default function BarcoDetail({
       </section>
 
       {/* Extras */}
-      {barco.extras && barco.extras.length > 0 && (
-        <section className="py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-              Extras contratables
-            </h2>
-            <p className="text-gray-600 mb-6">
-              Añade actividades náuticas al alquiler de tu barco. Selecciónalas en el momento de la reserva.
-            </p>
-            <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {barco.extras.map((extra) => (
-                <li
-                  key={extra.nombre}
-                  className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-between"
-                >
-                  <div className="flex items-center gap-3">
-                    <Sparkles className="w-5 h-5 text-purple-500" />
-                    <span className="font-medium text-gray-900">
-                      {extra.nombre}
-                    </span>
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {extra.precio}€
+      <section className="py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            Extras contratables
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Añade actividades náuticas al alquiler de tu barco. Disponibles bajo solicitud al hacer la reserva.
+          </p>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {EXTRAS_DISPONIBLES.map((extra) => (
+              <li
+                key={extra.nombre}
+                className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-between"
+              >
+                <div className="flex items-center gap-3">
+                  <Sparkles className="w-5 h-5 text-purple-500" />
+                  <span className="font-medium text-gray-900">
+                    {extra.nombre}
                   </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
+                </div>
+                <span className="font-semibold text-gray-900">
+                  {extra.precio}€
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-12">

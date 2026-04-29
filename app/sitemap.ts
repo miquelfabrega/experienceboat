@@ -44,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/experiencias-barco-roses/excursiones-privadas', 0.8, 'monthly'),
     url('/experiencias-barco-roses/sunset-experience', 0.8, 'monthly'),
     url('/experiencias-barco-roses/canal-tour-santa-margarita', 0.8, 'monthly'),
+    url('/experiencias-barco-roses/cap-de-creus-calas', 0.8, 'monthly'),
+    url('/experiencias-barco-roses/cadaques', 0.8, 'monthly'),
 
     // ─── SILO 4 — Canales Santa Margarita ───────────────────────────────────
     url('/canales-santa-margarita', 0.9, 'monthly'),

@@ -45,6 +45,15 @@ const INCLUSIONES_BASE = [
 ];
 
 const WIDGET_SIN_LICENCIA = '12ff7e04-a15c-4980-bacb-75c68b8eee6e';
+const WIDGET_CON_LICENCIA = 'cbe7e43c-d1d4-4ad3-a3ee-2f5b4d6863fd';
+
+// Extras universales contratables con cualquier alquiler (datos del Excel del cliente)
+export const EXTRAS_DISPONIBLES: BarcoExtra[] = [
+  { nombre: 'Wakeboard', precio: 50 },
+  { nombre: 'Donut', precio: 50 },
+  { nombre: 'Ski Náutico', precio: 50 },
+  { nombre: 'Paddle Surf', precio: 50 },
+];
 
 export const fleet: Barco[] = [
   // ─── SIN LICENCIA ───────────────────────────────────────────────
@@ -144,6 +153,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Jeanneau 595 con motor de 115 CV para 6 personas. Ideal para llegar al Cap de Creus con comodidad y solárium.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
+    widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
     slug: 'orange-kiwi',
@@ -167,6 +177,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Zodiac semirrígida de 6,50 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
+    widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
     slug: 'spirit-of-the-sea',
@@ -190,6 +201,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Embarcación de 7,50 m con doble solárium y sonido. Capacidad para 12 personas: nuestro barco más versátil para grupos.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
+    widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
     slug: 'costa-brava-joker',
@@ -213,6 +225,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Joker Boat de 7 m, 200 CV y 11 pax. Carácter deportivo con solárium amplio para una jornada premium en la Costa Brava.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
+    widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
     slug: 'sessa-marine-c35',
@@ -235,6 +248,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Yate Sessa Marine C35 de 10,60 m con camarote y dos motores de 260 CV. La experiencia más exclusiva de nuestra flota.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón profesional incluido'],
+    widgetReservaId: WIDGET_CON_LICENCIA,
   },
 
   // ─── HISTÓRICO (no se muestran ni indexan) ──────────────────────

@@ -8,6 +8,7 @@ import PracticalInfoSection from '@/components/canal-tour/PracticalInfoSection';
 import ReviewsSection from '@/components/sunset-experience/ReviewsSection';
 import SiloNavBlock from '@/components/SiloNavBlock';
 import StickyCTA from '@/components/canal-tour/StickyCTA';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 
 export const dynamic = 'force-static';
 
@@ -119,6 +120,11 @@ export default function CanalTourSantaMargaritaPage() {
       <BreadcrumbSchema />
       <main id="main-content">
         <HeroSection lang="es" />
+        <RegiondoWidget
+          widgetId="c17a6fcb-a083-48ba-bb28-0225214443ee"
+          title="Reserva tu Canal Tour"
+          subtitle="Disponibilidad en tiempo real. Confirmación inmediata."
+        />
         <IntroSection lang="es" />
         <HighlightsSection lang="es" />
         <ProductBoxSection lang="es" />
