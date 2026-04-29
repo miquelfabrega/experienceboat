@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getBarcoSlugs } from '@/lib/data/fleet';
 
 const BASE_URL = 'https://www.experienceboat.es';
 
@@ -51,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── Flota ──────────────────────────────────────────────────────────────
     url('/barcos', 0.7, 'monthly'),
+    ...getBarcoSlugs().map((slug) => url(`/barcos/${slug}`, 0.6, 'monthly')),
 
     // ─── Blog ───────────────────────────────────────────────────────────────
     url('/blog', 0.7, 'weekly', BLOG_DATE),

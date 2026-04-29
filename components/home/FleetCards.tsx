@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { fleet } from '@/lib/data/fleet';
+import { getBarcosActivos } from '@/lib/data/fleet';
 import FleetCard from './FleetCard';
 
 type FleetTranslations = {
@@ -24,8 +24,9 @@ const defaultTranslations: FleetTranslations = {
 
 export default function FleetCards({ translations }: { translations?: FleetTranslations } = {}) {
   const t = translations ?? defaultTranslations;
-  const sinLicencia = fleet.filter(b => b.categoria === 'sin-licencia');
-  const conLicencia = fleet.filter(b => b.categoria === 'con-licencia');
+  const activos = getBarcosActivos();
+  const sinLicencia = activos.filter(b => b.categoria === 'sin-licencia');
+  const conLicencia = activos.filter(b => b.categoria === 'con-licencia');
 
   return (
     <section className="py-20 bg-white">

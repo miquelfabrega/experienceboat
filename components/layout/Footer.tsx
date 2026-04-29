@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { fleet } from '@/lib/data/fleet';
+import { getBarcosActivos } from '@/lib/data/fleet';
 import CookieSettingsLink from '@/components/layout/CookieSettingsLink';
 
 export default function Footer() {
-  const sinLicencia = fleet.filter(b => b.categoria === 'sin-licencia');
-  const conLicencia = fleet.filter(b => b.categoria === 'con-licencia');
+  const activos = getBarcosActivos();
+  const sinLicencia = activos.filter(b => b.categoria === 'sin-licencia');
+  const conLicencia = activos.filter(b => b.categoria === 'con-licencia');
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-12 lg:py-14 border-t border-gray-800">

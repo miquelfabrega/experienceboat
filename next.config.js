@@ -49,21 +49,18 @@ const nextConfig = {
         destination: '/blog/planificar-escapada-barco-costa-brava/',
         permanent: true,
       },
-      // ── Barcos — fichas movidas de /barcos/X a raíz ──
-      { source: '/barcos/remus-450', destination: '/barcos/', permanent: true },
-      { source: '/barcos/spirit-of-the-sea', destination: '/barcos/', permanent: true },
+      // ── Barcos — fichas inactivas (siguen redirigiendo al índice) ──
       { source: '/barcos/tio-marc-mano', destination: '/barcos/', permanent: true },
-      { source: '/barcos/dream-point-boat', destination: '/barcos/', permanent: true },
       { source: '/barcos/zodiac-medline-i', destination: '/barcos/', permanent: true },
       { source: '/barcos/zodiac-medline-ii', destination: '/barcos/', permanent: true },
-      { source: '/barcos/sessa-marine-c35', destination: '/barcos/', permanent: true },
-      { source: '/barcos/jeanneau-595-reineta', destination: '/barcos/', permanent: true },
-      { source: '/barcos/costa-brava-boat', destination: '/barcos/', permanent: true },
-      // ── Barcos — URLs antiguas en raíz (WordPress) ──
-      { source: '/jeanneau-595-reineta', destination: '/barcos/', permanent: true },
-      { source: '/sessa-marine-c35', destination: '/barcos/', permanent: true },
-      { source: '/costa-brava-boat', destination: '/barcos/', permanent: true },
-      { source: '/dream-point-boat', destination: '/barcos/', permanent: true },
+      // ── Barcos — slugs antiguos → nuevo slug equivalente ──
+      { source: '/barcos/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
+      { source: '/barcos/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
+      // ── Barcos — URLs antiguas en raíz (WordPress) → ficha o índice ──
+      { source: '/jeanneau-595-reineta', destination: '/barcos/jeanneau-595-reineta', permanent: true },
+      { source: '/sessa-marine-c35', destination: '/barcos/sessa-marine-c35', permanent: true },
+      { source: '/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
+      { source: '/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
       { source: '/zodiac-medline-ii', destination: '/barcos/', permanent: true },
       { source: '/zodiac-medline-i', destination: '/barcos/', permanent: true },
       { source: '/tio-marc-mano', destination: '/barcos/', permanent: true },

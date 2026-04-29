@@ -4,8 +4,23 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Barco } from '@/lib/data/fleet';
 
-export default function FleetCard({ barco }: { barco: Barco }) {
+type Lang = 'es' | 'en' | 'fr';
+
+const FLEET_INDEX: Record<Lang, string> = {
+  es: '/barcos',
+  en: '/en/boats',
+  fr: '/fr/bateaux',
+};
+
+const DETAIL_CTA: Record<Lang, string> = {
+  es: 'Ver detalles completos',
+  en: 'See full fleet',
+  fr: 'Voir toute la flotte',
+};
+
+export default function FleetCard({ barco, lang = 'es' }: { barco: Barco; lang?: Lang }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const detailHref = lang === 'es' ? `/barcos/${barco.slug}` : FLEET_INDEX[lang];
 
   return (
     <>
@@ -89,11 +104,11 @@ export default function FleetCard({ barco }: { barco: Barco }) {
                 <p className="font-semibold text-gray-900">{barco.precioDesde}€/día</p>
               </div>
             </div>
-            <a 
-              href={`/barcos/${barco.slug}`}
+            <a
+              href={detailHref}
               className="w-full block text-center py-3 rounded-full bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 transition-colors"
             >
-              Ver detalles completos
+              {DETAIL_CTA[lang]}
             </a>
           </div>
         </div>

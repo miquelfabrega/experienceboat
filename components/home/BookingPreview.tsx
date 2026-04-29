@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { fleet } from '@/lib/data/fleet';
+import { getBarcosActivos } from '@/lib/data/fleet';
 
 type BookingTranslations = {
   title: string;
@@ -55,13 +55,11 @@ export default function BookingPreview({ translations }: { translations?: Bookin
   const nextStep = () => setStep(s => Math.min(s + 1, 4));
   const prevStep = () => setStep(s => Math.max(s - 1, 1));
 
-  const compatibleBoats = step === 4 ? fleet.filter(b => {
-    // Si no tiene licencia, solo mostrar 'sin-licencia'
+  const compatibleBoats = step === 4 ? getBarcosActivos().filter(b => {
     if (licencia === false && b.categoria !== 'sin-licencia') return false;
-    // Filtrar por capacidad
-    if (b.pax && personas > b.pax) return false;
+    if (personas > b.pax) return false;
     return true;
-  }).slice(0, 3) : []; // Mostrar solo top 3 en preview
+  }).slice(0, 3) : [];
 
   return (
     <section className="py-24 relative overflow-hidden">
