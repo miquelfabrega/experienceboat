@@ -74,6 +74,16 @@ const t: Record<Lang, {
         href: '/experiencias-barco-roses/cadaques',
         ctaText: 'Ver excursión Cadaqués',
       },
+      {
+        id: 'cuevas-snorkel',
+        title: 'Cuevas & Snorkel',
+        image: 'https://picsum.photos/seed/cuevas-snorkel/600/400',
+        desc: 'Salida en barco por las cuevas marinas del Cap de Creus con paradas para hacer snorkel. Equipo incluido.',
+        duration: 'Medio día',
+        price: 'Consultar tarifas',
+        href: '/experiencias-barco-roses/cuevas-snorkel',
+        ctaText: 'Ver Cuevas & Snorkel',
+      },
     ],
   },
   fr: {
