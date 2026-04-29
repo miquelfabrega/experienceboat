@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Barco } from '@/lib/data/fleet';
 
 type Lang = 'es' | 'en' | 'fr';
@@ -24,8 +25,8 @@ export default function FleetCard({ barco, lang = 'es' }: { barco: Barco; lang?:
 
   return (
     <>
-      <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 overflow-hidden border border-gray-100 flex flex-col">
-        <div className="relative w-full aspect-[4/5] overflow-hidden group">
+      <article className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 overflow-hidden border border-gray-100 flex flex-col group">
+        <Link href={detailHref} className="block relative w-full aspect-[4/5] overflow-hidden">
           <Image
             src={barco.imagen || `https://picsum.photos/seed/${barco.slug}/400/500`}
             alt={`Barco ${barco.categoria.replace('-', ' ')} en Roses — ${barco.nombre}`}
@@ -44,29 +45,42 @@ export default function FleetCard({ barco, lang = 'es' }: { barco: Barco; lang?:
               </span>
             )}
           </div>
-        </div>
+        </Link>
 
         <div className="p-5 flex flex-col flex-grow">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">{barco.nombre}</h3>
-          
+          <h3 className="text-xl font-bold text-gray-900 mb-2">
+            <Link href={detailHref} className="hover:text-blue-700 transition-colors">
+              {barco.nombre}
+            </Link>
+          </h3>
+
           <ul className="text-sm text-gray-600 mb-4 space-y-1">
             {barco.pax && <li>👥 Capacidad: {barco.pax} personas</li>}
             {barco.eslora && <li>📏 Eslora: {barco.eslora}</li>}
           </ul>
-          
-          <div className="mt-auto flex items-center justify-between">
+
+          <div className="mt-auto flex items-center justify-between gap-3">
             <div className="text-gray-900 font-medium">
               <span className="text-sm text-gray-500">desde</span> <span className="font-bold text-lg">{barco.precioDesde}€</span><span className="text-sm text-gray-500">/día</span>
             </div>
-            <button 
-              onClick={() => setIsModalOpen(true)}
-              className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
-            >
-              Quick View
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setIsModalOpen(true)}
+                className="text-sm font-semibold text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                Quick view
+              </button>
+              <Link
+                href={detailHref}
+                className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                Ver ficha →
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => setIsModalOpen(false)}>

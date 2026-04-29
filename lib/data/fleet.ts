@@ -30,9 +30,21 @@ export interface Barco {
   badge: string | null;
   descripcionCorta: string;
   descripcionLarga?: string;
+  inclusiones?: string[];
+  widgetReservaId?: string;
 }
 
 const NOTA_SIN_LICENCIA = 'Horario reducido (4 h)';
+
+const INCLUSIONES_BASE = [
+  'Chalecos salvavidas para toda la tripulación',
+  'Briefing de seguridad y manejo antes de salir',
+  'Seguro de responsabilidad civil',
+  'Equipo de seguridad reglamentario',
+  'IVA incluido',
+];
+
+const WIDGET_SIN_LICENCIA = '12ff7e04-a15c-4980-bacb-75c68b8eee6e';
 
 export const fleet: Barco[] = [
   // ─── SIN LICENCIA ───────────────────────────────────────────────
@@ -57,6 +69,8 @@ export const fleet: Barco[] = [
     badge: 'Más reservado',
     descripcionCorta:
       'Embarcación sin licencia para 5 personas, ideal para descubrir las calas de Roses sin necesidad de patrón.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 5-8 L/h)'],
+    widgetReservaId: WIDGET_SIN_LICENCIA,
   },
   {
     slug: 'marine-breeze',
@@ -79,6 +93,8 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'Barco sin licencia para 5 pax con toldo y escalera de baño. Perfecto para una jornada tranquila por la Bahía de Roses.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 5-8 L/h)'],
+    widgetReservaId: WIDGET_SIN_LICENCIA,
   },
   {
     slug: 'dream-point-420',
@@ -101,6 +117,8 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'La opción más compacta y económica sin licencia. 4 pax, fácil de manejar y pensada para una primera experiencia en el mar.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 4-6 L/h)'],
+    widgetReservaId: WIDGET_SIN_LICENCIA,
   },
 
   // ─── CON LICENCIA ───────────────────────────────────────────────
@@ -125,6 +143,7 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'Jeanneau 595 con motor de 115 CV para 6 personas. Ideal para llegar al Cap de Creus con comodidad y solárium.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
   },
   {
     slug: 'orange-kiwi',
@@ -147,6 +166,7 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'Zodiac semirrígida de 6,50 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
   },
   {
     slug: 'spirit-of-the-sea',
@@ -169,6 +189,7 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'Embarcación de 7,50 m con doble solárium y sonido. Capacidad para 12 personas: nuestro barco más versátil para grupos.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
   },
   {
     slug: 'costa-brava-joker',
@@ -191,6 +212,7 @@ export const fleet: Barco[] = [
     badge: null,
     descripcionCorta:
       'Joker Boat de 7 m, 200 CV y 11 pax. Carácter deportivo con solárium amplio para una jornada premium en la Costa Brava.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
   },
   {
     slug: 'sessa-marine-c35',
@@ -212,6 +234,7 @@ export const fleet: Barco[] = [
     badge: 'Premium',
     descripcionCorta:
       'Yate Sessa Marine C35 de 10,60 m con camarote y dos motores de 260 CV. La experiencia más exclusiva de nuestra flota.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón profesional incluido'],
   },
 
   // ─── HISTÓRICO (no se muestran ni indexan) ──────────────────────

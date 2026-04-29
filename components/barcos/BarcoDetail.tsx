@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 import {
   Users,
   Ruler,
@@ -9,6 +10,8 @@ import {
   Sparkles,
   ChevronRight,
   MessageCircle,
+  CalendarDays,
+  PackageCheck,
 } from 'lucide-react';
 import type { Barco } from '@/lib/data/fleet';
 import FleetCard from '@/components/home/FleetCard';
@@ -155,12 +158,13 @@ export default function BarcoDetail({
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href={`/reservas?barco=${barco.slug}`}
+              <a
+                href="#reservar"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-blue-600 text-white font-bold shadow-md hover:bg-blue-700 transition-colors"
               >
-                Reservar este barco
-              </Link>
+                <CalendarDays className="w-5 h-5" />
+                Ver disponibilidad
+              </a>
               <a
                 href={WHATSAPP_HREF(barco.nombre)}
                 target="_blank"
@@ -186,7 +190,7 @@ export default function BarcoDetail({
         <section className="bg-gray-50 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Equipamiento
+              Equipamiento del barco
             </h2>
             <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {barco.equipamiento.map((item) => (
@@ -203,13 +207,38 @@ export default function BarcoDetail({
         </section>
       )}
 
+      {/* Inclusiones */}
+      {barco.inclusiones && barco.inclusiones.length > 0 && (
+        <section className="py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <PackageCheck className="w-7 h-7 text-blue-600" />
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                ¿Qué incluye el alquiler?
+              </h2>
+            </div>
+            <ul className="grid sm:grid-cols-2 gap-3">
+              {barco.inclusiones.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-3 bg-blue-50/50 border border-blue-100 rounded-xl p-4"
+                >
+                  <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-800">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* Precios */}
-      <section className="py-12">
+      <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Tarifas
           </h2>
-          <div className="overflow-x-auto rounded-2xl border border-gray-200">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
             <table className="w-full text-left">
               <thead className="bg-gray-50">
                 <tr>
@@ -267,16 +296,19 @@ export default function BarcoDetail({
 
       {/* Extras */}
       {barco.extras && barco.extras.length > 0 && (
-        <section className="bg-gray-50 py-12">
+        <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Extras disponibles
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Extras contratables
             </h2>
+            <p className="text-gray-600 mb-6">
+              Añade actividades náuticas al alquiler de tu barco. Selecciónalas en el momento de la reserva.
+            </p>
             <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {barco.extras.map((extra) => (
                 <li
                   key={extra.nombre}
-                  className="bg-white rounded-xl p-5 shadow-sm flex items-center justify-between"
+                  className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-between"
                 >
                   <div className="flex items-center gap-3">
                     <Sparkles className="w-5 h-5 text-purple-500" />
@@ -293,6 +325,52 @@ export default function BarcoDetail({
           </div>
         </section>
       )}
+
+      {/* Reserva (calendario / widget) */}
+      <section id="reservar" className="bg-gray-50 py-16 scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3 mb-6">
+            <CalendarDays className="w-7 h-7 text-blue-600" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              Reserva tu fecha
+            </h2>
+          </div>
+          <p className="text-gray-600 mb-8">
+            Consulta disponibilidad y reserva online directamente desde aquí.
+          </p>
+
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-4 sm:p-6 min-h-[420px] flex items-center justify-center">
+            {barco.widgetReservaId ? (
+              <div className="w-full">
+                <booking-widget widget-id={barco.widgetReservaId}></booking-widget>
+                <Script
+                  src="https://widgets.regiondo.net/booking/v1/booking-widget.min.js"
+                  strategy="afterInteractive"
+                />
+              </div>
+            ) : (
+              <div className="text-center max-w-md">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 mb-4">
+                  <CalendarDays className="w-7 h-7 text-blue-600" />
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Estamos integrando el calendario de reservas online para este barco.
+                  Mientras tanto, contáctanos por WhatsApp para reservar.
+                </p>
+                <a
+                  href={WHATSAPP_HREF(barco.nombre)}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#1faa55] transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Consultar disponibilidad
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-12">

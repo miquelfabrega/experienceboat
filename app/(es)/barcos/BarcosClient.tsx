@@ -75,6 +75,29 @@ const ui: Record<Lang, {
   },
 };
 
+// Map old card id → current active slug in /lib/data/fleet.ts (ES product page).
+// Inactive boats (zodiac-medline-i/ii, tio-marc-mano) stay null and link to fleet index.
+const ES_SLUG: Record<string, string | null> = {
+  'jeanneau-595-reineta': 'jeanneau-595-reineta',
+  'zodiac-medline-i': null,
+  'zodiac-medline-ii': null,
+  'spirit-of-the-sea': 'spirit-of-the-sea',
+  'costa-brava-boat': 'costa-brava-joker',
+  'tio-marc-mano': null,
+  'remus-450': 'remus-450',
+  'dream-point-boat': 'dream-point-420',
+  'sessa-marine-c35': 'sessa-marine-c35',
+};
+
+const fleetIndexHref = (lang: Lang) =>
+  lang === 'fr' ? '/fr/bateaux' : lang === 'en' ? '/en/boats' : '/barcos';
+
+const boatHref = (id: string, lang: Lang) => {
+  const slug = ES_SLUG[id];
+  if (lang === 'es' && slug) return `/barcos/${slug}`;
+  return fleetIndexHref(lang);
+};
+
 // Boat data — names and hrefs are language-neutral; category key maps to ui labels
 const boatsData = [
   { id: 'jeanneau-595-reineta',  name: 'Jeanneau 595 Reineta', cat: 'with',    badge: { es: '⭐ Más reservado',             fr: '⭐ Le plus réservé',              en: '⭐ Most booked'              }, price: { es: 'Desde 195 € · ½ día',      fr: 'À partir de 195 € · ½ journée', en: 'From €195 · ½ day'      }, href: '/barcos', img: '/images/boats/jeanneau-595.jpg'     },
@@ -145,7 +168,7 @@ export default function BarcosClient({ lang = 'es' }: { lang?: Lang }) {
                   <AnimatePresence>
                     {sectionBoats.map((boat) => (
                       <motion.div layout initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.3 }} key={boat.id}>
-                        <Link href={boat.href} className="group block h-full">
+                        <Link href={boatHref(boat.id, lang)} className="group block h-full">
                           <article className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full">
                             <div className="relative aspect-[4/3] bg-slate-100 flex items-center justify-center overflow-hidden">
                               <div className="absolute inset-0 bg-sky-900/5 group-hover:bg-transparent transition-colors z-10" />

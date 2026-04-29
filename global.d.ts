@@ -7,3 +7,15 @@ declare module 'react' {
     viewport?: { once?: boolean; margin?: string };
   }
 }
+
+// Regiondo booking widget custom element
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'booking-widget': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & { 'widget-id': string },
+        HTMLElement
+      >;
+    }
+  }
+}
