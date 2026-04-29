@@ -84,10 +84,17 @@ export default function BarcoDetail({
         </ol>
       </nav>
 
-      {/* Hero */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-lg">
+      {/* Hero — imagen + calendario lado a lado */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+          {barco.nombre}
+        </h1>
+        <p className="text-lg text-gray-600 mb-6 max-w-3xl">
+          {barco.descripcionCorta}
+        </p>
+
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+          <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[480px] w-full rounded-3xl overflow-hidden shadow-lg">
             <Image
               src={barco.imagen}
               alt={`${barco.nombre} — alquiler de barco ${categoriaLabel.toLowerCase()} en Roses`}
@@ -112,76 +119,97 @@ export default function BarcoDetail({
                 </span>
               )}
             </div>
-          </div>
-
-          <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              {barco.nombre}
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              {barco.descripcionCorta}
-            </p>
-
-            <ul className="grid grid-cols-2 gap-4 mb-8">
-              <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                <Users className="w-5 h-5 text-blue-600" />
-                <div>
-                  <p className="text-xs text-gray-500">Capacidad</p>
-                  <p className="font-semibold text-gray-900">
-                    {barco.pax} personas
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                <Ruler className="w-5 h-5 text-blue-600" />
-                <div>
-                  <p className="text-xs text-gray-500">Eslora</p>
-                  <p className="font-semibold text-gray-900">{barco.eslora}</p>
-                </div>
-              </li>
-              <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                <Gauge className="w-5 h-5 text-blue-600" />
-                <div>
-                  <p className="text-xs text-gray-500">Motor</p>
-                  <p className="font-semibold text-gray-900">{barco.motor}</p>
-                </div>
-              </li>
-              <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                <Anchor className="w-5 h-5 text-blue-600" />
-                <div>
-                  <p className="text-xs text-gray-500">Categoría</p>
-                  <p className="font-semibold text-gray-900">
-                    {categoriaLabel}
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="#reservar"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-blue-600 text-white font-bold shadow-md hover:bg-blue-700 transition-colors"
-              >
-                <CalendarDays className="w-5 h-5" />
-                Ver disponibilidad
-              </a>
-              <a
-                href={WHATSAPP_HREF(barco.nombre)}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#25D366] text-[#25D366] font-bold hover:bg-[#25D366] hover:text-white transition-colors"
-              >
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp
-              </a>
+            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 text-sm shadow-md">
+              <span className="text-gray-500">Desde </span>
+              <span className="font-bold text-gray-900">{barco.precioDesde}€</span>
             </div>
-            <p className="text-sm text-gray-500 mt-4">
-              Desde{' '}
-              <span className="font-semibold text-gray-900">
-                {barco.precioDesde}€
-              </span>
-            </p>
           </div>
+
+          <div
+            id="reservar"
+            className="bg-white rounded-3xl shadow-lg border border-gray-200 p-4 sm:p-6 flex flex-col scroll-mt-24"
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <CalendarDays className="w-5 h-5 text-blue-600" />
+              <h2 className="text-lg font-bold text-gray-900">
+                Reserva tu fecha
+              </h2>
+            </div>
+            <div className="flex-1 flex items-center justify-center min-h-[380px]">
+              {barco.widgetReservaId ? (
+                <div className="w-full">
+                  <booking-widget widget-id={barco.widgetReservaId}></booking-widget>
+                  <Script
+                    src="https://widgets.regiondo.net/booking/v1/booking-widget.min.js"
+                    strategy="afterInteractive"
+                  />
+                </div>
+              ) : (
+                <div className="text-center max-w-sm">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 mb-4">
+                    <CalendarDays className="w-7 h-7 text-blue-600" />
+                  </div>
+                  <p className="text-gray-700 mb-4">
+                    Estamos integrando el calendario online para este barco. Mientras tanto, contáctanos por WhatsApp y te confirmamos disponibilidad al momento.
+                  </p>
+                  <a
+                    href={WHATSAPP_HREF(barco.nombre)}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#1faa55] transition-colors"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Consultar disponibilidad
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specs row */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <ul className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <Users className="w-5 h-5 text-blue-600" />
+            <div>
+              <p className="text-xs text-gray-500">Capacidad</p>
+              <p className="font-semibold text-gray-900">{barco.pax} personas</p>
+            </div>
+          </li>
+          <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <Ruler className="w-5 h-5 text-blue-600" />
+            <div>
+              <p className="text-xs text-gray-500">Eslora</p>
+              <p className="font-semibold text-gray-900">{barco.eslora}</p>
+            </div>
+          </li>
+          <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <Gauge className="w-5 h-5 text-blue-600" />
+            <div>
+              <p className="text-xs text-gray-500">Motor</p>
+              <p className="font-semibold text-gray-900">{barco.motor}</p>
+            </div>
+          </li>
+          <li className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <Anchor className="w-5 h-5 text-blue-600" />
+            <div>
+              <p className="text-xs text-gray-500">Categoría</p>
+              <p className="font-semibold text-gray-900">{categoriaLabel}</p>
+            </div>
+          </li>
+        </ul>
+        <div className="mt-6 flex justify-end">
+          <a
+            href={WHATSAPP_HREF(barco.nombre)}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#25D366] hover:underline"
+          >
+            <MessageCircle className="w-4 h-4" />
+            ¿Dudas? Pregúntanos por WhatsApp
+          </a>
         </div>
       </section>
 
@@ -325,52 +353,6 @@ export default function BarcoDetail({
           </div>
         </section>
       )}
-
-      {/* Reserva (calendario / widget) */}
-      <section id="reservar" className="bg-gray-50 py-16 scroll-mt-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
-            <CalendarDays className="w-7 h-7 text-blue-600" />
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Reserva tu fecha
-            </h2>
-          </div>
-          <p className="text-gray-600 mb-8">
-            Consulta disponibilidad y reserva online directamente desde aquí.
-          </p>
-
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-4 sm:p-6 min-h-[420px] flex items-center justify-center">
-            {barco.widgetReservaId ? (
-              <div className="w-full">
-                <booking-widget widget-id={barco.widgetReservaId}></booking-widget>
-                <Script
-                  src="https://widgets.regiondo.net/booking/v1/booking-widget.min.js"
-                  strategy="afterInteractive"
-                />
-              </div>
-            ) : (
-              <div className="text-center max-w-md">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 mb-4">
-                  <CalendarDays className="w-7 h-7 text-blue-600" />
-                </div>
-                <p className="text-gray-700 mb-4">
-                  Estamos integrando el calendario de reservas online para este barco.
-                  Mientras tanto, contáctanos por WhatsApp para reservar.
-                </p>
-                <a
-                  href={WHATSAPP_HREF(barco.nombre)}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#1faa55] transition-colors"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  Consultar disponibilidad
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="py-12">
