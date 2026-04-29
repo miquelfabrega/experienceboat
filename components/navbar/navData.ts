@@ -21,6 +21,9 @@ export const navData = {
         { name: 'Salidas privadas con patrón', url: '/experiencias-barco-roses/excursiones-privadas' },
         { name: 'Sunset Experience', url: '/experiencias-barco-roses/sunset-experience' },
         { name: 'Canal Tour Santa Margarita', url: '/experiencias-barco-roses/canal-tour-santa-margarita' },
+        { name: 'Cap de Creus — 3 Calas', url: '/experiencias-barco-roses/cap-de-creus-calas' },
+        { name: 'Excursión a Cadaqués', url: '/experiencias-barco-roses/cadaques' },
+        { name: 'Cuevas & Snorkel', url: '/experiencias-barco-roses/cuevas-snorkel' },
       ],
     },
     fr: {

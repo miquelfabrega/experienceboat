@@ -55,7 +55,7 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-6">Experiencias</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/experiencias-barco-roses" className="hover:text-white transition-colors">
+                <Link href="/experiencias-barco-roses/excursiones-privadas" className="hover:text-white transition-colors">
                   Excursión privada
                 </Link>
               </li>
@@ -65,8 +65,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/canales-santa-margarita" className="hover:text-white transition-colors">
+                <Link href="/experiencias-barco-roses/canal-tour-santa-margarita" className="hover:text-white transition-colors">
                   Canal Tour Santa Margarita
+                </Link>
+              </li>
+              <li>
+                <Link href="/experiencias-barco-roses/cap-de-creus-calas" className="hover:text-white transition-colors">
+                  Cap de Creus — 3 Calas
+                </Link>
+              </li>
+              <li>
+                <Link href="/experiencias-barco-roses/cadaques" className="hover:text-white transition-colors">
+                  Excursión a Cadaqués
+                </Link>
+              </li>
+              <li>
+                <Link href="/experiencias-barco-roses/cuevas-snorkel" className="hover:text-white transition-colors">
+                  Cuevas & Snorkel
                 </Link>
               </li>
             </ul>
