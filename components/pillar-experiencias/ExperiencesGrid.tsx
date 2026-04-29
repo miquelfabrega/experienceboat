@@ -22,7 +22,7 @@ const t: Record<Lang, {
   es: {
     label: 'Nuestras salidas',
     heading: 'Elige tu experiencia',
-    subtitle: 'Tenemos tres tipos de salida según el momento del día y lo que estés buscando:',
+    subtitle: 'Estas son nuestras salidas según el momento del día, el plan y las personas que vienen contigo:',
     experiences: [
       {
         id: 'excursiones',
