@@ -33,7 +33,7 @@ export default function HeroCarousel({ data }: { data?: HeroData } = {}) {
             alt={slide.alt}
             fill
             sizes="100vw"
-            quality={65}
+            quality={55}
             className="object-cover"
             priority={index === 0}
             fetchPriority={index === 0 ? 'high' : 'auto'}

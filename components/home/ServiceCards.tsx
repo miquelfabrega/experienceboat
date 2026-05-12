@@ -29,8 +29,8 @@ export default function ServiceCards({ data }: { data?: ServicesData } = {}) {
                   alt={item.title}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 700px"
-                  quality={70}
+                  sizes="(max-width: 640px) 380px, (max-width: 1024px) 50vw, 700px"
+                  quality={55}
                 />
                 {/* Category badge */}
                 <span className="absolute top-4 left-4 px-3 py-1 text-xs font-bold rounded-full bg-white/90 backdrop-blur-sm text-gray-900 shadow-sm">
