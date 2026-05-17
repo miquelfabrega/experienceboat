@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   title: 'Première fois en bateau sans permis à Roses',
   description: 'Tout ce qu\'il faut savoir avant de louer un bateau sans permis à Roses. À quoi s\'attendre, comment ça marche et pourquoi c\'est facile.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
+    canonical: 'https://experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
     languages: {
-      'x-default': 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/blog/first-time-boat-no-licence-roses',
+      'x-default': 'https://experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
+      es: 'https://experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
+      fr: 'https://experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
+      en: 'https://experienceboat.es/en/blog/first-time-boat-no-licence-roses',
     },
   },
   openGraph: {
     title: 'Première fois en bateau sans permis à Roses',
     description: 'Tout ce que vous devez savoir avant de louer un bateau sans permis à Roses pour la première fois.',
-    url: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
+    url: 'https://experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
     locale: 'fr_FR',
     type: 'article',
     images: ['/images/hero/hero-1.jpg'],
@@ -80,10 +80,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/hero/hero-1.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses' },
+    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/hero/hero-1.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses' },
     inLanguage: 'fr',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

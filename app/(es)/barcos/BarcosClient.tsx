@@ -85,7 +85,7 @@ const ES_SLUG: Record<string, string | null> = {
   'costa-brava-boat': 'costa-brava-joker',
   'tio-marc-mano': null,
   'remus-450': 'remus-450',
-  'dream-point-boat': 'dream-point-420',
+  'dream-line-430': 'dream-line-430',
   'sessa-marine-c35': 'sessa-marine-c35',
 };
 
@@ -107,7 +107,7 @@ const boatsData = [
   { id: 'costa-brava-boat',      name: 'Costa Brava Boat',     cat: 'with',    badge: null,                                                                                                              price: { es: 'Desde 320 € · ½ día',      fr: 'À partir de 320 € · ½ journée', en: 'From €320 · ½ day'      }, href: '/barcos',    img: '/images/boats/costa-brava.jpg'      },
   { id: 'tio-marc-mano',         name: 'Tío Marc Mano',        cat: 'with',    badge: { es: '−10% descuento aplicado',          fr: '−10 % de réduction appliquée',   en: '−10% discount applied'   }, price: { es: 'Desde 245 € · ½ día',      fr: 'À partir de 245 € · ½ journée', en: 'From €245 · ½ day'      }, href: '/barcos',       img: '/images/boats/tio-marc.jpg'         },
   { id: 'remus-450',             name: 'Remus 450',             cat: 'no',      badge: { es: '⚡ Ideal canales Santa Margarita', fr: '⚡ Idéal canaux Santa Margarita', en: '⚡ Perfect for Santa Margarita canals' }, price: { es: 'Desde 90 € · 1 hora', fr: 'À partir de 90 € · 1 heure', en: 'From €90 · 1 hour' }, href: '/barcos',           img: '/images/boats/remus.jpg'            },
-  { id: 'dream-point-boat',      name: 'Dream Point Boat',      cat: 'no',      badge: null,                                                                                                              price: { es: 'Desde 71 € · 1 hora',      fr: 'À partir de 71 € · 1 heure',    en: 'From €71 · 1 hour'      }, href: '/barcos',    img: '/images/boats/dream-point.jpg'      },
+  { id: 'dream-line-430',        name: 'Dream Line 430',        cat: 'no',      badge: null,                                                                                                              price: { es: 'Desde 71 € · 1 hora',      fr: 'À partir de 71 € · 1 heure',    en: 'From €71 · 1 hour'      }, href: '/barcos',    img: '/images/boats/dream-point.jpg'      },
   { id: 'sessa-marine-c35',      name: 'Sessa Marine C35',      cat: 'premium', badge: { es: '💎 Experiencia VIP',               fr: '💎 Expérience VIP',               en: '💎 VIP Experience'        }, price: { es: 'Desde 618 € · 1 día',      fr: 'À partir de 618 € · 1 journée', en: 'From €618 · 1 day'      }, href: '/barcos',    img: '/images/boats/sessa.jpg'            },
 ];
 

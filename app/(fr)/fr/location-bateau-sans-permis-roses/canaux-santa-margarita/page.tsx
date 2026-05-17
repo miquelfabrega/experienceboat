@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   description:
     'Naviguez les canaux de Santa Margarita sans permis depuis Roses. Eaux calmes, maisons face à l\'eau et Costa Brava authentique. Réservez.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+    canonical: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
     languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
+      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
     },
   },
   openGraph: {
     title: 'Bateau sans permis canaux Santa Margarita',
     description:
       'Naviguez les canaux de Santa Margarita sans permis depuis Roses. Eaux calmes, maisons face à l\'eau et Costa Brava authentique. Réservez.',
-    url: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+    url: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -49,9 +49,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
-      { '@type': 'ListItem', position: 2, name: 'Location bateau sans permis Roses', item: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses' },
-      { '@type': 'ListItem', position: 3, name: 'Canaux de Santa Margarita', item: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 2, name: 'Location bateau sans permis Roses', item: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses' },
+      { '@type': 'ListItem', position: 3, name: 'Canaux de Santa Margarita', item: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

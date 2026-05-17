@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 title: 'Blog de navegación en la Costa Brava',
   description: 'Guías, consejos y rutas para disfrutar del mar en Roses. Todo lo que necesitas saber sobre el alquiler de barcos y las excursiones en la Costa Brava.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/blog',
+    canonical: 'https://experienceboat.es/blog',
     languages: {
-      'x-default': 'https://www.experienceboat.es/blog',
-      es: 'https://www.experienceboat.es/blog',
-      fr: 'https://www.experienceboat.es/fr/blog',
-      en: 'https://www.experienceboat.es/en/blog',
+      'x-default': 'https://experienceboat.es/blog',
+      es: 'https://experienceboat.es/blog',
+      fr: 'https://experienceboat.es/fr/blog',
+      en: 'https://experienceboat.es/en/blog',
     },
   },
 };

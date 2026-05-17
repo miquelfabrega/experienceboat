@@ -14,7 +14,7 @@ import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
 
-const URL = 'https://www.experienceboat.es/experiencias-barco-roses/cuevas-snorkel';
+const URL = 'https://experienceboat.es/experiencias-barco-roses/cuevas-snorkel';
 
 export const metadata: Metadata = {
   title: 'Cuevas & Snorkel en barco — Costa Brava desde Roses',
@@ -82,7 +82,7 @@ function TouristTripSchema() {
     inLanguage: 'es',
     provider: {
       '@type': 'LocalBusiness',
-      '@id': 'https://www.experienceboat.es/#local-business',
+      '@id': 'https://experienceboat.es/#local-business',
     },
     offers: {
       '@type': 'Offer',

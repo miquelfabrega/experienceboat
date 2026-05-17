@@ -10,7 +10,7 @@ export const navData = {
   ],
   barcosSinLicencia: [
     { name: 'Remus 450', price: 90, url: '/barcos', premium: false },
-    { name: 'Dream Point Boat', price: 71, url: '/barcos', premium: false },
+    { name: 'Dream Line 430', price: 71, url: '/barcos', premium: false },
   ],
   /** Menú de experiencias por idioma. */
   experiencias: {

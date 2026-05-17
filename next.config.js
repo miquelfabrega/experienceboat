@@ -69,13 +69,15 @@ const nextConfig = {
       { source: '/barcos/zodiac-medline-i', destination: '/barcos/', permanent: true },
       { source: '/barcos/zodiac-medline-ii', destination: '/barcos/', permanent: true },
       // ── Barcos — slugs antiguos → nuevo slug equivalente ──
-      { source: '/barcos/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
+      { source: '/barcos/dream-point-boat', destination: '/barcos/dream-line-430', permanent: true },
+      { source: '/barcos/dream-point-420', destination: '/barcos/dream-line-430', permanent: true },
+      { source: '/dream-line-430', destination: '/barcos/dream-line-430', permanent: true },
       { source: '/barcos/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
       // ── Barcos — URLs antiguas en raíz (WordPress) → ficha o índice ──
       { source: '/jeanneau-595-reineta', destination: '/barcos/jeanneau-595-reineta', permanent: true },
       { source: '/sessa-marine-c35', destination: '/barcos/sessa-marine-c35', permanent: true },
       { source: '/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
-      { source: '/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
+      { source: '/dream-point-boat', destination: '/barcos/dream-line-430', permanent: true },
       { source: '/zodiac-medline-ii', destination: '/barcos/', permanent: true },
       { source: '/zodiac-medline-i', destination: '/barcos/', permanent: true },
       { source: '/tio-marc-mano', destination: '/barcos/', permanent: true },
@@ -88,6 +90,17 @@ const nextConfig = {
       { source: '/en/santa-margarita-canals', destination: '/en/santa-margarita-canals-roses/', permanent: true },
       // ── URL ES usada en contexto FR ──
       { source: '/fr/experiencias-barco-roses', destination: '/fr/experiences-bateau-roses/', permanent: true },
+      // ── Search Console: 404 y "rastreada sin indexar" — URLs WP heredadas ──
+      { source: '/canal-tour-santa-margarita', destination: '/experiencias-barco-roses/canal-tour-santa-margarita/', permanent: true },
+      { source: '/politica-de-privacidad', destination: '/politica-privacidad/', permanent: true },
+      { source: '/politica-de-cookies-ue', destination: '/cookies/', permanent: true },
+      { source: '/barco-en-roses/alquiler-de-barco-en-roses/alquiler-de-barcos-sin-licencia', destination: '/alquiler-barco-sin-licencia-roses/', permanent: true },
+      { source: '/alquiler-de-barcos-con-licencia', destination: '/alquiler-barco-con-licencia-roses/', permanent: true },
+      { source: '/alquiler-de-barcos-sin-licencia', destination: '/alquiler-barco-sin-licencia-roses/', permanent: true },
+      { source: '/barco-en-roses/excursiones-en-barco-en-roses', destination: '/experiencias-barco-roses/', permanent: true },
+      { source: '/excursiones-en-barco-en-roses', destination: '/experiencias-barco-roses/', permanent: true },
+      // ── Experiencia jubilada ──
+      { source: '/excursion-en-moto-de-agua-a-playa-almadraba', destination: '/experiencias-barco-roses/', permanent: true },
     ];
   },
 };

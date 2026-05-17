@@ -10,19 +10,19 @@ title: 'Bateau de Santa Margarita au Cap de Creus',
   description:
     'L\'itinéraire nautique le plus complet de la Costa Brava nord : des canaux de Santa Margarita au Cap de Creus en bateau privé depuis Roses. Réservez en ligne.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
+    canonical: 'https://experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
     languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/cap-de-creus-route',
+      'x-default': 'https://experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
+      es: 'https://experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
+      fr: 'https://experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
+      en: 'https://experienceboat.es/en/santa-margarita-canals-roses/cap-de-creus-route',
     },
   },
   openGraph: {
 title: 'Itinéraire en bateau : canaux de Santa Margarita → Cap de Creus',
     description:
       'L\'itinéraire nautique le plus complet de la Costa Brava nord : des canaux de Santa Margarita au Cap de Creus en bateau privé depuis Roses. Réservez en ligne.',
-    url: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
+    url: 'https://experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'article',
@@ -89,9 +89,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
-      { '@type': 'ListItem', position: 2, name: 'Canaux de Santa Margarita', item: 'https://www.experienceboat.es/fr/canaux-santa-margarita' },
-      { '@type': 'ListItem', position: 3, name: 'Itinéraire Cap de Creus', item: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 2, name: 'Canaux de Santa Margarita', item: 'https://experienceboat.es/fr/canaux-santa-margarita' },
+      { '@type': 'ListItem', position: 3, name: 'Itinéraire Cap de Creus', item: 'https://experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus' },
     ],
   };
   return (

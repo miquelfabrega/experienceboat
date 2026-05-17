@@ -6,7 +6,7 @@ import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
 
-const URL = 'https://www.experienceboat.es/experiencias-barco-roses/cadaques';
+const URL = 'https://experienceboat.es/experiencias-barco-roses/cadaques';
 
 export const metadata: Metadata = {
   title: 'Excursión a Cadaqués en barco desde Roses',
@@ -44,9 +44,57 @@ const PRECIOS = [
   { temporada: 'Temporada alta', precio: '95 €' },
 ];
 
+const touristTripSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristTrip',
+  '@id': URL,
+  name: 'Excursión a Cadaqués en barco desde Roses',
+  url: URL,
+  description:
+    'Navega desde Roses hasta Cadaqués bordeando el Cap de Creus. Visita el pueblo de Dalí con tiempo libre para pasear y comer.',
+  inLanguage: 'es',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://experienceboat.es/#local-business',
+  },
+  availableLanguage: [
+    { '@type': 'Language', name: 'Spanish' },
+    { '@type': 'Language', name: 'French' },
+    { '@type': 'Language', name: 'English' },
+    { '@type': 'Language', name: 'Catalan' },
+  ],
+  offers: {
+    '@type': 'AggregateOffer',
+    lowPrice: '75',
+    highPrice: '95',
+    priceCurrency: 'EUR',
+    offerCount: 3,
+    availability: 'https://schema.org/InStock',
+    url: 'https://experienceboat.es/reservas',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://experienceboat.es' },
+    { '@type': 'ListItem', position: 2, name: 'Experiencias en barco en Roses', item: 'https://experienceboat.es/experiencias-barco-roses' },
+    { '@type': 'ListItem', position: 3, name: 'Excursión a Cadaqués en barco desde Roses', item: URL },
+  ],
+};
+
 export default function CadaquesPage() {
   return (
     <main id="main-content" className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(touristTripSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <nav
         aria-label="Breadcrumb"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 text-sm text-gray-500"

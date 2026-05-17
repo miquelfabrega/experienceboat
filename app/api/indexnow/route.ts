@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 // Key generada para experienceboat.es
 
 const INDEXNOW_KEY = 'experienceboat2026';
-const BASE_URL = 'https://www.experienceboat.es';
+const BASE_URL = 'https://experienceboat.es';
 
 // URLs principales para notificar a Bing/Google
 const URLS_TO_SUBMIT = [

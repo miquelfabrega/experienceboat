@@ -12,19 +12,19 @@ title: 'Private Boat Excursions in Roses',
   description:
     'Private boat excursions from Roses with skipper included. Cap de Creus, unspoilt coves and Roses Bay. Your group only on board. Book online now.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+    canonical: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+      'x-default': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      es: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+      en: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     },
   },
   openGraph: {
 title: 'Private Boat Excursions in Roses',
     description:
       'Private boat excursions from Roses with skipper included. Cap de Creus, unspoilt coves and Roses Bay. Your group only on board.',
-    url: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+    url: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -83,15 +83,15 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+    '@id': 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     name: 'Private boat excursions in Roses with skipper',
-    url: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+    url: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     description: 'Private boat excursion to Cap de Creus, hidden coves and the Bay of Roses. Skipper included, route tailored to your group. Half day or full day.',
     duration: 'PT4H',
     inLanguage: 'en',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://www.experienceboat.es/#local-business',
+    '@id': 'https://experienceboat.es/#local-business',
   },
     availableLanguage: [
       { '@type': 'Language', 'name': 'Spanish' },
@@ -106,7 +106,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://www.experienceboat.es/reservas',
+      url: 'https://experienceboat.es/reservas',
     },
   };
 
@@ -129,19 +129,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.experienceboat.es/en',
+        item: 'https://experienceboat.es/en',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Boat experiences in Roses',
-        item: 'https://www.experienceboat.es/en/boat-experiences-roses',
+        item: 'https://experienceboat.es/en/boat-experiences-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Private boat excursions in Roses',
-        item: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+        item: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
       },
     ],
   };

@@ -7,7 +7,7 @@ const title = 'Política de privacidad';
 export const metadata: Metadata = {
   title: title,
   description: 'Política de privacidad y protección de datos personales (RGPD) de Experience Boat. Cómo recogemos, usamos y protegemos tu información al reservar.',
-  alternates: { canonical: 'https://www.experienceboat.es/politica-privacidad' },
+  alternates: { canonical: 'https://experienceboat.es/politica-privacidad' },
 };
 
 export default async function PoliticaPrivacidadPage() {

@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',
   description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava. Cala Montjoi, îles Medas, Cap de Creus et plus encore.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+    canonical: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
     languages: {
-      'x-default': 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      es: 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
-      en: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
+      'x-default': 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      es: 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      fr: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+      en: 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
     },
   },
   openGraph: {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',
     description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava nord.',
-    url: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+    url: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
     locale: 'fr_FR',
     type: 'article',
     images: ['/images/hero/hero-1.jpg'],
@@ -59,10 +59,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/services/canales.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava' },
+    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/services/canales.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava' },
     inLanguage: 'fr',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

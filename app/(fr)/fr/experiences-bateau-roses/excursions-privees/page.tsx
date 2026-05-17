@@ -12,19 +12,19 @@ title: 'Excursions privées en bateau à Roses',
   description:
     'Excursions privées en bateau depuis Roses avec skipper inclus. Cap de Creus, criques vierges et baie de Roses. Rien que pour votre groupe. Réservez en ligne.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+    canonical: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
     languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+      'x-default': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      es: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+      en: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     },
   },
   openGraph: {
 title: 'Excursions privées en bateau à Roses',
     description:
       'Excursions privées en bateau depuis Roses avec skipper inclus. Cap de Creus, criques vierges et baie de Roses. Rien que pour votre groupe.',
-    url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+    url: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -83,15 +83,15 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+    '@id': 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
     name: 'Excursions privées en bateau à Roses avec skipper',
-    url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+    url: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
     description: 'Excursion privée en bateau au Cap de Creus, criques et baie de Roses. Skipper inclus, itinéraire adapté au groupe. Demi-journée ou journée complète.',
     duration: 'PT4H',
     inLanguage: 'fr',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://www.experienceboat.es/#local-business',
+    '@id': 'https://experienceboat.es/#local-business',
   },
     availableLanguage: [
       { '@type': 'Language', 'name': 'Spanish' },
@@ -106,7 +106,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://www.experienceboat.es/reservas',
+      url: 'https://experienceboat.es/reservas',
     },
   };
 
@@ -129,19 +129,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://www.experienceboat.es/fr',
+        item: 'https://experienceboat.es/fr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Expériences en bateau à Roses',
-        item: 'https://www.experienceboat.es/fr/experiences-bateau-roses',
+        item: 'https://experienceboat.es/fr/experiences-bateau-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Excursions privées en bateau à Roses',
-        item: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+        item: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
       },
     ],
   };

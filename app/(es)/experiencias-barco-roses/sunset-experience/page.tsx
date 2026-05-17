@@ -21,19 +21,19 @@ title: 'Sunset Experience en barco en Roses',
   description:
     'Ver el atardecer desde un barco en Roses es una experiencia que no se olvida. Canales de Santa Margarita, bahía de Roses y el mejor momento del día. Reserva ya.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
+    canonical: 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
     languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/sunset-experience',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/sunset-experience',
+      'x-default': 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
+      es: 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
+      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/sunset-experience',
+      en: 'https://experienceboat.es/en/boat-experiences-roses/sunset-experience',
     },
   },
   openGraph: {
 title: 'Sunset Experience en barco en Roses',
     description:
       'Ver el atardecer desde un barco en Roses es una experiencia que no se olvida. Canales de Santa Margarita, bahía de Roses y el mejor momento del día. Reserva ya.',
-    url: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
+    url: 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -51,15 +51,15 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
+    '@id': 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
     name: 'Sunset Experience en barco en Roses',
-    url: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
+    url: 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
     description: 'Salida en barco al atardecer desde Roses. 2 horas por los canales de Santa Margarita y la bahía. La experiencia más romántica de la Costa Brava.',
     duration: 'PT2H',
     inLanguage: 'es',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://www.experienceboat.es/#local-business',
+    '@id': 'https://experienceboat.es/#local-business',
   },
     availableLanguage: [
       { '@type': 'Language', 'name': 'Spanish' },
@@ -74,7 +74,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://www.experienceboat.es/reservas',
+      url: 'https://experienceboat.es/reservas',
     },
   };
 
@@ -97,19 +97,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.experienceboat.es',
+        item: 'https://experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Experiencias en barco en Roses',
-        item: 'https://www.experienceboat.es/experiencias-barco-roses',
+        item: 'https://experienceboat.es/experiencias-barco-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Sunset Experience en barco en Roses',
-        item: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
+        item: 'https://experienceboat.es/experiencias-barco-roses/sunset-experience',
       },
     ],
   };

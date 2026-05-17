@@ -21,19 +21,19 @@ title: 'Location de vedette sur la Côte Sauvage — Roses',
   description:
     'Louez une vedette à Roses depuis les canaux de Santa Margarita. Avec permis ou capitaine. Accès direct au Cap de Creus et baie de Roses.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+    canonical: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
     languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
+      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
     },
   },
   openGraph: {
 title: 'Location de vedette sur la Côte Sauvage — Roses',
     description:
       'Louez une vedette à Roses depuis les canaux de Santa Margarita. Avec permis ou capitaine. Accès direct au Cap de Creus et baie de Roses.',
-    url: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+    url: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -52,18 +52,18 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Location bateau avec permis Roses',
-        item: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
+        item: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Vedette Côte Sauvage',
-        item: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+        item: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
       },
     ],
   };
@@ -100,11 +100,20 @@ function FAQSchema() {
 function ProductSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': 'Service',
+    serviceType: 'Boat rental',
     name: 'Location de vedette sur la Côte Sauvage — Roses',
     description:
       'Location de vedette depuis les canaux de Santa Margarita à Roses, Costa Brava nord. Avec permis ou avec capitaine inclus.',
-    brand: { '@type': 'Brand', name: 'Experience Boat' },
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://experienceboat.es/#local-business',
+      name: 'Experience Boat',
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: 'Roses, Costa Brava',
+    },
     offers: [
       {
         '@type': 'AggregateOffer',
@@ -150,7 +159,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://www.experienceboat.es',
+    url: 'https://experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {

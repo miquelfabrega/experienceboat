@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 title: 'Best Snorkelling Spots on the Costa Brava',
   description: 'Discover the must-visit coves and marine reserves for snorkelling on the Costa Brava. Cala Montjoi, Medes Islands, Cap de Creus and more.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
+    canonical: 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
     languages: {
-      'x-default': 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      es: 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
-      en: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
+      'x-default': 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      es: 'https://experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
+      fr: 'https://experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+      en: 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
     },
   },
   openGraph: {
 title: 'Best Snorkelling Spots on the Costa Brava',
     description: 'Discover the must-visit coves and marine reserves for snorkelling on the northern Costa Brava.',
-    url: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
+    url: 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
     locale: 'en_GB',
     type: 'article',
     images: ['/images/hero/hero-1.jpg'],
@@ -59,10 +59,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/services/canales.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava' },
+    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/services/canales.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/en/blog/best-snorkeling-spots-costa-brava' },
     inLanguage: 'en',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

@@ -23,19 +23,19 @@ title: 'Alquiler de barco con licencia en Roses',
   description:
     'Alquila un barco con licencia en Roses y navega libre por la bahía, el Cap de Creus y las mejores calas de la Costa Brava. Embarcaciones potentes. Reserva ya.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+    canonical: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
     languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
+      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
+      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
+      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
+      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
     },
   },
   openGraph: {
 title: 'Alquiler de barco con licencia en Roses',
     description:
       'Alquila un barco con licencia en Roses y navega libre por la bahía, el Cap de Creus y las mejores calas de la Costa Brava. Embarcaciones potentes. Reserva ya.',
-    url: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+    url: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -78,7 +78,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://www.experienceboat.es',
+    url: 'https://experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {
@@ -141,13 +141,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.experienceboat.es',
+        item: 'https://experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Alquiler de barco con licencia en Roses',
-        item: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+        item: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
       },
     ],
   };

@@ -23,19 +23,19 @@ title: 'Canales de Santa Margarita en barco — Roses',
   description:
     'Explora los canales de Santa Margarita desde el agua. Casas frente al mar y la Costa Brava más auténtica. Salidas privadas desde Roses.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/canales-santa-margarita',
+    canonical: 'https://experienceboat.es/canales-santa-margarita',
     languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/canales-santa-margarita',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
+      'x-default': 'https://experienceboat.es/canales-santa-margarita',
+      es: 'https://experienceboat.es/canales-santa-margarita',
+      fr: 'https://experienceboat.es/fr/canaux-santa-margarita',
+      en: 'https://experienceboat.es/en/santa-margarita-canals-roses',
     },
   },
   openGraph: {
 title: 'Canales de Santa Margarita en barco — Roses',
     description:
       'Explora los canales de Santa Margarita desde el agua. Casas frente al mar y la Costa Brava más auténtica. Salidas privadas desde Roses.',
-    url: 'https://www.experienceboat.es/canales-santa-margarita',
+    url: 'https://experienceboat.es/canales-santa-margarita',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -80,7 +80,7 @@ function TouristAttractionSchema() {
     name: 'Canales de Santa Margarita — Excursión en barco',
     description:
       'Recorrido en barco por los canales navegables de Santa Margarita en Roses, Costa Brava. Salidas privadas con y sin licencia desde la Marina de Santa Margarita.',
-    url: 'https://www.experienceboat.es/canales-santa-margarita',
+    url: 'https://experienceboat.es/canales-santa-margarita',
     touristType: 'Familias, parejas, grupos de amigos',
     geo: {
       '@type': 'GeoCoordinates',
@@ -116,13 +116,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.experienceboat.es',
+        item: 'https://experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Canales de Santa Margarita en barco',
-        item: 'https://www.experienceboat.es/canales-santa-margarita',
+        item: 'https://experienceboat.es/canales-santa-margarita',
       },
     ],
   };

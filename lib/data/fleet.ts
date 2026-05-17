@@ -106,8 +106,8 @@ export const fleet: Barco[] = [
     widgetReservaId: WIDGET_SIN_LICENCIA,
   },
   {
-    slug: 'dream-point-420',
-    nombre: 'Dream Point 420',
+    slug: 'dream-line-430',
+    nombre: 'Dream Line 430',
     categoria: 'sin-licencia',
     activo: true,
     pax: 4,
@@ -122,7 +122,7 @@ export const fleet: Barco[] = [
       notaMedioDia: NOTA_SIN_LICENCIA,
     },
     precioDesde: 165,
-    imagen: 'https://picsum.photos/seed/dream-point-420/1200/800',
+    imagen: 'https://picsum.photos/seed/dream-line-430/1200/800',
     badge: null,
     descripcionCorta:
       'La opción más compacta y económica sin licencia. 4 pax, fácil de manejar y pensada para una primera experiencia en el mar.',

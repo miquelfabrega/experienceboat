@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   title: 'Boat trip to Cap de Creus from Roses',
   description: 'Guide to the boat route from the Santa Margarita canals to Cap de Creus. Coves, food stops and everything you need to know before setting off.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
+    canonical: 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
     languages: {
-      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
+      'x-default': 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      es: 'https://experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
+      fr: 'https://experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
+      en: 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
     },
   },
   openGraph: {
     title: 'Boat trip to Cap de Creus from Roses',
     description: 'Guide to the boat route from the Santa Margarita canals to Cap de Creus. Coves, stops and all you need to know.',
-    url: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
+    url: 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
     locale: 'en_GB',
     type: 'article',
     images: ['/images/hero/hero-1.jpg'],
@@ -70,10 +70,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/hero/hero-2.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses' },
+    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/hero/hero-2.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses' },
     inLanguage: 'en',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

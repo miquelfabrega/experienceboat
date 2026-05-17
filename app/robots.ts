@@ -6,10 +6,25 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/test', '/api', '/_next/image/', '/_next/static/'],
+        disallow: [
+          '/test',
+          '/api',
+          '/_next/image/',
+          '/_next/static/',
+          '/wp-admin/',
+          '/wp-content/',
+          '/wp-includes/',
+          '/wp-json/',
+          '/*.php$',
+          '/*?re-product-id=',
+          '/*?nocache=',
+          '/*/feed/',
+          '/feed/',
+          '/category/',
+        ],
       },
     ],
-    sitemap: 'https://www.experienceboat.es/sitemap.xml',
-    host: 'https://www.experienceboat.es',
+    sitemap: 'https://experienceboat.es/sitemap.xml',
+    host: 'https://experienceboat.es',
   };
 }

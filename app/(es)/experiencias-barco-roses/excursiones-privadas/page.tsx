@@ -19,19 +19,19 @@ title: 'Excursiones privadas en barco en Roses',
   description:
     'Excursiones privadas en barco desde Roses con patrón incluido. Cap de Creus, calas vírgenes y bahía de Roses. Solo tu grupo a bordo. Reserva online ya.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    canonical: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
+      'x-default': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      es: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+      fr: 'https://experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
+      en: 'https://experienceboat.es/en/boat-experiences-roses/private-excursions',
     },
   },
   openGraph: {
 title: 'Excursiones privadas en barco en Roses',
     description:
       'Excursiones privadas en barco desde Roses con patrón incluido. Cap de Creus, calas vírgenes y bahía de Roses. Solo tu grupo a bordo.',
-    url: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    url: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -90,15 +90,15 @@ function TouristTripSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
-    '@id': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    '@id': 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     name: 'Excursiones privadas en barco en Roses con patrón',
-    url: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+    url: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
     description: 'Excursión privada en barco por el Cap de Creus, calas y bahía de Roses. Patrón incluido, ruta adaptada al grupo. Medio día o día completo.',
     duration: 'PT4H',
     inLanguage: 'es',
     provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://www.experienceboat.es/#local-business',
+    '@id': 'https://experienceboat.es/#local-business',
   },
     availableLanguage: [
       { '@type': 'Language', 'name': 'Spanish' },
@@ -113,7 +113,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://www.experienceboat.es/reservas',
+      url: 'https://experienceboat.es/reservas',
     },
   };
 
@@ -134,19 +134,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.experienceboat.es',
+        item: 'https://experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Experiencias en barco en Roses',
-        item: 'https://www.experienceboat.es/experiencias-barco-roses',
+        item: 'https://experienceboat.es/experiencias-barco-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Excursiones privadas en barco en Roses',
-        item: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
+        item: 'https://experienceboat.es/experiencias-barco-roses/excursiones-privadas',
       },
     ],
   };

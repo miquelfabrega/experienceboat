@@ -16,12 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
     title: 'Alquiler de barco en Roses — Costa Brava',
     description: 'Alquiler de barcos con y sin licencia en Roses, Costa Brava. Salidas privadas desde los canales de Santa Margarita hacia el Cap de Creus. Reserva online.',
     alternates: {
-      canonical: 'https://www.experienceboat.es',
+      canonical: 'https://experienceboat.es',
       languages: {
-        'x-default': 'https://www.experienceboat.es',
-        es: 'https://www.experienceboat.es',
-        fr: 'https://www.experienceboat.es/fr',
-        en: 'https://www.experienceboat.es/en',
+        'x-default': 'https://experienceboat.es',
+        es: 'https://experienceboat.es',
+        fr: 'https://experienceboat.es/fr',
+        en: 'https://experienceboat.es/en',
       },
     },
   }

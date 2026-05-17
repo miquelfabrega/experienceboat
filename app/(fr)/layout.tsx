@@ -3,7 +3,7 @@ import "../globals.css";
 import RootShell from "@/components/layout/RootShell";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.experienceboat.es"),
+  metadataBase: new URL("https://experienceboat.es"),
   title: {
     template: "%s | Experience Boat",
     default: "Experience Boat — Location de bateau à Roses, Costa Brava",

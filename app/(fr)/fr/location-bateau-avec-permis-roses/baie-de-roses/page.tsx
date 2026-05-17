@@ -20,19 +20,19 @@ title: 'Location bateau avec permis, baie de Roses',
   description:
     'Bateau avec permis dans la baie de Roses. Naviguez la Costa Brava nord : criques, Cap de Creus et liberté totale. Départ Santa Margarita.',
   alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
+    canonical: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
     languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
+      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
+      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
+      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     },
   },
   openGraph: {
 title: 'Location bateau avec permis, baie de Roses',
     description:
       'Bateau avec permis dans la baie de Roses. Naviguez la Costa Brava nord : criques, Cap de Creus et liberté totale. Départ Santa Margarita.',
-    url: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
+    url: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -51,18 +51,18 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Location bateau avec permis Roses',
-        item: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
+        item: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Baie de Roses',
-        item: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
+        item: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
       },
     ],
   };
@@ -101,7 +101,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://www.experienceboat.es',
+    url: 'https://experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {

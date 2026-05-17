@@ -7,7 +7,7 @@ import {
 } from '@/lib/data/fleet';
 import BarcoDetail from '@/components/barcos/BarcoDetail';
 
-const SITE = 'https://www.experienceboat.es';
+const SITE = 'https://experienceboat.es';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -110,12 +110,20 @@ export default function BarcoSlugPage({
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: barco.nombre,
+    '@type': 'Service',
+    serviceType: barco.categoria === 'sin-licencia' ? 'Boat rental without licence' : 'Boat rental with licence',
+    name: `Alquiler ${barco.nombre} — Roses`,
     description: barco.descripcionCorta,
     image: [barco.imagen],
-    brand: { '@type': 'Brand', name: 'Experience Boat' },
-    category: barco.categoria === 'sin-licencia' ? 'Boat rental without licence' : 'Boat rental with licence',
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://experienceboat.es/#local-business',
+      name: 'Experience Boat',
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: 'Roses, Costa Brava',
+    },
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'EUR',
@@ -123,6 +131,7 @@ export default function BarcoSlugPage({
       highPrice: barco.precios.diaCompletoAlta,
       offerCount: offers.length,
       offers,
+      url,
     },
   };
 
