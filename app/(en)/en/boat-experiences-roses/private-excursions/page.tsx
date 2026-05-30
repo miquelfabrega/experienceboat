@@ -164,8 +164,8 @@ export default function PrivateExcursionsRosesPage() {
         {/* Hero */}
         <section className="relative min-h-[52vh] flex items-end bg-slate-900">
           <Image
-            src="https://picsum.photos/seed/excursion-privada-cap-creus/1600/900"
-            alt="Private boat excursions in Roses with skipper"
+            src="/images/experiencias/excursiones-privadas-hero.webp"
+            alt="Private boat trip anchored over turquoise water in a Cap de Creus cove, Roses"
             fill
             className="object-cover opacity-80"
             priority

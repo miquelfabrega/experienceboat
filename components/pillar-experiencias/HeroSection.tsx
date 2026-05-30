@@ -7,9 +7,10 @@ export default function HeroSection() {
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background photo */}
       <Image
-        src="https://picsum.photos/seed/experiencias-roses/1600/900"
-        alt="Experiencias en barco en Roses - Excursiones privadas y atardeceres"
+        src="/images/experiencias/experiencias-roses-hero.webp"
+        alt="Vista aérea de la bahía y el puerto deportivo de Roses, Costa Brava"
         fill
+        sizes="100vw"
         className="object-cover"
         priority
       />
