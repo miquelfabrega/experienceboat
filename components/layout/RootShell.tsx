@@ -4,7 +4,6 @@ import SchemaOrg from "@/components/layout/SchemaOrg";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import Footer from "@/components/layout/Footer";
 import CookieBanner from "@/components/layout/CookieBanner";
-import TrustBarSticky from "@/components/layout/TrustBarSticky";
 import { Navbar } from "@/components/navbar/Navbar";
 
 const GTM_ID = "GTM-KF823TM7";
@@ -65,7 +64,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Footer />
         <CookieBanner />
         <WhatsAppButton />
-        <TrustBarSticky />
       </body>
     </html>
   );
