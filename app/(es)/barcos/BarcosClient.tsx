@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -174,11 +175,14 @@ export default function BarcosClient({ lang = 'es' }: { lang?: Lang }) {
                                   {boat.badge[lang]}
                                 </span>
                               )}
-                              <div className="w-full h-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center text-sky-200">
-                                <svg className="w-20 h-20 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                </svg>
-                              </div>
+                              <Image
+                                src={boat.img}
+                                alt={boat.name}
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                quality={65}
+                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                              />
                             </div>
                             <div className="p-6 flex flex-col flex-1">
                               <h3 className="font-bold text-gray-900 text-xl mb-4 group-hover:text-sky-600 transition-colors">{boat.name}</h3>
