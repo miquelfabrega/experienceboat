@@ -84,7 +84,7 @@ export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProp
         <div className="rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col lg:flex-row">
           <div className="relative lg:w-[42%] min-h-[240px] lg:min-h-0 aspect-[4/3] lg:aspect-auto">
             <Image
-              src="https://picsum.photos/seed/canal-tour-product/800/600"
+              src="/santa-margarita/canal-tour-card.webp"
               alt={t.altImage}
               fill
               className="object-cover"

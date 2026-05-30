@@ -8,8 +8,8 @@ export default function MarinaSection() {
           {/* Image */}
           <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/seed/marina-santa-margarita/800/600"
-              alt="Marina de Santa Margarita en Roses"
+              src="/santa-margarita/marina-descubre.webp"
+              alt="Vista aérea de los canales de Santa Margarita serpenteando hacia el mar al atardecer, Roses (Costa Brava)"
               fill
               className="object-cover"
             />

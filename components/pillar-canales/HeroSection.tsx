@@ -7,8 +7,8 @@ export default function HeroSection() {
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background photo */}
       <Image
-        src="https://picsum.photos/seed/canales-roses-hero/1600/900"
-        alt="Barco navegando por los canales de Santa Margarita en Roses, Costa Brava"
+        src="/santa-margarita/hero-canales.webp"
+        alt="Vista aérea de la red de canales de Santa Margarita al atardecer, Roses (Costa Brava)"
         fill
         className="object-cover"
         priority

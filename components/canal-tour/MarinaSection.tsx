@@ -46,7 +46,7 @@ export default function MarinaSection({ lang = 'es' }: MarinaSectionProps) {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/seed/marina-santa-margarita/800/600"
+              src="/santa-margarita/marina-descubre.webp"
               alt={t.altImage}
               fill
               className="object-cover"
