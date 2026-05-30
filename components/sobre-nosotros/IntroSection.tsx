@@ -3,7 +3,7 @@ import Image from 'next/image';
 type Lang = 'es' | 'fr' | 'en';
 
 const t: Record<Lang, {
-  tag: string; h2: string; p1: string; p2: string; quote: string; imgAlt: string;
+  tag: string; h2: string; p1: string; p2: string; quote: string; imgAlt: string; hostRole: string;
 }> = {
   es: {
     tag: 'Acerca de Experience Boat',
@@ -11,7 +11,8 @@ const t: Record<Lang, {
     p1: 'Somos Experience Boat, <strong>tu empresa de barcos en Roses</strong>. Operamos desde la Marina de Santa Margarita con <strong>8 embarcaciones propias</strong>, el punto de partida perfecto para explorar uno de los litorales más espectaculares del Mediterráneo.',
     p2: 'Nuestro propósito nació de una convicción sencilla: <strong>el mar de la Costa Brava merece ser disfrutado por todos</strong>. Por eso ofrecemos barcos con y sin licencia, excursiones privadas al Cap de Creus y paseos tranquilos por los canales de Santa Margarita. Sea cual sea tu experiencia náutica, tenemos la embarcación y el servicio adecuados para ti.',
     quote: 'Nos aseguramos de que cada cliente disfrute al máximo su tiempo en el gran océano de la Costa Brava.',
-    imgAlt: 'Navegando por la Costa Brava en barco',
+    imgAlt: 'Toto, patrón y anfitrión de Experience Boat, a bordo en la bahía de Roses',
+    hostRole: 'Patrón y anfitrión',
   },
   fr: {
     tag: 'À propos d\'Experience Boat',
@@ -19,7 +20,8 @@ const t: Record<Lang, {
     p1: "Nous sommes Experience Boat, <strong>votre spécialiste de la location de bateaux à Roses</strong>. Nous opérons depuis la Marina de Santa Margarita avec <strong>8 embarcations en propre</strong> — point de départ idéal pour explorer l'un des littoraux les plus spectaculaires de la Méditerranée.",
     p2: "Notre mission repose sur une conviction simple : <strong>la mer de la Costa Brava mérite d'être savourée par tous</strong>. C'est pourquoi nous proposons des bateaux avec et sans permis, des excursions privées au Cap de Creus et des balades dans les canaux de Santa Margarita. Quelle que soit votre expérience nautique, nous avons l'embarcation et le service qui vous correspondent.",
     quote: 'Nous veillons à ce que chaque client profite au maximum de son temps sur le grand océan de la Costa Brava.',
-    imgAlt: 'Navigation sur la Costa Brava en bateau',
+    imgAlt: 'Toto, skipper et hôte d\'Experience Boat, à bord dans la baie de Roses',
+    hostRole: 'Skipper et hôte',
   },
   en: {
     tag: 'About Experience Boat',
@@ -27,7 +29,8 @@ const t: Record<Lang, {
     p1: "We are Experience Boat, <strong>your boat rental company in Roses</strong>. We operate from the Marina de Santa Margarita with <strong>8 boats of our own</strong> — the perfect departure point for exploring one of the most spectacular coastlines in the Mediterranean.",
     p2: "Our purpose grew from a simple belief: <strong>the Costa Brava sea is there to be enjoyed by everyone</strong>. That's why we offer boats with and without a licence, private excursions to Cap de Creus and peaceful cruises through the Santa Margarita canals. Whatever your nautical experience, we have the right boat and service for you.",
     quote: 'We make sure every guest gets the most out of their time on the great ocean of the Costa Brava.',
-    imgAlt: 'Sailing on the Costa Brava',
+    imgAlt: 'Toto, skipper and host at Experience Boat, on board in the Bay of Roses',
+    hostRole: 'Skipper & host',
   },
 };
 
@@ -54,14 +57,22 @@ export default function IntroSection({ lang = 'es' }: { lang?: Lang }) {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src="https://picsum.photos/seed/sobre-nosotros-costa-brava/800/600"
-              alt={tx.imgAlt}
-              fill
-              className="object-cover"
-            />
-          </div>
+          <figure className="w-full lg:w-1/2">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/team/toto.webp"
+                alt={tx.imgAlt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={74}
+                className="object-cover object-top"
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <span className="block text-white text-xl font-bold">Toto</span>
+                <span className="block text-sky-200 text-sm font-medium">{tx.hostRole}</span>
+              </figcaption>
+            </div>
+          </figure>
         </div>
       </div>
     </section>
