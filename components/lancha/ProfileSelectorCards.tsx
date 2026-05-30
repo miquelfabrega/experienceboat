@@ -1,6 +1,6 @@
 import { Anchor, Compass, ArrowRight } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface ProfileSelectorCardsProps {
   lang?: Lang;
@@ -34,6 +34,20 @@ const t: Record<Lang, Record<string, any>> = {
     card2Desc: 'Tomàs ou Max à bord pendant toute la sortie. Aucun permis nécessaire. Ils connaissent chaque crique et s\'adaptent complètement à votre groupe.',
     card2Button: 'Voir les excursions privées',
     card2Link: '/fr/experiencias-barco-roses',
+  },
+  ca: {
+    label: 'Quin és el vostre perfil?',
+    srOnly: 'Trieu el vostre tipus d\'experiència',
+    card1Label: 'Tinc llicència nàutica',
+    card1Title: 'Embarcacions amb llicència',
+    card1Desc: 'Vosaltres decidiu la ruta, el ritme i les parades. Llibertat total per la badia de Roses i el Cap de Creus. Sense patró, sense intermediaris.',
+    card1Button: 'Veure embarcacions amb llicència',
+    card1Link: '/ca/lloguer-vaixell-amb-llicencia-roses',
+    card2Label: 'Prefereixo anar amb patró',
+    card2Title: 'Excursions privades amb patró',
+    card2Desc: 'Tomàs o Max a bord durant tota la sortida. Sense titulació necessària. Coneixen cada cala i s\'adapten completament al vostre grup.',
+    card2Button: 'Veure excursions privades',
+    card2Link: '/ca/experiencies-vaixell-roses',
   },
 };
 

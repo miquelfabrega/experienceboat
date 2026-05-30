@@ -36,7 +36,7 @@ const seasons = [
   },
 ];
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface CondicionesSectionProps {
   lang?: Lang;

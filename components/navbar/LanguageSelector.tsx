@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const languages = [
   { code: 'ES', name: 'Español', url: '/' },
+  { code: 'CA', name: 'Català', url: '/ca' },
   { code: 'FR', name: 'Français', url: '/fr' },
   { code: 'EN', name: 'English', url: '/en' },
 ];

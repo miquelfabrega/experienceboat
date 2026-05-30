@@ -58,3 +58,31 @@ export const faqsBahiaFr: FAQ[] = [
       'Avril à octobre. Les mois de transition (mai, septembre et octobre) offrent des températures idéales et moins de foule. Juillet et août sont plus chauds mais aussi plus fréquentés. Chaque mois a son charme.',
   },
 ];
+
+export const faqsBahiaCa: FAQ[] = [
+  {
+    question: 'Què puc veure navegant per la badia de Roses?',
+    answer:
+      'Platges, cales d\'aigües cristal·lines, el Parc Natural del Cap de Creus, herbeis de posidònia, flora marina i, durant els mesos de migració, aus marines. L\'entorn és molt variat a pocs minuts del punt de sortida.',
+  },
+  {
+    question: 'És segur navegar per la badia de Roses?',
+    answer:
+      'Totalment. La badia ofereix protecció natural contra els vents del nord. Comparada amb altres punts de la Costa Brava, és de les més segures per a la navegació d\'oci. De tota manera, sempre recomanem revisar la previsió meteorològica abans de sortir.',
+  },
+  {
+    question: 'Puc pescar des del lloguer d\'embarcació?',
+    answer:
+      'Sí. Si porteu el vostre propi equip de pesca, no hi ha cap problema. La badia de Roses és zona de pesca autoritzada. Si necessiteu informació sobre zones específiques o normativa, contacteu amb nosaltres abans de reservar.',
+  },
+  {
+    question: 'Hi ha parades per al bany?',
+    answer:
+      'Moltes. Des de Santa Margarida hi ha desenes de cales accessibles a pocs minuts de navegació. Totes tenen aigües de qualitat i molt bona visibilitat submarina. L\'accés a l\'aigua és fàcil des de la majoria de les nostres embarcacions.',
+  },
+  {
+    question: 'Quin és el millor mes per navegar per la badia de Roses?',
+    answer:
+      'D\'abril a octubre. Els mesos de transició (maig, setembre i octubre) ofereixen temperatures ideals i menys aglomeració. Juliol i agost són més càlids però també més concorreguts. Cada mes té el seu encant.',
+  },
+];

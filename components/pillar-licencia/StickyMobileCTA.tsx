@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Anchor, X, ChevronRight, MessageCircle } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, Record<string, string>> = {
   es: {
@@ -34,6 +34,15 @@ const t: Record<Lang, Record<string, string>> = {
     openMenu: 'Open quick booking menu',
     closeMenu: 'Close booking menu',
   },
+  ca: {
+    seeBots: 'Veure embarcacions',
+    boatsLabel: 'Contactar per WhatsApp',
+    title: 'Lloguer amb llicència a Roses',
+    description: 'Des de 195 € / mitja jornada. Sortida des de Santa Margarida.',
+    seeBoats: 'Veure embarcacions disponibles',
+    openMenu: 'Obrir menú de reserva ràpida',
+    closeMenu: 'Tancar menú de reserva',
+  },
 };
 
 export default function StickyMobileCTA({ lang = 'es' }: { lang?: Lang }) {
@@ -47,7 +56,9 @@ export default function StickyMobileCTA({ lang = 'es' }: { lang?: Lang }) {
       ? 'https://wa.me/34623995700?text=Hola%2C%20me%20interesa%20alquilar%20un%20barco%20con%20licencia%20en%20Roses'
       : lang === 'fr'
         ? 'https://wa.me/34623995700?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20location%20d%27un%20bateau%20avec%20permis%20%C3%A0%20Roses'
-        : 'https://wa.me/34623995700?text=Hello%2C%20I%20am%20interested%20in%20renting%20a%20boat%20with%20licence%20in%20Roses';
+        : lang === 'ca'
+          ? 'https://wa.me/34623995700?text=Hola%2C%20m%27interessa%20llogar%20un%20vaixell%20amb%20llic%C3%A8ncia%20a%20Roses'
+          : 'https://wa.me/34623995700?text=Hello%2C%20I%20am%20interested%20in%20renting%20a%20boat%20with%20licence%20in%20Roses';
 
   useEffect(() => {
     const handleScroll = () => {

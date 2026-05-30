@@ -29,6 +29,14 @@ const translations = {
     otherQuestion: 'Do you have any other questions?',
     askWhatsapp: 'Ask us on WhatsApp →',
     whatsappText: 'Hello%2C%20I%20have%20a%20question%20about%20the%20Sunset%20Experience'
+  },
+  ca: {
+    heading: 'Preguntes freqüents',
+    title: 'Preguntes freqüents',
+    description: 'Tot el que necessiteu saber abans de reservar el Sunset Experience.',
+    otherQuestion: 'Teniu cap altra pregunta?',
+    askWhatsapp: 'Pregunteu-nos per WhatsApp →',
+    whatsappText: 'Hola%2C%20tinc%20una%20pregunta%20sobre%20el%20Sunset%20Experience'
   }
 };
 
@@ -85,7 +93,7 @@ function FAQItem({
 }
 
 interface FAQSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function FAQSection({ lang = 'es' }: FAQSectionProps) {

@@ -31,11 +31,21 @@ const translations = {
     scrollAnchor: '#what-is-it',
     tagline: 'Private boat trip · Canals & Bay · Unforgettable moment',
     altText: 'Sunset Experience boat trip in Roses — the most beautiful sunset'
+  },
+  ca: {
+    title: 'Sunset Experience — el capvespre més bonic de Roses des de l\'aigua',
+    subtitle: 'Hi ha un moment del dia a Roses que la majoria de turistes veuen des de la platja o des d\'una terrassa. Nosaltres us el mostrem des de l\'aigua.',
+    discoverBtn: 'Descobrir l\'experiència',
+    bookBtn: 'Reservar Sunset Experience',
+    whatsappText: 'Hola%2C%20vull%20informaci%C3%B3%20sobre%20el%20Sunset%20Experience',
+    scrollAnchor: '#que-es',
+    tagline: 'Sortida privada en vaixell · Canals i Badia · Moment irrepetible',
+    altText: 'Sunset Experience en vaixell a Roses — el capvespre més bonic'
   }
 };
 
 interface HeroSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function HeroSection({ lang = 'es' }: HeroSectionProps) {

@@ -1,6 +1,7 @@
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, { label1: string; label2: string; label3: string }> = {
+  ca: { label1: 'Sortides a l\'any', label2: 'Embarcacions pròpies', label3: 'Satisfacció' },
   es: { label1: 'Salidas al año', label2: 'Embarcaciones propias', label3: 'Satisfacción' },
   fr: { label1: 'Sorties par an', label2: 'Bateaux en propre', label3: 'Satisfaction' },
   en: { label1: 'Departures per year', label2: 'Boats owned', label3: 'Satisfaction rate' },

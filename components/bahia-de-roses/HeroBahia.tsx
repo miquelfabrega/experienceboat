@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface HeroBahiaProps {
   lang?: Lang;
@@ -36,6 +36,20 @@ const t: Record<Lang, Record<string, string>> = {
     aria: 'Fil d\'Ariane',
     navLabel: 'Baie de Roses',
   },
+  ca: {
+    home: 'Inici',
+    breadcrumbMiddle: 'Lloguer amb llicència a Roses',
+    title: 'Navegueu lliures per la badia de Roses',
+    buttonBoats: 'Veure embarcacions disponibles',
+    buttonWhatsApp: 'Parlar per WhatsApp',
+    altText: 'Vaixell amb llicència a la badia de Roses',
+    boatsAnchor: '#barcos',
+    breadcrumbAnchor: '/ca/lloguer-vaixell-amb-llicencia-roses',
+    whatsappText: 'Hola%2C%20m%27interessa%20llogar%20un%20vaixell%20a%20la%20badia%20de%20Roses',
+    subtext: '500+ sortides · 5★ Google · Sortida des de Santa Margarida',
+    aria: 'Camí de molla',
+    navLabel: 'Badia de Roses',
+  },
 };
 
 export default function HeroBahia({ lang = 'es' }: HeroBahiaProps) {
@@ -56,7 +70,7 @@ export default function HeroBahia({ lang = 'es' }: HeroBahiaProps) {
         <nav aria-label={labels.aria} className="w-full text-sm text-gray-300 mb-8">
           <ol className="flex flex-wrap justify-center items-center gap-2">
             <li>
-              <a href={lang === 'es' ? '/' : '/fr'} className="hover:text-white transition-colors">
+              <a href={lang === 'es' ? '/' : lang === 'ca' ? '/ca' : '/fr'} className="hover:text-white transition-colors">
                 {labels.home}
               </a>
             </li>

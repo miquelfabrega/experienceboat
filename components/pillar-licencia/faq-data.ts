@@ -1,4 +1,4 @@
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 export interface FAQ {
   question: string;
@@ -90,6 +90,33 @@ export const faqData: Record<Lang, FAQ[]> = {
       question: 'What happens if the weather is bad?',
       answer:
         'If sea conditions make sailing unsafe or uncomfortable, we will reschedule your trip at no cost. Your safety and experience are our priority. If you are hiring with a licence, we may ask about your experience and level of confidence with the conditions.',
+    },
+  ],
+  ca: [
+    {
+      question: 'Quina llicència necessito per llogar un vaixell amb llicència a Roses?',
+      answer:
+        'Es requereix com a mínim la titulació PNB (Patró de Navegació Bàsica) o equivalent reconegut a Espanya. Si teniu una titulació estrangera, consulteu-nos i verifiquem si és vàlida per a les nostres embarcacions.',
+    },
+    {
+      question: 'Puc navegar fins al Cap de Creus amb un vaixell de lloguer?',
+      answer:
+        'Sí. Les nostres embarcacions amb llicència estan habilitades per navegar per la badia de Roses i el Parc Natural del Cap de Creus. La travessia des de Santa Margarida fins al cap és d\'aproximadament 45-60 minuts segons les condicions.',
+    },
+    {
+      question: 'Es pot llogar un vaixell amb llicència per a un grup gran?',
+      answer:
+        'Depèn del model. Tenim embarcacions amb capacitat per a diferents mides de grup. Si sou més de 12 persones, consulteu-nos i cerquem la millor opció per al vostre grup.',
+    },
+    {
+      question: 'Què passa si el temps empitjora durant la navegació?',
+      answer:
+        'En cas de condicions meteorològiques adverses durant la sortida, recomanem tornar a port. Monitoritzem el temps diàriament i si la previsió és dolenta des de l\'inici, cancel·lem la sortida sense cost i cerquem una altra data.',
+    },
+    {
+      question: 'Puc fer parades per banyar-me a les cales?',
+      answer:
+        'Sí. Totes les embarcacions porten escala de bany. Les parades són decisió vostra — podeu fondejar a les cales que vulgueu durant la ruta.',
     },
   ],
 };

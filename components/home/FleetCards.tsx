@@ -22,7 +22,12 @@ const defaultTranslations: FleetTranslations = {
   guideLinkHref: '/alquiler-barco-con-licencia-roses',
 };
 
-export default function FleetCards({ translations }: { translations?: FleetTranslations } = {}) {
+type Lang = 'es' | 'en' | 'fr' | 'ca';
+
+export default function FleetCards({
+  translations,
+  lang = 'es',
+}: { translations?: FleetTranslations; lang?: Lang } = {}) {
   const t = translations ?? defaultTranslations;
   const activos = getBarcosActivos();
   const sinLicencia = activos.filter(b => b.categoria === 'sin-licencia');
@@ -41,7 +46,7 @@ export default function FleetCards({ translations }: { translations?: FleetTrans
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {sinLicencia.map(barco => (
-              <FleetCard key={barco.slug} barco={barco} />
+              <FleetCard key={barco.slug} barco={barco} lang={lang} />
             ))}
           </div>
         </div>
@@ -61,7 +66,7 @@ export default function FleetCards({ translations }: { translations?: FleetTrans
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {conLicencia.map(barco => (
-              <FleetCard key={barco.slug} barco={barco} />
+              <FleetCard key={barco.slug} barco={barco} lang={lang} />
             ))}
           </div>
           <div className="mt-6 text-center sm:hidden">

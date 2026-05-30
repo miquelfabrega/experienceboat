@@ -28,11 +28,21 @@ const translations = {
       'Just two and a half miles away, you\'ll find the Cap de Creus Natural Park, with clean waters and low pollution levels—a perfect view that you can admire during your adventure or even get closer to if you choose.'
     ],
     quote: '"Be the captain yourself in this adventure through the canals."'
+  },
+  ca: {
+    sectionId: 'que-es',
+    title: 'L\'experiència Canal Tour',
+    paragraphs: [
+      'Submergiu-vos en un passeig turístic inoblidable navegant pels impressionants canals de Santa Margarida. Les nostres embarcacions estan dissenyades per conduir-se sense necessitat de llicència, i ofereixen una manera divertida i segura d\'explorar aquesta meravellosa marina.',
+      'Navegareu per una de les marines residencials més grans d\'Europa. La marina és coneguda pels seus quilòmetres de canals navegables i la seva bellesa indiscutible, amb edificis atractius i un entorn natural impressionant.',
+      'A només dues milles i mitja, hi trobareu el Parc Natural del Cap de Creus, amb aigües netes i baixos índexs de contaminació, una vista perfecta que podreu albirar durant l\'aventura o fins i tot si decidiu acostar-vos-hi.'
+    ],
+    quote: '"Sigueu vosaltres mateixos el capità en aquesta aventura pels canals."'
   }
 };
 
 interface IntroSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function IntroSection({ lang = 'es' }: IntroSectionProps) {

@@ -1,6 +1,6 @@
 import { MapPin, Calendar } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface InfoPracticaSectionProps {
   lang?: Lang;

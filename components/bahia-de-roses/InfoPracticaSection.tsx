@@ -7,7 +7,7 @@ const includes = [
   'Mapa náutico de la bahía de Roses y Cap de Creus',
 ];
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface InfoPracticaSectionProps {
   lang?: Lang;

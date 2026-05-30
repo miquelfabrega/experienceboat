@@ -4,12 +4,18 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Anchor, X, ChevronRight, MessageCircle } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   anchor: string; anchorLabel: string; waText: string; desktopTitle: string;
   desktopDesc: string; ctaLabel: string; openLabel: string; closeLabel: string;
 }> = {
+  ca: {
+    anchor: '#experiencias', anchorLabel: 'Veure sortides',
+    waText: 'Hola%2C%20voldria%20reservar%20una%20experi%C3%A8ncia%20en%20vaixell%20a%20Roses',
+    desktopTitle: 'Experiències en vaixell', desktopDesc: 'Excursions privades i Sunset Experience.',
+    ctaLabel: 'Veure sortides', openLabel: 'Obrir menú de reserva ràpida', closeLabel: 'Tancar menú de reserva',
+  },
   es: {
     anchor: '#experiencias', anchorLabel: 'Ver salidas',
     waText: 'Hola%2C%20me%20interesa%20reservar%20una%20experiencia%20en%20barco%20en%20Roses',

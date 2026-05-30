@@ -1,10 +1,19 @@
 import Image from 'next/image';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   tag: string; h2: string; p1: string; p2: string; quote: string; imgAlt: string; hostRole: string;
 }> = {
+  ca: {
+    tag: 'Sobre Experience Boat',
+    h2: 'Naveguem per la Costa Brava amb passió i coneixement local',
+    p1: 'Som Experience Boat, <strong>la teva empresa de vaixells a Roses</strong>. Operem des de la Marina de Santa Margarida amb <strong>8 embarcacions pròpies</strong>, el punt de partida perfecte per explorar un dels litorals més espectaculars de la Mediterrània.',
+    p2: 'El nostre propòsit va néixer d\'una convicció senzilla: <strong>el mar de la Costa Brava mereix que tothom en gaudeixi</strong>. Per això oferim vaixells amb i sense llicència, excursions privades al Cap de Creus i passejos tranquils pels canals de Santa Margarida. Sigui quina sigui la teva experiència nàutica, tenim l\'embarcació i el servei adequats per a tu.',
+    quote: 'Ens assegurem que cada client gaudeixi al màxim del seu temps al gran oceà de la Costa Brava.',
+    imgAlt: 'Toto, patró i amfitrió d\'Experience Boat, a bord a la badia de Roses',
+    hostRole: 'Patró i amfitrió',
+  },
   es: {
     tag: 'Acerca de Experience Boat',
     h2: 'Navegamos la Costa Brava con pasión y conocimiento local',

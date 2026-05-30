@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { faqData, FAQ } from './faq-data';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, Record<string, string>> = {
   es: {
@@ -28,6 +28,13 @@ const t: Record<Lang, Record<string, string>> = {
     description: '',
     otherQuestion: 'Do you have any other questions?',
     whatsapp: 'Ask us on WhatsApp →',
+  },
+  ca: {
+    subtitle: 'Resolem els teus dubtes',
+    title: 'Preguntes freqüents',
+    description: 'Les preguntes més habituals sobre el lloguer de vaixell amb llicència a Roses.',
+    otherQuestion: 'Tens alguna altra pregunta?',
+    whatsapp: 'Pregunta\'ns per WhatsApp →',
   },
 };
 
@@ -128,7 +135,9 @@ export default function FAQSection({ lang = 'es' }: { lang?: Lang }) {
                 ? 'https://wa.me/34623995700?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20el%20alquiler%20de%20barco%20con%20licencia%20en%20Roses'
                 : lang === 'fr'
                   ? 'https://wa.me/34623995700?text=Bonjour%2C%20j%27ai%20une%20question%20sur%20la%20location%20de%20bateau%20avec%20permis%20%C3%A0%20Roses'
-                  : 'https://wa.me/34623995700?text=Hello%2C%20I%20have%20a%20question%20about%20boat%20rental%20with%20licence%20in%20Roses'
+                  : lang === 'ca'
+                    ? 'https://wa.me/34623995700?text=Hola%2C%20tinc%20una%20pregunta%20sobre%20el%20lloguer%20de%20vaixell%20amb%20llic%C3%A8ncia%20a%20Roses'
+                    : 'https://wa.me/34623995700?text=Hello%2C%20I%20have%20a%20question%20about%20boat%20rental%20with%20licence%20in%20Roses'
             }
             target="_blank"
             rel="nofollow noopener noreferrer"

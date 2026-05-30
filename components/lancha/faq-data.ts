@@ -58,3 +58,31 @@ export const faqsLanchaFr: FAQ[] = [
       'Principalement trois choses : nous partons depuis les canaux de Santa Margarita (un point de départ unique), toutes les sorties sont privées (vous ne partagez jamais l\'embarcation avec des inconnus) et nous opérons dans l\'un des environnements naturels les plus singuliers de la Costa Brava nord — la baie de Roses et le Cap de Creus.',
   },
 ];
+
+export const faqsLanchaCa: FAQ[] = [
+  {
+    question: 'Cal llicència nàutica per llogar una llanxa a la Costa Brava?',
+    answer:
+      'Depèn del tipus d\'embarcació. A Espanya, les llanxes de fins a 5 metres d\'eslora amb motors de fins a 15 CV es poden llogar sense llicència. Per a embarcacions més potents es requereix com a mínim el PNB. A Experience Boat tenim opcions per a tots dos perfils — amb i sense llicència.',
+  },
+  {
+    question: 'On és Roses a la Costa Brava?',
+    answer:
+      'Roses és a l\'Alt Empordà, a l\'extrem nord de la Costa Brava, a 3 hores de Barcelona i 45 minuts de Girona. És el municipi més proper al Parc Natural del Cap de Creus, cosa que el converteix en el millor punt de partida per navegar cap a aquest entorn.',
+  },
+  {
+    question: 'Quina diferència hi ha entre llogar una llanxa amb llicència i amb patró?',
+    answer:
+      'Amb llicència porteu l\'embarcació amb total llibertat de ruta — necessiteu titulació nàutica vàlida. Amb patró, un dels nostres patrons (Tomàs o Max) porta el vaixell durant tota la sortida — no necessiteu cap titulació i us podeu dedicar completament a gaudir.',
+  },
+  {
+    question: 'Puc llogar una llanxa a la Costa Brava a l\'octubre?',
+    answer:
+      'Sí. La nostra temporada va d\'abril a octubre. Setembre i octubre són alguns dels millors mesos per navegar per la Costa Brava: aigua càlida, dies llargs, cales tranquil·les i condicions de navegació excel·lents.',
+  },
+  {
+    question: 'Què diferencia Experience Boat d\'altres empreses de lloguer a la Costa Brava?',
+    answer:
+      'Principalment tres coses: sortim des dels canals de Santa Margarida (un punt de partida únic), totes les sortides són privades (mai compartiu embarcació amb desconeguts) i operem en un dels entorns naturals més singulars de la Costa Brava nord — la badia de Roses i el Cap de Creus.',
+  },
+];

@@ -1,4 +1,4 @@
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 export interface FAQ {
   question: string;
@@ -6,6 +6,33 @@ export interface FAQ {
 }
 
 export const faqData: Record<Lang, FAQ[]> = {
+  ca: [
+    {
+      question: 'Què són exactament els canals de Santa Margarida?',
+      answer:
+        'Els canals de Santa Margarida són una xarxa de vies navegables artificials a Roses (Costa Brava) construïda als anys 60. Més de 500 habitatges tenen accés directe a l\'aigua des del seu embarcador privat. És un dels pocs enclavaments d\'aquest tipus a la costa mediterrània espanyola i només es pot descobrir del tot des de l\'aigua.',
+    },
+    {
+      question: 'Es pot navegar pels canals de Santa Margarida sense llicència?',
+      answer:
+        'Sí. Els nostres vaixells sense llicència són perfectes per explorar els canals. Les aigües interiors són tranquil·les, sense onatge i sense corrents, cosa que els converteix en l\'entorn ideal per a debutants i famílies amb canalla.',
+    },
+    {
+      question: 'Quant dura la visita als canals?',
+      answer:
+        'El recorregut pels canals interiors dura entre 60 i 90 minuts. Si el combineu amb una sortida a la badia de Roses o al Cap de Creus, podeu passar des d\'un mig dia fins a una jornada completa a l\'aigua.',
+    },
+    {
+      question: 'Els canals de Santa Margarida són només per a turistes o també hi viu gent?',
+      answer:
+        'És una urbanització residencial activa. Les cases tenen propietaris que hi viuen tot l\'any o de temporada. Això és precisament el que fa el recorregut tan especial: no és un decorat, és un barri real vist des de l\'aigua.',
+    },
+    {
+      question: 'D\'on surten les embarcacions d\'Experience Boat?',
+      answer:
+        'Sortim de la Marina de Santa Margarida, a l\'Av. Clot Franquest Nord, 17480 Roses. És el punt d\'entrada als canals, cosa que significa que el recorregut per les vies navegables comença des del primer minut de la sortida.',
+    },
+  ],
   es: [
     {
       question: '¿Qué son exactamente los canales de Santa Margarita?',

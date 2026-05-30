@@ -1,12 +1,23 @@
 import Link from 'next/link';
 import { ArrowRight, Waves, Sailboat, Sunset, MapPin } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   tag: string; h2: string; p: string;
   services: { title: string; desc: string; href: string; cta: string }[];
 }> = {
+  ca: {
+    tag: 'Què oferim',
+    h2: 'Tot el que pots fer amb nosaltres a Roses',
+    p: 'Descobreix la nostra gamma de serveis i embarcacions per gaudir de la Mediterrània de la manera que millor s\'adapti a tu.',
+    services: [
+      { title: 'Vaixells sense llicència', desc: 'L\'opció perfecta per explorar els canals i la badia sense necessitat de titulació nàutica.', href: '/ca/lloguer-vaixell-sense-llicencia-roses', cta: 'Veure vaixells sense llicència' },
+      { title: 'Vaixells amb llicència', desc: 'Per a patrons amb titulació. Llanxes per a navegació lliure per la Costa Brava.', href: '/ca/lloguer-vaixell-amb-llicencia-roses', cta: 'Veure vaixells amb llicència' },
+      { title: 'Experiències amb vaixell a Roses', desc: 'Canal tour Santa Margarida, excursions privades al Cap de Creus i Sunset a la badia de Roses. El teu grup, el teu ritme.', href: '/ca/experiencies-vaixell-roses', cta: 'Veure experiències' },
+      { title: 'Canals de Santa Margarida', desc: 'Una experiència única navegant pels canals. Sense llicència i amb paisatge garantit.', href: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarita', cta: 'Veure experiència' },
+    ],
+  },
   es: {
     tag: 'Qué ofrecemos',
     h2: 'Todo lo que puedes hacer con nosotros en Roses',

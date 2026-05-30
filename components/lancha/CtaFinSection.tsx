@@ -1,6 +1,6 @@
 import { Anchor, Compass, ArrowRight } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface CtaFinSectionProps {
   lang?: Lang;
@@ -22,6 +22,14 @@ const t: Record<Lang, Record<string, string>> = {
     buttonSkipper: 'Nous écrire sur WhatsApp',
     licenseLink: '/fr/location-bateau-avec-permis-roses/#bateaux',
     skipperLink: 'https://wa.me/34623995700?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20une%20vedette%20%C3%A0%20Roses',
+  },
+  ca: {
+    title: 'A punt per sortir?',
+    subtitle: 'Consulteu la disponibilitat per a la vostra data i trieu l\'embarcació que s\'adapti al vostre grup. Totes les sortides són privades.',
+    buttonLicense: 'Veure embarcacions disponibles',
+    buttonSkipper: 'Escriure\'ns per WhatsApp',
+    licenseLink: '/ca/lloguer-vaixell-amb-llicencia-roses/#barcos',
+    skipperLink: 'https://wa.me/34623995700?text=Hola%2C%20voldria%20reservar%20una%20llanxa%20a%20Roses',
   },
 };
 

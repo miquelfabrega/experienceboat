@@ -72,11 +72,35 @@ const translations = {
         icon: Moon
       },
     ]
+  },
+  ca: {
+    title: 'Quan és millor el Sunset Experience a Roses',
+    description: 'El capvespre a Roses té característiques diferents segons l\'època de l\'any i això afecta directament l\'experiència.',
+    seasons: [
+      {
+        title: 'Juliol i agost',
+        subtitle: 'Capvespres espectaculars',
+        desc: 'Els mesos amb els capvespres més espectaculars de l\'any. El sol es pon tard (entre les 21:00 i les 21:30), els cels són clars gairebé cada dia i la temperatura de l\'aigua en caure la tarda és perfecta. L\'inconvenient: cal reservar amb força antelació.',
+        icon: Sun
+      },
+      {
+        title: 'Juny i setembre',
+        subtitle: 'L\'equilibri perfecte',
+        desc: 'Capvespres igualment bonics, temperatura excel·lent i molta menys demanda que en plena temporada alta. Per a parelles o grups amb flexibilitat de dates, aquests mesos són la millor opció.',
+        icon: Calendar
+      },
+      {
+        title: 'Maig i octubre',
+        subtitle: 'Tranquil·litat total',
+        desc: 'Per als qui prefereixen el Sunset Experience fora de temporada. El sol es pon abans (19:30-20:30), comença a aparèixer el fred i hi ha molt menys trànsit als canals. La solitud de Santa Margarida al capvespre a l\'octubre té una qualitat diferent.',
+        icon: Moon
+      },
+    ]
   }
 };
 
 interface BestTimeSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function BestTimeSection({ lang = 'es' }: BestTimeSectionProps) {

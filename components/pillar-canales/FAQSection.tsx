@@ -5,9 +5,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { faqData, FAQ } from './faq-data';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 const t: Record<Lang, Record<string, string>> = {
+  ca: {
+    subtitle: 'Resol els teus dubtes',
+    title: 'Preguntes freqüents sobre els canals de Santa Margarida',
+    description: 'Els dubtes més habituals dels qui descobreixen els canals de Santa Margarida per primera vegada.',
+    otherQuestion: 'Tens alguna altra pregunta?',
+    whatsapp: 'Pregunta\'ns per WhatsApp →',
+  },
   es: {
     subtitle: 'Resuelve tus dudas',
     title: 'Preguntas frecuentes sobre los canales de Santa Margarita',
@@ -82,10 +89,12 @@ export default function FAQSection({ lang = 'es' }: { lang?: Lang }) {
   const texts = t[lang];
   const faqs = faqData[lang];
 
-  const whatsappUrl =
-    lang === 'es'
-      ? 'https://wa.me/34623995700?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20los%20canales%20de%20Santa%20Margarita'
-      : 'https://wa.me/34623995700?text=Bonjour%2C%20j%27ai%20une%20question%20sur%20les%20canaux%20de%20Santa%20Margarita';
+  const whatsappTexts: Record<Lang, string> = {
+    es: 'Hola, tengo una pregunta sobre los canales de Santa Margarita',
+    fr: "Bonjour, j'ai une question sur les canaux de Santa Margarita",
+    ca: 'Hola, tinc una pregunta sobre els canals de Santa Margarida',
+  };
+  const whatsappUrl = `https://wa.me/34623995700?text=${encodeURIComponent(whatsappTexts[lang])}`;
 
   return (
     <section className="py-20 bg-white" id="faq">

@@ -66,11 +66,33 @@ const translations = {
         desc: 'A quiet, safe activity perfect to enjoy with family or friends. The canals are protected waters where sailing is easy and relaxing.'
       }
     ]
+  },
+  ca: {
+    title: 'La millor manera d\'explorar els canals',
+    description: 'Us oferim l\'oportunitat de submergir-vos en aquest paisatge urbà i natural d\'una manera única i divertida.',
+    highlights: [
+      {
+        title: 'Autèntic Capità',
+        desc: 'Les nostres embarcacions no requereixen cap mena de titulació nàutica. Us donem unes instruccions senzilles i vosaltres mateixos prendreu el timó, marcant el ritme de la vostra aventura.'
+      },
+      {
+        title: 'Perspectiva 360º',
+        desc: 'Descobriu els canals des de dins, una manera completament diferent i privilegiada de visitar Santa Margarida, amb vistes panoràmiques des de l\'aigua.'
+      },
+      {
+        title: 'Cases Espectaculars',
+        desc: 'Durant el recorregut us impressionaran les increïbles cases, xalets i viles amb amarrador propi. Autèntiques joies arquitectòniques a la vora dels canals.'
+      },
+      {
+        title: 'Seguretat per a la família',
+        desc: 'Una activitat tranquil·la, segura i perfecta per gaudir en família o amb amics. Els canals són aigües protegides on navegar és fàcil i relaxant.'
+      }
+    ]
   }
 };
 
 interface HighlightsSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function HighlightsSection({ lang = 'es' }: HighlightsSectionProps) {

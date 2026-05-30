@@ -1,12 +1,28 @@
 import Link from 'next/link';
 import { GraduationCap, Map, Globe, CalendarRange } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   tag: string; h2: string; p: string; cta_p: string; cta: string; contactHref: string;
   f1t: string; f1d: string; f2t: string; f2d: string; f3t: string; f3d: string; f4t: string; f4d: string;
 }> = {
+  ca: {
+    tag: 'El nostre equip',
+    h2: 'Experts nàutics compromesos amb la teva experiència',
+    p: 'L\'equip d\'Experience Boat està format per professionals amb titulació nàutica i un profund coneixement del mar de la Costa Brava. Cada integrant aporta la seva passió perquè la teva experiència sigui segura, divertida i memorable.',
+    cta_p: 'Tens dubtes sobre quin vaixell o servei s\'adapta millor al teu grup? Contacta\'ns i t\'assessorem sense compromís.',
+    cta: 'Contactar amb l\'equip',
+    contactHref: '/ca/contacte',
+    f1t: 'Titulació nàutica oficial',
+    f1d: 'Tot el personal embarcat compta amb la titulació homologada per la Direcció General de Marina Mercant.',
+    f2t: 'Coneixement local de la Costa Brava',
+    f2d: 'Coneixem cada cala, corrent i fons marí entre la badia de Roses i el Cap de Creus.',
+    f3t: 'Atenció multilingüe',
+    f3d: 'Atenem en català, castellà, anglès i francès per donar servei a tots els nostres clients.',
+    f4t: 'Disponibles tota la temporada',
+    f4d: 'Operem des de la primavera fins a la tardor perquè puguis gaudir del mar Mediterrani en el seu millor moment.',
+  },
   es: {
     tag: 'Nuestro equipo',
     h2: 'Expertos náuticos comprometidos con tu experiencia',

@@ -22,11 +22,17 @@ const translations = {
     price: 'from 160 €',
     btn: 'Book',
     whatsappText: 'Hello%2C%20I%27d%20like%20information%20about%20the%20Sunset%20Experience'
+  },
+  ca: {
+    label: 'Sunset Experience',
+    price: 'des de 160 €',
+    btn: 'Reservar',
+    whatsappText: 'Hola%2C%20vull%20informaci%C3%B3%20sobre%20el%20Sunset%20Experience'
   }
 };
 
 interface StickyCTAProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function StickyCTA({ lang = 'es' }: StickyCTAProps) {

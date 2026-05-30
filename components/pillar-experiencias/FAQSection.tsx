@@ -5,9 +5,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { faqData, FAQ } from './faq-data';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, Record<string, string>> = {
+  ca: {
+    subtitle: 'Resolem els vostres dubtes',
+    title: 'Preguntes freqüents',
+    description: 'Tot el que necessiteu saber abans de reservar una experiència amb patró a Roses.',
+    otherQuestion: 'Teniu cap altra pregunta?',
+    whatsapp: 'Pregunteu-nos per WhatsApp →',
+  },
   es: {
     subtitle: 'Resuelve tus dudas',
     title: 'Preguntas frecuentes',
@@ -94,6 +101,8 @@ export default function FAQSection({ lang = 'es' }: { lang?: Lang }) {
       ? 'https://wa.me/34623995700?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20las%20experiencias%20en%20barco'
       : lang === 'fr'
         ? 'https://wa.me/34623995700?text=Bonjour%2C%20j%27ai%20une%20question%20sur%20les%20exp%C3%A9riences%20en%20bateau'
+        : lang === 'ca'
+          ? 'https://wa.me/34623995700?text=Hola%2C%20tinc%20una%20pregunta%20sobre%20les%20experi%C3%A8ncies%20en%20vaixell'
         : 'https://wa.me/34623995700?text=Hello%2C%20I%20have%20a%20question%20about%20boat%20experiences';
 
   return (

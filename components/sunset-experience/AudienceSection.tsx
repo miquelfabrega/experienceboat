@@ -54,11 +54,29 @@ const translations = {
         desc: 'For families looking for something different from the usual excursions. Children who have spent the day at the beach often experience the sunset from the boat with completely different attention. The colour change and the evening return are etched in memory with unique intensity.',
       },
     ]
+  },
+  ca: {
+    title: 'Per a qui és el Sunset Experience',
+    description: 'El Sunset Experience està pensat per a moments especials. No és l\'excursió de platja de migdia — és la sortida que tanca un dia perfecte o que converteix un dia ordinari en una cosa que es recorda.',
+    audiences: [
+      {
+        title: 'Parelles',
+        desc: 'El capvespre en vaixell és el pla romàntic per excel·lència a Roses. Sense grups, sense desconeguts, només vosaltres dos i el millor moment del dia. Per a aniversaris, escapades o simplement perquè voleu un capvespre diferent. Si voleu preparar alguna cosa especial a bord —cava, flors, una sorpresa— consulteu-nos.',
+      },
+      {
+        title: 'Grups petits d\'amics',
+        desc: 'Per a comiats tranquils, aniversaris nocturns o simplement el final perfecte per a un dia a la Costa Brava. El Sunset Experience en grup té una energia diferent de l\'excursió de dia —més íntima, més contemplativa, amb aquella conversa que només sorgeix quan l\'entorn és prou especial.',
+      },
+      {
+        title: 'Famílies',
+        desc: 'Per a famílies que volen una sortida diferent de les excursions habituals. Els infants que han passat el dia a la platja solen viure el capvespre des del vaixell amb una atenció completament diferent. El canvi de color i el retorn nocturn es graven a la memòria amb una intensitat única.',
+      },
+    ]
   }
 };
 
 interface AudienceSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function AudienceSection({ lang = 'es' }: AudienceSectionProps) {

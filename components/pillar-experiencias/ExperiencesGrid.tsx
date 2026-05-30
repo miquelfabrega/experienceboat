@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, ChevronRight, Euro } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   label: string;
@@ -19,6 +19,73 @@ const t: Record<Lang, {
     ctaText: string;
   }[];
 }> = {
+  ca: {
+    label: 'Les nostres sortides',
+    heading: 'Trieu la vostra experiència',
+    subtitle: 'Aquestes són les nostres sortides segons el moment del dia, el pla i les persones que us acompanyen:',
+    experiences: [
+      {
+        id: 'excursions',
+        title: 'Excursions privades',
+        image: 'https://picsum.photos/seed/excursion-cap-creus/600/400',
+        desc: 'Exploreu el Cap de Creus, les cales i la badia de Roses amb patró inclòs. Ruta adaptada al vostre grup.',
+        duration: 'Mig dia o dia complet',
+        price: 'des de 300 €',
+        href: '/ca/experiencies-vaixell-roses/excursions-privades',
+        ctaText: 'Veure excursions',
+      },
+      {
+        id: 'sunset',
+        title: 'Sunset Experience',
+        image: 'https://picsum.photos/seed/sunset-roses/600/400',
+        desc: 'El capvespre més bonic de Roses vist des de l\'aigua. Una sortida de tarda-vespre pels canals i la badia.',
+        duration: 'Aproximadament 2 hores',
+        price: 'des de 160 €',
+        href: '/ca/experiencies-vaixell-roses/sunset-experience',
+        ctaText: 'Veure Sunset Experience',
+      },
+      {
+        id: 'canal-tour',
+        title: 'Canal Tour Santa Margarida',
+        image: 'https://picsum.photos/seed/canal-tour/600/400',
+        desc: 'Convertiu-vos en capità explorant els impressionants canals de Santa Margarida amb les nostres embarcacions sense llicència.',
+        duration: '90 minuts',
+        price: 'Consultar tarifes',
+        href: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida',
+        ctaText: 'Veure Canal Tour',
+      },
+      {
+        id: 'cap-de-creus-cales',
+        title: 'Cap de Creus — 3 Cales',
+        image: 'https://picsum.photos/seed/cap-de-creus-calas/600/400',
+        desc: 'Excursió guiada de 3 a 5 hores fins al Cap de Creus amb bany a 3 cales verges només accessibles per mar.',
+        duration: '3 a 5 hores',
+        price: 'des de 65 €',
+        href: '/ca/experiencies-vaixell-roses/cap-de-creus-cales',
+        ctaText: 'Veure excursió Cap de Creus',
+      },
+      {
+        id: 'cadaques',
+        title: 'Excursió a Cadaqués',
+        image: 'https://picsum.photos/seed/cadaques-excursion/600/400',
+        desc: 'Arribeu per mar al poble blanc de Dalí amb visita guiada i temps lliure per passejar o dinar.',
+        duration: 'Dia complet',
+        price: 'des de 75 €',
+        href: '/ca/experiencies-vaixell-roses/cadaques',
+        ctaText: 'Veure excursió Cadaqués',
+      },
+      {
+        id: 'coves-esnorquel',
+        title: 'Coves i Esnòrquel',
+        image: 'https://picsum.photos/seed/cuevas-snorkel/600/400',
+        desc: 'Sortida en vaixell per les coves marines del Cap de Creus amb parades per fer esnòrquel. Material inclòs.',
+        duration: 'Mig dia',
+        price: 'Consultar tarifes',
+        href: '/ca/experiencies-vaixell-roses/coves-esnorquel',
+        ctaText: 'Veure Coves i Esnòrquel',
+      },
+    ],
+  },
   es: {
     label: 'Nuestras salidas',
     heading: 'Elige tu experiencia',
@@ -212,7 +279,7 @@ export default function ExperiencesGrid({ lang = 'es' }: { lang?: Lang }) {
                   <div className="flex items-center gap-3">
                     <Euro className="w-5 h-5 text-sky-500" />
                     <span className="text-gray-700 font-medium">
-                      {lang === 'en' ? 'Price: ' : lang === 'fr' ? 'Prix\u00a0: ' : 'Precio: '}
+                      {lang === 'en' ? 'Price: ' : lang === 'fr' ? 'Prix\u00a0: ' : lang === 'ca' ? 'Preu: ' : 'Precio: '}
                       <strong className="text-gray-900">{exp.price}</strong>
                     </span>
                   </div>

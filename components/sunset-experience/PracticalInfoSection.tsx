@@ -102,11 +102,45 @@ const translations = {
     recommendation: 'We offer skippered and no-licence options. For a more relaxing experience, we recommend the skippered option.',
     bookBtn: 'Book the Sunset Experience',
     whatsappText: 'Hello%2C%20I%27d%20like%20information%20about%20the%20Sunset%20Experience'
+  },
+  ca: {
+    title: 'Informació pràctica',
+    description: 'Tot el que necessiteu saber sobre la sortida Sunset Experience.',
+    infoItems: [
+      {
+        icon: Clock,
+        title: 'Quant dura el Sunset Experience?',
+        desc: 'Aproximadament 2 hores. La sortida es planifica per ser a la badia en el moment exacte del capvespre i tornar pels canals en fer fosc.'
+      },
+      {
+        icon: Navigation,
+        title: 'A quina hora surt l\'embarcació?',
+        desc: 'Depèn de l\'època de l\'any. Calculem l\'hora segons la posta de sol del dia de la reserva. En confirmar us indiquem l\'hora exacta.'
+      },
+      {
+        icon: CheckCircle2,
+        title: 'Què inclou?',
+        desc: 'Embarcació privada per al vostre grup, patró inclòs (opció amb patró), combustible, equip de seguretat i ruta optimitzada per al capvespre.'
+      },
+      {
+        icon: GlassWater,
+        title: 'Què podeu portar?',
+        desc: 'Tot el que vulgueu. Moltes parelles i grups porten cava o xampany per al capvespre. Les copes i la nevera són benvingudes.'
+      },
+      {
+        icon: Euro,
+        title: 'Preu',
+        desc: 'Opció sense llicència des de 160 €. Opció amb patró (semirígida) des de 175 €. (Preu per embarcació, no per persona).'
+      }
+    ],
+    recommendation: 'Oferim modalitats amb patró i sense llicència. Per a una experiència més relaxada, recomanem l\'opció amb patró.',
+    bookBtn: 'Reservar Sunset Experience',
+    whatsappText: 'Hola%2C%20vull%20informaci%C3%B3%20sobre%20el%20Sunset%20Experience'
   }
 };
 
 interface PracticalInfoSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function PracticalInfoSection({ lang = 'es' }: PracticalInfoSectionProps) {

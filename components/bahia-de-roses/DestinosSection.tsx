@@ -74,7 +74,7 @@ const destinos = [
   },
 ];
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface DestinosSectionProps {
   lang?: Lang;

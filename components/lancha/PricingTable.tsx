@@ -42,13 +42,44 @@ const blocks = [
   },
 ];
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface PricingTableProps {
   lang?: Lang;
 }
 
+const t: Record<
+  Lang,
+  { title: string; subtitle: string; cta: string; ctaHref: string; note: string }
+> = {
+  es: {
+    title: 'Precios',
+    subtitle:
+      'Tarifas de alquiler de lancha en Roses. Todas las salidas son privadas — nunca compartís embarcación con otros clientes.',
+    cta: 'Reservar online',
+    ctaHref: '/reservas',
+    note: 'Precios orientativos. El precio final depende del modelo de embarcación y fecha.',
+  },
+  fr: {
+    title: 'Tarifs',
+    subtitle:
+      'Tarifs de location de vedette à Roses. Toutes les sorties sont privées — vous ne partagez jamais l\'embarcation avec d\'autres clients.',
+    cta: 'Réserver en ligne',
+    ctaHref: '/fr/reservations',
+    note: 'Tarifs indicatifs. Le prix final dépend du modèle d\'embarcation et de la date.',
+  },
+  ca: {
+    title: 'Preus',
+    subtitle:
+      'Tarifes de lloguer de llanxa a Roses. Totes les sortides són privades — mai compartiu embarcació amb altres clients.',
+    cta: 'Reservar en línia',
+    ctaHref: '/ca/reserves',
+    note: 'Preus orientatius. El preu final depèn del model d\'embarcació i la data.',
+  },
+};
+
 export default function PricingTable({ lang = 'es' }: PricingTableProps) {
+  const labels = t[lang];
   return (
     <section
       className="py-20 px-4 sm:px-6 lg:px-8"
@@ -56,11 +87,10 @@ export default function PricingTable({ lang = 'es' }: PricingTableProps) {
     >
       <div className="max-w-5xl mx-auto">
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-3 leading-tight">
-          Precios
+          {labels.title}
         </h2>
         <p className="text-blue-200 text-lg mb-12">
-          Tarifas de alquiler de lancha en Roses. Todas las salidas son privadas — nunca
-          compartís embarcación con otros clientes.
+          {labels.subtitle}
         </p>
 
         <div className="grid sm:grid-cols-3 gap-5 mb-10">
@@ -107,14 +137,14 @@ export default function PricingTable({ lang = 'es' }: PricingTableProps) {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="/reservas"
+            href={labels.ctaHref}
             className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-[#0b1f3a] font-bold px-8 py-4 rounded-xl transition-colors text-base"
           >
-            Reservar online
+            {labels.cta}
             <ArrowRight size={18} />
           </a>
           <p className="text-blue-300 text-sm">
-            Precios orientativos. El precio final depende del modelo de embarcación y fecha.
+            {labels.note}
           </p>
         </div>
       </div>

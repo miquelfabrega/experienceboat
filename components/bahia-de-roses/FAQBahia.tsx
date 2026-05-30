@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { faqsBahia } from './faq-data';
+import { faqsBahia, faqsBahiaFr, faqsBahiaCa } from './faq-data';
 
 function FAQItem({ question, answer, isOpen, onToggle }: {
   question: string;
@@ -49,27 +49,44 @@ function FAQItem({ question, answer, isOpen, onToggle }: {
   );
 }
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface FAQBahiaProps {
   lang?: Lang;
 }
 
+const headings: Record<Lang, { title: string; subtitle: string }> = {
+  es: {
+    title: 'Preguntas frecuentes',
+    subtitle: 'Todo lo que necesitas saber antes de salir a navegar por la bahía de Roses.',
+  },
+  fr: {
+    title: 'Questions fréquentes',
+    subtitle: 'Tout ce que vous devez savoir avant de naviguer dans la baie de Roses.',
+  },
+  ca: {
+    title: 'Preguntes freqüents',
+    subtitle: 'Tot el que necessiteu saber abans de sortir a navegar per la badia de Roses.',
+  },
+};
+
 export default function FAQBahia({ lang = 'es' }: FAQBahiaProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const faqs = lang === 'fr' ? faqsBahiaFr : lang === 'ca' ? faqsBahiaCa : faqsBahia;
+  const heading = headings[lang];
 
   return (
     <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mb-3 leading-tight">
-          Preguntas frecuentes
+          {heading.title}
         </h2>
         <p className="text-slate-500 mb-10">
-          Todo lo que necesitas saber antes de salir a navegar por la bahía de Roses.
+          {heading.subtitle}
         </p>
 
         <div className="space-y-3">
-          {faqsBahia.map((faq, i) => (
+          {faqs.map((faq, i) => (
             <FAQItem
               key={faq.question}
               question={faq.question}

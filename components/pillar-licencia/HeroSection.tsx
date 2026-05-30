@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, Record<string, string>> = {
   es: {
@@ -25,6 +25,13 @@ const t: Record<Lang, Record<string, string>> = {
     subtitle: '500+ departures · 5★ Google · Departing from Santa Margarita',
     alt: 'Licensed boat sailing in the Bay of Roses towards Cap de Creus',
   },
+  ca: {
+    title: 'Lloguer de vaixell amb llicència a Roses',
+    boatsLink: 'Veure embarcacions disponibles',
+    whatsapp: 'Parlar per WhatsApp',
+    subtitle: '500+ sortides · 5★ Google · Sortida des de Santa Margarida',
+    alt: 'Vaixell amb llicència navegant per la badia de Roses cap al Cap de Creus',
+  },
 };
 
 export default function HeroSection({ lang = 'es' }: { lang?: Lang }) {
@@ -35,7 +42,9 @@ export default function HeroSection({ lang = 'es' }: { lang?: Lang }) {
       ? 'https://wa.me/34623995700?text=Hola%2C%20me%20interesa%20alquilar%20un%20barco%20con%20licencia%20en%20Roses'
       : lang === 'fr'
         ? 'https://wa.me/34623995700?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20location%20d%27un%20bateau%20avec%20permis%20%C3%A0%20Roses'
-        : 'https://wa.me/34623995700?text=Hello%2C%20I%20am%20interested%20in%20renting%20a%20boat%20with%20licence%20in%20Roses';
+        : lang === 'ca'
+          ? 'https://wa.me/34623995700?text=Hola%2C%20m%27interessa%20llogar%20un%20vaixell%20amb%20llic%C3%A8ncia%20a%20Roses'
+          : 'https://wa.me/34623995700?text=Hello%2C%20I%20am%20interested%20in%20renting%20a%20boat%20with%20licence%20in%20Roses';
 
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">

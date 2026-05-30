@@ -1,73 +1,96 @@
 import { MapPin, Anchor, Wind, Compass } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface PorQueRosesProps {
   lang?: Lang;
 }
 
+const tri = (lang: Lang, es: string, fr: string, ca: string) =>
+  lang === 'es' ? es : lang === 'ca' ? ca : fr;
+
 const getContent = (lang: Lang) => ({
-  title:
-    lang === 'es'
-      ? '¿Por qué alquilar una lancha en Roses y no en otro punto de la Costa Brava?'
-      : 'Pourquoi louer une vedette à Roses plutôt qu\'ailleurs sur la Costa Brava ?',
-  subtitle:
-    lang === 'es'
-      ? 'La Costa Brava tiene empresas de alquiler náutico en varios puntos. Pero Roses tiene una combinación de factores difícil de encontrar en otro sitio.'
-      : 'La Costa Brava compte des sociétés de location nautique en plusieurs points. Mais Roses présente une combinaison de facteurs difficile à trouver ailleurs.',
+  title: tri(
+    lang,
+    '¿Por qué alquilar una lancha en Roses y no en otro punto de la Costa Brava?',
+    'Pourquoi louer une vedette à Roses plutôt qu\'ailleurs sur la Costa Brava ?',
+    'Per què llogar una llanxa a Roses i no en un altre punt de la Costa Brava?'
+  ),
+  subtitle: tri(
+    lang,
+    'La Costa Brava tiene empresas de alquiler náutico en varios puntos. Pero Roses tiene una combinación de factores difícil de encontrar en otro sitio.',
+    'La Costa Brava compte des sociétés de location nautique en plusieurs points. Mais Roses présente une combinaison de facteurs difficile à trouver ailleurs.',
+    'La Costa Brava té empreses de lloguer nàutic en diversos punts. Però Roses té una combinació de factors difícil de trobar en un altre lloc.'
+  ),
   cards: [
     {
       icon: MapPin,
-      title:
-        lang === 'es'
-          ? 'Acceso directo al Cap de Creus'
-          : 'Accès direct au Cap de Creus',
-      body:
-        lang === 'es'
-          ? 'El Parque Natural del Cap de Creus empieza prácticamente en la puerta. Desde otros puntos de la Costa Brava, llegar al cabo supone más horas de navegación. Desde Roses, está a 45-60 minutos.'
-          : 'Le Parc Naturel du Cap de Creus commence pratiquement à la porte. Depuis d\'autres points de la Costa Brava, atteindre le cap demande plus d\'heures de navigation. Depuis Roses, il est à 45-60 minutes.',
+      title: tri(
+        lang,
+        'Acceso directo al Cap de Creus',
+        'Accès direct au Cap de Creus',
+        'Accés directe al Cap de Creus'
+      ),
+      body: tri(
+        lang,
+        'El Parque Natural del Cap de Creus empieza prácticamente en la puerta. Desde otros puntos de la Costa Brava, llegar al cabo supone más horas de navegación. Desde Roses, está a 45-60 minutos.',
+        'Le Parc Naturel du Cap de Creus commence pratiquement à la porte. Depuis d\'autres points de la Costa Brava, atteindre le cap demande plus d\'heures de navigation. Depuis Roses, il est à 45-60 minutes.',
+        'El Parc Natural del Cap de Creus comença pràcticament a la porta. Des d\'altres punts de la Costa Brava, arribar al cap suposa més hores de navegació. Des de Roses, està a 45-60 minuts.'
+      ),
       accent: 'text-cyan-600',
       bg: 'bg-cyan-50',
       border: 'border-cyan-200',
     },
     {
       icon: Anchor,
-      title:
-        lang === 'es'
-          ? 'Salida desde los canales de Santa Margarita — único en la Costa Brava'
-          : 'Départ depuis les canaux de Santa Margarita — unique sur la Costa Brava',
-      body:
-        lang === 'es'
-          ? 'El punto de salida de Experience Boat es único en la Costa Brava. Ninguna otra empresa opera desde los canales de Santa Margarita — la mayoría sale desde puertos deportivos convencionales.'
-          : 'Le point de départ d\'Experience Boat est unique sur la Costa Brava. Aucune autre entreprise n\'opère depuis les canaux de Santa Margarita — la plupart partent depuis des ports de plaisance classiques.',
+      title: tri(
+        lang,
+        'Salida desde los canales de Santa Margarita — único en la Costa Brava',
+        'Départ depuis les canaux de Santa Margarita — unique sur la Costa Brava',
+        'Sortida des dels canals de Santa Margarida — únic a la Costa Brava'
+      ),
+      body: tri(
+        lang,
+        'El punto de salida de Experience Boat es único en la Costa Brava. Ninguna otra empresa opera desde los canales de Santa Margarita — la mayoría sale desde puertos deportivos convencionales.',
+        'Le point de départ d\'Experience Boat est unique sur la Costa Brava. Aucune autre entreprise n\'opère depuis les canaux de Santa Margarita — la plupart partent depuis des ports de plaisance classiques.',
+        'El punt de sortida d\'Experience Boat és únic a la Costa Brava. Cap altra empresa opera des dels canals de Santa Margarida — la majoria surt des de ports esportius convencionals.'
+      ),
       accent: 'text-slate-700',
       bg: 'bg-slate-50',
       border: 'border-slate-200',
     },
     {
       icon: Wind,
-      title:
-        lang === 'es'
-          ? 'Bahía protegida — condiciones ideales para lanchas de alquiler'
-          : 'Baie protégée — conditions idéales pour les vedettes de location',
-      body:
-        lang === 'es'
-          ? 'La bahía de Roses ofrece aguas relativamente protegidas, sin el oleaje abierto que se encuentra en otros puntos de la Costa Brava. Condiciones especialmente buenas para quienes salen por primera vez.'
-          : 'La baie de Roses offre des eaux relativement protégées, sans la houle ouverte que l\'on trouve en d\'autres points de la Costa Brava. Conditions particulièrement bonnes pour ceux qui sortent pour la première fois.',
+      title: tri(
+        lang,
+        'Bahía protegida — condiciones ideales para lanchas de alquiler',
+        'Baie protégée — conditions idéales pour les vedettes de location',
+        'Badia protegida — condicions ideals per a llanxes de lloguer'
+      ),
+      body: tri(
+        lang,
+        'La bahía de Roses ofrece aguas relativamente protegidas, sin el oleaje abierto que se encuentra en otros puntos de la Costa Brava. Condiciones especialmente buenas para quienes salen por primera vez.',
+        'La baie de Roses offre des eaux relativement protégées, sans la houle ouverte que l\'on trouve en d\'autres points de la Costa Brava. Conditions particulièrement bonnes pour ceux qui sortent pour la première fois.',
+        'La badia de Roses ofereix aigües relativament protegides, sense l\'onatge obert que es troba en altres punts de la Costa Brava. Condicions especialment bones per a qui surt per primera vegada.'
+      ),
       accent: 'text-sky-600',
       bg: 'bg-sky-50',
       border: 'border-sky-200',
     },
     {
       icon: Compass,
-      title:
-        lang === 'es'
-          ? 'Variedad de entornos en poco espacio'
-          : 'Grande diversité de paysages en peu de distance',
-      body:
-        lang === 'es'
-          ? 'En una sola jornada puedes recorrer los canales interiores de Santa Margarita, cruzar la bahía, llegar a las calas del Cap de Creus y volver. Difícil encontrar tanta diversidad en tan pocos kilómetros.'
-          : 'En une seule journée, vous pouvez parcourir les canaux intérieurs de Santa Margarita, traverser la baie, atteindre les criques du Cap de Creus et revenir. Difficile de trouver autant de diversité en si peu de kilomètres.',
+      title: tri(
+        lang,
+        'Variedad de entornos en poco espacio',
+        'Grande diversité de paysages en peu de distance',
+        'Varietat d\'entorns en poc espai'
+      ),
+      body: tri(
+        lang,
+        'En una sola jornada puedes recorrer los canales interiores de Santa Margarita, cruzar la bahía, llegar a las calas del Cap de Creus y volver. Difícil encontrar tanta diversidad en tan pocos kilómetros.',
+        'En une seule journée, vous pouvez parcourir les canaux intérieurs de Santa Margarita, traverser la baie, atteindre les criques du Cap de Creus et revenir. Difficile de trouver autant de diversité en si peu de kilomètres.',
+        'En una sola jornada podeu recórrer els canals interiors de Santa Margarida, creuar la badia, arribar a les cales del Cap de Creus i tornar. Difícil trobar tanta diversitat en tan pocs quilòmetres.'
+      ),
       accent: 'text-emerald-600',
       bg: 'bg-emerald-50',
       border: 'border-emerald-200',

@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { faqsLancha, faqsLanchaFr, FAQ } from './faq-data';
+import { faqsLancha, faqsLanchaFr, faqsLanchaCa, FAQ } from './faq-data';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface FAQAccordionProps {
   lang?: Lang;
@@ -25,6 +25,13 @@ const t: Record<Lang, Record<string, string>> = {
     question: 'Vous avez une autre question ?',
     whatsappLabel: 'Posez-nous la question sur WhatsApp →',
     whatsappText: 'Bonjour%2C%20j%27ai%20une%20question%20sur%20la%20location%20d%27une%20vedette%20%C3%A0%20Roses',
+  },
+  ca: {
+    title: 'Preguntes freqüents',
+    subtitle: 'Resolem els dubtes més habituals sobre el lloguer de llanxa a la Costa Brava.',
+    question: 'Teniu alguna altra pregunta?',
+    whatsappLabel: 'Pregunteu-nos per WhatsApp →',
+    whatsappText: 'Hola%2C%20tinc%20una%20pregunta%20sobre%20el%20lloguer%20de%20llanxes%20a%20Roses',
   },
 };
 
@@ -80,7 +87,7 @@ function FAQItem({
 export default function FAQAccordion({ lang = 'es' }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const labels = t[lang];
-  const faqs: FAQ[] = lang === 'es' ? faqsLancha : faqsLanchaFr;
+  const faqs: FAQ[] = lang === 'es' ? faqsLancha : lang === 'ca' ? faqsLanchaCa : faqsLanchaFr;
 
   return (
     <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-8">

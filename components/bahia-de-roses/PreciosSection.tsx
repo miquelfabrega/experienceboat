@@ -19,7 +19,7 @@ const precios = [
   },
 ];
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface PreciosSectionProps {
   lang?: Lang;

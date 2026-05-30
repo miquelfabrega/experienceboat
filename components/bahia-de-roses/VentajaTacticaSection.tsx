@@ -1,6 +1,6 @@
 import { Anchor } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface VentajaTacticaSectionProps {
   lang?: Lang;

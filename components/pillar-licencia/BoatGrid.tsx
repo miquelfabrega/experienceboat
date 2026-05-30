@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Users, Ruler, Clock, ChevronRight } from 'lucide-react';
 import { getBarcosActivos } from '@/lib/data/fleet';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 interface Boat {
   id: number;
@@ -50,6 +50,7 @@ const boatsData: Record<Lang, Boat[]> = {
   es: buildBoats('es'),
   fr: buildBoats('fr'),
   en: buildBoats('en'),
+  ca: buildBoats('ca'),
 };
 
 const t: Record<Lang, Record<string, string>> = {
@@ -92,6 +93,19 @@ const t: Record<Lang, Record<string, string>> = {
     cta: 'Check availability',
     ctaAriaLabel: 'Check availability of the {{model}}',
   },
+  ca: {
+    badge: 'Flota amb llicència',
+    title: 'Les nostres embarcacions amb llicència a Roses',
+    description:
+      'Disposem d\'embarcacions amb llicència per a diferents mides de grup. Totes surten de la Marina de Santa Margarida. Reserveu per mitja jornada o jornada completa segons el vostre pla.',
+    capacity: 'Capacitat:',
+    people: 'persones',
+    eslora: 'Eslora:',
+    halfDayLabel: 'Mitja jornada (4h)',
+    fullDayLabel: 'Jornada completa (8h)',
+    cta: 'Veure disponibilitat',
+    ctaAriaLabel: 'Veure disponibilitat del {{model}}',
+  },
 };
 
 
@@ -100,10 +114,11 @@ export default function BoatGrid({ lang = 'es' }: { lang?: Lang }) {
   const texts = t[lang];
   const sectionId = lang === 'fr' ? 'bateaux' : 'barcos';
   const whatsappBaseUrl = 'https://wa.me/34623995700?text=';
-  const whatsappTexts = {
+  const whatsappTexts: Record<Lang, string> = {
     es: 'Hola%2C%20me%20interesa%20el%20',
     fr: 'Bonjour%2C%20je%20suis%20intéressé%20par%20le%20',
     en: 'Hello%2C%20I%20am%20interested%20in%20the%20',
+    ca: 'Hola%2C%20m%27interessa%20el%20',
   };
   const whatsappEnding = '%20con%20licencia%20en%20Roses';
 
@@ -128,7 +143,7 @@ export default function BoatGrid({ lang = 'es' }: { lang?: Lang }) {
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                 <Image
                   src={boat.image}
-                  alt={`${lang === 'es' ? 'Barco' : lang === 'fr' ? 'Bateau' : 'Boat'} ${boat.model} ${lang === 'es' ? 'disponible para alquiler con licencia en Roses' : lang === 'fr' ? 'disponible à la location avec permis à Roses' : 'available for rent with licence in Roses'}`}
+                  alt={`${lang === 'es' ? 'Barco' : lang === 'fr' ? 'Bateau' : lang === 'ca' ? 'Vaixell' : 'Boat'} ${boat.model} ${lang === 'es' ? 'disponible para alquiler con licencia en Roses' : lang === 'fr' ? 'disponible à la location avec permis à Roses' : lang === 'ca' ? 'disponible per llogar amb llicència a Roses' : 'available for rent with licence in Roses'}`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

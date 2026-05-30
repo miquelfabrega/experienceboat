@@ -19,11 +19,16 @@ const translations = {
     label: 'Canal Tour',
     action: 'Book',
     btnText: 'Check dates'
+  },
+  ca: {
+    label: 'Canal Tour',
+    action: 'Reservar',
+    btnText: 'Consultar dates'
   }
 };
 
 interface StickyCTAProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function StickyCTA({ lang = 'es' }: StickyCTAProps) {

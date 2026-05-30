@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export type Lang = 'es' | 'fr' | 'en';
+export type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const ui: Record<Lang, {
   all: string; noLicence: string; withLicence: string;
@@ -74,6 +74,25 @@ const ui: Record<Lang, {
     siloDesc2: 'Free navigation across the Bay of Roses and Costa Brava. Routes to Cap de Creus and much more.',
     siloCta2: 'See boats with licence', siloHref2: '/en/boat-rental-with-licence-roses',
   },
+  ca: {
+    all: 'Tots', noLicence: 'Sense llicència', withLicence: 'Amb llicència',
+    h1: 'Trieu la vostra embarcació',
+    lead: 'Tota la nostra flota disponible a Roses, des dels canals de Santa Margarida fins al Cap de Creus. Amb llicència o sense.',
+    availability: 'Veure disponibilitat',
+    introWith: 'Per a patró amb titulació. Navegació lliure per la badia de Roses i la Costa Brava.',
+    introNo: 'No necessiteu titulació. Ideal per als canals de Santa Margarida i la badia de Roses.',
+    introPremium: 'Per a qui busca alguna cosa més. Espai, potència i una experiència diferent al Mediterrani.',
+    ctaTitle: 'No sabeu quina embarcació s\'adapta millor al vostre pla?',
+    ctaLead: 'Truqueu-nos o escriviu-nos. En cinc minuts us diem quina triar, per a quantes persones i a quin preu.',
+    ctaContact: 'Contactar', ctaContactHref: '/ca/contacte',
+    ctaExperiences: 'Excursions privades amb patró a Roses', ctaExpHref: '/ca/experiencies-vaixell-roses',
+    siloTitle1: 'Lloguer d\'embarcació sense llicència a Roses',
+    siloDesc1: 'Navegueu pels canals de Santa Margarida i la badia de Roses sense necessitar titulació. Ideal per a famílies i parelles.',
+    siloCta1: 'Veure opcions sense llicència', siloHref1: '/ca/lloguer-vaixell-sense-llicencia-roses',
+    siloTitle2: 'Lloguer d\'embarcació amb llicència a Roses',
+    siloDesc2: 'Navegació lliure per la badia de Roses i la Costa Brava. Rutes al Cap de Creus, llanxa ràpida i molt més.',
+    siloCta2: 'Veure opcions amb llicència', siloHref2: '/ca/lloguer-vaixell-amb-llicencia-roses',
+  },
 };
 
 // Card id → current active slug in /lib/data/fleet.ts (ES product page).
@@ -89,24 +108,25 @@ const ES_SLUG: Record<string, string | null> = {
 };
 
 const fleetIndexHref = (lang: Lang) =>
-  lang === 'fr' ? '/fr/bateaux' : lang === 'en' ? '/en/boats' : '/barcos';
+  lang === 'fr' ? '/fr/bateaux' : lang === 'en' ? '/en/boats' : lang === 'ca' ? '/ca/embarcacions' : '/barcos';
 
 const boatHref = (id: string, lang: Lang) => {
   const slug = ES_SLUG[id];
   if (lang === 'es' && slug) return `/barcos/${slug}`;
+  if (lang === 'ca' && slug) return `/ca/embarcacions/${slug}`;
   return fleetIndexHref(lang);
 };
 
 // Boat data — names and hrefs are language-neutral; category key maps to ui labels
 const boatsData = [
-  { id: 'jeanneau-595-reineta',  name: 'Reineta (Jeanneau 595)',      cat: 'with', badge: { es: '⭐ Más reservado', fr: '⭐ Le plus réservé', en: '⭐ Most booked' }, price: { es: 'Desde 195 € · ½ día', fr: 'À partir de 195 € · ½ journée', en: 'From €195 · ½ day' }, href: '/barcos', img: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp' },
-  { id: 'orange-kiwi-620',       name: 'Orange Kiwi 620',             cat: 'with', badge: null,                                                                       price: { es: 'Desde 235 € · ½ día', fr: 'À partir de 235 € · ½ journée', en: 'From €235 · ½ day' }, href: '/barcos', img: '/boats/orange-kiwi-620/orange-kiwi-620-hero.webp' },
-  { id: 'raf-iv-mano',           name: 'RAF IV Mano 21,5 Sport Fish', cat: 'with', badge: null,                                                                       price: { es: 'Desde 245 € · ½ día', fr: 'À partir de 245 € · ½ journée', en: 'From €245 · ½ day' }, href: '/barcos', img: '/boats/raf-iv-mano/raf-iv-mano-hero.webp' },
-  { id: 'spirit-of-the-sea-675', name: 'Spirit of the Sea 675',       cat: 'with', badge: null,                                                                       price: { es: 'Desde 260 € · ½ día', fr: 'À partir de 260 € · ½ journée', en: 'From €260 · ½ day' }, href: '/barcos', img: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp' },
-  { id: 'justi-saura-llaut-850', name: 'Justi Saura Llaut 850',       cat: 'with', badge: { es: '⚓ Con patrón', fr: '⚓ Avec patron', en: '⚓ With skipper' },        price: { es: 'Desde 290 € · ½ día', fr: 'À partir de 290 € · ½ journée', en: 'From €290 · ½ day' }, href: '/barcos', img: '/boats/generic/hero.webp' },
-  { id: 'remus-450',             name: 'Remus 450',                   cat: 'no',   badge: { es: '⚡ Ideal canales Santa Margarita', fr: '⚡ Idéal canaux Santa Margarita', en: '⚡ Perfect for Santa Margarita canals' }, price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day' }, href: '/barcos', img: '/boats/remus-450/remus-450-hero.webp' },
-  { id: 'marine-brezze-450',     name: 'Marine Brezze 450',           cat: 'no',   badge: null,                                                                       price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day' }, href: '/barcos', img: '/boats/marine-brezze-450/marine-brezze-450-hero.webp' },
-  { id: 'dream-point-420',       name: 'Dream Point 420',             cat: 'no',   badge: null,                                                                       price: { es: 'Desde 70 € · ½ día', fr: 'À partir de 70 € · ½ journée', en: 'From €70 · ½ day' }, href: '/barcos', img: '/boats/dream-point-420/dream-point-420-hero.webp' },
+  { id: 'jeanneau-595-reineta',  name: 'Reineta (Jeanneau 595)',      cat: 'with', badge: { es: '⭐ Más reservado', fr: '⭐ Le plus réservé', en: '⭐ Most booked', ca: '⭐ El més reservat' }, price: { es: 'Desde 195 € · ½ día', fr: 'À partir de 195 € · ½ journée', en: 'From €195 · ½ day', ca: 'Des de 195 € · ½ jornada' }, href: '/barcos', img: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp' },
+  { id: 'orange-kiwi-620',       name: 'Orange Kiwi 620',             cat: 'with', badge: null,                                                                       price: { es: 'Desde 235 € · ½ día', fr: 'À partir de 235 € · ½ journée', en: 'From €235 · ½ day', ca: 'Des de 235 € · ½ jornada' }, href: '/barcos', img: '/boats/orange-kiwi-620/orange-kiwi-620-hero.webp' },
+  { id: 'raf-iv-mano',           name: 'RAF IV Mano 21,5 Sport Fish', cat: 'with', badge: null,                                                                       price: { es: 'Desde 245 € · ½ día', fr: 'À partir de 245 € · ½ journée', en: 'From €245 · ½ day', ca: 'Des de 245 € · ½ jornada' }, href: '/barcos', img: '/boats/raf-iv-mano/raf-iv-mano-hero.webp' },
+  { id: 'spirit-of-the-sea-675', name: 'Spirit of the Sea 675',       cat: 'with', badge: null,                                                                       price: { es: 'Desde 260 € · ½ día', fr: 'À partir de 260 € · ½ journée', en: 'From €260 · ½ day', ca: 'Des de 260 € · ½ jornada' }, href: '/barcos', img: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp' },
+  { id: 'justi-saura-llaut-850', name: 'Justi Saura Llaut 850',       cat: 'with', badge: { es: '⚓ Con patrón', fr: '⚓ Avec patron', en: '⚓ With skipper', ca: '⚓ Amb patró' },        price: { es: 'Desde 290 € · ½ día', fr: 'À partir de 290 € · ½ journée', en: 'From €290 · ½ day', ca: 'Des de 290 € · ½ jornada' }, href: '/barcos', img: '/boats/generic/hero.webp' },
+  { id: 'remus-450',             name: 'Remus 450',                   cat: 'no',   badge: { es: '⚡ Ideal canales Santa Margarita', fr: '⚡ Idéal canaux Santa Margarita', en: '⚡ Perfect for Santa Margarita canals', ca: '⚡ Ideal canals Santa Margarida' }, price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day', ca: 'Des de 90 € · ½ jornada' }, href: '/barcos', img: '/boats/remus-450/remus-450-hero.webp' },
+  { id: 'marine-brezze-450',     name: 'Marine Brezze 450',           cat: 'no',   badge: null,                                                                       price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day', ca: 'Des de 90 € · ½ jornada' }, href: '/barcos', img: '/boats/marine-brezze-450/marine-brezze-450-hero.webp' },
+  { id: 'dream-point-420',       name: 'Dream Point 420',             cat: 'no',   badge: null,                                                                       price: { es: 'Desde 70 € · ½ día', fr: 'À partir de 70 € · ½ journée', en: 'From €70 · ½ day', ca: 'Des de 70 € · ½ jornada' }, href: '/barcos', img: '/boats/dream-point-420/dream-point-420-hero.webp' },
 ];
 
 export default function BarcosClient({ lang = 'es' }: { lang?: Lang }) {

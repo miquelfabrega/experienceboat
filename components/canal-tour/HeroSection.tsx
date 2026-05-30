@@ -28,11 +28,20 @@ const translations = {
     scrollAnchor: '#what-is-it',
     tagline: 'No licence required · Santa Margarita canals · 90 minutes',
     altText: 'Canal Tour boat trip through Santa Margarita canals in Roses'
+  },
+  ca: {
+    title: 'Tour en vaixell pels canals de Santa Margarida',
+    subtitle: 'Convertiu-vos en el capità de la vostra pròpia aventura navegant pels impressionants canals de Santa Margarida, sense necessitat de llicència.',
+    discoverBtn: 'Descobrir l\'experiència',
+    bookBtn: 'Reservar Canal Tour',
+    scrollAnchor: '#que-es',
+    tagline: 'Sense llicència · Canals de Santa Margarida · 90 minuts',
+    altText: 'Tour en vaixell pels canals de Santa Margarida a Roses'
   }
 };
 
 interface HeroSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function HeroSection({ lang = 'es' }: HeroSectionProps) {

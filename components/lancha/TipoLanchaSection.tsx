@@ -1,6 +1,6 @@
 import { Anchor, Wind, Waves } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface TipoLanchaSectionProps {
   lang?: Lang;
@@ -38,11 +38,18 @@ const lanchas = [
 ];
 
 export default function TipoLanchaSection({ lang = 'es' }: TipoLanchaSectionProps) {
-  const title = lang === 'es' ? 'Tipos de lancha disponibles' : 'Types de vedettes disponibles';
+  const title =
+    lang === 'es'
+      ? 'Tipos de lancha disponibles'
+      : lang === 'ca'
+        ? 'Tipus de llanxa disponibles'
+        : 'Types de vedettes disponibles';
   const subtitle =
     lang === 'es'
       ? 'Tenemos embarcaciones pensadas para diferentes necesidades y preferencias. Todas salen desde Santa Margarita.'
-      : 'Nous avons des embarcations conçues pour différents besoins et préférences. Toutes partent de Santa Margarita.';
+      : lang === 'ca'
+        ? 'Tenim embarcacions pensades per a diferents necessitats i preferències. Totes surten des de Santa Margarida.'
+        : 'Nous avons des embarcations conçues pour différents besoins et préférences. Toutes partent de Santa Margarita.';
 
   return (
     <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">

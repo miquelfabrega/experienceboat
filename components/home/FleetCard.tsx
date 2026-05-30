@@ -5,23 +5,33 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Barco } from '@/lib/data/fleet';
 
-type Lang = 'es' | 'en' | 'fr';
+type Lang = 'es' | 'en' | 'fr' | 'ca';
 
 const FLEET_INDEX: Record<Lang, string> = {
   es: '/barcos',
   en: '/en/boats',
   fr: '/fr/bateaux',
+  ca: '/ca/embarcacions',
 };
 
 const DETAIL_CTA: Record<Lang, string> = {
   es: 'Ver detalles completos',
   en: 'See full fleet',
   fr: 'Voir toute la flotte',
+  ca: 'Veure tota la flota',
+};
+
+// Locales con páginas de detalle por barco (mirror de ES). EN/FR aún no las tienen
+// y enlazan al índice de flota.
+const DETAIL_BASE: Partial<Record<Lang, string>> = {
+  es: '/barcos',
+  ca: '/ca/embarcacions',
 };
 
 export default function FleetCard({ barco, lang = 'es' }: { barco: Barco; lang?: Lang }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const detailHref = lang === 'es' ? `/barcos/${barco.slug}` : FLEET_INDEX[lang];
+  const detailBase = DETAIL_BASE[lang];
+  const detailHref = detailBase ? `${detailBase}/${barco.slug}` : FLEET_INDEX[lang];
 
   return (
     <>

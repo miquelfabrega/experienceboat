@@ -46,6 +46,53 @@ export const SILO_CANALES_CHILDREN = [
   },
 ] as const;
 
+/* ─── Catalán (CA) — mirror de los silos con slugs catalanes ─────────────────── */
+
+const SILO_LICENCIA_CHILDREN_CA = [
+  {
+    title: 'Navegar per la badia de Roses amb llicència',
+    href: '/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses',
+    description: 'Espai, cales i el Cap de Creus a 45 min.',
+  },
+  {
+    title: 'Lloguer de llanxa a la Costa Brava',
+    href: '/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava',
+    description: 'La ruta clàssica dels canals fins al cap.',
+  },
+] as const;
+
+const SILO_SIN_LICENCIA_CHILDREN_CA = [
+  {
+    title: 'Embarcació sense llicència als canals de Santa Margarida',
+    href: '/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida',
+    description: 'Aigües tranquil·les, cases a peu d\'aigua i el millor punt de partida per a principiants.',
+  },
+  {
+    title: 'Lloguer d\'embarcació sense llicència a Roses per a parelles',
+    href: '/ca/lloguer-vaixell-sense-llicencia-roses/parelles',
+    description: 'Privacitat total, cales i rutes per celebrar un dia especial.',
+  },
+] as const;
+
+const SILO_CANALES_CHILDREN_CA = [
+  {
+    title: 'Guia completa: els canals de Santa Margarida',
+    href: '/ca/canals-santa-margarida',
+    description:
+      'Per què navegar pels canals, opcions de sortida i tot el que cal saber abans de reservar.',
+  },
+  {
+    title: 'Què veure als canals de Santa Margarida des de l\'aigua',
+    href: '/ca/canals-santa-margarida/que-veure',
+    description: 'Cases sobre l\'aigua, fauna i la llum de l\'alba i el capvespre.',
+  },
+  {
+    title: 'Ruta en vaixell: canals de Santa Margarida al Cap de Creus',
+    href: '/ca/canals-santa-margarida/ruta-cap-de-creus',
+    description: 'La ruta nàutica completa des dels canals fins al parc natural.',
+  },
+] as const;
+
 function normalizePath(path: string) {
   const t = path.trim();
   if (t === '/' || t === '') return '/';
@@ -59,6 +106,8 @@ type SiloNavBlockProps = {
    * Silo de contenido. Si hay `currentPath` bajo `/canales-santa-margarita/` o `/alquiler-barco-sin-licencia-roses/`, se infiere automáticamente.
    */
   silo?: 'licencia' | 'sin-licencia' | 'canales';
+  /** Locale del bloque. 'ca' usa los slugs y textos catalanes. Por defecto 'es'. */
+  lang?: 'es' | 'ca';
 };
 
 function resolveSilo(
@@ -71,14 +120,15 @@ function resolveSilo(
   return 'licencia';
 }
 
-export default function SiloNavBlock({ currentPath, silo: siloProp }: SiloNavBlockProps) {
+export default function SiloNavBlock({ currentPath, silo: siloProp, lang = 'es' }: SiloNavBlockProps) {
   const silo = resolveSilo(currentPath, siloProp);
+  const isCa = lang === 'ca';
   const children =
     silo === 'sin-licencia'
-      ? SILO_SIN_LICENCIA_CHILDREN
+      ? (isCa ? SILO_SIN_LICENCIA_CHILDREN_CA : SILO_SIN_LICENCIA_CHILDREN)
       : silo === 'canales'
-        ? SILO_CANALES_CHILDREN
-        : SILO_LICENCIA_CHILDREN;
+        ? (isCa ? SILO_CANALES_CHILDREN_CA : SILO_CANALES_CHILDREN)
+        : (isCa ? SILO_LICENCIA_CHILDREN_CA : SILO_LICENCIA_CHILDREN);
 
   const here = currentPath ? normalizePath(currentPath) : '';
   const siblings =
@@ -88,19 +138,29 @@ export default function SiloNavBlock({ currentPath, silo: siloProp }: SiloNavBlo
 
   if (siblings.length === 0) return null;
 
-  const heading =
-    silo === 'sin-licencia'
-      ? 'Más sobre alquiler sin licencia en Roses'
-      : silo === 'canales'
-        ? 'Más sobre los canales de Santa Margarita'
-        : 'Más sobre alquiler con licencia en Roses';
+  const heading = isCa
+    ? (silo === 'sin-licencia'
+        ? 'Més sobre lloguer sense llicència a Roses'
+        : silo === 'canales'
+          ? 'Més sobre els canals de Santa Margarida'
+          : 'Més sobre lloguer amb llicència a Roses')
+    : (silo === 'sin-licencia'
+        ? 'Más sobre alquiler sin licencia en Roses'
+        : silo === 'canales'
+          ? 'Más sobre los canales de Santa Margarita'
+          : 'Más sobre alquiler con licencia en Roses');
 
-  const ariaLabel =
-    silo === 'sin-licencia'
-      ? 'Más sobre alquiler sin licencia'
-      : silo === 'canales'
-        ? 'Más sobre los canales de Santa Margarita'
-        : 'Más sobre alquiler con licencia';
+  const ariaLabel = isCa
+    ? (silo === 'sin-licencia'
+        ? 'Més sobre lloguer sense llicència'
+        : silo === 'canales'
+          ? 'Més sobre els canals de Santa Margarida'
+          : 'Més sobre lloguer amb llicència')
+    : (silo === 'sin-licencia'
+        ? 'Más sobre alquiler sin licencia'
+        : silo === 'canales'
+          ? 'Más sobre los canales de Santa Margarita'
+          : 'Más sobre alquiler con licencia');
 
   return (
     <section className="bg-slate-50 border-t border-slate-200 py-16 px-4 sm:px-6 lg:px-8">

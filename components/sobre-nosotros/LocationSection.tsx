@@ -1,13 +1,30 @@
 import { MapPin, Navigation, CheckCircle2 } from 'lucide-react';
 import Image from 'next/image';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   tag: string; h2: string; p1: string; p2: string; routeTitle: string; imgAlt: string;
   trustTitle: string; trustItems: string[];
   steps: { title: string; desc: string }[];
 }> = {
+  ca: {
+    tag: 'On naveguem',
+    h2: 'La teva base a Santa Margarida, el teu horitzó el Cap de Creus',
+    p1: 'Operem des de la Marina de Santa Margarida a Roses, una ubicació estratègica que et permet accedir en minuts a tres ecosistemes nàutics completament diferents: els tranquils canals, l\'àmplia badia de Roses i la salvatge costa del Parc Natural del Cap de Creus.',
+    p2: 'Aquesta localització privilegiada ens converteix en l\'opció ideal tant per a qui cerca una navegació tranquil·la sense llicència com per als patrons amb experiència que volen explorar les cales més verges de la Costa Brava.',
+    routeTitle: 'Ruta típica des de la Marina',
+    imgAlt: 'Vista aèria de la Marina de Santa Margarida a Roses, base d\'Experience Boat',
+    trustTitle: 'La teva empresa de confiança a Roses',
+    trustItems: ['Rutes exclusives pel Cap de Creus', 'Opcions amb i sense titulació nàutica', 'Reserves en línia i sense sorpreses', 'La millor experiència a la Costa Brava'],
+    steps: [
+      { title: 'Marina de Santa Margarida', desc: 'Punt de sortida base.' },
+      { title: 'Canals navegables', desc: 'Navegació tranquil·la, perfecta sense llicència (~10 min).' },
+      { title: 'Badia de Roses', desc: 'Platges, snorkel i aigües cristal·lines (~20 min).' },
+      { title: 'Punta Falconera', desc: 'Entrada al Parc Natural del Cap de Creus (~35 min).' },
+      { title: 'Cap de Creus', desc: 'Cales verges i paisatge únic (~55 min).' },
+    ],
+  },
   es: {
     tag: 'Dónde navegamos',
     h2: 'Tu base en Santa Margarita, tu horizonte el Cap de Creus',

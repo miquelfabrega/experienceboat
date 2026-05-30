@@ -30,11 +30,21 @@ const translations = {
       'In this extensive network of canals, there are over fifteen hundred moorings and spectacular houses with direct access to the water. Sailing here, you\'ll enter a unique nautical atmosphere, surrounded by singular architecture and boats of all kinds.'
     ],
     altImage: 'Marina de Santa Margarita in Roses'
+  },
+  ca: {
+    label: 'L\'Entorn',
+    title: 'Descobriu la Marina de Santa Margarida',
+    paragraphs: [
+      'Santa Margarida és una espectacular marina residencial construïda a l\'antiga zona d\'aiguamolls de la desembocadura del riu Grau. Hi serpentegen <strong>quinze quilòmetres de canals navegables</strong>, que ofereixen una xarxa aquàtica fascinant.',
+      'Es troba situada en plena badia de Roses, just a l\'esquerra del Parc Natural dels Aiguamolls de l\'Empordà i a molt poca distància de l\'imponent litoral del Cap de Creus, cosa que li atorga un entorn natural privilegiat.',
+      'En aquesta extensa xarxa de canals hi conviuen més de mil cinc-cents amarradors i espectaculars cases amb sortida directa a l\'aigua. Navegant per aquí us endinsareu en un ambient nàutic únic, envoltats d\'arquitectura singular i embarcacions de tota mena.'
+    ],
+    altImage: 'Marina de Santa Margarida a Roses'
   }
 };
 
 interface MarinaSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function MarinaSection({ lang = 'es' }: MarinaSectionProps) {

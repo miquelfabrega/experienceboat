@@ -28,11 +28,21 @@ const translations = {
       'The trip starts when the sun is still high — with enough time to cruise the canals in the warm late-day light — and ends when the sky has completely changed colour and the last daylight fades over the Mediterranean.',
     ],
     quote: '"This is not a sightseeing excursion. It is an experience about being in the moment."'
+  },
+  ca: {
+    sectionId: 'que-es',
+    title: 'Què és exactament el Sunset Experience?',
+    paragraphs: [
+      'El Sunset Experience és una sortida privada en vaixell al capvespre des dels canals de Santa Margarida: el sol caient sobre la badia de Roses, els reflexos a l\'aigua dels canals i aquella llum mediterrània d\'última hora que converteix qualsevol escena en una cosa irrepetible. Per a parelles, per a grups petits, per a qui vol acabar el dia d\'una manera que no s\'oblida.',
+      'És una sortida privada en vaixell de tarda-vespre pensada específicament per gaudir del capvespre des del mar. Dura aproximadament 2 hores i combina dos dels escenaris més fotogènics de Roses: els canals de Santa Margarida en caure la tarda i la badia de Roses amb el sol a l\'horitzó.',
+      'La sortida comença quan el sol encara és alt — amb temps suficient per recórrer els canals amb la llum càlida d\'última hora — i acaba quan el cel ha canviat de color del tot i les darreres llums del dia s\'apaguen sobre la Mediterrània.',
+    ],
+    quote: '"No és una excursió per veure llocs. És una excursió per viure el moment."'
   }
 };
 
 interface IntroSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function IntroSection({ lang = 'es' }: IntroSectionProps) {

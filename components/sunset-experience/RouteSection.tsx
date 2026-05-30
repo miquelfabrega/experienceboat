@@ -65,11 +65,33 @@ const translations = {
         desc: 'The return through the canals after dark has a completely different atmosphere. The houses have their lights on, the reflections in the water are a different colour, and the canals have that almost surreal nighttime tranquility. It\'s the perfect ending to a trip that started with light and ends with darkness.'
       }
     ]
+  },
+  ca: {
+    title: 'Com és la sortida — dels canals al capvespre a la badia',
+    description: 'Un recorregut de 2 hores dissenyat per gaudir de cada canvi de llum.',
+    steps: [
+      {
+        title: 'La primera hora — els canals de Santa Margarida en caure la tarda',
+        desc: 'La sortida comença a la Marina de Santa Margarida quan el sol ja ha baixat prou perquè la llum sigui càlida i els reflexos a l\'aigua siguin perfectes. Les cases s\'entonen de taronja, les palmeres projecten ombres llargues i l\'ambient de la urbanització té una qualitat gairebé cinematogràfica. És el tram més fotogènic.'
+      },
+      {
+        title: 'La sortida a la badia — l\'espectacle comença',
+        desc: 'Quan l\'embarcació deixa els canals i s\'obre a la badia de Roses, l\'escenari canvia d\'escala. El sol ja és a prop de l\'horitzó, el cel comença a agafar color i la badia es converteix en un mirall. Fondegem o naveguem a poc a poc perquè el capvespre sigui tan espectacular com sigui possible.'
+      },
+      {
+        title: 'El moment del capvespre',
+        desc: 'Quan el sol toca l\'horitzó, el temps s\'atura una mica. El cel passa del taronja al rosa, del rosa al violeta. El Pirineu al fons, el Cap de Creus a la dreta, l\'aigua perfectament quieta. Si heu portat alguna cosa per brindar, el patró sap exactament quan parar el motor i deixar que el silenci i el color ho omplin tot.'
+      },
+      {
+        title: 'El retorn pels canals de nit',
+        desc: 'La tornada pels canals quan ja ha fet fosc té un ambient completament diferent. Les cases tenen els llums encesos, els reflexos a l\'aigua són d\'un altre color i els canals tenen aquella quietud nocturna gairebé irreal. És el tancament perfecte per a una sortida que ha començat amb llum i acaba amb foscor.'
+      }
+    ]
   }
 };
 
 interface RouteSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function RouteSection({ lang = 'es' }: RouteSectionProps) {

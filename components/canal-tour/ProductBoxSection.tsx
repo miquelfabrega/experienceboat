@@ -53,17 +53,35 @@ const translations = {
     whatsappBtn: 'WhatsApp',
     whatsappText: 'Hello%2C%20I%27d%20like%20information%20about%20the%20Canal%20Tour%20Santa%20Margarita',
     altImage: 'Canal Tour Santa Margarita — no licence boat in the Roses canals'
+  },
+  ca: {
+    experience: 'Experiència',
+    title: 'Canal Tour Santa Margarida',
+    description: 'Passeig en vaixell sense llicència pels canals — reserveu en línia o per WhatsApp.',
+    badge90: '90 minuts',
+    badgeLicense: 'Sense llicència',
+    content: 'Navegueu vosaltres mateixos pels canals de Santa Margarida en una embarcació de 4,3–4,5 m amb motor Mercury 15 CV. Inclou instrucció prèvia, armilles i tot el necessari per a una sortida segura.',
+    capacity: 'Capacitat: 4 a 6 persones segons embarcació',
+    departure: 'Sortida: Av. Clot Franquest Nord, Marina Santa Margarida, Roses',
+    pricing: 'Tarifes: segons temporada i model de vaixell — consulteu preus actualitzats en reservar',
+    priceLabel: 'Preu orientatiu',
+    priceValue: 'Consultar a reserves',
+    reserveBtn: 'Reservar',
+    whatsappBtn: 'WhatsApp',
+    whatsappText: 'Hola%2C%20vull%20informaci%C3%B3%20sobre%20el%20Canal%20Tour%20Santa%20Margarida',
+    altImage: 'Canal Tour Santa Margarida — vaixell sense llicència als canals de Roses'
   }
 };
 
 interface ProductBoxSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProps) {
   const t = translations[lang];
-  const reserveLink = lang === 'es' ? '/experiencias-barco-roses/canal-tour-santa-margarita' : 
-                      lang === 'fr' ? '/fr/experiences-bateau-roses/canal-tour-santa-margarita' : 
+  const reserveLink = lang === 'es' ? '/experiencias-barco-roses/canal-tour-santa-margarita' :
+                      lang === 'fr' ? '/fr/experiences-bateau-roses/canal-tour-santa-margarita' :
+                      lang === 'ca' ? '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida' :
                       '/en/boat-experiences-roses/canal-tour-santa-margarita';
 
   return (

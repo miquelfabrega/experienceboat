@@ -1,4 +1,4 @@
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 export interface FAQ {
   question: string;
@@ -6,6 +6,33 @@ export interface FAQ {
 }
 
 export const faqData: Record<Lang, FAQ[]> = {
+  ca: [
+    {
+      question: 'Cal experiència nàutica per a una experiència amb patró?',
+      answer:
+        'No. Quan reserveu una excursió privada o el Sunset Experience, el patró s\'encarrega de tota la navegació. No necessiteu cap titulació ni experiència prèvia — només ganes de gaudir del mar.',
+    },
+    {
+      question: 'Es pot triar la ruta de l\'excursió?',
+      answer:
+        'Sí. Abans de cada sortida parlem amb vosaltres per recollir preferències. Si hi ha cales concretes que voleu visitar o aspectes de la ruta que voleu prioritzar, els incorporem sempre que les condicions del mar ho permetin.',
+    },
+    {
+      question: 'Quantes persones poden venir en una experiència privada?',
+      answer:
+        'Segons l\'embarcació, entre 4 i 12 persones. Totes les sortides són privades — l\'embarcació és exclusivament per al vostre grup.',
+    },
+    {
+      question: 'Quina diferència hi ha entre una experiència amb patró i un lloguer de vaixell?',
+      answer:
+        'En el lloguer, vosaltres porteu l\'embarcació al vostre ritme i decidiu la ruta de manera autònoma. En una experiència amb patró, el patró porta el vaixell i us guia cap als millors destins segons el dia i les condicions. És l\'opció perfecta per a qui vol desconnectar del tot o per a grups sense experiència nàutica.',
+    },
+    {
+      question: 'Amb quina antelació cal reservar?',
+      answer:
+        'En temporada alta (juliol i agost) recomanem reservar amb almenys dues setmanes. En temporada mitjana, amb 48-72 hores sol ser suficient. Per a grups grans o dates especials, com abans millor.',
+    },
+  ],
   es: [
     {
       question: '¿Hace falta experiencia náutica para una experiencia con patrón?',

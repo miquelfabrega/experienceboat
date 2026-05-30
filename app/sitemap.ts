@@ -75,6 +75,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/aviso-legal', 0.2, 'yearly'),
     url('/cookies', 0.2, 'yearly'),
 
+    // ─── CA — Inici (mirror complet d'ES) ───────────────────────────────────
+    url('/ca', 0.9, 'weekly', NOW),
+
+    // ─── CA — Lloguer sense llicència ───────────────────────────────────────
+    url('/ca/lloguer-vaixell-sense-llicencia-roses', 0.85, 'monthly'),
+    url('/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida', 0.75, 'monthly'),
+    url('/ca/lloguer-vaixell-sense-llicencia-roses/parelles', 0.75, 'monthly'),
+
+    // ─── CA — Lloguer amb llicència ─────────────────────────────────────────
+    url('/ca/lloguer-vaixell-amb-llicencia-roses', 0.85, 'monthly'),
+    url('/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses', 0.75, 'monthly'),
+    url('/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava', 0.75, 'monthly'),
+
+    // ─── CA — Experiències / excursions ─────────────────────────────────────
+    url('/ca/experiencies-vaixell-roses', 0.85, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/excursions-privades', 0.75, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/sunset-experience', 0.75, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/canal-tour-santa-margarida', 0.75, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/cap-de-creus-cales', 0.75, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/cadaques', 0.75, 'monthly'),
+    url('/ca/experiencies-vaixell-roses/coves-esnorquel', 0.75, 'monthly'),
+
+    // ─── CA — Canals Santa Margarida ────────────────────────────────────────
+    url('/ca/canals-santa-margarida', 0.85, 'monthly'),
+    url('/ca/canals-santa-margarida/que-veure', 0.75, 'monthly'),
+    url('/ca/canals-santa-margarida/ruta-cap-de-creus', 0.75, 'monthly'),
+
+    // ─── CA — Flota ─────────────────────────────────────────────────────────
+    url('/ca/embarcacions', 0.65, 'monthly'),
+    ...getBarcoSlugs().map((slug) => url(`/ca/embarcacions/${slug}`, 0.55, 'monthly')),
+
+    // ─── CA — Blog ──────────────────────────────────────────────────────────
+    url('/ca/blog', 0.6, 'weekly', BLOG_DATE),
+    url('/ca/blog/ruta-vaixell-cap-de-creus-roses', 0.5, 'yearly', BLOG_DATE),
+    url('/ca/blog/millors-llocs-esnorquel-costa-brava', 0.5, 'yearly', BLOG_DATE),
+    url('/ca/blog/planificar-escapada-vaixell-costa-brava', 0.5, 'yearly', BLOG_DATE),
+    url('/ca/blog/primera-vegada-vaixell-sense-llicencia-roses', 0.5, 'yearly', BLOG_DATE),
+
+    // ─── CA — Empresa ───────────────────────────────────────────────────────
+    url('/ca/sobre-nosaltres', 0.45, 'yearly'),
+    url('/ca/contacte', 0.6, 'monthly'),
+    url('/ca/reserves', 0.7, 'monthly'),
+
+    // ─── CA — Legals: PENDENTS de revisió jurídica, no publicats encara ──────
+    // url('/ca/accessibilitat', 0.2, 'yearly'),
+    // url('/ca/politica-privacitat', 0.2, 'yearly'),
+    // url('/ca/avis-legal', 0.2, 'yearly'),
+    // url('/ca/cookies', 0.2, 'yearly'),
+
     // ─── FR — Location bateau sans permis ───────────────────────────────────
     url('/fr', 0.8, 'weekly', NOW),
     url('/fr/location-bateau-sans-permis-roses', 0.8, 'monthly'),

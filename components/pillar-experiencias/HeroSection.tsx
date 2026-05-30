@@ -2,11 +2,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   imgAlt: string; h1: string; ctaPrimary: string; ctaWhatsapp: string; subtitle: string; waText: string;
 }> = {
+  ca: {
+    imgAlt: 'Vista aèria de la badia i el port esportiu de Roses, Costa Brava',
+    h1: 'Experiències en vaixell a Roses',
+    ctaPrimary: 'Veure experiències',
+    ctaWhatsapp: 'Parlar per WhatsApp',
+    subtitle: 'Excursions amb patró · Sortides privades · Des de Santa Margarida',
+    waText: 'Hola, voldria reservar una experiència en vaixell a Roses',
+  },
   es: {
     imgAlt: 'Vista aérea de la bahía y el puerto deportivo de Roses, Costa Brava',
     h1: 'Experiencias en barco en Roses',

@@ -1,4 +1,4 @@
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, string> = {
   es: `Tienes la titulación y quieres un barco a la altura. En Experience Boat puedes alquilar
@@ -13,6 +13,10 @@ Cala Canyelles, Cala Almadraba — sans capitaine, sans contrainte d'itinéraire
 vessels with your navigation licence and head straight out from the Santa Margarita canals
 wherever you choose. The Bay of Roses, the Cap de Creus Natural Park, Cala Canyelles,
 Cala Almadraba — no skipper, no route restrictions, at your own pace.`,
+  ca: `Teniu la titulació i voleu un vaixell a l'altura. A Experience Boat podeu llogar
+embarcacions potents amb la vostra llicència de navegació i sortir directament des dels canals
+de Santa Margarida cap on vulgueu. La badia de Roses, el Parc Natural del Cap de Creus,
+Cala Canyelles, Cala Almadrava — sense patró, sense límits de ruta, al vostre propi ritme.`,
 };
 
 export default function IntroSection({ lang = 'es' }: { lang?: Lang }) {

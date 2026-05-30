@@ -3,7 +3,29 @@ export interface FAQ {
   answer: string;
 }
 
-export const faqData: Record<'es' | 'fr' | 'en', FAQ[]> = {
+export const faqData: Record<'es' | 'fr' | 'en' | 'ca', FAQ[]> = {
+  ca: [
+    {
+      question: 'Cal llicència nàutica per al Sunset Experience?',
+      answer: 'No necessàriament. Oferim el Sunset Experience en dues modalitats: amb patró inclòs (sense necessitat de cap titulació) i amb vaixell sense llicència per a qui prefereix portar l\'embarcació. Per a l\'experiència més relaxada recomanem l\'opció amb patró, especialment al capvespre quan les condicions de llum canvien constantment.'
+    },
+    {
+      question: 'Es pot reservar el Sunset Experience per a una ocasió especial com un aniversari?',
+      answer: 'Sí, és exactament per a aquesta mena de moments. Si voleu preparar alguna cosa especial a bord —una ampolla de cava, decoració, una sorpresa— consulteu-nos en reservar i intentem organitzar-ho. El patró ha organitzat desenes de sortides especials i sap com fer que el moment sigui memorable.'
+    },
+    {
+      question: 'Què passa si el dia del Sunset Experience està ennuvolat?',
+      answer: 'Els cels ennuvolats poden donar capvespres espectaculars — alguns dels més bonics passen quan hi ha núvols que filtren la llum del sol. Si la previsió és de pluja o mal temps, ho comuniquem amb antelació i cerquem data alternativa sense cost.'
+    },
+    {
+      question: 'Quantes persones poden venir al Sunset Experience?',
+      answer: 'Segons l\'embarcació, entre 4 i 12 persones. És un servei completament privat — l\'embarcació és només per al vostre grup.'
+    },
+    {
+      question: 'Es pot combinar el Sunset Experience amb una excursió de dia complet?',
+      answer: 'Sí, tot i que són dues sortides independents que caldria reservar per separat. Alguns grups que són uns quants dies a Roses combinen una excursió al Cap de Creus al matí amb el Sunset Experience al capvespre del mateix dia o de l\'endemà.'
+    }
+  ],
   es: [
     {
       question: '¿Hace falta licencia náutica para el Sunset Experience?',

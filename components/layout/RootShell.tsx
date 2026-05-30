@@ -18,7 +18,7 @@ export default function RootShell({
   lang,
   children,
 }: {
-  lang: "es" | "en" | "fr";
+  lang: "es" | "en" | "fr" | "ca";
   children: React.ReactNode;
 }) {
   return (

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Anchor, Compass, MessageCircle } from 'lucide-react';
 
-type Lang = 'es' | 'fr';
+type Lang = 'es' | 'fr' | 'ca';
 
 interface StickyCtaLanchaProps {
   lang?: Lang;
@@ -30,6 +30,16 @@ const t: Record<Lang, Record<string, string>> = {
     cta1Href: '/fr/location-bateau-avec-permis-roses/#bateaux',
     cta2Href: 'https://wa.me/34623995700?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20vedette%20Costa%20Brava',
     headerLabel: 'Choisir maintenant',
+  },
+  ca: {
+    mobileTitle: 'Trieu la vostra experiència a la Costa Brava',
+    mobileSubtitle: 'Des de 195 € · Sortides privades',
+    mobileButton: 'Reservar',
+    cta1Label: 'Veure embarcacions',
+    cta2Label: 'WhatsApp',
+    cta1Href: '/ca/lloguer-vaixell-amb-llicencia-roses/#barcos',
+    cta2Href: 'https://wa.me/34623995700?text=Hola%2C%20m%27interessa%20la%20llanxa%20Costa%20Brava',
+    headerLabel: 'Tria ara',
   },
 };
 

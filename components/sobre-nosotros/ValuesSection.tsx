@@ -1,11 +1,22 @@
 import { Anchor, ShieldCheck, HeartHandshake } from 'lucide-react';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, {
   tag: string; h2: string; p: string;
   v1t: string; v1d: string; v2t: string; v2d: string; v3t: string; v3d: string;
 }> = {
+  ca: {
+    tag: 'Els nostres valors',
+    h2: 'Els principis que guien cada sortida al mar',
+    p: 'Cada decisió que prenem està guiada per tres compromisos fonamentals.',
+    v1t: 'Qualitat de la flota',
+    v1d: 'Comptem amb embarcacions i equips revisats i mantinguts al dia. La nostra flota inclou des de llanxes, pneumàtiques tipus Zodiac i vaixells sense llicència, perquè la teva experiència a la badia de Roses sigui sempre còmoda i segura.',
+    v2t: 'La seguretat per sobre de tot',
+    v2d: 'La seguretat no és una opció, és la nostra prioritat. Totes les embarcacions disposen de l\'equipament homologat. El nostre equip coneix els corrents, vents i les zones de la Costa Brava per garantir que cada travessia sigui tranquil·la.',
+    v3t: 'Atenció personalitzada',
+    v3d: 'Adaptem cada servei a tu. Primera vegada en un vaixell? T\'ho expliquem tot amb calma. Cerques una excursió privada per al teu grup? Dissenyem el recorregut a la teva mida. Som l\'equip nàutic de Roses que treballa perquè et sentis com a casa al mar.',
+  },
   es: {
     tag: 'Nuestros valores',
     h2: 'Los principios que guían cada salida al mar',

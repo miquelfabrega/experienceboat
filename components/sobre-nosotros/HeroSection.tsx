@@ -1,8 +1,14 @@
 import Image from 'next/image';
 
-type Lang = 'es' | 'fr' | 'en';
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
 const t: Record<Lang, { alt: string; tag: string; h1: string; p: string }> = {
+  ca: {
+    alt: 'Experience Boat - Empresa de lloguer de vaixells a Roses',
+    tag: 'Sobre nosaltres',
+    h1: 'La teva empresa de vaixells a Roses',
+    p: 'Ens dediquem al lloguer d\'embarcacions a la badia de Roses amb un únic propòsit: que cada sortida al mar sigui una experiència que vulguis repetir.',
+  },
   es: {
     alt: 'Experience Boat - Empresa de alquiler de barcos en Roses',
     tag: 'Sobre Nosotros',

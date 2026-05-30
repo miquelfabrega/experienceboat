@@ -70,11 +70,34 @@ const translations = {
         icon: Anchor,
       },
     ]
+  },
+  ca: {
+    heading: 'També us pot interessar',
+    links: [
+      {
+        title: 'Excursions privades de dia',
+        desc: 'Per explorar el Cap de Creus i les cales més espectaculars de la Costa Brava nord amb tota la jornada per endavant.',
+        href: '/ca/experiencies-vaixell-roses',
+        icon: Compass,
+      },
+      {
+        title: 'Lloguer sense llicència',
+        desc: 'Per a qui vol sortir al seu ritme sense patró i sense necessitat de titulació nàutica.',
+        href: '/ca/lloguer-vaixell-sense-llicencia-roses',
+        icon: Key,
+      },
+      {
+        title: 'Els canals de Santa Margarida',
+        desc: 'Si el recorregut nocturn pels canals us ha cridat l\'atenció, descobriu tot el que amaguen en la seva versió de dia.',
+        href: '/ca/canals-santa-margarida',
+        icon: Anchor,
+      },
+    ]
   }
 };
 
 interface InternalLinksSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function InternalLinksSection({ lang = 'es' }: InternalLinksSectionProps) {
@@ -106,7 +129,7 @@ export default function InternalLinksSection({ lang = 'es' }: InternalLinksSecti
                   {link.desc}
                 </p>
                 <div className="flex items-center text-sky-600 font-semibold text-sm uppercase tracking-wide">
-                  <span>{lang === 'es' ? 'Ver opción' : lang === 'fr' ? 'Voir l\'option' : 'View option'}</span>
+                  <span>{lang === 'es' ? 'Ver opción' : lang === 'fr' ? 'Voir l\'option' : lang === 'ca' ? 'Veure opció' : 'View option'}</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>

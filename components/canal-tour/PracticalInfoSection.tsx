@@ -108,11 +108,47 @@ const translations = {
         desc: 'To check updated rates and availability, please visit our booking page.'
       }
     ]
+  },
+  ca: {
+    title: 'Informació pràctica i detalls',
+    description: 'Tot el que necessiteu saber abans d\'embarcar-vos en la vostra aventura pels canals.',
+    items: [
+      {
+        icon: Clock,
+        title: 'Quant dura el passeig?',
+        desc: 'Cada recorregut té una durada aproximada de 90 minuts. És el temps ideal per navegar amb calma i gaudir de les vistes.'
+      },
+      {
+        icon: Navigation,
+        title: 'Horaris',
+        desc: 'Estem disponibles cada dia de 9:00 a 20:00. Podeu triar el moment del dia que millor s\'adapti a vosaltres.'
+      },
+      {
+        icon: Anchor,
+        title: 'Les nostres embarcacions',
+        desc: 'Disposem d\'embarcacions de 4,3 m a 4,5 m d\'eslora amb motor Mercury 15 CV. Tenen capacitat per a 4 a 6 persones, solàrium i armilles salvavides incloses.'
+      },
+      {
+        icon: CheckCircle2,
+        title: 'Cal llicència?',
+        desc: 'No, les nostres embarcacions per al Canal Tour estan dissenyades per conduir-se sense titulació. Us ensenyarem el bàsic abans de salpar.'
+      },
+      {
+        icon: MapPin,
+        title: 'Punt de trobada',
+        desc: 'La sortida es fa des de l\'Av. Clot Franquest Nord, 17480 Roses, Girona.'
+      },
+      {
+        icon: Euro,
+        title: 'Preus',
+        desc: 'Per consultar les tarifes actualitzades i la disponibilitat, reviseu la nostra pàgina de reserves.'
+      }
+    ]
   }
 };
 
 interface PracticalInfoSectionProps {
-  lang?: 'es' | 'fr' | 'en';
+  lang?: 'es' | 'fr' | 'en' | 'ca';
 }
 
 export default function PracticalInfoSection({ lang = 'es' }: PracticalInfoSectionProps) {
