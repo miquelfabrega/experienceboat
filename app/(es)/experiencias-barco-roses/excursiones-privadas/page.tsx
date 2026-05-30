@@ -230,7 +230,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/boats/orange-kiwi.jpg"
+                    src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
                     alt="Neumática con patrón — Orange Kiwi 620"
                     fill
                     className="object-cover"
@@ -265,7 +265,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/boats/spirit.jpg"
+                    src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
                     alt="Lancha con patrón — Spirit of the Sea 675"
                     fill
                     className="object-cover"
