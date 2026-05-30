@@ -106,14 +106,14 @@ function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           name: 'Alquiler de barco sin licencia — Medio día',
-          price: '70',
+          price: 70,
           priceCurrency: 'EUR',
           description: 'Alquiler de barco sin licencia en Roses para 4 horas desde la Marina de Santa Margarita.',
         },
         {
           '@type': 'Offer',
           name: 'Alquiler de barco sin licencia — Día completo',
-          price: '120',
+          price: 120,
           priceCurrency: 'EUR',
           description: 'Alquiler de barco sin licencia en Roses para 8 horas desde la Marina de Santa Margarita.',
         },

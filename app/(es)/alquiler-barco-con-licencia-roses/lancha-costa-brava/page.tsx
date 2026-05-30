@@ -128,8 +128,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Lancha con licencia (sin patrón)',
-        lowPrice: '200',
-        highPrice: '350',
+        lowPrice: 200,
+        highPrice: 350,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Alquiler de lancha con licencia en la Costa Brava, medio día o día completo desde Santa Margarita, Roses.',
@@ -137,8 +137,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Lancha con patrón — Neumática',
-        lowPrice: '300',
-        highPrice: '600',
+        lowPrice: 300,
+        highPrice: 600,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Excursión privada en neumática con patrón incluido desde Santa Margarita, Roses. Sin titulación necesaria.',
@@ -146,8 +146,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Lancha con patrón — Embarcación Premium',
-        lowPrice: '600',
-        highPrice: '1200',
+        lowPrice: 600,
+        highPrice: 1200,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Excursión privada en lancha premium con patrón incluido desde Santa Margarita, Roses. Sin titulación necesaria.',

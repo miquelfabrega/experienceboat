@@ -65,8 +65,8 @@ const touristTripSchema = {
   ],
   offers: {
     '@type': 'AggregateOffer',
-    lowPrice: '75',
-    highPrice: '95',
+    lowPrice: 75,
+    highPrice: 95,
     priceCurrency: 'EUR',
     offerCount: 3,
     availability: 'https://schema.org/InStock',

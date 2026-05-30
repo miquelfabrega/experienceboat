@@ -69,7 +69,7 @@ function TouristTripSchema() {
     ],
     offers: {
       '@type': 'Offer',
-    price: '225',
+    price: 225,
       priceCurrency: 'EUR',
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',

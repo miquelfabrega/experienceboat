@@ -136,7 +136,7 @@ function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           name: 'Alquiler de barco con licencia — Medio día',
-          price: '200',
+          price: 200,
           priceCurrency: 'EUR',
           description:
             'Alquiler de barco con licencia en la bahía de Roses, 4 horas desde la Marina de Santa Margarita.',
@@ -144,7 +144,7 @@ function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           name: 'Alquiler de barco con licencia — Día completo',
-          price: '350',
+          price: 350,
           priceCurrency: 'EUR',
           description:
             'Alquiler de barco con licencia en la bahía de Roses, 8 horas desde la Marina de Santa Margarita. Incluye acceso al Cap de Creus.',

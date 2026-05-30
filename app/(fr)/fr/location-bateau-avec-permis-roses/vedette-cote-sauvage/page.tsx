@@ -118,8 +118,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Vedette avec permis (sans capitaine)',
-        lowPrice: '200',
-        highPrice: '350',
+        lowPrice: 200,
+        highPrice: 350,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Location de vedette avec permis sur la Costa Brava, demi-journée ou journée complète depuis Santa Margarita, Roses.',
@@ -127,8 +127,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Vedette avec capitaine — Semi-rigide',
-        lowPrice: '300',
-        highPrice: '600',
+        lowPrice: 300,
+        highPrice: 600,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Excursion privée en semi-rigide avec capitaine inclus depuis Santa Margarita, Roses. Sans permis nécessaire.',
@@ -136,8 +136,8 @@ function ProductSchema() {
       {
         '@type': 'AggregateOffer',
         name: 'Vedette avec capitaine — Embarcation Premium',
-        lowPrice: '600',
-        highPrice: '1200',
+        lowPrice: 600,
+        highPrice: 1200,
         priceCurrency: 'EUR',
         offerCount: 2,
         description: 'Excursion privée en vedette premium avec capitaine inclus depuis Santa Margarita, Roses. Sans permis nécessaire.',

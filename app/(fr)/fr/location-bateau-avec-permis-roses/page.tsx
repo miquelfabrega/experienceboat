@@ -105,14 +105,14 @@ function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           name: 'Location de bateau avec permis — Demi-journée',
-          price: '200',
+          price: 200,
           priceCurrency: 'EUR',
           description: 'Location de bateau avec permis à Roses pour 4 heures depuis la Marina de Santa Margarita.',
         },
         {
           '@type': 'Offer',
           name: 'Location de bateau avec permis — Journée complète',
-          price: '350',
+          price: 350,
           priceCurrency: 'EUR',
           description: 'Location de bateau avec permis à Roses pour 8 heures depuis la Marina de Santa Margarita.',
         },

@@ -94,7 +94,7 @@ function ItemListSchema() {
   },
           offers: {
             '@type': 'Offer',
-            price: '300',
+            price: 300,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
             url: 'https://www.experienceboat.es/reservas',
@@ -118,7 +118,7 @@ function ItemListSchema() {
   },
           offers: {
             '@type': 'Offer',
-            price: '225',
+            price: 225,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
             url: 'https://www.experienceboat.es/reservas',

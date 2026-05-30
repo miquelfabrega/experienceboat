@@ -25,7 +25,7 @@ export function generateMetadata({
   if (!barco) return { title: 'Barco no encontrado' };
 
   const url = `${SITE}/barcos/${barco.slug}`;
-  const title = `${barco.nombre} — Alquiler en Roses (Costa Brava)`;
+  const title = `${barco.nombre} — Alquiler Roses`;
   const description = barco.descripcionCorta;
 
   return {

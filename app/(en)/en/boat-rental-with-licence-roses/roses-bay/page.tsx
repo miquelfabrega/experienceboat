@@ -137,7 +137,7 @@ const productSchema = {
     {
       '@type': 'Offer',
       priceCurrency: 'EUR',
-      price: '200',
+      price: 200,
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
       name: 'Half day (4 hours)',
@@ -146,7 +146,7 @@ const productSchema = {
     {
       '@type': 'Offer',
       priceCurrency: 'EUR',
-      price: '350',
+      price: 350,
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
       name: 'Full day (8 hours)',

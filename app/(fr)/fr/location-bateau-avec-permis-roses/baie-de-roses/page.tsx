@@ -122,14 +122,14 @@ function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           name: 'Location de bateau avec permis — Demi-journée',
-          price: '200',
+          price: 200,
           priceCurrency: 'EUR',
           description: 'Location de bateau avec permis dans la baie de Roses, 4 heures depuis la Marina de Santa Margarita.',
         },
         {
           '@type': 'Offer',
           name: 'Location de bateau avec permis — Journée complète',
-          price: '350',
+          price: 350,
           priceCurrency: 'EUR',
           description: 'Location de bateau avec permis dans la baie de Roses, 8 heures depuis la Marina de Santa Margarita. Inclut l\'accès au Cap de Creus.',
         },
