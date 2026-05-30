@@ -22,6 +22,16 @@ export const homeData = {
         src: '/images/hero/hero-2.jpg',
         alt: 'Barcos sin licencia en Roses — salida privada desde los canales de Santa Margarita',
       },
+      {
+        id: 3,
+        src: '/images/hero/hero-drone-23.webp',
+        alt: 'Excursión en barco navegando frente al paseo marítimo de Roses, Costa Brava',
+      },
+      {
+        id: 4,
+        src: '/images/hero/hero-guillola.webp',
+        alt: 'Vista panorámica de una cala del Cap de Creus con barcos fondeados, Costa Brava',
+      },
     ]
   },
   services: {
@@ -42,7 +52,7 @@ export const homeData = {
         text: 'Si tienes titulación náutica, tenemos las embarcaciones que estás buscando. Barcos potentes para navegar libremente por la Costa Brava norte: la bahía de Roses, el cabo de Creus, Cala Canyelles, Cala Almadraba y todo lo que encuentres por el camino. Sin patrón, sin límites de ruta.',
         cta: 'Ver barcos con licencia →',
         href: '/alquiler-barco-con-licencia-roses/',
-        image: 'https://picsum.photos/seed/conlicencia-roses/800/600' // TODO: replace with IMG_1308
+        image: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-exterior-01.webp'
       },
       {
         title: 'Experiencias en barco en Roses',

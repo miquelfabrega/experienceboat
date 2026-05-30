@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { GraduationCap, Map, Globe, CalendarRange } from 'lucide-react';
 
 type Lang = 'es' | 'fr' | 'en';
 
 const t: Record<Lang, {
   tag: string; h2: string; p: string; cta_p: string; cta: string; contactHref: string;
+  hostName: string; hostRole: string; hostAlt: string;
   f1t: string; f1d: string; f2t: string; f2d: string; f3t: string; f3d: string; f4t: string; f4d: string;
 }> = {
   es: {
@@ -14,6 +16,9 @@ const t: Record<Lang, {
     cta_p: '¿Tienes dudas sobre qué barco o servicio se adapta mejor a tu grupo? Contáctanos y te asesoramos sin compromiso.',
     cta: 'Contactar con el equipo',
     contactHref: '/contacto',
+    hostName: 'Toto',
+    hostRole: 'Patrón y anfitrión',
+    hostAlt: 'Toto, patrón y anfitrión de Experience Boat, a bordo en la bahía de Roses',
     f1t: 'Titulación náutica oficial',
     f1d: 'Todo el personal embarcado cuenta con la titulación homologada por la Dirección General de Marina Mercante.',
     f2t: 'Conocimiento local de la Costa Brava',
@@ -30,6 +35,9 @@ const t: Record<Lang, {
     cta_p: "Vous hésitez sur le bateau ou le service le mieux adapté à votre groupe ? Contactez-nous — nous vous conseillons sans engagement.",
     cta: "Contacter l'équipe",
     contactHref: '/fr/contact',
+    hostName: 'Toto',
+    hostRole: 'Skipper et hôte',
+    hostAlt: 'Toto, skipper et hôte d\'Experience Boat, à bord dans la baie de Roses',
     f1t: 'Titres nautiques officiels',
     f1d: "Tout le personnel embarqué est titulaire des brevets homologués par la Direction Générale de la Marine Marchande.",
     f2t: 'Connaissance locale de la Costa Brava',
@@ -46,6 +54,9 @@ const t: Record<Lang, {
     cta_p: "Not sure which boat or service suits your group best? Get in touch — we'll advise you with no obligation.",
     cta: 'Contact the team',
     contactHref: '/en/contact',
+    hostName: 'Toto',
+    hostRole: 'Skipper & host',
+    hostAlt: 'Toto, skipper and host at Experience Boat, on board in the Bay of Roses',
     f1t: 'Official nautical licences',
     f1d: 'All on-board staff hold licences certified by the Directorate General of Merchant Shipping.',
     f2t: 'Local expertise on the Costa Brava',
@@ -70,6 +81,21 @@ export default function TeamSection({ lang = 'es' }: { lang?: Lang }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="w-full lg:w-5/12">
+            <figure className="flex items-center gap-4 mb-8">
+              <Image
+                src="/images/team/toto.webp"
+                alt={tx.hostAlt}
+                width={112}
+                height={140}
+                sizes="112px"
+                quality={74}
+                className="w-24 h-28 sm:w-28 sm:h-36 rounded-2xl object-cover shadow-md border border-gray-100"
+              />
+              <figcaption>
+                <span className="block text-lg font-bold text-gray-900">{tx.hostName}</span>
+                <span className="block text-sm text-sky-600 font-medium">{tx.hostRole}</span>
+              </figcaption>
+            </figure>
             <span className="text-sky-600 font-semibold tracking-wider uppercase text-sm mb-3 block">
               {tx.tag}
             </span>
