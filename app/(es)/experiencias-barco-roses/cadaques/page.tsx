@@ -124,8 +124,8 @@ export default function CadaquesPage() {
         </p>
         <div className="relative aspect-[16/7] w-full rounded-3xl overflow-hidden shadow-lg">
           <Image
-            src="https://picsum.photos/seed/cadaques-excursion/1600/700"
-            alt="Excursión en barco a Cadaqués desde Roses"
+            src="/cadaques/port-lligat.webp"
+            alt="Vista aérea de Port Lligat, en el Cap de Creus cerca de Cadaqués (Costa Brava)"
             fill
             priority
             className="object-cover"
