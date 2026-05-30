@@ -12,19 +12,19 @@ export const metadata: Metadata = {
   description:
     'Contactez-nous pour réserver votre bateau à Roses ou résoudre toute question. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/contact',
+    canonical: 'https://www.experienceboat.es/fr/contact',
     languages: {
-      'x-default': 'https://experienceboat.es/contacto',
-      es: 'https://experienceboat.es/contacto',
-      fr: 'https://experienceboat.es/fr/contact',
-      en: 'https://experienceboat.es/en/contact',
+      'x-default': 'https://www.experienceboat.es/contacto',
+      es: 'https://www.experienceboat.es/contacto',
+      fr: 'https://www.experienceboat.es/fr/contact',
+      en: 'https://www.experienceboat.es/en/contact',
     },
   },
   openGraph: {
     title: 'Contact — Location de bateaux à Roses',
     description:
       'Contactez-nous pour réserver votre bateau à Roses ou résoudre toute question. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
-    url: 'https://experienceboat.es/fr/contact',
+    url: 'https://www.experienceboat.es/fr/contact',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -43,8 +43,8 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://experienceboat.es/fr' },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://experienceboat.es/fr/contact' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.experienceboat.es/fr' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.experienceboat.es/fr/contact' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

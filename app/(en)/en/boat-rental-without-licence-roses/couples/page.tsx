@@ -23,19 +23,19 @@ title: 'Boat Rental without Licence in Roses for Couples',
   description:
     'Exclusive plan for couples on the Costa Brava. No-licence boat through Santa Margarita canals and hidden coves at your own pace.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples',
+    canonical: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
     },
   },
   openGraph: {
 title: 'Boat Rental without Licence in Roses for Couples',
     description:
       'Exclusive plan for couples on the Costa Brava. No-licence boat through Santa Margarita canals and hidden coves at your own pace.',
-    url: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples',
+    url: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -54,9 +54,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://experienceboat.es/en' },
-      { '@type': 'ListItem', position: 2, name: 'Boat Rental without Licence Roses', item: 'https://experienceboat.es/en/boat-rental-without-licence-roses' },
-      { '@type': 'ListItem', position: 3, name: 'Couples Special', item: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.experienceboat.es/en' },
+      { '@type': 'ListItem', position: 2, name: 'Boat Rental without Licence Roses', item: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses' },
+      { '@type': 'ListItem', position: 3, name: 'Couples Special', item: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

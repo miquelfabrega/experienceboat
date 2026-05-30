@@ -11,19 +11,19 @@ title: 'Santa Margarita Canals by Boat — Roses',
   description:
     'Explore the Santa Margarita canals from the water. Waterfront houses and the most authentic Costa Brava. Private departures from Roses.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+    canonical: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/canales-santa-margarita',
-      es: 'https://experienceboat.es/canales-santa-margarita',
-      fr: 'https://experienceboat.es/fr/canaux-santa-margarita',
-      en: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+      'x-default': 'https://www.experienceboat.es/canales-santa-margarita',
+      es: 'https://www.experienceboat.es/canales-santa-margarita',
+      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
+      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
     },
   },
   openGraph: {
 title: 'Santa Margarita Canals by Boat — Roses',
     description:
       'Explore the Santa Margarita canals from the water. Waterfront houses and the most authentic Costa Brava. Private departures from Roses.',
-    url: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+    url: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -92,7 +92,7 @@ function TouristAttractionSchema() {
     name: 'Santa Margarita Canals — Boat Tour',
     description:
       'Boat tour through the navigable Santa Margarita canals in Roses, Costa Brava. Private departures with and without licence from the Marina de Santa Margarita.',
-    url: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+    url: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
     touristType: 'Families, couples, groups of friends',
     inLanguage: 'en',
     geo: {
@@ -126,13 +126,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://experienceboat.es/en',
+        item: 'https://www.experienceboat.es/en',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Santa Margarita Canals by boat',
-        item: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+        item: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
       },
     ],
   };

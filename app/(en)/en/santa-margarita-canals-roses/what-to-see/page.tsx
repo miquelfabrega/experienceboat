@@ -11,19 +11,19 @@ title: 'What to See in the Santa Margarita Canals',
   description:
     'Discover the Santa Margarita canals from the water. Waterfront houses, wildlife and the most authentic Costa Brava. Private departures from Roses.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
+    canonical: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
     languages: {
-      'x-default': 'https://experienceboat.es/canales-santa-margarita/que-ver',
-      es: 'https://experienceboat.es/canales-santa-margarita/que-ver',
-      fr: 'https://experienceboat.es/fr/canaux-santa-margarita/que-voir',
-      en: 'https://experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
+      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
+      es: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
+      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
+      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
     },
   },
   openGraph: {
 title: 'What to See in the Santa Margarita Canals',
     description:
       'Discover the Santa Margarita canals from the water. Waterfront houses, wildlife and the most authentic Costa Brava. Private departures from Roses.',
-    url: 'https://experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
+    url: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'article',
@@ -72,9 +72,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://experienceboat.es/en' },
-      { '@type': 'ListItem', position: 2, name: 'Santa Margarita Canals by Boat', item: 'https://experienceboat.es/en/santa-margarita-canals-roses' },
-      { '@type': 'ListItem', position: 3, name: 'What to See in the Santa Margarita Canals', item: 'https://experienceboat.es/en/santa-margarita-canals-roses/what-to-see' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.experienceboat.es/en' },
+      { '@type': 'ListItem', position: 2, name: 'Santa Margarita Canals by Boat', item: 'https://www.experienceboat.es/en/santa-margarita-canals-roses' },
+      { '@type': 'ListItem', position: 3, name: 'What to See in the Santa Margarita Canals', item: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see' },
     ],
   };
   return (

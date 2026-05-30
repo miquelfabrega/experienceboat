@@ -12,19 +12,19 @@ export const metadata: Metadata = {
   description:
     'Contact us to book your boat in Roses or to answer any questions. We are at Marina de Santa Margarita. We respond within 24 hours.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/contact',
+    canonical: 'https://www.experienceboat.es/en/contact',
     languages: {
-      'x-default': 'https://experienceboat.es/contacto',
-      es: 'https://experienceboat.es/contacto',
-      fr: 'https://experienceboat.es/fr/contact',
-      en: 'https://experienceboat.es/en/contact',
+      'x-default': 'https://www.experienceboat.es/contacto',
+      es: 'https://www.experienceboat.es/contacto',
+      fr: 'https://www.experienceboat.es/fr/contact',
+      en: 'https://www.experienceboat.es/en/contact',
     },
   },
   openGraph: {
     title: 'Contact Experience Boat — Boat Hire in Roses',
     description:
       'Contact us to book your boat in Roses or to answer any questions. We are at Marina de Santa Margarita. We respond within 24 hours.',
-    url: 'https://experienceboat.es/en/contact',
+    url: 'https://www.experienceboat.es/en/contact',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -43,8 +43,8 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://experienceboat.es/en' },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://experienceboat.es/en/contact' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.experienceboat.es/en' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.experienceboat.es/en/contact' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

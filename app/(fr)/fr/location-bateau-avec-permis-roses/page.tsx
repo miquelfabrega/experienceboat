@@ -21,19 +21,19 @@ title: 'Location de bateau avec permis à Roses',
   description:
     'Louez un bateau avec permis à Roses : baie, Cap de Creus et criques sauvages de la Costa Brava. Embarcations puissantes. Réservez.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
+    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     },
   },
   openGraph: {
 title: 'Location de bateau avec permis à Roses',
     description:
       'Louez un bateau avec permis à Roses : baie, Cap de Creus et criques sauvages de la Costa Brava. Embarcations puissantes. Réservez.',
-    url: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
+    url: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -76,7 +76,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {
@@ -138,13 +138,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://experienceboat.es/fr',
+        item: 'https://www.experienceboat.es/fr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Location bateau avec permis Roses',
-        item: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses',
+        item: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
       },
     ],
   };

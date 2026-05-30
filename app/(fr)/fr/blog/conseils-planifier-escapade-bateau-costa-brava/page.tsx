@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   title: 'Conseils pour une sortie bateau Costa Brava',
   description: 'Guide pratique pour planifier votre sortie en bateau sur la Costa Brava : choix de l\'embarcation, itinéraires, météo, sécurité et provisions.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
+    canonical: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
     languages: {
-      'x-default': 'https://experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      es: 'https://experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      fr: 'https://experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
-      en: 'https://experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
+      'x-default': 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
+      es: 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
+      fr: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
+      en: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
     },
   },
   openGraph: {
     title: 'Conseils pour une sortie bateau Costa Brava',
     description: 'Guide pratique pour planifier votre sortie en bateau : embarcation, météo, sécurité et provisions.',
-    url: 'https://experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
+    url: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
     locale: 'fr_FR',
     type: 'article',
     images: ['/images/hero/hero-1.jpg'],
@@ -52,10 +52,10 @@ function ArticleSchema() {
     publisher: {
       '@type': 'Organization',
       name: 'Experience Boat',
-      logo: { '@type': 'ImageObject', url: 'https://experienceboat.es/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
     },
-    image: { '@type': 'ImageObject', url: 'https://experienceboat.es/images/services/sin-licencia.jpg' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava' },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/services/sin-licencia.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava' },
     inLanguage: 'fr',
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

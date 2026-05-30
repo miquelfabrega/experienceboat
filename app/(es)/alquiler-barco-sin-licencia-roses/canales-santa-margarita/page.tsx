@@ -17,19 +17,19 @@ export const metadata: Metadata = {
   description:
     'Navega por los canales de Santa Margarita sin licencia desde Roses. Aguas tranquilas, casas frente al agua y la Costa Brava más auténtica. Reserva online.',
   alternates: {
-    canonical: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+    canonical: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
     },
   },
   openGraph: {
     title: 'Barco sin licencia en canales Santa Margarita',
     description:
       'Navega por los canales de Santa Margarita sin licencia desde Roses. Aguas tranquilas, casas frente al agua y la Costa Brava más auténtica. Reserva online.',
-    url: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+    url: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -52,19 +52,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Alquiler barco sin licencia Roses',
-        item: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
+        item: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Canales de Santa Margarita',
-        item: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+        item: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
       },
     ],
   };

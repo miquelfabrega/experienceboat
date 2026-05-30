@@ -6,7 +6,7 @@ import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
 
-const URL = 'https://experienceboat.es/experiencias-barco-roses/cadaques';
+const URL = 'https://www.experienceboat.es/experiencias-barco-roses/cadaques';
 
 export const metadata: Metadata = {
   title: 'Excursión a Cadaqués en barco desde Roses',
@@ -55,7 +55,7 @@ const touristTripSchema = {
   inLanguage: 'es',
   provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
   },
   availableLanguage: [
     { '@type': 'Language', name: 'Spanish' },
@@ -70,7 +70,7 @@ const touristTripSchema = {
     priceCurrency: 'EUR',
     offerCount: 3,
     availability: 'https://schema.org/InStock',
-    url: 'https://experienceboat.es/reservas',
+    url: 'https://www.experienceboat.es/reservas',
   },
 };
 
@@ -78,8 +78,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://experienceboat.es' },
-    { '@type': 'ListItem', position: 2, name: 'Experiencias en barco en Roses', item: 'https://experienceboat.es/experiencias-barco-roses' },
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.experienceboat.es' },
+    { '@type': 'ListItem', position: 2, name: 'Experiencias en barco en Roses', item: 'https://www.experienceboat.es/experiencias-barco-roses' },
     { '@type': 'ListItem', position: 3, name: 'Excursión a Cadaqués en barco desde Roses', item: URL },
   ],
 };

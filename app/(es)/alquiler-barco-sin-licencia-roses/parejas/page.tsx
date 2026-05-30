@@ -23,19 +23,19 @@ title: 'Barco sin licencia en Roses para parejas',
   description:
     'Plan exclusivo para parejas en la Costa Brava. Barco sin licencia por los canales de Santa Margarita y calas inaccesibles a vuestro ritmo.',
   alternates: {
-    canonical: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+    canonical: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/couples',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
     },
   },
   openGraph: {
 title: 'Barco sin licencia en Roses para parejas',
     description:
       'Plan exclusivo para parejas en la Costa Brava. Barco sin licencia por los canales de Santa Margarita y calas inaccesibles a vuestro ritmo.',
-    url: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+    url: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
@@ -58,19 +58,19 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://experienceboat.es',
+        item: 'https://www.experienceboat.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Alquiler barco sin licencia Roses',
-        item: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses',
+        item: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Especial Parejas',
-        item: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
+        item: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
       },
     ],
   };

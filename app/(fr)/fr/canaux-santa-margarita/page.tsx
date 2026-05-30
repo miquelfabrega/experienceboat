@@ -20,19 +20,19 @@ title: 'Canaux de Santa Margarita en bateau — Roses',
   description:
     'Explorez les canaux de Santa Margarita depuis l\'eau. Maisons face à la mer et la Costa Brava la plus authentique. Sorties privées depuis Roses.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/canaux-santa-margarita',
+    canonical: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
     languages: {
-      'x-default': 'https://experienceboat.es/canales-santa-margarita',
-      es: 'https://experienceboat.es/canales-santa-margarita',
-      fr: 'https://experienceboat.es/fr/canaux-santa-margarita',
-      en: 'https://experienceboat.es/en/santa-margarita-canals-roses',
+      'x-default': 'https://www.experienceboat.es/canales-santa-margarita',
+      es: 'https://www.experienceboat.es/canales-santa-margarita',
+      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
+      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
     },
   },
   openGraph: {
 title: 'Canaux de Santa Margarita en bateau — Roses',
     description:
       'Explorez les canaux de Santa Margarita depuis l\'eau. Maisons face à la mer et la Costa Brava la plus authentique. Sorties privées depuis Roses.',
-    url: 'https://experienceboat.es/fr/canaux-santa-margarita',
+    url: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',
@@ -76,7 +76,7 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Experience Boat',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     email: 'info@experienceboat.es',
     address: {
@@ -119,13 +119,13 @@ function BreadcrumbSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://experienceboat.es/fr',
+        item: 'https://www.experienceboat.es/fr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Canaux de Santa Margarita',
-        item: 'https://experienceboat.es/fr/canaux-santa-margarita',
+        item: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
       },
     ],
   };

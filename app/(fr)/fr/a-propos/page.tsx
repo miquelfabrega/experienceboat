@@ -18,11 +18,11 @@ function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     name: 'Experience Boat',
     description:
       "Spécialiste de la location de bateaux et des excursions nautiques à Roses, Costa Brava. Location sans permis, avec permis et excursions privées avec skipper dans la baie de Roses et au Cap de Creus.",
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     address: {
       '@type': 'PostalAddress',
@@ -55,18 +55,18 @@ export const metadata: Metadata = {
   title: 'Qui sommes-nous — Roses, Costa Brava',
   description: 'Votre spécialiste de la location de bateaux à Roses, Costa Brava. 8 embarcations en propre, navigation dans la baie et au Cap de Creus.',
   alternates: {
-    canonical: 'https://experienceboat.es/fr/a-propos',
+    canonical: 'https://www.experienceboat.es/fr/a-propos',
     languages: {
-      'x-default': 'https://experienceboat.es/sobre-nosotros',
-      es: 'https://experienceboat.es/sobre-nosotros',
-      fr: 'https://experienceboat.es/fr/a-propos',
-      en: 'https://experienceboat.es/en/about',
+      'x-default': 'https://www.experienceboat.es/sobre-nosotros',
+      es: 'https://www.experienceboat.es/sobre-nosotros',
+      fr: 'https://www.experienceboat.es/fr/a-propos',
+      en: 'https://www.experienceboat.es/en/about',
     },
   },
   openGraph: {
     title: 'Qui sommes-nous — Roses, Costa Brava',
     description: 'Votre spécialiste de la location de bateaux à Roses, Costa Brava.',
-    url: 'https://experienceboat.es/fr/a-propos',
+    url: 'https://www.experienceboat.es/fr/a-propos',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
     type: 'website',

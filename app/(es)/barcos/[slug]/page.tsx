@@ -7,7 +7,7 @@ import {
 } from '@/lib/data/fleet';
 import BarcoDetail from '@/components/barcos/BarcoDetail';
 
-const SITE = 'https://experienceboat.es';
+const SITE = 'https://www.experienceboat.es';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -118,7 +118,7 @@ export default function BarcoSlugPage({
     image: [barco.imagen],
     provider: {
       '@type': 'LocalBusiness',
-      '@id': 'https://experienceboat.es/#local-business',
+      '@id': 'https://www.experienceboat.es/#local-business',
       name: 'Experience Boat',
     },
     areaServed: {

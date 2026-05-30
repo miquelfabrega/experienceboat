@@ -18,11 +18,11 @@ function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     name: 'Experience Boat',
     description:
       'Boat rental and nautical tour company in Roses, Costa Brava. No-licence rentals, skippered private excursions and licensed charters across the Bay of Roses and Cap de Creus Natural Park.',
-    url: 'https://experienceboat.es',
+    url: 'https://www.experienceboat.es',
     telephone: '+34623995700',
     address: {
       '@type': 'PostalAddress',
@@ -55,18 +55,18 @@ export const metadata: Metadata = {
   title: 'About Us — Boat Rental in Roses',
   description: 'Your boat rental company in Roses, Costa Brava. 8 boats of our own, sailing the bay and Cap de Creus. Meet the Experience Boat team.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/about',
+    canonical: 'https://www.experienceboat.es/en/about',
     languages: {
-      'x-default': 'https://experienceboat.es/sobre-nosotros',
-      es: 'https://experienceboat.es/sobre-nosotros',
-      fr: 'https://experienceboat.es/fr/a-propos',
-      en: 'https://experienceboat.es/en/about',
+      'x-default': 'https://www.experienceboat.es/sobre-nosotros',
+      es: 'https://www.experienceboat.es/sobre-nosotros',
+      fr: 'https://www.experienceboat.es/fr/a-propos',
+      en: 'https://www.experienceboat.es/en/about',
     },
   },
   openGraph: {
     title: 'About Us — Boat Rental in Roses',
     description: 'Your boat rental company in Roses, Costa Brava. 8 boats of our own, sailing the bay and Cap de Creus.',
-    url: 'https://experienceboat.es/en/about',
+    url: 'https://www.experienceboat.es/en/about',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',

@@ -24,7 +24,7 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://experienceboat.es/sitemap.xml',
-    host: 'https://experienceboat.es',
+    sitemap: 'https://www.experienceboat.es/sitemap.xml',
+    host: 'https://www.experienceboat.es',
   };
 }

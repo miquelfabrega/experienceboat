@@ -7,7 +7,7 @@ import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
 
-const URL = 'https://experienceboat.es/experiencias-barco-roses/cap-de-creus-calas';
+const URL = 'https://www.experienceboat.es/experiencias-barco-roses/cap-de-creus-calas';
 
 export const metadata: Metadata = {
   title: 'Excursión al Cap de Creus en barco — Baño en 3 calas',
@@ -57,7 +57,7 @@ function TouristTripSchema() {
     inLanguage: 'es',
     provider: {
       '@type': 'LocalBusiness',
-      '@id': 'https://experienceboat.es/#local-business',
+      '@id': 'https://www.experienceboat.es/#local-business',
     },
     offers: {
       '@type': 'AggregateOffer',

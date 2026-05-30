@@ -14,25 +14,25 @@ title: 'Boat Rental with Licence in the Bay of Roses',
   description:
     'Rent a boat with licence in the Bay of Roses: hidden coves, Cap de Creus Natural Park and coastline. Departure from Santa Margarita.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+    canonical: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      es: 'https://experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      fr: 'https://experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-      en: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
+      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
+      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     },
   },
   openGraph: {
 title: 'Boat Rental with Licence in the Bay of Roses',
     description:
       'Private rental with licence on the Bay of Roses. Coves, sea, Pyrenees and the Cap de Creus Natural Park within reach. Departure from Marina de Santa Margarita.',
-    url: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+    url: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: 'https://experienceboat.es/og-bahia-roses-rental.jpg',
+        url: 'https://www.experienceboat.es/og-bahia-roses-rental.jpg',
         width: 1200,
         height: 630,
         alt: 'Boat with licence in the Bay of Roses with Cap de Creus in the background',
@@ -53,19 +53,19 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: 'https://experienceboat.es/en',
+      item: 'https://www.experienceboat.es/en',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Boat rental with licence in Roses',
-      item: 'https://experienceboat.es/en/boat-rental-with-licence-roses',
+      item: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Bay of Roses',
-      item: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+      item: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     },
   ],
 };
@@ -126,7 +126,7 @@ const productSchema = {
     'Private rental of a licensed boat to explore the Bay of Roses from the Marina de Santa Margarita. Choose between half day (4 hours) or full day (8 hours).',
   provider: {
     '@type': 'LocalBusiness',
-    '@id': 'https://experienceboat.es/#local-business',
+    '@id': 'https://www.experienceboat.es/#local-business',
     name: 'Experience Boat',
   },
   areaServed: {
@@ -141,7 +141,7 @@ const productSchema = {
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
       name: 'Half day (4 hours)',
-      url: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+      url: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     },
     {
       '@type': 'Offer',
@@ -150,7 +150,7 @@ const productSchema = {
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
       name: 'Full day (8 hours)',
-      url: 'https://experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
+      url: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
     },
   ],
 };

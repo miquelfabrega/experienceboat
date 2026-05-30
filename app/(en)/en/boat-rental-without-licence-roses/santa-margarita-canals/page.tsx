@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   description:
     'Navigate the Santa Margarita canals without a licence from Roses. Calm waters, waterfront houses and the most authentic Costa Brava. Book online.',
   alternates: {
-    canonical: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
+    canonical: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
     languages: {
-      'x-default': 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      es: 'https://experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      fr: 'https://experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
-      en: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
+      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
     },
   },
   openGraph: {
     title: 'No-Licence Boat in Santa Margarita Canals',
     description:
       'Navigate the Santa Margarita canals without a licence from Roses. Calm waters, waterfront houses and the most authentic Costa Brava.',
-    url: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
+    url: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
     siteName: 'Experience Boat',
     locale: 'en_GB',
     type: 'website',
@@ -49,9 +49,9 @@ function BreadcrumbSchema() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://experienceboat.es/en' },
-      { '@type': 'ListItem', position: 2, name: 'Boat Rental without Licence Roses', item: 'https://experienceboat.es/en/boat-rental-without-licence-roses' },
-      { '@type': 'ListItem', position: 3, name: 'Santa Margarita Canals', item: 'https://experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.experienceboat.es/en' },
+      { '@type': 'ListItem', position: 2, name: 'Boat Rental without Licence Roses', item: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses' },
+      { '@type': 'ListItem', position: 3, name: 'Santa Margarita Canals', item: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

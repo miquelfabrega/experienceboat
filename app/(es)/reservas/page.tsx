@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   description:
     'Reserva tu barco en Roses con Experience Boat. Sin licencia, con licencia o excursiones privadas. Respuesta inmediata por WhatsApp o email.',
   alternates: {
-    canonical: 'https://experienceboat.es/reservas',
+    canonical: 'https://www.experienceboat.es/reservas',
     languages: {
-      'x-default': 'https://experienceboat.es/reservas',
-      es: 'https://experienceboat.es/reservas',
+      'x-default': 'https://www.experienceboat.es/reservas',
+      es: 'https://www.experienceboat.es/reservas',
     },
   },
   openGraph: {
     title: 'Reservar barco en Roses',
     description:
       'Reserva tu barco en Roses con Experience Boat. Sin licencia, con licencia o excursiones privadas.',
-    url: 'https://experienceboat.es/reservas',
+    url: 'https://www.experienceboat.es/reservas',
     siteName: 'Experience Boat',
     locale: 'es_ES',
     type: 'website',
