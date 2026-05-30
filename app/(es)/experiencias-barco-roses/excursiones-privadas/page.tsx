@@ -168,8 +168,8 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
       <main id="main-content" className="bg-white">
         <section className="relative min-h-[52vh] flex items-end bg-slate-900">
           <Image
-            src="https://picsum.photos/seed/excursion-privada-cap-creus/1600/900"
-            alt="Excursiones privadas en barco en Roses con patrón"
+            src="/images/experiencias/excursiones-privadas-hero.webp"
+            alt="Excursión privada en barco fondeado sobre aguas turquesa en una cala del Cap de Creus, Roses"
             fill
             className="object-cover opacity-80"
             priority
