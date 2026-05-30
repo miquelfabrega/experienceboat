@@ -200,7 +200,7 @@ export default function ExperiencesBateauRosesPage() {
 
       <main id="main-content">
         <HeroSection lang="fr" />
-        <IntroSection />
+        <IntroSection lang="fr" />
         <ExperiencesGrid lang="fr" />
         <CommonSection />
         <DestinationsSection />
