@@ -9,7 +9,7 @@ const t: Record<Lang, {
 }> = {
   es: {
     imgAlt: 'Vista aérea de la bahía y el puerto deportivo de Roses, Costa Brava',
-    h1: 'Experiencias en barco en Roses — solo tu grupo, sin compartir',
+    h1: 'Experiencias en barco en Roses',
     ctaPrimary: 'Ver experiencias',
     ctaWhatsapp: 'Hablar por WhatsApp',
     subtitle: 'Excursiones con patrón · Salidas privadas · Desde Santa Margarita',
@@ -17,7 +17,7 @@ const t: Record<Lang, {
   },
   fr: {
     imgAlt: 'Vue aérienne de la baie et du port de plaisance de Roses, Costa Brava',
-    h1: 'Expériences en bateau à Roses — rien que votre groupe, sans partage',
+    h1: 'Expériences en bateau à Roses',
     ctaPrimary: 'Voir les expériences',
     ctaWhatsapp: 'Discuter sur WhatsApp',
     subtitle: 'Excursions avec skipper · Sorties privées · Depuis Santa Margarita',
@@ -25,7 +25,7 @@ const t: Record<Lang, {
   },
   en: {
     imgAlt: 'Aerial view of the bay and marina of Roses, Costa Brava',
-    h1: 'Boat experiences in Roses — just your group, no sharing',
+    h1: 'Boat experiences in Roses',
     ctaPrimary: 'See experiences',
     ctaWhatsapp: 'Chat on WhatsApp',
     subtitle: 'Skippered trips · Private outings · From Santa Margarita',
