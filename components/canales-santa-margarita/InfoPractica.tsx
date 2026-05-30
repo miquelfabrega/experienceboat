@@ -16,7 +16,7 @@ const defaultItems = [
   { icon: Clock, question: '¿Cuánto tiempo dura el recorrido por los canales?', answer: 'El recorrido por los canales interiores dura entre 60 y 90 minutos. Si lo combinas con una salida a la bahía de Roses, puedes pasar un medio día completo en el agua sin necesidad de alejarte demasiado.' },
   { icon: Baby, question: '¿Es apto para niños pequeños?', answer: 'Es uno de los entornos más seguros para familias con niños. Las aguas son tranquilas, la velocidad es baja y el paisaje mantiene a los más pequeños entretenidos durante todo el recorrido.' },
   { icon: Sun, question: '¿Cuándo es mejor ir?', answer: 'A primera hora de la mañana los canales están en calma total y la luz es espectacular para fotografía. Al atardecer, los reflejos en el agua son igual de impresionantes. En temporada media (mayo, junio, septiembre) hay mucho menos tráfico náutico que en pleno agosto.' },
-  { icon: Euro, question: 'Precio del alquiler', prices: [{ label: 'Medio día (4 horas)', value: 'desde 200 €' }, { label: 'Día completo (8 horas)', value: 'desde 350 €' }] },
+  { icon: Euro, question: 'Precio del alquiler', prices: [{ label: 'Medio día (4 horas)', value: 'desde 70 €' }, { label: 'Día completo (8 horas)', value: 'desde 120 €' }] },
 ];
 
 const icons = [Clock, Baby, Sun, Euro];

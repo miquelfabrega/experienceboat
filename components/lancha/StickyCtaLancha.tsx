@@ -13,7 +13,7 @@ interface StickyCtaLanchaProps {
 const t: Record<Lang, Record<string, string>> = {
   es: {
     mobileTitle: 'Elige tu experiencia en la Costa Brava',
-    mobileSubtitle: 'Desde 200 € · Salidas privadas',
+    mobileSubtitle: 'Desde 195 € · Salidas privadas',
     mobileButton: 'Reservar',
     cta1Label: 'Con licencia',
     cta2Label: 'Con patrón',
@@ -23,7 +23,7 @@ const t: Record<Lang, Record<string, string>> = {
   },
   fr: {
     mobileTitle: 'Choisissez votre expérience sur la Costa Brava',
-    mobileSubtitle: 'À partir de 200 € · Sorties privées',
+    mobileSubtitle: 'À partir de 195 € · Sorties privées',
     mobileButton: 'Réserver',
     cta1Label: 'Voir les bateaux',
     cta2Label: 'WhatsApp',

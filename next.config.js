@@ -64,23 +64,28 @@ const nextConfig = {
         destination: '/blog/planificar-escapada-barco-costa-brava/',
         permanent: true,
       },
-      // ── Barcos — fichas inactivas (siguen redirigiendo al índice) ──
-      { source: '/barcos/tio-marc-mano', destination: '/barcos/', permanent: true },
+      // ── Barcos — fichas inactivas/retiradas → índice ──
       { source: '/barcos/zodiac-medline-i', destination: '/barcos/', permanent: true },
       { source: '/barcos/zodiac-medline-ii', destination: '/barcos/', permanent: true },
-      // ── Barcos — slugs antiguos → nuevo slug equivalente ──
-      { source: '/barcos/dream-point-boat', destination: '/barcos/dream-line-430', permanent: true },
-      { source: '/barcos/dream-point-420', destination: '/barcos/dream-line-430', permanent: true },
-      { source: '/dream-line-430', destination: '/barcos/dream-line-430', permanent: true },
-      { source: '/barcos/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
+      { source: '/barcos/costa-brava-joker', destination: '/barcos/', permanent: true },
+      { source: '/barcos/costa-brava-boat', destination: '/barcos/', permanent: true },
+      // ── Barcos — slugs antiguos → nuevo slug equivalente (flyer 2026) ──
+      { source: '/barcos/tio-marc-mano', destination: '/barcos/raf-iv-mano', permanent: true },
+      { source: '/barcos/sessa-marine-c35', destination: '/barcos/justi-saura-llaut-850', permanent: true },
+      { source: '/barcos/orange-kiwi', destination: '/barcos/orange-kiwi-620', permanent: true },
+      { source: '/barcos/spirit-of-the-sea', destination: '/barcos/spirit-of-the-sea-675', permanent: true },
+      { source: '/barcos/marine-breeze', destination: '/barcos/marine-brezze-450', permanent: true },
+      { source: '/barcos/dream-line-430', destination: '/barcos/dream-point-420', permanent: true },
+      { source: '/barcos/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
+      { source: '/dream-line-430', destination: '/barcos/dream-point-420', permanent: true },
       // ── Barcos — URLs antiguas en raíz (WordPress) → ficha o índice ──
       { source: '/jeanneau-595-reineta', destination: '/barcos/jeanneau-595-reineta', permanent: true },
-      { source: '/sessa-marine-c35', destination: '/barcos/sessa-marine-c35', permanent: true },
-      { source: '/costa-brava-boat', destination: '/barcos/costa-brava-joker', permanent: true },
-      { source: '/dream-point-boat', destination: '/barcos/dream-line-430', permanent: true },
+      { source: '/sessa-marine-c35', destination: '/barcos/justi-saura-llaut-850', permanent: true },
+      { source: '/costa-brava-boat', destination: '/barcos/', permanent: true },
+      { source: '/dream-point-boat', destination: '/barcos/dream-point-420', permanent: true },
       { source: '/zodiac-medline-ii', destination: '/barcos/', permanent: true },
       { source: '/zodiac-medline-i', destination: '/barcos/', permanent: true },
-      { source: '/tio-marc-mano', destination: '/barcos/', permanent: true },
+      { source: '/tio-marc-mano', destination: '/barcos/raf-iv-mano', permanent: true },
       // ── Experiencia antigua ──
       { source: '/experiencias-barco-roses/calas-cap-de-creus', destination: '/blog/ruta-barco-cap-de-creus-roses/', permanent: true },
       // ── Páginas EN antiguas ──

@@ -65,41 +65,42 @@ export default function BarcoSlugPage({
   const similares = getBarcosSimilares(barco.slug, 3);
   const url = `${SITE}/barcos/${barco.slug}`;
 
+  const { tarifas } = barco;
   const offers = [
-    {
-      '@type': 'Offer',
-      name: 'Día completo · temporada baja',
-      price: barco.precios.diaCompletoBaja,
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-      url,
-    },
-    {
-      '@type': 'Offer',
-      name: 'Día completo · temporada alta',
-      price: barco.precios.diaCompletoAlta,
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-      url,
-    },
-    ...(barco.precios.medioDiaBaja !== null
+    ...(tarifas.medioDia
       ? [
           {
             '@type': 'Offer',
             name: 'Medio día · temporada baja',
-            price: barco.precios.medioDiaBaja,
+            price: tarifas.medioDia.baja,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            url,
+          },
+          {
+            '@type': 'Offer',
+            name: 'Medio día · temporada alta',
+            price: tarifas.medioDia.alta,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
             url,
           },
         ]
       : []),
-    ...(barco.precios.medioDiaAlta !== null
+    ...(tarifas.diaCompleto
       ? [
           {
             '@type': 'Offer',
-            name: 'Medio día · temporada alta',
-            price: barco.precios.medioDiaAlta,
+            name: 'Día completo · temporada baja',
+            price: tarifas.diaCompleto.baja,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            url,
+          },
+          {
+            '@type': 'Offer',
+            name: 'Día completo · temporada alta',
+            price: tarifas.diaCompleto.alta,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
             url,
@@ -128,7 +129,11 @@ export default function BarcoSlugPage({
       '@type': 'AggregateOffer',
       priceCurrency: 'EUR',
       lowPrice: barco.precioDesde,
-      highPrice: barco.precios.diaCompletoAlta,
+      highPrice:
+        tarifas.sieteDias?.alta ??
+        tarifas.diaCompleto?.alta ??
+        tarifas.medioDia?.alta ??
+        barco.precioDesde,
       offerCount: offers.length,
       offers,
       url,

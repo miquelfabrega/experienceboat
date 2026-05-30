@@ -4,7 +4,7 @@ const precios = [
   {
     duracion: 'Medio día',
     horas: '4 horas',
-    precio: '200 €',
+    precio: '195 €',
     desde: true,
     recommended: false,
     description: 'Ideal para calas cercanas: Canyelles Petites, Almadraba.',
@@ -12,7 +12,7 @@ const precios = [
   {
     duracion: 'Día completo',
     horas: '8 horas',
-    precio: '350 €',
+    precio: '285 €',
     desde: true,
     recommended: true,
     description: 'Recomendado para llegar al Cap de Creus con tiempo.',

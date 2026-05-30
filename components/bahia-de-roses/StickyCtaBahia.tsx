@@ -31,7 +31,7 @@ export default function StickyCtaBahia({ lang = 'es' }: StickyCtaBahiaProps) {
           {/* Mobile bar */}
           <div className="md:hidden flex items-center justify-between gap-4 bg-[#0b1f3a] text-white px-5 py-4 border-t border-white/10">
             <div>
-              <p className="font-semibold text-sm">Barco con licencia — desde 200 €</p>
+              <p className="font-semibold text-sm">Barco con licencia — desde 195 €</p>
               <p className="text-xs text-blue-300">Salida desde Santa Margarita</p>
             </div>
             <a

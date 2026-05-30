@@ -230,8 +230,8 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/boats/zodiac-medline-1.jpg"
-                    alt="Neumática con patrón — Zodiac Medline"
+                    src="/images/boats/orange-kiwi.jpg"
+                    alt="Neumática con patrón — Orange Kiwi 620"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -240,7 +240,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-slate-900 mb-2">Neumáticas con patrón</h3>
                   <p className="text-sm text-slate-500 mb-4">
-                    Ej.: Zodiac Medline — hasta 11 personas. Ideal para grupos que buscan comodidad y
+                    Ej.: Orange Kiwi 620 — hasta 11 personas. Ideal para grupos que buscan comodidad y
                     estabilidad.
                   </p>
                   <ul className="text-sm space-y-2 mb-6 flex-1">
@@ -266,7 +266,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
                     src="/images/boats/spirit.jpg"
-                    alt="Lancha con patrón — Spirit of the Sea"
+                    alt="Lancha con patrón — Spirit of the Sea 675"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

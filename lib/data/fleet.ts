@@ -1,16 +1,34 @@
 export type CategoriaBarco = 'sin-licencia' | 'con-licencia';
 
+export type Temporada = 'baja' | 'media' | 'alta';
+
 export interface BarcoExtra {
   nombre: string;
   precio: number;
 }
 
-export interface BarcoPrecios {
-  medioDiaBaja: number | null;
-  medioDiaAlta: number | null;
-  diaCompletoBaja: number;
-  diaCompletoAlta: number;
-  notaMedioDia?: string;
+/** Precio de una franja para las 3 temporadas (datos del flyer oficial). */
+export interface PrecioTemporada {
+  baja: number;
+  media: number;
+  alta: number;
+}
+
+/**
+ * Tarifas por duración. No todos los barcos ofrecen todas las duraciones
+ * (p. ej. Justi Saura solo ½ día y 1 día), por eso son opcionales.
+ */
+export interface TarifasBarco {
+  medioDia?: PrecioTemporada; // ½ día
+  diaCompleto?: PrecioTemporada; // 1 día
+  tresDias?: PrecioTemporada; // 3 días
+  sieteDias?: PrecioTemporada; // 7 días
+}
+
+/** Suplemento de patrón/capitán cuando es obligatorio (Justi Saura Llaut 850). */
+export interface SuplementoCapitan {
+  medioDia: number; // +120 € (4 h)
+  diaCompleto: number; // +190 € (8 h)
 }
 
 export interface Barco {
@@ -21,9 +39,13 @@ export interface Barco {
   pax: number;
   eslora: string;
   motor: string;
+  requiereCapitan?: boolean;
+  suplementoCapitan?: SuplementoCapitan;
   equipamiento: string[];
-  precios: BarcoPrecios;
-  extras?: BarcoExtra[];
+  tarifas: TarifasBarco;
+  /** Tarifa de la experiencia Sunset (2-3 h). Solo barcos que la ofrecen. */
+  sunset?: PrecioTemporada;
+  notaMedioDia?: string;
   precioDesde: number;
   imagen: string;
   galeria?: string[];
@@ -47,13 +69,16 @@ const INCLUSIONES_BASE = [
 const WIDGET_SIN_LICENCIA = '12ff7e04-a15c-4980-bacb-75c68b8eee6e';
 const WIDGET_CON_LICENCIA = 'cbe7e43c-d1d4-4ad3-a3ee-2f5b4d6863fd';
 
-// Extras universales contratables con cualquier alquiler (datos del Excel del cliente)
+// Actividades extra contratables con el Sunset (precios del flyer oficial).
 export const EXTRAS_DISPONIBLES: BarcoExtra[] = [
   { nombre: 'Wakeboard', precio: 50 },
-  { nombre: 'Donut', precio: 50 },
-  { nombre: 'Ski Náutico', precio: 50 },
+  { nombre: 'Donut', precio: 40 },
+  { nombre: 'Ski Náutico', precio: 40 },
   { nombre: 'Paddle Surf', precio: 50 },
 ];
+
+// Alias semántico: estos extras son los de la experiencia Sunset.
+export const EXTRAS_SUNSET = EXTRAS_DISPONIBLES;
 
 export const fleet: Barco[] = [
   // ─── SIN LICENCIA ───────────────────────────────────────────────
@@ -66,15 +91,16 @@ export const fleet: Barco[] = [
     eslora: '4,50 m',
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño', 'Colchonetas'],
-    precios: {
-      medioDiaBaja: 180,
-      medioDiaAlta: 220,
-      diaCompletoBaja: 245,
-      diaCompletoAlta: 320,
-      notaMedioDia: NOTA_SIN_LICENCIA,
+    tarifas: {
+      medioDia: { baja: 90, media: 95, alta: 110 },
+      diaCompleto: { baja: 145, media: 155, alta: 170 },
+      tresDias: { baja: 180, media: 190, alta: 220 },
+      sieteDias: { baja: 245, media: 260, alta: 320 },
     },
-    precioDesde: 180,
-    imagen: 'https://picsum.photos/seed/remus-450/1200/800',
+    sunset: { baja: 160, media: 170, alta: 175 },
+    notaMedioDia: NOTA_SIN_LICENCIA,
+    precioDesde: 90,
+    imagen: '/boats/remus-450/remus-450-hero.webp',
     badge: 'Más reservado',
     descripcionCorta:
       'Embarcación sin licencia para 5 personas, ideal para descubrir las calas de Roses sin necesidad de patrón.',
@@ -82,23 +108,23 @@ export const fleet: Barco[] = [
     widgetReservaId: WIDGET_SIN_LICENCIA,
   },
   {
-    slug: 'marine-breeze',
-    nombre: 'Marine Breeze',
+    slug: 'marine-brezze-450',
+    nombre: 'Marine Brezze 450',
     categoria: 'sin-licencia',
     activo: true,
     pax: 5,
     eslora: '4,50 m',
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño'],
-    precios: {
-      medioDiaBaja: 180,
-      medioDiaAlta: 220,
-      diaCompletoBaja: 245,
-      diaCompletoAlta: 320,
-      notaMedioDia: NOTA_SIN_LICENCIA,
+    tarifas: {
+      medioDia: { baja: 90, media: 95, alta: 110 },
+      diaCompleto: { baja: 145, media: 155, alta: 170 },
+      tresDias: { baja: 155, media: 165, alta: 220 },
+      sieteDias: { baja: 245, media: 260, alta: 320 },
     },
-    precioDesde: 180,
-    imagen: 'https://picsum.photos/seed/marine-breeze/1200/800',
+    notaMedioDia: NOTA_SIN_LICENCIA,
+    precioDesde: 90,
+    imagen: '/boats/marine-brezze-450/marine-brezze-450-hero.webp',
     badge: null,
     descripcionCorta:
       'Barco sin licencia para 5 pax con toldo y escalera de baño. Perfecto para una jornada tranquila por la Bahía de Roses.',
@@ -114,15 +140,15 @@ export const fleet: Barco[] = [
     eslora: '4,20 m',
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño', 'Fácil manejo'],
-    precios: {
-      medioDiaBaja: 165,
-      medioDiaAlta: 200,
-      diaCompletoBaja: 225,
-      diaCompletoAlta: 280,
-      notaMedioDia: NOTA_SIN_LICENCIA,
+    tarifas: {
+      medioDia: { baja: 70, media: 75, alta: 90 },
+      diaCompleto: { baja: 120, media: 135, alta: 165 },
+      tresDias: { baja: 165, media: 175, alta: 200 },
+      sieteDias: { baja: 225, media: 245, alta: 320 },
     },
-    precioDesde: 165,
-    imagen: 'https://picsum.photos/seed/dream-line-430/1200/800',
+    notaMedioDia: NOTA_SIN_LICENCIA,
+    precioDesde: 70,
+    imagen: '/boats/dream-point-420/dream-point-420-hero.webp',
     badge: null,
     descripcionCorta:
       'La opción más compacta y económica sin licencia. 4 pax, fácil de manejar y pensada para una primera experiencia en el mar.',
@@ -140,15 +166,15 @@ export const fleet: Barco[] = [
     eslora: '5,95 m',
     motor: '115 CV',
     equipamiento: ['Solárium', 'Toldo', 'Escalera de baño'],
-    precios: {
-      medioDiaBaja: 195,
-      medioDiaAlta: 265,
-      diaCompletoBaja: 295,
-      diaCompletoAlta: 395,
+    tarifas: {
+      medioDia: { baja: 195, media: 225, alta: 265 },
+      diaCompleto: { baja: 285, media: 345, alta: 395 },
+      tresDias: { baja: 800, media: 900, alta: 1130 },
+      sieteDias: { baja: 1655, media: 2055, alta: 2490 },
     },
-    extras: [{ nombre: 'Wakeboard', precio: 50 }],
+    sunset: { baja: 160, media: 170, alta: 175 },
     precioDesde: 195,
-    imagen: 'https://picsum.photos/seed/jeanneau-595-reineta/1200/800',
+    imagen: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp',
     badge: null,
     descripcionCorta:
       'Jeanneau 595 con motor de 115 CV para 6 personas. Ideal para llegar al Cap de Creus con comodidad y solárium.',
@@ -156,98 +182,98 @@ export const fleet: Barco[] = [
     widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
-    slug: 'orange-kiwi',
-    nombre: 'Orange Kiwi (Zodiac)',
+    slug: 'orange-kiwi-620',
+    nombre: 'Orange Kiwi 620 (Zodiac)',
     categoria: 'con-licencia',
     activo: true,
     pax: 11,
-    eslora: '6,50 m',
+    eslora: '6,20 m',
     motor: '150 CV',
     equipamiento: ['Solárium', 'Toldo', 'Escalera', 'Flotadores'],
-    precios: {
-      medioDiaBaja: 235,
-      medioDiaAlta: 310,
-      diaCompletoBaja: 325,
-      diaCompletoAlta: 430,
+    tarifas: {
+      medioDia: { baja: 235, media: 270, alta: 310 },
+      diaCompleto: { baja: 325, media: 375, alta: 430 },
+      tresDias: { baja: 865, media: 1055, alta: 1290 },
+      sieteDias: { baja: 1870, media: 2195, alta: 2845 },
     },
-    extras: [{ nombre: 'Donut', precio: 50 }],
+    sunset: { baja: 160, media: 170, alta: 175 },
     precioDesde: 235,
-    imagen: 'https://picsum.photos/seed/orange-kiwi/1200/800',
+    imagen: '/boats/orange-kiwi-620/orange-kiwi-620-hero.webp',
     badge: null,
     descripcionCorta:
-      'Zodiac semirrígida de 6,50 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
+      'Zodiac semirrígida de 6,20 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
     widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
-    slug: 'spirit-of-the-sea',
-    nombre: 'Spirit of the Sea',
+    slug: 'spirit-of-the-sea-675',
+    nombre: 'Spirit of the Sea 675',
     categoria: 'con-licencia',
     activo: true,
     pax: 12,
-    eslora: '7,50 m',
+    eslora: '6,75 m',
     motor: '200-250 CV',
     equipamiento: ['Solárium proa y popa', 'Toldo', 'Equipo de sonido'],
-    precios: {
-      medioDiaBaja: 260,
-      medioDiaAlta: 340,
-      diaCompletoBaja: 360,
-      diaCompletoAlta: 460,
+    tarifas: {
+      medioDia: { baja: 260, media: 280, alta: 340 },
+      diaCompleto: { baja: 360, media: 405, alta: 460 },
+      tresDias: { baja: 950, media: 1235, alta: 1235 },
+      sieteDias: { baja: 2080, media: 2340, alta: 2635 },
     },
-    extras: [{ nombre: 'Ski Náutico', precio: 50 }],
+    sunset: { baja: 165, media: 185, alta: 195 },
     precioDesde: 260,
-    imagen: 'https://picsum.photos/seed/spirit-of-the-sea/1200/800',
+    imagen: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp',
     badge: null,
     descripcionCorta:
-      'Embarcación de 7,50 m con doble solárium y sonido. Capacidad para 12 personas: nuestro barco más versátil para grupos.',
+      'Embarcación de 6,75 m con doble solárium y sonido. Capacidad para 12 personas: nuestro barco más versátil para grupos.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
     widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
-    slug: 'costa-brava-joker',
-    nombre: 'Costa Brava Joker',
+    slug: 'raf-iv-mano',
+    nombre: 'RAF IV Mano 21,5 Sport Fish',
     categoria: 'con-licencia',
     activo: true,
-    pax: 11,
-    eslora: '7,00 m',
-    motor: '200 CV',
-    equipamiento: ['Solárium', 'Toldo bimini', 'Escalera'],
-    precios: {
-      medioDiaBaja: 320,
-      medioDiaAlta: 425,
-      diaCompletoBaja: 440,
-      diaCompletoAlta: 605,
+    pax: 7,
+    eslora: '6,55 m',
+    motor: '150 CV',
+    equipamiento: ['Solárium proa', 'Toldo', 'Nevera', 'Equipo de pesca'],
+    tarifas: {
+      medioDia: { baja: 245, media: 265, alta: 295 },
+      diaCompleto: { baja: 375, media: 395, alta: 420 },
+      tresDias: { baja: 1013, media: 1007, alta: 1197 },
+      sieteDias: { baja: 2100, media: 2351, alta: 2740 },
     },
-    extras: [{ nombre: 'Paddle Surf', precio: 50 }],
-    precioDesde: 320,
-    imagen: 'https://picsum.photos/seed/costa-brava-joker/1200/800',
+    precioDesde: 245,
+    imagen: '/boats/raf-iv-mano/raf-iv-mano-hero.webp',
     badge: null,
     descripcionCorta:
-      'Joker Boat de 7 m, 200 CV y 11 pax. Carácter deportivo con solárium amplio para una jornada premium en la Costa Brava.',
+      'Mano 21,5 Sport Fish de 6,55 m y 150 CV para 7 personas. Carácter marinero, ideal para pesca y excursiones a Cap de Creus.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
     widgetReservaId: WIDGET_CON_LICENCIA,
   },
   {
-    slug: 'sessa-marine-c35',
-    nombre: 'Sessa Marine C35',
+    slug: 'justi-saura-llaut-850',
+    nombre: 'Justi Saura Llaut 850',
     categoria: 'con-licencia',
     activo: true,
-    pax: 10,
-    eslora: '10,60 m',
-    motor: '2x260 CV',
-    equipamiento: ['Camarote', 'Plataforma de baño', 'Solárium'],
-    precios: {
-      medioDiaBaja: null,
-      medioDiaAlta: null,
-      diaCompletoBaja: 745,
-      diaCompletoAlta: 970,
+    pax: 6,
+    eslora: '8,50 m',
+    motor: 'Intraborda diésel',
+    requiereCapitan: true,
+    suplementoCapitan: { medioDia: 120, diaCompleto: 190 },
+    equipamiento: ['Toldo', 'Mesa de teca', 'Nevera', 'Escalera de baño', 'Solárium'],
+    tarifas: {
+      medioDia: { baja: 290, media: 350, alta: 420 },
+      diaCompleto: { baja: 480, media: 580, alta: 680 },
     },
-    precioDesde: 745,
-    imagen: 'https://picsum.photos/seed/sessa-marine-c35/1200/800',
-    badge: 'Premium',
+    notaMedioDia: 'Medio día: 4 h · Día completo: 8 h',
+    precioDesde: 290,
+    imagen: '/boats/generic/hero.webp',
+    badge: 'Con patrón',
     descripcionCorta:
-      'Yate Sessa Marine C35 de 10,60 m con camarote y dos motores de 260 CV. La experiencia más exclusiva de nuestra flota.',
-    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón profesional incluido'],
+      'Llaut tradicional de 8,50 m para 6 personas con patrón incluido en la experiencia. La forma más auténtica y relajada de navegar la Costa Brava.',
+    inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón obligatorio (suplemento aparte)'],
     widgetReservaId: WIDGET_CON_LICENCIA,
   },
 
@@ -261,11 +287,8 @@ export const fleet: Barco[] = [
     eslora: '6,00 m',
     motor: 'Suzuki DF140',
     equipamiento: [],
-    precios: {
-      medioDiaBaja: null,
-      medioDiaAlta: null,
-      diaCompletoBaja: 257,
-      diaCompletoAlta: 257,
+    tarifas: {
+      diaCompleto: { baja: 257, media: 257, alta: 257 },
     },
     precioDesde: 257,
     imagen: 'https://picsum.photos/seed/zodiac-medline-1/1200/800',
@@ -281,35 +304,12 @@ export const fleet: Barco[] = [
     eslora: '6,00 m',
     motor: 'Suzuki DF140',
     equipamiento: [],
-    precios: {
-      medioDiaBaja: null,
-      medioDiaAlta: null,
-      diaCompletoBaja: 325,
-      diaCompletoAlta: 325,
+    tarifas: {
+      diaCompleto: { baja: 325, media: 325, alta: 325 },
     },
     precioDesde: 325,
     imagen: 'https://picsum.photos/seed/zodiac-medline-2/1200/800',
     badge: null,
-    descripcionCorta: '',
-  },
-  {
-    slug: 'tio-marc-mano',
-    nombre: 'Tio Marc Mano',
-    categoria: 'con-licencia',
-    activo: false,
-    pax: 8,
-    eslora: '7,00 m',
-    motor: 'Por confirmar',
-    equipamiento: [],
-    precios: {
-      medioDiaBaja: null,
-      medioDiaAlta: null,
-      diaCompletoBaja: 340,
-      diaCompletoAlta: 340,
-    },
-    precioDesde: 340,
-    imagen: 'https://picsum.photos/seed/tio-marc-mano/1200/800',
-    badge: 'Premium',
     descripcionCorta: '',
   },
 ];
@@ -330,3 +330,7 @@ export const getBarcosSimilares = (slug: string, limit = 3): Barco[] => {
     .filter((b) => b.slug !== slug && b.categoria === actual.categoria)
     .slice(0, limit);
 };
+
+/** Barcos que ofrecen la experiencia Sunset, con su tarifa por temporada. */
+export const getBarcosSunset = (): Barco[] =>
+  getBarcosActivos().filter((b) => b.sunset);

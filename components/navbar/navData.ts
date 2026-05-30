@@ -1,16 +1,15 @@
 export const navData = {
   barcosConLicencia: [
-    { name: 'Jeanneau 595 Reineta', price: 195, url: '/barcos', premium: false },
-    { name: 'Zodiac Medline I', price: 181, url: '/barcos', premium: false },
-    { name: 'Zodiac Medline II', price: 235, url: '/barcos', premium: false },
-    { name: 'Spirit of the Sea', price: 260, url: '/barcos', premium: false },
-    { name: 'Costa Brava Boat', price: 320, url: '/barcos', premium: false },
-    { name: 'Tio Marc Mano', price: 245, url: '/barcos', premium: false },
-    { name: 'Sessa Marine C35', price: 618, url: '/barcos', premium: true },
+    { name: 'Reineta (Jeanneau 595)', price: 195, url: '/barcos/jeanneau-595-reineta', premium: false },
+    { name: 'Orange Kiwi 620', price: 235, url: '/barcos/orange-kiwi-620', premium: false },
+    { name: 'RAF IV Mano 21,5 Sport Fish', price: 245, url: '/barcos/raf-iv-mano', premium: false },
+    { name: 'Spirit of the Sea 675', price: 260, url: '/barcos/spirit-of-the-sea-675', premium: false },
+    { name: 'Justi Saura Llaut 850', price: 290, url: '/barcos/justi-saura-llaut-850', premium: true },
   ],
   barcosSinLicencia: [
-    { name: 'Remus 450', price: 90, url: '/barcos', premium: false },
-    { name: 'Dream Line 430', price: 71, url: '/barcos', premium: false },
+    { name: 'Dream Point 420', price: 70, url: '/barcos/dream-point-420', premium: false },
+    { name: 'Remus 450', price: 90, url: '/barcos/remus-450', premium: false },
+    { name: 'Marine Brezze 450', price: 90, url: '/barcos/marine-brezze-450', premium: false },
   ],
   /** Menú de experiencias por idioma. */
   experiencias: {

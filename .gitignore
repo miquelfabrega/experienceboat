@@ -41,6 +41,11 @@ next-env.d.ts
 # bundler analyzer
 .next/analyze/
 
+# Material de origen local (fotos/vídeos en bruto, exports) — NO versionar
+/EXPERIENCE BOAT MIQUEL/
+/Searchconsole/
+boats-info.xlsx
+
 # Ahrefs audit folders (local only)
 experienceboat_*_all-issues_*/
 experiecne*_all-issues_*/

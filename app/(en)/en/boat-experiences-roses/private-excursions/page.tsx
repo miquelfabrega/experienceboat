@@ -227,8 +227,8 @@ export default function PrivateExcursionsRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/boats/zodiac-medline-1.jpg"
-                    alt="RIB with skipper — Zodiac Medline"
+                    src="/images/boats/orange-kiwi.jpg"
+                    alt="RIB with skipper — Orange Kiwi 620"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -237,7 +237,7 @@ export default function PrivateExcursionsRosesPage() {
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-slate-900 mb-2">RIB with skipper</h3>
                   <p className="text-sm text-slate-500 mb-4">
-                    e.g. Zodiac Medline — up to 11 people. Perfect for groups looking for comfort and
+                    e.g. Orange Kiwi 620 — up to 11 people. Perfect for groups looking for comfort and
                     stability.
                   </p>
                   <ul className="text-sm space-y-2 mb-6 flex-1">
@@ -263,7 +263,7 @@ export default function PrivateExcursionsRosesPage() {
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
                     src="/images/boats/spirit.jpg"
-                    alt="Motorboat with skipper — Spirit of the Sea"
+                    alt="Motorboat with skipper — Spirit of the Sea 675"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

@@ -1,0 +1,322 @@
+{
+  "dream-point-420": {
+    "folder": "DREAM POINT ",
+    "available": 4,
+    "targetsCount": 4,
+    "produced": [
+      {
+        "target": "dream-point-420-hero.webp",
+        "src": "1c6c0a0c-3671-4e11-8877-9a5c99784cf6.JPG",
+        "w": 2048,
+        "h": 1536
+      },
+      {
+        "target": "dream-point-420-exterior-01.webp",
+        "src": "2318e60d-ab88-4579-b867-ae094d57627f.JPG",
+        "w": 2048,
+        "h": 1536
+      },
+      {
+        "target": "dream-point-420-exterior-02.webp",
+        "src": "d11ff878-bdc9-455d-8cd9-8830437d153a.JPG",
+        "w": 2048,
+        "h": 1536
+      },
+      {
+        "target": "dream-point-420-interior-01.webp",
+        "src": "f5f78822-7042-4a23-ac34-a2d041c6e12c.JPG",
+        "w": 1536,
+        "h": 2048
+      }
+    ],
+    "hero": "1c6c0a0c-3671-4e11-8877-9a5c99784cf6.JPG",
+    "truncated": 0
+  },
+  "marine-brezze-450": {
+    "folder": "MARINE BREZZE ",
+    "available": 14,
+    "targetsCount": 7,
+    "produced": [
+      {
+        "target": "marine-brezze-450-hero.webp",
+        "src": "IMG_1385.JPG",
+        "w": 5464,
+        "h": 3070
+      },
+      {
+        "target": "marine-brezze-450-exterior-01.webp",
+        "src": "IMG_1335.JPG",
+        "w": 3545,
+        "h": 5318
+      },
+      {
+        "target": "marine-brezze-450-exterior-02.webp",
+        "src": "IMG_0358.jpeg",
+        "w": 2734,
+        "h": 1536
+      },
+      {
+        "target": "marine-brezze-450-interior-01.webp",
+        "src": "IMG_0370.jpeg",
+        "w": 2734,
+        "h": 1536
+      },
+      {
+        "target": "marine-brezze-450-interior-02.webp",
+        "src": "IMG_0413.jpeg",
+        "w": 1536,
+        "h": 2304
+      },
+      {
+        "target": "marine-brezze-450-experiencia-01.webp",
+        "src": "IMG_0415.jpeg",
+        "w": 1536,
+        "h": 2304
+      },
+      {
+        "target": "marine-brezze-450-experiencia-02.webp",
+        "src": "321d91d2-168f-4a08-8125-8e102b466f3f.JPG",
+        "w": 1536,
+        "h": 2048
+      }
+    ],
+    "hero": "IMG_1385.JPG",
+    "truncated": 0
+  },
+  "orange-kiwi-620": {
+    "folder": "MEDLINE ZODIAC 620",
+    "available": 9,
+    "targetsCount": 6,
+    "produced": [
+      {
+        "target": "orange-kiwi-620-hero.webp",
+        "src": "IMG_1522.HEIC",
+        "w": 5712,
+        "h": 4284
+      },
+      {
+        "target": "orange-kiwi-620-exterior-01.webp",
+        "src": "IMG_1523.HEIC",
+        "w": 5712,
+        "h": 4284
+      },
+      {
+        "target": "orange-kiwi-620-exterior-02.webp",
+        "src": "IMG_1524.HEIC",
+        "w": 5712,
+        "h": 4284
+      },
+      {
+        "target": "orange-kiwi-620-interior-01.webp",
+        "src": "IMG_1525.HEIC",
+        "w": 5712,
+        "h": 4284
+      },
+      {
+        "target": "orange-kiwi-620-interior-02.webp",
+        "src": "IMG_8709.HEIC",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "orange-kiwi-620-experiencia-01.webp",
+        "src": "IMG_9191.HEIC",
+        "w": 4032,
+        "h": 3024
+      }
+    ],
+    "hero": "IMG_1522.HEIC",
+    "truncated": 0
+  },
+  "raf-iv-mano": {
+    "folder": "RAF IV MANO 21,5 SPORT FISH",
+    "available": 10,
+    "targetsCount": 7,
+    "produced": [
+      {
+        "target": "raf-iv-mano-hero.webp",
+        "src": "Jr0eVAlwxQ3lAPxABRqQTOcUP6X4pEY2.big.jpg",
+        "w": 1920,
+        "h": 1440
+      },
+      {
+        "target": "raf-iv-mano-exterior-01.webp",
+        "src": "K77KzdwStssX1aJXkj0cyXtzs58J9dxA.big.jpg",
+        "w": 1440,
+        "h": 1920
+      },
+      {
+        "target": "raf-iv-mano-exterior-02.webp",
+        "src": "LyugjidV1pOtKDNnNhQQjHo7HHLvaltw.big.jpg",
+        "w": 1920,
+        "h": 1440
+      },
+      {
+        "target": "raf-iv-mano-cockpit.webp",
+        "src": "nupjMbACotu7NI82T1dWhGbd1jpasVmj.big.jpg",
+        "w": 1920,
+        "h": 1440
+      },
+      {
+        "target": "raf-iv-mano-interior-01.webp",
+        "src": "e7XOU6qLAzrtD7z9JVYsskqWPf9pf2cJ.big.jpg",
+        "w": 1920,
+        "h": 1436
+      },
+      {
+        "target": "raf-iv-mano-interior-02.webp",
+        "src": "22l8iihcwkjXpE7Dxzb0K1r3OmDBLfrN.big.jpg",
+        "w": 1920,
+        "h": 887
+      },
+      {
+        "target": "raf-iv-mano-experiencia-01.webp",
+        "src": "54IzB1FyCy3jPViecbmctKRnV3KUFc2d.big.jpg",
+        "w": 1920,
+        "h": 887
+      }
+    ],
+    "hero": "Jr0eVAlwxQ3lAPxABRqQTOcUP6X4pEY2.big.jpg",
+    "truncated": 0
+  },
+  "jeanneau-595-reineta": {
+    "folder": "REINETA BENETEAU 595",
+    "available": 11,
+    "targetsCount": 7,
+    "produced": [
+      {
+        "target": "jeanneau-595-reineta-hero.webp",
+        "src": "IMG_1122.heic",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "jeanneau-595-reineta-exterior-01.webp",
+        "src": "IMG_1369.JPG",
+        "w": 4000,
+        "h": 6000
+      },
+      {
+        "target": "jeanneau-595-reineta-exterior-02.webp",
+        "src": "IMG_1123.heic",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "jeanneau-595-reineta-interior-01.webp",
+        "src": "IMG_1129.heic",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "jeanneau-595-reineta-interior-02.webp",
+        "src": "IMG_1153.heic",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "jeanneau-595-reineta-cockpit.webp",
+        "src": "IMG_1166.heic",
+        "w": 4032,
+        "h": 3024
+      },
+      {
+        "target": "jeanneau-595-reineta-experiencia-01.webp",
+        "src": "IMG_1171.heic",
+        "w": 4032,
+        "h": 3024
+      }
+    ],
+    "hero": "IMG_1122.heic",
+    "truncated": 0
+  },
+  "remus-450": {
+    "folder": "REMUS 450",
+    "available": 6,
+    "targetsCount": 5,
+    "produced": [
+      {
+        "target": "remus-450-hero.webp",
+        "src": "IMG_1376.jpg",
+        "w": 5464,
+        "h": 3070
+      },
+      {
+        "target": "remus-450-exterior-01.webp",
+        "src": "IMG_1378.JPG",
+        "w": 4871,
+        "h": 2737
+      },
+      {
+        "target": "remus-450-exterior-02.webp",
+        "src": "IMG_1382.jpg",
+        "w": 4550,
+        "h": 2556
+      },
+      {
+        "target": "remus-450-interior-01.webp",
+        "src": "IMG_0365.jpeg",
+        "w": 2734,
+        "h": 1536
+      },
+      {
+        "target": "remus-450-experiencia-01.webp",
+        "src": "IMG_0375.jpeg",
+        "w": 2734,
+        "h": 1536
+      }
+    ],
+    "hero": "IMG_1376.jpg",
+    "truncated": 0
+  },
+  "spirit-of-the-sea-675": {
+    "folder": "SPIRIT GOMMO NAUTICA G65",
+    "available": 7,
+    "targetsCount": 6,
+    "produced": [
+      {
+        "target": "spirit-of-the-sea-675-hero.webp",
+        "src": "IMG_1313(1).jpeg",
+        "w": 2730,
+        "h": 1536
+      },
+      {
+        "target": "spirit-of-the-sea-675-exterior-01.webp",
+        "src": "IMG_1320.jpeg",
+        "w": 2730,
+        "h": 1536
+      },
+      {
+        "target": "spirit-of-the-sea-675-exterior-02.webp",
+        "src": "IMG_1312.jpeg",
+        "w": 2358,
+        "h": 1536
+      },
+      {
+        "target": "spirit-of-the-sea-675-interior-01.webp",
+        "src": "IMG_0336.jpeg",
+        "w": 1536,
+        "h": 2304
+      },
+      {
+        "target": "spirit-of-the-sea-675-interior-02.webp",
+        "src": "IMG_3843.jpeg",
+        "w": 1536,
+        "h": 2304
+      },
+      {
+        "target": "spirit-of-the-sea-675-experiencia-01.webp",
+        "src": "IMG_1521.jpeg",
+        "w": 1066,
+        "h": 1600
+      }
+    ],
+    "hero": "IMG_1313(1).jpeg",
+    "truncated": 0
+  },
+  "generic": {
+    "hero": "barco_drone-10.jpg",
+    "w": 5464,
+    "h": 3070
+  }
+}

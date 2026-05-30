@@ -7,19 +7,19 @@ import { Calendar } from 'lucide-react';
 const translations = {
   es: {
     label: 'Sunset Experience',
-    price: 'desde 200 €',
+    price: 'desde 160 €',
     btn: 'Reservar',
     whatsappText: 'Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Sunset%20Experience'
   },
   fr: {
     label: 'Sunset Experience',
-    price: 'à partir de 200 €',
+    price: 'à partir de 160 €',
     btn: 'Réserver',
     whatsappText: 'Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20Sunset%20Experience'
   },
   en: {
     label: 'Sunset Experience',
-    price: 'from 200 €',
+    price: 'from 160 €',
     btn: 'Book',
     whatsappText: 'Hello%2C%20I%27d%20like%20information%20about%20the%20Sunset%20Experience'
   }

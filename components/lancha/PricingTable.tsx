@@ -10,8 +10,8 @@ const blocks = [
     borderStyle: 'border-slate-200',
     headerBg: 'bg-slate-800',
     rows: [
-      { label: 'Medio día (4h)', price: '200 €', note: 'desde' },
-      { label: 'Día completo (8h)', price: '350 €', note: 'desde' },
+      { label: 'Medio día (4h)', price: '195 €', note: 'desde' },
+      { label: 'Día completo (8h)', price: '285 €', note: 'desde' },
     ],
   },
   {

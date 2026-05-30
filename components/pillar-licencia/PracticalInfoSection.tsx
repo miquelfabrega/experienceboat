@@ -30,8 +30,8 @@ const items = [
     question: '¿Cuáles son los precios?',
     answer: null,
     prices: [
-      { label: 'Medio día (4 horas)', value: 'desde 200 €' },
-      { label: 'Día completo (8 horas)', value: 'desde 350 €' },
+      { label: 'Medio día (4 horas)', value: 'desde 195 €' },
+      { label: 'Día completo (8 horas)', value: 'desde 285 €' },
     ],
     note: 'Los precios varían según el modelo de embarcación y la temporada. Consulta disponibilidad para tu fecha.',
   },

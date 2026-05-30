@@ -75,18 +75,16 @@ const ui: Record<Lang, {
   },
 };
 
-// Map old card id → current active slug in /lib/data/fleet.ts (ES product page).
-// Inactive boats (zodiac-medline-i/ii, tio-marc-mano) stay null and link to fleet index.
+// Card id → current active slug in /lib/data/fleet.ts (ES product page).
 const ES_SLUG: Record<string, string | null> = {
   'jeanneau-595-reineta': 'jeanneau-595-reineta',
-  'zodiac-medline-i': null,
-  'zodiac-medline-ii': null,
-  'spirit-of-the-sea': 'spirit-of-the-sea',
-  'costa-brava-boat': 'costa-brava-joker',
-  'tio-marc-mano': null,
+  'orange-kiwi-620': 'orange-kiwi-620',
+  'spirit-of-the-sea-675': 'spirit-of-the-sea-675',
+  'raf-iv-mano': 'raf-iv-mano',
+  'justi-saura-llaut-850': 'justi-saura-llaut-850',
   'remus-450': 'remus-450',
-  'dream-line-430': 'dream-line-430',
-  'sessa-marine-c35': 'sessa-marine-c35',
+  'marine-brezze-450': 'marine-brezze-450',
+  'dream-point-420': 'dream-point-420',
 };
 
 const fleetIndexHref = (lang: Lang) =>
@@ -100,24 +98,23 @@ const boatHref = (id: string, lang: Lang) => {
 
 // Boat data — names and hrefs are language-neutral; category key maps to ui labels
 const boatsData = [
-  { id: 'jeanneau-595-reineta',  name: 'Jeanneau 595 Reineta', cat: 'with',    badge: { es: '⭐ Más reservado',             fr: '⭐ Le plus réservé',              en: '⭐ Most booked'              }, price: { es: 'Desde 195 € · ½ día',      fr: 'À partir de 195 € · ½ journée', en: 'From €195 · ½ day'      }, href: '/barcos', img: '/images/boats/jeanneau-595.jpg'     },
-  { id: 'zodiac-medline-i',      name: 'Zodiac Medline I',     cat: 'with',    badge: { es: '🔥 Mejor relación calidad/precio', fr: '🔥 Meilleur rapport qualité/prix', en: '🔥 Best value for money'  }, price: { es: 'Desde 181 € · ½ día',      fr: 'À partir de 181 € · ½ journée', en: 'From €181 · ½ day'      }, href: '/barcos',     img: '/images/boats/zodiac-medline-1.jpg' },
-  { id: 'zodiac-medline-ii',     name: 'Zodiac Medline II',    cat: 'with',    badge: null,                                                                                                              price: { es: 'Desde 235 € · ½ día',      fr: 'À partir de 235 € · ½ journée', en: 'From €235 · ½ day'      }, href: '/barcos',    img: '/images/boats/zodiac-medline-2.jpg' },
-  { id: 'spirit-of-the-sea',     name: 'Spirit of the Sea',    cat: 'with',    badge: { es: '−5% descuento aplicado',           fr: '−5 % de réduction appliquée',    en: '−5% discount applied'    }, price: { es: 'Desde 260 € · ½ día',      fr: 'À partir de 260 € · ½ journée', en: 'From €260 · ½ day'      }, href: '/barcos',   img: '/images/boats/spirit.jpg'           },
-  { id: 'costa-brava-boat',      name: 'Costa Brava Boat',     cat: 'with',    badge: null,                                                                                                              price: { es: 'Desde 320 € · ½ día',      fr: 'À partir de 320 € · ½ journée', en: 'From €320 · ½ day'      }, href: '/barcos',    img: '/images/boats/costa-brava.jpg'      },
-  { id: 'tio-marc-mano',         name: 'Tío Marc Mano',        cat: 'with',    badge: { es: '−10% descuento aplicado',          fr: '−10 % de réduction appliquée',   en: '−10% discount applied'   }, price: { es: 'Desde 245 € · ½ día',      fr: 'À partir de 245 € · ½ journée', en: 'From €245 · ½ day'      }, href: '/barcos',       img: '/images/boats/tio-marc.jpg'         },
-  { id: 'remus-450',             name: 'Remus 450',             cat: 'no',      badge: { es: '⚡ Ideal canales Santa Margarita', fr: '⚡ Idéal canaux Santa Margarita', en: '⚡ Perfect for Santa Margarita canals' }, price: { es: 'Desde 90 € · 1 hora', fr: 'À partir de 90 € · 1 heure', en: 'From €90 · 1 hour' }, href: '/barcos',           img: '/images/boats/remus.jpg'            },
-  { id: 'dream-line-430',        name: 'Dream Line 430',        cat: 'no',      badge: null,                                                                                                              price: { es: 'Desde 71 € · 1 hora',      fr: 'À partir de 71 € · 1 heure',    en: 'From €71 · 1 hour'      }, href: '/barcos',    img: '/images/boats/dream-point.jpg'      },
-  { id: 'sessa-marine-c35',      name: 'Sessa Marine C35',      cat: 'premium', badge: { es: '💎 Experiencia VIP',               fr: '💎 Expérience VIP',               en: '💎 VIP Experience'        }, price: { es: 'Desde 618 € · 1 día',      fr: 'À partir de 618 € · 1 journée', en: 'From €618 · 1 day'      }, href: '/barcos',    img: '/images/boats/sessa.jpg'            },
+  { id: 'jeanneau-595-reineta',  name: 'Reineta (Jeanneau 595)',      cat: 'with', badge: { es: '⭐ Más reservado', fr: '⭐ Le plus réservé', en: '⭐ Most booked' }, price: { es: 'Desde 195 € · ½ día', fr: 'À partir de 195 € · ½ journée', en: 'From €195 · ½ day' }, href: '/barcos', img: '/images/boats/jeanneau-595.jpg' },
+  { id: 'orange-kiwi-620',       name: 'Orange Kiwi 620',             cat: 'with', badge: null,                                                                       price: { es: 'Desde 235 € · ½ día', fr: 'À partir de 235 € · ½ journée', en: 'From €235 · ½ day' }, href: '/barcos', img: '/images/boats/orange-kiwi.jpg' },
+  { id: 'raf-iv-mano',           name: 'RAF IV Mano 21,5 Sport Fish', cat: 'with', badge: null,                                                                       price: { es: 'Desde 245 € · ½ día', fr: 'À partir de 245 € · ½ journée', en: 'From €245 · ½ day' }, href: '/barcos', img: '/images/boats/raf-iv-mano.jpg' },
+  { id: 'spirit-of-the-sea-675', name: 'Spirit of the Sea 675',       cat: 'with', badge: null,                                                                       price: { es: 'Desde 260 € · ½ día', fr: 'À partir de 260 € · ½ journée', en: 'From €260 · ½ day' }, href: '/barcos', img: '/images/boats/spirit.jpg' },
+  { id: 'justi-saura-llaut-850', name: 'Justi Saura Llaut 850',       cat: 'with', badge: { es: '⚓ Con patrón', fr: '⚓ Avec patron', en: '⚓ With skipper' },        price: { es: 'Desde 290 € · ½ día', fr: 'À partir de 290 € · ½ journée', en: 'From €290 · ½ day' }, href: '/barcos', img: '/images/boats/justi-saura.jpg' },
+  { id: 'remus-450',             name: 'Remus 450',                   cat: 'no',   badge: { es: '⚡ Ideal canales Santa Margarita', fr: '⚡ Idéal canaux Santa Margarita', en: '⚡ Perfect for Santa Margarita canals' }, price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day' }, href: '/barcos', img: '/images/boats/remus.jpg' },
+  { id: 'marine-brezze-450',     name: 'Marine Brezze 450',           cat: 'no',   badge: null,                                                                       price: { es: 'Desde 90 € · ½ día', fr: 'À partir de 90 € · ½ journée', en: 'From €90 · ½ day' }, href: '/barcos', img: '/images/boats/marine-brezze.jpg' },
+  { id: 'dream-point-420',       name: 'Dream Point 420',             cat: 'no',   badge: null,                                                                       price: { es: 'Desde 70 € · ½ día', fr: 'À partir de 70 € · ½ journée', en: 'From €70 · ½ day' }, href: '/barcos', img: '/images/boats/dream-point.jpg' },
 ];
 
 export default function BarcosClient({ lang = 'es' }: { lang?: Lang }) {
   const t = ui[lang];
-  const categories = [t.all, t.noLicence, t.withLicence, 'Premium'] as const;
-  const [active, setActive] = useState(t.all);
+  const categories = [t.all, t.noLicence, t.withLicence] as const;
+  const [active, setActive] = useState<string>(t.all);
 
   const catKey = (label: string) =>
-    label === t.withLicence ? 'with' : label === t.noLicence ? 'no' : label === 'Premium' ? 'premium' : null;
+    label === t.withLicence ? 'with' : label === t.noLicence ? 'no' : null;
 
   const visibleSections = categories.filter(
     (c) => c !== t.all && (active === t.all || active === c)

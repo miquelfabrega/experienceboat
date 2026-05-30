@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import type { Barco } from '@/lib/data/fleet';
 import { EXTRAS_DISPONIBLES } from '@/lib/data/fleet';
+import { getGallery } from '@/lib/data/boats-gallery';
+import BoatGallery from '@/components/BoatGallery';
 import FleetCard from '@/components/home/FleetCard';
 
 const formatPrecio = (n: number | null) =>
@@ -47,7 +49,17 @@ export default function BarcoDetail({
   barco: Barco;
   similares: Barco[];
 }) {
-  const tieneMedioDia = barco.precios.medioDiaBaja !== null;
+  const { tarifas } = barco;
+  const galeria = getGallery(barco.slug);
+  const FILAS_TARIFAS = [
+    { label: 'Medio día', nota: barco.notaMedioDia, precios: tarifas.medioDia },
+    { label: 'Día completo', precios: tarifas.diaCompleto },
+    { label: '3 días', precios: tarifas.tresDias },
+    { label: '7 días', precios: tarifas.sieteDias },
+  ].filter(
+    (f): f is { label: string; nota?: string; precios: { baja: number; media: number; alta: number } } =>
+      Boolean(f.precios)
+  );
   const categoriaLabel =
     barco.categoria === 'sin-licencia' ? 'Sin Licencia' : 'Con Licencia';
   const siloHref =
@@ -236,6 +248,18 @@ export default function BarcoDetail({
         </section>
       )}
 
+      {/* Galería */}
+      {galeria.length > 0 && (
+        <section className="py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Galería
+            </h2>
+            <BoatGallery images={galeria} nombre={barco.nombre} />
+          </div>
+        </section>
+      )}
+
       {/* Inclusiones */}
       {barco.inclusiones && barco.inclusiones.length > 0 && (
         <section className="py-12">
@@ -275,48 +299,69 @@ export default function BarcoDetail({
                     Duración
                   </th>
                   <th className="px-4 py-3 text-sm font-semibold text-gray-700">
-                    Temporada baja
+                    Temp. baja
                   </th>
                   <th className="px-4 py-3 text-sm font-semibold text-gray-700">
-                    Temporada alta
+                    Temp. media
+                  </th>
+                  <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                    Temp. alta
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                <tr>
-                  <td className="px-4 py-3 font-medium text-gray-900">
-                    Medio día
-                    {barco.precios.notaMedioDia && (
-                      <span className="block text-xs text-gray-500 font-normal">
-                        {barco.precios.notaMedioDia}
-                      </span>
-                    )}
-                  </td>
-                  <td className="px-4 py-3 text-gray-800">
-                    {tieneMedioDia
-                      ? formatPrecio(barco.precios.medioDiaBaja)
-                      : 'Consultar'}
-                  </td>
-                  <td className="px-4 py-3 text-gray-800">
-                    {tieneMedioDia
-                      ? formatPrecio(barco.precios.medioDiaAlta)
-                      : 'Consultar'}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3 font-medium text-gray-900">
-                    Día completo
-                  </td>
-                  <td className="px-4 py-3 text-gray-800">
-                    {formatPrecio(barco.precios.diaCompletoBaja)}
-                  </td>
-                  <td className="px-4 py-3 text-gray-800">
-                    {formatPrecio(barco.precios.diaCompletoAlta)}
-                  </td>
-                </tr>
+                {FILAS_TARIFAS.map((fila) => (
+                  <tr key={fila.label}>
+                    <td className="px-4 py-3 font-medium text-gray-900">
+                      {fila.label}
+                      {fila.nota && (
+                        <span className="block text-xs text-gray-500 font-normal">
+                          {fila.nota}
+                        </span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-gray-800">
+                      {formatPrecio(fila.precios.baja)}
+                    </td>
+                    <td className="px-4 py-3 text-gray-800">
+                      {formatPrecio(fila.precios.media)}
+                    </td>
+                    <td className="px-4 py-3 text-gray-800">
+                      {formatPrecio(fila.precios.alta)}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
+
+          {barco.requiereCapitan && barco.suplementoCapitan && (
+            <p className="text-sm text-gray-700 mt-3">
+              <strong>Patrón obligatorio:</strong> suplemento de{' '}
+              {barco.suplementoCapitan.medioDia}€ (medio día) /{' '}
+              {barco.suplementoCapitan.diaCompleto}€ (día completo).
+            </p>
+          )}
+
+          {barco.sunset && (
+            <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-5">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
+                Sunset en barco (2-3 h)
+              </h3>
+              <div className="flex flex-wrap gap-3 text-sm">
+                <span className="rounded-full bg-gray-50 px-4 py-2">
+                  Temp. baja <strong>{barco.sunset.baja}€</strong>
+                </span>
+                <span className="rounded-full bg-gray-50 px-4 py-2">
+                  Temp. media <strong>{barco.sunset.media}€</strong>
+                </span>
+                <span className="rounded-full bg-gray-50 px-4 py-2">
+                  Temp. alta <strong>{barco.sunset.alta}€</strong>
+                </span>
+              </div>
+            </div>
+          )}
+
           <p className="text-sm text-gray-500 mt-3">
             Combustible y fianza no incluidos. Precios sujetos a disponibilidad.
           </p>

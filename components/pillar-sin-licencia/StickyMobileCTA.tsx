@@ -17,7 +17,7 @@ export interface StickyMobileCTAT {
 const defaults: Required<StickyMobileCTAT> = {
   seeBoats: 'Ver barcos',
   popupTitle: 'Alquiler sin licencia en Roses',
-  popupDesc: 'Desde 200 € / medio día. Salida desde Santa Margarita.',
+  popupDesc: 'Desde 70 € / medio día. Salida desde Santa Margarita.',
   seeCta: 'Ver barcos disponibles',
   waMessage: 'Hola%2C%20me%20interesa%20alquilar%20un%20barco%20sin%20licencia%20en%20Roses',
   openLabel: 'Abrir menú de reserva rápida',

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Users, Ruler, Clock, ChevronRight } from 'lucide-react';
+import { getBarcosActivos } from '@/lib/data/fleet';
 
 export interface BoatData {
   id: number;
@@ -28,11 +29,27 @@ export interface BoatGridT {
   boats?: BoatData[];
 }
 
-const defaultBoats: BoatData[] = [
-  { id: 1, model: 'Embarcación sin licencia 4 pax', image: 'https://picsum.photos/seed/boat-sin-1/600/400', capacity: 4, eslora: '4.5 m', halfDay: '200 €', fullDay: '350 €', badge: 'Ideal parejas', badgeColor: 'bg-sky-100 text-sky-700' },
-  { id: 2, model: 'Embarcación sin licencia 5 pax', image: 'https://picsum.photos/seed/boat-sin-2/600/400', capacity: 5, eslora: '4.8 m', halfDay: '220 €', fullDay: '380 €', badge: 'Más popular', badgeColor: 'bg-orange-100 text-orange-700' },
-  { id: 3, model: 'Embarcación sin licencia 6 pax', image: 'https://picsum.photos/seed/boat-sin-3/600/400', capacity: 6, eslora: '5.0 m', halfDay: '250 €', fullDay: '420 €', badge: 'Familias', badgeColor: 'bg-teal-100 text-teal-700' },
+const BADGE_STYLES = [
+  'bg-sky-100 text-sky-700',
+  'bg-orange-100 text-orange-700',
+  'bg-teal-100 text-teal-700',
+  'bg-violet-100 text-violet-700',
 ];
+
+// Flota sin licencia derivada de la fuente de verdad (lib/data/fleet.ts).
+const defaultBoats: BoatData[] = getBarcosActivos()
+  .filter((b) => b.categoria === 'sin-licencia')
+  .map((b, i) => ({
+    id: i + 1,
+    model: b.nombre,
+    image: b.imagen,
+    capacity: b.pax,
+    eslora: b.eslora.replace(',', '.'),
+    halfDay: `${b.tarifas.medioDia?.baja ?? b.precioDesde} €`,
+    fullDay: b.tarifas.diaCompleto?.baja ? `${b.tarifas.diaCompleto.baja} €` : '—',
+    badge: b.badge ?? '',
+    badgeColor: BADGE_STYLES[i % BADGE_STYLES.length],
+  }));
 
 const defaults: Required<Omit<BoatGridT, 'boats'>> = {
   sectionLabel: 'Flota sin licencia',
@@ -81,7 +98,7 @@ export default function BoatGrid({ t }: { t?: BoatGridT }) {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className={`absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full ${boat.badgeColor}`}>{boat.badge}</span>
+                {boat.badge && <span className={`absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full ${boat.badgeColor}`}>{boat.badge}</span>}
               </div>
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="font-bold text-gray-900 text-lg mb-3 leading-tight">{boat.model}</h3>

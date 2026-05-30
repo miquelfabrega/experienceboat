@@ -228,8 +228,8 @@ export default function ExcursionsPriveesRosesPage() {
               <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
-                    src="/images/boats/zodiac-medline-1.jpg"
-                    alt="Semi-rigide avec skipper — Zodiac Medline"
+                    src="/images/boats/orange-kiwi.jpg"
+                    alt="Semi-rigide avec skipper — Orange Kiwi 620"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -238,7 +238,7 @@ export default function ExcursionsPriveesRosesPage() {
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-slate-900 mb-2">Semi-rigide avec skipper</h3>
                   <p className="text-sm text-slate-500 mb-4">
-                    Ex. : Zodiac Medline — jusqu&apos;à 11 personnes. Idéal pour les groupes qui recherchent
+                    Ex. : Orange Kiwi 620 — jusqu&apos;à 11 personnes. Idéal pour les groupes qui recherchent
                     confort et stabilité.
                   </p>
                   <ul className="text-sm space-y-2 mb-6 flex-1">
@@ -264,7 +264,7 @@ export default function ExcursionsPriveesRosesPage() {
                 <div className="relative aspect-[4/3] bg-slate-200">
                   <Image
                     src="/images/boats/spirit.jpg"
-                    alt="Vedette avec skipper — Spirit of the Sea"
+                    alt="Vedette avec skipper — Spirit of the Sea 675"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

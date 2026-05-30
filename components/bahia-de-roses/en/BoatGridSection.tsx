@@ -1,52 +1,29 @@
 import Image from 'next/image';
 import { Users, Ruler, Clock, ChevronRight } from 'lucide-react';
+import { getBarcosActivos } from '@/lib/data/fleet';
 
-const boats = [
-  {
-    id: 1,
-    model: 'Bayliner Element E5',
-    image: 'https://picsum.photos/seed/boat1/600/400',
-    capacity: 4,
-    length: '4.6 m',
-    halfDay: '€200',
-    fullDay: '€350',
-    badge: 'Ideal for couples',
-    badgeColor: 'bg-sky-100 text-sky-700',
-  },
-  {
-    id: 2,
-    model: 'Quicksilver 475 Activ',
-    image: 'https://picsum.photos/seed/boat2/600/400',
-    capacity: 5,
-    length: '4.7 m',
-    halfDay: '€220',
-    fullDay: '€380',
-    badge: 'Most popular',
-    badgeColor: 'bg-orange-100 text-orange-700',
-  },
-  {
-    id: 3,
-    model: 'Bayliner VR5',
-    image: 'https://picsum.photos/seed/boat3/600/400',
-    capacity: 6,
-    length: '5.2 m',
-    halfDay: '€250',
-    fullDay: '€420',
-    badge: 'Medium groups',
-    badgeColor: 'bg-teal-100 text-teal-700',
-  },
-  {
-    id: 4,
-    model: 'Quicksilver 605 Open',
-    image: 'https://picsum.photos/seed/boat4/600/400',
-    capacity: 8,
-    length: '6.0 m',
-    halfDay: '€300',
-    fullDay: '€500',
-    badge: 'Large groups',
-    badgeColor: 'bg-violet-100 text-violet-700',
-  },
+const BADGE_STYLES = [
+  'bg-sky-100 text-sky-700',
+  'bg-orange-100 text-orange-700',
+  'bg-teal-100 text-teal-700',
+  'bg-violet-100 text-violet-700',
+  'bg-rose-100 text-rose-700',
 ];
+
+// Licensed fleet derived from the source of truth (lib/data/fleet.ts).
+const boats = getBarcosActivos()
+  .filter((b) => b.categoria === 'con-licencia')
+  .map((b, i) => ({
+    id: i + 1,
+    model: b.nombre,
+    image: b.imagen,
+    capacity: b.pax,
+    length: b.eslora.replace(',', '.'),
+    halfDay: `€${b.tarifas.medioDia?.baja ?? b.precioDesde}`,
+    fullDay: b.tarifas.diaCompleto?.baja ? `€${b.tarifas.diaCompleto.baja}` : '—',
+    badge: b.badge ?? '',
+    badgeColor: BADGE_STYLES[i % BADGE_STYLES.length],
+  }));
 
 
 export default function BoatGridSection() {
@@ -79,9 +56,11 @@ export default function BoatGridSection() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className={`absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full ${boat.badgeColor}`}>
-                  {boat.badge}
-                </span>
+                {boat.badge && (
+                  <span className={`absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full ${boat.badgeColor}`}>
+                    {boat.badge}
+                  </span>
+                )}
               </div>
 
               <div className="p-5 flex flex-col flex-1">

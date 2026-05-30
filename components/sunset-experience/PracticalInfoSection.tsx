@@ -28,7 +28,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Precio',
-        desc: 'Opción sin licencia desde 200 €. Opción con patrón (neumática) desde 300 €. (Precio por embarcación, no por persona).'
+        desc: 'Opción sin licencia desde 160 €. Opción con patrón (neumática) desde 175 €. (Precio por embarcación, no por persona).'
       }
     ],
     recommendation: 'Ofrecemos modalidades con patrón y sin licencia. Para una experiencia más relajada, recomendamos con patrón.',
@@ -62,7 +62,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Prix',
-        desc: 'Option sans permis à partir de 200 €. Option avec skipper (pneumatique) à partir de 300 €. (Prix par embarcation, pas par personne).'
+        desc: 'Option sans permis à partir de 160 €. Option avec skipper (pneumatique) à partir de 175 €. (Prix par embarcation, pas par personne).'
       }
     ],
     recommendation: 'Nous proposons des modalités avec skipper et sans permis. Pour une expérience plus détendue, nous recommandons avec skipper.',
@@ -96,7 +96,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Price',
-        desc: 'No-licence option from 200 €. Skipper option (inflatable) from 300 €. (Price per boat, not per person).'
+        desc: 'No-licence option from 160 €. Skipper option (inflatable) from 175 €. (Price per boat, not per person).'
       }
     ],
     recommendation: 'We offer skippered and no-licence options. For a more relaxing experience, we recommend the skippered option.',
