@@ -199,7 +199,7 @@ export default function BoatExperiencesRosesPage() {
       <BreadcrumbSchema />
 
       <main id="main-content">
-        <HeroSection />
+        <HeroSection lang="en" />
         <IntroSection />
         <ExperiencesGrid lang="en" />
         <CommonSection />
