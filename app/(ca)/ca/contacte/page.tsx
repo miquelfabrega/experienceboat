@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import ContactForm from '@/components/contacto/ContactForm';
 
 export const dynamic = 'force-static';
-
-const GOOGLE_FORM_EMBED_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform?embedded=true';
 
 export const metadata: Metadata = {
   title: 'Contacte — Lloguer de vaixells a Roses',
@@ -121,26 +119,7 @@ export default function ContactePageCA() {
               </p>
             </div>
 
-            <div className="w-full overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm">
-              <iframe
-                src={GOOGLE_FORM_EMBED_URL}
-                title="Formulari de contacte — Dades de contacte (Google Forms)"
-                width="100%"
-                height={600}
-                className="block w-full border-0"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-            <p className="text-center text-sm">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-600 hover:text-sky-700 underline"
-              >
-                Obre el formulari en una pestanya nova
-              </a>
-            </p>
+            <ContactForm lang="ca" />
 
             <p className="text-xs text-gray-500">
               L&apos;enviament es gestiona a través de Google Forms. Consulta la nostra{' '}

@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import ContactForm from '@/components/contacto/ContactForm';
 
 export const dynamic = 'force-static';
-
-const GOOGLE_FORM_EMBED_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform?embedded=true';
 
 export const metadata: Metadata = {
   title: 'Contact Experience Boat — Boat Hire in Roses',
@@ -132,26 +130,7 @@ export default function ContactEnPage() {
                 </p>
               </div>
 
-              <div className="w-full overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm">
-                <iframe
-                  src={GOOGLE_FORM_EMBED_URL}
-                  title="Contact form — Contact details (Google Forms)"
-                  width="100%"
-                  height={600}
-                  className="block w-full border-0"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-              <p className="text-center text-sm">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sky-600 hover:text-sky-700 underline"
-                >
-                  Open the form in a new tab
-                </a>
-              </p>
+              <ContactForm lang="en" />
 
               <p className="text-xs text-gray-500">
                 The submission is handled via Google Forms. See our{' '}

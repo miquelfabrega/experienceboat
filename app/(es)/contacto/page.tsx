@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import ContactForm from '@/components/contacto/ContactForm';
 
 export const dynamic = 'force-static';
-
-const GOOGLE_FORM_EMBED_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform?embedded=true';
 
 export const metadata: Metadata = {
   title: 'Contacto — Alquiler de barcos en Roses',
@@ -113,27 +111,7 @@ export default function ContactoPage() {
               </p>
             </div>
 
-            {/* ~600px de alto: la sección ocupa menos; dentro del iframe Google permite hacer scroll */}
-            <div className="w-full overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm">
-              <iframe
-                src={GOOGLE_FORM_EMBED_URL}
-                title="Formulario de contacto — Datos de contacto (Google Forms)"
-                width="100%"
-                height={600}
-                className="block w-full border-0"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-            <p className="text-center text-sm">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdCwfeIbzLGgn9ZOOS_VjvfMQukSazdarJJvKj1J9lqUssISw/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-600 hover:text-sky-700 underline"
-              >
-                Abrir el formulario en una pestaña nueva
-              </a>
-            </p>
+            <ContactForm lang="es" />
 
             <p className="text-xs text-gray-500">
               El envío se gestiona a través de Google Forms. Consulta nuestra{' '}
