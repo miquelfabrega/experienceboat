@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const languages = [
   { code: 'ES', name: 'Español', url: '/' },
@@ -11,9 +12,20 @@ const languages = [
   { code: 'EN', name: 'English', url: '/en' },
 ];
 
+/** Deriva el locale actual a partir del primer segmento de la ruta. ES es el default (sin prefijo). */
+function getCurrentCode(pathname: string | null): string {
+  const seg = (pathname ?? '/').split('/')[1]?.toLowerCase();
+  if (seg === 'ca') return 'CA';
+  if (seg === 'fr') return 'FR';
+  if (seg === 'en') return 'EN';
+  return 'ES';
+}
+
 export function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout>();
+  const pathname = usePathname();
+  const currentCode = getCurrentCode(pathname);
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
@@ -34,7 +46,7 @@ export function LanguageSelector() {
     >
       <button className="flex items-center gap-1.5 text-[13px] font-semibold text-[var(--nav-text)] hover:text-[var(--nav-text-hover)] transition-colors h-full px-2">
         <Globe className="w-4 h-4 opacity-80" />
-        <span>ES</span>
+        <span>{currentCode}</span>
       </button>
 
       <div
