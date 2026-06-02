@@ -137,10 +137,16 @@ export const EXPERIENCES_MENU: Record<Locale, ExpItem[]> = {
     { label: 'Sorties privées avec skipper', href: '/fr/experiences-bateau-roses/excursions-privees' },
     { label: 'Sunset Experience', href: '/fr/experiences-bateau-roses/sunset-experience' },
     { label: 'Canal Tour Santa Margarita', href: '/fr/experiences-bateau-roses/canal-tour-santa-margarita' },
+    { label: 'Cap de Creus — Criques', href: '/fr/experiences-bateau-roses/cap-de-creus-criques' },
+    { label: 'Excursion à Cadaqués', href: '/fr/experiences-bateau-roses/cadaques' },
+    { label: 'Grottes & Snorkeling', href: '/fr/experiences-bateau-roses/grottes-snorkeling' },
   ],
   en: [
     { label: 'Private excursions with skipper', href: '/en/boat-experiences-roses/private-excursions' },
     { label: 'Sunset Experience', href: '/en/boat-experiences-roses/sunset-experience' },
     { label: 'Canal Tour Santa Margarita', href: '/en/boat-experiences-roses/canal-tour-santa-margarita' },
+    { label: 'Cap de Creus — Coves', href: '/en/boat-experiences-roses/cap-de-creus-coves' },
+    { label: 'Trip to Cadaqués', href: '/en/boat-experiences-roses/cadaques' },
+    { label: 'Caves & Snorkeling', href: '/en/boat-experiences-roses/caves-snorkeling' },
   ],
 };
