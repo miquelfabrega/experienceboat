@@ -49,7 +49,7 @@ export default function CovesEsnorquelPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1530053969600-caed2596d242?q=80&w=2070"
+          src="/images/experiencias/cuevas-snorkel.webp"
           alt="Coves i esnòrquel en vaixell a Roses"
           fill
           priority

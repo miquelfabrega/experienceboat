@@ -52,7 +52,7 @@ export default function CadaquesPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=2070"
+          src="/cadaques/port-lligat.webp"
           alt="Excursió en vaixell a Cadaqués"
           fill
           priority

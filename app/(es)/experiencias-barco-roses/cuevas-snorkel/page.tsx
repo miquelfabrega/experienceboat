@@ -134,7 +134,7 @@ export default function CuevasSnorkelPage() {
           </p>
           <div className="relative aspect-[16/7] w-full rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/seed/cuevas-snorkel/1600/700"
+              src="/images/experiencias/cuevas-snorkel.webp"
               alt="Excursión en barco por cuevas marinas y snorkel en la Costa Brava desde Roses"
               fill
               priority

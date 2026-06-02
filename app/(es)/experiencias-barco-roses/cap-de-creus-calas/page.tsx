@@ -114,7 +114,7 @@ export default function CapDeCreusCalasPage() {
           </p>
           <div className="relative aspect-[16/7] w-full rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/seed/cap-de-creus-calas/1600/700"
+              src="/images/experiencias/cap-de-creus-calas.webp"
               alt="Excursión al Cap de Creus en barco con baño en 3 calas"
               fill
               priority

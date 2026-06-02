@@ -50,7 +50,7 @@ export default function CapDeCreusCalesPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070"
+          src="/images/experiencias/cap-de-creus-calas.webp"
           alt="Cap de Creus i cales en vaixell"
           fill
           priority
