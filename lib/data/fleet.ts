@@ -70,7 +70,10 @@ const INCLUSIONES_BASE = [
   'IVA incluido',
 ];
 
-const WIDGET_SIN_LICENCIA = '12ff7e04-a15c-4980-bacb-75c68b8eee6e';
+// Widget Regiondo por barco (calendarios de reserva específicos de cada embarcación).
+const WIDGET_REMUS = '1ac97881-96c6-47d0-a00c-11dcc4138752';
+const WIDGET_MARINE_BREZZE = 'd299f388-40dc-4526-bafd-35b28926f1e2';
+const WIDGET_DREAM_POINT = '71ee3784-86ce-4b63-ac86-22e0b579707c';
 const WIDGET_CON_LICENCIA = 'cbe7e43c-d1d4-4ad3-a3ee-2f5b4d6863fd';
 
 // Actividades extra contratables con el Sunset (precios del flyer oficial).
@@ -109,7 +112,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Embarcación sin licencia para 5 personas, ideal para descubrir las calas de Roses sin necesidad de patrón.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 5-8 L/h)'],
-    widgetReservaId: WIDGET_SIN_LICENCIA,
+    widgetReservaId: WIDGET_REMUS,
   },
   {
     slug: 'marine-brezze-450',
@@ -133,7 +136,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Barco sin licencia para 5 pax con toldo y escalera de baño. Perfecto para una jornada tranquila por la Bahía de Roses.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 5-8 L/h)'],
-    widgetReservaId: WIDGET_SIN_LICENCIA,
+    widgetReservaId: WIDGET_MARINE_BREZZE,
   },
   {
     slug: 'dream-point-420',
@@ -157,7 +160,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'La opción más compacta y económica sin licencia. 4 pax, fácil de manejar y pensada para una primera experiencia en el mar.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido (consumo aprox. 4-6 L/h)'],
-    widgetReservaId: WIDGET_SIN_LICENCIA,
+    widgetReservaId: WIDGET_DREAM_POINT,
   },
 
   // ─── CON LICENCIA ───────────────────────────────────────────────
