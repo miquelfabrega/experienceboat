@@ -2,10 +2,185 @@ import Link from 'next/link';
 import { getBarcosActivos } from '@/lib/data/fleet';
 import CookieSettingsLink from '@/components/layout/CookieSettingsLink';
 
-export default function Footer() {
+type Lang = 'es' | 'fr' | 'en' | 'ca';
+
+type LinkItem = { label: string; href: string };
+
+interface FooterCopy {
+  servicesTitle: string;
+  services: LinkItem[];
+  boatsTitle: string;
+  sinLicenciaLabel: string;
+  experiencesTitle: string;
+  experiences: LinkItem[];
+  companyTitle: string;
+  company: LinkItem[];
+  phoneLabel: string;
+  location: string;
+  contactInfoTitle?: string;
+  legal: LinkItem[];
+  cookieSettings: string;
+  rightsLine: string;
+}
+
+// Ficha de barco por idioma: ES y CA tienen ficha individual; FR/EN no, así
+// que sus nombres de barco enlazan al índice de flota (rutas que sí existen).
+const boatHref = (lang: Lang, slug: string): string =>
+  lang === 'es' ? `/barcos/${slug}`
+  : lang === 'ca' ? `/ca/embarcacions/${slug}`
+  : lang === 'fr' ? '/fr/bateaux'
+  : '/en/boats';
+
+// Idiomas disponibles (enlace al home de cada versión).
+const LANGUAGES: { code: Lang; label: string; href: string }[] = [
+  { code: 'es', label: 'Español', href: '/' },
+  { code: 'ca', label: 'Català', href: '/ca' },
+  { code: 'fr', label: 'Français', href: '/fr' },
+  { code: 'en', label: 'English', href: '/en' },
+];
+
+const COPY: Record<Lang, FooterCopy> = {
+  es: {
+    servicesTitle: 'Servicios',
+    services: [
+      { label: 'Alquiler de barco sin licencia', href: '/alquiler-barco-sin-licencia-roses' },
+      { label: 'Alquiler de barco con licencia', href: '/alquiler-barco-con-licencia-roses' },
+      { label: 'Lancha', href: '/alquiler-barco-con-licencia-roses/lancha-costa-brava' },
+    ],
+    boatsTitle: 'Barcos',
+    sinLicenciaLabel: 'Sin licencia',
+    experiencesTitle: 'Experiencias',
+    experiences: [
+      { label: 'Excursión privada', href: '/experiencias-barco-roses/excursiones-privadas' },
+      { label: 'Sunset Experience', href: '/experiencias-barco-roses/sunset-experience' },
+      { label: 'Canal Tour Santa Margarita', href: '/experiencias-barco-roses/canal-tour-santa-margarita' },
+      { label: 'Cap de Creus — 3 Calas', href: '/experiencias-barco-roses/cap-de-creus-calas' },
+      { label: 'Excursión a Cadaqués', href: '/experiencias-barco-roses/cadaques' },
+      { label: 'Cuevas & Snorkel', href: '/experiencias-barco-roses/cuevas-snorkel' },
+    ],
+    companyTitle: 'Empresa',
+    company: [
+      { label: 'Contacto', href: '/contacto' },
+      { label: 'Sobre nosotros', href: '/sobre-nosotros' },
+      { label: 'Blog', href: '/blog' },
+    ],
+    phoneLabel: 'Tel',
+    location: 'Roses, Costa Brava',
+    legal: [
+      { label: 'Política de privacidad', href: '/politica-privacidad' },
+      { label: 'Aviso legal', href: '/aviso-legal' },
+      { label: 'Cookies', href: '/cookies' },
+      { label: 'Accesibilidad', href: '/accesibilidad' },
+    ],
+    cookieSettings: 'Configurar cookies',
+    rightsLine: '© 2025 Experience Boat · Roses, Costa Brava',
+  },
+  ca: {
+    servicesTitle: 'Serveis',
+    services: [
+      { label: 'Lloguer de vaixell sense llicència', href: '/ca/lloguer-vaixell-sense-llicencia-roses' },
+      { label: 'Lloguer de vaixell amb llicència', href: '/ca/lloguer-vaixell-amb-llicencia-roses' },
+      { label: 'Llanxa', href: '/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava' },
+    ],
+    boatsTitle: 'Embarcacions',
+    sinLicenciaLabel: 'Sense llicència',
+    experiencesTitle: 'Experiències',
+    experiences: [
+      { label: 'Excursió privada', href: '/ca/experiencies-vaixell-roses/excursions-privades' },
+      { label: 'Sunset Experience', href: '/ca/experiencies-vaixell-roses/sunset-experience' },
+      { label: 'Canal Tour Santa Margarida', href: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida' },
+      { label: 'Cap de Creus — 3 Cales', href: '/ca/experiencies-vaixell-roses/cap-de-creus-cales' },
+      { label: 'Excursió a Cadaqués', href: '/ca/experiencies-vaixell-roses/cadaques' },
+      { label: 'Coves & Snorkel', href: '/ca/experiencies-vaixell-roses/coves-esnorquel' },
+    ],
+    companyTitle: 'Empresa',
+    company: [
+      { label: 'Contacte', href: '/ca/contacte' },
+      { label: 'Sobre nosaltres', href: '/ca/sobre-nosaltres' },
+      { label: 'Blog', href: '/ca/blog' },
+    ],
+    phoneLabel: 'Tel',
+    location: 'Roses, Costa Brava',
+    legal: [
+      { label: 'Política de privacitat', href: '/politica-privacidad' },
+      { label: 'Avís legal', href: '/aviso-legal' },
+      { label: 'Cookies', href: '/cookies' },
+      { label: 'Accessibilitat', href: '/accesibilidad' },
+    ],
+    cookieSettings: 'Configurar cookies',
+    rightsLine: '© 2025 Experience Boat · Roses, Costa Brava',
+  },
+  fr: {
+    servicesTitle: 'Services',
+    services: [
+      { label: 'Location de bateau sans permis', href: '/fr/location-bateau-sans-permis-roses' },
+      { label: 'Location de bateau avec permis', href: '/fr/location-bateau-avec-permis-roses' },
+      { label: 'Vedette', href: '/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage' },
+    ],
+    boatsTitle: 'Bateaux',
+    sinLicenciaLabel: 'Sans permis',
+    experiencesTitle: 'Expériences',
+    experiences: [
+      { label: 'Excursion privée', href: '/fr/experiences-bateau-roses/excursions-privees' },
+      { label: 'Sunset Experience', href: '/fr/experiences-bateau-roses/sunset-experience' },
+      { label: 'Canal Tour Santa Margarita', href: '/fr/experiences-bateau-roses/canal-tour-santa-margarita' },
+    ],
+    companyTitle: 'Entreprise',
+    company: [
+      { label: 'Contact', href: '/fr/contact' },
+      { label: 'À propos', href: '/fr/a-propos' },
+      { label: 'Blog', href: '/fr/blog' },
+    ],
+    phoneLabel: 'Tél',
+    location: 'Roses, Costa Brava',
+    legal: [
+      { label: 'Politique de confidentialité', href: '/politica-privacidad' },
+      { label: 'Mentions légales', href: '/aviso-legal' },
+      { label: 'Cookies', href: '/cookies' },
+      { label: 'Accessibilité', href: '/accesibilidad' },
+    ],
+    cookieSettings: 'Configurer les cookies',
+    rightsLine: '© 2025 Experience Boat · Roses, Costa Brava',
+  },
+  en: {
+    servicesTitle: 'Services',
+    services: [
+      { label: 'Boat rental without licence', href: '/en/boat-rental-without-licence-roses' },
+      { label: 'Boat rental with licence', href: '/en/boat-rental-with-licence-roses' },
+      { label: 'Motorboat', href: '/en/boat-rental-with-licence-roses/motorboat-costa-brava' },
+    ],
+    boatsTitle: 'Boats',
+    sinLicenciaLabel: 'Without licence',
+    experiencesTitle: 'Experiences',
+    experiences: [
+      { label: 'Private excursion', href: '/en/boat-experiences-roses/private-excursions' },
+      { label: 'Sunset Experience', href: '/en/boat-experiences-roses/sunset-experience' },
+      { label: 'Canal Tour Santa Margarita', href: '/en/boat-experiences-roses/canal-tour-santa-margarita' },
+    ],
+    companyTitle: 'Company',
+    company: [
+      { label: 'Contact', href: '/en/contact' },
+      { label: 'About us', href: '/en/about' },
+      { label: 'Blog', href: '/en/blog' },
+    ],
+    phoneLabel: 'Phone',
+    location: 'Roses, Costa Brava',
+    legal: [
+      { label: 'Privacy policy', href: '/politica-privacidad' },
+      { label: 'Legal notice', href: '/aviso-legal' },
+      { label: 'Cookies', href: '/cookies' },
+      { label: 'Accessibility', href: '/accesibilidad' },
+    ],
+    cookieSettings: 'Cookie settings',
+    rightsLine: '© 2025 Experience Boat · Roses, Costa Brava',
+  },
+};
+
+export default function Footer({ lang = 'es' }: { lang?: Lang }) {
+  const t = COPY[lang];
   const activos = getBarcosActivos();
-  const sinLicencia = activos.filter(b => b.categoria === 'sin-licencia');
-  const conLicencia = activos.filter(b => b.categoria === 'con-licencia');
+  const sinLicencia = activos.filter((b) => b.categoria === 'sin-licencia');
+  const conLicencia = activos.filter((b) => b.categoria === 'con-licencia');
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-12 lg:py-14 border-t border-gray-800">
@@ -14,43 +189,35 @@ export default function Footer() {
 
           {/* Servicios */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Servicios</h3>
+            <h3 className="text-white font-bold text-lg mb-6">{t.servicesTitle}</h3>
             <ul className="space-y-4">
-              <li>
-                <Link href="/alquiler-barco-sin-licencia-roses" className="hover:text-white transition-colors">
-                  Alquiler de barco sin licencia
-                </Link>
-              </li>
-              <li>
-                <Link href="/alquiler-barco-con-licencia-roses" className="hover:text-white transition-colors">
-                  Alquiler de barco con licencia
-                </Link>
-              </li>
-              <li>
-                <Link href="/alquiler-barco-con-licencia-roses/lancha-costa-brava" className="hover:text-white transition-colors">
-                  Lancha
-                </Link>
-              </li>
+              {t.services.map((s) => (
+                <li key={s.href}>
+                  <Link href={s.href} className="hover:text-white transition-colors">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Barcos */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Barcos</h3>
+            <h3 className="text-white font-bold text-lg mb-6">{t.boatsTitle}</h3>
             <ul className="space-y-3">
-              {conLicencia.map(b => (
+              {conLicencia.map((b) => (
                 <li key={b.slug}>
-                  <Link href={`/barcos/${b.slug}`} className="hover:text-white transition-colors">
+                  <Link href={boatHref(lang, b.slug)} className="hover:text-white transition-colors">
                     {b.nombre}
                   </Link>
                 </li>
               ))}
             </ul>
-            <p className="text-xs uppercase tracking-widest text-gray-600 mt-5 mb-3">Sin licencia</p>
+            <p className="text-xs uppercase tracking-widest text-gray-600 mt-5 mb-3">{t.sinLicenciaLabel}</p>
             <ul className="space-y-3">
-              {sinLicencia.map(b => (
+              {sinLicencia.map((b) => (
                 <li key={b.slug}>
-                  <Link href={`/barcos/${b.slug}`} className="hover:text-white transition-colors">
+                  <Link href={boatHref(lang, b.slug)} className="hover:text-white transition-colors">
                     {b.nombre}
                   </Link>
                 </li>
@@ -60,51 +227,32 @@ export default function Footer() {
 
           {/* Experiencias */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Experiencias</h3>
+            <h3 className="text-white font-bold text-lg mb-6">{t.experiencesTitle}</h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/experiencias-barco-roses/excursiones-privadas" className="hover:text-white transition-colors">
-                  Excursión privada
-                </Link>
-              </li>
-              <li>
-                <Link href="/experiencias-barco-roses/sunset-experience" className="hover:text-white transition-colors">
-                  Sunset Experience
-                </Link>
-              </li>
-              <li>
-                <Link href="/experiencias-barco-roses/canal-tour-santa-margarita" className="hover:text-white transition-colors">
-                  Canal Tour Santa Margarita
-                </Link>
-              </li>
-              <li>
-                <Link href="/experiencias-barco-roses/cap-de-creus-calas" className="hover:text-white transition-colors">
-                  Cap de Creus — 3 Calas
-                </Link>
-              </li>
-              <li>
-                <Link href="/experiencias-barco-roses/cadaques" className="hover:text-white transition-colors">
-                  Excursión a Cadaqués
-                </Link>
-              </li>
-              <li>
-                <Link href="/experiencias-barco-roses/cuevas-snorkel" className="hover:text-white transition-colors">
-                  Cuevas & Snorkel
-                </Link>
-              </li>
+              {t.experiences.map((e) => (
+                <li key={e.href}>
+                  <Link href={e.href} className="hover:text-white transition-colors">
+                    {e.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Empresa (+ enlaces informativos) */}
+          {/* Empresa (+ contacto) */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Empresa</h3>
+            <h3 className="text-white font-bold text-lg mb-6">{t.companyTitle}</h3>
             <ul className="space-y-4">
-              <li><Link href="/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
-              <li><Link href="/sobre-nosotros" className="hover:text-white transition-colors">Sobre nosotros</Link></li>
-              <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              {t.company.map((c) => (
+                <li key={c.href}>
+                  <Link href={c.href} className="hover:text-white transition-colors">
+                    {c.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <ul className="space-y-4 mt-4 pt-4 border-t border-gray-800/80">
-              <li>Tel: <a href="tel:+34623995700" className="hover:text-white transition-colors">+34 623 99 57 00</a></li>
+              <li>{t.phoneLabel}: <a href="tel:+34623995700" className="hover:text-white transition-colors">+34 623 99 57 00</a></li>
               <li>
                 <a
                   href="https://wa.me/34623995700?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20alquiler%20de%20barcos%20en%20Roses"
@@ -116,7 +264,7 @@ export default function Footer() {
                 </a>
               </li>
               <li><a href="mailto:info@experienceboat.es" className="hover:text-white transition-colors">info@experienceboat.es</a></li>
-              <li>Roses, Costa Brava</li>
+              <li>{t.location}</li>
             </ul>
           </div>
 
@@ -124,7 +272,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-sm text-center sm:text-left">© 2025 Experience Boat · Roses, Costa Brava</p>
+            <p className="text-sm text-center sm:text-left">{t.rightsLine}</p>
             <div className="flex gap-4 justify-center sm:justify-end shrink-0">
 
             {/* Instagram */}
@@ -132,7 +280,7 @@ export default function Footer() {
               href="https://www.instagram.com/experience.boat/"
               target="_blank"
               rel="nofollow noopener noreferrer"
-              aria-label="Instagram de Experience Boat"
+              aria-label="Instagram"
               className="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors group"
             >
               <svg
@@ -149,7 +297,7 @@ export default function Footer() {
               href="https://www.tiktok.com/@experience.boat/"
               target="_blank"
               rel="nofollow noopener noreferrer"
-              aria-label="TikTok de Experience Boat"
+              aria-label="TikTok"
               className="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors group"
             >
               <svg
@@ -164,45 +312,42 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Legales */}
           <nav
             className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-gray-500"
-            aria-label="Enlaces legales"
+            aria-label={t.companyTitle}
           >
-            <Link href="/politica-privacidad" className="hover:text-white transition-colors">
-              Política de privacidad
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/aviso-legal" className="hover:text-white transition-colors">
-              Aviso legal
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/cookies" className="hover:text-white transition-colors">
-              Cookies
-            </Link>
+            {t.legal.map((l, i) => (
+              <span key={l.href} className="flex items-center gap-x-3">
+                {i > 0 && <span className="text-gray-600 select-none" aria-hidden>·</span>}
+                <Link href={l.href} className="hover:text-white transition-colors">
+                  {l.label}
+                </Link>
+              </span>
+            ))}
             <span className="text-gray-600 select-none" aria-hidden>·</span>
             <CookieSettingsLink className="hover:text-white transition-colors underline-offset-2 hover:underline">
-              Configurar cookies
+              {t.cookieSettings}
             </CookieSettingsLink>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/accesibilidad" className="hover:text-white transition-colors">
-              Accesibilidad
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/fr" hrefLang="fr" className="hover:text-white transition-colors">
-              Version française
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/en" hrefLang="en" className="hover:text-white transition-colors">
-              English version
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/fr/a-propos" hrefLang="fr" className="hover:text-white transition-colors">
-              À propos
-            </Link>
-            <span className="text-gray-600 select-none" aria-hidden>·</span>
-            <Link href="/en/about" hrefLang="en" className="hover:text-white transition-colors">
-              About us
-            </Link>
+          </nav>
+
+          {/* Selector de idioma */}
+          <nav
+            className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-gray-500"
+            aria-label="Language"
+          >
+            {LANGUAGES.map((l, i) => (
+              <span key={l.code} className="flex items-center gap-x-3">
+                {i > 0 && <span className="text-gray-600 select-none" aria-hidden>·</span>}
+                {l.code === lang ? (
+                  <span className="text-white font-semibold" aria-current="true">{l.label}</span>
+                ) : (
+                  <Link href={l.href} hrefLang={l.code} className="hover:text-white transition-colors">
+                    {l.label}
+                  </Link>
+                )}
+              </span>
+            ))}
           </nav>
         </div>
       </div>
