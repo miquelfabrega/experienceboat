@@ -3,8 +3,22 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronDown, Gem, ArrowRight } from 'lucide-react';
+import type { NavBoat } from './navData';
+import { CHROME } from '@/lib/i18n/chrome';
+import { localizedHref, boatHref, type Locale } from '@/lib/i18n/routes';
 
-export function MegamenuBarcos({ data }: { data: any }) {
+export function MegamenuBarcos({
+  data,
+  lang = 'es',
+}: {
+  data: { barcosConLicencia: NavBoat[]; barcosSinLicencia: NavBoat[] };
+  lang?: Locale;
+}) {
+  const t = CHROME[lang];
+  const barcosIndex = localizedHref('boatsIndex', lang);
+  const withLicenceHref = localizedHref('rentalWithLicence', lang);
+  const withoutLicenceHref = localizedHref('rentalWithoutLicence', lang);
+  const experiencesHref = localizedHref('experiences', lang);
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout>();
   const closeTimeoutRef = useRef<NodeJS.Timeout>();
@@ -41,10 +55,10 @@ export function MegamenuBarcos({ data }: { data: any }) {
     >
       <div className="flex h-full items-center gap-0.5">
         <Link
-          href={data.barcosIndex}
+          href={barcosIndex}
           className="text-[14px] font-semibold text-[var(--nav-text)] hover:text-[var(--nav-text-hover)] transition-colors h-full flex items-center pr-0.5"
         >
-          Barcos
+          {t.boats}
         </Link>
         <span className="inline-flex items-center opacity-60 pointer-events-none" aria-hidden>
           <ChevronDown
@@ -68,28 +82,28 @@ export function MegamenuBarcos({ data }: { data: any }) {
         <div className="bg-[var(--megamenu-bg)] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-2">
           <div className="px-5 pt-4 pb-3 border-b border-gray-100">
             <Link
-              href={data.barcosIndex}
+              href={barcosIndex}
               role="menuitem"
               className="block px-3 py-2.5 -mx-1 rounded-lg text-[11px] uppercase tracking-[0.1em] text-[var(--section-label)] font-bold hover:bg-sky-50 transition-colors duration-150"
             >
-              Todos los barcos &rarr;
+              {t.allBoats}
             </Link>
           </div>
           <div className="flex">
             {/* Columna Izquierda: Con Licencia */}
             <div className="flex-1 p-6 border-r border-gray-100">
-              <Link 
-                href={data.pillars.conLicencia}
+              <Link
+                href={withLicenceHref}
                 className="inline-block mb-4 text-[11px] uppercase tracking-[0.1em] text-[var(--section-label)] font-bold hover:opacity-80 transition-opacity"
               >
-                Con licencia &rarr;
+                {t.withLicence} &rarr;
               </Link>
               <div className="h-px w-full bg-gray-100 mb-4" />
               <ul className="space-y-1">
-                {data.barcosConLicencia.map((barco: any) => (
-                  <li key={barco.url} role="menuitem">
-                    <Link 
-                      href={barco.url}
+                {data.barcosConLicencia.map((barco) => (
+                  <li key={barco.slug} role="menuitem">
+                    <Link
+                      href={boatHref(barco.slug, lang)}
                       className="group flex items-center justify-between px-3 py-2.5 -mx-3 rounded-lg hover:bg-sky-50 transition-colors duration-150"
                     >
                       <span className="flex items-center gap-2 text-[14px] font-medium text-[var(--megamenu-text)] group-hover:text-[var(--nav-accent)] transition-colors">
@@ -97,7 +111,7 @@ export function MegamenuBarcos({ data }: { data: any }) {
                         {barco.premium && <Gem className="w-3.5 h-3.5 text-[var(--premium-badge)]" aria-label="Premium" />}
                       </span>
                       <span className="text-[12px] font-normal text-[var(--megamenu-text-muted)]">
-                        desde {barco.price} €
+                        {t.fromPrice} {barco.price} €
                       </span>
                     </Link>
                   </li>
@@ -107,41 +121,41 @@ export function MegamenuBarcos({ data }: { data: any }) {
 
             {/* Columna Derecha: Sin Licencia */}
             <div className="flex-1 p-6 flex flex-col">
-              <Link 
-                href={data.pillars.sinLicencia}
+              <Link
+                href={withoutLicenceHref}
                 className="inline-block mb-4 text-[11px] uppercase tracking-[0.1em] text-[var(--section-label)] font-bold hover:opacity-80 transition-opacity"
               >
-                Sin licencia &rarr;
+                {t.withoutLicence} &rarr;
               </Link>
               <div className="h-px w-full bg-gray-100 mb-4" />
               <ul className="space-y-1 mb-6">
-                {data.barcosSinLicencia.map((barco: any) => (
-                  <li key={barco.url} role="menuitem">
-                    <Link 
-                      href={barco.url}
+                {data.barcosSinLicencia.map((barco) => (
+                  <li key={barco.slug} role="menuitem">
+                    <Link
+                      href={boatHref(barco.slug, lang)}
                       className="group flex items-center justify-between px-3 py-2.5 -mx-3 rounded-lg hover:bg-sky-50 transition-colors duration-150"
                     >
                       <span className="text-[14px] font-medium text-[var(--megamenu-text)] group-hover:text-[var(--nav-accent)] transition-colors">
                         {barco.name}
                       </span>
                       <span className="text-[12px] font-normal text-[var(--megamenu-text-muted)]">
-                        desde {barco.price} €
+                        {t.fromPrice} {barco.price} €
                       </span>
                     </Link>
                   </li>
                 ))}
               </ul>
-              
+
               <div className="mt-auto">
                 <Link
-                  href="/experiencias-barco-roses"
+                  href={experiencesHref}
                   className="block p-4 rounded-xl bg-slate-50 border border-slate-100 hover:bg-sky-50 hover:border-sky-100 transition-colors group"
                 >
                   <p className="text-[13px] text-[var(--megamenu-text)] leading-snug font-semibold mb-1">
-                    ¿No tienes licencia?
+                    {t.noLicenceTitle}
                   </p>
                   <p className="text-[12px] text-[var(--nav-accent)] flex items-center gap-1 group-hover:text-[var(--nav-accent-hover)] transition-colors">
-                    Descubre las experiencias con patrón
+                    {t.noLicenceCta}
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </p>
                 </Link>

@@ -3,24 +3,13 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import { CHROME, EXPERIENCES_MENU } from '@/lib/i18n/chrome';
+import { localizedHref, type Locale } from '@/lib/i18n/routes';
 
-type LangData = {
-  navLabel: string;
-  pillar: string;
-  items: { name: string; url: string }[];
-};
-
-type ExperienciasData = {
-  es: LangData;
-  fr: LangData;
-  en: LangData;
-};
-
-export function MegamenuExperiencias({ data }: { data: ExperienciasData }) {
-  const pathname = usePathname();
-  const lang = pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/en') ? 'en' : 'es';
-  const expData = data[lang as keyof ExperienciasData];
+export function MegamenuExperiencias({ lang = 'es' }: { lang?: Locale }) {
+  const t = CHROME[lang];
+  const pillarHref = localizedHref('experiences', lang);
+  const items = EXPERIENCES_MENU[lang];
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout>();
   const closeTimeoutRef = useRef<NodeJS.Timeout>();
@@ -61,7 +50,7 @@ export function MegamenuExperiencias({ data }: { data: ExperienciasData }) {
         aria-haspopup="menu"
         className="flex items-center gap-1 text-[14px] font-semibold text-[var(--nav-text)] hover:text-[var(--nav-text-hover)] transition-colors h-full"
       >
-        {expData.navLabel}
+        {t.experiences}
         <ChevronDown
           className={`w-4 h-4 transition-transform duration-200 opacity-60 ${isOpen ? 'rotate-180' : ''}`}
         />
@@ -80,22 +69,22 @@ export function MegamenuExperiencias({ data }: { data: ExperienciasData }) {
         <div className="bg-[var(--megamenu-bg)] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-2">
           <div className="p-3">
             <Link
-              href={expData.pillar}
+              href={pillarHref}
               role="menuitem"
               className="block px-4 py-2 rounded-lg text-[11px] uppercase tracking-[0.1em] text-[var(--section-label)] font-bold hover:bg-sky-50 transition-colors duration-150"
             >
-              {lang === 'fr' ? 'Toutes les expériences →' : lang === 'en' ? 'All experiences →' : 'Todas las experiencias →'}
+              {t.allExperiences}
             </Link>
             <div className="h-px mx-4 bg-gray-100 my-2" />
             <ul className="space-y-1">
-              {expData.items.map((item) => (
-                <li key={item.url} role="none">
+              {items.map((item) => (
+                <li key={item.href} role="none">
                   <Link
-                    href={item.url}
+                    href={item.href}
                     role="menuitem"
                     className="block px-4 py-2.5 rounded-lg text-[14px] font-medium text-[var(--megamenu-text)] hover:bg-sky-50 hover:text-[var(--nav-accent)] transition-colors duration-150"
                   >
-                    {item.name}
+                    {item.label}
                   </Link>
                 </li>
               ))}

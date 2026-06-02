@@ -8,6 +8,7 @@ import {
   getStoredConsent,
   saveConsentPreferences,
 } from '@/lib/consent';
+import { localizedHref, type Locale } from '@/lib/i18n/routes';
 
 function ToggleRow({
   id,
@@ -56,7 +57,9 @@ function ToggleRow({
   );
 }
 
-export default function CookieBanner() {
+export default function CookieBanner({ lang = 'es' }: { lang?: Locale }) {
+  const privacyHref = localizedHref('privacy', lang);
+  const cookiesHref = localizedHref('cookies', lang);
   const [showBanner, setShowBanner] = useState(false);
   const [animateIn, setAnimateIn] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -181,11 +184,11 @@ export default function CookieBanner() {
             <p className="mb-2 text-sm text-gray-600">
               Puedes activar o desactivar cada categoría. Las cookies no esenciales están desactivadas por defecto.
               Más información en nuestra{' '}
-              <Link href="/politica-privacidad" className="font-medium text-sky-600 hover:underline">
+              <Link href={privacyHref} className="font-medium text-sky-600 hover:underline">
                 política de privacidad
               </Link>{' '}
               y{' '}
-              <Link href="/cookies" className="font-medium text-sky-600 hover:underline">
+              <Link href={cookiesHref} className="font-medium text-sky-600 hover:underline">
                 política de cookies
               </Link>
               .
@@ -255,13 +258,13 @@ export default function CookieBanner() {
                   personalizada. Las analíticas y marketing están desactivadas hasta que las aceptes. Puedes
                   configurar cada categoría o leer más en nuestra{' '}
                   <Link
-                    href="/politica-privacidad"
+                    href={privacyHref}
                     className="font-medium text-sky-600 underline-offset-2 hover:underline"
                   >
                     política de privacidad
                   </Link>{' '}
                   y{' '}
-                  <Link href="/cookies" className="font-medium text-sky-600 underline-offset-2 hover:underline">
+                  <Link href={cookiesHref} className="font-medium text-sky-600 underline-offset-2 hover:underline">
                     política de cookies
                   </Link>
                   .
