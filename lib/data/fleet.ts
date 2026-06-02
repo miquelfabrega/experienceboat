@@ -136,8 +136,8 @@ export const fleet: Barco[] = [
     widgetReservaId: WIDGET_SIN_LICENCIA,
   },
   {
-    slug: 'dream-line-430',
-    nombre: 'Dream Line 430',
+    slug: 'dream-point-420',
+    nombre: 'Dream Point 420',
     categoria: 'sin-licencia',
     activo: true,
     pax: 4,
