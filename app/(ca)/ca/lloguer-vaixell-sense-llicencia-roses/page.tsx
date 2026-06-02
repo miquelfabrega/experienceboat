@@ -101,7 +101,7 @@ export default function LloguerVaixellSenseLlicenciaRosesPage() {
       <main id="main-content">
         <HeroSection t={pillarCa.hero} />
         <IntroSection t={pillarCa.intro} />
-        <BoatGrid t={pillarCa.boatGrid} />
+        <BoatGrid t={pillarCa.boatGrid} lang="ca" />
         <DestinationsSection t={pillarCa.destinations} />
         <WhyUsSection t={pillarCa.whyUs} />
         <PracticalInfoSection t={pillarCa.practicalInfo} />

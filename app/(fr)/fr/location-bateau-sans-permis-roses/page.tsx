@@ -100,7 +100,7 @@ export default function LocationBateauSansPermisPage() {
       <main id="main-content">
         <HeroSection t={pillarFr.hero} />
         <IntroSection t={pillarFr.intro} />
-        <BoatGrid t={pillarFr.boatGrid} />
+        <BoatGrid t={pillarFr.boatGrid} lang="fr" />
         <DestinationsSection t={pillarFr.destinations} />
         <WhyUsSection t={pillarFr.whyUs} />
         <PracticalInfoSection t={pillarFr.practicalInfo} />

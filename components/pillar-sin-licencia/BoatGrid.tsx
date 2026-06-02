@@ -1,9 +1,17 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Users, Ruler, Clock, ChevronRight } from 'lucide-react';
 import { getBarcosActivos } from '@/lib/data/fleet';
 
+type Lang = 'es' | 'fr' | 'en' | 'ca';
+
+// Ficha de producto por idioma (solo ES y CA tienen ficha individual).
+const boatFicheHref = (lang: Lang, slug?: string): string | null =>
+  !slug ? null : lang === 'es' ? `/barcos/${slug}` : lang === 'ca' ? `/ca/embarcacions/${slug}` : null;
+
 export interface BoatData {
   id: number;
+  slug?: string;
   model: string;
   image: string;
   capacity: number;
@@ -41,6 +49,7 @@ const defaultBoats: BoatData[] = getBarcosActivos()
   .filter((b) => b.categoria === 'sin-licencia')
   .map((b, i) => ({
     id: i + 1,
+    slug: b.slug,
     model: b.nombre,
     image: b.imagen,
     capacity: b.pax,
@@ -68,9 +77,11 @@ const defaults: Required<Omit<BoatGridT, 'boats'>> = {
 const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
 const cardVariants = { hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.0, 0.0, 0.2, 1] as [number, number, number, number] } } };
 
-export default function BoatGrid({ t }: { t?: BoatGridT }) {
+export default function BoatGrid({ t, lang = 'es' }: { t?: BoatGridT; lang?: Lang }) {
   const tx = { ...defaults, ...t };
   const boats = t?.boats ?? defaultBoats;
+  const ctaClass =
+    'mt-auto flex items-center justify-center gap-2 w-full bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-sky-400/30 group/btn';
 
   return (
     <section id="barcos" className="py-20 bg-white scroll-mt-24">
@@ -86,8 +97,11 @@ export default function BoatGrid({ t }: { t?: BoatGridT }) {
           viewport={{ once: true, margin: '-80px' }}
           className="anim-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {boats.map((boat) => (
+          {boats.map((boat) => {
+            const ficheHref = boatFicheHref(lang, boat.slug);
+            return (
             <article
+              key={boat.id}
               className="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col anim-fade-up"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -129,18 +143,26 @@ export default function BoatGrid({ t }: { t?: BoatGridT }) {
                     </div>
                   </div>
                 </div>
-                <a
-                  href={`https://wa.me/34623995700?text=${tx.waMessagePrefix}${encodeURIComponent(boat.model)}${tx.waMessageSuffix}`}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="mt-auto flex items-center justify-center gap-2 w-full bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-sky-400/30 group/btn"
-                >
-                  {tx.ctaBtn}
-                  <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
+                {ficheHref ? (
+                  <Link href={ficheHref} className={ctaClass}>
+                    {tx.ctaBtn}
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                ) : (
+                  <a
+                    href={`https://wa.me/34623995700?text=${tx.waMessagePrefix}${encodeURIComponent(boat.model)}${tx.waMessageSuffix}`}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className={ctaClass}
+                  >
+                    {tx.ctaBtn}
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                )}
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

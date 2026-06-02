@@ -1,11 +1,17 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Users, Ruler, Clock, ChevronRight } from 'lucide-react';
 import { getBarcosActivos } from '@/lib/data/fleet';
 
 type Lang = 'es' | 'fr' | 'en' | 'ca';
 
+// Ficha de producto por idioma (solo ES y CA tienen ficha individual).
+const boatFicheHref = (lang: Lang, slug: string): string | null =>
+  lang === 'es' ? `/barcos/${slug}` : lang === 'ca' ? `/ca/embarcacions/${slug}` : null;
+
 interface Boat {
   id: number;
+  slug: string;
   model: string;
   image: string;
   capacity: number;
@@ -34,6 +40,7 @@ function buildBoats(lang: Lang): Boat[] {
       const badge = b.badge ?? '';
       return {
         id: i + 1,
+        slug: b.slug,
         model: b.nombre,
         image: b.imagen,
         capacity: b.pax,
@@ -121,6 +128,8 @@ export default function BoatGrid({ lang = 'es' }: { lang?: Lang }) {
     ca: 'Hola%2C%20m%27interessa%20el%20',
   };
   const whatsappEnding = '%20con%20licencia%20en%20Roses';
+  const ctaClass =
+    'mt-auto flex items-center justify-center gap-2 w-full bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-sky-400/30 group/btn';
 
   return (
     <section id={sectionId} className="py-20 bg-white scroll-mt-24">
@@ -136,8 +145,11 @@ export default function BoatGrid({ lang = 'es' }: { lang?: Lang }) {
           viewport={{ once: true, margin: '-80px' }}
           className="anim-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {boats.map((boat) => (
+          {boats.map((boat) => {
+            const ficheHref = boatFicheHref(lang, boat.slug);
+            return (
             <article
+              key={boat.id}
               className="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col anim-fade-up"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -191,19 +203,31 @@ export default function BoatGrid({ lang = 'es' }: { lang?: Lang }) {
                   </div>
                 </div>
 
-                <a
-                  href={`${whatsappBaseUrl}${whatsappTexts[lang]}${encodeURIComponent(boat.model)}${whatsappEnding}`}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="mt-auto flex items-center justify-center gap-2 w-full bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-sky-400/30 group/btn"
-                  aria-label={texts.ctaAriaLabel.replace('{{model}}', boat.model)}
-                >
-                  {texts.cta}
-                  <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
+                {ficheHref ? (
+                  <Link
+                    href={ficheHref}
+                    className={ctaClass}
+                    aria-label={texts.ctaAriaLabel.replace('{{model}}', boat.model)}
+                  >
+                    {texts.cta}
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                ) : (
+                  <a
+                    href={`${whatsappBaseUrl}${whatsappTexts[lang]}${encodeURIComponent(boat.model)}${whatsappEnding}`}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className={ctaClass}
+                    aria-label={texts.ctaAriaLabel.replace('{{model}}', boat.model)}
+                  >
+                    {texts.cta}
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                )}
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

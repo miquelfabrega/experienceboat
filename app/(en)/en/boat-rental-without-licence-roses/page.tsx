@@ -100,7 +100,7 @@ export default function BoatRentalWithoutLicenceRosesPage() {
       <main id="main-content">
         <HeroSection t={pillarEn.hero} />
         <IntroSection t={pillarEn.intro} />
-        <BoatGrid t={pillarEn.boatGrid} />
+        <BoatGrid t={pillarEn.boatGrid} lang="en" />
         <DestinationsSection t={pillarEn.destinations} />
         <WhyUsSection t={pillarEn.whyUs} />
         <PracticalInfoSection t={pillarEn.practicalInfo} />

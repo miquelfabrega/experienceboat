@@ -39,13 +39,21 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-6">Barcos</h3>
             <ul className="space-y-3">
               {conLicencia.map(b => (
-                <li key={b.slug}><span className="cursor-default">{b.nombre}</span></li>
+                <li key={b.slug}>
+                  <Link href={`/barcos/${b.slug}`} className="hover:text-white transition-colors">
+                    {b.nombre}
+                  </Link>
+                </li>
               ))}
             </ul>
             <p className="text-xs uppercase tracking-widest text-gray-600 mt-5 mb-3">Sin licencia</p>
             <ul className="space-y-3">
               {sinLicencia.map(b => (
-                <li key={b.slug}><span className="cursor-default">{b.nombre}</span></li>
+                <li key={b.slug}>
+                  <Link href={`/barcos/${b.slug}`} className="hover:text-white transition-colors">
+                    {b.nombre}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
