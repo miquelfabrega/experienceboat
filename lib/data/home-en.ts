@@ -22,6 +22,16 @@ export const homeDataEn = {
         src: '/images/hero/hero-2.jpg',
         alt: 'No-licence boats in Roses — private departure from Santa Margarita canals, Costa Brava',
       },
+      {
+        id: 3,
+        src: '/images/hero/hero-drone-23.webp',
+        alt: 'Boat trip sailing in front of the Roses seafront promenade, Costa Brava',
+      },
+      {
+        id: 4,
+        src: '/images/hero/hero-guillola.webp',
+        alt: 'Panoramic view of a Cap de Creus cove with anchored boats, Costa Brava',
+      },
     ]
   },
   intro: {
@@ -68,7 +78,7 @@ export const homeDataEn = {
         text: 'If you hold a nautical licence, we have the boats you\'re looking for. Powerful vessels to navigate freely along the northern Costa Brava: the Bay of Roses, Cap de Creus, Cala Canyelles, Cala Almadraba and everything in between. No skipper, no route restrictions.',
         cta: 'See boats with licence →',
         href: '/en/boat-rental-with-licence-roses/',
-        image: 'https://picsum.photos/seed/conlicencia-roses/800/600'
+        image: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-exterior-01.webp'
       },
       {
         title: 'Boat experiences in Roses',

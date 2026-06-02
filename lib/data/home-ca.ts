@@ -22,6 +22,16 @@ export const homeDataCa = {
         src: '/images/hero/hero-2.jpg',
         alt: 'Embarcacions sense llicència a Roses — sortida privada des dels canals de Santa Margarida, Costa Brava',
       },
+      {
+        id: 3,
+        src: '/images/hero/hero-drone-23.webp',
+        alt: 'Excursió en embarcació navegant davant el passeig marítim de Roses, Costa Brava',
+      },
+      {
+        id: 4,
+        src: '/images/hero/hero-guillola.webp',
+        alt: 'Vista panoràmica d\'una cala del Cap de Creus amb embarcacions fondejades, Costa Brava',
+      },
     ]
   },
   intro: {
@@ -68,7 +78,7 @@ export const homeDataCa = {
         text: 'Si teniu llicència nàutica, tenim les embarcacions que busqueu. Embarcacions potents per navegar lliurement per la Costa Brava nord: la badia de Roses, el Cap de Creus, Cala Canyelles, Cala Almadrava i tot el que hi ha entremig. Sense patró, sense restriccions de ruta.',
         cta: 'Veure embarcacions amb llicència →',
         href: '/ca/lloguer-vaixell-amb-llicencia-roses/',
-        image: 'https://picsum.photos/seed/conlicencia-roses/800/600'
+        image: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-exterior-01.webp'
       },
       {
         title: 'Experiències en vaixell a Roses',

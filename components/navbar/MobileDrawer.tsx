@@ -2,10 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChevronDown, Gem } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { Menu, X, ChevronDown, Gem, Globe } from 'lucide-react';
 import type { NavBoat } from './navData';
 import { CHROME, EXPERIENCES_MENU } from '@/lib/i18n/chrome';
-import { localizedHref, boatHref, type Locale } from '@/lib/i18n/routes';
+import { localizedHref, boatHref, equivalentPath, type Locale } from '@/lib/i18n/routes';
+
+const LANGUAGES: { code: string; name: string; locale: Locale }[] = [
+  { code: 'ES', name: 'Español', locale: 'es' },
+  { code: 'CA', name: 'Català', locale: 'ca' },
+  { code: 'FR', name: 'Français', locale: 'fr' },
+  { code: 'EN', name: 'English', locale: 'en' },
+];
 
 export function MobileDrawer({
   data,
@@ -17,6 +25,7 @@ export function MobileDrawer({
   const [isOpen, setIsOpen] = useState(false);
   const [isBarcosOpen, setIsBarcosOpen] = useState(false);
   const [isExperienciasOpen, setIsExperienciasOpen] = useState(false);
+  const pathname = usePathname();
   const t = CHROME[lang];
   const expItems = EXPERIENCES_MENU[lang];
   const links = [
@@ -224,6 +233,37 @@ export function MobileDrawer({
                 </Link>
               </li>
             ))}
+
+            {/* Language selector */}
+            <li className="p-5">
+              <div className="flex items-center gap-2 mb-4 text-[11px] uppercase tracking-[0.1em] text-[var(--section-label)] font-bold">
+                <Globe className="w-4 h-4 opacity-70" />
+                {t.language}
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {LANGUAGES.map((l) => {
+                  const isCurrent = l.locale === lang;
+                  return (
+                    <Link
+                      key={l.code}
+                      href={equivalentPath(pathname ?? '/', l.locale)}
+                      onClick={closeMenu}
+                      aria-current={isCurrent ? 'true' : undefined}
+                      className={`flex items-center justify-between px-4 py-2.5 rounded-lg text-[14px] font-medium transition-colors ${
+                        isCurrent
+                          ? 'bg-[var(--nav-accent)] text-white'
+                          : 'bg-slate-50 text-[var(--megamenu-text)] hover:bg-slate-100'
+                      }`}
+                    >
+                      {l.name}
+                      <span className={`text-[10px] font-bold ${isCurrent ? 'text-white/70' : 'text-slate-400'}`}>
+                        {l.code}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </li>
           </ul>
         </nav>
 

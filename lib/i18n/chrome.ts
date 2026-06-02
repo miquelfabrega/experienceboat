@@ -24,6 +24,7 @@ export interface ChromeCopy {
   closeMenu: string;
   expandBoats: string;
   collapseBoats: string;
+  language: string;         // etiqueta "Idioma" del selector móvil
 }
 
 export const CHROME: Record<Locale, ChromeCopy> = {
@@ -45,6 +46,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     closeMenu: 'Cerrar menú',
     expandBoats: 'Expandir submenú Barcos',
     collapseBoats: 'Contraer submenú Barcos',
+    language: 'Idioma',
   },
   ca: {
     boats: 'Embarcacions',
@@ -64,6 +66,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     closeMenu: 'Tancar menú',
     expandBoats: 'Desplegar submenú Embarcacions',
     collapseBoats: 'Plegar submenú Embarcacions',
+    language: 'Idioma',
   },
   fr: {
     boats: 'Bateaux',
@@ -83,6 +86,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     closeMenu: 'Fermer le menu',
     expandBoats: 'Développer le sous-menu Bateaux',
     collapseBoats: 'Réduire le sous-menu Bateaux',
+    language: 'Langue',
   },
   en: {
     boats: 'Boats',
@@ -102,6 +106,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     closeMenu: 'Close menu',
     expandBoats: 'Expand Boats submenu',
     collapseBoats: 'Collapse Boats submenu',
+    language: 'Language',
   },
 };
 

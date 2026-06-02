@@ -4,12 +4,13 @@ import { useState, useRef, useEffect } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { equivalentPath, type Locale } from '@/lib/i18n/routes';
 
-const languages = [
-  { code: 'ES', name: 'Español', url: '/' },
-  { code: 'CA', name: 'Català', url: '/ca' },
-  { code: 'FR', name: 'Français', url: '/fr' },
-  { code: 'EN', name: 'English', url: '/en' },
+const languages: { code: string; name: string; locale: Locale }[] = [
+  { code: 'ES', name: 'Español', locale: 'es' },
+  { code: 'CA', name: 'Català', locale: 'ca' },
+  { code: 'FR', name: 'Français', locale: 'fr' },
+  { code: 'EN', name: 'English', locale: 'en' },
 ];
 
 /** Deriva el locale actual a partir del primer segmento de la ruta. ES es el default (sin prefijo). */
@@ -58,7 +59,7 @@ export function LanguageSelector() {
           {languages.map((lang) => (
             <Link
               key={lang.code}
-              href={lang.url}
+              href={equivalentPath(pathname ?? '/', lang.locale)}
               className="flex items-center justify-between px-4 py-2 text-[13px] font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
             >
               {lang.name}

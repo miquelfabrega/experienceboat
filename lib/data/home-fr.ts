@@ -22,6 +22,16 @@ export const homeDataFr = {
         src: '/images/hero/hero-2.jpg',
         alt: 'Bateaux sans permis à Roses — départ privé depuis les canaux de Santa Margarita',
       },
+      {
+        id: 3,
+        src: '/images/hero/hero-drone-23.webp',
+        alt: 'Excursion en bateau naviguant devant la promenade maritime de Roses, Costa Brava',
+      },
+      {
+        id: 4,
+        src: '/images/hero/hero-guillola.webp',
+        alt: 'Vue panoramique d\'une crique du Cap de Creus avec des bateaux au mouillage, Costa Brava',
+      },
     ]
   },
   intro: {
@@ -68,7 +78,7 @@ export const homeDataFr = {
         text: 'Si vous avez un permis nautique, nous avons les embarcations que vous recherchez. Des bateaux puissants pour naviguer librement sur la Costa Brava nord : la baie de Roses, le Cap de Creus, Cala Canyelles, Cala Almadraba et tout ce que vous trouverez en chemin. Sans skipper, sans limites de route.',
         cta: 'Voir les bateaux avec permis →',
         href: '/fr/location-bateau-avec-permis-roses/',
-        image: 'https://picsum.photos/seed/conlicencia-roses/800/600'
+        image: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-exterior-01.webp'
       },
       {
         title: 'Expériences en bateau à Roses',

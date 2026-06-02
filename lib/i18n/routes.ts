@@ -100,3 +100,50 @@ export function boatHref(slug: string, locale: Locale): string {
   if (locale === 'ca') return `/ca/embarcacions/${slug}`;
   return localizedHref('boatsIndex', locale);
 }
+
+const LOCALES: readonly Locale[] = ['es', 'en', 'fr', 'ca'];
+
+/** Quita la barra final salvo en la raíz, para comparar contra la tabla de rutas. */
+function normalizePath(pathname: string): string {
+  if (pathname === '/') return '/';
+  return pathname.replace(/\/+$/, '') || '/';
+}
+
+/**
+ * Dada la ruta actual, devuelve su equivalente en `target`.
+ *
+ * Lo usa el selector de idioma para mantener al usuario en la misma página al
+ * cambiar de idioma, en vez de mandarlo siempre a la home.
+ *
+ * Estrategia:
+ *  1. Coincidencia exacta en la tabla de rutas → página equivalente.
+ *  2. Si no (sub-páginas con slug propio: artículos de blog, sub-experiencias,
+ *     ficha de barco), se busca el route-id cuyo path es el prefijo más largo y
+ *     se enlaza a su índice localizado (que sí existe en el otro idioma).
+ *  3. Sin coincidencia → home del idioma destino.
+ */
+export function equivalentPath(pathname: string, target: Locale): string {
+  const path = normalizePath(pathname);
+
+  // 1. Coincidencia exacta.
+  for (const [id, table] of Object.entries(ROUTES)) {
+    for (const loc of LOCALES) {
+      if (table[loc] === path) return localizedHref(id as RouteId, target);
+    }
+  }
+
+  // 2. Prefijo más largo (sub-páginas → índice del silo correspondiente).
+  let best: { id: RouteId; len: number } | null = null;
+  for (const [id, table] of Object.entries(ROUTES)) {
+    for (const loc of LOCALES) {
+      const p = table[loc];
+      if (p && p !== '/' && path.startsWith(`${p}/`)) {
+        if (!best || p.length > best.len) best = { id: id as RouteId, len: p.length };
+      }
+    }
+  }
+  if (best) return localizedHref(best.id, target);
+
+  // 3. Fallback: home del idioma destino.
+  return localizedHref('home', target);
+}
