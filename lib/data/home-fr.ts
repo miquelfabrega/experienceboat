@@ -4,7 +4,7 @@ export const homeDataFr = {
     description: 'Naviguez à votre rythme dans la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus. Chez Experience Boat, nous proposons la location de bateaux avec et sans permis, des excursions privées avec skipper et des balades au coucher du soleil. Tout privé — seulement votre groupe, aucun inconnu à bord.',
     ctaPrimary: {
       text: 'Voir les bateaux disponibles',
-      href: '/barcos/'
+      href: '/fr/bateaux/'
     },
     ctaSecondary: {
       text: 'Contacter via WhatsApp',
@@ -31,22 +31,22 @@ export const homeDataFr = {
       {
         title: 'Sans permis',
         text: 'Prenez la mer sans permis nautique. Bateaux faciles à piloter pour tous les profils.',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/fr/location-bateau-sans-permis-roses/',
       },
       {
         title: 'Avec permis',
         text: 'Embarcations puissantes pour naviguer librement sur la Costa Brava nord.',
-        href: '/alquiler-barco-con-licencia-roses/',
+        href: '/fr/location-bateau-avec-permis-roses/',
       },
       {
         title: 'Avec skipper',
         text: 'Excursions privées guidées. Nous tenons la barre, vous profitez du paysage.',
-        href: '/experiencias-barco-roses/',
+        href: '/fr/experiences-bateau-roses/',
       },
       {
         title: 'Canal Tour',
         text: 'Découvrez les canaux de Santa Margarita depuis l\'eau. Une expérience unique à Roses.',
-        href: '/canales-santa-margarita/',
+        href: '/fr/canaux-santa-margarita/',
       },
     ]
   },
@@ -59,7 +59,7 @@ export const homeDataFr = {
         tag: 'Sans permis',
         text: 'Aucune expérience préalable ni permis nautique requis. Nos bateaux sans permis sont conçus pour que tout le monde puisse prendre la mer dès la première minute. Parfaits pour les familles, les couples et les groupes d\'amis qui souhaitent explorer la baie de Roses à leur propre rythme. Départ depuis les canaux de Santa Margarita.',
         cta: 'Voir les bateaux sans permis →',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/fr/location-bateau-sans-permis-roses/',
         image: '/images/services/sin-licencia.jpg'
       },
       {
@@ -67,7 +67,7 @@ export const homeDataFr = {
         tag: 'Avec permis',
         text: 'Si vous avez un permis nautique, nous avons les embarcations que vous recherchez. Des bateaux puissants pour naviguer librement sur la Costa Brava nord : la baie de Roses, le Cap de Creus, Cala Canyelles, Cala Almadraba et tout ce que vous trouverez en chemin. Sans skipper, sans limites de route.',
         cta: 'Voir les bateaux avec permis →',
-        href: '/alquiler-barco-con-licencia-roses/',
+        href: '/fr/location-bateau-avec-permis-roses/',
         image: 'https://picsum.photos/seed/conlicencia-roses/800/600'
       },
       {
@@ -75,7 +75,7 @@ export const homeDataFr = {
         tag: 'Avec skipper',
         text: 'Vous préférez que quelqu\'un d\'autre tienne la barre ? Nous proposons deux types de sortie privée : des excursions vers le Cap de Creus avec skipper — itinéraire adapté à votre groupe — et le Sunset Experience, une balade au coucher du soleil dans les canaux et la baie de Roses. Aucune excursion partagée. Seulement votre groupe à bord.',
         cta: 'Voir les expériences →',
-        href: '/experiencias-barco-roses/',
+        href: '/fr/experiences-bateau-roses/',
         image: '/images/services/excursiones.jpg'
       },
       {
@@ -83,7 +83,7 @@ export const homeDataFr = {
         tag: 'Canal Tour',
         text: 'Notre point de départ est la Marina de Santa Margarita, à l\'entrée de Roses. Un endroit unique : les canaux de Santa Margarita sont en eux-mêmes une expérience, avec des maisons au bord de l\'eau et une atmosphère qui ne peut se vivre que depuis les canaux.',
         cta: 'Voir comment y accéder →',
-        href: '/canales-santa-margarita/',
+        href: '/fr/canaux-santa-margarita/',
         image: '/images/services/canales.jpg'
       }
     ]
@@ -95,7 +95,7 @@ export const homeDataFr = {
     conLicenciaBadge: 'Permis requis',
     guideLink: 'Voir le guide complet →',
     guideLinkFull: 'Voir le guide complet de location avec permis →',
-    guideLinkHref: '/alquiler-barco-con-licencia-roses/',
+    guideLinkHref: '/fr/location-bateau-avec-permis-roses/',
     prixLabel: 'À partir de',
   },
   whyUs: {
@@ -181,14 +181,14 @@ export const homeDataFr = {
     },
     cta: {
       text: 'Voir comment y accéder',
-      href: '/contacto/'
+      href: '/fr/contact/'
     }
   },
   closing: {
     title: 'Prêt à partir depuis les canaux de Santa Margarita ?',
     ctaPrimary: {
       text: 'Voir les bateaux disponibles',
-      href: '/barcos/'
+      href: '/fr/bateaux/'
     },
     ctaSecondary: {
       text: 'Écrire via WhatsApp',

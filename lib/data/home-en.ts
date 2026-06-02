@@ -4,7 +4,7 @@ export const homeDataEn = {
     description: 'Explore the Bay of Roses, the Santa Margarita canals and the Cap de Creus Natural Park at your own pace. At Experience Boat, we offer boat rental with and without licence, private skippered excursions and sunset cruises. Fully private — only your group, no strangers on board.',
     ctaPrimary: {
       text: 'See available boats',
-      href: '/barcos/'
+      href: '/en/boats/'
     },
     ctaSecondary: {
       text: 'Contact us on WhatsApp',
@@ -31,22 +31,22 @@ export const homeDataEn = {
       {
         title: 'No licence',
         text: 'Head out to sea without a nautical licence. Easy-to-handle boats for all experience levels.',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/en/boat-rental-without-licence-roses/',
       },
       {
         title: 'With licence',
         text: 'Powerful boats to navigate freely along the northern Costa Brava.',
-        href: '/alquiler-barco-con-licencia-roses/',
+        href: '/en/boat-rental-with-licence-roses/',
       },
       {
         title: 'With skipper',
         text: 'Private guided excursions. We handle the wheel, you enjoy the scenery.',
-        href: '/experiencias-barco-roses/',
+        href: '/en/boat-experiences-roses/',
       },
       {
         title: 'Canal Tour',
         text: 'Discover the Santa Margarita canals from the water. A unique experience in Roses.',
-        href: '/canales-santa-margarita/',
+        href: '/en/santa-margarita-canals-roses/',
       },
     ]
   },
@@ -59,7 +59,7 @@ export const homeDataEn = {
         tag: 'No licence',
         text: 'No prior experience or nautical licence required. Our no-licence boats are designed so anyone can take to the sea from the very first minute. Perfect for families, couples and groups of friends who want to explore the Bay of Roses at their own pace. Departure from the Santa Margarita canals.',
         cta: 'See no-licence boats →',
-        href: '/alquiler-barco-sin-licencia-roses/',
+        href: '/en/boat-rental-without-licence-roses/',
         image: '/images/services/sin-licencia.jpg'
       },
       {
@@ -67,7 +67,7 @@ export const homeDataEn = {
         tag: 'With licence',
         text: 'If you hold a nautical licence, we have the boats you\'re looking for. Powerful vessels to navigate freely along the northern Costa Brava: the Bay of Roses, Cap de Creus, Cala Canyelles, Cala Almadraba and everything in between. No skipper, no route restrictions.',
         cta: 'See boats with licence →',
-        href: '/alquiler-barco-con-licencia-roses/',
+        href: '/en/boat-rental-with-licence-roses/',
         image: 'https://picsum.photos/seed/conlicencia-roses/800/600'
       },
       {
@@ -75,7 +75,7 @@ export const homeDataEn = {
         tag: 'With skipper',
         text: 'Would you rather someone else take the helm? We offer two types of private departure: excursions to Cap de Creus with a skipper — route tailored to your group — and the Sunset Experience, a sunset cruise through the canals and Bay of Roses. No shared excursions. Only your group on board.',
         cta: 'See experiences →',
-        href: '/experiencias-barco-roses/',
+        href: '/en/boat-experiences-roses/',
         image: '/images/services/excursiones.jpg'
       },
       {
@@ -83,7 +83,7 @@ export const homeDataEn = {
         tag: 'Canal Tour',
         text: 'Our departure point is the Santa Margarita Marina at the entrance to Roses. A unique location: the Santa Margarita canals are an experience in themselves, with waterfront homes and an atmosphere that can only be felt from the water.',
         cta: 'See how to get there →',
-        href: '/canales-santa-margarita/',
+        href: '/en/santa-margarita-canals-roses/',
         image: '/images/services/canales.jpg'
       }
     ]
@@ -95,7 +95,7 @@ export const homeDataEn = {
     conLicenciaBadge: 'Licence required',
     guideLink: 'See full guide →',
     guideLinkFull: 'See full guide to boats with licence →',
-    guideLinkHref: '/alquiler-barco-con-licencia-roses/',
+    guideLinkHref: '/en/boat-rental-with-licence-roses/',
     prixLabel: 'From',
   },
   whyUs: {
@@ -181,14 +181,14 @@ export const homeDataEn = {
     },
     cta: {
       text: 'See how to get there',
-      href: '/contacto/'
+      href: '/en/contact/'
     }
   },
   closing: {
     title: 'Ready to set off from the Santa Margarita canals?',
     ctaPrimary: {
       text: 'See available boats',
-      href: '/barcos/'
+      href: '/en/boats/'
     },
     ctaSecondary: {
       text: 'Write to us on WhatsApp',

@@ -75,12 +75,12 @@ export const pillarFr = {
     card1Title: 'Excursions privées avec skipper',
     card1Desc: 'Si vous préférez que quelqu\'un d\'autre tienne la barre et que vous ne vous occupiez que de profiter, nous avons cette option aussi. Départ depuis les mêmes canaux de Santa Margarita.',
     card1Cta: 'Voir les excursions avec skipper',
-    card1Href: '/experiencias-barco-roses/',
+    card1Href: '/fr/experiences-bateau-roses/',
     card2Label: 'Vous avez un permis nautique ?',
     card2Title: 'Location de bateau avec permis',
     card2Desc: 'Si vous avez le permis, nous disposons d\'embarcations puissantes pour naviguer librement dans la baie de Roses et rejoindre le Cap de Creus plus rapidement.',
     card2Cta: 'Voir les bateaux avec permis',
-    card2Href: '/alquiler-barco-con-licencia-roses/',
+    card2Href: '/fr/location-bateau-avec-permis-roses/',
   },
   reviews: {
     sectionLabel: 'Avis réels',
@@ -165,7 +165,7 @@ export const couplesFr = {
       { name: 'Cala Canyelles Petites', desc: 'L\'une des criques les plus photographiées de la Costa Brava nord, et pour cause. Eaux turquoise, entourée de pins et très peu fréquentée hors août. À environ 20 minutes depuis Santa Margarita.' },
       { name: 'Cala Almadraba', desc: 'Plus calme que Canyelles et avec des eaux particulièrement cristallines. Accessible aussi à pied mais depuis le bateau elle a une autre dimension — vous pouvez mouiller et avez la crique pratiquement pour vous en moyenne saison.' },
       { name: 'Les criques du Cap de Creus', desc: 'Pour les plus aventureux, les criques du Parc Naturel du Cap de Creus sont la destination la plus spectaculaire de la zone. Paysage volcanique, eaux d\'une transparence exceptionnelle. Nous recommandons l\'option journée complète.' },
-      { name: 'Les canaux eux-mêmes au coucher du soleil', desc: 'Si vous préférez une sortie plus tranquille et romantique, le parcours dans les canaux au coucher du soleil est l\'une des expériences les plus spéciales que Roses offre. La lumière des dernières heures du jour sur l\'eau crée une ambiance magique.', link: { text: 'Voir Sunset Experience', href: '/experiencias-barco-roses/sunset-experience/' } },
+      { name: 'Les canaux eux-mêmes au coucher du soleil', desc: 'Si vous préférez une sortie plus tranquille et romantique, le parcours dans les canaux au coucher du soleil est l\'une des expériences les plus spéciales que Roses offre. La lumière des dernières heures du jour sur l\'eau crée une ambiance magique.', link: { text: 'Voir Sunset Experience', href: '/fr/experiences-bateau-roses/sunset-experience/' } },
     ],
   },
   duracion: {
@@ -199,7 +199,7 @@ export const couplesFr = {
     h3: 'Vous préférez que quelqu\'un d\'autre pilote le bateau ?',
     desc: 'Si vous souhaitez vous déconnecter complètement et qu\'une autre personne s\'occupe de la navigation pendant que vous profitez, nos excursions privées avec skipper sont exactement cela. Tomàs ou Max pilotent le bateau, connaissent chaque crique et s\'adaptent au rythme que vous souhaitez.',
     cta: 'Voir les excursions privées avec skipper',
-    href: '/experiencias-barco-roses/',
+    href: '/fr/experiences-bateau-roses/',
   },
   reviews: {
     sectionLabel: 'Expériences réelles',
@@ -274,7 +274,7 @@ export const canauxFr = {
     text: 'Oui, mais avec des nuances. Nos bateaux sans permis sont conçus pour la navigation côtière tranquille. La baie de Roses est parfaitement accessible et très recommandée. Les criques les plus proches du Cap de Creus sont également accessibles si les conditions en mer sont bonnes.',
     infoText: 'Pour s\'aventurer plus profondément dans le Parc Naturel du Cap de Creus, nous recommandons l\'une de nos excursions privées avec skipper — Tomàs ou Max connaissent les itinéraires et les criques qui valent le détour selon la période de l\'année.',
     linkText: 'Voir les excursions privées avec skipper',
-    linkHref: '/experiencias-barco-roses/',
+    linkHref: '/fr/experiences-bateau-roses/',
   },
   infoPractica: {
     sectionLabel: 'Ce que vous devez savoir',
