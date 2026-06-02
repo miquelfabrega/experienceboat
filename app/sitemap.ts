@@ -140,6 +140,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/fr/experiences-bateau-roses/excursions-privees', 0.7, 'monthly'),
     url('/fr/experiences-bateau-roses/sunset-experience', 0.7, 'monthly'),
     url('/fr/experiences-bateau-roses/canal-tour-santa-margarita', 0.7, 'monthly'),
+    url('/fr/experiences-bateau-roses/cap-de-creus-criques', 0.7, 'monthly'),
+    url('/fr/experiences-bateau-roses/cadaques', 0.7, 'monthly'),
+    url('/fr/experiences-bateau-roses/grottes-snorkeling', 0.7, 'monthly'),
 
     // ─── FR — Canaux Santa Margarita ─────────────────────────────────────────
     url('/fr/canaux-santa-margarita', 0.8, 'monthly'),
@@ -173,6 +176,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/en/boat-experiences-roses/private-excursions', 0.6, 'monthly'),
     url('/en/boat-experiences-roses/sunset-experience', 0.6, 'monthly'),
     url('/en/boat-experiences-roses/canal-tour-santa-margarita', 0.6, 'monthly'),
+    url('/en/boat-experiences-roses/cap-de-creus-coves', 0.6, 'monthly'),
+    url('/en/boat-experiences-roses/cadaques', 0.6, 'monthly'),
+    url('/en/boat-experiences-roses/caves-snorkeling', 0.6, 'monthly'),
 
     // ─── EN — Santa Margarita Canals ─────────────────────────────────────────
     url('/en/santa-margarita-canals-roses', 0.7, 'monthly'),
