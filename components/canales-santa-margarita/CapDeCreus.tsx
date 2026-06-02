@@ -1,26 +1,42 @@
 
 import Link from 'next/link';
+import { localizedHref } from '@/lib/i18n/routes';
 
-export interface CapDeCreusT {
-  sectionLabel?: string;
-  h2?: string;
-  text?: string;
-  infoText?: string;
-  linkText?: string;
-  linkHref?: string;
-}
+type Lang = 'es' | 'fr' | 'en' | 'ca';
 
-const defaults: Required<CapDeCreusT> = {
-  sectionLabel: 'Rutas posibles',
-  h2: '¿Se puede llegar al Cap de Creus sin licencia desde los canales?',
-  text: 'Sí, aunque con matices. Nuestros barcos sin licencia están diseñados para navegación costera tranquila. La bahía de Roses es perfectamente accesible y muy recomendable. Las calas más cercanas del Cap de Creus también están al alcance si las condiciones del mar son buenas.',
-  infoText: 'Para adentrarse en el Parque Natural del Cap de Creus con más profundidad, recomendamos una de nuestras excursiones privadas con patrón — Tomàs o Max conocen las rutas y las calas que merecen la pena según la época del año.',
-  linkText: 'Ver excursiones privadas con patrón',
-  linkHref: '/experiencias-barco-roses',
+const t: Record<Lang, { sectionLabel: string; h2: string; text: string; infoText: string; linkText: string }> = {
+  es: {
+    sectionLabel: 'Rutas posibles',
+    h2: '¿Se puede llegar al Cap de Creus sin licencia desde los canales?',
+    text: 'Sí, aunque con matices. Nuestros barcos sin licencia están diseñados para navegación costera tranquila. La bahía de Roses es perfectamente accesible y muy recomendable. Las calas más cercanas del Cap de Creus también están al alcance si las condiciones del mar son buenas.',
+    infoText: 'Para adentrarse en el Parque Natural del Cap de Creus con más profundidad, recomendamos una de nuestras excursiones privadas con patrón — Tomàs o Max conocen las rutas y las calas que merecen la pena según la época del año.',
+    linkText: 'Ver excursiones privadas con patrón',
+  },
+  fr: {
+    sectionLabel: 'Itinéraires possibles',
+    h2: 'Peut-on rejoindre le Cap de Creus sans permis depuis les canaux ?',
+    text: 'Oui, avec quelques nuances. Nos bateaux sans permis sont conçus pour une navigation côtière tranquille. La baie de Roses est parfaitement accessible et très recommandée. Les criques les plus proches du Cap de Creus sont également à portée si les conditions de mer sont bonnes.',
+    infoText: 'Pour explorer plus en profondeur le Parc Naturel du Cap de Creus, nous recommandons l\'une de nos excursions privées avec skipper — Tomàs ou Max connaissent les itinéraires et les criques qui valent le détour selon la saison.',
+    linkText: 'Voir les excursions privées avec skipper',
+  },
+  en: {
+    sectionLabel: 'Possible routes',
+    h2: 'Can you reach Cap de Creus without a licence from the canals?',
+    text: 'Yes, with some caveats. Our no-licence boats are designed for calm coastal sailing. The bay of Roses is perfectly accessible and highly recommended. The closest coves of Cap de Creus are also within reach if sea conditions are good.',
+    infoText: 'To explore the Cap de Creus Natural Park more deeply, we recommend one of our private skippered trips — Tomàs or Max know the routes and the coves worth visiting depending on the time of year.',
+    linkText: 'See private skippered trips',
+  },
+  ca: {
+    sectionLabel: 'Rutes possibles',
+    h2: 'Es pot arribar al Cap de Creus sense llicència des dels canals?',
+    text: 'Sí, tot i que amb matisos. Els nostres vaixells sense llicència estan dissenyats per a una navegació costanera tranquil·la. La badia de Roses és perfectament accessible i molt recomanable. Les cales més properes del Cap de Creus també són a l\'abast si les condicions del mar són bones.',
+    infoText: 'Per endinsar-vos al Parc Natural del Cap de Creus amb més profunditat, us recomanem una de les nostres excursions privades amb patró — Tomàs o Max coneixen les rutes i les cales que valen la pena segons l\'època de l\'any.',
+    linkText: 'Veure excursions privades amb patró',
+  },
 };
 
-export default function CapDeCreus({ t }: { t?: CapDeCreusT }) {
-  const tx = { ...defaults, ...t };
+export default function CapDeCreus({ lang = 'es' }: { lang?: Lang }) {
+  const tx = t[lang];
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -33,7 +49,7 @@ export default function CapDeCreus({ t }: { t?: CapDeCreusT }) {
             <p className="text-gray-700 text-sm leading-relaxed">{tx.infoText}</p>
           </div>
           <div className="text-center">
-            <Link href={tx.linkHref} className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all bg-sky-600 text-white">
+            <Link href={localizedHref('experiences', lang)} className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all bg-sky-600 text-white">
               {tx.linkText}
             </Link>
           </div>

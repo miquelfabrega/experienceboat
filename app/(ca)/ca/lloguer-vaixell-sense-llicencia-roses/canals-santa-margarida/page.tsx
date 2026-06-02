@@ -7,7 +7,6 @@ import CapDeCreus from '@/components/canales-santa-margarita/CapDeCreus';
 import InfoPractica from '@/components/canales-santa-margarita/InfoPractica';
 import StickyCtaCanales from '@/components/canales-santa-margarita/StickyCtaCanales';
 import SiloNavBlock from '@/components/SiloNavBlock';
-import { canauxCa } from '@/lib/data/sin-licencia-ca';
 
 export const dynamic = 'force-static';
 
@@ -59,15 +58,15 @@ export default function CanalsSantaMargaridaPage() {
     <>
       <BreadcrumbSchema />
       <main id="main-content">
-        <HeroCanales t={canauxCa.hero} />
-        <IntroCanales t={canauxCa.intro} />
-        <PorQueCanales t={canauxCa.porQue} />
-        <QueVasAVer t={canauxCa.queVasAVer} />
-        <CapDeCreus t={canauxCa.capDeCreus} />
-        <InfoPractica t={canauxCa.infoPractica} />
+        <HeroCanales lang="ca" />
+        <IntroCanales lang="ca" />
+        <PorQueCanales lang="ca" />
+        <QueVasAVer lang="ca" />
+        <CapDeCreus lang="ca" />
+        <InfoPractica lang="ca" />
         <SiloNavBlock silo="sin-licencia" lang="ca" currentPath="/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida" />
       </main>
-      <StickyCtaCanales />
+      <StickyCtaCanales lang="ca" />
     </>
   );
 }

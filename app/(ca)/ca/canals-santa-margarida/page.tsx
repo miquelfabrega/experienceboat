@@ -154,22 +154,22 @@ export default function CanalsSantaMargaridaPillarPageCA() {
       {/* Page sections — only FAQSection y SiloNavBlock aceptan lang="ca"; el resto del silo
           pilar comparte componentes ES-hardcoded (HeroSection, IntroSection, etc.). */}
       <main id="main-content">
-        <HeroSection />
-        <IntroSection />
+        <HeroSection lang="ca" />
+        <IntroSection lang="ca" />
         <ProductBoxSection />
-        <RouteSection />
-        <DifferentiatorSection />
-        <OptionsSection />
-        <FullRouteSection />
-        <BestTimeSection />
-        <ReviewsSection />
-        <ContactSection />
+        <RouteSection lang="ca" />
+        <DifferentiatorSection lang="ca" />
+        <OptionsSection lang="ca" />
+        <FullRouteSection lang="ca" />
+        <BestTimeSection lang="ca" />
+        <ReviewsSection lang="ca" />
+        <ContactSection lang="ca" />
         <FAQSection lang="ca" />
         <SiloNavBlock silo="canales" lang="ca" currentPath="/ca/canals-santa-margarida" />
       </main>
 
       {/* Sticky CTA — mobile bar + desktop FAB */}
-      <StickyMobileCTA />
+      <StickyMobileCTA lang="ca" />
     </>
   );
 }

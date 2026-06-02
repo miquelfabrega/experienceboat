@@ -4,7 +4,68 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Anchor, X, ChevronRight, MessageCircle } from 'lucide-react';
 
-export default function StickyMobileCTA() {
+type Lang = 'es' | 'fr' | 'en' | 'ca';
+
+const t: Record<Lang, {
+  seeOptions: string;
+  whatsapp: string;
+  whatsappAria: string;
+  panelTitle: string;
+  panelDesc: string;
+  seeOptionsAvailable: string;
+  whatsappMsg: string;
+  openMenu: string;
+  closeMenu: string;
+}> = {
+  es: {
+    seeOptions: 'Ver opciones',
+    whatsapp: 'WhatsApp',
+    whatsappAria: 'Contactar por WhatsApp',
+    panelTitle: 'Canales de Santa Margarita en barco',
+    panelDesc: 'Salida desde la Marina de Santa Margarita. Sin licencia, con patrón o con tu titulación.',
+    seeOptionsAvailable: 'Ver opciones disponibles',
+    whatsappMsg: 'Hola, me interesa navegar por los canales de Santa Margarita en Roses',
+    openMenu: 'Abrir menú de reserva rápida',
+    closeMenu: 'Cerrar menú de reserva',
+  },
+  fr: {
+    seeOptions: 'Voir les options',
+    whatsapp: 'WhatsApp',
+    whatsappAria: 'Contacter par WhatsApp',
+    panelTitle: 'Les canaux de Santa Margarita en bateau',
+    panelDesc: 'Départ de la Marina de Santa Margarita. Sans permis, avec skipper ou avec votre permis.',
+    seeOptionsAvailable: 'Voir les options disponibles',
+    whatsappMsg: 'Bonjour, je souhaite naviguer sur les canaux de Santa Margarita à Roses',
+    openMenu: 'Ouvrir le menu de réservation rapide',
+    closeMenu: 'Fermer le menu de réservation',
+  },
+  en: {
+    seeOptions: 'See options',
+    whatsapp: 'WhatsApp',
+    whatsappAria: 'Contact via WhatsApp',
+    panelTitle: 'The Santa Margarita canals by boat',
+    panelDesc: 'Departure from the Marina de Santa Margarita. Without a licence, with a skipper or with your own licence.',
+    seeOptionsAvailable: 'See available options',
+    whatsappMsg: 'Hello, I am interested in sailing the Santa Margarita canals in Roses',
+    openMenu: 'Open quick booking menu',
+    closeMenu: 'Close booking menu',
+  },
+  ca: {
+    seeOptions: 'Veure opcions',
+    whatsapp: 'WhatsApp',
+    whatsappAria: 'Contactar per WhatsApp',
+    panelTitle: 'Canals de Santa Margarida en vaixell',
+    panelDesc: 'Sortida des de la Marina de Santa Margarida. Sense llicència, amb patró o amb la vostra titulació.',
+    seeOptionsAvailable: 'Veure opcions disponibles',
+    whatsappMsg: 'Hola, m\'interessa navegar pels canals de Santa Margarida a Roses',
+    openMenu: 'Obrir menú de reserva ràpida',
+    closeMenu: 'Tancar menú de reserva',
+  },
+};
+
+export default function StickyMobileCTA({ lang = 'es' }: { lang?: Lang }) {
+  const c = t[lang];
+  const waHref = `https://wa.me/34623995700?text=${encodeURIComponent(c.whatsappMsg)}`;
   const [visible, setVisible] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -35,17 +96,17 @@ export default function StickyMobileCTA() {
                   className="flex-1 flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-bold py-3.5 rounded-xl transition-colors text-sm"
                 >
                   <Anchor className="w-4 h-4" />
-                  Ver opciones
+                  {c.seeOptions}
                 </a>
                 <a
-                  href="https://wa.me/34623995700?text=Hola%2C%20me%20interesa%20navegar%20por%20los%20canales%20de%20Santa%20Margarita%20en%20Roses"
+                  href={waHref}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe59] text-white font-bold py-3.5 px-4 rounded-xl transition-colors text-sm"
-                  aria-label="Contactar por WhatsApp"
+                  aria-label={c.whatsappAria}
                 >
                   <MessageCircle className="w-4 h-4" />
-                  WhatsApp
+                  {c.whatsapp}
                 </a>
               </div>
             </div>
@@ -73,10 +134,10 @@ export default function StickyMobileCTA() {
                   className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 w-64"
                 >
                   <p className="font-bold text-gray-900 text-sm mb-1">
-                    Canales de Santa Margarita en barco
+                    {c.panelTitle}
                   </p>
                   <p className="text-gray-500 text-xs mb-4 leading-relaxed">
-                    Salida desde la Marina de Santa Margarita. Sin licencia, con patrón o con tu titulación.
+                    {c.panelDesc}
                   </p>
                   <div className="flex flex-col gap-2">
                     <a
@@ -84,16 +145,16 @@ export default function StickyMobileCTA() {
                       className="flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
                       onClick={() => setExpanded(false)}
                     >
-                      Ver opciones disponibles <ChevronRight className="w-4 h-4" />
+                      {c.seeOptionsAvailable} <ChevronRight className="w-4 h-4" />
                     </a>
                     <a
-                      href="https://wa.me/34623995700?text=Hola%2C%20me%20interesa%20navegar%20por%20los%20canales%20de%20Santa%20Margarita%20en%20Roses"
+                      href={waHref}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe59] text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      WhatsApp
+                      {c.whatsapp}
                     </a>
                   </div>
                 </motion.div>
@@ -103,7 +164,7 @@ export default function StickyMobileCTA() {
             <button
               onClick={() => setExpanded(!expanded)}
               className="w-14 h-14 bg-sky-500 hover:bg-sky-400 text-white rounded-full shadow-xl shadow-sky-500/40 flex items-center justify-center transition-all hover:scale-110"
-              aria-label={expanded ? 'Cerrar menú de reserva' : 'Abrir menú de reserva rápida'}
+              aria-label={expanded ? c.closeMenu : c.openMenu}
               aria-expanded={expanded}
             >
               <AnimatePresence mode="wait">

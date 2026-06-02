@@ -7,7 +7,6 @@ import CapDeCreus from '@/components/canales-santa-margarita/CapDeCreus';
 import InfoPractica from '@/components/canales-santa-margarita/InfoPractica';
 import StickyCtaCanales from '@/components/canales-santa-margarita/StickyCtaCanales';
 import SiloNavBlock from '@/components/SiloNavBlock';
-import { canauxEn } from '@/lib/data/sin-licencia-en';
 
 export const dynamic = 'force-static';
 
@@ -64,15 +63,15 @@ export default function SantaMargaritaCanalsEnPage() {
     <>
       <BreadcrumbSchema />
       <main id="main-content">
-        <HeroCanales t={canauxEn.hero} />
-        <IntroCanales t={canauxEn.intro} />
-        <PorQueCanales t={canauxEn.porQue} />
-        <QueVasAVer t={canauxEn.queVasAVer} />
-        <CapDeCreus t={canauxEn.capDeCreus} />
-        <InfoPractica t={canauxEn.infoPractica} />
+        <HeroCanales lang="en" />
+        <IntroCanales lang="en" />
+        <PorQueCanales lang="en" />
+        <QueVasAVer lang="en" />
+        <CapDeCreus lang="en" />
+        <InfoPractica lang="en" />
         <SiloNavBlock />
       </main>
-      <StickyCtaCanales />
+      <StickyCtaCanales lang="en" />
     </>
   );
 }

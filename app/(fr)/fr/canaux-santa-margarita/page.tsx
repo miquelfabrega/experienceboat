@@ -148,18 +148,18 @@ export default function CanauxSantaMargaritaPage() {
       <BreadcrumbSchema />
 
       <main id="main-content">
-        <HeroSection />
-        <IntroSection />
-        <RouteSection />
-        <DifferentiatorSection />
-        <OptionsSection />
-        <BestTimeSection />
+        <HeroSection lang="fr" />
+        <IntroSection lang="fr" />
+        <RouteSection lang="fr" />
+        <DifferentiatorSection lang="fr" />
+        <OptionsSection lang="fr" />
+        <BestTimeSection lang="fr" />
         <ProductBoxSection lang="fr" />
-        <ContactSection />
+        <ContactSection lang="fr" />
         <FAQSection lang="fr" />
       </main>
 
-      <StickyMobileCTA />
+      <StickyMobileCTA lang="fr" />
     </>
   );
 }
