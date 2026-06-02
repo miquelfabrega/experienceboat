@@ -71,7 +71,7 @@ const INCLUSIONES_BASE = [
 ];
 
 // Widget Regiondo por barco (calendarios de reserva específicos de cada embarcación).
-const WIDGET_REMUS = '1ac97881-96c6-47d0-a00c-11dcc4138752';
+const WIDGET_REMUS = 'ba47f5d1-9480-4faf-b245-7a57d7883af2';
 const WIDGET_MARINE_BREZZE = 'd299f388-40dc-4526-bafd-35b28926f1e2';
 const WIDGET_DREAM_POINT = '71ee3784-86ce-4b63-ac86-22e0b579707c';
 const WIDGET_CON_LICENCIA = 'cbe7e43c-d1d4-4ad3-a3ee-2f5b4d6863fd';
