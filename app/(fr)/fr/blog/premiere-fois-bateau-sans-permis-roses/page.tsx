@@ -320,7 +320,7 @@ export default function ArticlePremiereFoisFr() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/alquiler-barco-sin-licencia-roses"
+              href="/fr/location-bateau-sans-permis-roses"
               className="px-8 py-4 rounded-full bg-white text-gray-900 font-bold hover:bg-gray-100 transition-colors shadow-md"
             >
               Voir les bateaux sans permis à Roses →

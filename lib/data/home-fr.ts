@@ -163,7 +163,7 @@ export const homeDataFr = {
     resultReset: 'Recommencer',
     resultEmpty: 'Aucun bateau exact pour ces critères. Contactez-nous.',
     resultCTA: 'Voir la disponibilité complète',
-    resultCTAHref: '/reservas/',
+    resultCTAHref: '/fr/reservation/',
     priceFrom: 'À partir de',
   },
   location: {

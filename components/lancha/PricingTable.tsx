@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { localizedHref } from '@/lib/i18n/routes';
 
 const blocks = [
   {
@@ -50,14 +51,13 @@ interface PricingTableProps {
 
 const t: Record<
   Lang,
-  { title: string; subtitle: string; cta: string; ctaHref: string; note: string }
+  { title: string; subtitle: string; cta: string; note: string }
 > = {
   es: {
     title: 'Precios',
     subtitle:
       'Tarifas de alquiler de lancha en Roses. Todas las salidas son privadas — nunca compartís embarcación con otros clientes.',
     cta: 'Reservar online',
-    ctaHref: '/reservas',
     note: 'Precios orientativos. El precio final depende del modelo de embarcación y fecha.',
   },
   fr: {
@@ -65,7 +65,6 @@ const t: Record<
     subtitle:
       'Tarifs de location de vedette à Roses. Toutes les sorties sont privées — vous ne partagez jamais l\'embarcation avec d\'autres clients.',
     cta: 'Réserver en ligne',
-    ctaHref: '/fr/reservations',
     note: 'Tarifs indicatifs. Le prix final dépend du modèle d\'embarcation et de la date.',
   },
   ca: {
@@ -73,7 +72,6 @@ const t: Record<
     subtitle:
       'Tarifes de lloguer de llanxa a Roses. Totes les sortides són privades — mai compartiu embarcació amb altres clients.',
     cta: 'Reservar en línia',
-    ctaHref: '/ca/reserves',
     note: 'Preus orientatius. El preu final depèn del model d\'embarcació i la data.',
   },
 };
@@ -137,7 +135,7 @@ export default function PricingTable({ lang = 'es' }: PricingTableProps) {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href={labels.ctaHref}
+            href={localizedHref('bookings', lang)}
             className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-[#0b1f3a] font-bold px-8 py-4 rounded-xl transition-colors text-base"
           >
             {labels.cta}

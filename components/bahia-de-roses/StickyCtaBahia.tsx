@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { localizedHref } from '@/lib/i18n/routes';
 
 type Lang = 'es' | 'fr' | 'ca';
 
@@ -11,27 +12,24 @@ interface StickyCtaBahiaProps {
 
 const t: Record<
   Lang,
-  { barTitle: string; barSub: string; book: string; bookHref: string; fab: string }
+  { barTitle: string; barSub: string; book: string; fab: string }
 > = {
   es: {
     barTitle: 'Barco con licencia — desde 195 €',
     barSub: 'Salida desde Santa Margarita',
     book: 'Reservar',
-    bookHref: '/reservas',
     fab: 'Reservar ahora',
   },
   fr: {
     barTitle: 'Bateau avec permis — dès 195 €',
     barSub: 'Départ depuis Santa Margarita',
     book: 'Réserver',
-    bookHref: '/fr/reservations',
     fab: 'Réserver maintenant',
   },
   ca: {
     barTitle: 'Vaixell amb llicència — des de 195 €',
     barSub: 'Sortida des de Santa Margarida',
     book: 'Reservar',
-    bookHref: '/ca/reserves',
     fab: 'Reservar ara',
   },
 };
@@ -63,7 +61,7 @@ export default function StickyCtaBahia({ lang = 'es' }: StickyCtaBahiaProps) {
               <p className="text-xs text-blue-300">{labels.barSub}</p>
             </div>
             <a
-              href={labels.bookHref}
+              href={localizedHref('bookings', lang)}
               className="shrink-0 bg-cyan-400 hover:bg-cyan-300 text-[#0b1f3a] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
             >
               {labels.book}
@@ -72,7 +70,7 @@ export default function StickyCtaBahia({ lang = 'es' }: StickyCtaBahiaProps) {
 
           {/* Desktop FAB */}
           <a
-            href={labels.bookHref}
+            href={localizedHref('bookings', lang)}
             className="hidden md:flex items-center gap-3 bg-[#0b1f3a] hover:bg-[#0d3545] text-white font-bold px-6 py-4 rounded-2xl shadow-2xl transition-colors border border-white/10"
           >
             <span className="text-cyan-300">⚓</span>

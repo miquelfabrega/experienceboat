@@ -159,6 +159,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── FR — Empresa ────────────────────────────────────────────────────────
     url('/fr/a-propos', 0.4, 'yearly'),
     url('/fr/contact', 0.6, 'monthly'),
+    url('/fr/reservation', 0.7, 'monthly'),
     url('/fr/bateaux', 0.5, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/fr/bateaux/${slug}`, 0.45, 'monthly')),
 
@@ -197,6 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/en/boats', 0.5, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/en/boats/${slug}`, 0.45, 'monthly')),
     url('/en/contact', 0.6, 'monthly'),
+    url('/en/booking', 0.7, 'monthly'),
 
     // ─── EXCLUIDAS: /test/ (bloqueada en robots.ts) — NO aparece en este sitemap.
   ];

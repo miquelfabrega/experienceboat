@@ -163,7 +163,7 @@ export const homeDataEn = {
     resultReset: 'Start over',
     resultEmpty: 'No exact match for these criteria. Contact us.',
     resultCTA: 'See full availability',
-    resultCTAHref: '/reservas/',
+    resultCTAHref: '/en/booking/',
     priceFrom: 'From',
   },
   location: {

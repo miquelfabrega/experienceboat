@@ -190,7 +190,7 @@ export default function ArticleSnorkellingEn() {
               The rugged coastline of the <strong>Cap de Creus Natural Park</strong> is dotted with hidden coves and sea caves, making it the perfect place for those seeking wild adventure.
             </p>
             <p>
-              The area stands out for its water clarity, naturally filtered by posidonia seagrass meadows. Keep your eyes open for moray eels, red starfish, sea urchins and nudibranchs that inhabit the rocky seabed. Since land access is long and complicated for many of its coves, <Link href="/experiencias-barco-roses">arriving by boat is the best option</Link> to explore the reserve&apos;s best snorkelling spots.
+              The area stands out for its water clarity, naturally filtered by posidonia seagrass meadows. Keep your eyes open for moray eels, red starfish, sea urchins and nudibranchs that inhabit the rocky seabed. Since land access is long and complicated for many of its coves, <Link href="/en/boat-experiences-roses">arriving by boat is the best option</Link> to explore the reserve&apos;s best snorkelling spots.
             </p>
 
             {/* H2 #4 */}

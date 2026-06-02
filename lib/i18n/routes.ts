@@ -65,8 +65,14 @@ const ROUTES = {
     ca: '/ca/sobre-nosaltres',
   },
 
+  bookings: {
+    es: '/reservas',
+    en: '/en/booking',
+    fr: '/fr/reservation',
+    ca: '/ca/reserves',
+  },
+
   // Páginas que aún no existen en todos los locales → fallback a ES.
-  bookings: { es: '/reservas', en: null, fr: null, ca: '/ca/reserves' },
   privacy: { es: '/politica-privacidad', en: null, fr: null, ca: null },
   legalNotice: { es: '/aviso-legal', en: null, fr: null, ca: null },
   cookies: { es: '/cookies', en: null, fr: null, ca: null },

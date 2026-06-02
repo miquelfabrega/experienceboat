@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Anchor, Compass, MessageCircle } from 'lucide-react';
+import { localizedHref } from '@/lib/i18n/routes';
 
 type Lang = 'es' | 'fr' | 'ca';
 

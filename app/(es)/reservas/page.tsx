@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     languages: {
       'x-default': 'https://www.experienceboat.es/reservas',
       es: 'https://www.experienceboat.es/reservas',
+      ca: 'https://www.experienceboat.es/ca/reserves',
+      fr: 'https://www.experienceboat.es/fr/reservation',
+      en: 'https://www.experienceboat.es/en/booking',
     },
   },
   openGraph: {

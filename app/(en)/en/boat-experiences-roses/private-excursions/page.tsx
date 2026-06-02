@@ -106,7 +106,7 @@ function TouristTripSchema() {
       availability: 'https://schema.org/InStock',
       validFrom: '2026-04-01',
       validThrough: '2026-10-31',
-      url: 'https://www.experienceboat.es/reservas',
+      url: 'https://www.experienceboat.es/en/booking',
     },
   };
 
@@ -194,7 +194,7 @@ export default function PrivateExcursionsRosesPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/reservas"
+                href="/en/booking"
                 className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white shadow-lg transition-all"
               >
                 Book now
@@ -251,7 +251,7 @@ export default function PrivateExcursionsRosesPage() {
                     </li>
                   </ul>
                   <Link
-                    href="/reservas"
+                    href="/en/booking"
                     className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
                   >
                     Book now
@@ -285,7 +285,7 @@ export default function PrivateExcursionsRosesPage() {
                     </li>
                   </ul>
                   <Link
-                    href="/reservas"
+                    href="/en/booking"
                     className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
                   >
                     Book now

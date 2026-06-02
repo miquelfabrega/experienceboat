@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { localizedHref } from '@/lib/i18n/routes';
 
 const translations = {
   es: {
@@ -75,7 +76,7 @@ export default function HeroSection({ lang = 'es' }: HeroSectionProps) {
             {t.discoverBtn}
           </Link>
           <Link
-            href="/reservas"
+            href={localizedHref('bookings', lang)}
             className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold shadow-lg hover:brightness-110 transition-all active:scale-95 bg-[var(--nav-accent)] text-white"
           >
             {t.bookBtn}

@@ -162,7 +162,7 @@ export default function ArticlePlanifierEscapadeFr() {
             {/* H2 #1 */}
             <h2 id="embarcation">1. Choisissez le bon type d&apos;embarcation</h2>
             <p>
-              Avant de larguer les amarres, il est important de sélectionner l&apos;embarcation adaptée à votre voyage. Prenez en compte la taille du groupe, vos compétences de navigation et le type d&apos;expérience que vous souhaitez vivre. Des petites <Link href="/alquiler-barco-sin-licencia-roses">embarcations sans permis</Link> aux vedettes puissantes <Link href="/alquiler-barco-con-licencia-roses">avec permis</Link> et tout le confort, la Costa Brava offre une large variété d&apos;options pour tous les goûts et tous les budgets.
+              Avant de larguer les amarres, il est important de sélectionner l&apos;embarcation adaptée à votre voyage. Prenez en compte la taille du groupe, vos compétences de navigation et le type d&apos;expérience que vous souhaitez vivre. Des petites <Link href="/fr/location-bateau-sans-permis-roses">embarcations sans permis</Link> aux vedettes puissantes <Link href="/fr/location-bateau-avec-permis-roses">avec permis</Link> et tout le confort, la Costa Brava offre une large variété d&apos;options pour tous les goûts et tous les budgets.
             </p>
 
             {/* H2 #2 */}

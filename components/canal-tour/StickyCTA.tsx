@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { localizedHref } from '@/lib/i18n/routes';
 
 const translations = {
   es: {
@@ -64,7 +65,7 @@ export default function StickyCTA({ lang = 'es' }: StickyCTAProps) {
           </span>
         </div>
         <Link
-          href="/reservas"
+          href={localizedHref('bookings', lang)}
           className="flex items-center justify-center gap-2 bg-[var(--nav-accent)] hover:bg-[var(--nav-accent-hover)] text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md flex-1 text-center"
         >
           <Calendar className="w-5 h-5" />

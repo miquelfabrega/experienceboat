@@ -312,7 +312,7 @@ export default function ArticleCapDeCreusEn() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/experiencias-barco-roses"
+              href="/en/boat-experiences-roses"
               className="px-8 py-4 rounded-full bg-white text-gray-900 font-bold hover:bg-gray-100 transition-colors shadow-md"
             >
               See skippered excursions →
