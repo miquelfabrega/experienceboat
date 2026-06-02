@@ -19,8 +19,12 @@ export interface PrecioTemporada {
  * (p. ej. Justi Saura solo ½ día y 1 día), por eso son opcionales.
  */
 export interface TarifasBarco {
-  medioDia?: PrecioTemporada; // ½ día
-  diaCompleto?: PrecioTemporada; // 1 día
+  // Barcos SIN licencia: 1 h / 2 h / ½ día (4 h) / día completo (8 h).
+  unaHora?: PrecioTemporada; // 1 hora
+  dosHoras?: PrecioTemporada; // 2 horas
+  medioDia?: PrecioTemporada; // ½ día (4 h)
+  diaCompleto?: PrecioTemporada; // día completo (8 h) · en CON licencia = 1 día
+  // Barcos CON licencia: además 3 y 7 días.
   tresDias?: PrecioTemporada; // 3 días
   sieteDias?: PrecioTemporada; // 7 días
 }
@@ -92,10 +96,10 @@ export const fleet: Barco[] = [
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño', 'Colchonetas'],
     tarifas: {
-      medioDia: { baja: 90, media: 95, alta: 110 },
-      diaCompleto: { baja: 145, media: 155, alta: 170 },
-      tresDias: { baja: 180, media: 190, alta: 220 },
-      sieteDias: { baja: 245, media: 260, alta: 320 },
+      unaHora: { baja: 90, media: 95, alta: 110 },
+      dosHoras: { baja: 145, media: 155, alta: 170 },
+      medioDia: { baja: 180, media: 190, alta: 220 },
+      diaCompleto: { baja: 245, media: 260, alta: 320 },
     },
     sunset: { baja: 160, media: 170, alta: 175 },
     notaMedioDia: NOTA_SIN_LICENCIA,
@@ -117,10 +121,10 @@ export const fleet: Barco[] = [
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño'],
     tarifas: {
-      medioDia: { baja: 90, media: 95, alta: 110 },
-      diaCompleto: { baja: 145, media: 155, alta: 170 },
-      tresDias: { baja: 155, media: 165, alta: 220 },
-      sieteDias: { baja: 245, media: 260, alta: 320 },
+      unaHora: { baja: 90, media: 95, alta: 110 },
+      dosHoras: { baja: 145, media: 155, alta: 170 },
+      medioDia: { baja: 180, media: 190, alta: 220 },
+      diaCompleto: { baja: 245, media: 260, alta: 320 },
     },
     notaMedioDia: NOTA_SIN_LICENCIA,
     precioDesde: 90,
@@ -141,10 +145,10 @@ export const fleet: Barco[] = [
     motor: '15 CV',
     equipamiento: ['Toldo bimini', 'Escalera de baño', 'Fácil manejo'],
     tarifas: {
-      medioDia: { baja: 70, media: 75, alta: 90 },
-      diaCompleto: { baja: 120, media: 135, alta: 165 },
-      tresDias: { baja: 165, media: 175, alta: 200 },
-      sieteDias: { baja: 225, media: 245, alta: 320 },
+      unaHora: { baja: 70, media: 75, alta: 90 },
+      dosHoras: { baja: 135, media: 145, alta: 165 },
+      medioDia: { baja: 165, media: 175, alta: 200 },
+      diaCompleto: { baja: 225, media: 245, alta: 320 },
     },
     notaMedioDia: NOTA_SIN_LICENCIA,
     precioDesde: 70,

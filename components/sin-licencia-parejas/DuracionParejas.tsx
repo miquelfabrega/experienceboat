@@ -23,11 +23,11 @@ const defaults: Required<DuracionParejasT> = {
   halfDayTitle: 'Medio día',
   halfDayDesc: 'El medio día (4 horas aproximadamente) es perfecto si queréis una mañana o una tarde en el mar sin que se convierta en una jornada entera. Da tiempo para recorrer los canales, llegar a las calas más cercanas como Canyelles o Almadraba, bañaros y volver.',
   halfDayPriceLabel: 'Precio aproximado',
-  halfDayPrice: 'desde 70 €',
+  halfDayPrice: 'desde 165 €',
   fullDayTitle: 'Día completo',
   fullDayDesc: 'Es para quienes quieren llegar lejos. Con una jornada completa podéis recorrer los canales, cruzar la bahía, llegar hasta las calas del Cap de Creus, comer a bordo y volver tranquilamente al atardecer. Es la opción más completa y la que más recuerdo deja.',
   fullDayPriceLabel: 'Precio aproximado',
-  fullDayPrice: 'desde 120 €',
+  fullDayPrice: 'desde 225 €',
   cta: 'Ver barcos disponibles y reservar',
   ctaHref: '/alquiler-barco-sin-licencia-roses',
 };

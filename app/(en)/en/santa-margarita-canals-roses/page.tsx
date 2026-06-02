@@ -223,8 +223,8 @@ export default function SantaMargaritaCanalsRosesPage() {
                   Rent one of our no-licence boats and explore the canals and the Bay of Roses at your own pace. No prior experience required. Boats for 4–6 people.
                 </p>
                 <div className="mb-6 space-y-1 text-sm text-slate-700">
-                  <p><span className="font-semibold">Half day (4h):</span> from €200</p>
-                  <p><span className="font-semibold">Full day (8h):</span> from €350</p>
+                  <p><span className="font-semibold">Half day (4h):</span> from €165</p>
+                  <p><span className="font-semibold">Full day (8h):</span> from €225</p>
                 </div>
                 <Link
                   href="/en/boat-rental-without-licence-roses"
@@ -341,7 +341,7 @@ export default function SantaMargaritaCanalsRosesPage() {
             <div>
               <dt className="font-bold text-slate-900">Prices</dt>
               <dd className="mt-1 text-slate-600">
-                Half day (4h): from €200 · Full day (8h): from €350. Prices vary by boat model and season.
+                Half day (4h): from €165 · Full day (8h): from €225. Prices vary by boat model and season.
               </dd>
             </div>
           </dl>

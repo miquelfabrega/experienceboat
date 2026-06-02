@@ -68,6 +68,7 @@ const UI: Record<DetailLang, {
   capacidad: string; personas: string; eslora: string; motor: string; categoria: string;
   dudas: string; equipamiento: string; galeria: string; queIncluye: string;
   tarifas: string; duracion: string; tempBaja: string; tempMedia: string; tempAlta: string;
+  unaHora: string; dosHoras: string;
   medioDia: string; diaCompleto: string; tresDias: string; sieteDias: string;
   patronObligatorio: string; medioDiaParen: string; diaCompletoParen: string;
   sunsetTitle: string; combustibleFianza: string;
@@ -85,6 +86,7 @@ const UI: Record<DetailLang, {
     dudas: '¿Dudas? Pregúntanos por WhatsApp',
     equipamiento: 'Equipamiento del barco', galeria: 'Galería', queIncluye: '¿Qué incluye el alquiler?',
     tarifas: 'Tarifas', duracion: 'Duración', tempBaja: 'Temp. baja', tempMedia: 'Temp. media', tempAlta: 'Temp. alta',
+    unaHora: '1 hora', dosHoras: '2 horas',
     medioDia: 'Medio día', diaCompleto: 'Día completo', tresDias: '3 días', sieteDias: '7 días',
     patronObligatorio: 'Patrón obligatorio:', medioDiaParen: '(medio día)', diaCompletoParen: '(día completo)',
     sunsetTitle: 'Sunset en barco (2-3 h)',
@@ -103,6 +105,7 @@ const UI: Record<DetailLang, {
     dudas: 'Teniu dubtes? Pregunteu-nos per WhatsApp',
     equipamiento: 'Equipament de l\'embarcació', galeria: 'Galeria', queIncluye: 'Què inclou el lloguer?',
     tarifas: 'Tarifes', duracion: 'Durada', tempBaja: 'Temp. baixa', tempMedia: 'Temp. mitjana', tempAlta: 'Temp. alta',
+    unaHora: '1 hora', dosHoras: '2 hores',
     medioDia: 'Mitja jornada', diaCompleto: 'Jornada completa', tresDias: '3 dies', sieteDias: '7 dies',
     patronObligatorio: 'Patró obligatori:', medioDiaParen: '(mitja jornada)', diaCompletoParen: '(jornada completa)',
     sunsetTitle: 'Capvespre en vaixell (2-3 h)',
@@ -127,6 +130,8 @@ export default function BarcoDetail({
   const { tarifas } = barco;
   const galeria = getGallery(barco.slug);
   const FILAS_TARIFAS = [
+    { label: t.unaHora, precios: tarifas.unaHora },
+    { label: t.dosHoras, precios: tarifas.dosHoras },
     { label: t.medioDia, nota: barco.notaMedioDia, precios: tarifas.medioDia },
     { label: t.diaCompleto, precios: tarifas.diaCompleto },
     { label: t.tresDias, precios: tarifas.tresDias },

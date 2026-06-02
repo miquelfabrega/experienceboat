@@ -24,11 +24,7 @@ export const pillarFr = {
     ctaBtn: 'Voir disponibilité',
     waMessagePrefix: 'Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20',
     waMessageSuffix: '%20sans%20permis%20%C3%A0%20Roses',
-    boats: [
-      { id: 1, model: 'Bateau sans permis 4 pers.', image: 'https://picsum.photos/seed/boat-sin-1/600/400', capacity: 4, eslora: '4,5 m', halfDay: '200 €', fullDay: '350 €', badge: 'Idéal couples', badgeColor: 'bg-sky-100 text-sky-700' },
-      { id: 2, model: 'Bateau sans permis 5 pers.', image: 'https://picsum.photos/seed/boat-sin-2/600/400', capacity: 5, eslora: '4,8 m', halfDay: '220 €', fullDay: '380 €', badge: 'Le plus populaire', badgeColor: 'bg-orange-100 text-orange-700' },
-      { id: 3, model: 'Bateau sans permis 6 pers.', image: 'https://picsum.photos/seed/boat-sin-3/600/400', capacity: 6, eslora: '5,0 m', halfDay: '250 €', fullDay: '420 €', badge: 'Familles', badgeColor: 'bg-teal-100 text-teal-700' },
-    ],
+    // Flota real desde lib/data/fleet.ts (fallback de BoatGrid). No hardcodear barcos/precios aquí.
   },
   destinations: {
     sectionLabel: 'Costa Brava nord',
@@ -70,7 +66,7 @@ export const pillarFr = {
       { question: 'Ai-je besoin d\'expérience pour piloter le bateau ?', answer: 'Non. Nos bateaux sans permis ont des moteurs de faible puissance homologués pour la navigation sans titulaire. Avant de partir, Tomàs ou Max vous expliquent le fonctionnement en quelques minutes. La plupart des clients partent seuls sans aucun problème dès la première sortie.' },
       { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Cela dépend de l\'embarcation. Nous avons des bateaux pour 4 à 11 personnes. Consultez chaque modèle pour la capacité exacte.' },
       { question: 'Qu\'est-ce qui est inclus dans la location ?', list: ['Embarcation avec carburant inclus (selon le modèle)', 'Gilets de sauvetage pour tous les passagers', 'Briefing initial avec le skipper', 'Carte de la zone et recommandations d\'itinéraire', 'Snorkeling basique (selon disponibilité)'] },
-      { question: 'Quels sont les tarifs ?', prices: [{ label: 'Demi-journée (4 heures)', value: 'à partir de 200 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 350 €' }], note: 'Les tarifs varient selon l\'embarcation et la saison. Consultez les disponibilités pour votre date.' },
+      { question: 'Quels sont les tarifs ?', prices: [{ label: '1 heure', value: 'à partir de 70 €' }, { label: '2 heures', value: 'à partir de 135 €' }, { label: 'Demi-journée (4 heures)', value: 'à partir de 165 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 225 €' }], note: 'Les tarifs varient selon l\'embarcation et la saison. Consultez les disponibilités pour votre date.' },
       { question: 'Combien de temps à l\'avance dois-je réserver ?', answer: 'En juillet et août, nous recommandons de réserver au moins deux semaines à l\'avance. Le reste de la saison, 48 à 72 heures suffisent généralement.' },
     ],
   },
@@ -121,7 +117,7 @@ export const pillarFr = {
   stickyCTA: {
     seeBoats: 'Voir bateaux',
     popupTitle: 'Location sans permis à Roses',
-    popupDesc: 'À partir de 200 € / demi-journée. Départ depuis Santa Margarita.',
+    popupDesc: 'À partir de 165 € / demi-journée. Départ depuis Santa Margarita.',
     seeCta: 'Voir bateaux disponibles',
     waMessage: 'Bonjour%2C%20je%20voudrais%20louer%20un%20bateau%20sans%20permis%20%C3%A0%20Roses',
     openLabel: 'Ouvrir le menu de réservation rapide',
@@ -179,11 +175,11 @@ export const couplesFr = {
     halfDayTitle: 'Demi-journée',
     halfDayDesc: 'La demi-journée (environ 4 heures) est parfaite si vous souhaitez une matinée ou un après-midi en mer sans en faire une journée entière. Il y a le temps de parcourir les canaux, d\'atteindre les criques les plus proches comme Canyelles ou Almadraba, de se baigner et de rentrer.',
     halfDayPriceLabel: 'Prix approximatif',
-    halfDayPrice: 'à partir de 200 €',
+    halfDayPrice: 'à partir de 165 €',
     fullDayTitle: 'Journée complète',
     fullDayDesc: 'C\'est pour ceux qui veulent aller loin. Avec une journée complète vous pouvez parcourir les canaux, traverser la baie, atteindre les criques du Cap de Creus, déjeuner à bord et rentrer tranquillement au coucher du soleil. L\'option la plus complète et la plus mémorable.',
     fullDayPriceLabel: 'Prix approximatif',
-    fullDayPrice: 'à partir de 350 €',
+    fullDayPrice: 'à partir de 225 €',
     cta: 'Voir les bateaux disponibles et réserver',
     ctaHref: '/fr/location-bateau-sans-permis-roses/',
   },
@@ -289,7 +285,7 @@ export const canauxFr = {
       { question: 'Combien de temps dure le parcours dans les canaux ?', answer: 'Le parcours dans les canaux intérieurs dure entre 60 et 90 minutes. Si vous le combinez avec une sortie dans la baie de Roses, vous pouvez passer une demi-journée complète sur l\'eau sans vous éloigner trop.' },
       { question: 'Est-ce adapté aux jeunes enfants ?', answer: 'C\'est l\'un des environnements les plus sûrs pour les familles avec enfants. Les eaux sont calmes, la vitesse est basse et le paysage garde les plus petits divertis tout au long du parcours.' },
       { question: 'Quand est-il préférable d\'y aller ?', answer: 'Tôt le matin, les canaux sont complètement calmes et la lumière est spectaculaire pour la photographie. Au coucher du soleil, les reflets sur l\'eau sont tout aussi impressionnants. En saison intermédiaire (mai, juin, septembre), il y a beaucoup moins de trafic nautique qu\'en plein août.' },
-      { question: 'Tarif de la location', prices: [{ label: 'Demi-journée (4 heures)', value: 'à partir de 200 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 350 €' }] },
+      { question: 'Tarif de la location', prices: [{ label: '1 heure', value: 'à partir de 70 €' }, { label: '2 heures', value: 'à partir de 135 €' }, { label: 'Demi-journée (4 heures)', value: 'à partir de 165 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 225 €' }] },
     ],
   },
 };

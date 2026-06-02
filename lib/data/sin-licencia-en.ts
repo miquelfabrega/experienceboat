@@ -24,11 +24,7 @@ export const pillarEn = {
     ctaBtn: 'Check availability',
     waMessagePrefix: 'Hello%2C%20I%27m%20interested%20in%20the%20',
     waMessageSuffix: '%20without%20licence%20in%20Roses',
-    boats: [
-      { id: 1, model: 'No-licence boat 4 pax', image: 'https://picsum.photos/seed/boat-sin-1/600/400', capacity: 4, eslora: '4.5 m', halfDay: '€200', fullDay: '€350', badge: 'Ideal for couples', badgeColor: 'bg-sky-100 text-sky-700' },
-      { id: 2, model: 'No-licence boat 5 pax', image: 'https://picsum.photos/seed/boat-sin-2/600/400', capacity: 5, eslora: '4.8 m', halfDay: '€220', fullDay: '€380', badge: 'Most popular', badgeColor: 'bg-orange-100 text-orange-700' },
-      { id: 3, model: 'No-licence boat 6 pax', image: 'https://picsum.photos/seed/boat-sin-3/600/400', capacity: 6, eslora: '5.0 m', halfDay: '€250', fullDay: '€420', badge: 'Families', badgeColor: 'bg-teal-100 text-teal-700' },
-    ],
+    // Real fleet from lib/data/fleet.ts (BoatGrid fallback). Do not hardcode boats/prices here.
   },
   destinations: {
     sectionLabel: 'Northern Costa Brava',
@@ -70,7 +66,7 @@ export const pillarEn = {
       { question: 'Do I need experience to drive the boat?', answer: 'No. Our no-licence boats have low-power engines approved for navigation without a nautical licence. Before you set off, Tomàs or Max will explain how everything works in a few minutes. Most guests head out on their own without any issues from the very first trip.' },
       { question: 'How many people can come on board?', answer: 'It depends on the boat. We have vessels for 4 to 11 people. Check each model for the exact capacity.' },
       { question: 'What\'s included in the rental?', list: ['Boat with fuel included (depending on the model)', 'Life jackets for all passengers', 'Initial briefing with the skipper', 'Area map and route recommendations', 'Basic snorkelling equipment (subject to availability)'] },
-      { question: 'What are the prices?', prices: [{ label: 'Half day (4 hours)', value: 'from €200' }, { label: 'Full day (8 hours)', value: 'from €350' }], note: 'Prices vary by boat and season. Check availability for your dates.' },
+      { question: 'What are the prices?', prices: [{ label: '1 hour', value: 'from €70' }, { label: '2 hours', value: 'from €135' }, { label: 'Half day (4 hours)', value: 'from €165' }, { label: 'Full day (8 hours)', value: 'from €225' }], note: 'Prices vary by boat and season. Check availability for your dates.' },
       { question: 'How far in advance do I need to book?', answer: 'In July and August, we recommend booking at least two weeks ahead. The rest of the season, 48–72 hours is usually enough.' },
     ],
   },
@@ -121,7 +117,7 @@ export const pillarEn = {
   stickyCTA: {
     seeBoats: 'See boats',
     popupTitle: 'No-licence rental in Roses',
-    popupDesc: 'From €200 / half day. Departure from Santa Margarita.',
+    popupDesc: 'From €165 / half day. Departure from Santa Margarita.',
     seeCta: 'See available boats',
     waMessage: 'Hello%2C%20I%27d%20like%20to%20rent%20a%20no-licence%20boat%20in%20Roses',
     openLabel: 'Open quick booking menu',
@@ -179,11 +175,11 @@ export const couplesEn = {
     halfDayTitle: 'Half day',
     halfDayDesc: 'The half-day (about 4 hours) is perfect if you want a morning or afternoon at sea without making it a full day. There is time to cruise the canals, reach the nearest coves like Canyelles or Almadraba, swim and return.',
     halfDayPriceLabel: 'Approximate price',
-    halfDayPrice: 'from €200',
+    halfDayPrice: 'from €165',
     fullDayTitle: 'Full day',
     fullDayDesc: 'This is for those who want to go far. With a full day you can cruise the canals, cross the bay, reach the Cap de Creus coves, have lunch on board and return gently at sunset. The most complete and memorable option.',
     fullDayPriceLabel: 'Approximate price',
-    fullDayPrice: 'from €350',
+    fullDayPrice: 'from €225',
     cta: 'See available boats and book',
     ctaHref: '/en/boat-rental-without-licence-roses/',
   },
@@ -289,7 +285,7 @@ export const canauxEn = {
       { question: 'How long does the canal route take?', answer: 'The inner canal route takes between 60 and 90 minutes at a relaxed pace. Combined with a trip out into the Bay of Roses you can easily fill a half day on the water without going too far.' },
       { question: 'Is it suitable for young children?', answer: 'It is one of the safest environments for families with children. The water is calm, speeds are low and the scenery keeps the youngest ones entertained throughout the route.' },
       { question: 'When is the best time to go?', answer: 'Early in the morning the canals are completely calm and the light is spectacular for photography. At sunset the reflections on the water are equally impressive. In shoulder season (May, June, September) there is far less boat traffic than in high August.' },
-      { question: 'Rental price', prices: [{ label: 'Half day (4 hours)', value: 'from €200' }, { label: 'Full day (8 hours)', value: 'from €350' }] },
+      { question: 'Rental price', prices: [{ label: '1 hour', value: 'from €70' }, { label: '2 hours', value: 'from €135' }, { label: 'Half day (4 hours)', value: 'from €165' }, { label: 'Full day (8 hours)', value: 'from €225' }] },
     ],
   },
 };

@@ -18,7 +18,7 @@ const defaultItems = [
   { icon: FileCheck, question: '¿Necesito experiencia para llevar el barco?', answer: 'No. Nuestros barcos sin licencia tienen motores de baja potencia homologados para navegación sin titulación. Antes de salir, Tomàs o Max te explican el funcionamiento en unos minutos. La mayoría de clientes salen solos sin ningún problema desde el primer día.' },
   { icon: Users, question: '¿Cuántas personas caben?', answer: 'Depende de la embarcación. Tenemos barcos desde 4 hasta 11 personas. Consulta cada modelo para ver la capacidad exacta.' },
   { icon: Package, question: '¿Qué incluye el alquiler?', list: ['Embarcación con combustible incluido (consultar según modelo)', 'Chaleco salvavidas para todos los pasajeros', 'Briefing inicial con el patrón', 'Mapa de la zona y recomendaciones de ruta', 'Snorkel básico (según disponibilidad)'] },
-  { icon: Euro, question: '¿Cuáles son los precios?', prices: [{ label: 'Medio día (4 horas)', value: 'desde 70 €' }, { label: 'Día completo (8 horas)', value: 'desde 120 €' }], note: 'Los precios varían según la embarcación y la temporada. Consulta disponibilidad para tu fecha concreta.' },
+  { icon: Euro, question: '¿Cuáles son los precios?', prices: [{ label: '1 hora', value: 'desde 70 €' }, { label: '2 horas', value: 'desde 135 €' }, { label: 'Medio día (4 horas)', value: 'desde 165 €' }, { label: 'Día completo (8 horas)', value: 'desde 225 €' }], note: 'Los precios varían según la embarcación y la temporada. Consulta disponibilidad para tu fecha concreta.' },
   { icon: Calendar, question: '¿Con cuánta antelación debo reservar?', answer: 'En julio y agosto recomendamos reservar con al menos dos semanas de antelación. El resto de la temporada, con 48-72 horas suele ser suficiente.' },
 ];
 
