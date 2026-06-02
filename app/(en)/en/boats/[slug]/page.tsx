@@ -22,13 +22,13 @@ export function generateMetadata({
   params: { slug: string };
 }): Metadata {
   const barco = getBarcoBySlug(params.slug);
-  if (!barco) return { title: 'Barco no encontrado' };
+  if (!barco) return { title: 'Boat not found' };
 
-  const url = `${SITE}/barcos/${barco.slug}`;
+  const url = `${SITE}/en/boats/${barco.slug}`;
+  const esUrl = `${SITE}/barcos/${barco.slug}`;
   const caUrl = `${SITE}/ca/embarcacions/${barco.slug}`;
   const frUrl = `${SITE}/fr/bateaux/${barco.slug}`;
-  const enUrl = `${SITE}/en/boats/${barco.slug}`;
-  const title = `${barco.nombre} — Alquiler Roses`;
+  const title = `${barco.nombre} — Boat rental Roses`;
   const description = barco.descripcionCorta;
 
   return {
@@ -37,11 +37,11 @@ export function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        'x-default': url,
-        es: url,
+        'x-default': esUrl,
+        es: esUrl,
         ca: caUrl,
         fr: frUrl,
-        en: enUrl,
+        en: url,
       },
     },
     openGraph: {
@@ -49,7 +49,7 @@ export function generateMetadata({
       description,
       url,
       siteName: 'Experience Boat',
-      locale: 'es_ES',
+      locale: 'en_GB',
       type: 'website',
       images: [barco.imagen],
     },
@@ -60,7 +60,7 @@ export function generateMetadata({
   };
 }
 
-export default function BarcoSlugPage({
+export default function BoatSlugPage({
   params,
 }: {
   params: { slug: string };
@@ -69,7 +69,7 @@ export default function BarcoSlugPage({
   if (!barco) notFound();
 
   const similares = getBarcosSimilares(barco.slug, 3);
-  const url = `${SITE}/barcos/${barco.slug}`;
+  const url = `${SITE}/en/boats/${barco.slug}`;
 
   const { tarifas } = barco;
   const offers = [
@@ -77,7 +77,7 @@ export default function BarcoSlugPage({
       ? [
           {
             '@type': 'Offer',
-            name: 'Medio día · temporada baja',
+            name: 'Half day · low season',
             price: tarifas.medioDia.baja,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
@@ -85,7 +85,7 @@ export default function BarcoSlugPage({
           },
           {
             '@type': 'Offer',
-            name: 'Medio día · temporada alta',
+            name: 'Half day · high season',
             price: tarifas.medioDia.alta,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
@@ -97,7 +97,7 @@ export default function BarcoSlugPage({
       ? [
           {
             '@type': 'Offer',
-            name: 'Día completo · temporada baja',
+            name: 'Full day · low season',
             price: tarifas.diaCompleto.baja,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
@@ -105,7 +105,7 @@ export default function BarcoSlugPage({
           },
           {
             '@type': 'Offer',
-            name: 'Día completo · temporada alta',
+            name: 'Full day · high season',
             price: tarifas.diaCompleto.alta,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
@@ -118,8 +118,11 @@ export default function BarcoSlugPage({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: barco.categoria === 'sin-licencia' ? 'Boat rental without licence' : 'Boat rental with licence',
-    name: `Alquiler ${barco.nombre} — Roses`,
+    serviceType:
+      barco.categoria === 'sin-licencia'
+        ? 'Boat rental without licence'
+        : 'Boat rental with licence',
+    name: `${barco.nombre} rental — Roses`,
     description: barco.descripcionCorta,
     image: [barco.imagen],
     provider: {
@@ -153,7 +156,7 @@ export default function BarcoSlugPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <BarcoDetail barco={barco} similares={similares} />
+      <BarcoDetail barco={barco} similares={similares} lang="en" />
     </>
   );
 }

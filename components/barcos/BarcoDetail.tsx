@@ -19,17 +19,20 @@ import { getGallery } from '@/lib/data/boats-gallery';
 import BoatGallery from '@/components/BoatGallery';
 import FleetCard from '@/components/home/FleetCard';
 
-type DetailLang = 'es' | 'ca';
+type DetailLang = 'es' | 'ca' | 'fr' | 'en';
 
 const formatPrecio = (n: number | null) =>
   n === null ? '—' : `${n}€`;
 
+const WHATSAPP_MSG: Record<DetailLang, (nombre: string) => string> = {
+  es: (n) => `Hola, me interesa alquilar el barco ${n}. ¿Disponibilidad?`,
+  ca: (n) => `Hola, m'interessa llogar l'embarcació ${n}. Disponibilitat?`,
+  fr: (n) => `Bonjour, je suis intéressé par la location du bateau ${n}. Disponibilité ?`,
+  en: (n) => `Hello, I'm interested in renting the ${n} boat. Availability?`,
+};
+
 const WHATSAPP_HREF = (nombre: string, lang: DetailLang) =>
-  `https://wa.me/34623995700?text=${encodeURIComponent(
-    lang === 'ca'
-      ? `Hola, m'interessa llogar l'embarcació ${nombre}. Disponibilitat?`
-      : `Hola, me interesa alquilar el barco ${nombre}. ¿Disponibilidad?`
-  )}`;
+  `https://wa.me/34623995700?text=${encodeURIComponent(WHATSAPP_MSG[lang](nombre))}`;
 
 const FAQ_BASE: Record<DetailLang, { q: string; a: string }[]> = {
   es: [
@@ -60,6 +63,34 @@ const FAQ_BASE: Record<DetailLang, { q: string; a: string }[]> = {
       a: 'Sí, es demana una fiança en embarcar que es retorna íntegra en tornar l\'embarcació en les mateixes condicions.',
     },
   ],
+  fr: [
+    {
+      q: 'Ai-je besoin d\'un permis pour naviguer ?',
+      a: 'Uniquement pour les bateaux marqués « Avec permis ». Les bateaux sans permis peuvent être loués à partir de 18 ans avec une pièce d\'identité ou un passeport.',
+    },
+    {
+      q: 'Le prix inclut-il le carburant ?',
+      a: 'Non. La consommation est calculée à la fin de la location selon les heures et le moteur. Nous vous l\'expliquons avant le départ pour éviter toute surprise.',
+    },
+    {
+      q: 'Faut-il laisser une caution ?',
+      a: 'Oui, une caution est demandée à l\'embarquement et restituée intégralement au retour du bateau dans les mêmes conditions.',
+    },
+  ],
+  en: [
+    {
+      q: 'Do I need a licence to sail?',
+      a: 'Only for boats marked "With Licence". No-licence boats can be rented from age 18 with an ID card or passport.',
+    },
+    {
+      q: 'Does the price include fuel?',
+      a: 'No. Fuel is calculated at the end of the rental based on the hours and engine. We explain it before departure so there are no surprises.',
+    },
+    {
+      q: 'Is a deposit required?',
+      a: 'Yes, a deposit is taken at boarding and fully refunded when the boat is returned in the same condition.',
+    },
+  ],
 };
 
 const UI: Record<DetailLang, {
@@ -76,6 +107,8 @@ const UI: Record<DetailLang, {
   faq: string; otrosBarcos: string; guiaCompleta: string;
   sinLicencia: string; conLicencia: string;
   desde: string;
+  homeHref: string; altRental: string; suplementoDe: string;
+  siloSinHref: string; siloConHref: string;
 }> = {
   es: {
     inicio: 'Inicio', barcos: 'Barcos', barcosHref: '/barcos',
@@ -95,6 +128,8 @@ const UI: Record<DetailLang, {
     faq: 'Preguntas frecuentes', otrosBarcos: 'Otros barcos', guiaCompleta: 'Ver guía completa →',
     sinLicencia: 'Sin Licencia', conLicencia: 'Con Licencia',
     desde: 'Desde ',
+    homeHref: '/', altRental: 'alquiler de barco {cat} en Roses', suplementoDe: 'suplemento de',
+    siloSinHref: '/alquiler-barco-sin-licencia-roses', siloConHref: '/alquiler-barco-con-licencia-roses',
   },
   ca: {
     inicio: 'Inici', barcos: 'Embarcacions', barcosHref: '/ca/embarcacions',
@@ -114,6 +149,50 @@ const UI: Record<DetailLang, {
     faq: 'Preguntes freqüents', otrosBarcos: 'Altres embarcacions', guiaCompleta: 'Veure guia completa →',
     sinLicencia: 'Sense llicència', conLicencia: 'Amb llicència',
     desde: 'Des de ',
+    homeHref: '/ca', altRental: 'lloguer d\'embarcació {cat} a Roses', suplementoDe: 'suplement de',
+    siloSinHref: '/ca/lloguer-vaixell-sense-llicencia-roses', siloConHref: '/ca/lloguer-vaixell-amb-llicencia-roses',
+  },
+  fr: {
+    inicio: 'Accueil', barcos: 'Bateaux', barcosHref: '/fr/bateaux',
+    reservaFecha: 'Réservez votre date',
+    integrando: 'Nous intégrons le calendrier en ligne pour ce bateau. En attendant, contactez-nous par WhatsApp et nous vous confirmons la disponibilité immédiatement.',
+    consultarDisp: 'Vérifier la disponibilité',
+    capacidad: 'Capacité', personas: 'personnes', eslora: 'Longueur', motor: 'Moteur', categoria: 'Catégorie',
+    dudas: 'Des questions ? Écrivez-nous sur WhatsApp',
+    equipamiento: 'Équipement du bateau', galeria: 'Galerie', queIncluye: 'Que comprend la location ?',
+    tarifas: 'Tarifs', duracion: 'Durée', tempBaja: 'Basse saison', tempMedia: 'Moyenne saison', tempAlta: 'Haute saison',
+    unaHora: '1 heure', dosHoras: '2 heures',
+    medioDia: 'Demi-journée', diaCompleto: 'Journée complète', tresDias: '3 jours', sieteDias: '7 jours',
+    patronObligatorio: 'Patron obligatoire :', medioDiaParen: '(demi-journée)', diaCompletoParen: '(journée complète)',
+    sunsetTitle: 'Sunset en bateau (2-3 h)',
+    combustibleFianza: 'Carburant et caution non inclus. Prix sujets à disponibilité.',
+    extras: 'Extras en option', extrasLead: 'Ajoutez des activités nautiques à la location de votre bateau. Disponibles sur demande lors de la réservation.',
+    faq: 'Questions fréquentes', otrosBarcos: 'Autres bateaux', guiaCompleta: 'Voir le guide complet →',
+    sinLicencia: 'Sans permis', conLicencia: 'Avec permis',
+    desde: 'À partir de ',
+    homeHref: '/fr', altRental: 'location de bateau {cat} à Roses', suplementoDe: 'supplément de',
+    siloSinHref: '/fr/location-bateau-sans-permis-roses', siloConHref: '/fr/location-bateau-avec-permis-roses',
+  },
+  en: {
+    inicio: 'Home', barcos: 'Boats', barcosHref: '/en/boats',
+    reservaFecha: 'Book your date',
+    integrando: 'We\'re integrating the online calendar for this boat. In the meantime, contact us on WhatsApp and we\'ll confirm availability right away.',
+    consultarDisp: 'Check availability',
+    capacidad: 'Capacity', personas: 'people', eslora: 'Length', motor: 'Engine', categoria: 'Category',
+    dudas: 'Questions? Message us on WhatsApp',
+    equipamiento: 'Boat equipment', galeria: 'Gallery', queIncluye: 'What\'s included in the rental?',
+    tarifas: 'Rates', duracion: 'Duration', tempBaja: 'Low season', tempMedia: 'Mid season', tempAlta: 'High season',
+    unaHora: '1 hour', dosHoras: '2 hours',
+    medioDia: 'Half day', diaCompleto: 'Full day', tresDias: '3 days', sieteDias: '7 days',
+    patronObligatorio: 'Skipper required:', medioDiaParen: '(half day)', diaCompletoParen: '(full day)',
+    sunsetTitle: 'Sunset on a boat (2-3 h)',
+    combustibleFianza: 'Fuel and deposit not included. Prices subject to availability.',
+    extras: 'Optional extras', extrasLead: 'Add water activities to your boat rental. Available on request when booking.',
+    faq: 'Frequently asked questions', otrosBarcos: 'Other boats', guiaCompleta: 'See full guide →',
+    sinLicencia: 'Without Licence', conLicencia: 'With Licence',
+    desde: 'From ',
+    homeHref: '/en', altRental: '{cat} boat rental in Roses', suplementoDe: 'supplement of',
+    siloSinHref: '/en/boat-rental-without-licence-roses', siloConHref: '/en/boat-rental-with-licence-roses',
   },
 };
 
@@ -143,13 +222,7 @@ export default function BarcoDetail({
   const categoriaLabel =
     barco.categoria === 'sin-licencia' ? t.sinLicencia : t.conLicencia;
   const siloHref =
-    barco.categoria === 'sin-licencia'
-      ? lang === 'ca'
-        ? '/ca/lloguer-vaixell-sense-llicencia-roses'
-        : '/alquiler-barco-sin-licencia-roses'
-      : lang === 'ca'
-        ? '/ca/lloguer-vaixell-amb-llicencia-roses'
-        : '/alquiler-barco-con-licencia-roses';
+    barco.categoria === 'sin-licencia' ? t.siloSinHref : t.siloConHref;
 
   return (
     <main className="bg-white">
@@ -160,7 +233,7 @@ export default function BarcoDetail({
       >
         <ol className="flex items-center gap-2 flex-wrap">
           <li>
-            <Link href={lang === 'ca' ? '/ca' : '/'} className="hover:text-blue-600">
+            <Link href={t.homeHref} className="hover:text-blue-600">
               {t.inicio}
             </Link>
           </li>
@@ -194,11 +267,7 @@ export default function BarcoDetail({
           <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[480px] w-full rounded-3xl overflow-hidden shadow-lg">
             <Image
               src={barco.imagen}
-              alt={
-                lang === 'ca'
-                  ? `${barco.nombre} — lloguer d'embarcació ${categoriaLabel.toLowerCase()} a Roses`
-                  : `${barco.nombre} — alquiler de barco ${categoriaLabel.toLowerCase()} en Roses`
-              }
+              alt={`${barco.nombre} — ${t.altRental.replace('{cat}', categoriaLabel.toLowerCase())}`}
               fill
               priority
               className="object-cover"
@@ -426,7 +495,7 @@ export default function BarcoDetail({
           {barco.requiereCapitan && barco.suplementoCapitan && (
             <p className="text-sm text-gray-700 mt-3">
               <strong>{t.patronObligatorio}</strong>{' '}
-              {lang === 'ca' ? 'suplement de' : 'suplemento de'}{' '}
+              {t.suplementoDe}{' '}
               {barco.suplementoCapitan.medioDia}€ {t.medioDiaParen} /{' '}
               {barco.suplementoCapitan.diaCompleto}€ {t.diaCompletoParen}.
             </p>

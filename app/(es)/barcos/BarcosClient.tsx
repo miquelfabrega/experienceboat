@@ -112,8 +112,11 @@ const fleetIndexHref = (lang: Lang) =>
 
 const boatHref = (id: string, lang: Lang) => {
   const slug = ES_SLUG[id];
-  if (lang === 'es' && slug) return `/barcos/${slug}`;
-  if (lang === 'ca' && slug) return `/ca/embarcacions/${slug}`;
+  if (!slug) return fleetIndexHref(lang);
+  if (lang === 'es') return `/barcos/${slug}`;
+  if (lang === 'ca') return `/ca/embarcacions/${slug}`;
+  if (lang === 'fr') return `/fr/bateaux/${slug}`;
+  if (lang === 'en') return `/en/boats/${slug}`;
   return fleetIndexHref(lang);
 };
 

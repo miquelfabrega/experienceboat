@@ -157,6 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/fr/a-propos', 0.4, 'yearly'),
     url('/fr/contact', 0.6, 'monthly'),
     url('/fr/bateaux', 0.5, 'monthly'),
+    ...getBarcoSlugs().map((slug) => url(`/fr/bateaux/${slug}`, 0.45, 'monthly')),
 
     // ─── EN — Boat rental ────────────────────────────────────────────────────
     url('/en', 0.7, 'weekly', NOW),
@@ -188,6 +189,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── EN — About / Contact ────────────────────────────────────────────────
     url('/en/about', 0.4, 'yearly'),
     url('/en/boats', 0.5, 'monthly'),
+    ...getBarcoSlugs().map((slug) => url(`/en/boats/${slug}`, 0.45, 'monthly')),
     url('/en/contact', 0.6, 'monthly'),
 
     // ─── EXCLUIDAS: /test/ (bloqueada en robots.ts) — NO aparece en este sitemap.

@@ -26,6 +26,8 @@ export function generateMetadata({
 
   const url = `${SITE}/ca/embarcacions/${barco.slug}`;
   const esUrl = `${SITE}/barcos/${barco.slug}`;
+  const frUrl = `${SITE}/fr/bateaux/${barco.slug}`;
+  const enUrl = `${SITE}/en/boats/${barco.slug}`;
   const title = `${barco.nombre} — Lloguer Roses`;
   const description = barco.descripcionCorta;
 
@@ -38,6 +40,8 @@ export function generateMetadata({
         'x-default': esUrl,
         es: esUrl,
         ca: url,
+        fr: frUrl,
+        en: enUrl,
       },
     },
     openGraph: {

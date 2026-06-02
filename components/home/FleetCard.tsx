@@ -26,6 +26,8 @@ const DETAIL_CTA: Record<Lang, string> = {
 const DETAIL_BASE: Partial<Record<Lang, string>> = {
   es: '/barcos',
   ca: '/ca/embarcacions',
+  fr: '/fr/bateaux',
+  en: '/en/boats',
 };
 
 export default function FleetCard({ barco, lang = 'es' }: { barco: Barco; lang?: Lang }) {
