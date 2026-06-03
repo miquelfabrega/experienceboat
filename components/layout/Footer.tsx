@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getBarcosActivos } from '@/lib/data/fleet';
 import CookieSettingsLink from '@/components/layout/CookieSettingsLink';
+import FooterLanguageSelector from '@/components/layout/FooterLanguageSelector';
 
 type Lang = 'es' | 'fr' | 'en' | 'ca';
 
@@ -30,14 +31,6 @@ const boatHref = (lang: Lang, slug: string): string =>
   : lang === 'ca' ? `/ca/embarcacions/${slug}`
   : lang === 'fr' ? '/fr/bateaux'
   : '/en/boats';
-
-// Idiomas disponibles (enlace al home de cada versión).
-const LANGUAGES: { code: Lang; label: string; href: string }[] = [
-  { code: 'es', label: 'Español', href: '/' },
-  { code: 'ca', label: 'Català', href: '/ca' },
-  { code: 'fr', label: 'Français', href: '/fr' },
-  { code: 'en', label: 'English', href: '/en' },
-];
 
 const COPY: Record<Lang, FooterCopy> = {
   es: {
@@ -338,23 +331,7 @@ export default function Footer({ lang = 'es' }: { lang?: Lang }) {
           </nav>
 
           {/* Selector de idioma */}
-          <nav
-            className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-gray-500"
-            aria-label="Language"
-          >
-            {LANGUAGES.map((l, i) => (
-              <span key={l.code} className="flex items-center gap-x-3">
-                {i > 0 && <span className="text-gray-600 select-none" aria-hidden>·</span>}
-                {l.code === lang ? (
-                  <span className="text-white font-semibold" aria-current="true">{l.label}</span>
-                ) : (
-                  <Link href={l.href} hrefLang={l.code} className="hover:text-white transition-colors">
-                    {l.label}
-                  </Link>
-                )}
-              </span>
-            ))}
-          </nav>
+          <FooterLanguageSelector lang={lang} />
         </div>
       </div>
     </footer>

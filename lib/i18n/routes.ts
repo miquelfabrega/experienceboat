@@ -125,6 +125,14 @@ function normalizePath(pathname: string): string {
 export function equivalentPath(pathname: string, target: Locale): string {
   const path = normalizePath(pathname);
 
+  // 0. Ficha individual de barco. La detalle existe en ES y CA; en EN/FR no, así
+  //    que boatHref enlaza al índice de flota localizado. Detectamos el slug del
+  //    barco para mantener al usuario en la MISMA ficha al cambiar a ES/CA.
+  const boatMatch =
+    path.match(/^\/barcos\/([^/]+)$/) ||
+    path.match(/^\/ca\/embarcacions\/([^/]+)$/);
+  if (boatMatch) return boatHref(boatMatch[1], target);
+
   // 1. Coincidencia exacta.
   for (const [id, table] of Object.entries(ROUTES)) {
     for (const loc of LOCALES) {
