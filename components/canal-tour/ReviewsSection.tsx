@@ -1,17 +1,50 @@
 import Script from 'next/script';
 
-export default function ReviewsSection() {
+const translations = {
+  es: {
+    eyebrow: 'Experiencias inolvidables',
+    title: 'Lo que dicen quienes han navegado los canales',
+    subtitle: 'Opiniones reales de familias, parejas y grupos que han sido capitanes por un día en Santa Margarita.',
+    noscript: 'Las reseñas requieren JavaScript para cargarse. Visita nuestro perfil de Google para leerlas.',
+  },
+  fr: {
+    eyebrow: 'Des expériences inoubliables',
+    title: 'Ce que disent ceux qui ont navigué sur les canaux',
+    subtitle: 'Avis authentiques de familles, couples et groupes devenus capitaines d\'un jour à Santa Margarita.',
+    noscript: 'Les avis nécessitent JavaScript pour se charger. Consultez notre profil Google pour les lire.',
+  },
+  en: {
+    eyebrow: 'Unforgettable experiences',
+    title: 'What guests who sailed the canals say',
+    subtitle: 'Real reviews from families, couples and groups who became captain for a day in Santa Margarita.',
+    noscript: 'Reviews require JavaScript to load. Visit our Google profile to read them.',
+  },
+  ca: {
+    eyebrow: 'Experiències inoblidables',
+    title: 'El que diuen els qui han navegat els canals',
+    subtitle: 'Opinions reals de famílies, parelles i grups que han estat capitans per un dia a Santa Margarida.',
+    noscript: 'Les ressenyes requereixen JavaScript per carregar-se. Visita el nostre perfil de Google per llegir-les.',
+  },
+};
+
+interface ReviewsSectionProps {
+  lang?: 'es' | 'fr' | 'en' | 'ca';
+}
+
+export default function ReviewsSection({ lang = 'es' }: ReviewsSectionProps) {
+  const t = translations[lang];
+
   return (
     <section className="py-20 bg-slate-50 border-b border-gray-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
-          <span className="text-sky-600 font-semibold text-sm uppercase tracking-widest">Experiencias inolvidables</span>
+          <span className="text-sky-600 font-semibold text-sm uppercase tracking-widest">{t.eyebrow}</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-4">
-          Lo que dicen quienes han vivido el atardecer
+          {t.title}
         </h2>
         <p className="text-gray-500 text-center mb-12 text-lg">
-          Lee las opiniones de parejas, familias y grupos que han disfrutado de un atardecer desde el mar con nosotros.
+          {t.subtitle}
         </p>
 
         <div
@@ -24,7 +57,7 @@ export default function ReviewsSection() {
           />
           <noscript>
             <p className="text-center text-gray-500 py-8">
-              Las reseñas requieren JavaScript para cargarse. Visita nuestro perfil de Google para leerlas.
+              {t.noscript}
             </p>
           </noscript>
         </div>

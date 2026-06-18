@@ -3,28 +3,27 @@
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { localizedHref } from '@/lib/i18n/routes';
 
 const translations = {
   es: {
     label: 'Canal Tour',
-    action: 'Reservar',
-    btnText: 'Consultar fechas'
+    action: 'Desde 90 €',
+    btnText: 'Reservar ahora'
   },
   fr: {
     label: 'Canal Tour',
-    action: 'Réserver',
-    btnText: 'Consulter les dates'
+    action: 'Dès 90 €',
+    btnText: 'Réserver'
   },
   en: {
     label: 'Canal Tour',
-    action: 'Book',
-    btnText: 'Check dates'
+    action: 'From €90',
+    btnText: 'Book now'
   },
   ca: {
     label: 'Canal Tour',
-    action: 'Reservar',
-    btnText: 'Consultar dates'
+    action: 'Des de 90 €',
+    btnText: 'Reservar ara'
   }
 };
 
@@ -65,7 +64,7 @@ export default function StickyCTA({ lang = 'es' }: StickyCTAProps) {
           </span>
         </div>
         <Link
-          href={localizedHref('bookings', lang)}
+          href="#reservar"
           className="flex items-center justify-center gap-2 bg-[var(--nav-accent)] hover:bg-[var(--nav-accent-hover)] text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md flex-1 text-center"
         >
           <Calendar className="w-5 h-5" />

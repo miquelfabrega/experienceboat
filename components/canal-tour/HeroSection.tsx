@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { localizedHref } from '@/lib/i18n/routes';
 
 const translations = {
   es: {
@@ -49,7 +48,7 @@ export default function HeroSection({ lang = 'es' }: HeroSectionProps) {
   const t = translations[lang];
 
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[62vh] min-h-[520px] flex items-center justify-center overflow-hidden">
       <Image
         src="/santa-margarita/hero-canal-tour.webp"
         alt={t.altText}
@@ -76,7 +75,7 @@ export default function HeroSection({ lang = 'es' }: HeroSectionProps) {
             {t.discoverBtn}
           </Link>
           <Link
-            href={localizedHref('bookings', lang)}
+            href="#reservar"
             className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold shadow-lg hover:brightness-110 transition-all active:scale-95 bg-[var(--nav-accent)] text-white"
           >
             {t.bookBtn}

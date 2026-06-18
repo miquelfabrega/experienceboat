@@ -5,7 +5,7 @@ import MarinaSection from '@/components/canal-tour/MarinaSection';
 import HighlightsSection from '@/components/canal-tour/HighlightsSection';
 import ProductBoxSection from '@/components/canal-tour/ProductBoxSection';
 import PracticalInfoSection from '@/components/canal-tour/PracticalInfoSection';
-import ReviewsSection from '@/components/sunset-experience/ReviewsSection';
+import ReviewsSection from '@/components/canal-tour/ReviewsSection';
 import SiloNavBlock from '@/components/SiloNavBlock';
 import StickyCTA from '@/components/canal-tour/StickyCTA';
 import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
@@ -130,7 +130,7 @@ export default function CanalTourSantaMargaritaPage() {
         <ProductBoxSection lang="es" />
         <MarinaSection lang="es" />
         <PracticalInfoSection lang="es" />
-        <ReviewsSection />
+        <ReviewsSection lang="es" />
         
         {/* Reservation Call to action segment */}
         <section className="py-20 bg-sky-50 border-b border-sky-100">
@@ -143,7 +143,7 @@ export default function CanalTourSantaMargaritaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/reservas"
+                href="#reservar"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-[var(--nav-accent)] hover:bg-[var(--nav-accent-hover)] text-white"
               >
                 Reservar Online

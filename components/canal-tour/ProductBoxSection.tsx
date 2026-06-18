@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, Users, ShieldCheck, MapPin, Euro } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const translations = {
     departure: 'Salida: Av. Clot Franquest Nord, Marina Santa Margarita, Roses',
     pricing: 'Tarifas: según temporada y modelo de barco — consulta precios actualizados al reservar',
     priceLabel: 'Precio orientativo',
-    priceValue: 'Consultar en reservas',
+    priceValue: 'Desde 90 €',
     reserveBtn: 'Reservar',
     whatsappBtn: 'WhatsApp',
     whatsappText: 'Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Canal%20Tour%20Santa%20Margarita',
@@ -31,7 +30,7 @@ const translations = {
     departure: 'Départ: Av. Clot Franquest Nord, Marina Santa Margarita, Roses',
     pricing: 'Tarifs: selon la saison et le modèle de bateau — consultez les prix actualisés lors de la réservation',
     priceLabel: 'Prix indicatif',
-    priceValue: 'Consulter les réservations',
+    priceValue: 'Dès 90 €',
     reserveBtn: 'Réserver',
     whatsappBtn: 'WhatsApp',
     whatsappText: 'Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20Canal%20Tour%20Santa%20Margarita',
@@ -48,7 +47,7 @@ const translations = {
     departure: 'Departure: Av. Clot Franquest Nord, Marina Santa Margarita, Roses',
     pricing: 'Rates: depending on season and boat model — check updated prices when booking',
     priceLabel: 'Indicative price',
-    priceValue: 'Check bookings',
+    priceValue: 'From €90',
     reserveBtn: 'Book',
     whatsappBtn: 'WhatsApp',
     whatsappText: 'Hello%2C%20I%27d%20like%20information%20about%20the%20Canal%20Tour%20Santa%20Margarita',
@@ -65,7 +64,7 @@ const translations = {
     departure: 'Sortida: Av. Clot Franquest Nord, Marina Santa Margarida, Roses',
     pricing: 'Tarifes: segons temporada i model de vaixell — consulteu preus actualitzats en reservar',
     priceLabel: 'Preu orientatiu',
-    priceValue: 'Consultar a reserves',
+    priceValue: 'Des de 90 €',
     reserveBtn: 'Reservar',
     whatsappBtn: 'WhatsApp',
     whatsappText: 'Hola%2C%20vull%20informaci%C3%B3%20sobre%20el%20Canal%20Tour%20Santa%20Margarida',
@@ -79,10 +78,8 @@ interface ProductBoxSectionProps {
 
 export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProps) {
   const t = translations[lang];
-  const reserveLink = lang === 'es' ? '/experiencias-barco-roses/canal-tour-santa-margarita' :
-                      lang === 'fr' ? '/fr/experiences-bateau-roses/canal-tour-santa-margarita' :
-                      lang === 'ca' ? '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida' :
-                      '/en/boat-experiences-roses/canal-tour-santa-margarita';
+  // Booking-first: scroll to the on-page Regiondo widget instead of routing away.
+  const reserveLink = '#reservar';
 
   return (
     <section className="py-16 bg-gradient-to-b from-slate-50 to-white border-b border-slate-100" id="producto">
@@ -100,14 +97,19 @@ export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProp
         </div>
 
         <div className="rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col lg:flex-row">
-          <div className="relative lg:w-[42%] min-h-[240px] lg:min-h-0 aspect-[4/3] lg:aspect-auto">
-            <Image
-              src="/santa-margarita/canal-tour-card.webp"
-              alt={t.altImage}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 42vw"
-            />
+          <div className="relative w-full lg:w-[42%] aspect-[9/16] lg:aspect-auto lg:min-h-[520px] bg-slate-900">
+            <video
+              className="absolute inset-0 h-full w-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster="/santa-margarita/canal-tour-7056-poster.jpg"
+              aria-label={t.altImage}
+            >
+              <source src="/santa-margarita/canal-tour-7056.mp4" type="video/mp4" />
+            </video>
           </div>
 
           <div className="flex-1 p-8 lg:p-10 flex flex-col">

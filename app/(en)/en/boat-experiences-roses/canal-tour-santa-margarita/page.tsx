@@ -5,7 +5,9 @@ import HighlightsSection from '@/components/canal-tour/HighlightsSection';
 import ProductBoxSection from '@/components/canal-tour/ProductBoxSection';
 import MarinaSection from '@/components/canal-tour/MarinaSection';
 import PracticalInfoSection from '@/components/canal-tour/PracticalInfoSection';
+import ReviewsSection from '@/components/canal-tour/ReviewsSection';
 import StickyCTA from '@/components/canal-tour/StickyCTA';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 
 export const dynamic = 'force-static';
 
@@ -127,11 +129,17 @@ export default function CanalTourEnPage() {
 
       <main id="main-content">
         <HeroSection lang="en" />
+        <RegiondoWidget
+          widgetId="c17a6fcb-a083-48ba-bb28-0225214443ee"
+          title="Book your Canal Tour"
+          subtitle="Real-time availability. Instant confirmation."
+        />
         <IntroSection lang="en" />
         <HighlightsSection lang="en" />
         <ProductBoxSection lang="en" />
         <MarinaSection lang="en" />
         <PracticalInfoSection lang="en" />
+        <ReviewsSection lang="en" />
 
         <section className="py-20 bg-sky-50 border-b border-sky-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -143,7 +151,7 @@ export default function CanalTourEnPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/en/booking"
+                href="#reservar"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-[var(--nav-accent)] hover:bg-[var(--nav-accent-hover)] text-white"
               >
                 Book Online
