@@ -50,11 +50,12 @@ export default function CapDeCreusCalesPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="/images/experiencias/cap-de-creus-calas.webp"
-          alt="Cap de Creus i cales en vaixell"
+          src="/images/hero/cap-de-creus-calas-hero.jpg"
+          alt="Vista aèria d'una cala del Cap de Creus amb vaixells fondejats en aigua turquesa"
           fill
           priority
           className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
