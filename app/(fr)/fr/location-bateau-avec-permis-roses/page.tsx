@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-licencia/HeroSection';
 import IntroSection from '@/components/pillar-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-licencia/BoatGrid';
@@ -20,15 +21,7 @@ export const metadata: Metadata = {
 title: 'Location de bateau avec permis à Roses',
   description:
     'Louez un bateau avec permis à Roses : baie, Cap de Creus et criques sauvages de la Costa Brava. Embarcations puissantes. Réservez.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
-    },
-  },
+  alternates: buildAlternates('rentalWithLicence', 'fr'),
   openGraph: {
 title: 'Location de bateau avec permis à Roses',
     description:

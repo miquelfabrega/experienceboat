@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import nextDynamic from 'next/dynamic';
 
 const BarcosClient = nextDynamic(
@@ -30,16 +31,7 @@ export const metadata: Metadata = {
   title: 'La nostra flota a Roses — amb i sense llicència',
   description:
     "Tota la flota d'Experience Boat a Roses: embarcacions amb llicència, sense llicència i opcions premium. Sortim des de la Marina de Santa Margarida.",
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/embarcacions',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/barcos',
-      es: 'https://www.experienceboat.es/barcos',
-      fr: 'https://www.experienceboat.es/fr/bateaux',
-      en: 'https://www.experienceboat.es/en/boats',
-      ca: 'https://www.experienceboat.es/ca/embarcacions',
-    },
-  },
+  alternates: buildAlternates('boatsIndex', 'ca'),
   openGraph: {
     title: 'La nostra flota a Roses — amb i sense llicència',
     description:

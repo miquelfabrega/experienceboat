@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-experiencias/HeroSection';
 import IntroSection from '@/components/pillar-experiencias/IntroSection';
 import ExperiencesGrid from '@/components/pillar-experiencias/ExperiencesGrid';
@@ -17,15 +18,7 @@ export const metadata: Metadata = {
 title: 'Boat Experiences in Roses — Cap de Creus & More',
   description:
     'Private boat excursions and sunset trips from Roses. The skipper takes you to Cap de Creus coves and Santa Margarita canals. Just your group on board.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-experiences-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses',
-    },
-  },
+  alternates: buildAlternates('experiences', 'en'),
   openGraph: {
 title: 'Boat Experiences in Roses — Cap de Creus & More',
     description:

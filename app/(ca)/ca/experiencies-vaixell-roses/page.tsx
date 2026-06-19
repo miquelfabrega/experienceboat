@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-experiencias/HeroSection';
 import IntroSection from '@/components/pillar-experiencias/IntroSection';
 import ExperiencesGrid from '@/components/pillar-experiencias/ExperiencesGrid';
@@ -26,16 +27,7 @@ export const metadata: Metadata = {
     'excursió Cap de Creus en vaixell',
     'experiències en vaixell Costa Brava',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses',
-    },
-  },
+  alternates: buildAlternates('experiences', 'ca'),
   openGraph: {
     title: 'Experiències en vaixell a Roses — Cap de Creus',
     description:

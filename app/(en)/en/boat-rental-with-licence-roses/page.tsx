@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-licencia/HeroSection';
 import IntroSection from '@/components/pillar-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-licencia/BoatGrid';
@@ -18,15 +19,7 @@ export const metadata: Metadata = {
 title: 'Boat Rental with Licence in Roses (Costa Brava)',
   description:
     'Rent a boat with your licence in Roses. Explore Cap de Creus, the Bay of Roses and wild Costa Brava coves. Marina de Santa Margarita.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
-    },
-  },
+  alternates: buildAlternates('rentalWithLicence', 'en'),
   openGraph: {
 title: 'Boat Rental with Licence in Roses',
     description:

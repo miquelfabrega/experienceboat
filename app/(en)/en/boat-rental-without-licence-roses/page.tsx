@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-sin-licencia/HeroSection';
 import IntroSection from '@/components/pillar-sin-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-sin-licencia/BoatGrid';
@@ -21,15 +22,7 @@ export const metadata: Metadata = {
 title: 'Boat Rental without Licence in Roses (Costa Brava)',
   description:
     'Rent a boat without a licence in Roses and explore the Bay of Roses, the Santa Margarita canals and Cap de Creus. No experience needed. Fully private. Book now.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
-    },
-  },
+  alternates: buildAlternates('rentalWithoutLicence', 'en'),
   openGraph: {
 title: 'Boat Rental without Licence in Roses',
     description:

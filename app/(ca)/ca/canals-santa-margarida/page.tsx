@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-canales/HeroSection';
 import IntroSection from '@/components/pillar-canales/IntroSection';
 import RouteSection from '@/components/pillar-canales/RouteSection';
@@ -28,16 +29,7 @@ export const metadata: Metadata = {
     'canals Santa Margarida amb vaixell',
     'lloguer vaixell Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/canals-santa-margarida',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/canales-santa-margarita',
-      ca: 'https://www.experienceboat.es/ca/canals-santa-margarida',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
-    },
-  },
+  alternates: buildAlternates('canals', 'ca'),
   openGraph: {
     title: 'Excursió canals Santa Margarida amb vaixell — Roses',
     description:

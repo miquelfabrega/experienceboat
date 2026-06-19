@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-canales/HeroSection';
 import IntroSection from '@/components/pillar-canales/IntroSection';
 import RouteSection from '@/components/pillar-canales/RouteSection';
@@ -22,15 +23,7 @@ export const metadata: Metadata = {
 title: 'Canales de Santa Margarita en barco — Roses',
   description:
     'Explora los canales de Santa Margarita desde el agua. Casas frente al mar y la Costa Brava más auténtica. Salidas privadas desde Roses.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/canales-santa-margarita',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/canales-santa-margarita',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses',
-    },
-  },
+  alternates: buildAlternates('canals', 'es'),
   openGraph: {
 title: 'Canales de Santa Margarita en barco — Roses',
     description:

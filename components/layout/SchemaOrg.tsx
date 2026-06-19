@@ -3,7 +3,10 @@
 // GBP_URL: URL del perfil de Google Business Profile (google.com/maps/place/...)
 // GETYOURGUIDE_URL: URL de la actividad en GetYourGuide
 // CIVITATIS_URL: URL de la actividad en Civitatis
-const REVIEW_COUNT = 47; // TODO: reemplazar con el número real de reseñas GBP
+// aggregateRating retirado del JSON-LD: los valores eran placeholder (47 reseñas,
+// 5.0 hardcodeado) e incoherentes con la UI (190). Reincorporar SOLO con datos
+// verificables de GBP + items Review reales, para no arriesgar una acción manual
+// de Google por reseñas no auténticas.
 const GBP_URL = 'https://maps.google.com/?q=Experience+Boat+Roses'; // TODO: URL exacta GBP
 const GETYOURGUIDE_URL = ''; // TODO: añadir cuando esté disponible
 const CIVITATIS_URL = '';    // TODO: añadir cuando esté disponible
@@ -34,13 +37,6 @@ export default function SchemaOrg() {
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "08:00",
       "closes": "20:00"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": 5.0,
-      "reviewCount": REVIEW_COUNT,
-      "bestRating": 5,
-      "worstRating": 1
     },
     "sameAs": [
       "https://www.instagram.com/experienceboat_roses/",

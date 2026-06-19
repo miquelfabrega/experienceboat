@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/sobre-nosotros/HeroSection';
 import StatsSection from '@/components/sobre-nosotros/StatsSection';
 import IntroSection from '@/components/sobre-nosotros/IntroSection';
@@ -54,15 +55,7 @@ function LocalBusinessSchema() {
 export const metadata: Metadata = {
   title: 'About Us — Boat Rental in Roses',
   description: 'Your boat rental company in Roses, Costa Brava. 8 boats of our own, sailing the bay and Cap de Creus. Meet the Experience Boat team.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/about',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/sobre-nosotros',
-      es: 'https://www.experienceboat.es/sobre-nosotros',
-      fr: 'https://www.experienceboat.es/fr/a-propos',
-      en: 'https://www.experienceboat.es/en/about',
-    },
-  },
+  alternates: buildAlternates('about', 'en'),
   openGraph: {
     title: 'About Us — Boat Rental in Roses',
     description: 'Your boat rental company in Roses, Costa Brava. 8 boats of our own, sailing the bay and Cap de Creus.',

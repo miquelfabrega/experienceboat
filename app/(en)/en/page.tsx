@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroCarousel from '@/components/home/HeroCarousel';
 import IntroSection from '@/components/home/IntroSection';
 import ServiceCards from '@/components/home/ServiceCards';
@@ -16,15 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Boat rental in Roses — Costa Brava',
     description: 'Boat rental with and without licence in Roses, Costa Brava. Private departures from the Santa Margarita canals to Cap de Creus. Online booking.',
-    alternates: {
-      canonical: 'https://www.experienceboat.es/en',
-      languages: {
-        'x-default': 'https://www.experienceboat.es',
-        es: 'https://www.experienceboat.es',
-        fr: 'https://www.experienceboat.es/fr',
-        en: 'https://www.experienceboat.es/en',
-      },
-    },
+    alternates: buildAlternates('home', 'en'),
     openGraph: {
 title: 'Boat rental in Roses',
       description: 'Boat rental with and without licence in Roses, Costa Brava. Private departures from the Santa Margarita canals.',

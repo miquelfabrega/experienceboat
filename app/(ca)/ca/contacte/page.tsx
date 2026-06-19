@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import ContactForm from '@/components/contacto/ContactForm';
@@ -14,16 +15,7 @@ export const metadata: Metadata = {
     'reservar vaixell Roses',
     'Experience Boat contacte',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/contacte',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/contacto',
-      es: 'https://www.experienceboat.es/contacto',
-      ca: 'https://www.experienceboat.es/ca/contacte',
-      fr: 'https://www.experienceboat.es/fr/contact',
-      en: 'https://www.experienceboat.es/en/contact',
-    },
-  },
+  alternates: buildAlternates('contact', 'ca'),
   openGraph: {
     title: 'Contacte — Lloguer de vaixells a Roses',
     description:

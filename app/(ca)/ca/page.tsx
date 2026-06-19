@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroCarousel from '@/components/home/HeroCarousel';
 import IntroSection from '@/components/home/IntroSection';
 import ServiceCards from '@/components/home/ServiceCards';
@@ -16,16 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Lloguer d\'embarcacions a Roses — Costa Brava',
     description: 'Lloguer d\'embarcacions amb i sense llicència a Roses, Costa Brava. Sortides privades des dels canals de Santa Margarida cap al Cap de Creus. Reserva en línia.',
-    alternates: {
-      canonical: 'https://www.experienceboat.es/ca',
-      languages: {
-        'x-default': 'https://www.experienceboat.es',
-        es: 'https://www.experienceboat.es',
-        ca: 'https://www.experienceboat.es/ca',
-        fr: 'https://www.experienceboat.es/fr',
-        en: 'https://www.experienceboat.es/en',
-      },
-    },
+    alternates: buildAlternates('home', 'ca'),
     openGraph: {
       title: 'Lloguer d\'embarcacions a Roses',
       description: 'Lloguer d\'embarcacions amb i sense llicència a Roses, Costa Brava. Sortides privades des dels canals de Santa Margarida.',

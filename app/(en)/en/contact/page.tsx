@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import ContactForm from '@/components/contacto/ContactForm';
@@ -9,15 +10,7 @@ export const metadata: Metadata = {
   title: 'Contact Experience Boat — Boat Hire in Roses',
   description:
     'Contact us to book your boat in Roses or to answer any questions. We are at Marina de Santa Margarita. We respond within 24 hours.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/contact',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/contacto',
-      es: 'https://www.experienceboat.es/contacto',
-      fr: 'https://www.experienceboat.es/fr/contact',
-      en: 'https://www.experienceboat.es/en/contact',
-    },
-  },
+  alternates: buildAlternates('contact', 'en'),
   openGraph: {
     title: 'Contact Experience Boat — Boat Hire in Roses',
     description:

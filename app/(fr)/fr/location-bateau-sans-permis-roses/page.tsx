@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-sin-licencia/HeroSection';
 import IntroSection from '@/components/pillar-sin-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-sin-licencia/BoatGrid';
@@ -18,18 +19,10 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-title: 'Location de bateau sans permis à Roses',
+title: 'Location de bateau sans permis à Roses — Costa Brava',
   description:
-    'Louez un bateau sans permis à Roses : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
-    },
-  },
+    'Louez un bateau sans permis à Roses (Rosas), Costa Brava : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
+  alternates: buildAlternates('rentalWithoutLicence', 'fr'),
   openGraph: {
 title: 'Location de bateau sans permis à Roses',
     description:

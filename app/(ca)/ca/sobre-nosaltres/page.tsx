@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/sobre-nosotros/HeroSection';
 import IntroSection from '@/components/sobre-nosotros/IntroSection';
 import StatsSection from '@/components/sobre-nosotros/StatsSection';
@@ -18,16 +19,7 @@ export const metadata: Metadata = {
     'lloguer vaixell Roses',
     'Experience Boat Costa Brava',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/sobre-nosaltres',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/sobre-nosotros',
-      es: 'https://www.experienceboat.es/sobre-nosotros',
-      ca: 'https://www.experienceboat.es/ca/sobre-nosaltres',
-      fr: 'https://www.experienceboat.es/fr/a-propos',
-      en: 'https://www.experienceboat.es/en/about',
-    },
-  },
+  alternates: buildAlternates('about', 'ca'),
   openGraph: {
     title: 'Sobre nosaltres | Experience Boat',
     description:

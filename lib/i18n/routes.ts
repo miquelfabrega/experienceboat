@@ -49,6 +49,13 @@ const ROUTES = {
     ca: '/ca/canals-santa-margarida',
   },
 
+  canalTour: {
+    es: '/experiencias-barco-roses/canal-tour-santa-margarita',
+    en: '/en/boat-experiences-roses/canal-tour-santa-margarita',
+    fr: '/fr/experiences-bateau-roses/canal-tour-santa-margarita',
+    ca: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida',
+  },
+
   blog: { es: '/blog', en: '/en/blog', fr: '/fr/blog', ca: '/ca/blog' },
 
   contact: {
@@ -81,6 +88,41 @@ const ROUTES = {
 
 /** route-ids válidos. El tipado impide pasar uno inexistente a `localizedHref`. */
 export type RouteId = keyof typeof ROUTES;
+
+/** Host canónico (www). Fuente única para canonicals y hreflang absolutos. */
+export const SITE_URL = 'https://www.experienceboat.es';
+
+/** Convierte un path interno ('/', '/fr', '/barcos') en URL absoluta canónica. */
+export function absUrl(path: string): string {
+  if (!path || path === '/') return SITE_URL;
+  return `${SITE_URL}${path}`;
+}
+
+/**
+ * Genera el bloque `alternates` (canonical + hreflang recíproco) para un route-id
+ * canónico, en el locale dado. Emite hreflang SOLO para los locales donde la página
+ * existe realmente (entradas `null` en la tabla se omiten → sin reciprocidad falsa).
+ * `x-default` apunta a ES (mercado primario).
+ *
+ * Uso en una page: `alternates: buildAlternates('canals', 'fr')`.
+ */
+export function buildAlternates(
+  routeId: RouteId,
+  locale: Locale,
+): { canonical: string; languages: Record<string, string> } {
+  const table = ROUTES[routeId];
+  const languages: Record<string, string> = {
+    'x-default': absUrl(table.es ?? '/'),
+  };
+  for (const loc of LOCALES) {
+    const p = table[loc];
+    if (p) languages[loc] = absUrl(p);
+  }
+  return {
+    canonical: absUrl(table[locale] ?? table.es ?? '/'),
+    languages,
+  };
+}
 
 /**
  * Devuelve la URL del route-id en el locale dado.

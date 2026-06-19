@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { blogPostsCa } from '@/lib/data/blog-ca';
@@ -9,16 +10,7 @@ export const metadata: Metadata = {
   title: 'Blog nàutic — Consells i rutes en vaixell | Experience Boat',
   description:
     'Guies, rutes i consells per navegar per la Costa Brava: esnòrquel, Cap de Creus, lloguer sense llicència i molt més.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/blog',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog',
-      es: 'https://www.experienceboat.es/blog',
-      fr: 'https://www.experienceboat.es/fr/blog',
-      en: 'https://www.experienceboat.es/en/blog',
-      ca: 'https://www.experienceboat.es/ca/blog',
-    },
-  },
+  alternates: buildAlternates('blog', 'ca'),
   openGraph: {
     title: 'Blog nàutic — Experience Boat',
     description: 'Guies, rutes i consells per navegar per la Costa Brava.',

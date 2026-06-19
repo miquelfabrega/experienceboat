@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-licencia/HeroSection';
 import IntroSection from '@/components/pillar-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-licencia/BoatGrid';
@@ -28,16 +29,7 @@ export const metadata: Metadata = {
     'navegar Costa Brava',
     'lloguer embarcacions Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
-    },
-  },
+  alternates: buildAlternates('rentalWithLicence', 'ca'),
   openGraph: {
     title: 'Lloguer de vaixell amb llicència a Roses',
     description:

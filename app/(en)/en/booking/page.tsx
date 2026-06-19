@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Phone, MessageCircle, Mail, Anchor, Clock, Shield } from 'lucide-react';
 
@@ -13,16 +14,7 @@ export const metadata: Metadata = {
     'boat rental Roses',
     'boat booking Costa Brava',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/booking',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/reservas',
-      es: 'https://www.experienceboat.es/reservas',
-      ca: 'https://www.experienceboat.es/ca/reserves',
-      fr: 'https://www.experienceboat.es/fr/reservation',
-      en: 'https://www.experienceboat.es/en/booking',
-    },
-  },
+  alternates: buildAlternates('bookings', 'en'),
   openGraph: {
     title: 'Book a boat in Roses',
     description:

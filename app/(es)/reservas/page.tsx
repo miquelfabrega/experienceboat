@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Phone, MessageCircle, Mail, Anchor, Clock, Shield } from 'lucide-react';
 
@@ -8,16 +9,7 @@ export const metadata: Metadata = {
   title: 'Reservar barco en Roses',
   description:
     'Reserva tu barco en Roses con Experience Boat. Sin licencia, con licencia o excursiones privadas. Respuesta inmediata por WhatsApp o email.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/reservas',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/reservas',
-      es: 'https://www.experienceboat.es/reservas',
-      ca: 'https://www.experienceboat.es/ca/reserves',
-      fr: 'https://www.experienceboat.es/fr/reservation',
-      en: 'https://www.experienceboat.es/en/booking',
-    },
-  },
+  alternates: buildAlternates('bookings', 'es'),
   openGraph: {
     title: 'Reservar barco en Roses',
     description:

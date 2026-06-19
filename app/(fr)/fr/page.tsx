@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroCarousel from '@/components/home/HeroCarousel';
 import IntroSection from '@/components/home/IntroSection';
 import ServiceCards from '@/components/home/ServiceCards';
@@ -15,16 +16,8 @@ import { homeDataFr } from '@/lib/data/home-fr';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Location de bateau à Roses — Costa Brava',
-    description: 'Location de bateaux avec et sans permis à Roses, Costa Brava. Sorties privées depuis les canaux de Santa Margarita vers le Cap de Creus. Réservation en ligne.',
-    alternates: {
-      canonical: 'https://www.experienceboat.es/fr',
-      languages: {
-        'x-default': 'https://www.experienceboat.es',
-        es: 'https://www.experienceboat.es',
-        fr: 'https://www.experienceboat.es/fr',
-        en: 'https://www.experienceboat.es/en',
-      },
-    },
+    description: 'Location de bateaux avec et sans permis à Roses (Rosas), Costa Brava. Sorties privées depuis les canaux de Santa Margarita vers le Cap de Creus. Réservation en ligne.',
+    alternates: buildAlternates('home', 'fr'),
     openGraph: {
 title: 'Location de bateau à Roses',
       description: 'Location de bateaux avec et sans permis à Roses, Costa Brava. Sorties privées depuis les canaux de Santa Margarita.',

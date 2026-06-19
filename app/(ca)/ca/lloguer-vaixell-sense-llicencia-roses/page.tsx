@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/pillar-sin-licencia/HeroSection';
 import IntroSection from '@/components/pillar-sin-licencia/IntroSection';
 import BoatGrid from '@/components/pillar-sin-licencia/BoatGrid';
@@ -21,16 +22,7 @@ export const metadata: Metadata = {
   title: 'Lloguer Vaixell sense Llicència Roses | Costa Brava',
   description:
     'Llogueu un vaixell sense llicència a Roses i descobriu la badia, els canals de Santa Margarida i el Cap de Creus. Sense experiència, tot privat. Reserveu ja.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses',
-    },
-  },
+  alternates: buildAlternates('rentalWithoutLicence', 'ca'),
   openGraph: {
     title: 'Lloguer Vaixell sense Llicència Roses | Costa Brava',
     description:
