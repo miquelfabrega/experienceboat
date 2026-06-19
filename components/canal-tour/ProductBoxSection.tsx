@@ -100,9 +100,7 @@ export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProp
           <div className="relative w-full lg:w-[42%] aspect-[9/16] lg:aspect-auto lg:min-h-[520px] bg-slate-900">
             <video
               className="absolute inset-0 h-full w-full object-cover"
-              autoPlay
-              loop
-              muted
+              controls
               playsInline
               preload="metadata"
               poster="/santa-margarita/canal-tour-7056-poster.jpg"

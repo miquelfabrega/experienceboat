@@ -125,9 +125,9 @@ export default function CanalTourSantaMargaritaPage() {
           title="Reserva tu Canal Tour"
           subtitle="Disponibilidad en tiempo real. Confirmación inmediata."
         />
+        <ProductBoxSection lang="es" />
         <IntroSection lang="es" />
         <HighlightsSection lang="es" />
-        <ProductBoxSection lang="es" />
         <MarinaSection lang="es" />
         <PracticalInfoSection lang="es" />
         <ReviewsSection lang="es" />

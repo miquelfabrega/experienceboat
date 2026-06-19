@@ -170,9 +170,9 @@ export default function CanalTourFrPage() {
           title="Réservez votre Canal Tour"
           subtitle="Disponibilité en temps réel. Confirmation immédiate."
         />
+        <ProductBoxSection lang="fr" />
         <IntroSection lang="fr" />
         <HighlightsSection lang="fr" />
-        <ProductBoxSection lang="fr" />
         <MarinaSection lang="fr" />
         <PracticalInfoSection lang="fr" />
         <ReviewsSection lang="fr" />

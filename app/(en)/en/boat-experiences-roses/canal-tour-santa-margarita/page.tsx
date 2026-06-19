@@ -134,9 +134,9 @@ export default function CanalTourEnPage() {
           title="Book your Canal Tour"
           subtitle="Real-time availability. Instant confirmation."
         />
+        <ProductBoxSection lang="en" />
         <IntroSection lang="en" />
         <HighlightsSection lang="en" />
-        <ProductBoxSection lang="en" />
         <MarinaSection lang="en" />
         <PracticalInfoSection lang="en" />
         <ReviewsSection lang="en" />

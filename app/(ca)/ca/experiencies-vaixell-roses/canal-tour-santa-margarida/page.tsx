@@ -135,9 +135,9 @@ export default function CanalTourSantaMargaridaPage() {
           title="Reserveu el vostre Canal Tour"
           subtitle="Disponibilitat en temps real. Confirmació immediata."
         />
+        <ProductBoxSection lang="ca" />
         <IntroSection lang="ca" />
         <HighlightsSection lang="ca" />
-        <ProductBoxSection lang="ca" />
         <MarinaSection lang="ca" />
         <PracticalInfoSection lang="ca" />
         <ReviewsSection lang="ca" />
