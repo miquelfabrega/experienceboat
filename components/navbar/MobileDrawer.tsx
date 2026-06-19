@@ -29,7 +29,7 @@ export function MobileDrawer({
   const t = CHROME[lang];
   const expItems = EXPERIENCES_MENU[lang];
   const links = [
-    { name: t.canals, href: localizedHref('canals', lang) },
+    { name: t.canalTour, href: localizedHref('canalTour', lang) },
     { name: t.blog, href: localizedHref('blog', lang) },
   ];
 

@@ -16,7 +16,8 @@ export interface ChromeCopy {
   noLicenceCta: string;     // "Descubre las experiencias con patrón"
   experiences: string;      // navLabel "Experiencias"
   allExperiences: string;   // "Todas las experiencias →"
-  canals: string;           // link "Canales Santa Margarita"
+  canals: string;           // link "Canales Santa Margarita" (guía pilar, ahora en footer)
+  canalTour: string;        // link nav "Canal Tour Santa Margarita" (experiencia)
   blog: string;             // link "Blog"
   book: string;             // CTA "Reservar →"
   menu: string;             // drawer "Menú"
@@ -39,6 +40,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     experiences: 'Experiencias',
     allExperiences: 'Todas las experiencias →',
     canals: 'Canales Santa Margarita',
+    canalTour: 'Canal Tour Santa Margarita',
     blog: 'Blog',
     book: 'Reservar',
     menu: 'Menú',
@@ -59,6 +61,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     experiences: 'Experiències',
     allExperiences: 'Totes les experiències →',
     canals: 'Canals Santa Margarida',
+    canalTour: 'Canal Tour Santa Margarida',
     blog: 'Blog',
     book: 'Reservar',
     menu: 'Menú',
@@ -79,6 +82,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     experiences: 'Expériences',
     allExperiences: 'Toutes les expériences →',
     canals: 'Canaux Santa Margarita',
+    canalTour: 'Canal Tour Santa Margarita',
     blog: 'Blog',
     book: 'Réserver',
     menu: 'Menu',
@@ -99,6 +103,7 @@ export const CHROME: Record<Locale, ChromeCopy> = {
     experiences: 'Experiences',
     allExperiences: 'All experiences →',
     canals: 'Santa Margarita Canals',
+    canalTour: 'Canal Tour Santa Margarita',
     blog: 'Blog',
     book: 'Book',
     menu: 'Menu',
