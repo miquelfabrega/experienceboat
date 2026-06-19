@@ -49,10 +49,11 @@ export default function HeroSection({ lang = 'es' }: { lang?: Lang }) {
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/licencia-roses-hero/1600/900"
+        src="/images/hero/con-licencia-hero-1320.jpg"
         alt={texts.alt}
         fill
         className="object-cover"
+        sizes="100vw"
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
