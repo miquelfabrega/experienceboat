@@ -27,7 +27,7 @@ const t: Record<Lang, {
       {
         id: 'excursions',
         title: 'Excursions privades',
-        image: 'https://picsum.photos/seed/excursion-cap-creus/600/400',
+        image: '/images/experiencias/excursiones-privadas-hero.webp',
         desc: 'Exploreu el Cap de Creus, les cales i la badia de Roses amb patró inclòs. Ruta adaptada al vostre grup.',
         duration: 'Mig dia o dia complet',
         price: 'des de 300 €',
@@ -47,7 +47,7 @@ const t: Record<Lang, {
       {
         id: 'canal-tour',
         title: 'Canal Tour Santa Margarida',
-        image: 'https://picsum.photos/seed/canal-tour/600/400',
+        image: '/santa-margarita/hero-canal-tour.webp',
         desc: 'Convertiu-vos en capità explorant els impressionants canals de Santa Margarida amb les nostres embarcacions sense llicència.',
         duration: '90 minuts',
         price: 'Consultar tarifes',
@@ -57,7 +57,7 @@ const t: Record<Lang, {
       {
         id: 'cap-de-creus-cales',
         title: 'Cap de Creus — 3 Cales',
-        image: 'https://picsum.photos/seed/cap-de-creus-calas/600/400',
+        image: '/images/hero/cap-de-creus-calas-hero.jpg',
         desc: 'Excursió guiada de 3 a 5 hores fins al Cap de Creus amb bany a 3 cales verges només accessibles per mar.',
         duration: '3 a 5 hores',
         price: 'des de 65 €',
@@ -67,7 +67,7 @@ const t: Record<Lang, {
       {
         id: 'cadaques',
         title: 'Excursió a Cadaqués',
-        image: 'https://picsum.photos/seed/cadaques-excursion/600/400',
+        image: '/cadaques/port-lligat.webp',
         desc: 'Arribeu per mar al poble blanc de Dalí amb visita guiada i temps lliure per passejar o dinar.',
         duration: 'Dia complet',
         price: 'des de 75 €',
@@ -77,7 +77,7 @@ const t: Record<Lang, {
       {
         id: 'coves-esnorquel',
         title: 'Coves i Esnòrquel',
-        image: 'https://picsum.photos/seed/cuevas-snorkel/600/400',
+        image: '/images/experiencias/cuevas-snorkel.webp',
         desc: 'Sortida en vaixell per les coves marines del Cap de Creus amb parades per fer esnòrquel. Material inclòs.',
         duration: 'Mig dia',
         price: 'Consultar tarifes',
@@ -94,7 +94,7 @@ const t: Record<Lang, {
       {
         id: 'excursiones',
         title: 'Excursiones privadas',
-        image: 'https://picsum.photos/seed/excursion-cap-creus/600/400',
+        image: '/images/experiencias/excursiones-privadas-hero.webp',
         desc: 'Explora el Cap de Creus, las calas y la bahía de Roses con patrón incluido. Ruta adaptada a tu grupo.',
         duration: 'Medio día o día completo',
         price: 'desde 300 €',
@@ -114,7 +114,7 @@ const t: Record<Lang, {
       {
         id: 'canal-tour',
         title: 'Canal Tour Santa Margarita',
-        image: 'https://picsum.photos/seed/canal-tour/600/400',
+        image: '/santa-margarita/hero-canal-tour.webp',
         desc: 'Conviértete en capitán explorando los impresionantes canales de Santa Margarita en nuestros barcos sin licencia.',
         duration: '90 minutos',
         price: 'Consultar tarifas',
@@ -124,7 +124,7 @@ const t: Record<Lang, {
       {
         id: 'cap-de-creus-calas',
         title: 'Cap de Creus — 3 Calas',
-        image: 'https://picsum.photos/seed/cap-de-creus-calas/600/400',
+        image: '/images/hero/cap-de-creus-calas-hero.jpg',
         desc: 'Excursión guiada de 3 a 5 horas hasta el Cap de Creus con baño en 3 calas vírgenes solo accesibles por mar.',
         duration: '3 a 5 horas',
         price: 'desde 65 €',
@@ -134,7 +134,7 @@ const t: Record<Lang, {
       {
         id: 'cadaques',
         title: 'Excursión a Cadaqués',
-        image: 'https://picsum.photos/seed/cadaques-excursion/600/400',
+        image: '/cadaques/port-lligat.webp',
         desc: 'Llega por mar al pueblo blanco de Dalí con visita guiada y tiempo libre para pasear o comer.',
         duration: 'Día completo',
         price: 'desde 75 €',
@@ -144,7 +144,7 @@ const t: Record<Lang, {
       {
         id: 'cuevas-snorkel',
         title: 'Cuevas & Snorkel',
-        image: 'https://picsum.photos/seed/cuevas-snorkel/600/400',
+        image: '/images/experiencias/cuevas-snorkel.webp',
         desc: 'Salida en barco por las cuevas marinas del Cap de Creus con paradas para hacer snorkel. Equipo incluido.',
         duration: 'Medio día',
         price: 'Consultar tarifas',
@@ -161,7 +161,7 @@ const t: Record<Lang, {
       {
         id: 'excursions',
         title: 'Excursions privées',
-        image: 'https://picsum.photos/seed/excursion-cap-creus/600/400',
+        image: '/images/experiencias/excursiones-privadas-hero.webp',
         desc: 'Explorez le Cap de Creus, les criques et la baie de Roses avec skipper inclus. Itinéraire adapté à votre groupe.',
         duration: 'Demi-journée ou journée complète',
         price: 'à partir de 300\u00a0€',
@@ -181,7 +181,7 @@ const t: Record<Lang, {
       {
         id: 'canal-tour',
         title: 'Canal Tour Santa Margarita',
-        image: 'https://picsum.photos/seed/canal-tour/600/400',
+        image: '/santa-margarita/hero-canal-tour.webp',
         desc: 'Devenez capitaine et explorez les impressionnants canaux de Santa Margarita à bord de nos bateaux sans permis.',
         duration: '90 minutes',
         price: 'Sur devis',
@@ -191,7 +191,7 @@ const t: Record<Lang, {
       {
         id: 'cap-de-creus-criques',
         title: 'Cap de Creus — 3 Criques',
-        image: '/images/experiencias/cap-de-creus-calas.webp',
+        image: '/images/hero/cap-de-creus-calas-hero.jpg',
         desc: 'Excursion guidée de 3 à 5 heures jusqu’au Cap de Creus avec baignade dans 3 criques vierges accessibles uniquement par la mer.',
         duration: '3 à 5 heures',
         price: 'à partir de 65 €',
@@ -228,7 +228,7 @@ const t: Record<Lang, {
       {
         id: 'private-excursions',
         title: 'Private excursions',
-        image: 'https://picsum.photos/seed/excursion-cap-creus/600/400',
+        image: '/images/experiencias/excursiones-privadas-hero.webp',
         desc: 'Explore Cap de Creus, hidden coves and the Bay of Roses with a skipper included. Route tailored to your group.',
         duration: 'Half day or full day',
         price: 'from €300',
@@ -248,7 +248,7 @@ const t: Record<Lang, {
       {
         id: 'canal-tour',
         title: 'Canal Tour Santa Margarita',
-        image: 'https://picsum.photos/seed/canal-tour/600/400',
+        image: '/santa-margarita/hero-canal-tour.webp',
         desc: 'Become the captain and explore the stunning Santa Margarita canals aboard our licence-free boats.',
         duration: '90 minutes',
         price: 'On request',
@@ -258,7 +258,7 @@ const t: Record<Lang, {
       {
         id: 'cap-de-creus-coves',
         title: 'Cap de Creus — 3 Coves',
-        image: '/images/experiencias/cap-de-creus-calas.webp',
+        image: '/images/hero/cap-de-creus-calas-hero.jpg',
         desc: 'Guided 3 to 5 hour trip to Cap de Creus with swimming at 3 unspoilt coves only reachable by sea.',
         duration: '3 to 5 hours',
         price: 'from €65',
