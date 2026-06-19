@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Boat trip to Cap de Creus from Roses',
   description: 'Guide to the boat route from the Santa Margarita canals to Cap de Creus. Coves, food stops and everything you need to know before setting off.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
-    },
-  },
+  alternates: buildAlternates('blogCapCreus', 'en'),
   openGraph: {
     title: 'Boat trip to Cap de Creus from Roses',
     description: 'Guide to the boat route from the Santa Margarita canals to Cap de Creus. Coves, stops and all you need to know.',

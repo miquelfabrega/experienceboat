@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,16 +12,7 @@ export const metadata: Metadata = {
     'grottes marines Cap de Creus',
     'balade en bateau Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/experiences-bateau-roses/grottes-snorkeling',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/cuevas-snorkel',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/cuevas-snorkel',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/coves-esnorquel',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/grottes-snorkeling',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/caves-snorkeling',
-    },
-  },
+  alternates: buildAlternates('expSnorkel', 'fr'),
   openGraph: {
     title: 'Grottes et Snorkeling en Bateau à Roses | ExperienceBoat',
     description:

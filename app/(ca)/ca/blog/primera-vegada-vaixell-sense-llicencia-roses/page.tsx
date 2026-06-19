@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar } from 'lucide-react';
@@ -15,16 +16,7 @@ export const metadata: Metadata = {
     'primera vegada vaixell',
     'navegar sense titulació',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/blog/primera-vegada-vaixell-sense-llicencia-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/blog/first-time-boat-no-licence-roses',
-      ca: 'https://www.experienceboat.es/ca/blog/primera-vegada-vaixell-sense-llicencia-roses',
-    },
-  },
+  alternates: buildAlternates('blogFirstTime', 'ca'),
   openGraph: {
     title: 'Primera vegada en vaixell sense llicència: tot el que cal saber',
     description:

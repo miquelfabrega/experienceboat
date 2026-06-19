@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,16 +12,7 @@ export const metadata: Metadata = {
     'coves marines Cap de Creus',
     'passeig en vaixell Roses',
   ],
-  alternates: {
-    canonical:
-      'https://www.experienceboat.es/ca/experiencies-vaixell-roses/coves-esnorquel',
-    languages: {
-      'x-default':
-        'https://www.experienceboat.es/experiencias-barco-roses/cuevas-snorkel',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/cuevas-snorkel',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/coves-esnorquel',
-    },
-  },
+  alternates: buildAlternates('expSnorkel', 'ca'),
   openGraph: {
     title: 'Coves i Esnòrquel en Vaixell a Roses | ExperienceBoat',
     description:

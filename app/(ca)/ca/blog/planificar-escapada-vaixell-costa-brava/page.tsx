@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar } from 'lucide-react';
@@ -15,16 +16,7 @@ export const metadata: Metadata = {
     'navegar Costa Brava',
     'planificar sortida vaixell',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/blog/planificar-escapada-vaixell-costa-brava',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      es: 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
-      en: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
-      ca: 'https://www.experienceboat.es/ca/blog/planificar-escapada-vaixell-costa-brava',
-    },
-  },
+  alternates: buildAlternates('blogPlanning', 'ca'),
   openGraph: {
     title: 'Com planificar la teva escapada en vaixell per la Costa Brava',
     description:

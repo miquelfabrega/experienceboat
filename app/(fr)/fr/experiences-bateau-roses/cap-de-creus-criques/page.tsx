@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,16 +12,7 @@ export const metadata: Metadata = {
     'criques Cap de Creus',
     'balade en bateau Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/experiences-bateau-roses/cap-de-creus-criques',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/cap-de-creus-calas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/cap-de-creus-calas',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/cap-de-creus-cales',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/cap-de-creus-criques',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/cap-de-creus-coves',
-    },
-  },
+  alternates: buildAlternates('expCapCreus', 'fr'),
   openGraph: {
     title: 'Cap de Creus et Criques en Bateau | ExperienceBoat',
     description:

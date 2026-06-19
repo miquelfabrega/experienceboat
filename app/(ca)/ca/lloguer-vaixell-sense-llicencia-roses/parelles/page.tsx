@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroParejas from '@/components/sin-licencia-parejas/HeroParejas';
 import IntroParejas from '@/components/sin-licencia-parejas/IntroParejas';
 import PorQueParejas from '@/components/sin-licencia-parejas/PorQueParejas';
@@ -22,16 +23,7 @@ export const metadata: Metadata = {
   title: 'Vaixell sense Llicència Roses per a Parelles',
   description:
     'Pla exclusiu per a parelles a la Costa Brava: vaixell sense llicència pels canals de Santa Margarida i cales amagades al vostre ritme. Reserveu en línia.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses/parelles',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses/parelles',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
-    },
-  },
+  alternates: buildAlternates('rentalNoLicenceCouples', 'ca'),
   openGraph: {
     title: 'Vaixell sense Llicència Roses per a Parelles',
     description:

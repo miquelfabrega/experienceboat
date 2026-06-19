@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Best Snorkelling Spots on the Costa Brava',
   description: 'Discover the must-visit coves and marine reserves for snorkelling on the Costa Brava. Cala Montjoi, Medes Islands, Cap de Creus and more.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      es: 'https://www.experienceboat.es/blog/mejores-lugares-snorkel-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
-      en: 'https://www.experienceboat.es/en/blog/best-snorkeling-spots-costa-brava',
-    },
-  },
+  alternates: buildAlternates('blogSnorkel', 'en'),
   openGraph: {
 title: 'Best Snorkelling Spots on the Costa Brava',
     description: 'Discover the must-visit coves and marine reserves for snorkelling on the northern Costa Brava.',

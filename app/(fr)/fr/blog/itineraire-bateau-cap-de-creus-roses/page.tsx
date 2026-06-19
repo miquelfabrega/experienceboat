@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Itinéraire bateau Cap de Creus depuis Roses',
   description: 'Itinéraire en bateau des canaux de Santa Margarita au Cap de Creus. Criques, haltes et tout ce qu\'il faut savoir avant de partir.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
-    },
-  },
+  alternates: buildAlternates('blogCapCreus', 'fr'),
   openGraph: {
     title: 'Itinéraire bateau Cap de Creus depuis Roses',
     description: 'Guide de l\'itinéraire en bateau depuis les canaux de Santa Margarita jusqu\'au Cap de Creus. Criques, haltes et tout ce qu\'il faut savoir.',

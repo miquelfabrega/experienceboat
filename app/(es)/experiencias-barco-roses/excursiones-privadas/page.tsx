@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -18,15 +19,7 @@ export const metadata: Metadata = {
 title: 'Excursiones privadas en barco en Roses',
   description:
     'Excursiones privadas en barco desde Roses con patrón incluido. Cap de Creus, calas vírgenes y bahía de Roses. Solo tu grupo a bordo. Reserva online ya.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
-    },
-  },
+  alternates: buildAlternates('expPrivate', 'es'),
   openGraph: {
 title: 'Excursiones privadas en barco en Roses',
     description:

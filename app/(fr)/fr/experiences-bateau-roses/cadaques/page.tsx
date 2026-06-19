@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,16 +12,7 @@ export const metadata: Metadata = {
     'bateau Roses Cadaqués',
     'balade en bateau Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/experiences-bateau-roses/cadaques',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/cadaques',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/cadaques',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/cadaques',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/cadaques',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/cadaques',
-    },
-  },
+  alternates: buildAlternates('expCadaques', 'fr'),
   openGraph: {
     title: 'Excursion en Bateau à Cadaqués | ExperienceBoat',
     description:

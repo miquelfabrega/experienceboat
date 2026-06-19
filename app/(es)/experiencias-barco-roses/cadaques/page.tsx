@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, Compass, MapPin, Camera, ChevronRight, MessageCircle, CalendarDays } from 'lucide-react';
@@ -12,10 +13,7 @@ export const metadata: Metadata = {
   title: 'Excursión a Cadaqués en barco desde Roses',
   description:
     'Navega desde Roses hasta Cadaqués en barco. Visita el pueblo de Dalí con tiempo libre para pasear y comer. Reserva por WhatsApp.',
-  alternates: {
-    canonical: URL,
-    languages: { 'x-default': URL, es: URL },
-  },
+  alternates: buildAlternates('expCadaques', 'es'),
   openGraph: {
     title: 'Excursión a Cadaqués en barco desde Roses',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroLancha from '@/components/lancha/HeroLancha';
 import IntroLancha from '@/components/lancha/IntroLancha';
 import ProfileSelectorCards from '@/components/lancha/ProfileSelectorCards';
@@ -20,15 +21,7 @@ export const metadata: Metadata = {
 title: 'Location de vedette sur la Côte Sauvage — Roses',
   description:
     'Louez une vedette à Roses depuis les canaux de Santa Margarita. Avec permis ou capitaine. Accès direct au Cap de Creus et baie de Roses.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceMotorboat', 'fr'),
   openGraph: {
 title: 'Location de vedette sur la Côte Sauvage — Roses',
     description:

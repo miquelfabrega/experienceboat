@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 
 export const dynamic = 'force-static';
@@ -9,15 +10,7 @@ export const metadata: Metadata = {
 title: 'Que voir sur les canaux de Santa Margarita',
   description:
     'Découvrez tout ce que cachent les canaux de Santa Margarita depuis l\'eau. Maisons, faune et la Costa Brava la plus authentique. Sorties privées depuis Roses.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
-    },
-  },
+  alternates: buildAlternates('canalsWhatToSee', 'fr'),
   openGraph: {
 title: 'Que voir sur les canaux de Santa Margarita',
     description:

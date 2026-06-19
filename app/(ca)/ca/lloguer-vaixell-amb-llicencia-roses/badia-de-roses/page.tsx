@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroBahia from '@/components/bahia-de-roses/HeroBahia';
 import IntroBahia from '@/components/bahia-de-roses/IntroBahia';
 import BahiaUnicaSection from '@/components/bahia-de-roses/BahiaUnicaSection';
@@ -26,17 +27,7 @@ export const metadata: Metadata = {
     'cales Costa Brava',
     'lloguer vaixell amb llicència Roses',
   ],
-  alternates: {
-    canonical:
-      'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceBay', 'ca'),
   openGraph: {
     title: 'Vaixell amb llicència a la badia de Roses',
     description:

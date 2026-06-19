@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
@@ -15,16 +16,7 @@ export const metadata: Metadata = {
     'excursió canals Santa Margarida',
     'vaixell canals Castelló d\'Empúries',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/canals-santa-margarida/que-veure',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      ca: 'https://www.experienceboat.es/ca/canals-santa-margarida/que-veure',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
-    },
-  },
+  alternates: buildAlternates('canalsWhatToSee', 'ca'),
   openGraph: {
     title: 'Què veure als canals de Santa Margarida amb vaixell',
     description:

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/bahia-de-roses/en/HeroSection';
 import IntroSection from '@/components/bahia-de-roses/en/IntroSection';
 import WhatToSeeSection from '@/components/bahia-de-roses/en/WhatToSeeSection';
@@ -13,15 +14,7 @@ export const metadata: Metadata = {
 title: 'Boat Rental with Licence in the Bay of Roses',
   description:
     'Rent a boat with licence in the Bay of Roses: hidden coves, Cap de Creus Natural Park and coastline. Departure from Santa Margarita.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceBay', 'en'),
   openGraph: {
 title: 'Boat Rental with Licence in the Bay of Roses',
     description:

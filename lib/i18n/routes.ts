@@ -79,6 +79,98 @@ const ROUTES = {
     ca: '/ca/reserves',
   },
 
+  // ─── Sub-páginas de silo (para hreflang recíproco + language switcher exacto) ───
+  rentalNoLicenceCanals: {
+    es: '/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
+    en: '/en/boat-rental-without-licence-roses/santa-margarita-canals',
+    fr: '/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
+    ca: '/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida',
+  },
+  rentalNoLicenceCouples: {
+    es: '/alquiler-barco-sin-licencia-roses/parejas',
+    en: '/en/boat-rental-without-licence-roses/couples',
+    fr: '/fr/location-bateau-sans-permis-roses/couples',
+    ca: '/ca/lloguer-vaixell-sense-llicencia-roses/parelles',
+  },
+  rentalLicenceBay: {
+    es: '/alquiler-barco-con-licencia-roses/bahia-de-roses',
+    en: '/en/boat-rental-with-licence-roses/roses-bay',
+    fr: '/fr/location-bateau-avec-permis-roses/baie-de-roses',
+    ca: '/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses',
+  },
+  rentalLicenceMotorboat: {
+    es: '/alquiler-barco-con-licencia-roses/lancha-costa-brava',
+    en: '/en/boat-rental-with-licence-roses/motorboat-costa-brava',
+    fr: '/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
+    ca: '/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava',
+  },
+  expPrivate: {
+    es: '/experiencias-barco-roses/excursiones-privadas',
+    en: '/en/boat-experiences-roses/private-excursions',
+    fr: '/fr/experiences-bateau-roses/excursions-privees',
+    ca: '/ca/experiencies-vaixell-roses/excursions-privades',
+  },
+  expSunset: {
+    es: '/experiencias-barco-roses/sunset-experience',
+    en: '/en/boat-experiences-roses/sunset-experience',
+    fr: '/fr/experiences-bateau-roses/sunset-experience',
+    ca: '/ca/experiencies-vaixell-roses/sunset-experience',
+  },
+  expCapCreus: {
+    es: '/experiencias-barco-roses/cap-de-creus-calas',
+    en: '/en/boat-experiences-roses/cap-de-creus-coves',
+    fr: '/fr/experiences-bateau-roses/cap-de-creus-criques',
+    ca: '/ca/experiencies-vaixell-roses/cap-de-creus-cales',
+  },
+  expCadaques: {
+    es: '/experiencias-barco-roses/cadaques',
+    en: '/en/boat-experiences-roses/cadaques',
+    fr: '/fr/experiences-bateau-roses/cadaques',
+    ca: '/ca/experiencies-vaixell-roses/cadaques',
+  },
+  expSnorkel: {
+    es: '/experiencias-barco-roses/cuevas-snorkel',
+    en: '/en/boat-experiences-roses/caves-snorkeling',
+    fr: '/fr/experiences-bateau-roses/grottes-snorkeling',
+    ca: '/ca/experiencies-vaixell-roses/coves-esnorquel',
+  },
+  canalsWhatToSee: {
+    es: '/canales-santa-margarita/que-ver',
+    en: '/en/santa-margarita-canals-roses/what-to-see',
+    fr: '/fr/canaux-santa-margarita/que-voir',
+    ca: '/ca/canals-santa-margarida/que-veure',
+  },
+  canalsRoute: {
+    es: '/canales-santa-margarita/ruta-cap-de-creus',
+    en: '/en/santa-margarita-canals-roses/cap-de-creus-route',
+    fr: '/fr/canaux-santa-margarita/itineraire-cap-de-creus',
+    ca: '/ca/canals-santa-margarida/ruta-cap-de-creus',
+  },
+  blogCapCreus: {
+    es: '/blog/ruta-barco-cap-de-creus-roses',
+    en: '/en/blog/boat-trip-cap-de-creus-from-roses',
+    fr: '/fr/blog/itineraire-bateau-cap-de-creus-roses',
+    ca: '/ca/blog/ruta-vaixell-cap-de-creus-roses',
+  },
+  blogSnorkel: {
+    es: '/blog/mejores-lugares-snorkel-costa-brava',
+    en: '/en/blog/best-snorkeling-spots-costa-brava',
+    fr: '/fr/blog/meilleurs-endroits-snorkeling-costa-brava',
+    ca: '/ca/blog/millors-llocs-esnorquel-costa-brava',
+  },
+  blogPlanning: {
+    es: '/blog/planificar-escapada-barco-costa-brava',
+    en: '/en/blog/tips-planning-boat-trip-costa-brava',
+    fr: '/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
+    ca: '/ca/blog/planificar-escapada-vaixell-costa-brava',
+  },
+  blogFirstTime: {
+    es: '/blog/primera-vez-barco-sin-licencia-roses',
+    en: '/en/blog/first-time-boat-no-licence-roses',
+    fr: '/fr/blog/premiere-fois-bateau-sans-permis-roses',
+    ca: '/ca/blog/primera-vegada-vaixell-sense-llicencia-roses',
+  },
+
   // Páginas que aún no existen en todos los locales → fallback a ES.
   privacy: { es: '/politica-privacidad', en: null, fr: null, ca: null },
   legalNotice: { es: '/aviso-legal', en: null, fr: null, ca: null },
@@ -122,6 +214,21 @@ export function buildAlternates(
     canonical: absUrl(table[locale] ?? table.es ?? '/'),
     languages,
   };
+}
+
+/**
+ * Busca el route-id cuyo path (en algún locale) coincide con `path` y devuelve el
+ * mapa de hreflang (`languages`) para anotarlo en el sitemap. `undefined` si el path
+ * no está en la tabla (fichas de barco dinámicas, legales es-only).
+ */
+export function alternatesForPath(path: string): Record<string, string> | undefined {
+  const norm = path === '/' ? '/' : path.replace(/\/+$/, '');
+  for (const [id, table] of Object.entries(ROUTES)) {
+    for (const loc of LOCALES) {
+      if (table[loc] === norm) return buildAlternates(id as RouteId, loc).languages;
+    }
+  }
+  return undefined;
 }
 
 /**

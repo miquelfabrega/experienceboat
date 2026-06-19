@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroBahia from '@/components/bahia-de-roses/HeroBahia';
 import IntroBahia from '@/components/bahia-de-roses/IntroBahia';
 import BahiaUnicaSection from '@/components/bahia-de-roses/BahiaUnicaSection';
@@ -19,15 +20,7 @@ export const metadata: Metadata = {
 title: 'Location bateau avec permis, baie de Roses',
   description:
     'Bateau avec permis dans la baie de Roses. Naviguez la Costa Brava nord : criques, Cap de Creus et liberté totale. Départ Santa Margarita.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/bahia-de-roses',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/baie-de-roses',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/roses-bay',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceBay', 'fr'),
   openGraph: {
 title: 'Location bateau avec permis, baie de Roses',
     description:

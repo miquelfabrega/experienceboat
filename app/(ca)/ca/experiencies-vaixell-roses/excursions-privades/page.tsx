@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Anchor, Euro, Shield, Sparkles, Users } from 'lucide-react';
@@ -17,16 +18,7 @@ export const metadata: Metadata = {
     'lloguer vaixell amb patró Roses',
     'excursió Cap de Creus en vaixell',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/excursions-privades',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/excursiones-privadas',
-      ca: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses/excursions-privades',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/excursions-privees',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/private-excursions',
-    },
-  },
+  alternates: buildAlternates('expPrivate', 'ca'),
   openGraph: {
     title: 'Excursions privades en vaixell a Roses',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar } from 'lucide-react';
@@ -15,16 +16,7 @@ export const metadata: Metadata = {
     'cales Cap de Creus',
     'excursió vaixell Roses',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/blog/ruta-vaixell-cap-de-creus-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      es: 'https://www.experienceboat.es/blog/ruta-barco-cap-de-creus-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/itineraire-bateau-cap-de-creus-roses',
-      en: 'https://www.experienceboat.es/en/blog/boat-trip-cap-de-creus-from-roses',
-      ca: 'https://www.experienceboat.es/ca/blog/ruta-vaixell-cap-de-creus-roses',
-    },
-  },
+  alternates: buildAlternates('blogCapCreus', 'ca'),
   openGraph: {
     title: 'Ruta en vaixell pel Cap de Creus des de Roses',
     description:

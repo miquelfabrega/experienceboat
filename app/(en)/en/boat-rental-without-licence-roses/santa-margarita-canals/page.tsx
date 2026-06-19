@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroCanales from '@/components/canales-santa-margarita/HeroCanales';
 import IntroCanales from '@/components/canales-santa-margarita/IntroCanales';
 import PorQueCanales from '@/components/canales-santa-margarita/PorQueCanales';
@@ -16,15 +17,7 @@ export const metadata: Metadata = {
   title: 'No-Licence Boat in Santa Margarita Canals',
   description:
     'Navigate the Santa Margarita canals without a licence from Roses. Calm waters, waterfront houses and the most authentic Costa Brava. Book online.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
-    },
-  },
+  alternates: buildAlternates('rentalNoLicenceCanals', 'en'),
   openGraph: {
     title: 'No-Licence Boat in Santa Margarita Canals',
     description:

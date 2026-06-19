@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -20,10 +21,7 @@ export const metadata: Metadata = {
   title: 'Cuevas & Snorkel en barco — Costa Brava desde Roses',
   description:
     'Excursión en barco por las cuevas marinas y los mejores spots de snorkel de la Costa Brava desde Roses. Equipo incluido. Reserva por WhatsApp.',
-  alternates: {
-    canonical: URL,
-    languages: { 'x-default': URL, es: URL },
-  },
+  alternates: buildAlternates('expSnorkel', 'es'),
   openGraph: {
     title: 'Cuevas & Snorkel en barco — Costa Brava desde Roses',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'First time on a no-licence boat in Roses',
   description: 'Everything you need to know before hiring a no-licence boat in Roses for the first time. What to expect, how it works and why it\'s easier than you think.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/blog/first-time-boat-no-licence-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/blog/first-time-boat-no-licence-roses',
-    },
-  },
+  alternates: buildAlternates('blogFirstTime', 'en'),
   openGraph: {
     title: 'First time on a no-licence boat in Roses',
     description: 'Everything you need to know before hiring a no-licence boat in Roses for the first time.',

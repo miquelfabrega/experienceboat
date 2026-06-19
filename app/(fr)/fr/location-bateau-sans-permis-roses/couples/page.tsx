@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroParejas from '@/components/sin-licencia-parejas/HeroParejas';
 import IntroParejas from '@/components/sin-licencia-parejas/IntroParejas';
 import PorQueParejas from '@/components/sin-licencia-parejas/PorQueParejas';
@@ -22,15 +23,7 @@ export const metadata: Metadata = {
 title: 'Location bateau sans permis à Roses pour couples',
   description:
     'Plan exclusif pour couples sur la Costa Brava. Bateau sans permis dans les canaux de Santa Margarita et criques cachées à votre rythme.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/parejas',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/couples',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/couples',
-    },
-  },
+  alternates: buildAlternates('rentalNoLicenceCouples', 'fr'),
   openGraph: {
 title: 'Location bateau sans permis à Roses pour couples',
     description:

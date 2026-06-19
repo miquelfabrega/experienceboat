@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/sunset-experience/HeroSection';
 import IntroSection from '@/components/sunset-experience/IntroSection';
 import RouteSection from '@/components/sunset-experience/RouteSection';
@@ -20,15 +21,7 @@ export const metadata: Metadata = {
 title: 'Sunset Experience en barco en Roses',
   description:
     'Ver el atardecer desde un barco en Roses es una experiencia que no se olvida. Canales de Santa Margarita, bahía de Roses y el mejor momento del día. Reserva ya.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
-      es: 'https://www.experienceboat.es/experiencias-barco-roses/sunset-experience',
-      fr: 'https://www.experienceboat.es/fr/experiences-bateau-roses/sunset-experience',
-      en: 'https://www.experienceboat.es/en/boat-experiences-roses/sunset-experience',
-    },
-  },
+  alternates: buildAlternates('expSunset', 'es'),
   openGraph: {
 title: 'Sunset Experience en barco en Roses',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroCanales from '@/components/canales-santa-margarita/HeroCanales';
 import IntroCanales from '@/components/canales-santa-margarita/IntroCanales';
 import PorQueCanales from '@/components/canales-santa-margarita/PorQueCanales';
@@ -14,16 +15,7 @@ export const metadata: Metadata = {
   title: 'Vaixell sense Llicència Canals Santa Margarida',
   description:
     "Navegueu pels canals de Santa Margarida sense llicència des de Roses. Aigües tranquil·les, cases a peu d'aigua i la Costa Brava més autèntica. Reserveu en línia.",
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      es: 'https://www.experienceboat.es/alquiler-barco-sin-licencia-roses/canales-santa-margarita',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses/canals-santa-margarida',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses/canaux-santa-margarita',
-      en: 'https://www.experienceboat.es/en/boat-rental-without-licence-roses/santa-margarita-canals',
-    },
-  },
+  alternates: buildAlternates('rentalNoLicenceCanals', 'ca'),
   openGraph: {
     title: 'Vaixell sense Llicència Canals Santa Margarida',
     description:

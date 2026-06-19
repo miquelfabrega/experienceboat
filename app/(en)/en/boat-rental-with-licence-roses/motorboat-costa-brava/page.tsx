@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroSection from '@/components/lancha/en/HeroSection';
 import IntroSection from '@/components/lancha/en/IntroSection';
 import RoutesSection from '@/components/lancha/en/RoutesSection';
@@ -13,15 +14,7 @@ export const metadata: Metadata = {
 title: 'Motorboat Rental Costa Brava with Licence',
   description:
     'Rent a motorboat on the Costa Brava: Cap de Creus, wild coves and the northern coast. Private departure from Santa Margarita, Roses.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceMotorboat', 'en'),
   openGraph: {
 title: 'Motorboat Rental on the Costa Brava with Licence',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
@@ -10,15 +11,7 @@ export const metadata: Metadata = {
 title: 'Qué ver en los canales de Santa Margarita',
   description:
     'Descubre todo lo que esconden los canales de Santa Margarita desde el agua. Casas, fauna y la Costa Brava más auténtica. Salidas privadas desde Roses.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/que-ver',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/que-voir',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/what-to-see',
-    },
-  },
+  alternates: buildAlternates('canalsWhatToSee', 'es'),
   openGraph: {
 title: 'Qué ver en los canales de Santa Margarita',
     description:

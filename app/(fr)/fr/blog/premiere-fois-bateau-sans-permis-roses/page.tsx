@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Première fois en bateau sans permis à Roses',
   description: 'Tout ce qu\'il faut savoir avant de louer un bateau sans permis à Roses. À quoi s\'attendre, comment ça marche et pourquoi c\'est facile.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      es: 'https://www.experienceboat.es/blog/primera-vez-barco-sin-licencia-roses',
-      fr: 'https://www.experienceboat.es/fr/blog/premiere-fois-bateau-sans-permis-roses',
-      en: 'https://www.experienceboat.es/en/blog/first-time-boat-no-licence-roses',
-    },
-  },
+  alternates: buildAlternates('blogFirstTime', 'fr'),
   openGraph: {
     title: 'Première fois en bateau sans permis à Roses',
     description: 'Tout ce que vous devez savoir avant de louer un bateau sans permis à Roses pour la première fois.',

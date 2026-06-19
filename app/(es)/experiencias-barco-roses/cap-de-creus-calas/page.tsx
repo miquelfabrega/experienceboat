@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, Users, MapPin, Waves, Anchor, ChevronRight } from 'lucide-react';
@@ -13,13 +14,7 @@ export const metadata: Metadata = {
   title: 'Excursión al Cap de Creus en barco — Baño en 3 calas',
   description:
     'Excursión guiada de 3 a 5 horas al Cap de Creus desde Roses. Baño en 3 calas vírgenes de la Costa Brava. Reserva online y embarca.',
-  alternates: {
-    canonical: URL,
-    languages: {
-      'x-default': URL,
-      es: URL,
-    },
-  },
+  alternates: buildAlternates('expCapCreus', 'es'),
   openGraph: {
     title: 'Excursión al Cap de Creus en barco — Baño en 3 calas',
     description:

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Clock, Calendar, BookOpen, MapPin } from 'lucide-react';
@@ -8,15 +9,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Escapada perfecta en barco por la Costa Brava',
   description: 'Guía práctica para planificar tu salida en barco en la Costa Brava: elección de embarcación, rutas, clima, seguridad y todo lo que necesitas saber.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      es: 'https://www.experienceboat.es/blog/planificar-escapada-barco-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/blog/conseils-planifier-escapade-bateau-costa-brava',
-      en: 'https://www.experienceboat.es/en/blog/tips-planning-boat-trip-costa-brava',
-    },
-  },
+  alternates: buildAlternates('blogPlanning', 'es'),
   openGraph: {
 title: 'Escapada perfecta en barco por la Costa Brava',
     description: 'Guía práctica para planificar tu salida en barco: embarcación, clima, seguridad y provisiones.',

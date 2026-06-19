@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import HeroLancha from '@/components/lancha/HeroLancha';
 import IntroLancha from '@/components/lancha/IntroLancha';
 import ProfileSelectorCards from '@/components/lancha/ProfileSelectorCards';
@@ -27,17 +28,7 @@ export const metadata: Metadata = {
     'lloguer llanxa a motor',
     'llanxa amb llicència',
   ],
-  alternates: {
-    canonical:
-      'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      es: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses/lancha-costa-brava',
-      ca: 'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava',
-      fr: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage',
-      en: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses/motorboat-costa-brava',
-    },
-  },
+  alternates: buildAlternates('rentalLicenceMotorboat', 'ca'),
   openGraph: {
     title: 'Lloguer de llanxa a la Costa Brava — Roses',
     description:

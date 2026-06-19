@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
@@ -10,15 +11,7 @@ export const metadata: Metadata = {
 title: 'Ruta en barco: Santa Margarita al Cap de Creus',
   description:
     'La ruta náutica más completa de la Costa Brava norte: de los canales de Santa Margarita al Cap de Creus en barco privado desde Roses. Reserva online.',
-  alternates: {
-    canonical: 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/cap-de-creus-route',
-    },
-  },
+  alternates: buildAlternates('canalsRoute', 'es'),
   openGraph: {
 title: 'Ruta en barco: Santa Margarita al Cap de Creus',
     description:

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getBarcoSlugs } from '@/lib/data/fleet';
+import { alternatesForPath } from '@/lib/i18n/routes';
 
 const BASE_URL = 'https://www.experienceboat.es';
 
@@ -16,11 +17,13 @@ function url(
   changeFrequency: SitemapEntry['changeFrequency'],
   lastModified: Date = PILLAR_DATE,
 ): SitemapEntry {
+  const languages = alternatesForPath(path);
   return {
     url: `${BASE_URL}${path}`,
     lastModified,
     changeFrequency,
     priority,
+    ...(languages ? { alternates: { languages } } : {}),
   };
 }
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
@@ -15,16 +16,7 @@ export const metadata: Metadata = {
     'excursió canals Santa Margarida',
     'vaixell Santa Margarida Cap de Creus',
   ],
-  alternates: {
-    canonical: 'https://www.experienceboat.es/ca/canals-santa-margarida/ruta-cap-de-creus',
-    languages: {
-      'x-default': 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      es: 'https://www.experienceboat.es/canales-santa-margarita/ruta-cap-de-creus',
-      ca: 'https://www.experienceboat.es/ca/canals-santa-margarida/ruta-cap-de-creus',
-      fr: 'https://www.experienceboat.es/fr/canaux-santa-margarita/itineraire-cap-de-creus',
-      en: 'https://www.experienceboat.es/en/santa-margarita-canals-roses/cap-de-creus-route',
-    },
-  },
+  alternates: buildAlternates('canalsRoute', 'ca'),
   openGraph: {
     title: 'Ruta amb vaixell: Santa Margarida al Cap de Creus',
     description:
