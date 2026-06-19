@@ -8,6 +8,7 @@ export interface HeroSectionT {
   ctaSecondary?: string;
   socialProof?: string;
   waMessage?: string;
+  imageAlt?: string;
 }
 
 const defaults: Required<HeroSectionT> = {
@@ -16,6 +17,7 @@ const defaults: Required<HeroSectionT> = {
   ctaSecondary: 'Hablar por WhatsApp',
   socialProof: '500+ salidas · 5★ Google · Salida desde Santa Margarita',
   waMessage: 'Hola%2C%20me%20interesa%20alquilar%20un%20barco%20sin%20licencia%20en%20Roses',
+  imageAlt: 'Barco sin licencia fondeado en aguas turquesa de la bahía de Roses, vista aérea',
 };
 
 export default function HeroSection({ t }: { t?: HeroSectionT }) {
@@ -23,10 +25,11 @@ export default function HeroSection({ t }: { t?: HeroSectionT }) {
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/sin-licencia-roses-hero/1600/900"
-        alt="Barco sin licencia navegando por la bahía de Roses"
+        src="/images/hero/sin-licencia-hero.jpg"
+        alt={tx.imageAlt}
         fill
         className="object-cover"
+        sizes="100vw"
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
