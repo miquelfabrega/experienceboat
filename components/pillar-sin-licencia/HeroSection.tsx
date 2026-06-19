@@ -25,7 +25,7 @@ export default function HeroSection({ t }: { t?: HeroSectionT }) {
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="/images/hero/sin-licencia-hero.jpg"
+        src="/images/hero/sin-licencia-hero-1320.jpg"
         alt={tx.imageAlt}
         fill
         className="object-cover"
