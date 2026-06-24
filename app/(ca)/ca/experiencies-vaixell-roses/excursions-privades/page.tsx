@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Anchor, Euro, Shield, Sparkles, Users } from 'lucide-react';
+import { Anchor, Shield, Sparkles, Users } from 'lucide-react';
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
@@ -208,6 +209,13 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
           </div>
         </section>
 
+        {/* Widget de reserva Regiondo */}
+        <RegiondoWidget
+          widgetId="2ee25594-04e1-46b6-9407-da60041379da"
+          title="Reserva la teva excursió privada"
+          subtitle="Confirmació immediata. Només el teu grup a bord."
+        />
+
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-16 text-slate-600 text-lg leading-relaxed">
           <section id="serveis" aria-labelledby="h-serveis">
             <h2 id="h-serveis" className="text-3xl font-serif font-bold text-slate-900 mb-4">
@@ -219,76 +227,6 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
               vulgueu veure.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 not-prose">
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
-                    alt="Semirígida amb patró — Orange Kiwi 620"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Semirígides amb patró</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Ex.: Orange Kiwi 620 — fins a 11 persones. Ideal per a grups que cerquen comoditat i
-                    estabilitat.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacitat habitual: fins a 11 pax
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Mig dia: 300 € · Dia complet: 600 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/ca/reserves"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Reservar
-                  </Link>
-                </div>
-              </article>
-
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
-                    alt="Llanxa amb patró — Spirit of the Sea 675"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Llanxa amb patró</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Embarcació premium — màxima comoditat per a jornades llargues al Cap de Creus.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacitat: consultar segons model
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Mig dia: 600 € · Dia complet: 1.200 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/ca/reserves"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Reservar
-                  </Link>
-                </div>
-              </article>
-            </div>
           </section>
 
           <section aria-labelledby="h-destins">

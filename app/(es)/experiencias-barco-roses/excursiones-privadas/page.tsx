@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Anchor,
-  Euro,
   Shield,
   Sparkles,
   Users,
@@ -12,6 +11,7 @@ import {
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
 import SiloNavBlock from '@/components/SiloNavBlock';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 
 export const dynamic = 'force-static';
 
@@ -208,6 +208,13 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
           </div>
         </section>
 
+        {/* Widget de reserva Regiondo */}
+        <RegiondoWidget
+          widgetId="2ee25594-04e1-46b6-9407-da60041379da"
+          title="Reserva tu excursión privada"
+          subtitle="Confirmación inmediata. Solo tu grupo a bordo."
+        />
+
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-16 text-slate-600 text-lg leading-relaxed">
           <section id="servicios" aria-labelledby="h-servicios">
             <h2 id="h-servicios" className="text-3xl font-serif font-bold text-slate-900 mb-4">
@@ -219,76 +226,6 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
               quieras ver.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 not-prose">
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
-                    alt="Neumática con patrón — Orange Kiwi 620"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Neumáticas con patrón</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Ej.: Orange Kiwi 620 — hasta 11 personas. Ideal para grupos que buscan comodidad y
-                    estabilidad.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacidad habitual: hasta 11 pax
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Medio día: 300 € · Día completo: 600 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/reservas"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Reservar
-                  </Link>
-                </div>
-              </article>
-
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
-                    alt="Lancha con patrón — Spirit of the Sea 675"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Lancha con patrón</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Embarcación premium — máxima comodidad para jornadas largas en el Cap de Creus.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacidad: consultar según modelo
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Medio día: 600 € · Día completo: 1.200 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/reservas"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Reservar
-                  </Link>
-                </div>
-              </article>
-            </div>
           </section>
 
           <section aria-labelledby="h-destinos">

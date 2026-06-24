@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Anchor, Euro, Shield, Sparkles, Users } from 'lucide-react';
+import { Anchor, Shield, Sparkles, Users } from 'lucide-react';
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 
 export const dynamic = 'force-static';
 
@@ -204,6 +205,13 @@ export default function PrivateExcursionsRosesPage() {
           </div>
         </section>
 
+        {/* Regiondo booking widget */}
+        <RegiondoWidget
+          widgetId="2ee25594-04e1-46b6-9407-da60041379da"
+          title="Book your private excursion"
+          subtitle="Instant confirmation. Only your group on board."
+        />
+
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-16 text-slate-600 text-lg leading-relaxed">
           {/* Our excursions */}
           <section id="excursions" aria-labelledby="h-excursions">
@@ -216,76 +224,6 @@ export default function PrivateExcursionsRosesPage() {
               want to see.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 not-prose">
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
-                    alt="RIB with skipper — Orange Kiwi 620"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">RIB with skipper</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    e.g. Orange Kiwi 620 — up to 11 people. Perfect for groups looking for comfort and
-                    stability.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacity: up to 11 passengers
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Half day: €300 · Full day: €600
-                    </li>
-                  </ul>
-                  <Link
-                    href="/en/booking"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Book now
-                  </Link>
-                </div>
-              </article>
-
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
-                    alt="Motorboat with skipper — Spirit of the Sea 675"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Motorboat with skipper</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Premium vessel — maximum comfort for long days out at Cap de Creus.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacity: ask for details based on model
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Half day: €600 · Full day: €1,200
-                    </li>
-                  </ul>
-                  <Link
-                    href="/en/booking"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Book now
-                  </Link>
-                </div>
-              </article>
-            </div>
           </section>
 
           {/* Destinations */}

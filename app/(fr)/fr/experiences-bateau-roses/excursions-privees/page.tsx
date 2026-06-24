@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/i18n/routes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Anchor, Euro, Shield, Sparkles, Users } from 'lucide-react';
+import { Anchor, Shield, Sparkles, Users } from 'lucide-react';
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
+import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
 
 export const dynamic = 'force-static';
 
@@ -205,6 +206,13 @@ export default function ExcursionsPriveesRosesPage() {
           </div>
         </section>
 
+        {/* Widget de réservation Regiondo */}
+        <RegiondoWidget
+          widgetId="2ee25594-04e1-46b6-9407-da60041379da"
+          title="Réservez votre excursion privée"
+          subtitle="Confirmation immédiate. Uniquement votre groupe à bord."
+        />
+
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 space-y-16 text-slate-600 text-lg leading-relaxed">
           {/* Nos excursions */}
           <section id="services" aria-labelledby="h-services">
@@ -217,76 +225,6 @@ export default function ExcursionsPriveesRosesPage() {
               adapté à ce que vous souhaitez voir.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 not-prose">
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
-                    alt="Semi-rigide avec skipper — Orange Kiwi 620"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Semi-rigide avec skipper</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Ex. : Orange Kiwi 620 — jusqu&apos;à 11 personnes. Idéal pour les groupes qui recherchent
-                    confort et stabilité.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacité habituelle : jusqu&apos;à 11 pax
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Demi-journée : 300 € · Journée complète : 600 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/fr/reservation"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Réserver
-                  </Link>
-                </div>
-              </article>
-
-              <article className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
-                <div className="relative aspect-[4/3] bg-slate-200">
-                  <Image
-                    src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
-                    alt="Vedette avec skipper — Spirit of the Sea 675"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Vedette avec skipper</h3>
-                  <p className="text-sm text-slate-500 mb-4">
-                    Embarcation premium — confort maximum pour les longues journées au Cap de Creus.
-                  </p>
-                  <ul className="text-sm space-y-2 mb-6 flex-1">
-                    <li className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-sky-600 shrink-0" />
-                      Capacité : nous consulter selon le modèle
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Euro className="w-4 h-4 text-sky-600 shrink-0" />
-                      Demi-journée : 600 € · Journée complète : 1 200 €
-                    </li>
-                  </ul>
-                  <Link
-                    href="/fr/reservation"
-                    className="inline-flex items-center justify-center w-full py-3 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-white transition-colors"
-                  >
-                    Réserver
-                  </Link>
-                </div>
-              </article>
-            </div>
           </section>
 
           {/* Destinations */}
