@@ -42,6 +42,14 @@ const ROUTES = {
     ca: '/ca/experiencies-vaixell-roses',
   },
 
+  // Landing de conversión (Google Ads) — alquiler de lancha con licencia.
+  lanchaRoses: {
+    es: '/alquiler-lancha-roses',
+    en: '/en/motorboat-rental-roses',
+    fr: '/fr/location-vedette-roses',
+    ca: '/ca/lloguer-llanxa-roses',
+  },
+
   canals: {
     es: '/canales-santa-margarita',
     en: '/en/santa-margarita-canals-roses',

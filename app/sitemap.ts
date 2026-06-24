@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/alquiler-barco-con-licencia-roses', 0.9, 'monthly'),
     url('/alquiler-barco-con-licencia-roses/bahia-de-roses', 0.8, 'monthly'),
     url('/alquiler-barco-con-licencia-roses/lancha-costa-brava', 0.8, 'monthly'),
+    url('/alquiler-lancha-roses', 0.9, 'monthly'),
 
     // ─── SILO 3 — Experiencias / excursiones ────────────────────────────────
     url('/experiencias-barco-roses', 0.9, 'monthly'),
@@ -90,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/ca/lloguer-vaixell-amb-llicencia-roses', 0.85, 'monthly'),
     url('/ca/lloguer-vaixell-amb-llicencia-roses/badia-de-roses', 0.75, 'monthly'),
     url('/ca/lloguer-vaixell-amb-llicencia-roses/llanxa-costa-brava', 0.75, 'monthly'),
+    url('/ca/lloguer-llanxa-roses', 0.75, 'monthly'),
 
     // ─── CA — Experiències / excursions ─────────────────────────────────────
     url('/ca/experiencies-vaixell-roses', 0.85, 'monthly'),
@@ -137,6 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/fr/location-bateau-avec-permis-roses', 0.8, 'monthly'),
     url('/fr/location-bateau-avec-permis-roses/baie-de-roses', 0.7, 'monthly'),
     url('/fr/location-bateau-avec-permis-roses/vedette-cote-sauvage', 0.7, 'monthly'),
+    url('/fr/location-vedette-roses', 0.7, 'monthly'),
 
     // ─── FR — Expériences bateau ─────────────────────────────────────────────
     url('/fr/experiences-bateau-roses', 0.8, 'monthly'),
@@ -174,6 +177,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/en/boat-rental-with-licence-roses', 0.7, 'monthly'),
     url('/en/boat-rental-with-licence-roses/roses-bay', 0.6, 'monthly'),
     url('/en/boat-rental-with-licence-roses/motorboat-costa-brava', 0.6, 'monthly'),
+    url('/en/motorboat-rental-roses', 0.6, 'monthly'),
 
     // ─── EN — Boat experiences ───────────────────────────────────────────────
     url('/en/boat-experiences-roses', 0.7, 'monthly'),
