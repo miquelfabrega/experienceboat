@@ -3,6 +3,7 @@ import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Phone, MessageCircle, Mail, Anchor, Clock, Shield } from 'lucide-react';
 import RegiondoCatalogWidget from '@/components/experiencias/RegiondoCatalogWidget';
+import BookingTrust from '@/components/experiencias/BookingTrust';
 
 export const dynamic = 'force-static';
 
@@ -45,7 +46,7 @@ export default function ReservesPageCA() {
           </p>
         </div>
 
-        <RegiondoCatalogWidget />
+        <BookingTrust lang="ca" />
 
         <div className="grid sm:grid-cols-2 gap-6 mb-16">
           <a
@@ -78,6 +79,8 @@ export default function ReservesPageCA() {
             </span>
           </a>
         </div>
+
+        <RegiondoCatalogWidget />
 
         <div className="rounded-2xl border border-gray-200 bg-gray-50 p-8 mb-16">
           <div className="flex items-center gap-3 mb-4">
