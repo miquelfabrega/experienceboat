@@ -16,6 +16,10 @@ declare global {
         React.HTMLAttributes<HTMLElement> & { 'widget-id': string },
         HTMLElement
       >;
+      'product-catalog-widget': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & { 'widget-id': string },
+        HTMLElement
+      >;
     }
   }
 }

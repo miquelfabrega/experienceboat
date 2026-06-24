@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/i18n/routes';
 import Link from 'next/link';
 import { Phone, MessageCircle, Mail, Anchor, Clock, Shield } from 'lucide-react';
+import RegiondoCatalogWidget from '@/components/experiencias/RegiondoCatalogWidget';
 
 export const dynamic = 'force-static';
 
@@ -39,6 +40,8 @@ export default function ReservasPage() {
             minutos.
           </p>
         </div>
+
+        <RegiondoCatalogWidget />
 
         <div className="grid sm:grid-cols-2 gap-6 mb-16">
           <a
