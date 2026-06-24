@@ -6,6 +6,7 @@ import { Anchor, Shield, Sparkles, Users } from 'lucide-react';
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
 import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
+import ExcursionesVideoCard from '@/components/experiencias/ExcursionesVideoCard';
 
 export const dynamic = 'force-static';
 
@@ -226,6 +227,8 @@ export default function ExcursionsPriveesRosesPage() {
             </p>
 
           </section>
+
+          <ExcursionesVideoCard lang="fr" />
 
           {/* Destinations */}
           <section aria-labelledby="h-destinations">

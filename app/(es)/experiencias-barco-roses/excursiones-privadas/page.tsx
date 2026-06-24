@@ -12,6 +12,7 @@ import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
 import SiloNavBlock from '@/components/SiloNavBlock';
 import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
+import ExcursionesVideoCard from '@/components/experiencias/ExcursionesVideoCard';
 
 export const dynamic = 'force-static';
 
@@ -227,6 +228,8 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
             </p>
 
           </section>
+
+          <ExcursionesVideoCard lang="es" />
 
           <section aria-labelledby="h-destinos">
             <h2 id="h-destinos" className="text-3xl font-serif font-bold text-slate-900 mb-4">

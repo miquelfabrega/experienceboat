@@ -6,6 +6,7 @@ import { Anchor, Shield, Sparkles, Users } from 'lucide-react';
 import ReviewsSection from '@/components/pillar-experiencias/ReviewsSection';
 import StickyMobileCTA from '@/components/pillar-experiencias/StickyMobileCTA';
 import RegiondoWidget from '@/components/experiencias/RegiondoWidget';
+import ExcursionesVideoCard from '@/components/experiencias/ExcursionesVideoCard';
 import SiloNavBlock from '@/components/SiloNavBlock';
 
 export const dynamic = 'force-static';
@@ -228,6 +229,8 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
             </p>
 
           </section>
+
+          <ExcursionesVideoCard lang="ca" />
 
           <section aria-labelledby="h-destins">
             <h2 id="h-destins" className="text-3xl font-serif font-bold text-slate-900 mb-4">
