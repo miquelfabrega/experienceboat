@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown, Gem, Globe } from 'lucide-react';
@@ -25,7 +26,14 @@ export function MobileDrawer({
   const [isOpen, setIsOpen] = useState(false);
   const [isBarcosOpen, setIsBarcosOpen] = useState(false);
   const [isExperienciasOpen, setIsExperienciasOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  // El overlay y el panel se portalan a <body> para escapar del containing
+  // block que crea el backdrop-filter del header (ScrollNavbar). Sin esto, el
+  // `position: fixed` del panel queda confinado al header y se colapsa en todas
+  // las páginas salvo la home sin scroll. Solo portalamos tras montar (cliente).
+  useEffect(() => setMounted(true), []);
   const t = CHROME[lang];
   const expItems = EXPERIENCES_MENU[lang];
   const links = [
@@ -57,8 +65,10 @@ export function MobileDrawer({
         <Menu className="w-7 h-7" />
       </button>
 
+      {mounted && createPortal(
+        <div className="lg:hidden">
       {/* Drawer Overlay */}
-      <div 
+      <div
         className={`fixed inset-0 bg-slate-900/40 z-[60] backdrop-blur-sm transition-opacity duration-300 ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
@@ -278,6 +288,9 @@ export function MobileDrawer({
           </Link>
         </div>
       </div>
+        </div>,
+        document.body
+      )}
     </div>
   );
 }
