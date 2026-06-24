@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -66,7 +66,22 @@ export function MobileDrawer({
       </button>
 
       {mounted && createPortal(
-        <div className="lg:hidden">
+        <div
+          className="lg:hidden"
+          // El portal vive en <body>, fuera del subárbol del header donde
+          // ScrollNavbar define estas variables. Las redefinimos aquí (valores
+          // sólidos) para que el panel no quede transparente.
+          style={{
+            '--nav-bg-solid': '#ffffff',
+            '--megamenu-text': '#0f172a',
+            '--megamenu-text-muted': '#64748b',
+            '--nav-accent': '#0ea5c2',
+            '--nav-accent-hover': '#0b8fab',
+            '--section-label': '#0284c7',
+            '--nav-border': 'rgba(0,0,0,0.06)',
+            '--premium-badge': '#d4a843',
+          } as CSSProperties}
+        >
       {/* Drawer Overlay */}
       <div
         className={`fixed inset-0 bg-slate-900/40 z-[60] backdrop-blur-sm transition-opacity duration-300 ${
