@@ -42,7 +42,7 @@ export default function CapDeCreusCovesPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="/images/experiencias/cap-de-creus-calas.webp"
+          src="/images/hero/cap-de-creus-calas-2026.jpg"
           alt="Cap de Creus and coves by boat"
           fill
           priority

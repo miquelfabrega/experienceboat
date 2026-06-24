@@ -13,6 +13,11 @@ export const homeDataEn = {
     socialProof: 'Over 500 private departures · 5★ rating on Google',
     slides: [
       {
+        id: 0,
+        src: '/images/hero/cap-de-creus-calas-2026.jpg',
+        alt: 'Boat sailing the Cap de Creus coves from Roses, Costa Brava',
+      },
+      {
         id: 1,
         src: '/images/hero/hero-1.jpg',
         alt: 'Boat rental in Roses — sail the bay and Cap de Creus, Costa Brava',
@@ -70,7 +75,7 @@ export const homeDataEn = {
         text: 'No prior experience or nautical licence required. Our no-licence boats are designed so anyone can take to the sea from the very first minute. Perfect for families, couples and groups of friends who want to explore the Bay of Roses at their own pace. Departure from the Santa Margarita canals.',
         cta: 'See no-licence boats →',
         href: '/en/boat-rental-without-licence-roses/',
-        image: '/images/services/sin-licencia.jpg'
+        image: '/images/hero/sin-licencia-roses-2026.jpg'
       },
       {
         title: 'Boat rental with licence in Roses',

@@ -109,7 +109,7 @@ export default function CapDeCreusCalasPage() {
           </p>
           <div className="relative aspect-[16/7] w-full rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="/images/hero/cap-de-creus-calas-hero.jpg"
+              src="/images/hero/cap-de-creus-calas-2026.jpg"
               alt="Vista aérea de una cala del Cap de Creus con barcos fondeados en agua turquesa"
               fill
               priority

@@ -13,6 +13,11 @@ export const homeDataCa = {
     socialProof: 'Més de 500 sortides privades · Valoració 5★ a Google',
     slides: [
       {
+        id: 0,
+        src: '/images/hero/cap-de-creus-calas-2026.jpg',
+        alt: 'Embarcació navegant per les cales del Cap de Creus des de Roses, Costa Brava',
+      },
+      {
         id: 1,
         src: '/images/hero/hero-1.jpg',
         alt: 'Lloguer d\'embarcacions a Roses — navegueu per la badia i el Cap de Creus, Costa Brava',
@@ -70,7 +75,7 @@ export const homeDataCa = {
         text: 'No cal experiència prèvia ni llicència nàutica. Les nostres embarcacions sense llicència estan pensades perquè qualsevol persona pugui sortir a mar des del primer minut. Perfectes per a famílies, parelles i grups d\'amics que vulguin descobrir la badia de Roses al seu ritme. Sortida des dels canals de Santa Margarida.',
         cta: 'Veure embarcacions sense llicència →',
         href: '/ca/lloguer-vaixell-sense-llicencia-roses/',
-        image: '/images/services/sin-licencia.jpg'
+        image: '/images/hero/sin-licencia-roses-2026.jpg'
       },
       {
         title: 'Lloguer d\'embarcacions amb llicència a Roses',

@@ -184,6 +184,18 @@ export const boatsGallery: Record<string, GalleryImage[]> = {
   // ──────────────────────────────────────────────────────────────
   'remus-450': [
     {
+      src: '/boats/remus-450/remus-450-toto-01.jpg',
+      alt: `Lancha sin licencia Remus 450 lista para una salida privada ${ZONA}`,
+    },
+    {
+      src: '/boats/remus-450/remus-450-toto-02.jpg',
+      alt: `Remus 450 navegando frente a la costa ${ZONA}`,
+    },
+    {
+      src: '/boats/remus-450/remus-450-toto-03.jpg',
+      alt: `Detalle a bordo de la Remus 450 durante una salida ${ZONA}`,
+    },
+    {
       src: '/boats/remus-450/remus-450-hero.webp',
       alt: `Lancha sin licencia Remus 450 navegando ${ZONA}`,
     },

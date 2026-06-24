@@ -75,6 +75,10 @@ const WIDGET_REMUS = 'ba47f5d1-9480-4faf-b245-7a57d7883af2';
 const WIDGET_MARINE_BREZZE = 'd299f388-40dc-4526-bafd-35b28926f1e2';
 const WIDGET_DREAM_POINT = '71ee3784-86ce-4b63-ac86-22e0b579707c';
 const WIDGET_CON_LICENCIA = 'cbe7e43c-d1d4-4ad3-a3ee-2f5b4d6863fd';
+const WIDGET_JEANNEAU_REINETA = 'cdf50826-0894-4e22-896c-89dbb5cdfc58';
+const WIDGET_ORANGE_KIWI = 'c92e18ae-e2fc-4feb-bfce-1b33e9784ddb';
+const WIDGET_SPIRIT_OF_THE_SEA = '3aaeebca-ac52-46c5-bc9b-a6991e082940';
+const WIDGET_RAF_IV_MANO = 'e4da3b8a-96dc-4d80-810a-9bc748334f24';
 
 // Actividades extra contratables con el Sunset (precios del flyer oficial).
 export const EXTRAS_DISPONIBLES: BarcoExtra[] = [
@@ -107,7 +111,7 @@ export const fleet: Barco[] = [
     sunset: { baja: 160, media: 170, alta: 175 },
     notaMedioDia: NOTA_SIN_LICENCIA,
     precioDesde: 90,
-    imagen: '/boats/remus-450/remus-450-hero.webp',
+    imagen: '/boats/remus-450/remus-450-toto-01.jpg',
     badge: 'Más reservado',
     descripcionCorta:
       'Embarcación sin licencia para 5 personas, ideal para descubrir las calas de Roses sin necesidad de patrón.',
@@ -186,7 +190,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Jeanneau 595 con motor de 115 CV para 6 personas. Ideal para llegar al Cap de Creus con comodidad y solárium.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
-    widgetReservaId: WIDGET_CON_LICENCIA,
+    widgetReservaId: WIDGET_JEANNEAU_REINETA,
   },
   {
     slug: 'orange-kiwi-620',
@@ -210,7 +214,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Zodiac semirrígida de 6,20 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
-    widgetReservaId: WIDGET_CON_LICENCIA,
+    widgetReservaId: WIDGET_ORANGE_KIWI,
   },
   {
     slug: 'spirit-of-the-sea-675',
@@ -234,7 +238,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Embarcación de 6,75 m con doble solárium y sonido. Capacidad para 12 personas: nuestro barco más versátil para grupos.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
-    widgetReservaId: WIDGET_CON_LICENCIA,
+    widgetReservaId: WIDGET_SPIRIT_OF_THE_SEA,
   },
   {
     slug: 'raf-iv-mano',
@@ -257,7 +261,7 @@ export const fleet: Barco[] = [
     descripcionCorta:
       'Mano 21,5 Sport Fish de 6,55 m y 150 CV para 7 personas. Carácter marinero, ideal para pesca y excursiones a Cap de Creus.',
     inclusiones: [...INCLUSIONES_BASE, 'Combustible no incluido', 'Patrón opcional bajo solicitud'],
-    widgetReservaId: WIDGET_CON_LICENCIA,
+    widgetReservaId: WIDGET_RAF_IV_MANO,
   },
   {
     slug: 'justi-saura-llaut-850',

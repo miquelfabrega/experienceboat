@@ -13,6 +13,11 @@ export const homeDataFr = {
     socialProof: 'Plus de 500 sorties privées · Note 5★ sur Google',
     slides: [
       {
+        id: 0,
+        src: '/images/hero/cap-de-creus-calas-2026.jpg',
+        alt: 'Bateau naviguant dans les criques du Cap de Creus depuis Roses, Costa Brava',
+      },
+      {
         id: 1,
         src: '/images/hero/hero-1.jpg',
         alt: 'Location de bateau à Roses — naviguez dans la baie et le Cap de Creus, Costa Brava',
@@ -70,7 +75,7 @@ export const homeDataFr = {
         text: 'Aucune expérience préalable ni permis nautique requis. Nos bateaux sans permis sont conçus pour que tout le monde puisse prendre la mer dès la première minute. Parfaits pour les familles, les couples et les groupes d\'amis qui souhaitent explorer la baie de Roses à leur propre rythme. Départ depuis les canaux de Santa Margarita.',
         cta: 'Voir les bateaux sans permis →',
         href: '/fr/location-bateau-sans-permis-roses/',
-        image: '/images/services/sin-licencia.jpg'
+        image: '/images/hero/sin-licencia-roses-2026.jpg'
       },
       {
         title: 'Location de bateau avec permis à Roses',

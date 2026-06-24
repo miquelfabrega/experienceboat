@@ -42,7 +42,7 @@ export default function CapDeCreusCalesPage() {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
-          src="/images/hero/cap-de-creus-calas-hero.jpg"
+          src="/images/hero/cap-de-creus-calas-2026.jpg"
           alt="Vista aèria d'una cala del Cap de Creus amb vaixells fondejats en aigua turquesa"
           fill
           priority

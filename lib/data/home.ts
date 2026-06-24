@@ -13,6 +13,11 @@ export const homeData = {
     socialProof: 'Más de 500 salidas privadas · Valoración 5★ en Google',
     slides: [
       {
+        id: 0,
+        src: '/images/hero/cap-de-creus-calas-2026.jpg',
+        alt: 'Barco navegando por las calas del Cap de Creus desde Roses, Costa Brava',
+      },
+      {
         id: 1,
         src: '/images/hero/hero-1.jpg',
         alt: 'Alquiler de barco en Roses — navega por la bahía y el Cap de Creus, Costa Brava',
@@ -44,7 +49,7 @@ export const homeData = {
         text: 'No necesitas experiencia previa ni titulación náutica. Nuestros barcos sin licencia están diseñados para que cualquiera pueda salir al mar desde el primer minuto. Perfectos para familias, parejas y grupos de amigos que quieren explorar la bahía de Roses a su propio ritmo. Salen desde los canales de Santa Margarita y pueden llegar hasta las calas del Cap de Creus.',
         cta: 'Ver barcos sin licencia →',
         href: '/alquiler-barco-sin-licencia-roses/',
-        image: '/images/services/sin-licencia.jpg' // TODO: replace with IMG_0545
+        image: '/images/hero/sin-licencia-roses-2026.jpg'
       },
       {
         title: 'Alquiler de barco con licencia en Roses',
