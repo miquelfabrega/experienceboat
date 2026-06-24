@@ -1,8 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar } from 'lucide-react';
+import { localizedHref } from '@/lib/i18n/routes';
 
 const translations = {
   es: {
@@ -68,15 +70,13 @@ export default function StickyCTA({ lang = 'es' }: StickyCTAProps) {
                 <p className="text-xs text-gray-500 font-medium mb-1">{t.label}</p>
                 <p className="text-lg font-bold text-gray-900 leading-none">{t.price}</p>
               </div>
-              <a
-                href={`https://wa.me/34623995700?text=${t.whatsappText}`}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
+              <Link
+                href={localizedHref('bookings', lang)}
                 className="flex-1 flex items-center justify-center gap-2 bg-sky-600 text-white px-4 py-3 rounded-xl font-semibold shadow-md shadow-sky-600/20 active:scale-95 transition-transform"
               >
                 <Calendar className="w-4 h-4" />
                 <span>{t.btn}</span>
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function ReservationPageFR() {
   return (
     <main id="main-content" className="bg-white min-h-[70vh]">
-      <section className="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Réservez votre bateau à Roses

@@ -1,15 +1,15 @@
-import { CheckCircle2, CloudOff } from 'lucide-react';
+import { CheckCircle2, Lock } from 'lucide-react';
 
 /**
  * Franja de confianza para la landing de reservas: rating + garantías reales
- * (verificables en el sitio). NO incluir afirmaciones no comprobadas (p.ej.
- * "sin pago por adelantado") para no engañar.
+ * (verificables). El pago se cobra al reservar vía Regiondo (pago online), así
+ * que NO afirmamos "sin pago por adelantado" ni nada de cancelación.
  */
 const COPY = {
-  es: { reviews: '+190 reseñas en Google', confirm: 'Confirmación inmediata', weather: 'Cancelación gratuita por mal tiempo' },
-  en: { reviews: '+190 Google reviews', confirm: 'Instant confirmation', weather: 'Free cancellation for bad weather' },
-  fr: { reviews: '+190 avis Google', confirm: 'Confirmation immédiate', weather: 'Annulation gratuite en cas de mauvais temps' },
-  ca: { reviews: '+190 ressenyes a Google', confirm: 'Confirmació immediata', weather: 'Cancel·lació gratuïta per mal temps' },
+  es: { reviews: '+190 reseñas en Google', confirm: 'Confirmación inmediata', pay: 'Pago online seguro' },
+  en: { reviews: '+190 Google reviews', confirm: 'Instant confirmation', pay: 'Secure online payment' },
+  fr: { reviews: '+190 avis Google', confirm: 'Confirmation immédiate', pay: 'Paiement en ligne sécurisé' },
+  ca: { reviews: '+190 ressenyes a Google', confirm: 'Confirmació immediata', pay: 'Pagament en línia segur' },
 };
 
 export default function BookingTrust({ lang = 'es' }: { lang?: 'es' | 'en' | 'fr' | 'ca' }) {
@@ -25,8 +25,8 @@ export default function BookingTrust({ lang = 'es' }: { lang?: 'es' | 'en' | 'fr
         {t.confirm}
       </span>
       <span className="inline-flex items-center gap-1.5 text-gray-600">
-        <CloudOff className="w-4 h-4 text-sky-500 shrink-0" />
-        {t.weather}
+        <Lock className="w-4 h-4 text-sky-500 shrink-0" />
+        {t.pay}
       </span>
     </div>
   );
