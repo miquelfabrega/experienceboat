@@ -51,6 +51,7 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus — 3 Calas', href: '/experiencias-barco-roses/cap-de-creus-calas' },
       { label: 'Excursión a Cadaqués', href: '/experiencias-barco-roses/cadaques' },
       { label: 'Cuevas & Snorkel', href: '/experiencias-barco-roses/cuevas-snorkel' },
+      { label: 'Alquiler de lancha en Roses', href: '/alquiler-lancha-roses' },
     ],
     companyTitle: 'Empresa',
     company: [
@@ -87,6 +88,7 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus — 3 Cales', href: '/ca/experiencies-vaixell-roses/cap-de-creus-cales' },
       { label: 'Excursió a Cadaqués', href: '/ca/experiencies-vaixell-roses/cadaques' },
       { label: 'Coves & Snorkel', href: '/ca/experiencies-vaixell-roses/coves-esnorquel' },
+      { label: 'Lloguer de llanxa a Roses', href: '/ca/lloguer-llanxa-roses' },
     ],
     companyTitle: 'Empresa',
     company: [
@@ -123,6 +125,7 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus — Criques', href: '/fr/experiences-bateau-roses/cap-de-creus-criques' },
       { label: 'Excursion à Cadaqués', href: '/fr/experiences-bateau-roses/cadaques' },
       { label: 'Grottes & Snorkeling', href: '/fr/experiences-bateau-roses/grottes-snorkeling' },
+      { label: 'Location de vedette à Roses', href: '/fr/location-vedette-roses' },
     ],
     companyTitle: 'Entreprise',
     company: [
@@ -159,6 +162,7 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus — Coves', href: '/en/boat-experiences-roses/cap-de-creus-coves' },
       { label: 'Trip to Cadaqués', href: '/en/boat-experiences-roses/cadaques' },
       { label: 'Caves & Snorkeling', href: '/en/boat-experiences-roses/caves-snorkeling' },
+      { label: 'Motorboat rental in Roses', href: '/en/motorboat-rental-roses' },
     ],
     companyTitle: 'Company',
     company: [
