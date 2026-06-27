@@ -56,7 +56,7 @@ export default function MarinaSection({ lang = 'es' }: MarinaSectionProps) {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="/boats/orange-kiwi-620/orange-kiwi-620-hero.webp"
+              src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
               alt={t.altImage}
               fill
               className="object-cover"

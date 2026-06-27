@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Users, ShieldCheck, MapPin, Euro } from 'lucide-react';
 
@@ -98,14 +97,17 @@ export default function ProductBoxSection({ lang = 'es' }: ProductBoxSectionProp
         </div>
 
         <div className="rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col lg:flex-row">
-          <div className="relative w-full lg:w-[42%] aspect-[4/3] lg:aspect-auto lg:min-h-[520px] bg-slate-900">
-            <Image
-              src="/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-hero.webp"
-              alt={t.altImage}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 42vw"
-            />
+          <div className="relative w-full lg:w-[42%] aspect-[9/16] lg:aspect-auto lg:min-h-[520px] bg-slate-900">
+            <video
+              className="absolute inset-0 h-full w-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/lancha/alquiler-lancha-7478-poster.jpg"
+              aria-label={t.altImage}
+            >
+              <source src="/lancha/alquiler-lancha-7478.mp4" type="video/mp4" />
+            </video>
           </div>
 
           <div className="flex-1 p-8 lg:p-10 flex flex-col">

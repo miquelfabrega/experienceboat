@@ -55,7 +55,7 @@ export default function HeroSection({ lang = 'es' }: HeroSectionProps) {
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background photo */}
       <Image
-        src="https://picsum.photos/seed/sunset-roses/1600/900"
+        src="/sunset/sunset-experience.jpg"
         alt={t.altText}
         fill
         className="object-cover"

@@ -57,7 +57,7 @@ const t: Record<Lang, {
       {
         id: 'sunset',
         title: 'Sunset Experience',
-        image: 'https://picsum.photos/seed/sunset-roses/600/400',
+        image: '/sunset/sunset-experience.jpg',
         desc: 'El capvespre més bonic de Roses vist des de l\'aigua. Una sortida de tarda-vespre pels canals i la badia.',
         duration: 'Aproximadament 2 hores',
         price: 'des de 160 €',
@@ -124,7 +124,7 @@ const t: Record<Lang, {
       {
         id: 'sunset',
         title: 'Sunset Experience',
-        image: 'https://picsum.photos/seed/sunset-roses/600/400',
+        image: '/sunset/sunset-experience.jpg',
         desc: 'El atardecer más bonito de Roses visto desde el agua. Una salida de tarde-noche por los canales y la bahía.',
         duration: 'Aproximadamente 2 horas',
         price: 'desde 160 €',
@@ -191,7 +191,7 @@ const t: Record<Lang, {
       {
         id: 'sunset',
         title: 'Sunset Experience',
-        image: 'https://picsum.photos/seed/sunset-roses/600/400',
+        image: '/sunset/sunset-experience.jpg',
         desc: "Le plus beau coucher de soleil de Roses vu depuis l'eau. Une sortie en soirée dans les canaux et la baie.",
         duration: 'Environ 2 heures',
         price: 'à partir de 160\u00a0€',
@@ -258,7 +258,7 @@ const t: Record<Lang, {
       {
         id: 'sunset',
         title: 'Sunset Experience',
-        image: 'https://picsum.photos/seed/sunset-roses/600/400',
+        image: '/sunset/sunset-experience.jpg',
         desc: 'The most beautiful sunset in Roses seen from the water. An evening trip through the canals and the bay.',
         duration: 'Approximately 2 hours',
         price: 'from €160',
