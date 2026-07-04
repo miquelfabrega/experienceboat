@@ -53,6 +53,9 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Excursión a Cadaqués', href: '/experiencias-barco-roses/cadaques' },
       { label: 'Cuevas & Snorkel', href: '/experiencias-barco-roses/cuevas-snorkel' },
       { label: 'Alquiler de lancha en Roses', href: '/alquiler-lancha-roses' },
+      { label: 'Cap de Creus en barco', href: '/cap-de-creus-en-barco' },
+      { label: 'Cala Montjoi', href: '/cala-montjoi' },
+      { label: 'Cala Murtra', href: '/cala-murtra' },
     ],
     companyTitle: 'Empresa',
     company: [
@@ -129,6 +132,9 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Excursion à Cadaqués', href: '/fr/experiences-bateau-roses/cadaques' },
       { label: 'Grottes & Snorkeling', href: '/fr/experiences-bateau-roses/grottes-snorkeling' },
       { label: 'Location de vedette à Roses', href: '/fr/location-vedette-roses' },
+      { label: 'Cap de Creus en bateau', href: '/fr/cap-de-creus-en-bateau' },
+      { label: 'Cala Montjoi', href: '/fr/cala-montjoi' },
+      { label: 'Cala Murtra', href: '/fr/cala-murtra' },
     ],
     companyTitle: 'Entreprise',
     company: [

@@ -187,6 +187,26 @@ const ROUTES = {
     ca: '/ca/blog/primera-vegada-vaixell-sense-llicencia-roses',
   },
 
+  // ─── Guías de destino (Cluster B) — ES + FR; EN/CA pendientes → fallback ES ───
+  capDeCreusGuide: {
+    es: '/cap-de-creus-en-barco',
+    en: null,
+    fr: '/fr/cap-de-creus-en-bateau',
+    ca: null,
+  },
+  calaMontjoi: {
+    es: '/cala-montjoi',
+    en: null,
+    fr: '/fr/cala-montjoi',
+    ca: null,
+  },
+  calaMurtra: {
+    es: '/cala-murtra',
+    en: null,
+    fr: '/fr/cala-murtra',
+    ca: null,
+  },
+
   // Páginas que aún no existen en todos los locales → fallback a ES.
   privacy: { es: '/politica-privacidad', en: null, fr: null, ca: null },
   legalNotice: { es: '/aviso-legal', en: null, fr: null, ca: null },
