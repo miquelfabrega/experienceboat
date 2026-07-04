@@ -56,6 +56,8 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus en barco', href: '/cap-de-creus-en-barco' },
       { label: 'Cala Montjoi', href: '/cala-montjoi' },
       { label: 'Cala Murtra', href: '/cala-murtra' },
+      { label: 'Qué ver en Roses', href: '/que-ver-en-roses' },
+      { label: 'Cadaqués en barco', href: '/cadaques-en-barco' },
     ],
     companyTitle: 'Empresa',
     company: [
@@ -135,6 +137,8 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Cap de Creus en bateau', href: '/fr/cap-de-creus-en-bateau' },
       { label: 'Cala Montjoi', href: '/fr/cala-montjoi' },
       { label: 'Cala Murtra', href: '/fr/cala-murtra' },
+      { label: 'Que faire à Rosas', href: '/fr/que-faire-a-rosas' },
+      { label: 'Cadaqués en bateau', href: '/fr/cadaques-en-bateau' },
     ],
     companyTitle: 'Entreprise',
     company: [

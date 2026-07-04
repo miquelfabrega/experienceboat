@@ -206,6 +206,18 @@ const ROUTES = {
     fr: '/fr/cala-murtra',
     ca: null,
   },
+  queVerRoses: {
+    es: '/que-ver-en-roses',
+    en: null,
+    fr: '/fr/que-faire-a-rosas',
+    ca: null,
+  },
+  cadaquesBarco: {
+    es: '/cadaques-en-barco',
+    en: null,
+    fr: '/fr/cadaques-en-bateau',
+    ca: null,
+  },
 
   // Páginas que aún no existen en todos los locales → fallback a ES.
   privacy: { es: '/politica-privacidad', en: null, fr: null, ca: null },

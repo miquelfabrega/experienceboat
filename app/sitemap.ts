@@ -64,6 +64,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/cap-de-creus-en-barco', 0.8, 'monthly'),
     url('/cala-montjoi', 0.7, 'monthly'),
     url('/cala-murtra', 0.7, 'monthly'),
+    url('/que-ver-en-roses', 0.75, 'monthly'),
+    url('/cadaques-en-barco', 0.75, 'monthly'),
 
     // ─── Flota ──────────────────────────────────────────────────────────────
     url('/barcos', 0.7, 'monthly'),
@@ -181,6 +183,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/fr/cap-de-creus-en-bateau', 0.8, 'monthly'),
     url('/fr/cala-montjoi', 0.7, 'monthly'),
     url('/fr/cala-murtra', 0.7, 'monthly'),
+    url('/fr/que-faire-a-rosas', 0.75, 'monthly'),
+    url('/fr/cadaques-en-bateau', 0.75, 'monthly'),
     url('/fr/bateaux', 0.5, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/fr/bateaux/${slug}`, 0.45, 'monthly')),
 

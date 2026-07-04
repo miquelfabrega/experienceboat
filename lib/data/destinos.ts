@@ -34,13 +34,20 @@ export interface GuiaCopy {
   relatedTitle: string;
 }
 
-export type DestinoKey = 'capDeCreusGuide' | 'calaMontjoi' | 'calaMurtra';
+export type DestinoKey =
+  | 'capDeCreusGuide'
+  | 'calaMontjoi'
+  | 'calaMurtra'
+  | 'queVerRoses'
+  | 'cadaquesBarco';
 
 /** Imagen hero por guía (archivos existentes en /public/images). */
 export const DESTINO_HERO: Record<DestinoKey, string> = {
   capDeCreusGuide: '/images/hero/cap-de-creus-calas-hero.jpg',
   calaMontjoi: '/images/experiencias/cap-de-creus-calas.webp',
   calaMurtra: '/images/hero/hero-guillola.webp',
+  queVerRoses: '/images/hero/hero-2.jpg',
+  cadaquesBarco: '/images/hero/cap-de-creus-calas-2026.jpg',
 };
 
 /** Enlaces relacionados (mismos para todas las guías, localizados). */
@@ -455,6 +462,274 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ],
       ctaTitle: 'Naviguez vers Cala Murtra',
       ctaText: 'Découvrez le calme de Cala Murtra en sortie privée ou avec un bateau sans permis depuis Santa Margarita.',
+      ctaLabel: 'Vérifier les disponibilités et réserver',
+      relatedTitle: 'Continuez à explorer',
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  queVerRoses: {
+    es: {
+      metaTitle: 'Qué ver en Roses: guía por tierra y mar',
+      metaDescription:
+        'Qué ver en Roses: la Ciutadella, el Castell de la Trinitat, el faro y las calas de la bahía. Descubre Roses por tierra y —mejor todavía— desde el mar.',
+      breadcrumbHome: 'Inicio',
+      breadcrumbLabel: 'Qué ver en Roses',
+      kicker: 'Bahía marinera',
+      h1: 'Qué ver en Roses: la bahía marinera de la Costa Brava',
+      heroAlt: 'Vista de la bahía de Roses desde el mar',
+      introLead:
+        'Roses es una villa marinera en el extremo norte de la Costa Brava, con siglos de historia y una bahía protegida por el Parc Natural de Cap de Creus. Aquí tienes qué ver sin prisa: el casco antiguo y sus monumentos por tierra y, sobre todo, las calas y los canales que solo se descubren desde el agua.',
+      sections: [
+        {
+          h2: 'Roses de un vistazo',
+          body: [
+            'Roses no es una playa de resort: es una villa con raíces, de casco antiguo, puerto pesquero vivo, playas largas y calas escondidas. La bahía que la rodea forma parte del Parc Natural de Cap de Creus, así que Roses es también la puerta de entrada a uno de los paisajes más salvajes de Cataluña.',
+            'Se viene a Roses a desconectar sin perder autenticidad: pasear por el puerto, comer en una terraza con vistas y subir a la Ciutadella al atardecer.',
+          ],
+        },
+        {
+          h2: 'Qué ver en tierra: Ciutadella, Castell de la Trinitat y faro',
+          body: [
+            'La Ciutadella de Roses es el corazón histórico: un recinto amurallado con restos griegos (la antigua Rhode), romanos y medievales, con un pequeño museo que pone contexto. El Castell de la Trinitat, fortaleza del siglo XVI asomada al mar, regala vistas de toda la bahía; a su lado, el faro de Roses.',
+            'Si te tira la prehistoria, el Dolmen de la Creu d’en Cobertella es uno de los megalíticos más grandes de Cataluña. Y el casco antiguo se disfruta paseando sin prisa, entre tiendas locales y bares de pescadores.',
+          ],
+        },
+        {
+          h2: 'Qué ver desde el mar',
+          body: [
+            'Aquí está lo que diferencia una visita normal de una auténtica. Los canales de Santa Margarita, el barrio marinero navegable desde donde salimos, concentran la esencia marinera de Roses. Y las calas de la bahía —Montjoi, Culip, Murtra— solo se alcanzan bien en barco, con aguas transparentes y esa sensación de descubrimiento.',
+            'Más allá, el Parc Natural de Cap de Creus levanta acantilados sobre el agua, el paisaje que inspiró a Dalí. Un atardecer desde el mar, con la luz dorada tocando la Ciutadella, es difícil de olvidar.',
+          ],
+        },
+        {
+          h2: 'Cuándo ir y cómo verla mejor',
+          body: [
+            'La mejor época va de mayo a octubre; junio y septiembre traen luz larga y menos gente que agosto. El casco antiguo se recorre a pie, y para las playas grandes hay autobús local.',
+            'Pero para ver Roses como es, sube a un barco: alquiler sin licencia desde 70 €/hora en la Marina de Santa Margarita, o una excursión privada al atardecer (desde 160 €). Mira siempre el parte de tramuntana, el viento del norte que aquí manda.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntas frecuentes',
+      faq: [
+        {
+          q: '¿Qué se puede ver en Roses en un día?',
+          a: 'Por la mañana, la Ciutadella, el Castell de la Trinitat, el faro y el casco antiguo a pie. Por la tarde, las calas de la bahía en barco. Si el día es corto, prioriza el mar: es lo que no se ve igual desde tierra.',
+        },
+        {
+          q: '¿Merece la pena ver Roses desde el mar?',
+          a: 'Mucho. Su alma es la bahía: calas, canales y el atardecer sobre la Ciutadella. Una salida en barco te muestra Roses como la ven los marineros.',
+        },
+        {
+          q: '¿Qué calas se visitan desde Roses?',
+          a: 'Cala Montjoi, Cala Culip o Cala Murtra en la bahía; las más lejanas, hacia Cap de Creus, con barco con licencia o excursión privada. Todas a pocos minutos de Santa Margarita.',
+        },
+        {
+          q: '¿Cuándo es mejor visitar Roses?',
+          a: 'De mayo a octubre, con junio y septiembre como meses ideales. Evita agosto si buscas tranquilidad y consulta siempre el parte de tramuntana.',
+        },
+      ],
+      ctaTitle: 'Descubre Roses desde el mar',
+      ctaText: 'Alquila un barco sin licencia o reserva una excursión privada al atardecer y recorre las calas y los canales de Santa Margarita.',
+      ctaLabel: 'Consultar disponibilidad y reservar',
+      relatedTitle: 'Sigue explorando',
+    },
+    fr: {
+      metaTitle: 'Que faire à Rosas : à terre et en mer',
+      metaDescription:
+        'Que faire à Rosas : la Ciutadella, le Castell de la Trinitat, le phare et les criques de la baie. Découvrez Rosas à terre et —mieux encore— depuis la mer.',
+      breadcrumbHome: 'Accueil',
+      breadcrumbLabel: 'Que faire à Rosas',
+      kicker: 'Baie maritime',
+      h1: 'Que faire à Rosas : la baie maritime de la Costa Brava',
+      heroAlt: 'Vue de la baie de Rosas depuis la mer',
+      introLead:
+        'Rosas est un village marin à l’extrémité nord de la Costa Brava, riche d’histoire et bordé d’une baie protégée par le Parc Naturel de Cap de Creus. Voici quoi voir sans se presser : la vieille ville et ses monuments à terre et, surtout, les criques et les canaux que l’on ne découvre que depuis l’eau.',
+      sections: [
+        {
+          h2: 'Rosas en un coup d’œil',
+          body: [
+            'Rosas n’est pas une plage de station balnéaire : c’est un village avec des racines, une vieille ville, un port de pêche vivant, de longues plages et des criques cachées. La baie qui l’entoure fait partie du Parc Naturel de Cap de Creus, ce qui fait de Rosas la porte d’entrée de l’un des paysages les plus sauvages de Catalogne.',
+            'On vient à Rosas pour se déconnecter sans perdre l’authenticité : flâner dans le port, manger en terrasse face à la mer et monter à la Ciutadella au coucher du soleil.',
+          ],
+        },
+        {
+          h2: 'Que voir à terre : Ciutadella, Castell de la Trinitat et phare',
+          body: [
+            'La Ciutadella de Rosas est le cœur historique : une enceinte fortifiée aux vestiges grecs (l’ancienne Rhode), romains et médiévaux, avec un petit musée qui remet en contexte. Le Castell de la Trinitat, forteresse du seizième siècle tournée vers la mer, offre une vue sur toute la baie ; juste à côté, le phare de Rosas.',
+            'Si la préhistoire vous attire, le Dolmen de la Creu d’en Cobertella est l’un des plus grands mégalithes de Catalogne. Et la vieille ville se savoure à pied, entre boutiques locales et bars de pêcheurs.',
+          ],
+        },
+        {
+          h2: 'Que voir depuis la mer',
+          body: [
+            'Voilà ce qui distingue une visite ordinaire d’une vraie. Les canaux de Sainte-Marguerite, le quartier marin navigable d’où nous partons, concentrent l’âme maritime de Rosas. Et les criques de la baie —Montjoi, Culip, Murtra— ne s’atteignent vraiment qu’en bateau, aux eaux transparentes et à ce parfum de découverte.',
+            'Plus loin, le Parc Naturel de Cap de Creus dresse ses falaises au-dessus de l’eau, le paysage qui inspira Dalí. Un coucher de soleil depuis la mer, la lumière dorée sur la Ciutadella, ne s’oublie pas.',
+          ],
+        },
+        {
+          h2: 'Quand venir et comment mieux la voir',
+          body: [
+            'La meilleure période va de mai à octobre ; juin et septembre offrent une lumière longue et moins de monde qu’en août. La vieille ville se parcourt à pied, et un bus local dessert les grandes plages.',
+            'Mais pour voir Rosas telle qu’elle est, montez à bord : location sans permis dès 70 €/heure à la Marina de Santa Margarita, ou une excursion privée au coucher du soleil (dès 160 €). Consultez toujours le bulletin de tramontane, le vent du nord qui commande ici.',
+          ],
+        },
+      ],
+      faqTitle: 'Questions fréquentes',
+      faq: [
+        {
+          q: 'Que peut-on voir à Rosas en une journée ?',
+          a: 'Le matin, la Ciutadella, le Castell de la Trinitat, le phare et la vieille ville à pied. L’après-midi, les criques de la baie en bateau. Si la journée est courte, privilégiez la mer : c’est ce qui ne se voit pas pareil de terre.',
+        },
+        {
+          q: 'Vaut-il la peine de voir Rosas depuis la mer ?',
+          a: 'Beaucoup. Son âme, c’est la baie : criques, canaux et le coucher de soleil sur la Ciutadella. Une sortie en bateau vous montre Rosas comme la voient les marins.',
+        },
+        {
+          q: 'Quelles criques visiter depuis Rosas ?',
+          a: 'Cala Montjoi, Cala Culip ou Cala Murtra dans la baie ; les plus lointaines, vers Cap de Creus, avec un bateau avec permis ou une excursion privée. Toutes à quelques minutes de Santa Margarita.',
+        },
+        {
+          q: 'Quand est-il préférable de visiter Rosas ?',
+          a: 'De mai à octobre, avec juin et septembre comme mois idéaux. Évitez août si vous cherchez le calme et consultez toujours le bulletin de tramontane.',
+        },
+      ],
+      ctaTitle: 'Découvrez Rosas depuis la mer',
+      ctaText: 'Louez un bateau sans permis ou réservez une excursion privée au coucher du soleil et parcourez les criques et les canaux de Santa Margarita.',
+      ctaLabel: 'Vérifier les disponibilités et réserver',
+      relatedTitle: 'Continuez à explorer',
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  cadaquesBarco: {
+    es: {
+      metaTitle: 'Cadaqués en barco desde Roses: excursión privada',
+      metaDescription:
+        'Ir a Cadaqués en barco desde Roses: una excursión privada bordeando el Cap de Creus, con paradas en calas para bañarte. El pueblo de Dalí, a tu ritmo.',
+      breadcrumbHome: 'Inicio',
+      breadcrumbLabel: 'Cadaqués en barco',
+      kicker: 'El pueblo de Dalí',
+      h1: 'Cadaqués en barco desde Roses: la excursión privada al pueblo de Dalí',
+      heroAlt: 'Costa del Cap de Creus camino de Cadaqués',
+      introLead:
+        'Cadaqués espera al otro lado del Cap de Creus: un pueblo blanco de pescadores ligado para siempre a Salvador Dalí. No somos una línea regular ni un ferry; desde Roses te llevamos en una excursión privada, bordeando acantilados y parando en calas para bañarte antes de llegar al pueblo.',
+      sections: [
+        {
+          h2: 'Qué es Cadaqués y por qué merece la pena',
+          body: [
+            'Cadaqués es un pueblo costero de casas encaladas que suben desde la orilla hasta la iglesia de Santa Maria. Callejuelas estrechas, galerías de arte, barcas de pesca en la bahía y un ambiente tranquilo y bohemio, muy diferente del turismo de playa masificado.',
+            'Su carácter gira en torno a Salvador Dalí, que vivió justo al lado, en Portlligat. Pasear Cadaqués es respirar el paisaje que marcó al artista.',
+          ],
+        },
+        {
+          h2: 'Dalí, Portlligat y el pueblo',
+          body: [
+            'La Casa-Museo Salvador Dalí en Portlligat, a un paso de Cadaqués, fue su hogar y su taller: una arquitectura singular, ampliada durante años, con vistas al Cap de Creus. Conviene consultar horarios y reservar entrada en temporada alta.',
+            'En el pueblo, pasea sin prisa hasta la iglesia de Santa Maria, entra en las galerías y come pescado en una terraza frente al mar. El encanto de Cadaqués está en la calma.',
+          ],
+        },
+        {
+          h2: 'Cómo llegar en barco desde Roses (excursión privada)',
+          body: [
+            'Por mar se va bordeando el Parc Natural de Cap de Creus: acantilados, calas y agua clara, sin carretera ni ruido. En nuestra excursión privada vas solo con tu grupo y un patrón que conoce estas aguas; paramos en calas como Guillola o Jugadora para nadar y hacer snorkel, y en Cadaqués tienes tiempo para el pueblo antes de volver.',
+            'Es una travesía de mar abierto de algo más de una hora por trayecto, según el estado del mar. Con las paradas para bañarse, la salida ocupa buena parte del día.',
+          ],
+        },
+        {
+          h2: 'Con patrón, tramuntana y mejor época',
+          body: [
+            'Para Cadaqués recomendamos barco con licencia o excursión con patrón: está a unos 20 km por mar abierto y el Cap de Creus exige experiencia. El alquiler sin licencia es para las calas cercanas de la bahía, no para esta ruta.',
+            'La tramuntana puede levantar mar con rapidez; consultamos el parte y, si sopla fuerte, cambiamos de plan o de fecha. La mejor época va de mayo a septiembre.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntas frecuentes',
+      faq: [
+        {
+          q: '¿Se puede ir a Cadaqués en barco desde Roses?',
+          a: 'Sí, bordeando el Parc Natural de Cap de Creus. No es una línea regular: es una excursión privada, solo tu grupo, con patrón y a tu ritmo.',
+        },
+        {
+          q: '¿Cuánto dura la travesía?',
+          a: 'Algo más de una hora por trayecto, según el mar. Con paradas en calas para bañarte, la salida ocupa buena parte del día.',
+        },
+        {
+          q: '¿Necesito licencia o patrón?',
+          a: 'Para esta ruta recomendamos barco con licencia o con patrón: es mar abierto y hay distancia. El alquiler sin licencia queda para las calas cercanas de la bahía.',
+        },
+        {
+          q: '¿Qué ver en Cadaqués?',
+          a: 'El casco antiguo y la iglesia de Santa Maria, las galerías de arte, la playa y, muy cerca, la Casa-Museo de Dalí en Portlligat.',
+        },
+      ],
+      ctaTitle: 'Navega a Cadaqués',
+      ctaText: 'Excursión privada desde Roses bordeando el Cap de Creus, con patrón y paradas en calas. El pueblo de Dalí, a tu ritmo.',
+      ctaLabel: 'Consultar disponibilidad y reservar',
+      relatedTitle: 'Sigue explorando',
+    },
+    fr: {
+      metaTitle: 'Cadaqués en bateau depuis Roses : excursion privée',
+      metaDescription:
+        'Aller à Cadaqués en bateau depuis Roses : une excursion privée en longeant le Cap de Creus, avec arrêts baignade dans les criques. Le village de Dalí, à votre rythme.',
+      breadcrumbHome: 'Accueil',
+      breadcrumbLabel: 'Cadaqués en bateau',
+      kicker: 'Le village de Dalí',
+      h1: 'Cadaqués en bateau depuis Roses : l’excursion privée au village de Dalí',
+      heroAlt: 'Côte du Cap de Creus sur la route de Cadaqués',
+      introLead:
+        'Cadaqués vous attend de l’autre côté du Cap de Creus : un village blanc de pêcheurs lié à jamais à Salvador Dalí. Nous ne sommes ni une ligne régulière ni un ferry ; depuis Roses, nous vous emmenons en excursion privée, en longeant les falaises et en nous arrêtant dans des criques pour vous baigner avant d’arriver au village.',
+      sections: [
+        {
+          h2: 'Qu’est-ce que Cadaqués et pourquoi cela vaut la peine',
+          body: [
+            'Cadaqués est un village côtier de maisons chaulées qui montent du rivage jusqu’à l’église de Santa Maria. Des ruelles étroites, des galeries d’art, des barques de pêche dans la baie et une ambiance calme et bohème, bien loin du tourisme de plage surpeuplé.',
+            'Son caractère tourne autour de Salvador Dalí, qui vivait juste à côté, à Portlligat. Flâner dans Cadaqués, c’est respirer le paysage qui a marqué l’artiste.',
+          ],
+        },
+        {
+          h2: 'Dalí, Portlligat et le village',
+          body: [
+            'La Maison-Musée Salvador Dalí à Portlligat, à deux pas de Cadaqués, fut son foyer et son atelier : une architecture singulière, agrandie au fil des années, avec vue sur le Cap de Creus. Pensez à vérifier les horaires et à réserver en haute saison.',
+            'Dans le village, flânez jusqu’à l’église de Santa Maria, poussez la porte des galeries et goûtez le poisson en terrasse face à la mer. Tout le charme de Cadaqués tient dans son calme.',
+          ],
+        },
+        {
+          h2: 'Comment y aller en bateau depuis Roses (excursion privée)',
+          body: [
+            'Par la mer, on longe le Parc Naturel de Cap de Creus : falaises, criques et eau claire, sans route ni bruit. Lors de notre excursion privée, vous êtes seuls avec votre groupe et un skipper qui connaît ces eaux ; nous nous arrêtons dans des criques comme Guillola ou Jugadora pour nager et faire du snorkeling, et à Cadaqués vous avez le temps de découvrir le village avant de rentrer.',
+            'C’est une traversée en mer ouverte d’un peu plus d’une heure par trajet, selon l’état de la mer. Avec les arrêts baignade, la sortie occupe une bonne partie de la journée.',
+          ],
+        },
+        {
+          h2: 'Avec skipper, tramontane et meilleure période',
+          body: [
+            'Pour Cadaqués, nous recommandons un bateau avec permis ou une excursion avec skipper : c’est à une vingtaine de kilomètres en mer ouverte et le Cap de Creus demande de l’expérience. La location sans permis est réservée aux criques proches de la baie, pas à cet itinéraire.',
+            'La tramontane peut lever la mer rapidement ; nous consultons le bulletin et, si elle souffle fort, nous changeons de plan ou de date. La meilleure période va de mai à septembre.',
+          ],
+        },
+      ],
+      faqTitle: 'Questions fréquentes',
+      faq: [
+        {
+          q: 'Peut-on aller à Cadaqués en bateau depuis Roses ?',
+          a: 'Oui, en longeant le Parc Naturel de Cap de Creus. Ce n’est pas une ligne régulière : c’est une excursion privée, votre groupe seul, avec skipper et à votre rythme.',
+        },
+        {
+          q: 'Combien de temps dure la traversée ?',
+          a: 'Un peu plus d’une heure par trajet, selon la mer. Avec les arrêts baignade dans les criques, la sortie occupe une bonne partie de la journée.',
+        },
+        {
+          q: 'Ai-je besoin d’un permis ou d’un skipper ?',
+          a: 'Pour cet itinéraire, nous recommandons un bateau avec permis ou avec skipper : c’est de la mer ouverte et il y a de la distance. La location sans permis reste pour les criques proches de la baie.',
+        },
+        {
+          q: 'Que voir à Cadaqués ?',
+          a: 'Le centre ancien et l’église de Santa Maria, les galeries d’art, la plage et, tout près, la Maison-Musée de Dalí à Portlligat.',
+        },
+      ],
+      ctaTitle: 'Naviguez vers Cadaqués',
+      ctaText: 'Excursion privée depuis Roses en longeant le Cap de Creus, avec skipper et arrêts dans les criques. Le village de Dalí, à votre rythme.',
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
     },
