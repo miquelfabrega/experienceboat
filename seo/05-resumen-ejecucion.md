@@ -1,5 +1,19 @@
-# FASE 5 — Resumen de ejecución (parte 1: quick wins + Cluster A)
-*2026-07-04 · Rama `seo/quick-wins-cluster-a` · 3 commits, sin push · Build OK (159 páginas estáticas)*
+# FASE 5 — Resumen de ejecución (quick wins + Clusters A, B, C, D)
+*2026-07-04 · Rama `seo/quick-wins-cluster-a` · 7 commits, sin push · Build OK (169 páginas estáticas)*
+
+## Clusters B, C y D — guías de destino (ES + FR)
+Silo nuevo de guías con componente reutilizable `GuiaDestino` + datos en `lib/data/destinos.ts`. Cada guía: `TouristAttraction` + `FAQPage` + `BreadcrumbList`, hreflang ES/FR recíproco (EN/CA pendientes → fallback), enlaces internos (Footer ES/FR + related), CTA a Regiondo. Contenido nativo por idioma, cifras solo reales (fleet.ts).
+
+- **Cluster B:** `/cap-de-creus-en-barco`, `/cala-montjoi`, `/cala-murtra` (+ `/fr/...`). Ataca cala montjoi (1.300 ES + 600 FR), cala murtra (1.600), cap de creus (9.000 / KD 13) — competencia con páginas flojas.
+- **Cluster C:** `/que-ver-en-roses` + `/fr/que-faire-a-rosas` (que ver en roses 800 / que faire à rosas 250).
+- **Cluster D:** `/cadaques-en-barco` + `/fr/cadaques-en-bateau`, **enfocada a excursión privada** (no ferry/línea colectiva, porque Els Blaus/Don Pancho no son competencia). Se eliminaron datos inventados del borrador (horarios de salida, precio/horario del museo, población).
+- QA de contenido (content-quality-editor): ES sin cambios; FR con pulido menor aplicado.
+
+**Pendiente en estas guías:** versiones EN/CA (hoy fallback a ES), y `aggregateRating` real en el schema cuando Clara facilite nota + nº de reseñas de la ficha de Google.
+
+---
+
+## Parte 1 — quick wins + Cluster A
 
 ## Qué se ha hecho
 
