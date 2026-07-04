@@ -9,7 +9,9 @@ Silo nuevo de guías con componente reutilizable `GuiaDestino` + datos en `lib/d
 - **Cluster D:** `/cadaques-en-barco` + `/fr/cadaques-en-bateau`, **enfocada a excursión privada** (no ferry/línea colectiva, porque Els Blaus/Don Pancho no son competencia). Se eliminaron datos inventados del borrador (horarios de salida, precio/horario del museo, población).
 - QA de contenido (content-quality-editor): ES sin cambios; FR con pulido menor aplicado.
 
-**Pendiente en estas guías:** versiones EN/CA (hoy fallback a ES), y `aggregateRating` real en el schema cuando Clara facilite nota + nº de reseñas de la ficha de Google.
+**Paridad idiomática completada:** las 5 guías existen ya en **ES/FR/EN/CA** (hreflang recíproco de 4 idiomas). CA revisado a catalán central estándar; EN nativo. Falta `aggregateRating` real en el schema cuando Clara facilite nota + nº de reseñas de la ficha de Google.
+
+**Rama pusheada:** `seo/quick-wins-cluster-a` en origin (GitHub). Pendiente: abrir PR y revisión/merge.
 
 ---
 
