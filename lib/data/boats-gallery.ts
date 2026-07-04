@@ -86,24 +86,20 @@ export const boatsGallery: Record<string, GalleryImage[]> = {
   // ──────────────────────────────────────────────────────────────
   'orange-kiwi-620': [
     {
-      src: '/boats/orange-kiwi-620/orange-kiwi-620-hero.webp',
-      alt: `Neumática Orange Kiwi 620 vista aérea sobre aguas turquesa ${ZONA}`,
+      src: '/boats/orange-kiwi-620/orange-kiwi-620-drone-01.jpg',
+      alt: `Neumática Orange Kiwi 620 amarrada en los canales de Santa Margarita ${ZONA}`,
+    },
+    {
+      src: '/boats/orange-kiwi-620/orange-kiwi-620-drone-02.jpg',
+      alt: `Vista cenital de la neumática Orange Kiwi 620 ${ZONA}`,
     },
     {
       src: '/boats/orange-kiwi-620/orange-kiwi-620-exterior-01.webp',
       alt: `Orange Kiwi 620 fondeada frente a una cala ${ZONA}`,
     },
     {
-      src: '/boats/orange-kiwi-620/orange-kiwi-620-exterior-02.webp',
-      alt: `Orange Kiwi 620 amarrada en puerto ${ZONA}`,
-    },
-    {
       src: '/boats/orange-kiwi-620/orange-kiwi-620-interior-01.webp',
       alt: `Cubierta y consola de la neumática Orange Kiwi 620 ${ZONA}`,
-    },
-    {
-      src: '/boats/orange-kiwi-620/orange-kiwi-620-interior-02.webp',
-      alt: `Asientos y solárium de la Orange Kiwi 620 ${ZONA}`,
     },
     {
       src: '/boats/orange-kiwi-620/orange-kiwi-620-experiencia-01.webp',

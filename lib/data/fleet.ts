@@ -209,7 +209,7 @@ export const fleet: Barco[] = [
     },
     sunset: { baja: 160, media: 170, alta: 175 },
     precioDesde: 235,
-    imagen: '/boats/orange-kiwi-620/orange-kiwi-620-hero.webp',
+    imagen: '/boats/orange-kiwi-620/orange-kiwi-620-drone-01.jpg',
     badge: null,
     descripcionCorta:
       'Zodiac semirrígida de 6,20 m para 11 pax. Estable, divertida y perfecta para grupos grandes que buscan diversión.',
