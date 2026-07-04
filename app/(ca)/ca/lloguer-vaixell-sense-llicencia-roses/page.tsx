@@ -19,14 +19,14 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: 'Lloguer Vaixell sense Llicència Roses | Costa Brava',
+  title: 'Lloguer de vaixell sense llicència a Roses',
   description:
-    'Llogueu un vaixell sense llicència a Roses i descobriu la badia, els canals de Santa Margarida i el Cap de Creus. Sense experiència, tot privat. Reserveu ja.',
+    'Navega sense llicència ni experiència. Dream Point, Remus o Marine Brezze des de 70€/h. Briefing i assegurança inclosos. Privat, només el teu grup. Roses.',
   alternates: buildAlternates('rentalWithoutLicence', 'ca'),
   openGraph: {
-    title: 'Lloguer Vaixell sense Llicència Roses | Costa Brava',
+    title: 'Lloguer de vaixell sense llicència a Roses',
     description:
-      'Llogueu un vaixell sense llicència a Roses: badia, canals de Santa Margarida i Cap de Creus. Sense experiència prèvia, tot privat.',
+      'Navega sense llicència ni experiència. Dream Point, Remus o Marine Brezze des de 70€/h. Briefing i assegurança inclosos. Privat, només el teu grup. Roses.',
     url: 'https://www.experienceboat.es/ca/lloguer-vaixell-sense-llicencia-roses',
     siteName: 'Experience Boat',
     locale: 'ca_ES',

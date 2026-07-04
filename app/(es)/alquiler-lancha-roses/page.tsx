@@ -49,14 +49,14 @@ function BreadcrumbSchema() {
 }
 
 export const metadata: Metadata = {
-  title: 'Alquiler de lancha en Roses — Experience Boat',
+  title: 'Alquiler de lancha en Roses',
   description:
-    'Alquila una lancha con licencia en Roses y recorre la bahía y el Cap de Creus. Flota de 115 a 250 CV, hasta 12 personas. Reserva online. Desde 195 €.',
+    'Alquiler de lancha rápida en Roses con o sin patrón. Cap de Creus, calas y bahía. Salidas privadas, solo tu grupo. Reserva directa. Costa Brava.',
   alternates: buildAlternates('lanchaRoses', 'es'),
   openGraph: {
-    title: 'Alquiler de lancha en Roses — Experience Boat',
+    title: 'Alquiler de lancha en Roses',
     description:
-      'Alquila una lancha con licencia en Roses y recorre la bahía y el Cap de Creus. Flota potente, hasta 12 personas. Desde 195 €.',
+      'Alquiler de lancha rápida en Roses con o sin patrón. Cap de Creus, calas y bahía. Salidas privadas, solo tu grupo. Reserva directa. Costa Brava.',
     url: URL,
     siteName: 'Experience Boat',
     locale: 'es_ES',

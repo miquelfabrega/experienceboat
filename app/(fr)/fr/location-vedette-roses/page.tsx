@@ -49,14 +49,14 @@ function BreadcrumbSchema() {
 }
 
 export const metadata: Metadata = {
-  title: 'Location de vedette à Roses — Experience Boat',
+  title: 'Location de vedette à Roses',
   description:
-    'Louez une vedette avec permis à Roses et explorez la baie et le Cap de Creus. Flotte de 115 à 250 CV, jusqu’à 12 personnes. Réservation en ligne. Dès 195 €.',
+    'Location de vedette rapide à Roses avec ou sans skipper. Cap de Creus, criques et baie. Sorties privées, votre groupe seul. Réservation directe.',
   alternates: buildAlternates('lanchaRoses', 'fr'),
   openGraph: {
-    title: 'Location de vedette à Roses — Experience Boat',
+    title: 'Location de vedette à Roses',
     description:
-      'Louez une vedette avec permis à Roses et explorez la baie et le Cap de Creus. Flotte puissante, jusqu’à 12 personnes. Dès 195 €.',
+      'Location de vedette rapide à Roses avec ou sans skipper. Cap de Creus, criques et baie. Sorties privées, votre groupe seul. Réservation directe.',
     url: URL,
     siteName: 'Experience Boat',
     locale: 'fr_FR',

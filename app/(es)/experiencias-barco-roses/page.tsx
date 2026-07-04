@@ -19,14 +19,14 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-title: 'Experiencias en barco en Roses — Cap de Creus',
+title: 'Excursiones en barco privadas en Roses',
   description:
-    'Excursiones privadas y atardeceres en barco desde Roses. Salvador te lleva a las calas del Cap de Creus y los canales de Santa Margarita. Solo tu grupo a bordo.',
+    'Excursiones privadas en barco: Sunset, Cap de Creus, Cadaqués y calas. Solo tu grupo, con patrón local. Desde 160€. Badia de Roses. Reserva directa.',
   alternates: buildAlternates('experiences', 'es'),
   openGraph: {
-title: 'Experiencias en barco en Roses — Cap de Creus',
+title: 'Excursiones en barco privadas en Roses',
     description:
-      'Excursiones privadas y atardeceres en barco desde Roses. Salvador te lleva a las calas del Cap de Creus y los canales de Santa Margarita. Solo tu grupo a bordo.',
+      'Excursiones privadas en barco: Sunset, Cap de Creus, Cadaqués y calas. Solo tu grupo, con patrón local. Desde 160€. Badia de Roses. Reserva directa.',
     url: 'https://www.experienceboat.es/experiencias-barco-roses',
     siteName: 'Experience Boat',
     locale: 'es_ES',

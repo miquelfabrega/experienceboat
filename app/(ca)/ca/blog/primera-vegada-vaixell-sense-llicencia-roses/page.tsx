@@ -29,9 +29,30 @@ export const metadata: Metadata = {
   },
 };
 
+function ArticleSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'La teva primera vegada en vaixell sense llicència: tot el que cal saber',
+    datePublished: '2025-12-28',
+    dateModified: '2025-12-28',
+    author: { '@type': 'Organization', name: 'Experience Boat' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Experience Boat',
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+    },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/blog/primera-vez-barco.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/ca/blog/primera-vegada-vaixell-sense-llicencia-roses' },
+    inLanguage: 'ca',
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
 export default function ArticlePage() {
   return (
     <main id="main-content" className="bg-white min-h-screen">
+      <ArticleSchema />
       <nav aria-label="Breadcrumb" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 text-sm text-gray-500">
         <ol className="flex items-center gap-2 flex-wrap">
           <li><Link href="/ca" className="hover:text-blue-600">Inici</Link></li>

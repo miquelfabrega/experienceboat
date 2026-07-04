@@ -19,9 +19,9 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: 'Experiències en vaixell a Roses — Cap de Creus',
+  title: 'Excursions privades en vaixell a Roses',
   description:
-    'Excursions privades i capvespres en vaixell des de Roses. Us portem a les cales del Cap de Creus i als canals de Santa Margarida.',
+    'Excursions privades en vaixell: posta de sol, Cap de Creus, Cadaqués i cales. Només el teu grup, patró local. Des de 160€. Badia de Roses.',
   keywords: [
     'passeig en vaixell Roses',
     'excursió Cap de Creus en vaixell',
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   ],
   alternates: buildAlternates('experiences', 'ca'),
   openGraph: {
-    title: 'Experiències en vaixell a Roses — Cap de Creus',
+    title: 'Excursions privades en vaixell a Roses',
     description:
-      'Excursions privades i capvespres en vaixell des de Roses. Us portem a les cales del Cap de Creus i als canals de Santa Margarida.',
+      'Excursions privades en vaixell: posta de sol, Cap de Creus, Cadaqués i cales. Només el teu grup, patró local. Des de 160€. Badia de Roses.',
     url: 'https://www.experienceboat.es/ca/experiencies-vaixell-roses',
     siteName: 'Experience Boat',
     locale: 'ca_ES',

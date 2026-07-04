@@ -22,12 +22,12 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Alquiler de barco con licencia en Roses',
   description:
-    'Alquila un barco con licencia en Roses y navega libre por la bahía, el Cap de Creus y las mejores calas de la Costa Brava. Embarcaciones potentes. Reserva ya.',
+    'Alquila barco con licencia en Roses (6–12 pax): Jeanneau, Zodiac o llaüt desde 195€ el medio día. Patrón opcional. Cap de Creus y Cadaqués. Reserva ya.',
   alternates: buildAlternates('rentalWithLicence', 'es'),
   openGraph: {
 title: 'Alquiler de barco con licencia en Roses',
     description:
-      'Alquila un barco con licencia en Roses y navega libre por la bahía, el Cap de Creus y las mejores calas de la Costa Brava. Embarcaciones potentes. Reserva ya.',
+      'Alquila barco con licencia en Roses (6–12 pax): Jeanneau, Zodiac o llaüt desde 195€ el medio día. Patrón opcional. Cap de Creus y Cadaqués. Reserva ya.',
     url: 'https://www.experienceboat.es/alquiler-barco-con-licencia-roses',
     siteName: 'Experience Boat',
     locale: 'es_ES',

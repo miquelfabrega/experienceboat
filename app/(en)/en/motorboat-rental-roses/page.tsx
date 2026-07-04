@@ -49,14 +49,14 @@ function BreadcrumbSchema() {
 }
 
 export const metadata: Metadata = {
-  title: 'Motorboat rental in Roses — Experience Boat',
+  title: 'Motorboat rental in Roses',
   description:
-    'Rent a motorboat with licence in Roses and explore the bay and Cap de Creus. Fleet from 115 to 250 HP, up to 12 people. Book online. From €195.',
+    'Fast motorboat rental in Roses with or without skipper. Cap de Creus, coves and bay. Private outings, your group only. Book directly. Costa Brava.',
   alternates: buildAlternates('lanchaRoses', 'en'),
   openGraph: {
-    title: 'Motorboat rental in Roses — Experience Boat',
+    title: 'Motorboat rental in Roses',
     description:
-      'Rent a motorboat with licence in Roses and explore the bay and Cap de Creus. Powerful fleet, up to 12 people. From €195.',
+      'Fast motorboat rental in Roses with or without skipper. Cap de Creus, coves and bay. Private outings, your group only. Book directly. Costa Brava.',
     url: URL,
     siteName: 'Experience Boat',
     locale: 'en_GB',

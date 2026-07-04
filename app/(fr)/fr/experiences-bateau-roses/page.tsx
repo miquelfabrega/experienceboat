@@ -15,14 +15,14 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-title: 'Expériences en bateau à Roses — Cap de Creus',
+title: 'Excursions privées en bateau à Roses',
   description:
-    'Excursions privées et couchers de soleil en bateau depuis Roses. Criques du Cap de Creus et canaux de Santa Margarita. Rien que pour vous.',
+    'Excursions privées en bateau : coucher de soleil, Cap de Creus, Cadaqués, criques. Votre groupe seul, skipper local. Dès 160€. Baie de Roses.',
   alternates: buildAlternates('experiences', 'fr'),
   openGraph: {
-title: 'Expériences en bateau à Roses — Cap de Creus',
+title: 'Excursions privées en bateau à Roses',
     description:
-      'Excursions privées et couchers de soleil en bateau depuis Roses. Criques du Cap de Creus et canaux de Santa Margarita. Rien que pour vous.',
+      'Excursions privées en bateau : coucher de soleil, Cap de Creus, Cadaqués, criques. Votre groupe seul, skipper local. Dès 160€. Baie de Roses.',
     url: 'https://www.experienceboat.es/fr/experiences-bateau-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',

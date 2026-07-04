@@ -20,12 +20,12 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
 title: 'Location de bateau avec permis à Roses',
   description:
-    'Louez un bateau avec permis à Roses : baie, Cap de Creus et criques sauvages de la Costa Brava. Embarcations puissantes. Réservez.',
+    'Louez un bateau avec permis à Roses (6–12 places) : Jeanneau, Zodiac ou llaüt dès 195€ la demi-journée. Skipper en option. Cap de Creus, Cadaqués.',
   alternates: buildAlternates('rentalWithLicence', 'fr'),
   openGraph: {
 title: 'Location de bateau avec permis à Roses',
     description:
-      'Louez un bateau avec permis à Roses : baie, Cap de Creus et criques sauvages de la Costa Brava. Embarcations puissantes. Réservez.',
+      'Louez un bateau avec permis à Roses (6–12 places) : Jeanneau, Zodiac ou llaüt dès 195€ la demi-journée. Skipper en option. Cap de Creus, Cadaqués.',
     url: 'https://www.experienceboat.es/fr/location-bateau-avec-permis-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',

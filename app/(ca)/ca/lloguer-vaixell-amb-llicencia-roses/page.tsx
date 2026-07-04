@@ -21,7 +21,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Lloguer de vaixell amb llicència a Roses',
   description:
-    'Llogueu un vaixell amb llicència a Roses i navegueu lliures per la badia, el Cap de Creus i les millors cales de la Costa Brava. Embarcacions potents. Reserveu.',
+    'Lloga un vaixell amb llicència a Roses (6–12 pax): Jeanneau, Zodiac o llaüt des de 195€ el mig dia. Patró opcional. Cap de Creus i Cadaqués. Reserva.',
   keywords: [
     'lloguer vaixell amb llicència Roses',
     'lloguer llanxa Costa Brava',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lloguer de vaixell amb llicència a Roses',
     description:
-      'Llogueu un vaixell amb llicència a Roses i navegueu lliures per la badia, el Cap de Creus i les millors cales de la Costa Brava. Embarcacions potents.',
+      'Lloga un vaixell amb llicència a Roses (6–12 pax): Jeanneau, Zodiac o llaüt des de 195€ el mig dia. Patró opcional. Cap de Creus i Cadaqués. Reserva.',
     url: 'https://www.experienceboat.es/ca/lloguer-vaixell-amb-llicencia-roses',
     siteName: 'Experience Boat',
     locale: 'ca_ES',

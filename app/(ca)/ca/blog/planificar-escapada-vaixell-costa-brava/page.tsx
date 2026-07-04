@@ -29,9 +29,30 @@ export const metadata: Metadata = {
   },
 };
 
+function ArticleSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Com planificar la teva escapada en vaixell per la Costa Brava',
+    datePublished: '2026-01-15',
+    dateModified: '2026-01-15',
+    author: { '@type': 'Organization', name: 'Experience Boat' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Experience Boat',
+      logo: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/logo.png' },
+    },
+    image: { '@type': 'ImageObject', url: 'https://www.experienceboat.es/images/blog/escapada-costa-brava.jpg' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.experienceboat.es/ca/blog/planificar-escapada-vaixell-costa-brava' },
+    inLanguage: 'ca',
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
 export default function ArticlePage() {
   return (
     <main id="main-content" className="bg-white min-h-screen">
+      <ArticleSchema />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 text-sm text-gray-500">
         <ol className="flex items-center gap-2 flex-wrap">

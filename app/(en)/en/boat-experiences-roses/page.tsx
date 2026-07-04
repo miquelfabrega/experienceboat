@@ -15,14 +15,14 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-title: 'Boat Experiences in Roses — Cap de Creus & More',
+title: 'Private boat trips in Roses',
   description:
-    'Private boat excursions and sunset trips from Roses. The skipper takes you to Cap de Creus coves and Santa Margarita canals. Just your group on board.',
+    'Private boat trips: sunset, Cap de Creus, Cadaqués and coves. Your group alone, local skipper. From €160. Bay of Roses. Book directly with us.',
   alternates: buildAlternates('experiences', 'en'),
   openGraph: {
-title: 'Boat Experiences in Roses — Cap de Creus & More',
+title: 'Private boat trips in Roses',
     description:
-      'Private boat excursions and sunset trips from Roses. The skipper takes you to Cap de Creus coves and Santa Margarita canals. Just your group on board.',
+      'Private boat trips: sunset, Cap de Creus, Cadaqués and coves. Your group alone, local skipper. From €160. Bay of Roses. Book directly with us.',
     url: 'https://www.experienceboat.es/en/boat-experiences-roses',
     siteName: 'Experience Boat',
     locale: 'en_GB',

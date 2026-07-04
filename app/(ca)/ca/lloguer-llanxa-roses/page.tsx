@@ -49,14 +49,14 @@ function BreadcrumbSchema() {
 }
 
 export const metadata: Metadata = {
-  title: 'Lloguer de llanxa a Roses — Experience Boat',
+  title: 'Lloguer de llanxa a Roses',
   description:
-    'Lloga una llanxa amb llicència a Roses i recorre la badia i el Cap de Creus. Flota de 115 a 250 CV, fins a 12 persones. Reserva en línia. Des de 195 €.',
+    'Lloguer de llanxa ràpida a Roses amb o sense patró. Cap de Creus, cales i badia. Sortides privades, només el teu grup. Reserva directa. Costa Brava.',
   alternates: buildAlternates('lanchaRoses', 'ca'),
   openGraph: {
-    title: 'Lloguer de llanxa a Roses — Experience Boat',
+    title: 'Lloguer de llanxa a Roses',
     description:
-      'Lloga una llanxa amb llicència a Roses i recorre la badia i el Cap de Creus. Flota potent, fins a 12 persones. Des de 195 €.',
+      'Lloguer de llanxa ràpida a Roses amb o sense patró. Cap de Creus, cales i badia. Sortides privades, només el teu grup. Reserva directa. Costa Brava.',
     url: URL,
     siteName: 'Experience Boat',
     locale: 'ca_ES',

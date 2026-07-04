@@ -16,14 +16,14 @@ import { faqData } from '@/components/pillar-licencia/faq-data';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-title: 'Boat Rental with Licence in Roses (Costa Brava)',
+title: 'Boat rental with licence in Roses',
   description:
-    'Rent a boat with your licence in Roses. Explore Cap de Creus, the Bay of Roses and wild Costa Brava coves. Marina de Santa Margarita.',
+    'Rent a licensed boat in Roses (6–12 guests): Jeanneau, Zodiac or llaüt from €195 per half-day. Skipper optional. Cap de Creus and Cadaqués. Book now.',
   alternates: buildAlternates('rentalWithLicence', 'en'),
   openGraph: {
-title: 'Boat Rental with Licence in Roses',
+title: 'Boat rental with licence in Roses',
     description:
-      'Use your nautical licence to rent a boat in Roses and head to Cap de Creus, the wild coves of the Costa Brava and the Bay of Roses. Private, flexible, unforgettable.',
+      'Rent a licensed boat in Roses (6–12 guests): Jeanneau, Zodiac or llaüt from €195 per half-day. Skipper optional. Cap de Creus and Cadaqués. Book now.',
     url: 'https://www.experienceboat.es/en/boat-rental-with-licence-roses',
     siteName: 'Experience Boat',
     locale: 'en_GB',

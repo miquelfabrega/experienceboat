@@ -19,14 +19,14 @@ export const dynamic = 'force-static';
 /* ─── Metadata & SEO ─────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-title: 'Location de bateau sans permis à Roses — Costa Brava',
+title: 'Location de bateau sans permis à Roses',
   description:
-    'Louez un bateau sans permis à Roses (Rosas), Costa Brava : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
+    'Naviguez sans permis ni expérience. Dream Point, Remus ou Marine Brezze dès 70€/h. Briefing et assurance inclus. Privé, votre groupe seul. Roses.',
   alternates: buildAlternates('rentalWithoutLicence', 'fr'),
   openGraph: {
 title: 'Location de bateau sans permis à Roses',
     description:
-      'Louez un bateau sans permis à Roses : baie, canaux de Santa Margarita et Cap de Creus. Sans expérience préalable, tout privatif. Réservez.',
+      'Naviguez sans permis ni expérience. Dream Point, Remus ou Marine Brezze dès 70€/h. Briefing et assurance inclus. Privé, votre groupe seul. Roses.',
     url: 'https://www.experienceboat.es/fr/location-bateau-sans-permis-roses',
     siteName: 'Experience Boat',
     locale: 'fr_FR',
