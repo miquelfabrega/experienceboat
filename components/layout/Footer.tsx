@@ -96,6 +96,11 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Excursió a Cadaqués', href: '/ca/experiencies-vaixell-roses/cadaques' },
       { label: 'Coves & Snorkel', href: '/ca/experiencies-vaixell-roses/coves-esnorquel' },
       { label: 'Lloguer de llanxa a Roses', href: '/ca/lloguer-llanxa-roses' },
+      { label: 'Cap de Creus en vaixell', href: '/ca/cap-de-creus-en-vaixell' },
+      { label: 'Cala Montjoi', href: '/ca/cala-montjoi' },
+      { label: 'Cala Murtra', href: '/ca/cala-murtra' },
+      { label: 'Què veure a Roses', href: '/ca/que-veure-a-roses' },
+      { label: 'Cadaqués en vaixell', href: '/ca/cadaques-en-vaixell' },
     ],
     companyTitle: 'Empresa',
     company: [
@@ -177,6 +182,11 @@ const COPY: Record<Lang, FooterCopy> = {
       { label: 'Trip to Cadaqués', href: '/en/boat-experiences-roses/cadaques' },
       { label: 'Caves & Snorkeling', href: '/en/boat-experiences-roses/caves-snorkeling' },
       { label: 'Motorboat rental in Roses', href: '/en/motorboat-rental-roses' },
+      { label: 'Cap de Creus by boat', href: '/en/cap-de-creus-by-boat' },
+      { label: 'Cala Montjoi', href: '/en/cala-montjoi' },
+      { label: 'Cala Murtra', href: '/en/cala-murtra' },
+      { label: 'What to see in Roses', href: '/en/what-to-see-in-roses' },
+      { label: 'Cadaqués by boat', href: '/en/cadaques-by-boat' },
     ],
     companyTitle: 'Company',
     company: [

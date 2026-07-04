@@ -19,7 +19,7 @@ export default function GuiaDestino({
 }) {
   const t = DESTINOS_COPY[destino][lang]!;
   const hero = DESTINO_HERO[destino];
-  const related = GUIA_RELATED[lang === 'fr' ? 'fr' : 'es'];
+  const related = GUIA_RELATED[lang];
   const pageUrl = absUrl(localizedHref(destino, lang));
   const bookingsHref = localizedHref('bookings', lang);
 

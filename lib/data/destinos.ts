@@ -51,7 +51,7 @@ export const DESTINO_HERO: Record<DestinoKey, string> = {
 };
 
 /** Enlaces relacionados (mismos para todas las guías, localizados). */
-export const GUIA_RELATED: Record<'es' | 'fr', { label: string; routeId: RouteId }[]> = {
+export const GUIA_RELATED: Record<Locale, { label: string; routeId: RouteId }[]> = {
   es: [
     { label: 'Excursión Cap de Creus — 3 calas', routeId: 'expCapCreus' },
     { label: 'Alquiler de barco sin licencia', routeId: 'rentalWithoutLicence' },
@@ -61,6 +61,16 @@ export const GUIA_RELATED: Record<'es' | 'fr', { label: string; routeId: RouteId
     { label: 'Excursion Cap de Creus — criques', routeId: 'expCapCreus' },
     { label: 'Location de bateau sans permis', routeId: 'rentalWithoutLicence' },
     { label: 'Tarifs et saisons', routeId: 'prices' },
+  ],
+  en: [
+    { label: 'Cap de Creus 3-coves excursion', routeId: 'expCapCreus' },
+    { label: 'Boat rental without licence', routeId: 'rentalWithoutLicence' },
+    { label: 'Prices & seasons', routeId: 'prices' },
+  ],
+  ca: [
+    { label: 'Excursió Cap de Creus — 3 cales', routeId: 'expCapCreus' },
+    { label: 'Lloguer de vaixell sense llicència', routeId: 'rentalWithoutLicence' },
+    { label: 'Preus i temporades', routeId: 'prices' },
   ],
 };
 
@@ -197,6 +207,136 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
     },
+    en: {
+      metaTitle: 'Cap de Creus by boat: sailing from Roses',
+      metaDescription:
+        'Sail to Cap de Creus from Roses: pristine coves, the lighthouse and the Natural Park. Licence-free boat for nearby coves or a private excursion with skipper.',
+      breadcrumbHome: 'Home',
+      breadcrumbLabel: 'Cap de Creus by boat',
+      kicker: 'Natural Park',
+      h1: 'Cap de Creus by boat: the easternmost point of the Costa Brava',
+      heroAlt: 'Cliffs and coves of Cap de Creus seen from the sea',
+      introLead:
+        'Cap de Creus is the easternmost point of the Iberian Peninsula, where the tramuntana shapes the rock and Dalí found his landscape. From Roses, by boat, you reach almost untouched coves, the iconic lighthouse and crystal-clear waters. Here’s how, when and with whom to go.',
+      sections: [
+        {
+          h2: 'Cap de Creus: where the Iberian Peninsula ends',
+          body: [
+            'Cap de Creus is the easternmost edge of the Peninsula. The Cap de Creus Natural Park — Catalonia’s first maritime-land park — protects a unique landscape: cliffs sculpted by the tramuntana, rock polished by centuries of wind and sea, and clear-water coves between pine woods.',
+            'Salvador Dalí, who lived close by in Portlligat (Cadaqués), drew inspiration from these impossible forms. From our base at Marina de Santa Margarita (Roses), as you sail toward the cape, you’re at the helm — if you don’t need a skipper — or you sit back and let us take the wheel.',
+          ],
+        },
+        {
+          h2: 'How to sail from Roses by boat',
+          body: [
+            'To explore the nearby coves in the bay, you can rent a licence-free boat (from €70/hour): calm cruises, perfect if you want freedom without complications. Drop anchor in clear water, take a swim and move at your own pace.',
+            'If your plan is to reach the lighthouse and the more exposed cape, we recommend a licensed boat or — better still — a private excursion with skipper: your group, your rhythm, our knowledge of the place. Sunset departures (from €160) are a classic. It’s a longer journey, but worth every moment.',
+          ],
+        },
+        {
+          h2: 'Coves, lighthouse and snorkelling: what to see',
+          body: [
+            'Cala Culip is one of the most sheltered and popular by sea, with a rocky seabed perfect for snorkelling. Cala Jugadora and s’Encalladora are wilder and quieter: massive rocks and pines down to the shore.',
+            'The Cap de Creus lighthouse crowns the sharpest tip of the cape. The whole site is an exceptional snorkelling area, with posidonia — the lung of the Mediterranean — and varied marine life. Respect the Natural Park: take care when anchoring, don’t touch the rocks and leave no trace.',
+          ],
+        },
+        {
+          h2: 'Tramuntana, best season and what to bring',
+          body: [
+            'The tramuntana is real: this north wind can change the sea in minutes. It’s not dangerous if you respect the forecast, but it does decide whether we head to the cape or stick to the sheltered coves.',
+            'The best season runs May to October; June and September are ideal. Bring sunscreen, snorkel gear, water and a towel. The Natural Park is not a resort beach: it’s living sea, and that’s exactly what makes it special.',
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Can you reach Cap de Creus by boat from Roses without a skipper?',
+          a: 'To the nearby coves in the bay, yes: rent a licence-free boat and you navigate. For the open cape and lighthouse it’s safer and more comfortable with a licence or a skipper. We offer both options depending on your experience.',
+        },
+        {
+          q: 'How long does it take from Roses to the Cap de Creus lighthouse?',
+          a: 'A calm sail is around 45–50 minutes. If you stop to swim and snorkel along the way, add a couple of hours. A typical trip to the cape takes about 3–4 hours all told: travel, exploration and return.',
+        },
+        {
+          q: 'Do I need a licence to take a boat to Cap de Creus?',
+          a: 'For the nearby coves, no: licence-free boats are enough. For the full cape we recommend a licence or our skipper. If you’re unsure, we’ll sort it out before you book.',
+        },
+        {
+          q: 'When is it not advisable to go because of the tramuntana?',
+          a: 'With strong tramuntana we advise against heading to the cape: it’s a wind that comes down from the Pyrenees and can be demanding. On those days we suggest sheltered coves in the bay or a different date.',
+        },
+      ],
+      ctaTitle: 'Book your Cap de Creus outing',
+      ctaText: 'Explore the easternmost cape, almost-untouched coves and the lighthouse. Licence-free boat or with skipper, always private.',
+      ctaLabel: 'Check availability and book',
+      relatedTitle: 'Keep exploring',
+    },
+    ca: {
+      metaTitle: 'Cap de Creus en barca: ruta des de Roses',
+      metaDescription:
+        'Navega cap a Cap de Creus des de Roses: cales verges, el far i el Parc Natural. Barca sense llicència per a les cales properes o excursió privada amb patró.',
+      breadcrumbHome: 'Inici',
+      breadcrumbLabel: 'Cap de Creus en barca',
+      kicker: 'Parc Natural',
+      h1: 'Cap de Creus en barca: la punta més oriental de la Costa Brava',
+      heroAlt: 'Penya-segats i cales del Cap de Creus vistos des del mar',
+      introLead:
+        'Cap de Creus és el punt més oriental de la península ibèrica, on la tramuntana esculpeix la roca i on Dalí va trobar el seu paisatge. Des de Roses, en barca, s’arriba a cales gairebé verges, al far icònic i a aigües transparents. Aquí t’expliquem com, quan i amb qui anar-hi.',
+      sections: [
+        {
+          h2: 'Cap de Creus: on acaba la península ibèrica',
+          body: [
+            'Cap de Creus és l’extrem més oriental de la Península. El Parc Natural de Cap de Creus —el primer marítim-terrestre de Catalunya— protegeix un paisatge únic: penya-segats retorçats per la tramuntana, roca polida per segles de vent i mar, i cales d’aigües clares entre pinedes.',
+            'Salvador Dalí, que vivia molt a prop, a Portlligat (Cadaqués), s’inspirava en aquestes formes impossibles. Des de la nostra base a la Marina de Santa Margarida (Roses), navegant cap al cap, ets tu qui porta el timó —si no necessites patró— o qui gaudeix sense preocupacions mentre el portem nosaltres.',
+          ],
+        },
+        {
+          h2: 'Com arribar en barca des de Roses',
+          body: [
+            'Per explorar les cales properes de la badia pots llogar una barca sense llicència (des de 70 €/hora): navegacions tranquil·les, ideals si busques llibertat sense complicacions. Fondeges en aigua clara, et banyes i segueixes al teu ritme.',
+            'Si el teu pla és arribar fins al far i el cap més obert, recomanem una barca amb llicència o, millor, una excursió privada amb patró: el vostre grup, el vostre ritme, el nostre coneixement del lloc. Les sortides al capvespre (des de 160 €) són un clàssic. El trajecte és més llarg, però val la pena.',
+          ],
+        },
+        {
+          h2: 'Cales, far i snorkel: què veure',
+          body: [
+            'Cala Culip és de les més arrecerades i visitades per mar, amb un fons rocós perfecte per al snorkel. Cala Jugadora i s’Encalladora són més salvatges i silencioses: roques enormes i pins fins a la vora.',
+            'El far de Cap de Creus corona la punta més afilada del cap. Tot el paratge és zona de snorkel excepcional, amb posidònia —el pulmó de la Mediterrània— i fauna variada. Respecta el Parc Natural: compte amb el fondeig, no toquis la roca i no deixis residus.',
+          ],
+        },
+        {
+          h2: 'Tramuntana, millor època i què dur',
+          body: [
+            'La tramuntana és real: aquest vent del nord pot canviar el mar en minuts. No és perillós si respectes el part, però sí que condiciona la sortida. Abans de reservar ho consultem amb tu i t’indiquem si és dia de cap o millor de cales protegides.',
+            'La millor època va de maig a octubre; juny i setembre són òptims. Duu crema solar, ulleres de snorkel, aigua i tovallola. El Parc Natural no són platges de resort: és mar viu, i aquesta és justament la gràcia.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntes freqüents',
+      faq: [
+        {
+          q: 'Es pot arribar a Cap de Creus en barca des de Roses sense patró?',
+          a: 'A les cales més properes de la badia, sí: llogues una barca sense llicència i navegues tu. Per al cap obert i el far és més segur i còmode amb llicència o amb patró. Oferim les dues opcions segons la teva experiència.',
+        },
+        {
+          q: 'Quant es triga des de Roses fins al far de Cap de Creus?',
+          a: 'Una navegació tranquil·la ronda els 45–50 minuts. Si pares a banyar-te i fer snorkel pel camí, suma un parell d’hores. Una sortida típica al cap dura unes 3–4 hores entre anada, exploració i tornada.',
+        },
+        {
+          q: 'Necessito llicència per anar en barca a Cap de Creus?',
+          a: 'Per a les cales properes, no: les barques sense llicència basten. Per al cap complet recomanem llicència o el nostre patró. Si tens dubtes, t’ho aclarim abans de reservar.',
+        },
+        {
+          q: 'Quan no convé anar-hi per la tramuntana?',
+          a: 'Amb tramuntana forta desaconsellem el viatge al cap: és un vent que baixa dels Pirineus i pot ser exigent. Aquells dies proposem cales protegides de la badia o canviar de data.',
+        },
+      ],
+      ctaTitle: 'Reserva la teva sortida a Cap de Creus',
+      ctaText: 'Explora el cap més oriental, cales gairebé verges i el far. Barca sense llicència o amb patró, sempre privat.',
+      ctaLabel: 'Consultar disponibilitat i reservar',
+      relatedTitle: 'Continua explorant',
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -330,6 +470,136 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaText: 'Depuis la Marina de Santa Margarita, à une vingtaine de minutes. Louez un bateau sans permis ou rejoignez une excursion privée.',
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
+    },
+    en: {
+      metaTitle: 'Cala Montjoi: how to reach it by boat & snorkel',
+      metaDescription:
+        'Guide to Cala Montjoi (Roses): crystal-clear waters, snorkelling and the elBulli legacy. How to get there by licence-free boat from Santa Margarita. Book your outing.',
+      breadcrumbHome: 'Home',
+      breadcrumbLabel: 'Cala Montjoi',
+      kicker: 'Bay of Roses',
+      h1: 'Cala Montjoi: the crystal-clear cove facing elBulli',
+      heroAlt: 'Transparent waters of Cala Montjoi in the Bay of Roses',
+      introLead:
+        'Cala Montjoi is one of the most beautiful coves in the Bay of Roses, within the Cap de Creus Natural Park. Famous for once hosting the elBulli restaurant, it’s ideal for snorkelling thanks to its transparent waters and rocky seabeds. And the best way to enjoy it without parking queues is to arrive by boat.',
+      sections: [
+        {
+          h2: 'Where Cala Montjoi is and why it’s special',
+          body: [
+            'Cala Montjoi sits in the Bay of Roses, around 7 km from the centre, within the Cap de Creus Natural Park. It’s not a crowded beach: it’s small, with limited road access and scarce parking, which keeps it relatively peaceful.',
+            'Its waters are a transparent blue over rocky seabeds that slope gently, a natural refuge for marine life. Getting there is part of its charm: each visit feels like a small discovery.',
+          ],
+        },
+        {
+          h2: 'elBulli: the legend that put Cala Montjoi on the map',
+          body: [
+            'Ferran Adrià’s elBulli was one of the world’s best restaurants for years, and its location at Cala Montjoi was no accident: the cove’s isolation and surroundings were central to its identity.',
+            'Today elBulli1846 operates as a museum-space and gastronomic research centre. Though it no longer serves meals, its legacy still draws visitors from around the world to this corner of the Costa Brava.',
+          ],
+        },
+        {
+          h2: 'Getting there by boat from Roses, no licence needed',
+          body: [
+            'The road to Cala Montjoi exists, but parking is sparse and fills up in summer. We depart from Marina de Santa Margarita, in Roses’ channels, with licence-free boats you can pilot yourself or let us take the helm.',
+            'In about 20 minutes you’re sailing to the cove with views of the whole coast. Licence-free rental starts at €70/hour, and if you prefer something more relaxed we run private excursions where we tell you about the cove, its waters and setting.',
+          ],
+        },
+        {
+          h2: 'Snorkelling and practical tips',
+          body: [
+            'Snorkelling here is excellent: rocky seabeds with posidonia, rock fish and the occasional curious octopus, with very good visibility. The best period runs May to September; in spring or autumn a thin wetsuit is welcome.',
+            'Anchor carefully to avoid the protected posidonia and respect the Natural Park rules: don’t collect rocks or shells, keep your distance from wildlife and, if you see litter, pick it up.',
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Where exactly is Cala Montjoi?',
+          a: 'In the Bay of Roses, around 7 km from the centre, within the Cap de Creus Natural Park. You can reach it by road with limited parking, or — much better — by sea.',
+        },
+        {
+          q: 'Can you get there by boat without a navigation licence?',
+          a: 'Yes. We rent licence-free boats from Marina de Santa Margarita: you can pilot or sail as a passenger. The crossing takes about 20 minutes and the boat is easy to handle.',
+        },
+        {
+          q: 'Is Cala Montjoi good for snorkelling?',
+          a: 'It’s one of the best spots in the area: rocky seabeds, transparent water and varied wildlife. The ideal time is May to September. Bring your own gear or ask us about options.',
+        },
+        {
+          q: 'What’s the connection between Cala Montjoi and elBulli?',
+          a: 'elBulli, Ferran Adrià’s restaurant, was at Cala Montjoi. Today elBulli1846 works as a museum-space. Though it no longer serves meals, its story still draws visitors.',
+        },
+      ],
+      ctaTitle: 'Explore Cala Montjoi by boat',
+      ctaText: 'From Marina de Santa Margarita, about 20 minutes away. Rent a licence-free boat or join a private excursion.',
+      ctaLabel: 'Check availability and book',
+      relatedTitle: 'Keep exploring',
+    },
+    ca: {
+      metaTitle: 'Cala Montjoi: com arribar-hi en barca i snorkel',
+      metaDescription:
+        'Guia de Cala Montjoi (Roses): aigües transparents, snorkel i l’herència d’elBulli. Com arribar-hi en barca sense llicència des de Santa Margarida. Reserva la teva sortida.',
+      breadcrumbHome: 'Inici',
+      breadcrumbLabel: 'Cala Montjoi',
+      kicker: 'Badia de Roses',
+      h1: 'Cala Montjoi: la cala d’aigües cristal·lines davant d’elBulli',
+      heroAlt: 'Aigües transparents de Cala Montjoi, a la badia de Roses',
+      introLead:
+        'Cala Montjoi és una de les cales més boniques de la badia de Roses, dins de l’entorn del Parc Natural de Cap de Creus. Famosa per haver acollit el restaurant elBulli, les seves aigües transparents i els seus fons rocosos la fan ideal per al snorkel. I la millor manera de gaudir-ne sense cues d’aparcament és arribar-hi en barca.',
+      sections: [
+        {
+          h2: 'On és Cala Montjoi i per què és especial',
+          body: [
+            'Cala Montjoi és a la badia de Roses, a uns 7 km del centre i dins dels límits del Parc Natural de Cap de Creus. No és una platja massificada: és petita, amb accés per carretera limitat i poc aparcament, cosa que la manté relativament tranquil·la.',
+            'Les seves aigües són d’un blau transparent sobre fons rocosos que baixen suaument, un refugi natural per a la vida marina. Arribar-hi forma part del seu encant: cada visita sembla un petit descobriment.',
+          ],
+        },
+        {
+          h2: 'elBulli: la llegenda que va posar Cala Montjoi al mapa',
+          body: [
+            'El restaurant elBulli de Ferran Adrià va ser durant anys un dels millors del món, i la seva ubicació a Cala Montjoi no era casual: la solitud de la cala i l’entorn en formaven part de la identitat.',
+            'Avui elBulli1846 funciona com a espai-museu i centre de recerca gastronòmica. Encara que ja no serveix àpats, el seu llegat segueix atraient visitants de tot el món a aquest racó de la Costa Brava.',
+          ],
+        },
+        {
+          h2: 'Arribar en barca des de Roses, sense llicència',
+          body: [
+            'La carretera fins a Cala Montjoi existeix, però l’aparcament és escàs i a l’estiu s’omple. Nosaltres sortim de la Marina de Santa Margarida, als canals de Roses, amb barques sense llicència que pots pilotar tu mateix o deixar que et portem.',
+            'En uns 20 minuts navegues fins a la cala amb vistes de tota la costa. El lloguer sense llicència comença en 70 €/hora, i si prefereixes una cosa més còmoda organitzem excursions privades on t’expliquem la cala, les seves aigües i l’entorn.',
+          ],
+        },
+        {
+          h2: 'Snorkel i consells pràctics',
+          body: [
+            'El snorkel aquí és excel·lent: fons rocosos amb posidònia, peixos de roca i algun pop curiós, amb molt bona visibilitat. La millor època va de maig a setembre; a la primavera o la tardor, un neoprè fi s’agraeix.',
+            'Fondeja amb compte de no fer-ho sobre la posidònia protegida i respecta la normativa del Parc Natural: no recullis roques ni petxines, mantén la distància amb la fauna i, si veus brossa, recull-la.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntes freqüents',
+      faq: [
+        {
+          q: 'On és exactament Cala Montjoi?',
+          a: 'A la badia de Roses, a uns 7 km del centre, dins del Parc Natural de Cap de Creus. S’hi pot arribar per carretera, amb aparcament limitat, o —molt millor— per mar.',
+        },
+        {
+          q: 'Es pot arribar en barca sense llicència de navegació?',
+          a: 'Sí. Lloguem barques sense llicència des de la Marina de Santa Margarida: pots pilotar tu o anar com a passatger. La travessia dura uns 20 minuts i la barca és fàcil de manejar.',
+        },
+        {
+          q: 'És Cala Montjoi bona per fer snorkel?',
+          a: 'És de les millors de la zona: fons rocosos, aigua transparent i fauna variada. L’ideal és anar-hi de maig a setembre. Porta el teu equip o pregunta’ns per les opcions.',
+        },
+        {
+          q: 'Què té a veure Cala Montjoi amb elBulli?',
+          a: 'elBulli, el restaurant de Ferran Adrià, era a Cala Montjoi. Avui funciona elBulli1846 com a espai-museu. Encara que ja no serveix àpats, la seva història segueix atraient visitants.',
+        },
+      ],
+      ctaTitle: 'Explora Cala Montjoi en barca',
+      ctaText: 'Des de la Marina de Santa Margarida, a uns 20 minuts. Lloga una barca sense llicència o uneix-te a una excursió privada.',
+      ctaLabel: 'Consultar disponibilitat i reservar',
+      relatedTitle: 'Continua explorant',
     },
   },
 
@@ -465,6 +735,136 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
     },
+    en: {
+      metaTitle: 'Cala Murtra (Roses): reach it by boat & snorkel',
+      metaDescription:
+        'Guide to Cala Murtra (Roses): a tranquil cove with clean waters, best reached by boat. Snorkelling, anchoring and tips. Book your outing from Santa Margarita.',
+      breadcrumbHome: 'Home',
+      breadcrumbLabel: 'Cala Murtra',
+      kicker: 'Tranquil cove',
+      h1: 'Cala Murtra in Roses: the tranquil cove best enjoyed by boat',
+      heroAlt: 'Clean, sheltered waters of Cala Murtra near Roses',
+      introLead:
+        'Cala Murtra is one of those coves almost nobody sets foot on. Hidden on the Roses coast, with clean waters and barely a crowd, it’s perfect if you want peace and water quality. The reason for its calm: land access is awkward. That’s why, at Experience Boat, we make it a must-stop on our outings.',
+      sections: [
+        {
+          h2: 'What Cala Murtra is and why it’s special',
+          body: [
+            'Cala Murtra is a small natural cove on the Roses coast, in the Punta Falconera area, near Almadrava. It’s not large, but that’s its charm: while other beaches fill with sunbathers, here there’s space, quiet and clear water that calls you in.',
+            'It’s an undeveloped cove, in its natural state, because the walking path is difficult and that keeps it away from mass tourism. The mood is laid-back and calm, drawing people who come to reconnect with the sea rather than look for services.',
+          ],
+        },
+        {
+          h2: 'Why reaching it by boat is the best option',
+          body: [
+            'If you try to get there on foot, you quickly understand why it stays so peaceful: no easy parking, no beach bar, and a long, uneven path. Good for nature, not so much for your comfort.',
+            'So the boat is the natural way in. We leave Santa Margarita and in about 10 minutes we anchor in clear, shallow water, ideal for dropping anchor and settling in. A licence-free rental from €70/hour gets you there in minutes, or you can join a private excursion if you’d rather we handle the boat.',
+          ],
+        },
+        {
+          h2: 'Swimming and snorkelling in clean water',
+          body: [
+            'Once anchored, the water speaks for itself: transparency, a pleasant temperature and rocky seabeds full of life. Cala Murtra offers quiet snorkelling: small fish, aquatic plants and that feeling of an aquarium without glass.',
+            'Don’t expect coral reefs: it’s pure, discreet Mediterranean nature, which is exactly what you come here for. With mask, snorkel and fins you slip into a corner almost no one visits.',
+          ],
+        },
+        {
+          h2: 'Practical tips for your outing',
+          body: [
+            'Tramuntana: in Roses the north wind rules. Cala Murtra sits relatively sheltered, but it’s worth checking the forecast; on strong-wind days, save it for another time. For anchoring, sand and rock hold well: set anchor a few metres out and pay out the chain properly.',
+            'There are no services, so come self-sufficient: water, shade, sunscreen and a towel. And respect the place — it’s a pristine cove because we look after it —: leave no litter and, if you see any, pick it up.',
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Where exactly is Cala Murtra?',
+          a: 'On the Roses coast, in the Punta Falconera area near Almadrava, within the bay’s shoreline. Easy to reach by boat from Marina de Santa Margarita, about 10 minutes’ sail.',
+        },
+        {
+          q: 'How do you reach Cala Murtra, on foot or by boat?',
+          a: 'On foot the access is difficult, with no clear path or services. Most people arrive by boat: licence-free rental from €70/hour or a private excursion. It’s the most practical way and makes the most of your time in the water.',
+        },
+        {
+          q: 'Is it a tranquil cove? And nudist-friendly?',
+          a: 'Yes, it’s tranquil with a relaxed, naturist-friendly feel, precisely because the awkward access keeps crowds away. You’ll find people seeking peace and disconnection.',
+        },
+        {
+          q: 'Can you snorkel at Cala Murtra?',
+          a: 'Yes, it’s a good spot: clear waters, rocky seabeds and discreet Mediterranean wildlife. Bring mask, snorkel and fins. It’s nature snorkelling, not reef, but the clean water makes it worthwhile.',
+        },
+      ],
+      ctaTitle: 'Sail to Cala Murtra',
+      ctaText: 'Discover the calm of Cala Murtra on a private outing or with a licence-free boat from Santa Margarita.',
+      ctaLabel: 'Check availability and book',
+      relatedTitle: 'Keep exploring',
+    },
+    ca: {
+      metaTitle: 'Cala Murtra (Roses): arribar-hi en barca i snorkel',
+      metaDescription:
+        'Guia de Cala Murtra (Roses): una cala tranquil·la d’aigües netes, més accessible en barca. Snorkel, fondeig i consells. Reserva la teva sortida des de Santa Margarida.',
+      breadcrumbHome: 'Inici',
+      breadcrumbLabel: 'Cala Murtra',
+      kicker: 'Cala tranquil·la',
+      h1: 'Cala Murtra a Roses: la cala tranquil·la que es gaudeix millor en barca',
+      heroAlt: 'Aigües netes i resguardades de Cala Murtra, prop de Roses',
+      introLead:
+        'Cala Murtra és una d’aquelles cales que gairebé ningú trepitja. Amagada a la costa de Roses, amb aigües netes i sense gairebé aglomeracions, és perfecta si busques tranquil·litat i qualitat d’aigua. El motiu de la seva calma: l’accés per terra és incòmode. Per això, a Experience Boat, la considerem una parada obligada de les nostres sortides.',
+      sections: [
+        {
+          h2: 'Què és Cala Murtra i per què és especial',
+          body: [
+            'Cala Murtra és una petita cala natural a la costa de Roses, a la zona de Punta Falconera, prop de l’Almadrava. No és gran, però aquí hi ha l’encant: mentre altres platges s’omplen de para-sols, aquí hi ha espai, silenci i una aigua transparent que convida a tirar-s’hi.',
+            'És una cala poc urbanitzada, en estat natural, perquè el camí a peu és complicat i això la manté allunyada del turisme massiu. L’ambient és relaxat i tranquil, de gent que ve a connectar amb el mar més que a buscar serveis.',
+          ],
+        },
+        {
+          h2: 'Per què arribar-hi en barca és la millor opció',
+          body: [
+            'Si intentes arribar-hi a peu, entens de seguida per què està tan tranquil·la: no hi ha aparcament còmode, ni xiringuito, i el camí és llarg i irregular. Bé per a la natura, no tant per a la teva comoditat.',
+            'Per això la barca és l’accés natural. Sortim de Santa Margarida i en uns 10 minuts fondegem en aigua clara i poc profunda, ideal per ancorar i gaudir. Un lloguer sense llicència des de 70 €/hora t’hi deixa en minuts, o pots venir en una excursió privada si prefereixes que portem nosaltres la barca.',
+          ],
+        },
+        {
+          h2: 'Bany i snorkel en aigües netes',
+          body: [
+            'Un cop fondejats, l’aigua parla per si sola: transparència, temperatura agradable i fons de roca amb vida marina. Cala Murtra ofereix un snorkel silenciós: peixos petits, plantes aquàtiques i aquesta sensació d’aquari sense vidre.',
+            'No esperis esculls de corall: és natura mediterrània pura i discreta, que és justament el que es busca aquí. Amb màscara, tub i unes aletes, t’endinses en un racó que gairebé ningú visita.',
+          ],
+        },
+        {
+          h2: 'Consells pràctics per a la teva sortida',
+          body: [
+            'Tramuntana: a Roses el vent del nord mana. Cala Murtra queda relativament protegida, però convé mirar el part; amb vent fort, millor deixar-la per a un altre dia. Per al fondeig, sorra i roca aguanten bé: fondeja a pocs metres i dona bé la cadena.',
+            'No hi ha serveis, així que vine autosuficient: aigua, ombra, protecció solar i tovallola. I respecta l’entorn —és una cala verge perquè es cuida—: no deixis residus i, si veus brossa, recull-la.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntes freqüents',
+      faq: [
+        {
+          q: 'On és exactament Cala Murtra?',
+          a: 'A la costa de Roses, a la zona de Punta Falconera, prop de l’Almadrava, dins del litoral de la badia. S’hi arriba fàcilment en barca des de la Marina de Santa Margarida, a uns 10 minuts de navegació.',
+        },
+        {
+          q: 'Com s’hi va, a peu o en barca?',
+          a: 'L’accés a peu és complicat, sense sender clar ni serveis. La majoria hi arriba en barca: lloguer sense llicència des de 70 €/hora o excursió privada. És el més còmode i el que treu més partit al temps a l’aigua.',
+        },
+        {
+          q: 'És una cala tranquil·la? I naturista?',
+          a: 'Sí, és tranquil·la i d’ambient naturista relaxat, precisament perquè l’accés difícil manté fora les masses. Hi trobaràs gent que busca pau i desconnexió.',
+        },
+        {
+          q: 'Es pot fer snorkel a Cala Murtra?',
+          a: 'Sí, és un bon lloc: aigües clares, fons rocosos i fauna mediterrània discreta. Porta màscara, tub i aletes. És snorkel de natura, no d’escull, però l’aigua neta fa que valgui la pena.',
+        },
+      ],
+      ctaTitle: 'Navega a Cala Murtra',
+      ctaText: 'Descobreix la calma de Cala Murtra en una sortida privada o amb una barca sense llicència des de Santa Margarida.',
+      ctaLabel: 'Consultar disponibilitat i reservar',
+      relatedTitle: 'Continua explorant',
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -599,6 +999,136 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
     },
+    en: {
+      metaTitle: 'What to see in Roses: a guide by land & sea',
+      metaDescription:
+        'What to see in Roses: the Ciutadella, the Castell de la Trinitat, the lighthouse and the bay’s coves. Discover Roses on foot and — better still — from the sea.',
+      breadcrumbHome: 'Home',
+      breadcrumbLabel: 'What to see in Roses',
+      kicker: 'Maritime bay',
+      h1: 'What to see in Roses: the maritime bay of the Costa Brava',
+      heroAlt: 'View of the Bay of Roses from the sea',
+      introLead:
+        'Roses is a seafaring town at the northern tip of the Costa Brava, steeped in history and bordered by a bay sheltered by the Cap de Creus Natural Park. Here’s what to see without rushing: the old town and its monuments on land and, above all, the coves and channels that only reveal themselves from the water.',
+      sections: [
+        {
+          h2: 'Roses at a glance',
+          body: [
+            'Roses is not a resort beach: it’s a town with roots, an old quarter, a working fishing port, long beaches and hidden coves. The bay around it is part of the Cap de Creus Natural Park, so Roses is also the gateway to one of Catalonia’s wildest landscapes.',
+            'You come to Roses to unwind without losing authenticity: stroll the port, eat on a terrace with sea views and climb up to the Ciutadella at sunset.',
+          ],
+        },
+        {
+          h2: 'What to see on land: Ciutadella, Castell de la Trinitat and lighthouse',
+          body: [
+            'The Ciutadella of Roses is the historic heart: a walled site with Greek remains (ancient Rhode), Roman and medieval, with a small museum for context. The Castell de la Trinitat, a sixteenth-century fortress overlooking the sea, rewards you with views of the whole bay; next to it, the Roses lighthouse.',
+            'If prehistory appeals to you, the Dolmen de la Creu d’en Cobertella is one of Catalonia’s largest megaliths. And the old town is best enjoyed slowly, among local shops and fishers’ bars.',
+          ],
+        },
+        {
+          h2: 'What to see from the sea',
+          body: [
+            'Here’s what sets an ordinary visit apart from a real one. The Santa Margarita channels, the navigable seafaring quarter we sail from, hold the maritime soul of Roses. And the bay’s coves — Montjoi, Culip, Murtra — are best reached by boat, with transparent waters and that sense of discovery.',
+            'Beyond them, the Cap de Creus Natural Park raises cliffs above the water, the landscape that inspired Dalí. A sunset from the sea, golden light on the Ciutadella, is hard to forget.',
+          ],
+        },
+        {
+          h2: 'When to go and how to see it best',
+          body: [
+            'The best season runs May to October; June and September bring long daylight and fewer crowds than August. The old town is walkable, and a local bus serves the main beaches.',
+            'But to see Roses as it really is, get on a boat: licence-free rental from €70/hour at Marina de Santa Margarita, or a private sunset excursion (from €160). Always check the tramuntana forecast — that north wind rules here.',
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'What can you see in Roses in a day?',
+          a: 'In the morning, the Ciutadella, the Castell de la Trinitat, the lighthouse and the old town on foot. In the afternoon, the bay’s coves by boat. Short on time? Prioritise the sea: it’s what you don’t see the same way from land.',
+        },
+        {
+          q: 'Is it worth seeing Roses from the sea?',
+          a: 'Very much. Its soul is the bay: coves, channels and sunset over the Ciutadella. A boat outing shows you Roses the way sailors see it.',
+        },
+        {
+          q: 'Which coves can you visit from Roses?',
+          a: 'Cala Montjoi, Cala Culip or Cala Murtra in the bay; the further ones toward Cap de Creus with a licensed boat or a private excursion. All just minutes from Santa Margarita.',
+        },
+        {
+          q: 'When is the best time to visit Roses?',
+          a: 'May to October, with June and September the ideal months. Avoid August if you want quiet, and always check the tramuntana forecast.',
+        },
+      ],
+      ctaTitle: 'Discover Roses from the sea',
+      ctaText: 'Rent a licence-free boat or book a private sunset excursion and explore the coves and channels of Santa Margarita.',
+      ctaLabel: 'Check availability and book',
+      relatedTitle: 'Keep exploring',
+    },
+    ca: {
+      metaTitle: 'Què veure a Roses: guia per terra i mar',
+      metaDescription:
+        'Què veure a Roses: la Ciutadella, el Castell de la Trinitat, el far i les cales de la badia. Descobreix Roses per terra i —millor encara— des del mar.',
+      breadcrumbHome: 'Inici',
+      breadcrumbLabel: 'Què veure a Roses',
+      kicker: 'Badia marinera',
+      h1: 'Què veure a Roses: la badia marinera de la Costa Brava',
+      heroAlt: 'Vista de la badia de Roses des del mar',
+      introLead:
+        'Roses és una vila marinera a l’extrem nord de la Costa Brava, amb segles d’història i una badia protegida pel Parc Natural de Cap de Creus. Aquí tens què veure sense pressa: el casc antic i els seus monuments per terra i, sobretot, les cales i els canals que només es descobreixen des de l’aigua.',
+      sections: [
+        {
+          h2: 'Roses d’un cop d’ull',
+          body: [
+            'Roses no és una platja de resort: és una vila amb arrels, de casc antic, port pesquer viu, platges llargues i cales amagades. La badia que l’envolta forma part del Parc Natural de Cap de Creus, així que Roses és també la porta d’entrada a un dels paisatges més salvatges de Catalunya.',
+            'Es ve a Roses a desconnectar sense perdre autenticitat: passejar pel port, menjar en una terrassa amb vistes i pujar a la Ciutadella al capvespre.',
+          ],
+        },
+        {
+          h2: 'Què veure per terra: Ciutadella, Castell de la Trinitat i far',
+          body: [
+            'La Ciutadella de Roses és el cor històric: un recinte emmurallat amb restes gregues (l’antiga Rhode), romanes i medievals, amb un petit museu que hi posa context. El Castell de la Trinitat, fortalesa del segle XVI abocada al mar, regala vistes de tota la badia; al seu costat, el far de Roses.',
+            'Si t’atrau la prehistòria, el Dolmen de la Creu d’en Cobertella és un dels megàlits més grans de Catalunya. I el casc antic es gaudeix passejant sense pressa, entre botigues locals i bars de pescadors.',
+          ],
+        },
+        {
+          h2: 'Què veure des del mar',
+          body: [
+            'Aquí hi ha el que diferencia una visita normal d’una autèntica. Els canals de Santa Margarida, el barri mariner navegable des d’on sortim, concentren l’essència marinera de Roses. I les cales de la badia —Montjoi, Culip, Murtra— només s’assoleixen bé en barca, amb aigües transparents i aquesta sensació de descobriment.',
+            'Més enllà, el Parc Natural de Cap de Creus alça penya-segats sobre l’aigua, el paisatge que va inspirar Dalí. Un capvespre des del mar, amb la llum daurada tocant la Ciutadella, és difícil d’oblidar.',
+          ],
+        },
+        {
+          h2: 'Quan anar-hi i com veure-la millor',
+          body: [
+            'La millor època va de maig a octubre; juny i setembre porten llum llarga i menys gent que l’agost. El casc antic es recorre a peu, i per a les platges grans hi ha autobús local.',
+            'Però per veure Roses com és, puja a una barca: lloguer sense llicència des de 70 €/hora a la Marina de Santa Margarida, o una excursió privada al capvespre (des de 160 €). Mira sempre el part de tramuntana, el vent del nord que aquí mana.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntes freqüents',
+      faq: [
+        {
+          q: 'Què es pot veure a Roses en un dia?',
+          a: 'Al matí, la Ciutadella, el Castell de la Trinitat, el far i el casc antic a peu. A la tarda, les cales de la badia en barca. Si el dia és curt, prioritza el mar: és el que no es veu igual des de terra.',
+        },
+        {
+          q: 'Val la pena veure Roses des del mar?',
+          a: 'Molt. La seva ànima és la badia: cales, canals i el capvespre sobre la Ciutadella. Una sortida en barca et mostra Roses com la veuen els mariners.',
+        },
+        {
+          q: 'Quines cales es visiten des de Roses?',
+          a: 'Cala Montjoi, Cala Culip o Cala Murtra a la badia; les més llunyanes, cap a Cap de Creus, amb barca amb llicència o excursió privada. Totes a pocs minuts de Santa Margarida.',
+        },
+        {
+          q: 'Quan és millor visitar Roses?',
+          a: 'De maig a octubre, amb juny i setembre com a mesos ideals. Evita l’agost si busques tranquil·litat i consulta sempre el part de tramuntana.',
+        },
+      ],
+      ctaTitle: 'Descobreix Roses des del mar',
+      ctaText: 'Lloga una barca sense llicència o reserva una excursió privada al capvespre i recorre les cales i els canals de Santa Margarida.',
+      ctaLabel: 'Consultar disponibilitat i reservar',
+      relatedTitle: 'Continua explorant',
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -732,6 +1262,136 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaText: 'Excursion privée depuis Roses en longeant le Cap de Creus, avec skipper et arrêts dans les criques. Le village de Dalí, à votre rythme.',
       ctaLabel: 'Vérifier les disponibilités et réserver',
       relatedTitle: 'Continuez à explorer',
+    },
+    en: {
+      metaTitle: 'Cadaqués by boat from Roses: private excursion',
+      metaDescription:
+        'Go to Cadaqués by boat from Roses: a private excursion skirting Cap de Creus, with stops in coves to swim. Dalí’s village, at your own pace.',
+      breadcrumbHome: 'Home',
+      breadcrumbLabel: 'Cadaqués by boat',
+      kicker: 'Dalí’s village',
+      h1: 'Cadaqués by boat from Roses: the private excursion to Dalí’s village',
+      heroAlt: 'Coast of Cap de Creus heading toward Cadaqués',
+      introLead:
+        'Cadaqués waits on the far side of Cap de Creus: a white fishing village forever linked to Salvador Dalí. We’re not a scheduled service or a ferry; from Roses we take you on a private excursion, skirting cliffs and stopping in coves to swim before we reach the village.',
+      sections: [
+        {
+          h2: 'What Cadaqués is and why it’s worth the trip',
+          body: [
+            'Cadaqués is a coastal village of whitewashed houses rising from the shore to the Church of Santa Maria. Narrow lanes, art galleries, fishing boats in the bay and a calm, bohemian feel, far from crowded beach tourism.',
+            'Its character revolves around Salvador Dalí, who lived right next door in Portlligat. Walking through Cadaqués means breathing in the landscape that shaped the artist.',
+          ],
+        },
+        {
+          h2: 'Dalí, Portlligat and the village',
+          body: [
+            'The Salvador Dalí House-Museum in Portlligat, a stone’s throw from Cadaqués, was his home and studio: singular architecture, extended over the years, with views of Cap de Creus. It’s worth checking opening times and booking ahead in high season.',
+            'In the village, wander unhurried up to the Church of Santa Maria, step into the galleries and eat fresh fish on a terrace facing the sea. Cadaqués’ charm lies in its calm.',
+          ],
+        },
+        {
+          h2: 'How to get there by boat from Roses (private excursion)',
+          body: [
+            'By sea you sail skirting the Cap de Creus Natural Park: cliffs, coves and clear water, no road and no noise. On our private excursion it’s just your group and a skipper who knows these waters; we stop at coves like Guillola or Jugadora to swim and snorkel, and in Cadaqués you have time for the village before heading back.',
+            'It’s an open-sea crossing of just over an hour each way, depending on conditions. With the stops for swimming, the outing takes up a good part of the day.',
+          ],
+        },
+        {
+          h2: 'With a skipper, tramuntana and best season',
+          body: [
+            'For Cadaqués we recommend a licensed boat or a skipper-led excursion: it’s about 20 km across open sea and Cap de Creus demands experience. Licence-free rental is for the bay’s nearby coves, not this route.',
+            'The tramuntana can raise the sea quickly; we check the forecast and, if it’s blowing hard, we change the plan or the date. The best season runs May to September.',
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Can you reach Cadaqués by boat from Roses?',
+          a: 'Yes, skirting the Cap de Creus Natural Park. It’s not a scheduled service: it’s a private excursion, your group alone, with a skipper and at your pace.',
+        },
+        {
+          q: 'How long is the crossing?',
+          a: 'Just over an hour each way, depending on sea conditions. With stops in coves to swim, the outing takes up a good part of the day.',
+        },
+        {
+          q: 'Do I need a licence or a skipper?',
+          a: 'For this route we recommend a licensed boat or a skipper: it’s open sea with distance to cover. Licence-free rental is reserved for the bay’s nearby coves.',
+        },
+        {
+          q: 'What is there to see in Cadaqués?',
+          a: 'The old town and the Church of Santa Maria, the art galleries, the beach and, very close by, the Dalí House-Museum in Portlligat.',
+        },
+      ],
+      ctaTitle: 'Sail to Cadaqués',
+      ctaText: 'A private excursion from Roses skirting Cap de Creus, with a skipper and stops in coves. Dalí’s village, at your pace.',
+      ctaLabel: 'Check availability and book',
+      relatedTitle: 'Keep exploring',
+    },
+    ca: {
+      metaTitle: 'Cadaqués en barca des de Roses: excursió privada',
+      metaDescription:
+        'Anar a Cadaqués en barca des de Roses: una excursió privada vorejant el Cap de Creus, amb parades a cales per banyar-t’hi. El poble de Dalí, al teu ritme.',
+      breadcrumbHome: 'Inici',
+      breadcrumbLabel: 'Cadaqués en barca',
+      kicker: 'El poble de Dalí',
+      h1: 'Cadaqués en barca des de Roses: l’excursió privada al poble de Dalí',
+      heroAlt: 'Costa del Cap de Creus camí de Cadaqués',
+      introLead:
+        'Cadaqués t’espera a l’altre costat del Cap de Creus: un poble blanc de pescadors lligat per sempre a Salvador Dalí. No som una línia regular ni un ferry; des de Roses et portem en una excursió privada, vorejant penya-segats i parant a cales per banyar-t’hi abans d’arribar al poble.',
+      sections: [
+        {
+          h2: 'Què és Cadaqués i per què val la pena',
+          body: [
+            'Cadaqués és un poble costaner de cases encalades que pugen des de la vora fins a l’església de Santa Maria. Carrerons estrets, galeries d’art, barques de pesca a la badia i un ambient tranquil i bohemi, molt diferent del turisme de platja massificat.',
+            'El seu caràcter gira al voltant de Salvador Dalí, que vivia just al costat, a Portlligat. Passejar per Cadaqués és respirar el paisatge que va marcar l’artista.',
+          ],
+        },
+        {
+          h2: 'Dalí, Portlligat i el poble',
+          body: [
+            'La Casa-Museu Salvador Dalí a Portlligat, a tocar de Cadaqués, va ser la seva llar i el seu taller: una arquitectura singular, ampliada durant anys, amb vistes al Cap de Creus. Convé consultar horaris i reservar entrada a la temporada alta.',
+            'Al poble, passeja sense pressa fins a l’església de Santa Maria, entra a les galeries i menja peix en una terrassa davant del mar. L’encant de Cadaqués és en la calma.',
+          ],
+        },
+        {
+          h2: 'Com arribar-hi en barca des de Roses (excursió privada)',
+          body: [
+            'Per mar s’hi va vorejant el Parc Natural de Cap de Creus: penya-segats, cales i aigua clara, sense carretera ni soroll. A la nostra excursió privada vas només amb el teu grup i un patró que coneix aquestes aigües; parem a cales com Guillola o Jugadora per nedar i fer snorkel, i a Cadaqués tens temps per al poble abans de tornar.',
+            'És una travessia de mar obert de poc més d’una hora per trajecte, segons l’estat del mar. Amb les parades per banyar-se, la sortida ocupa bona part del dia.',
+          ],
+        },
+        {
+          h2: 'Amb patró, tramuntana i millor època',
+          body: [
+            'Per a Cadaqués recomanem barca amb llicència o excursió amb patró: és a uns 20 km per mar obert i el Cap de Creus exigeix experiència. El lloguer sense llicència és per a les cales properes de la badia, no per a aquesta ruta.',
+            'La tramuntana pot aixecar el mar ràpidament; consultem el part i, si bufa fort, canviem de pla o de data. La millor època va de maig a setembre.',
+          ],
+        },
+      ],
+      faqTitle: 'Preguntes freqüents',
+      faq: [
+        {
+          q: 'Es pot anar a Cadaqués en barca des de Roses?',
+          a: 'Sí, vorejant el Parc Natural de Cap de Creus. No és una línia regular: és una excursió privada, només el teu grup, amb patró i al teu ritme.',
+        },
+        {
+          q: 'Quant dura la travessia?',
+          a: 'Poc més d’una hora per trajecte, segons el mar. Amb parades a cales per banyar-t’hi, la sortida ocupa bona part del dia.',
+        },
+        {
+          q: 'Necessito llicència o patró?',
+          a: 'Per a aquesta ruta recomanem barca amb llicència o amb patró: és mar obert i hi ha distància. El lloguer sense llicència queda per a les cales properes de la badia.',
+        },
+        {
+          q: 'Què veure a Cadaqués?',
+          a: 'El casc antic i l’església de Santa Maria, les galeries d’art, la platja i, molt a prop, la Casa-Museu de Dalí a Portlligat.',
+        },
+      ],
+      ctaTitle: 'Navega a Cadaqués',
+      ctaText: 'Excursió privada des de Roses vorejant el Cap de Creus, amb patró i parades a cales. El poble de Dalí, al teu ritme.',
+      ctaLabel: 'Consultar disponibilitat i reservar',
+      relatedTitle: 'Continua explorant',
     },
   },
 };

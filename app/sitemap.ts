@@ -120,6 +120,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── CA — Preus i temporades ────────────────────────────────────────────
     url('/ca/preus-lloguer-vaixell-roses', 0.8, 'monthly'),
 
+    // ─── CA — Guies de destí ────────────────────────────────────────────────
+    url('/ca/cap-de-creus-en-vaixell', 0.75, 'monthly'),
+    url('/ca/cala-montjoi', 0.7, 'monthly'),
+    url('/ca/cala-murtra', 0.7, 'monthly'),
+    url('/ca/que-veure-a-roses', 0.7, 'monthly'),
+    url('/ca/cadaques-en-vaixell', 0.7, 'monthly'),
+
     // ─── CA — Flota ─────────────────────────────────────────────────────────
     url('/ca/embarcacions', 0.65, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/ca/embarcacions/${slug}`, 0.55, 'monthly')),
@@ -221,6 +228,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── EN — Prices ─────────────────────────────────────────────────────────
     url('/en/boat-rental-prices-roses', 0.8, 'monthly'),
+
+    // ─── EN — Destination guides ─────────────────────────────────────────────
+    url('/en/cap-de-creus-by-boat', 0.75, 'monthly'),
+    url('/en/cala-montjoi', 0.7, 'monthly'),
+    url('/en/cala-murtra', 0.7, 'monthly'),
+    url('/en/what-to-see-in-roses', 0.7, 'monthly'),
+    url('/en/cadaques-by-boat', 0.7, 'monthly'),
 
     // ─── EN — About / Contact ────────────────────────────────────────────────
     url('/en/about', 0.4, 'yearly'),

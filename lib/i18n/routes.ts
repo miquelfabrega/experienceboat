@@ -187,36 +187,36 @@ const ROUTES = {
     ca: '/ca/blog/primera-vegada-vaixell-sense-llicencia-roses',
   },
 
-  // ─── Guías de destino (Cluster B) — ES + FR; EN/CA pendientes → fallback ES ───
+  // ─── Guías de destino (Clusters B/C/D) — 4 idiomas ───────────────────────
   capDeCreusGuide: {
     es: '/cap-de-creus-en-barco',
-    en: null,
+    en: '/en/cap-de-creus-by-boat',
     fr: '/fr/cap-de-creus-en-bateau',
-    ca: null,
+    ca: '/ca/cap-de-creus-en-vaixell',
   },
   calaMontjoi: {
     es: '/cala-montjoi',
-    en: null,
+    en: '/en/cala-montjoi',
     fr: '/fr/cala-montjoi',
-    ca: null,
+    ca: '/ca/cala-montjoi',
   },
   calaMurtra: {
     es: '/cala-murtra',
-    en: null,
+    en: '/en/cala-murtra',
     fr: '/fr/cala-murtra',
-    ca: null,
+    ca: '/ca/cala-murtra',
   },
   queVerRoses: {
     es: '/que-ver-en-roses',
-    en: null,
+    en: '/en/what-to-see-in-roses',
     fr: '/fr/que-faire-a-rosas',
-    ca: null,
+    ca: '/ca/que-veure-a-roses',
   },
   cadaquesBarco: {
     es: '/cadaques-en-barco',
-    en: null,
+    en: '/en/cadaques-by-boat',
     fr: '/fr/cadaques-en-bateau',
-    ca: null,
+    ca: '/ca/cadaques-en-vaixell',
   },
 
   // Páginas que aún no existen en todos los locales → fallback a ES.
