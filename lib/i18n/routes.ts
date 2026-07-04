@@ -42,6 +42,14 @@ const ROUTES = {
     ca: '/ca/experiencies-vaixell-roses',
   },
 
+  // Página de precios y temporadas (intención comercial: comparar tarifas).
+  prices: {
+    es: '/precios-alquiler-barco-roses',
+    en: '/en/boat-rental-prices-roses',
+    fr: '/fr/tarifs-location-bateau-roses',
+    ca: '/ca/preus-lloguer-vaixell-roses',
+  },
+
   // Landing de conversión (Google Ads) — alquiler de lancha con licencia.
   lanchaRoses: {
     es: '/alquiler-lancha-roses',

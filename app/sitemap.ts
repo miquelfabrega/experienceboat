@@ -57,6 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/canales-santa-margarita/que-ver', 0.8, 'monthly'),
     url('/canales-santa-margarita/ruta-cap-de-creus', 0.8, 'monthly'),
 
+    // ─── Precios y temporadas ───────────────────────────────────────────────
+    url('/precios-alquiler-barco-roses', 0.85, 'monthly'),
+
     // ─── Flota ──────────────────────────────────────────────────────────────
     url('/barcos', 0.7, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/barcos/${slug}`, 0.6, 'monthly')),
@@ -106,6 +109,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/ca/canals-santa-margarida', 0.85, 'monthly'),
     url('/ca/canals-santa-margarida/que-veure', 0.75, 'monthly'),
     url('/ca/canals-santa-margarida/ruta-cap-de-creus', 0.75, 'monthly'),
+
+    // ─── CA — Preus i temporades ────────────────────────────────────────────
+    url('/ca/preus-lloguer-vaixell-roses', 0.8, 'monthly'),
 
     // ─── CA — Flota ─────────────────────────────────────────────────────────
     url('/ca/embarcacions', 0.65, 'monthly'),
@@ -166,6 +172,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/fr/a-propos', 0.4, 'yearly'),
     url('/fr/contact', 0.6, 'monthly'),
     url('/fr/reservation', 0.7, 'monthly'),
+    url('/fr/tarifs-location-bateau-roses', 0.8, 'monthly'),
     url('/fr/bateaux', 0.5, 'monthly'),
     ...getBarcoSlugs().map((slug) => url(`/fr/bateaux/${slug}`, 0.45, 'monthly')),
 
@@ -199,6 +206,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/en/blog/best-snorkeling-spots-costa-brava', 0.5, 'yearly', BLOG_DATE),
     url('/en/blog/tips-planning-boat-trip-costa-brava', 0.5, 'yearly', BLOG_DATE),
     url('/en/blog/first-time-boat-no-licence-roses', 0.5, 'yearly', BLOG_DATE),
+
+    // ─── EN — Prices ─────────────────────────────────────────────────────────
+    url('/en/boat-rental-prices-roses', 0.8, 'monthly'),
 
     // ─── EN — About / Contact ────────────────────────────────────────────────
     url('/en/about', 0.4, 'yearly'),
