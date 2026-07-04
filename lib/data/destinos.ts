@@ -135,7 +135,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       h1: 'Cap de Creus en bateau : la pointe la plus orientale de la Costa Brava',
       heroAlt: 'Falaises et criques du Cap de Creus vues depuis la mer',
       introLead:
-        'Cap de Creus est le point le plus oriental de la péninsule ibérique, où la tramontane sculpte la roche et où Dalí a trouvé son paysage. Depuis Roses, en bateau, on atteint des criques presque vierges, le phare emblématique et des eaux transparentes. Voici comment, quand et avec qui y aller.',
+        'Cap de Creus est le point le plus oriental de la péninsule ibérique, où la tramontane sculpte la roche et c’est là que Dalí a trouvé son paysage. Depuis Roses, en bateau, on atteint des criques presque vierges, le phare emblématique et des eaux transparentes. Voici comment, quand et avec qui y aller.',
       sections: [
         {
           h2: 'Cap de Creus : là où finit la péninsule ibérique',
@@ -148,7 +148,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'Comment y aller en bateau depuis Roses',
           body: [
             'Pour explorer les criques proches de la baie, vous pouvez louer un bateau sans permis (dès 70 €/heure) : des navigations tranquilles, idéales si vous cherchez la liberté sans complications. Vous mouillez dans une eau claire, vous vous baignez et vous continuez à votre rythme.',
-            'Si votre plan est d’atteindre le phare et le cap plus ouvert, nous recommandons un bateau avec permis ou, mieux, une sortie privée avec skipper : votre groupe, votre rythme, notre connaissance des lieux. Les sorties au coucher du soleil (dès 160 €) sont un classique. Le trajet est plus long, mais il en vaut la peine.',
+            'Si vous envisagez d’atteindre le phare et le cap plus ouvert, nous recommandons un bateau avec permis ou, mieux, une sortie privée avec skipper : votre groupe, votre rythme, notre connaissance des lieux. Les sorties au coucher du soleil (dès 160 €) sont un classique. Le trajet est plus long, mais il en vaut la peine.',
           ],
         },
         {
@@ -162,7 +162,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'Tramontane, meilleure période et quoi apporter',
           body: [
             'La tramontane est bien réelle : ce vent du nord peut changer la mer en quelques minutes. Ce n’est pas dangereux si l’on respecte le bulletin, mais cela conditionne la sortie. Avant de réserver, on le vérifie avec vous et on vous dit si c’est un jour pour le cap ou plutôt pour les criques abritées.',
-            'La meilleure période va de mai à octobre ; juin et septembre sont optimaux. Apportez crème solaire, masque de snorkeling, de l’eau et une serviette. Le Parc Naturel n’est pas une plage de station balnéaire : c’est la mer vivante, et c’est justement tout son charme.',
+            'La meilleure période va de mai à octobre ; juin et septembre sont optimaux. Apportez votre crème solaire, un masque de snorkeling, de l’eau et une serviette. Le Parc Naturel n’est pas une plage de station balnéaire : c’est la mer vivante, et c’est justement tout son charme.',
           ],
         },
       ],
@@ -269,7 +269,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       h1: 'Cala Montjoi : la crique aux eaux cristallines face à elBulli',
       heroAlt: 'Eaux transparentes de Cala Montjoi, dans la baie de Roses',
       introLead:
-        'Cala Montjoi est l’une des plus belles criques de la baie de Roses, au cœur du Parc Naturel de Cap de Creus. Célèbre pour avoir accueilli le restaurant elBulli, ses eaux transparentes et ses fonds rocheux en font un lieu idéal pour le snorkeling. Et la meilleure façon d’en profiter sans file d’attente au parking, c’est d’y arriver en bateau.',
+        'Cala Montjoi est l’une des plus belles criques de la baie de Roses, au cœur du Parc Naturel de Cap de Creus. Célèbre pour avoir accueilli le restaurant elBulli, elle est idéale pour le snorkeling grâce à ses eaux transparentes et ses fonds rocheux. Et la meilleure façon d’en profiter sans file d’attente au parking, c’est d’y arriver en bateau.',
       sections: [
         {
           h2: 'Où se trouve Cala Montjoi et pourquoi elle est spéciale',
@@ -282,7 +282,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'elBulli : la légende qui a mis Cala Montjoi sur la carte',
           body: [
             'Le restaurant elBulli de Ferran Adrià a été pendant des années l’un des meilleurs du monde, et son emplacement à Cala Montjoi n’était pas un hasard : l’isolement de la crique et l’environnement faisaient partie de son identité.',
-            'Aujourd’hui, elBulli1846 fonctionne comme espace-musée et centre de recherche gastronomique. Même s’il ne sert plus de repas, l’histoire continue d’attirer des visiteurs du monde entier dans ce coin de la Costa Brava.',
+            'Aujourd’hui, elBulli1846 fonctionne comme espace-musée et centre de recherche gastronomique. Même s’il ne sert plus de repas, son héritage attire toujours des visiteurs du monde entier dans ce coin de la Costa Brava.',
           ],
         },
         {
@@ -408,8 +408,8 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         {
           h2: 'Qu’est-ce que Cala Murtra et pourquoi elle est spéciale',
           body: [
-            'Cala Murtra est une petite crique naturelle sur la côte de Roses, dans la zone de Punta Falconera, près de l’Almadrava. Elle n’est pas grande, mais c’est là son charme : quand d’autres plages se couvrent de parasols, ici il y a de l’espace, du silence et une eau transparente qui donne envie de plonger.',
-            'C’est une crique peu urbanisée, restée naturelle, parce que le chemin à pied est compliqué et cela la tient à l’écart du tourisme de masse. L’ambiance est détendue et tranquille, faite de gens venus se reconnecter à la mer plus que chercher des services.',
+            'Cala Murtra est une petite crique naturelle sur la côte de Roses, dans la zone de Punta Falconera, près de l’Almadrava. Elle n’est pas grande, mais c’est là son charme : tandis que d’autres plages se couvrent de parasols, ici règnent l’espace, le silence et une eau transparente qui donne envie de plonger.',
+            'C’est une crique peu urbanisée, restée naturelle, parce que le chemin à pied est compliqué et cela la tient à l’écart du tourisme de masse. L’ambiance y est détendue, elle attire ceux qui viennent se reconnecter à la mer plus que chercher des services.',
           ],
         },
         {
@@ -422,7 +422,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         {
           h2: 'Baignade et snorkeling dans des eaux claires',
           body: [
-            'Une fois au mouillage, l’eau parle d’elle-même : transparence, température agréable et fonds rocheux pleins de vie. Cala Murtra, c’est un snorkeling silencieux, fait de petits poissons, de plantes aquatiques et de cette sensation d’aquarium sans vitre.',
+            'Une fois au mouillage, l’eau parle d’elle-même : transparence, température agréable et fonds rocheux pleins de vie. Cala Murtra offre un snorkeling silencieux : petits poissons, plantes aquatiques et cette sensation d’aquarium sans vitre.',
             'N’attendez pas de récifs coralliens : c’est la nature méditerranéenne pure et discrète, ce que l’on vient justement chercher ici. Avec masque, tuba et palmes, vous plongez dans un coin que presque personne ne visite.',
           ],
         },
@@ -430,7 +430,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'Conseils pratiques pour votre sortie',
           body: [
             'Tramontane : à Roses, le vent du nord commande. Cala Murtra est relativement abritée, mais mieux vaut consulter le bulletin ; par vent fort, gardez-la pour un autre jour. Pour le mouillage, sable et roche tiennent bien : mouillez à quelques mètres et donnez bien la chaîne.',
-            'Il n’y a pas de services, alors venez autonome : eau, ombre, crème solaire et serviette. Et respectez les lieux —c’est une crique vierge parce qu’on en prend soin— : ne laissez pas de déchets et, si vous en voyez, ramassez-les.',
+            'Il n’y a pas de services, alors venez en autonomie : eau, ombre, crème solaire et serviette. Et respectez les lieux —c’est une crique vierge parce qu’on en prend soin— : ne laissez pas de déchets et, si vous en voyez, ramassez-les.',
           ],
         },
       ],
