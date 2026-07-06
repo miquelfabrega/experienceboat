@@ -338,6 +338,27 @@ export default function BarcoDetail({
         </div>
       </section>
 
+      {/* Vídeo del barco — justo bajo el calendario, antes de la galería */}
+      {barco.video && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            {t.video}
+          </h2>
+          <div className="relative mx-auto w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-lg bg-slate-900">
+            <video
+              className="absolute inset-0 h-full w-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+              poster={barco.videoPoster}
+              aria-label={`${t.video} — ${barco.nombre}`}
+            >
+              <source src={barco.video} type="video/mp4" />
+            </video>
+          </div>
+        </section>
+      )}
+
       {/* Specs row */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-3">
@@ -413,29 +434,6 @@ export default function BarcoDetail({
               {t.galeria}
             </h2>
             <BoatGallery images={galeria} nombre={barco.nombre} />
-          </div>
-        </section>
-      )}
-
-      {/* Vídeo del barco */}
-      {barco.video && (
-        <section className="pb-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              {t.video}
-            </h2>
-            <div className="relative mx-auto w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-lg bg-slate-900">
-              <video
-                className="absolute inset-0 h-full w-full object-cover"
-                controls
-                playsInline
-                preload="metadata"
-                poster={barco.videoPoster}
-                aria-label={`${t.video} — ${barco.nombre}`}
-              >
-                <source src={barco.video} type="video/mp4" />
-              </video>
-            </div>
           </div>
         </section>
       )}
