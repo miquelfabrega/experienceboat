@@ -55,3 +55,6 @@ ExperienceBoat_Brand_Guidelines.pdf
 experienceboat*.md
 experienceboat_*.xlsx
 experienceboat_*.js
+
+# Informes SEO internos (no publicar)
+/seo/
