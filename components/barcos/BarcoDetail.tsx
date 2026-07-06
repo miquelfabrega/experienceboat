@@ -97,7 +97,7 @@ const UI: Record<DetailLang, {
   inicio: string; barcos: string; barcosHref: string;
   reservaFecha: string; integrando: string; consultarDisp: string;
   capacidad: string; personas: string; eslora: string; motor: string; categoria: string;
-  dudas: string; equipamiento: string; galeria: string; queIncluye: string;
+  dudas: string; equipamiento: string; galeria: string; video: string; queIncluye: string;
   tarifas: string; duracion: string; tempBaja: string; tempMedia: string; tempAlta: string;
   unaHora: string; dosHoras: string;
   medioDia: string; diaCompleto: string; tresDias: string; sieteDias: string;
@@ -117,7 +117,7 @@ const UI: Record<DetailLang, {
     consultarDisp: 'Consultar disponibilidad',
     capacidad: 'Capacidad', personas: 'personas', eslora: 'Eslora', motor: 'Motor', categoria: 'Categoría',
     dudas: '¿Dudas? Pregúntanos por WhatsApp',
-    equipamiento: 'Equipamiento del barco', galeria: 'Galería', queIncluye: '¿Qué incluye el alquiler?',
+    equipamiento: 'Equipamiento del barco', galeria: 'Galería', video: 'Vídeo del barco', queIncluye: '¿Qué incluye el alquiler?',
     tarifas: 'Tarifas', duracion: 'Duración', tempBaja: 'Temp. baja', tempMedia: 'Temp. media', tempAlta: 'Temp. alta',
     unaHora: '1 hora', dosHoras: '2 horas',
     medioDia: 'Medio día', diaCompleto: 'Día completo', tresDias: '3 días', sieteDias: '7 días',
@@ -138,7 +138,7 @@ const UI: Record<DetailLang, {
     consultarDisp: 'Consultar disponibilitat',
     capacidad: 'Capacitat', personas: 'persones', eslora: 'Eslora', motor: 'Motor', categoria: 'Categoria',
     dudas: 'Teniu dubtes? Pregunteu-nos per WhatsApp',
-    equipamiento: 'Equipament de l\'embarcació', galeria: 'Galeria', queIncluye: 'Què inclou el lloguer?',
+    equipamiento: 'Equipament de l\'embarcació', galeria: 'Galeria', video: 'Vídeo de l\'embarcació', queIncluye: 'Què inclou el lloguer?',
     tarifas: 'Tarifes', duracion: 'Durada', tempBaja: 'Temp. baixa', tempMedia: 'Temp. mitjana', tempAlta: 'Temp. alta',
     unaHora: '1 hora', dosHoras: '2 hores',
     medioDia: 'Mitja jornada', diaCompleto: 'Jornada completa', tresDias: '3 dies', sieteDias: '7 dies',
@@ -159,7 +159,7 @@ const UI: Record<DetailLang, {
     consultarDisp: 'Vérifier la disponibilité',
     capacidad: 'Capacité', personas: 'personnes', eslora: 'Longueur', motor: 'Moteur', categoria: 'Catégorie',
     dudas: 'Des questions ? Écrivez-nous sur WhatsApp',
-    equipamiento: 'Équipement du bateau', galeria: 'Galerie', queIncluye: 'Que comprend la location ?',
+    equipamiento: 'Équipement du bateau', galeria: 'Galerie', video: 'Vidéo du bateau', queIncluye: 'Que comprend la location ?',
     tarifas: 'Tarifs', duracion: 'Durée', tempBaja: 'Basse saison', tempMedia: 'Moyenne saison', tempAlta: 'Haute saison',
     unaHora: '1 heure', dosHoras: '2 heures',
     medioDia: 'Demi-journée', diaCompleto: 'Journée complète', tresDias: '3 jours', sieteDias: '7 jours',
@@ -180,7 +180,7 @@ const UI: Record<DetailLang, {
     consultarDisp: 'Check availability',
     capacidad: 'Capacity', personas: 'people', eslora: 'Length', motor: 'Engine', categoria: 'Category',
     dudas: 'Questions? Message us on WhatsApp',
-    equipamiento: 'Boat equipment', galeria: 'Gallery', queIncluye: 'What\'s included in the rental?',
+    equipamiento: 'Boat equipment', galeria: 'Gallery', video: 'Boat video', queIncluye: 'What\'s included in the rental?',
     tarifas: 'Rates', duracion: 'Duration', tempBaja: 'Low season', tempMedia: 'Mid season', tempAlta: 'High season',
     unaHora: '1 hour', dosHoras: '2 hours',
     medioDia: 'Half day', diaCompleto: 'Full day', tresDias: '3 days', sieteDias: '7 days',
@@ -413,6 +413,29 @@ export default function BarcoDetail({
               {t.galeria}
             </h2>
             <BoatGallery images={galeria} nombre={barco.nombre} />
+          </div>
+        </section>
+      )}
+
+      {/* Vídeo del barco */}
+      {barco.video && (
+        <section className="pb-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              {t.video}
+            </h2>
+            <div className="relative mx-auto w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-lg bg-slate-900">
+              <video
+                className="absolute inset-0 h-full w-full object-cover"
+                controls
+                playsInline
+                preload="metadata"
+                poster={barco.videoPoster}
+                aria-label={`${t.video} — ${barco.nombre}`}
+              >
+                <source src={barco.video} type="video/mp4" />
+              </video>
+            </div>
           </div>
         </section>
       )}

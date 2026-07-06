@@ -53,6 +53,10 @@ export interface Barco {
   precioDesde: number;
   imagen: string;
   galeria?: string[];
+  /** Vídeo del barco (MP4 H.264, web-ready). Se muestra tras la galería. */
+  video?: string;
+  /** Poster JPG del vídeo. */
+  videoPoster?: string;
   badge: string | null;
   descripcionCorta: string;
   descripcionLarga?: string;
@@ -186,6 +190,8 @@ export const fleet: Barco[] = [
     sunset: { baja: 160, media: 170, alta: 175 },
     precioDesde: 195,
     imagen: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp',
+    video: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-video.mp4',
+    videoPoster: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-video-poster.jpg',
     badge: null,
     descripcionCorta:
       'Jeanneau 595 con motor de 115 CV para 6 personas. Ideal para llegar al Cap de Creus con comodidad y solárium.',
