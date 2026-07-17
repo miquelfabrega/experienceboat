@@ -77,12 +77,12 @@ export default function BoatRentalWithLicenceRosesPage() {
         <HeroSection lang="en" />
         <IntroSection lang="en" />
         <BoatGrid lang="en" />
-        <DestinationsSection />
-        <WhyUsSection />
-        <PracticalInfoSection />
-        <InternalLinksSection />
-        <ReviewsSection />
-        <ContactSection />
+        <DestinationsSection lang="en" />
+        <WhyUsSection lang="en" />
+        <PracticalInfoSection lang="en" />
+        <InternalLinksSection lang="en" />
+        <ReviewsSection lang="en" />
+        <ContactSection lang="en" />
         <FAQSection lang="en" />
       </main>
 

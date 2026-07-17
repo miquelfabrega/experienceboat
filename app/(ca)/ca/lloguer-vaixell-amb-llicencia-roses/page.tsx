@@ -173,12 +173,12 @@ export default function LloguerVaixellAmbLlicenciaRosesPage() {
         <HeroSection lang="ca" />
         <IntroSection lang="ca" />
         <BoatGrid lang="ca" />
-        <DestinationsSection />
-        <WhyUsSection />
-        <PracticalInfoSection />
-        <InternalLinksSection />
-        <ReviewsSection />
-        <ContactSection />
+        <DestinationsSection lang="ca" />
+        <WhyUsSection lang="ca" />
+        <PracticalInfoSection lang="ca" />
+        <InternalLinksSection lang="ca" />
+        <ReviewsSection lang="ca" />
+        <ContactSection lang="ca" />
         <FAQSection lang="ca" />
         <SiloNavBlock silo="licencia" lang="ca" />
       </main>

@@ -162,12 +162,12 @@ export default function LocationBateauAvecPermisRosesPage() {
         <HeroSection lang="fr" />
         <IntroSection lang="fr" />
         <BoatGrid lang="fr" />
-        <DestinationsSection />
-        <WhyUsSection />
-        <PracticalInfoSection />
-        <InternalLinksSection />
-        <ReviewsSection />
-        <ContactSection />
+        <DestinationsSection lang="fr" />
+        <WhyUsSection lang="fr" />
+        <PracticalInfoSection lang="fr" />
+        <InternalLinksSection lang="fr" />
+        <ReviewsSection lang="fr" />
+        <ContactSection lang="fr" />
         <FAQSection lang="fr" />
       </main>
 
