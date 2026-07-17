@@ -282,12 +282,12 @@ export default function ExperienciesVaixellRosesPage() {
         <HeroSection lang="ca" />
         <IntroSection lang="ca" />
         <ExperiencesGrid lang="ca" />
-        <CommonSection />
-        <DestinationsSection />
-        <TargetAudienceSection />
-        <RentAlternativeSection />
-        <ReviewsSection />
-        <ContactSection />
+        <CommonSection lang="ca" />
+        <DestinationsSection lang="ca" />
+        <TargetAudienceSection lang="ca" />
+        <RentAlternativeSection lang="ca" />
+        <ReviewsSection lang="ca" />
+        <ContactSection lang="ca" />
         <FAQSection lang="ca" />
         <SiloNavBlock lang="ca" />
       </main>

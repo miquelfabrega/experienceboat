@@ -195,9 +195,9 @@ export default function ExperiencesBateauRosesPage() {
         <HeroSection lang="fr" />
         <IntroSection lang="fr" />
         <ExperiencesGrid lang="fr" />
-        <CommonSection />
-        <DestinationsSection />
-        <TargetAudienceSection />
+        <CommonSection lang="fr" />
+        <DestinationsSection lang="fr" />
+        <TargetAudienceSection lang="fr" />
         <FAQSection lang="fr" />
       </main>
 
