@@ -143,12 +143,11 @@ export default function CanalsSantaMargaridaPillarPageCA() {
       <TouristAttractionSchema />
       <BreadcrumbSchema />
 
-      {/* Page sections — only FAQSection y SiloNavBlock aceptan lang="ca"; el resto del silo
-          pilar comparte componentes ES-hardcoded (HeroSection, IntroSection, etc.). */}
+      {/* Page sections — todas las secciones del silo pilar reciben lang="ca". */}
       <main id="main-content">
         <HeroSection lang="ca" />
         <IntroSection lang="ca" />
-        <ProductBoxSection />
+        <ProductBoxSection lang="ca" />
         <RouteSection lang="ca" />
         <DifferentiatorSection lang="ca" />
         <OptionsSection lang="ca" />
