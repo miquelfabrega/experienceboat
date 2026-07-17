@@ -115,7 +115,7 @@ export const fleet: Barco[] = [
     sunset: { baja: 160, media: 170, alta: 175 },
     notaMedioDia: NOTA_SIN_LICENCIA,
     precioDesde: 90,
-    imagen: '/boats/remus-450/remus-450-toto-01.jpg',
+    imagen: '/boats/remus-450/remus-450-exterior-02.webp',
     badge: 'Más reservado',
     descripcionCorta:
       'Embarcación sin licencia para 5 personas, ideal para descubrir las calas de Roses sin necesidad de patrón.',
@@ -189,7 +189,7 @@ export const fleet: Barco[] = [
     },
     sunset: { baja: 160, media: 170, alta: 175 },
     precioDesde: 195,
-    imagen: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp',
+    imagen: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-drone-01.webp',
     video: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-video.mp4',
     videoPoster: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-video-poster.jpg',
     badge: null,

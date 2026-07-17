@@ -146,20 +146,16 @@ export const boatsGallery: Record<string, GalleryImage[]> = {
   // ──────────────────────────────────────────────────────────────
   'jeanneau-595-reineta': [
     {
+      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-drone-01.webp',
+      alt: `Vista aérea de la Jeanneau 595 Reineta fondeada en una cala ${ZONA}`,
+    },
+    {
       src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-hero.webp',
       alt: `Lancha Jeanneau 595 Reineta navegando ${ZONA}`,
     },
     {
-      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-exterior-01.webp',
-      alt: `Jeanneau 595 Reineta fondeada frente a una cala ${ZONA}`,
-    },
-    {
       src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-exterior-02.webp',
       alt: `Jeanneau 595 Reineta de perfil sobre el agua ${ZONA}`,
-    },
-    {
-      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-interior-01.webp',
-      alt: `Bañera con toldo y mesa de la Jeanneau 595 Reineta ${ZONA}`,
     },
     {
       src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-interior-02.webp',
@@ -170,8 +166,16 @@ export const boatsGallery: Record<string, GalleryImage[]> = {
       alt: `Puesto de mando de la Jeanneau 595 Reineta ${ZONA}`,
     },
     {
-      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-experiencia-01.webp',
-      alt: `Aperitivo a bordo de la Jeanneau 595 Reineta en una cala ${ZONA}`,
+      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-drone-02.webp',
+      alt: `Jeanneau 595 Reineta fondeada sobre aguas turquesas vista con dron ${ZONA}`,
+    },
+    {
+      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-drone-03.webp',
+      alt: `Vista cenital con dron de la Jeanneau 595 Reineta fondeada ${ZONA}`,
+    },
+    {
+      src: '/boats/jeanneau-595-reineta/jeanneau-595-reineta-aperitivo-01.webp',
+      alt: `Bañera con toldo y mesa de aperitivo a bordo de la Jeanneau 595 Reineta ${ZONA}`,
     },
   ],
 
@@ -179,18 +183,6 @@ export const boatsGallery: Record<string, GalleryImage[]> = {
   // REMUS 450  (origen: "REMUS 450", 7 fotos — IMG_1378 duplicada)
   // ──────────────────────────────────────────────────────────────
   'remus-450': [
-    {
-      src: '/boats/remus-450/remus-450-toto-01.jpg',
-      alt: `Lancha sin licencia Remus 450 lista para una salida privada ${ZONA}`,
-    },
-    {
-      src: '/boats/remus-450/remus-450-toto-02.jpg',
-      alt: `Remus 450 navegando frente a la costa ${ZONA}`,
-    },
-    {
-      src: '/boats/remus-450/remus-450-toto-03.jpg',
-      alt: `Detalle a bordo de la Remus 450 durante una salida ${ZONA}`,
-    },
     {
       src: '/boats/remus-450/remus-450-hero.webp',
       alt: `Lancha sin licencia Remus 450 navegando ${ZONA}`,
