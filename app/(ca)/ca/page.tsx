@@ -43,15 +43,15 @@ export default function HomeCa() {
       <TikTokSection t={{ title: 'Seguiu-nos a TikTok', subtitle: 'El mar, les cales i la vida a bord — des de dins.' }} />
       <TrustSection data={homeDataCa.trust} />
       <ReviewsBanner
-        title="Ens encanta el que fem"
-        subtitle="Estem millorant el nostre web per a vosaltres"
+        title="5,0 a Google amb 276 ressenyes"
+        subtitle="Opinions reals de gent que ha sortit a navegar amb nosaltres"
         rating={5}
-        reviewCount={190}
+        reviewCount={276}
         googleMapsUrl="https://maps.google.com/?q=Experience+Boat+Roses"
         phoneNumber="+34623995700"
         ctaText="Veure ressenyes a Google Maps"
         callButtonText="Trucar ara"
-        footerText="Ens encanta el que fem. Expliqueu-nos la vostra experiència a Google Maps o contacteu amb nosaltres directament per tancar la reserva manualment."
+        footerText="Llegiu-les abans de reservar — expliquen la sortida millor que nosaltres. I si teniu dubtes, escriviu-nos per WhatsApp i us ajudem amb la reserva."
       />
       <BookingPreview translations={homeDataCa.booking} />
       <LocationSection

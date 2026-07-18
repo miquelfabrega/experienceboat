@@ -41,7 +41,7 @@ export const homeDataEn = {
   },
   intro: {
     title: 'Explore the Costa Brava at your own pace',
-    description: 'Navigate the Bay of Roses, the Santa Margarita canals and the Cap de Creus Natural Park. At Experience Boat, we offer boat rental with and without a nautical licence, private skippered excursions and sunset cruises. Fully private — only your group, no strangers on board. Departure from the Santa Margarita canals at the entrance to Roses.',
+    description: 'With or without a licence, with a skipper or with the helm in your own hands — there\'s a boat for every plan. Our licence-free boats take up to 5 people and set off straight from the 15 km of canals at Santa Margarita Marina, at the entrance to Roses. Always private: the boat is for your group and nobody else.',
     pillars: [
       {
         title: 'No licence',
@@ -134,7 +134,7 @@ export const homeDataEn = {
       {
         icon: 'MessageCircle',
         title: 'Direct contact',
-        text: 'Book via WhatsApp or on the website. No middlemen, no surprises. If you have questions, Tomàs or Max will answer personally.'
+        text: 'Book via WhatsApp or on the website. No middlemen, no surprises. If you have questions, Salvador or the team will answer you directly — no call centres.'
       }
     ]
   },
@@ -182,8 +182,8 @@ export const homeDataEn = {
     priceFrom: 'From',
   },
   location: {
-    title: 'Departing from the Santa Margarita canals',
-    description: 'Our departure point is the Santa Margarita Marina at the entrance to Roses. A unique location: the Santa Margarita canals are an experience in themselves, with waterfront homes and an atmosphere that can only be felt from the water.',
+    title: 'Where to find us: Santa Margarita Marina',
+    description: 'You\'ll find us on Av. Clot Franquest Nord, inside Santa Margarita Marina. Park next to the pontoon, step aboard the boat waiting at its mooring, and a few minutes of canal later you\'re out in the Bay of Roses.',
     addressLabel: 'Address',
     phoneLabel: 'Phone',
     emailLabel: 'Email',

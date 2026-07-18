@@ -42,15 +42,15 @@ export default function Home() {
       <TikTokSection />
       <TrustSection />
       <ReviewsBanner
-        title="Nos encanta lo que hacemos"
-        subtitle="Estamos mejorando nuestra web para ti"
+        title="5,0 en Google con 276 reseñas"
+        subtitle="Opiniones reales de gente que ha salido a navegar con nosotros"
         rating={5}
-        reviewCount={190}
+        reviewCount={276}
         googleMapsUrl="https://maps.google.com/?q=Experience+Boat+Roses"
         phoneNumber="+34623995700"
         ctaText="Ver reseñas en Google Maps"
         callButtonText="Llamar ahora"
-        footerText="Nos encanta lo que hacemos. Déjanos saber tu experiencia en Google Maps o contáctanos para cerrar la reserva manualmente."
+        footerText="Léelas antes de reservar — cuentan mejor que nosotros cómo es la salida. Y si tienes dudas, escríbenos por WhatsApp y te ayudamos con la reserva."
       />
       <BookingPreview />
       <LocationSection />

@@ -98,7 +98,7 @@ export const homeData = {
       {
         icon: 'MessageCircle',
         title: 'Trato directo',
-        text: 'Reserva por WhatsApp o web. Sin intermediarios, sin sorpresas. Si tienes dudas, Tomàs o Max te responden personalmente.'
+        text: 'Reserva por WhatsApp o web. Sin intermediarios, sin sorpresas. Si tienes dudas, te responde Salvador o el equipo, sin centralitas.'
       }
     ]
   },
@@ -127,8 +127,8 @@ export const homeData = {
     stats: '500+ salidas · 5★ valoración · 8 barcos disponibles'
   },
   location: {
-    title: 'Salimos desde los canales de Santa Margarita',
-    description: 'Nuestro punto de salida es la Marina de Santa Margarita, en la entrada de Roses. Una ubicación única: los canales de Santa Margarita son en sí mismos una experiencia, con casas frente al agua y un ambiente que solo se puede vivir desde los canales.',
+    title: 'Dónde estamos: Marina de Santa Margarita',
+    description: 'Estamos en la Av. Clot Franquest Nord, dentro de la Marina de Santa Margarita. Aparcas al lado del pantalán, el barco te espera amarrado y en unos minutos de canal ya estás saliendo a la bahía de Roses.',
     address: 'Av. Clot Franquest Nord, 17480 Roses, Girona',
     phone: '+34 623 99 57 00',
     email: 'info@experienceboat.es',

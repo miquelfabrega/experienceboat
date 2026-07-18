@@ -16,7 +16,7 @@ type IntroTranslations = {
 
 const defaultTranslations: IntroTranslations = {
   title: 'Navega a tu ritmo por la Costa Brava',
-  description: 'Navega por la bahía de Roses, los canales de Santa Margarita y el Parque Natural del Cap de Creus. En Experience Boat ofrecemos alquiler de barcos con y sin licencia, excursiones privadas con patrón y paseos al atardecer. Todo privado — solo tu grupo, ningún desconocido a bordo. Salimos desde los canales de Santa Margarita, en la entrada de Roses.',
+  description: 'Con licencia o sin ella, con patrón o llevando tú el timón: hay un barco para cada plan. Los barcos sin licencia llevan hasta 5 personas y salen directamente de los 15 km de canales de la Marina de Santa Margarita, en la entrada de Roses. Y siempre en privado: el barco es para tu grupo y para nadie más.',
   pillars: [
     {
       title: 'Sin licencia',

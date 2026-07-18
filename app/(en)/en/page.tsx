@@ -43,15 +43,15 @@ export default function HomeEn() {
       <TikTokSection t={{ title: 'Follow us on TikTok', subtitle: 'The sea, the coves and life on board — from the inside.' }} />
       <TrustSection data={homeDataEn.trust} />
       <ReviewsBanner
-        title="We love what we do"
-        subtitle="We're improving our website for you"
+        title="5.0 on Google from 276 reviews"
+        subtitle="Real reviews from people who've been out on the water with us"
         rating={5}
-        reviewCount={190}
+        reviewCount={276}
         googleMapsUrl="https://maps.google.com/?q=Experience+Boat+Roses"
         phoneNumber="+34623995700"
         ctaText="See reviews on Google Maps"
         callButtonText="Call now"
-        footerText="We love what we do. Let us know your experience on Google Maps or contact us directly to close your booking manually."
+        footerText="Read them before you book — they describe the trip better than we can. And if you have any questions, message us on WhatsApp and we'll help you with the booking."
       />
       <BookingPreview translations={homeDataEn.booking} />
       <LocationSection

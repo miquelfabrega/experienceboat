@@ -41,7 +41,7 @@ export const homeDataCa = {
   },
   intro: {
     title: 'Descobriu la Costa Brava al vostre ritme',
-    description: 'Navegueu per la badia de Roses, els canals de Santa Margarida i el Parc Natural del Cap de Creus. A Experience Boat oferim lloguer d\'embarcacions amb i sense llicència nàutica, excursions privades amb patró i sortides al capvespre. Tot privat — només el vostre grup, sense desconeguts a bord. Sortida des dels canals de Santa Margarida, a l\'entrada de Roses.',
+    description: 'Amb llicència o sense, amb patró o portant vosaltres el timó: hi ha un vaixell per a cada pla. Les embarcacions sense llicència porten fins a 5 persones i surten directament dels 15 km de canals de la Marina de Santa Margarida, a l\'entrada de Roses. I sempre en privat: el vaixell és per al vostre grup i per a ningú més.',
     pillars: [
       {
         title: 'Sense llicència',
@@ -134,7 +134,7 @@ export const homeDataCa = {
       {
         icon: 'MessageCircle',
         title: 'Contacte directe',
-        text: 'Reserveu per WhatsApp o al web. Sense intermediaris, sense sorpreses. Si teniu dubtes, en Tomàs o en Max us respondran personalment.'
+        text: 'Reserveu per WhatsApp o al web. Sense intermediaris, sense sorpreses. Si teniu dubtes, us respon en Salvador o l\'equip, sense centraletes.'
       }
     ]
   },
@@ -182,8 +182,8 @@ export const homeDataCa = {
     priceFrom: 'Des de',
   },
   location: {
-    title: 'Sortida des dels canals de Santa Margarida',
-    description: 'El nostre punt de sortida és la Marina de Santa Margarida, a l\'entrada de Roses. Una ubicació única: els canals de Santa Margarida són una experiència en si mateixos, amb cases a peu d\'aigua i un ambient que només es pot sentir des de l\'aigua.',
+    title: 'On som: Marina de Santa Margarida',
+    description: 'Ens trobareu a l\'Av. Clot Franquest Nord, dins de la Marina de Santa Margarida. Aparqueu al costat del pantalà, el vaixell us espera amarrat i, en uns minuts de canal, ja sortiu a la badia de Roses.',
     addressLabel: 'Adreça',
     phoneLabel: 'Telèfon',
     emailLabel: 'Correu electrònic',

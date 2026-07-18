@@ -41,7 +41,7 @@ export const homeDataFr = {
   },
   intro: {
     title: 'Naviguez à votre rythme sur la Costa Brava',
-    description: 'Naviguez dans la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus. Chez Experience Boat, nous proposons la location de bateaux avec et sans permis, des excursions privées avec skipper et des balades au coucher du soleil. Tout privé — seulement votre groupe, aucun inconnu à bord. Départ depuis les canaux de Santa Margarita, à l\'entrée de Roses.',
+    description: 'Avec ou sans permis, avec skipper ou la barre entre vos mains : il y a un bateau pour chaque envie. Nos bateaux sans permis embarquent jusqu\'à 5 personnes et partent directement des 15 km de canaux de la marina de Santa Margarita, à l\'entrée de Roses. Et toujours en privé : le bateau n\'est que pour votre groupe.',
     pillars: [
       {
         title: 'Sans permis',
@@ -134,7 +134,7 @@ export const homeDataFr = {
       {
         icon: 'MessageCircle',
         title: 'Contact direct',
-        text: 'Réservez via WhatsApp ou sur le site. Sans intermédiaires, sans surprises. Si vous avez des questions, Tomàs ou Max vous répondent personnellement.'
+        text: 'Réservez via WhatsApp ou sur le site. Sans intermédiaires, sans surprises. Pour toute question, Salvador ou l\'équipe vous répond directement, sans standard téléphonique.'
       }
     ]
   },
@@ -182,8 +182,8 @@ export const homeDataFr = {
     priceFrom: 'À partir de',
   },
   location: {
-    title: 'Départ depuis les canaux de Santa Margarita',
-    description: 'Notre point de départ est la Marina de Santa Margarita, à l\'entrée de Roses. Un endroit unique : les canaux de Santa Margarita sont en eux-mêmes une expérience, avec des maisons au bord de l\'eau et une atmosphère qui ne peut se vivre que depuis les canaux.',
+    title: 'Où nous trouver : marina de Santa Margarita',
+    description: 'Vous nous trouverez sur l\'Av. Clot Franquest Nord, dans la marina de Santa Margarita. Vous vous garez à côté du ponton, le bateau vous attend à son anneau, et quelques minutes de canal plus tard vous êtes déjà dans la baie de Roses.',
     addressLabel: 'Adresse',
     phoneLabel: 'Téléphone',
     emailLabel: 'Email',

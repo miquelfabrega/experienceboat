@@ -43,15 +43,15 @@ export default function HomeFr() {
       <TikTokSection t={{ title: 'Suivez-nous sur TikTok', subtitle: 'La mer, les criques et la vie à bord — de l\'intérieur.' }} />
       <TrustSection data={homeDataFr.trust} />
       <ReviewsBanner
-        title="Nous adorons ce que nous faisons"
-        subtitle="Nous améliorons notre site web pour vous"
+        title="5,0 sur Google avec 276 avis"
+        subtitle="Des avis authentiques de personnes qui ont navigué avec nous"
         rating={5}
-        reviewCount={190}
+        reviewCount={276}
         googleMapsUrl="https://maps.google.com/?q=Experience+Boat+Roses"
         phoneNumber="+34623995700"
         ctaText="Voir les avis sur Google Maps"
         callButtonText="Appeler maintenant"
-        footerText="Nous adorons ce que nous faisons. Faites-nous connaître votre expérience sur Google Maps ou contactez-nous directement pour finaliser votre réservation manuellement."
+        footerText="Lisez-les avant de réserver — ils racontent la sortie mieux que nous. Et pour toute question, écrivez-nous sur WhatsApp : nous vous aidons avec la réservation."
       />
       <BookingPreview translations={homeDataFr.booking} />
       <LocationSection
