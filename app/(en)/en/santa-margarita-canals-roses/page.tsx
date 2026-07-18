@@ -150,8 +150,8 @@ export default function SantaMargaritaCanalsRosesPage() {
         {/* ── Hero ── */}
         <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
           <Image
-            src="https://picsum.photos/seed/canales-roses-hero/1600/900"
-            alt="Boat navigating the Santa Margarita canals in Roses, Costa Brava"
+            src="/santa-margarita/hero-canales.webp"
+            alt="Aerial view of the Santa Margarita canal network at sunset, Roses (Costa Brava)"
             fill
             className="object-cover"
             priority
