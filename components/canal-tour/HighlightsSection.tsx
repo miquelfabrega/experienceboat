@@ -2,90 +2,90 @@ import { Eye, Navigation, Home, ShieldCheck } from 'lucide-react';
 
 const translations = {
   es: {
-    title: 'La mejor forma de explorar los canales',
-    description: 'Te ofrecemos la oportunidad de sumergirte en este paisaje urbano y natural de una manera única y divertida.',
+    title: 'Qué tiene de distinto salir por los canales',
+    description: 'Sin licencia, sin patrón a bordo y por un recorrido que no se puede hacer a pie. Esto es lo que te encuentras.',
     highlights: [
       {
-        title: 'Auténtico Capitán',
-        desc: 'Nuestros barcos no requieren ningún tipo de titulación náutica. Te damos unas sencillas instrucciones y tú mismo tomarás el timón, marcando el ritmo de tu propia aventura.'
+        title: 'Llevas tú el timón',
+        desc: 'No hace falta ninguna titulación. Te explicamos el gas, el rumbo y cómo atracar en cinco minutos en el pantalán, y a partir de ahí decides tú a qué velocidad vas y dónde te paras.'
       },
       {
-        title: 'Perspectiva 360º',
-        desc: 'Descubre los canales desde dentro, una forma completamente diferente y privilegiada de visitar Santa Margarita, con vistas panorámicas desde el agua.'
+        title: 'Solo se ve desde el agua',
+        desc: 'Los canales se entienden navegándolos: desde la calle ves tapias, desde la lancha ves los jardines, los amarres privados y la marina abriéndose en cada curva.'
       },
       {
-        title: 'Casas Espectaculares',
-        desc: 'Durante el recorrido te impresionarán las increíbles viviendas, chalets y villas con amarre propio. Auténticas joyas arquitectónicas a las orillas de los canales.'
+        title: 'Casas con el barco en la puerta',
+        desc: 'Chalets y villas con amarre propio a los dos lados del canal. Cada tramo tiene su estilo, y en algunos amarres hay barcos que cuestan más que la casa.'
       },
       {
-        title: 'Seguridad para la familia',
-        desc: 'Una actividad tranquila, segura y perfecta para disfrutar en familia o con amigos. Los canales son aguas protegidas donde navegar es fácil y relajante.'
+        title: 'Va bien con niños',
+        desc: 'El agua de los canales está siempre plana y se navega despacio, así que es una salida tranquila. Chalecos incluidos para todos los que suben.'
       }
     ]
   },
   fr: {
-    title: 'Le meilleur moyen d\'explorer les canaux',
-    description: 'Nous vous offrons l\'opportunité de vous plonger dans ce paysage urbain et naturel d\'une manière unique et amusante.',
+    title: 'Ce qui change quand on passe par les canaux',
+    description: 'Sans permis, sans skipper à bord et sur un parcours qu\'on ne peut pas faire à pied. Voilà ce que ça donne.',
     highlights: [
       {
-        title: 'Vrai Capitaine',
-        desc: 'Nos bateaux ne nécessitent aucune qualification nautique. Nous vous donnons des instructions simples et vous prenez la barre vous-même, fixant le rythme de votre propre aventure.'
+        title: 'C\'est vous à la barre',
+        desc: 'Aucun permis requis. On vous montre les gaz, le cap et l\'accostage en cinq minutes au ponton, et ensuite c\'est vous qui décidez de l\'allure et des arrêts.'
       },
       {
-        title: 'Perspective 360°',
-        desc: 'Découvrez les canaux de l\'intérieur, une façon complètement différente et privilégiée de visiter Santa Margarita, avec des vues panoramiques depuis l\'eau.'
+        title: 'Ça ne se voit que depuis l\'eau',
+        desc: 'Les canaux se comprennent en les naviguant : de la route on voit des murs, du bateau on voit les jardins, les pontons privés et la marina qui s\'ouvre à chaque virage.'
       },
       {
-        title: 'Maisons Spectaculaires',
-        desc: 'Pendant le voyage, vous serez impressionné par les incroyables maisons, chalets et villas avec mouillage privé. De véritables joyaux architecturaux au bord des canaux.'
+        title: 'Des maisons avec le bateau devant la porte',
+        desc: 'Villas et maisons avec anneau privé des deux côtés du canal. Chaque section a son style, et certains bateaux amarrés là valent plus cher que la maison.'
       },
       {
-        title: 'Sécurité pour la famille',
-        desc: 'Une activité tranquille, sûre et parfaite à apprécier en famille ou entre amis. Les canaux sont des eaux protégées où la navigation est facile et relaxante.'
+        title: 'Ça marche avec des enfants',
+        desc: 'L\'eau des canaux est toujours plate et on avance doucement : c\'est une sortie calme. Gilets de sauvetage inclus pour tout le monde à bord.'
       }
     ]
   },
   en: {
-    title: 'The best way to explore the canals',
-    description: 'We offer you the opportunity to immerse yourself in this urban and natural landscape in a unique and fun way.',
+    title: 'What\'s different about going out through the canals',
+    description: 'No licence, no skipper on board and a route you can\'t do on foot. Here\'s what it actually looks like.',
     highlights: [
       {
-        title: 'Authentic Captain',
-        desc: 'Our boats require no nautical qualifications. We give you simple instructions and you take the helm yourself, setting the pace of your own adventure.'
+        title: 'You take the helm',
+        desc: 'No qualification needed. We go over the throttle, the steering and how to come alongside in five minutes on the pontoon, and after that you set the pace and decide where to stop.'
       },
       {
-        title: '360° Perspective',
-        desc: 'Discover the canals from within—a completely different and privileged way to visit Santa Margarita, with panoramic views from the water.'
+        title: 'It only shows from the water',
+        desc: 'The canals make sense once you\'re on them: from the road you see walls, from the boat you see back gardens, private pontoons and the marina opening up at every bend.'
       },
       {
-        title: 'Spectacular Houses',
-        desc: 'During your journey you\'ll be impressed by the incredible homes, chalets and villas with private moorings. Architectural gems lining the canals.'
+        title: 'Houses with the boat at the front door',
+        desc: 'Villas and houses with their own mooring on both sides of the canal. Each stretch has its own style, and some of the boats tied up there cost more than the house.'
       },
       {
-        title: 'Family-friendly Safety',
-        desc: 'A quiet, safe activity perfect to enjoy with family or friends. The canals are protected waters where sailing is easy and relaxing.'
+        title: 'It works with children',
+        desc: 'Canal water is always flat and you go slowly, so it\'s a calm outing. Life jackets included for everyone on board.'
       }
     ]
   },
   ca: {
-    title: 'La millor manera d\'explorar els canals',
-    description: 'Us oferim l\'oportunitat de submergir-vos en aquest paisatge urbà i natural d\'una manera única i divertida.',
+    title: 'Què té de diferent sortir pels canals',
+    description: 'Sense llicència, sense patró a bord i per un recorregut que no es pot fer a peu. Això és el que us trobareu.',
     highlights: [
       {
-        title: 'Autèntic Capità',
-        desc: 'Les nostres embarcacions no requereixen cap mena de titulació nàutica. Us donem unes instruccions senzilles i vosaltres mateixos prendreu el timó, marcant el ritme de la vostra aventura.'
+        title: 'Porteu vosaltres el timó',
+        desc: 'No cal cap titulació. Us expliquem el gas, el rumb i com amarrar en cinc minuts al pantalà, i a partir d\'aquí decidiu vosaltres a quina velocitat aneu i on us atureu.'
       },
       {
-        title: 'Perspectiva 360º',
-        desc: 'Descobriu els canals des de dins, una manera completament diferent i privilegiada de visitar Santa Margarida, amb vistes panoràmiques des de l\'aigua.'
+        title: 'Només es veu des de l\'aigua',
+        desc: 'Els canals s\'entenen navegant-los: des del carrer veieu tanques, des de la llanxa veieu els jardins, els amarradors privats i la marina obrint-se a cada revolt.'
       },
       {
-        title: 'Cases Espectaculars',
-        desc: 'Durant el recorregut us impressionaran les increïbles cases, xalets i viles amb amarrador propi. Autèntiques joies arquitectòniques a la vora dels canals.'
+        title: 'Cases amb el vaixell a la porta',
+        desc: 'Xalets i cases amb amarrador propi als dos costats del canal. Cada tram té el seu estil, i en alguns amarradors hi ha vaixells que costen més que la casa.'
       },
       {
-        title: 'Seguretat per a la família',
-        desc: 'Una activitat tranquil·la, segura i perfecta per gaudir en família o amb amics. Els canals són aigües protegides on navegar és fàcil i relaxant.'
+        title: 'Va bé amb canalla',
+        desc: 'L\'aigua dels canals sempre és plana i s\'hi navega a poc a poc, així que és una sortida tranquil·la. Armilles incloses per a tothom qui puja.'
       }
     ]
   }

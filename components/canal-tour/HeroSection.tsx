@@ -4,7 +4,7 @@ import Link from 'next/link';
 const translations = {
   es: {
     title: 'Tour en Barco por los canales de Santa Margarita',
-    subtitle: 'Conviértete en el capitán de tu propia aventura navegando por los impresionantes canales de Santa Margarita sin necesidad de licencia.',
+    subtitle: '90 minutos por los quince kilómetros de canales de Santa Margarita, con el timón en tus manos y sin licencia.',
     discoverBtn: 'Descubrir la experiencia',
     bookBtn: 'Reservar Canal Tour',
     scrollAnchor: '#que-es',
@@ -13,7 +13,7 @@ const translations = {
   },
   fr: {
     title: 'Tour en bateau sur les canaux de Santa Margarita',
-    subtitle: 'Devenez le capitaine de votre propre aventure en naviguant sur les impressionnants canaux de Santa Margarita — sans permis nécessaire.',
+    subtitle: '90 minutes sur les quinze kilomètres de canaux de Santa Margarita, la barre entre vos mains et sans permis.',
     discoverBtn: 'Découvrir l\'expérience',
     bookBtn: 'Réserver le Canal Tour',
     scrollAnchor: '#que-est',
@@ -22,7 +22,7 @@ const translations = {
   },
   en: {
     title: 'Canal Tour through the Santa Margarita canals',
-    subtitle: 'Become the captain of your own adventure exploring the stunning Santa Margarita canals — no boat licence required.',
+    subtitle: '90 minutes along the fifteen kilometres of Santa Margarita canals, with the helm in your hands and no licence needed.',
     discoverBtn: 'Discover the experience',
     bookBtn: 'Book the Canal Tour',
     scrollAnchor: '#what-is-it',
@@ -31,7 +31,7 @@ const translations = {
   },
   ca: {
     title: 'Tour en vaixell pels canals de Santa Margarida',
-    subtitle: 'Convertiu-vos en el capità de la vostra pròpia aventura navegant pels impressionants canals de Santa Margarida, sense necessitat de llicència.',
+    subtitle: '90 minuts pels quinze quilòmetres de canals de Santa Margarida, amb el timó a les vostres mans i sense llicència.',
     discoverBtn: 'Descobrir l\'experiència',
     bookBtn: 'Reservar Canal Tour',
     scrollAnchor: '#que-es',

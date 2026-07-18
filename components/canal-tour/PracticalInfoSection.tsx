@@ -13,7 +13,7 @@ const translations = {
       {
         icon: Navigation,
         title: 'Horarios',
-        desc: 'Estamos disponibles todos los días de 9:00 am a 20:00 pm. Puedes elegir el momento del día que mejor se adapte a ti.'
+        desc: 'Salimos todos los días de 9:00 a 20:00. A media mañana el agua está más tranquila; a última hora de la tarde la luz es mejor para las fotos.'
       },
       {
         icon: Anchor,
@@ -33,7 +33,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Precios',
-        desc: 'Para consultar las tarifas actualizadas y disponibilidad, por favor revisa nuestra página de reservas.'
+        desc: 'Desde 90 € la salida, según temporada y modelo de barco. En el calendario de esta página ves el precio exacto y las horas libres del día que elijas.'
       }
     ]
   },
@@ -49,7 +49,7 @@ const translations = {
       {
         icon: Navigation,
         title: 'Horaires',
-        desc: 'Nous sommes disponibles tous les jours de 9h à 20h. Vous pouvez choisir le moment de la journée qui vous convient le mieux.'
+        desc: 'Nous sortons tous les jours de 9h à 20h. En milieu de matinée l\'eau est plus calme ; en fin d\'après-midi la lumière est meilleure pour les photos.'
       },
       {
         icon: Anchor,
@@ -69,7 +69,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Tarifs',
-        desc: 'Pour connaître les tarifs actualisés et la disponibilité, veuillez consulter notre page de réservation.'
+        desc: 'Dès 90 € la sortie, selon la saison et le modèle de bateau. Le calendrier de cette page affiche le prix exact et les créneaux libres du jour choisi.'
       }
     ]
   },
@@ -85,7 +85,7 @@ const translations = {
       {
         icon: Navigation,
         title: 'Hours',
-        desc: 'We are available every day from 9:00 am to 8:00 pm. You can choose the time of day that works best for you.'
+        desc: 'We go out every day from 9:00 to 20:00. Mid-morning the water is calmer; late afternoon gives you the better light for photos.'
       },
       {
         icon: Anchor,
@@ -105,7 +105,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Prices',
-        desc: 'To check updated rates and availability, please visit our booking page.'
+        desc: 'From €90 per trip, depending on the season and the boat. The calendar on this page shows the exact price and the slots left on the day you pick.'
       }
     ]
   },
@@ -121,7 +121,7 @@ const translations = {
       {
         icon: Navigation,
         title: 'Horaris',
-        desc: 'Estem disponibles cada dia de 9:00 a 20:00. Podeu triar el moment del dia que millor s\'adapti a vosaltres.'
+        desc: 'Sortim cada dia de 9:00 a 20:00. A mig matí l\'aigua està més tranquil·la; a última hora de la tarda la llum és millor per a les fotos.'
       },
       {
         icon: Anchor,
@@ -131,7 +131,7 @@ const translations = {
       {
         icon: CheckCircle2,
         title: 'Cal llicència?',
-        desc: 'No, les nostres embarcacions per al Canal Tour estan dissenyades per conduir-se sense titulació. Us ensenyarem el bàsic abans de salpar.'
+        desc: 'No. Les llanxes del Canal Tour estan pensades per governar-les sense titulació. Us ensenyem el bàsic al pantalà, abans de salpar.'
       },
       {
         icon: MapPin,
@@ -141,7 +141,7 @@ const translations = {
       {
         icon: Euro,
         title: 'Preus',
-        desc: 'Per consultar les tarifes actualitzades i la disponibilitat, reviseu la nostra pàgina de reserves.'
+        desc: 'Des de 90 € la sortida, segons temporada i model de vaixell. Al calendari d\'aquesta pàgina veieu el preu exacte i les hores lliures del dia que trieu.'
       }
     ]
   }

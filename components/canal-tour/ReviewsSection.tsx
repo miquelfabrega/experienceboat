@@ -2,25 +2,25 @@ import Script from 'next/script';
 
 const translations = {
   es: {
-    eyebrow: 'Experiencias inolvidables',
+    eyebrow: 'Reseñas de Google',
     title: 'Lo que dicen quienes han navegado los canales',
     subtitle: 'Opiniones reales de familias, parejas y grupos que han sido capitanes por un día en Santa Margarita.',
     noscript: 'Las reseñas requieren JavaScript para cargarse. Visita nuestro perfil de Google para leerlas.',
   },
   fr: {
-    eyebrow: 'Des expériences inoubliables',
+    eyebrow: 'Avis Google',
     title: 'Ce que disent ceux qui ont navigué sur les canaux',
     subtitle: 'Avis authentiques de familles, couples et groupes devenus capitaines d\'un jour à Santa Margarita.',
     noscript: 'Les avis nécessitent JavaScript pour se charger. Consultez notre profil Google pour les lire.',
   },
   en: {
-    eyebrow: 'Unforgettable experiences',
+    eyebrow: 'Google reviews',
     title: 'What guests who sailed the canals say',
     subtitle: 'Real reviews from families, couples and groups who became captain for a day in Santa Margarita.',
     noscript: 'Reviews require JavaScript to load. Visit our Google profile to read them.',
   },
   ca: {
-    eyebrow: 'Experiències inoblidables',
+    eyebrow: 'Ressenyes de Google',
     title: 'El que diuen els qui han navegat els canals',
     subtitle: 'Opinions reals de famílies, parelles i grups que han estat capitans per un dia a Santa Margarida.',
     noscript: 'Les ressenyes requereixen JavaScript per carregar-se. Visita el nostre perfil de Google per llegir-les.',
