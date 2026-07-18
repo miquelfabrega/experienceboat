@@ -80,7 +80,7 @@ export const homeDataFr = {
       {
         title: 'Location de bateau avec permis à Roses',
         tag: 'Avec permis',
-        text: 'Si vous avez un permis nautique, nous avons les embarcations que vous recherchez. Des bateaux puissants pour naviguer librement sur la Costa Brava nord : la baie de Roses, le Cap de Creus, Cala Canyelles, Cala Almadraba et tout ce que vous trouverez en chemin. Sans skipper, sans limites de route.',
+        text: 'Si vous avez un permis nautique, nous avons ce qu\'il vous faut. Des bateaux puissants pour naviguer librement sur la Costa Brava nord : la baie de Roses, le Cap de Creus, Cala Canyelles, Cala Almadraba et tout ce que vous trouverez en chemin. Sans skipper, sans limites de route.',
         cta: 'Voir les bateaux avec permis →',
         href: '/fr/location-bateau-avec-permis-roses/',
         image: '/boats/spirit-of-the-sea-675/spirit-of-the-sea-675-exterior-01.webp'
@@ -119,7 +119,7 @@ export const homeDataFr = {
       {
         icon: 'Users',
         title: 'Tout privé',
-        text: 'Votre embarcation est réservée uniquement à votre groupe. Sans partager le bateau avec des inconnus, contrairement aux autres excursions de la région.'
+        text: 'Votre bateau est réservé uniquement à votre groupe. Vous ne le partagez avec aucun inconnu, contrairement aux autres excursions de la région.'
       },
       {
         icon: 'Anchor',
@@ -139,7 +139,7 @@ export const homeDataFr = {
     ]
   },
   trust: {
-    title: 'Ce qu\'ils pensent de nous',
+    title: 'Leurs avis',
     reviews: [
       {
         id: 1,

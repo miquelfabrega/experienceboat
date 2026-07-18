@@ -50,7 +50,7 @@ export const faqsBahiaFr: FAQ[] = [
   {
     question: 'Y a-t-il des arrêts pour se baigner ?',
     answer:
-      'Beaucoup. De Santa Margarita, il y a des dizaines de criques accessibles en quelques minutes de navigation. Toutes ont des eaux de qualité et très bonne visibilité sous-marine. L\'accès à l\'eau est facile depuis la plupart de nos embarcations.',
+      'Beaucoup. De Santa Margarita, il y a des dizaines de criques accessibles en quelques minutes de navigation. Toutes ont des eaux de qualité et très bonne visibilité sous-marine. L\'accès à l\'eau est facile depuis la plupart de nos bateaux.',
   },
   {
     question: 'Quel est le meilleur mois pour naviguer dans la baie de Roses ?',

@@ -53,7 +53,7 @@ const translations = {
       },
       {
         title: 'Sortie privée',
-        desc: 'Vous ne partagez pas le bateau avec des inconnus. Le bateau est rien que pour votre groupe : c\'est vous qui fixez le cap, les arrêts et le rythme de toute la journée.'
+        desc: 'Vous ne partagez pas le bateau avec des inconnus. Le bateau n\'est que pour votre groupe : c\'est vous qui fixez le cap, les arrêts et le rythme de toute la journée.'
       },
       {
         title: 'Marina à Santa Margarita',

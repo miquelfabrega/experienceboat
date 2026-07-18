@@ -9,12 +9,12 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Contact — Location de bateaux à Roses',
   description:
-    'Contactez-nous pour réserver votre bateau à Roses ou résoudre toute question. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
+    'Contactez-nous pour réserver votre bateau à Roses ou répondre à toutes vos questions. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
   alternates: buildAlternates('contact', 'fr'),
   openGraph: {
     title: 'Contact — Location de bateaux à Roses',
     description:
-      'Contactez-nous pour réserver votre bateau à Roses ou résoudre toute question. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
+      'Contactez-nous pour réserver votre bateau à Roses ou répondre à toutes vos questions. Nous sommes à la Marina de Santa Margarita. Réponse en moins de 24 heures.',
     url: 'https://www.experienceboat.es/fr/contact',
     siteName: 'Experience Boat',
     locale: 'fr_FR',

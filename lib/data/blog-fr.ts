@@ -22,7 +22,7 @@ export const blogPostsFr: BlogPost[] = [
   {
     slug: 'itineraire-bateau-cap-de-creus-roses',
     title: 'Itinéraire en bateau au Cap de Creus depuis Roses — guide complet',
-    excerpt: 'Guide de l\'itinéraire en bateau depuis les canaux de Santa Margarita jusqu\'au Cap de Creus. Criques, arrêtes gastronomiques et tout ce qu\'il faut savoir.',
+    excerpt: 'Guide de l\'itinéraire en bateau depuis les canaux de Santa Margarita jusqu\'au Cap de Creus. Criques, arrêts gastronomiques et tout ce qu\'il faut savoir.',
     date: '2026-04-06',
     readTime: 7,
     category: 'Itinéraires',

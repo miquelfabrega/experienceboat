@@ -109,7 +109,7 @@ export default function ReservationPageFR() {
               {
                 icon: Clock,
                 title: 'Date et horaire',
-                text: 'Dites-nous quel jour vous voulez partir et combien d’heures vous avez besoin.',
+                text: 'Dites-nous quel jour vous voulez partir et de combien d’heures vous avez besoin.',
               },
               {
                 icon: Anchor,

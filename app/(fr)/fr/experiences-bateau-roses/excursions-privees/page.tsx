@@ -389,7 +389,7 @@ export default function ExcursionsPriveesRosesPage() {
                 {
                   icon: Users,
                   title: 'Skipper local, pas guide touristique',
-                  text: 'Tomàs et Max sont des skippers proches qui connaissent la région de première main. Ils ne récitent pas un discours préparé — ils s\'adaptent à vous et vous emmènent dans les endroits qui valent vraiment le détour.',
+                  text: 'Salvador et l\'équipe sont des skippers simples et accessibles qui connaissent la région de première main. Ils ne récitent pas un discours préparé — ils s\'adaptent à vous et vous emmènent dans les endroits qui valent vraiment le détour.',
                 },
                 {
                   icon: Shield,

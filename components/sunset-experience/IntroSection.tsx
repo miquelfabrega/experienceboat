@@ -13,7 +13,7 @@ const translations = {
     sectionId: 'que-est',
     title: 'Qu\'est-ce que le Sunset Experience exactement ?',
     paragraphs: [
-      'Le Sunset Experience est une sortie privée en bateau au coucher du soleil depuis les canaux de Santa Margarita : le soleil qui descend sur la baie de Roses, les reflets dans l\'eau des canaux et cette lumière méditerranéenne de fin de journée qui transforme chaque instant en quelque chose d\'inoubliable. Pour les couples, les petits groupes, pour ceux qui veulent terminer la journée d\'une façon dont ils se souviendront toujours.',
+      'Le Sunset Experience est une sortie privée en bateau au coucher du soleil depuis les canaux de Santa Margarita : le soleil qui descend sur la baie de Roses, les reflets dans l\'eau des canaux et cette lumière méditerranéenne de fin de journée qu\'on ne voit bien que depuis la mer. Pour les couples, les petits groupes, pour ceux qui veulent terminer la journée d\'une façon dont ils se souviendront.',
       'C\'est une sortie privée en bateau en fin d\'après-midi pensée spécialement pour profiter du coucher de soleil depuis la mer. Elle dure environ 2 heures et combine deux des paysages les plus photogéniques de Roses : les canaux de Santa Margarita à la tombée de la nuit et la baie de Roses avec le soleil à l\'horizon.',
       'La sortie commence quand le soleil est encore haut — avec suffisamment de temps pour parcourir les canaux avec la lumière chaude de fin de journée — et se termine quand le ciel a complètement changé de couleur et que les dernières lueurs du jour s\'éteignent sur la Méditerranée.',
     ],

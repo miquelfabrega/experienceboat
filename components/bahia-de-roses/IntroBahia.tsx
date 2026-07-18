@@ -19,7 +19,7 @@ const t: Record<
   fr: {
     title: 'La baie de Roses, à votre rythme avec permis',
     before:
-      'La baie de Roses est l\'un des décors de navigation les plus complets de la Costa Brava : protégée au nord par le Cap de Creus et ouverte au sud vers le golfe du Lion, elle offre d\'excellentes conditions la plupart de la saison. Nous partons des canaux de Santa Margarita — l\'accès le plus singulier à la baie — avec des embarcations pour les patrons avec permis qui recherchent espace, criques et liberté d\'itinéraire. La flotte et les tarifs pour titulaires sont sur notre page de ',
+      'La baie de Roses est l\'un des décors de navigation les plus complets de la Costa Brava : protégée au nord par le Cap de Creus et ouverte au sud vers le golfe du Lion, elle offre d\'excellentes conditions la plupart de la saison. Nous partons des canaux de Santa Margarita — l\'accès le plus singulier à la baie — avec des bateaux pour les navigateurs titulaires du permis qui recherchent espace, criques et liberté d\'itinéraire. La flotte et les tarifs pour titulaires sont sur notre page de ',
     linkText: 'location de bateau avec permis à Roses',
     link: '/fr/location-bateau-avec-permis-roses',
     after: '.',

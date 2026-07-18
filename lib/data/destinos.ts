@@ -145,7 +145,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
     fr: {
       metaTitle: 'Cap de Creus en bateau depuis Roses',
       metaDescription:
-        'Naviguez à Cap de Creus depuis Roses : criques vierges, le phare et le Parc Naturel. Bateau sans permis pour les criques proches ou sortie privée avec skipper.',
+        'Naviguez au Cap de Creus depuis Roses : criques vierges, le phare et le Parc Naturel. Bateau sans permis pour les criques proches ou sortie privée avec skipper.',
       breadcrumbHome: 'Accueil',
       breadcrumbLabel: 'Cap de Creus en bateau',
       kicker: 'Parc Naturel',
