@@ -15,7 +15,7 @@ const t: Record<Lang, {
       { title: 'Vaixells sense llicència', desc: 'L\'opció perfecta per explorar els canals i la badia sense necessitat de titulació nàutica.', href: '/ca/lloguer-vaixell-sense-llicencia-roses', cta: 'Veure vaixells sense llicència' },
       { title: 'Vaixells amb llicència', desc: 'Per a patrons amb titulació. Llanxes per a navegació lliure per la Costa Brava.', href: '/ca/lloguer-vaixell-amb-llicencia-roses', cta: 'Veure vaixells amb llicència' },
       { title: 'Experiències amb vaixell a Roses', desc: 'Canal tour Santa Margarida, excursions privades al Cap de Creus i Sunset a la badia de Roses. El teu grup, el teu ritme.', href: '/ca/experiencies-vaixell-roses', cta: 'Veure experiències' },
-      { title: 'Canals de Santa Margarida', desc: 'Una experiència única navegant pels canals. Sense llicència i amb paisatge garantit.', href: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarita', cta: 'Veure experiència' },
+      { title: 'Canals de Santa Margarida', desc: 'Una experiència única navegant pels canals. Sense llicència i amb paisatge garantit.', href: '/ca/experiencies-vaixell-roses/canal-tour-santa-margarida', cta: 'Veure experiència' },
     ],
   },
   es: {
@@ -45,7 +45,7 @@ const t: Record<Lang, {
     h2: 'Everything you can do with us in Roses',
     p: 'Discover our range of boats and services to enjoy the Mediterranean your way.',
     services: [
-      { title: 'No-licence boats', desc: 'The perfect option to explore the canals and the Bay of Roses without a nautical licence.', href: '/en/boat-rental-no-licence-roses', cta: 'See no-licence boats' },
+      { title: 'No-licence boats', desc: 'The perfect option to explore the canals and the Bay of Roses without a nautical licence.', href: '/en/boat-rental-without-licence-roses', cta: 'See no-licence boats' },
       { title: 'Boats with licence', desc: 'For qualified skippers. Motorboats for free-range navigation along the Costa Brava.', href: '/en/boat-rental-with-licence-roses', cta: 'See boats with licence' },
       { title: 'Boat experiences in Roses', desc: 'Santa Margarita Canal Tour, private excursions to Cap de Creus and a Sunset cruise in the Bay of Roses.', href: '/en/boat-experiences-roses', cta: 'See experiences' },
       { title: 'Santa Margarita canals', desc: 'A unique experience navigating the canals. No licence needed and stunning scenery guaranteed.', href: '/en/boat-experiences-roses/canal-tour-santa-margarita', cta: 'See the experience' },

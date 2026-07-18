@@ -181,7 +181,7 @@ export default function PrivateExcursionsRosesPage() {
               enjoying the moment. At Experience Boat we offer private boat excursions from Roses with
               skipper included: Tomàs or Max take the helm, know every cove and every route, and adapt
               to the pace and preferences of your group. We depart from the{' '}
-              <Link href="/en/santa-margarita-canals" className="text-sky-300 hover:underline">
+              <Link href="/en/santa-margarita-canals-roses" className="text-sky-300 hover:underline">
                 Santa Margarita canals
               </Link>{' '}
               towards Roses Bay, the Cap de Creus Natural Park and the most spectacular coves of the
@@ -273,7 +273,7 @@ export default function PrivateExcursionsRosesPage() {
             <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Santa Margarita canals</h3>
             <p>
               The trip itself is already an experience. The{' '}
-              <Link href="/en/santa-margarita-canals" className="text-sky-600 hover:underline">
+              <Link href="/en/santa-margarita-canals-roses" className="text-sky-600 hover:underline">
                 Santa Margarita canals
               </Link>{' '}
               — waterfront houses, a unique atmosphere — set the scene for the start of every
@@ -428,7 +428,7 @@ export default function PrivateExcursionsRosesPage() {
               skipper, we have that option too.
             </p>
             <Link
-              href="/en/boat-hire-with-licence-roses"
+              href="/en/boat-rental-with-licence-roses"
               className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:underline mb-8"
             >
               See boat hire with licence →
@@ -438,7 +438,7 @@ export default function PrivateExcursionsRosesPage() {
               self-guided trips around the bay and canals.
             </p>
             <Link
-              href="/en/boat-hire-no-licence-roses"
+              href="/en/boat-rental-without-licence-roses"
               className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:underline"
             >
               See no-licence boats →
@@ -516,17 +516,17 @@ export default function PrivateExcursionsRosesPage() {
               </Link>
             </li>
             <li>
-              <Link href="/en/boat-hire-with-licence-roses" className="hover:underline">
+              <Link href="/en/boat-rental-with-licence-roses" className="hover:underline">
                 Boat hire with licence in Roses
               </Link>
             </li>
             <li>
-              <Link href="/en/boat-hire-no-licence-roses" className="hover:underline">
+              <Link href="/en/boat-rental-without-licence-roses" className="hover:underline">
                 No-licence boats
               </Link>
             </li>
             <li>
-              <Link href="/en/santa-margarita-canals" className="hover:underline">
+              <Link href="/en/santa-margarita-canals-roses" className="hover:underline">
                 Santa Margarita canals
               </Link>
             </li>

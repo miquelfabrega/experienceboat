@@ -31,19 +31,19 @@ const translations = {
       {
         title: 'Excursions privées de jour',
         desc: 'Pour explorer le Cap de Creus et les criques les plus spectaculaires de la Côte Brava nord avec toute la journée devant vous.',
-        href: '/experiencias-barco-roses',
+        href: '/fr/experiences-bateau-roses',
         icon: Compass,
       },
       {
         title: 'Location sans permis',
         desc: 'Pour ceux qui veulent sortir à leur propre rythme sans skipper et sans permis nautique.',
-        href: '/alquiler-barco-sin-licencia-roses',
+        href: '/fr/location-bateau-sans-permis-roses',
         icon: Key,
       },
       {
         title: 'Les canaux de Santa Margarita',
         desc: 'Si la visite nocturne des canaux vous a intéressé, découvrez tout ce qu\'ils cachent dans leur version de jour.',
-        href: '/canales-santa-margarita',
+        href: '/fr/canaux-santa-margarita',
         icon: Anchor,
       },
     ]
@@ -54,19 +54,19 @@ const translations = {
       {
         title: 'Private day excursions',
         desc: 'To explore Cap de Creus and the most spectacular coves of the northern Costa Brava with the whole day ahead of you.',
-        href: '/experiencias-barco-roses',
+        href: '/en/boat-experiences-roses',
         icon: Compass,
       },
       {
         title: 'No-licence rental',
         desc: 'For those who want to go at their own pace without a skipper and without a boat licence.',
-        href: '/alquiler-barco-sin-licencia-roses',
+        href: '/en/boat-rental-without-licence-roses',
         icon: Key,
       },
       {
         title: 'Santa Margarita canals',
         desc: 'If the night tour of the canals caught your attention, discover all the wonders they hold in their daytime version.',
-        href: '/canales-santa-margarita',
+        href: '/en/santa-margarita-canals-roses',
         icon: Anchor,
       },
     ]

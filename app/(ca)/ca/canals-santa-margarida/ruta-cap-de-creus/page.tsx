@@ -214,7 +214,7 @@ export default function RutaCapDeCreusCA() {
             <p>
               L&apos;arribada al Parc Natural del Cap de Creus és el moment culminant de la ruta. El paisatge
               canvia dràsticament: la vegetació desapareix, la roca volcànica domina l&apos;horitzó i les{' '}
-              <Link href="/ca/experiencies-vaixell-roses/calas-cap-de-creus" className="text-sky-600 hover:underline">
+              <Link href="/ca/experiencies-vaixell-roses/cap-de-creus-cales" className="text-sky-600 hover:underline">
                 cales del Cap de Creus
               </Link>{' '}
               tenen una transparència i un color que no s&apos;assemblen a res que hàgiu vist abans a la Costa
