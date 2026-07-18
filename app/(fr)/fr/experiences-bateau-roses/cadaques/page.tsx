@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'Combien de temps pour rejoindre Cadaqués ?',
     answer:
-      'Environ 45 minutes de navigation depuis Roses, en longeant le Cap de Creus.',
+      'Environ une heure de navigation par trajet, selon la mer et le bateau. Tout le parcours longe le Cap de Creus : la traversée fait partie de la sortie.',
   },
   {
     question: 'Y a-t-il du temps pour visiter le village ?',
     answer:
-      'Oui, nous faisons une halte pour que vous puissiez vous promener dans Cadaqués et profiter de son charme.',
+      'Oui, du temps libre à Cadaqués est prévu. De quoi flâner dans les ruelles blanches, déjeuner ou prendre un café face à la baie avant le retour.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CadaquesPage() {
             Excursion à Cadaqués
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Naviguez jusqu’au village le plus bohème de la Costa Brava
+            De Roses au village de Dalí par la mer — environ une heure le long du Cap de Creus
           </p>
         </div>
       </section>
@@ -65,9 +65,11 @@ export default function CadaquesPage() {
           Le refuge de Dalí
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Cadaqués a séduit Salvador Dalí et séduit tous ceux qui y arrivent.
-          Y aller en bateau est la plus belle façon de découvrir ce coin unique,
-          entre montagnes et mer.
+          Par la route, Cadaqués se mérite : une longue série de virages à travers
+          la montagne. En bateau, on longe le Cap de Creus et on arrive comme les
+          invités de Dalí autrefois — par l&rsquo;eau, avec les maisons blanches
+          étagées au-dessus de la baie. Du temps libre à terre est prévu pour vous
+          promener, manger ou vous poser en terrasse avant le retour.
         </p>
       </section>
 
@@ -75,7 +77,10 @@ export default function CadaquesPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Réservez votre traversée</h2>
-          <p className="text-lg mb-8">Cadaqués vous attend par la mer.</p>
+          <p className="text-lg mb-8">
+            Dès 75 € par personne en basse saison, 85 € en moyenne saison et 95 €
+            en haute saison. Visite et temps libre inclus ; repas et boissons non compris.
+          </p>
           <Link
             href="/fr/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

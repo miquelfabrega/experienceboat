@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'How long does it take to reach Cadaqués?',
     answer:
-      'About 45 minutes of sailing from Roses, hugging the Cap de Creus coastline.',
+      'Around an hour each way, depending on the sea and the boat. The whole route hugs the Cap de Creus coastline, so the crossing is part of the trip.',
   },
   {
     question: 'Is there time to visit the village?',
     answer:
-      'Yes, we stop so you can stroll through Cadaqués and enjoy its charm.',
+      'Yes — free time in Cadaqués is included. Enough to walk the whitewashed lanes, have lunch or sit down for a coffee by the water before we head back.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CadaquesPage() {
             Trip to Cadaqués
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Sail to the most bohemian village on the Costa Brava
+            From Roses to Dalí&apos;s village by sea — about an hour along the Cap de Creus
           </p>
         </div>
       </section>
@@ -65,9 +65,11 @@ export default function CadaquesPage() {
           Dalí’s refuge
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Cadaqués captivated Salvador Dalí and captivates everyone who arrives.
-          Sailing there is the most beautiful way to discover this unique corner,
-          surrounded by mountains and sea.
+          By road, Cadaqués means a long stretch of hairpin bends over the mountains.
+          By boat you skirt the Cap de Creus instead and arrive the way Dalí&apos;s
+          visitors used to — from the water, with the white houses stacked above the
+          bay. You get free time ashore to wander, eat or just sit at a terrace
+          before the return leg.
         </p>
       </section>
 
@@ -75,7 +77,10 @@ export default function CadaquesPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Book your crossing</h2>
-          <p className="text-lg mb-8">Cadaqués awaits you by sea.</p>
+          <p className="text-lg mb-8">
+            From €75 per person in low season, €85 in mid season and €95 in high
+            season. Village visit and free time included; food and drinks are not.
+          </p>
           <Link
             href="/en/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

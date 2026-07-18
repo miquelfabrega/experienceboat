@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'Quelles criques visiterons-nous ?',
     answer:
-      'Cela dépend du vent et de la mer, mais nous visitons souvent Cala Jugadora, Cala Culip et d’autres recoins du Cap de Creus.',
+      'Cela dépend du vent et de la mer du jour : le skipper choisit le côté abrité. Cala Jugadora et Cala Culip reviennent souvent, avec d’autres recoins du Cap de Creus accessibles uniquement en bateau.',
   },
   {
     question: 'Peut-on se baigner ?',
     answer:
-      'Oui, nous nous arrêtons dans plusieurs criques pour que vous profitiez de la baignade en eaux cristallines.',
+      'Oui, la sortie comprend trois arrêts baignade dans des criques sauvages, avec le temps à chaque fois de nager et de faire du snorkeling en eaux cristallines.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CapDeCreusCriquesPage() {
             Cap de Creus et Criques
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Découvrez les criques les plus secrètes de la Costa Brava
+            3 à 5 heures depuis Roses, avec baignade dans trois criques accessibles seulement par la mer
           </p>
         </div>
       </section>
@@ -65,17 +65,23 @@ export default function CapDeCreusCriquesPage() {
           Le parc naturel depuis la mer
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Le Cap de Creus est le point le plus oriental de la péninsule. Depuis le
-          bateau, vous découvrirez des criques vierges, des formations rocheuses
-          uniques et des eaux turquoise que l’on ne voit que depuis l’eau.
+          Le Cap de Creus est la pointe la plus orientale de la péninsule Ibérique,
+          et ses plus belles criques n&rsquo;ont pas de route pour y descendre.
+          Cette sortie guidée dure 3 à 5 heures depuis Roses, avec un skipper
+          professionnel qui lit le vent et choisit les trois arrêts baignade du
+          jour — roche nue, eau turquoise et, dans la plupart, personne qui arrive
+          à pied.
         </p>
       </section>
 
       {/* CTA */}
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Réservez votre aventure</h2>
-          <p className="text-lg mb-8">Les plus belles criques vous attendent.</p>
+          <h2 className="text-3xl font-bold mb-4">Réservez votre sortie</h2>
+          <p className="text-lg mb-8">
+            Dès 65 € par personne en basse saison, 75 € en moyenne saison et 80 €
+            en haute saison. Boissons et en-cas non compris.
+          </p>
           <Link
             href="/fr/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

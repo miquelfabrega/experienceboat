@@ -31,7 +31,7 @@ const WHATSAPP =
 
 const HIGHLIGHTS = [
   { icon: Compass, title: 'Visita al pueblo', desc: 'Cadaqués, el pueblo blanco de los pintores y de Salvador Dalí.' },
-  { icon: Clock, title: 'Tiempo libre', desc: 'Pasea, come o bebé un café con vistas al Mediterráneo.' },
+  { icon: Clock, title: 'Tiempo libre', desc: 'Pasea, come o bebe un café con vistas al Mediterráneo.' },
   { icon: MapPin, title: 'Ruta por la Costa Brava', desc: 'Bordea el Cap de Creus en el camino de ida y vuelta.' },
   { icon: Camera, title: 'Paisaje único', desc: 'Una de las costas más fotogénicas del Mediterráneo.' },
 ];

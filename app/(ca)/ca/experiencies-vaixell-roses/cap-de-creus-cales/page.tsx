@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'Quines cales visitarem?',
     answer:
-      'Depèn del vent i del mar, però solem visitar Cala Jugadora, Cala Culip i altres racons del Cap de Creus.',
+      'Depèn del vent i del mar del dia: el patró tria el costat arrecerat. Cala Jugadora i Cala Culip hi cauen sovint, amb altres racons del Cap de Creus on només s’arriba en vaixell.',
   },
   {
     question: 'Ens podem banyar?',
     answer:
-      'Sí, parem a diverses cales perquè gaudiu del bany en aigües cristal·lines.',
+      'Sí, la sortida inclou tres parades de bany en cales verges, amb temps a cadascuna per nedar i fer esnòrquel en aigües cristal·lines abans de continuar.',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function CapDeCreusCalesPage() {
             Cap de Creus i Cales
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Descobriu les cales més amagades de la Costa Brava
+            De 3 a 5 hores des de Roses, amb bany a tres cales on només s&rsquo;arriba per mar
           </p>
         </div>
       </section>
@@ -66,17 +66,22 @@ export default function CapDeCreusCalesPage() {
           El parc natural des del mar
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          El Cap de Creus és el punt més oriental de la península. Des del vaixell
-          descobrireu cales verges, formacions rocoses úniques i aigües turquesa
-          que només es veuen des de l’aigua.
+          El Cap de Creus és la punta més oriental de la península Ibèrica, i les
+          seves millors cales no tenen carretera per baixar-hi. Aquesta sortida
+          guiada dura de 3 a 5 hores des de Roses, amb un patró professional que
+          llegeix el vent i tria les tres parades de bany del dia — roca nua,
+          aigua turquesa i, a la majoria, ningú que hi arribi a peu.
         </p>
       </section>
 
       {/* CTA */}
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Reserveu la vostra aventura</h2>
-          <p className="text-lg mb-8">Les millors cales us esperen.</p>
+          <h2 className="text-3xl font-bold mb-4">Reserveu la vostra sortida</h2>
+          <p className="text-lg mb-8">
+            Des de 65 € per persona en temporada baixa, 75 € en temporada mitjana i
+            80 € en temporada alta. Beguda i aperitiu a part.
+          </p>
           <Link
             href="/ca/reserves"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

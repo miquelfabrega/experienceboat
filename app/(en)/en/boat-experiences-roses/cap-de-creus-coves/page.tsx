@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'Which coves will we visit?',
     answer:
-      'It depends on the wind and the sea, but we usually visit Cala Jugadora, Cala Culip and other corners of Cap de Creus.',
+      'That depends on the wind and the sea that day — the skipper picks the sheltered side. Cala Jugadora and Cala Culip are regulars, along with other corners of Cap de Creus you can only reach by boat.',
   },
   {
     question: 'Can we swim?',
     answer:
-      'Yes, we stop at several coves so you can enjoy swimming in crystal-clear waters.',
+      'Yes — the trip includes three swimming stops at unspoilt coves, with time at each to swim and snorkel in crystal-clear waters before moving on.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CapDeCreusCovesPage() {
             Cap de Creus and Coves
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Discover the most hidden coves on the Costa Brava
+            3 to 5 hours from Roses with swimming stops at three coves you can only reach by sea
           </p>
         </div>
       </section>
@@ -65,17 +65,22 @@ export default function CapDeCreusCovesPage() {
           The natural park from the sea
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Cap de Creus is the easternmost point of the peninsula. From the boat
-          you’ll discover unspoilt coves, unique rock formations and turquoise
-          waters only seen from the water.
+          Cap de Creus is the easternmost point of the Iberian Peninsula, and most
+          of its best coves have no road down to them. This guided trip runs 3 to
+          5 hours from Roses with a professional skipper who reads the wind and
+          picks the day&apos;s three swimming stops — bare rock, turquoise water
+          and, in most of them, nobody arriving on foot.
         </p>
       </section>
 
       {/* CTA */}
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Book your adventure</h2>
-          <p className="text-lg mb-8">The best coves are waiting for you.</p>
+          <h2 className="text-3xl font-bold mb-4">Book your trip</h2>
+          <p className="text-lg mb-8">
+            From €65 per person in low season, €75 in mid season and €80 in high
+            season. Drinks and snacks not included.
+          </p>
           <Link
             href="/en/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

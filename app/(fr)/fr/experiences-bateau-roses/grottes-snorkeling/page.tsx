@@ -26,12 +26,13 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'Le matériel de snorkeling est-il inclus ?',
-    answer: 'Oui, nous fournissons masque et tuba à tous les passagers.',
+    answer:
+      'Oui : masque, tuba et palmes pour chaque passager, en plusieurs tailles. Gilets de sauvetage et assurance RC compris, avec un briefing de sécurité avant chaque arrêt.',
   },
   {
     question: 'Est-ce adapté aux débutants ?',
     answer:
-      'Tout à fait. Nous choisissons des criques calmes et peu profondes, idéales pour s’initier.',
+      'Tout à fait. Nous choisissons des criques calmes et peu profondes, et la sortie convient aux enfants dès 6 ans sous surveillance. Prévoyez serviette, crème solaire et eau ; les départs dépendent de l’état de la mer.',
   },
 ];
 
@@ -53,7 +54,7 @@ export default function GrottesSnorkelingPage() {
             Grottes et Snorkeling
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Découvrez les fonds marins de la Costa Brava
+            Grottes marines du Cap de Creus et arrêts snorkeling guidés — matériel inclus
           </p>
         </div>
       </section>
@@ -64,9 +65,11 @@ export default function GrottesSnorkelingPage() {
           Un monde sous l’eau
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Les eaux du Cap de Creus cachent des grottes et des fonds pleins de vie.
-          Équipez-vous de votre masque et tuba et plongez dans un monde de couleurs
-          dans des criques aux eaux transparentes.
+          Le bateau se glisse dans des grottes marines et sous des arches rocheuses
+          du Cap de Creus accessibles uniquement par la mer, puis s&rsquo;arrête sur
+          les meilleurs fonds de la zone : herbiers de posidonie, poissons et roche.
+          Le skipper reste à bord, les arrêts changent selon la mer du jour, et le
+          matériel complet de snorkeling est fourni avec le bateau.
         </p>
       </section>
 
@@ -74,9 +77,12 @@ export default function GrottesSnorkelingPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Réservez votre aventure sous-marine
+            Réservez votre sortie
           </h2>
-          <p className="text-lg mb-8">Les fonds marins vous attendent.</p>
+          <p className="text-lg mb-8">
+            Le prix dépend de la date et du nombre de personnes — écrivez-nous et
+            nous confirmons la disponibilité tout de suite.
+          </p>
           <Link
             href="/fr/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

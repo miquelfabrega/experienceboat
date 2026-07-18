@@ -25,13 +25,14 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'Is snorkeling gear included?',
-    answer: 'Yes, we provide mask and snorkel for all passengers.',
+    question: 'Is snorkelling gear included?',
+    answer:
+      'Yes — mask, snorkel and fins for every passenger, in a range of sizes. Life jackets and liability insurance are included too, with a safety briefing before each stop.',
   },
   {
     question: 'Is it suitable for beginners?',
     answer:
-      'Absolutely. We choose calm, shallow coves, ideal for getting started.',
+      'Absolutely. We pick calm, shallow coves, and the trip works for children from 6 years old with supervision. Bring a towel, sun cream and water; departures depend on sea conditions.',
   },
 ];
 
@@ -53,7 +54,7 @@ export default function CavesSnorkelingPage() {
             Caves and Snorkeling
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Discover the seabed of the Costa Brava
+            Sea caves of Cap de Creus and guided snorkelling stops — gear included
           </p>
         </div>
       </section>
@@ -64,8 +65,11 @@ export default function CavesSnorkelingPage() {
           A world underwater
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          The waters of Cap de Creus hide caves and seabeds full of life. Grab your
-          snorkel and dive into a world of colour in coves with transparent water.
+          The boat noses into sea caves and rock arches of Cap de Creus that you
+          can only reach from the water, then stops over the best seabeds in the
+          area: posidonia meadows, fish and rock. The skipper stays on board, the
+          stops change with the day&apos;s sea, and full snorkelling gear comes
+          with the boat.
         </p>
       </section>
 
@@ -73,9 +77,12 @@ export default function CavesSnorkelingPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Book your underwater adventure
+            Book your trip
           </h2>
-          <p className="text-lg mb-8">The seabed awaits.</p>
+          <p className="text-lg mb-8">
+            Price depends on the date and group size — get in touch and we&apos;ll
+            confirm availability straight away.
+          </p>
           <Link
             href="/en/contact"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

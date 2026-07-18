@@ -27,12 +27,12 @@ const faqs = [
   {
     question: 'Quant es triga a arribar a Cadaqués?',
     answer:
-      'Aproximadament 45 minuts de navegació des de Roses, vorejant el Cap de Creus.',
+      'Al voltant d’una hora de navegació per trajecte, segons el mar i el vaixell. Tot el recorregut voreja el Cap de Creus: la travessia ja és part de la sortida.',
   },
   {
     question: 'Hi ha temps per visitar el poble?',
     answer:
-      'Sí, fem parada perquè passegeu per Cadaqués i gaudiu del seu encant.',
+      'Sí, la sortida inclou temps lliure a Cadaqués. Prou per passejar pels carrerons blancs, dinar o fer un cafè davant de la badia abans de tornar.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CadaquesPage() {
             Excursió a Cadaqués
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Navegueu fins al poble més bohemi de la Costa Brava
+            De Roses al poble de Dalí per mar — al voltant d&rsquo;una hora vorejant el Cap de Creus
           </p>
         </div>
       </section>
@@ -65,9 +65,11 @@ export default function CadaquesPage() {
           El refugi de Dalí
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Cadaqués va enamorar Salvador Dalí i enamora tothom qui hi arriba.
-          Navegar-hi és la manera més bonica de descobrir aquest racó únic,
-          envoltat de muntanyes i mar.
+          Per carretera, Cadaqués es fa pregar: una bona estona de revolts per la
+          muntanya. En vaixell, en canvi, voregeu el Cap de Creus i hi arribeu com
+          hi arribaven els convidats de Dalí — per l&rsquo;aigua, amb les cases
+          blanques esglaonades sobre la badia. Tindreu temps lliure a terra per
+          passejar, menjar o seure en una terrassa abans de tornar.
         </p>
       </section>
 
@@ -75,7 +77,10 @@ export default function CadaquesPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Reserveu la vostra travessia</h2>
-          <p className="text-lg mb-8">Cadaqués us espera per mar.</p>
+          <p className="text-lg mb-8">
+            Des de 75 € per persona en temporada baixa, 85 € en temporada mitjana i
+            95 € en temporada alta. Visita i temps lliure inclosos; menjar i beguda a part.
+          </p>
           <Link
             href="/ca/reserves"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"

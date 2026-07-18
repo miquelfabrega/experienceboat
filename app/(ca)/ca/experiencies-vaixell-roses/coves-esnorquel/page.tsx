@@ -26,12 +26,13 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'Inclou material d’esnòrquel?',
-    answer: 'Sí, proporcionem ulleres i tub per a tots els passatgers.',
+    answer:
+      'Sí: ulleres, tub i aletes per a cada passatger, en diverses talles. Armilles salvavides i assegurança de RC incloses, amb un briefing de seguretat abans de cada parada.',
   },
   {
     question: 'És apte per a principiants?',
     answer:
-      'Totalment. Triem cales tranquil·les i poc profundes, ideals per iniciar-se.',
+      'Totalment. Triem cales tranquil·les i poc profundes, i la sortida va bé per a nens a partir de 6 anys amb supervisió. Porteu tovallola, crema solar i aigua; les sortides depenen de l’estat del mar.',
   },
 ];
 
@@ -53,7 +54,7 @@ export default function CovesEsnorquelPage() {
             Coves i Esnòrquel
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-            Descobriu el fons marí de la Costa Brava
+            Coves marines del Cap de Creus i parades d&rsquo;esnòrquel guiades — material inclòs
           </p>
         </div>
       </section>
@@ -64,9 +65,11 @@ export default function CovesEsnorquelPage() {
           Un món sota l’aigua
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Les aigües del Cap de Creus amaguen coves i fons plens de vida.
-          Equipeu-vos amb l’esnòrquel i submergiu-vos en un món de colors a cales
-          d’aigua transparent.
+          El vaixell s&rsquo;endinsa en coves marines i arcs de roca del Cap de
+          Creus on només s&rsquo;arriba per mar, i després para sobre els millors
+          fons de la zona: praderies de posidònia, peixos i roca. El patró es
+          queda a bord, les parades canvien segons el mar del dia, i el material
+          complet d&rsquo;esnòrquel va inclòs amb el vaixell.
         </p>
       </section>
 
@@ -74,9 +77,12 @@ export default function CovesEsnorquelPage() {
       <section className="bg-blue-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Reserveu la vostra aventura submarina
+            Reserveu la vostra sortida
           </h2>
-          <p className="text-lg mb-8">El fons marí us espera.</p>
+          <p className="text-lg mb-8">
+            El preu depèn de la data i del nombre de persones — escriviu-nos i us
+            confirmem la disponibilitat de seguida.
+          </p>
           <Link
             href="/ca/reserves"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
