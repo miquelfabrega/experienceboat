@@ -21,7 +21,7 @@ export interface DestinationsSectionT {
 }
 
 const defaultDestinations: Destination[] = [
-  { name: 'Canales de Santa Margarita', desc: 'El punto de salida y una de las visitas más singulares de la Costa Brava norte. Casas frente al agua y un entorno único.' },
+  { name: 'Canales de Santa Margarita', desc: 'El punto de salida: casas frente al agua y amarres privados que solo se ven bien desde el barco.' },
   { name: 'Bahía de Roses', desc: 'Aguas tranquilas, perfectas para debutantes y familias con niños. Vistas increíbles.' },
   { name: 'Cala Canyelles Petites', desc: 'Una de las calas más bonitas del Cap de Creus, accesible en barco.' },
   { name: 'Cala Almadraba', desc: 'Aguas cristalinas y muy poco masificada fuera de temporada alta.' },
@@ -39,7 +39,7 @@ const defaults: Required<Omit<DestinationsSectionT, 'destinations'>> = {
   privateCta: 'Ver barcos disponibles',
   pointLabel: 'Punto de salida exclusivo:',
   pointName: 'Marina de Santa Margarita, Roses',
-  pointDesc: 'No saldrás desde un puerto masificado — saldrás desde uno de los rincones más singulares de la Costa Brava.',
+  pointDesc: 'No saldrás desde un puerto masificado — saldrás navegando entre los canales de Santa Margarita.',
 };
 
 const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.08 } } };

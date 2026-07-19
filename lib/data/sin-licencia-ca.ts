@@ -36,9 +36,9 @@ export const pillarCa = {
     privateCta: 'Vegeu les embarcacions disponibles',
     pointLabel: 'Punt de sortida exclusiu:',
     pointName: 'Marina de Santa Margarida, Roses',
-    pointDesc: "No sortireu d'un port massificat: sortireu d'un dels racons més singulars de la Costa Brava.",
+    pointDesc: "No sortireu d'un port massificat: sortireu navegant pels canals de Santa Margarida.",
     destinations: [
-      { name: 'Canals de Santa Margarida', desc: "El punt de sortida i una de les visites més singulars de la Costa Brava nord. Cases a peu d'aigua i un entorn únic." },
+      { name: 'Canals de Santa Margarida', desc: "El punt de sortida: cases a peu d'aigua i amarradors privats que només es veuen bé des del vaixell." },
       { name: 'Badia de Roses', desc: 'Aigües tranquil·les, perfectes per a principiants i famílies amb canalla. Vistes excepcionals.' },
       { name: 'Cala Canyelles Petites', desc: 'Una de les cales més boniques del Cap de Creus, accessible en vaixell.' },
       { name: 'Cala Almadrava', desc: 'Aigües cristal·lines i molt poc concorreguda fora de temporada alta.' },
@@ -52,7 +52,7 @@ export const pillarCa = {
     reasons: [
       { title: 'Sortida única des de Santa Margarida', desc: "Salpem des dels canals de Santa Margarida, un entorn que ja val el viatge abans d'arribar al mar obert.", highlight: 'Punt de sortida exclusiu' },
       { title: 'Sense burocràcia', desc: 'No us cal llicència ni experiència. Només ganes de navegar i gaudir del mar.', highlight: 'Fàcil i ràpid' },
-      { title: 'Zona protegida i excepcional', desc: 'Operem a la badia de Roses i el Parc Natural del Cap de Creus, dos dels entorns nàutics més singulars de la Mediterrània.', highlight: 'Entorn de primera' },
+      { title: 'Zona protegida i excepcional', desc: 'Operem a la badia de Roses i el Parc Natural del Cap de Creus, dos espais naturals protegits de la Mediterrània.', highlight: 'Entorn de primera' },
       { title: 'Tracte directe', desc: "Reserveu amb nosaltres, no amb una plataforma. Si teniu un dubte o cal canviar la data, truqueu i us atenem personalment.", highlight: 'Atenció personalitzada' },
     ],
   },

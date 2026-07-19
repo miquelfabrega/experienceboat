@@ -159,7 +159,7 @@ export default function SantaMargaritaCanalsRosesPage() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-10 max-w-4xl">
-              The Santa Margarita Canals by boat — the most singular experience in Roses
+              The Santa Margarita Canals by boat — a trip you can only do in Roses
             </h1>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link
@@ -192,7 +192,7 @@ export default function SantaMargaritaCanalsRosesPage() {
             The Santa Margarita canals are the ideal environment for anyone renting a boat for the first time. Calm water, no waves, no currents — and a landscape you wouldn&apos;t expect to find on the Costa Brava: houses with private moorings, low stone bridges, and a stillness that contrasts sharply with the open sea.
           </p>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Setting off from the canals is already an experience in itself. More than 500 waterfront homes line the canal network, each with direct water access. Seen from a boat, life in Santa Margarita takes on a perspective no walking tourist ever gets.
+            Setting off from the canals is already part of the trip. Hundreds of waterfront homes line the canal network, each with direct water access. Seen from a boat, life in Santa Margarita takes on a perspective no walking tourist ever gets.
           </p>
         </section>
 

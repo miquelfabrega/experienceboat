@@ -5,7 +5,7 @@ const translations = {
     label: 'Punto de salida',
     title: 'Dónde encontrarnos — Marina de Santa Margarita, Roses',
     subtitle:
-      'Estamos en la entrada de Roses, al inicio de la Marina de Santa Margarita. Fácil de encontrar con aparcamiento cercano.',
+      'Todas las experiencias salen del mismo pantalán, en la Marina de Santa Margarita, con aparcamiento al lado.',
     addressLabel: 'Dirección',
     phoneLabel: 'Teléfono',
     emailLabel: 'Email',
@@ -18,7 +18,7 @@ const translations = {
     label: 'Departure point',
     title: 'Where to find us — Marina de Santa Margarita, Roses',
     subtitle:
-      'We’re at the entrance to Roses, at the start of the Santa Margarita marina. Easy to find, with parking nearby.',
+      'Every experience departs from the same pontoon at the Santa Margarita marina, with parking right beside it.',
     addressLabel: 'Address',
     phoneLabel: 'Phone',
     emailLabel: 'Email',
@@ -31,7 +31,7 @@ const translations = {
     label: 'Point de départ',
     title: 'Où nous trouver — Marina de Santa Margarita, Roses',
     subtitle:
-      'Nous sommes à l’entrée de Roses, au début de la marina de Santa Margarita. Facile à trouver, avec un parking à proximité.',
+      'Toutes les expériences partent du même ponton, à la marina de Santa Margarita, avec un parking juste à côté.',
     addressLabel: 'Adresse',
     phoneLabel: 'Téléphone',
     emailLabel: 'E-mail',
@@ -44,7 +44,7 @@ const translations = {
     label: 'Punt de sortida',
     title: 'On ens trobareu — Marina de Santa Margarida, Roses',
     subtitle:
-      'Som a l’entrada de Roses, a l’inici de la Marina de Santa Margarida. Fàcil de trobar i amb aparcament a prop.',
+      'Totes les experiències surten del mateix pantalà, a la Marina de Santa Margarida, amb aparcament al costat.',
     addressLabel: 'Adreça',
     phoneLabel: 'Telèfon',
     emailLabel: 'Correu',

@@ -37,9 +37,9 @@ export const pillarEn = {
     privateCta: 'See available boats',
     pointLabel: 'Exclusive departure point:',
     pointName: 'Marina de Santa Margarita, Roses',
-    pointDesc: 'You won\'t leave from a crowded marina — you\'ll leave from one of the most singular spots on the Costa Brava.',
+    pointDesc: 'You won\'t leave from a crowded marina — you\'ll set off cruising along the Santa Margarita canals.',
     destinations: [
-      { name: 'Santa Margarita Canals', desc: 'The departure point and one of the most singular sights on the northern Costa Brava. Waterfront houses and a truly unique setting.' },
+      { name: 'Santa Margarita Canals', desc: 'The departure point: a stretch of waterfront houses and private moorings you can only really see by boat.' },
       { name: 'Bay of Roses', desc: 'Calm waters, perfect for first-timers and families with children. Incredible views.' },
       { name: 'Cala Canyelles Petites', desc: 'One of the most beautiful coves of Cap de Creus, reachable by boat.' },
       { name: 'Cala Almadraba', desc: 'Crystal-clear water and very quiet outside peak season.' },

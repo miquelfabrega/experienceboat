@@ -129,7 +129,7 @@ export const homeDataCa = {
       {
         icon: 'MapPin',
         title: 'Ubicació única',
-        text: 'Operem en una de les zones més singulars de la Costa Brava: la badia de Roses, els canals de Santa Margarida i el Parc Natural del Cap de Creus.'
+        text: 'Operem en una zona que ho ajunta tot: la badia de Roses, els canals de Santa Margarida i el Parc Natural del Cap de Creus, a poques milles entre si.'
       },
       {
         icon: 'MessageCircle',

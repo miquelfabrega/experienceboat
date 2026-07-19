@@ -394,7 +394,7 @@ export default function PrivateExcursionsRosesPage() {
                 {
                   icon: Sparkles,
                   title: 'An exceptional setting',
-                  text: 'Cap de Creus and Roses Bay are two of the most singular natural environments in the Mediterranean. From the water you discover corners that are simply unreachable from land.',
+                  text: 'Cap de Creus and Roses Bay are a natural park and a sheltered bay — a pairing few coastlines can offer. From the water you discover corners that are simply unreachable from land.',
                 },
                 {
                   icon: Anchor,

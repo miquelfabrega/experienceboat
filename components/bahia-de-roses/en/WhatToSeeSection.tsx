@@ -23,7 +23,7 @@ const places = [
   },
   {
     name: 'Sailing in the Bay',
-    desc: 'Even without a specific destination, sailing across the Bay of Roses is an experience in itself. Wide, clear, and with the Pyrenees in the background.',
+    desc: 'Even without a specific destination, sailing across the Bay of Roses is a pleasure of its own. Wide, clear, and with the Pyrenees in the background.',
     cat: 'Navigation',
   },
   {

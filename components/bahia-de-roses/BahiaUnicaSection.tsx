@@ -34,7 +34,7 @@ const t: Record<
     p2pre: 'La bahía de Roses mide aproximadamente ',
     p2km: '15 kilómetros de costa',
     p2post:
-      ' y está delimitada por dos de los entornos naturales más singulares de Cataluña: el Parque Natural de los Aiguamolls del Empordà al sur y el Parque Natural del Cap de Creus al norte. Desde el agua, esa combinación de naturaleza protegida, costa escarpada y aguas mediterráneas transparentes crea un escenario que muy pocos lugares del litoral español pueden igualar.',
+      ' y está delimitada por dos parques naturales protegidos: el Parque Natural de los Aiguamolls del Empordà al sur y el Parque Natural del Cap de Creus al norte. Desde el agua, esa combinación de naturaleza protegida, costa escarpada y aguas mediterráneas transparentes crea un escenario que muy pocos lugares del litoral español pueden igualar.',
     quotePre:
       'Para un patrón con licencia, la bahía de Roses ofrece algo que no abunda en la Costa Brava: ',
     quoteWord: 'espacio',
@@ -58,7 +58,7 @@ const t: Record<
     p2pre: 'La bahía de Roses mide aproximadamente ',
     p2km: '15 kilómetros de costa',
     p2post:
-      ' y está delimitada por dos de los entornos naturales más singulares de Cataluña: el Parque Natural de los Aiguamolls del Empordà al sur y el Parque Natural del Cap de Creus al norte. Desde el agua, esa combinación de naturaleza protegida, costa escarpada y aguas mediterráneas transparentes crea un escenario que muy pocos lugares del litoral español pueden igualar.',
+      ' y está delimitada por dos parques naturales protegidos: el Parque Natural de los Aiguamolls del Empordà al sur y el Parque Natural del Cap de Creus al norte. Desde el agua, esa combinación de naturaleza protegida, costa escarpada y aguas mediterráneas transparentes crea un escenario que muy pocos lugares del litoral español pueden igualar.',
     quotePre:
       'Para un patrón con licencia, la bahía de Roses ofrece algo que no abunda en la Costa Brava: ',
     quoteWord: 'espacio',
@@ -82,7 +82,7 @@ const t: Record<
     p2pre: 'La badia de Roses fa aproximadament ',
     p2km: '15 quilòmetres de costa',
     p2post:
-      ' i està delimitada per dos dels entorns naturals més singulars de Catalunya: el Parc Natural dels Aiguamolls de l\'Empordà al sud i el Parc Natural del Cap de Creus al nord. Des de l\'aigua, aquesta combinació de natura protegida, costa escarpada i aigües mediterrànies transparents crea un escenari que molt pocs llocs del litoral espanyol poden igualar.',
+      ' i està delimitada per dos parcs naturals protegits: el Parc Natural dels Aiguamolls de l\'Empordà al sud i el Parc Natural del Cap de Creus al nord. Des de l\'aigua, aquesta combinació de natura protegida, costa escarpada i aigües mediterrànies transparents crea un escenari que molt pocs llocs del litoral espanyol poden igualar.',
     quotePre:
       'Per a un patró amb llicència, la badia de Roses ofereix una cosa que no abunda a la Costa Brava: ',
     quoteWord: 'espai',

@@ -399,7 +399,7 @@ export default function ExcursionsPriveesRosesPage() {
                 {
                   icon: Sparkles,
                   title: 'Zone d\'exception',
-                  text: 'Le Cap de Creus et la baie de Roses sont deux des environnements naturels les plus singuliers de la Méditerranée. Depuis l\'eau, on découvre des coins inaccessibles depuis la terre.',
+                  text: 'Le Cap de Creus et la baie de Roses sont un parc naturel et une baie abritée — une combinaison que peu de côtes offrent. Depuis l\'eau, on découvre des coins inaccessibles depuis la terre.',
                 },
                 {
                   icon: Anchor,

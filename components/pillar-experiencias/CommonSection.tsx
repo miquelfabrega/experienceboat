@@ -12,7 +12,7 @@ const translations = {
     f2Desc:
       'Nuestro patrón conoce cada rincón de la bahía de Roses y el Parque Natural del Cap de Creus. Sabe cuáles son las mejores calas según la época del año, cuándo hay menos gente en cada fondeo y cómo hacer que el día salga bien independientemente de cómo empiece.',
     f3Title: 'Salida desde los canales',
-    f3Pre: 'Todas las experiencias salen desde la Marina de Santa Margarita — el enclave náutico más singular de Roses. El recorrido por los ',
+    f3Pre: 'Todas las experiencias salen desde la Marina de Santa Margarita, la marina de los canales en la entrada de Roses. El recorrido por los ',
     canalsHref: '/canales-santa-margarita',
     canalsLinkText: 'canales de Santa Margarita',
     f3Post: ' antes de llegar al mar abierto ya forma parte de la experiencia.',

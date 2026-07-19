@@ -16,7 +16,7 @@ export interface WhyUsSectionT {
 const defaultReasons: Reason[] = [
   { icon: Anchor, title: 'Salida única desde Santa Margarita', desc: 'Partimos desde los canales de Santa Margarita, un entorno que ya vale el viaje antes de llegar al mar abierto.', highlight: 'Punto de salida exclusivo' } as any,
   { icon: FileCheck, title: 'Sin burocracia', desc: 'No necesitas licencia, no necesitas experiencia. Solo ganas de navegar y disfrutar del mar.', highlight: 'Fácil y rápido' } as any,
-  { icon: Compass, title: 'Zona protegida y espectacular', desc: 'Operamos en la bahía de Roses y el Parque Natural del Cap de Creus, dos de los entornos náuticos más singulares del Mediterráneo.', highlight: 'Entorno de primera' } as any,
+  { icon: Compass, title: 'Zona protegida y espectacular', desc: 'Operamos en la bahía de Roses y el Parque Natural del Cap de Creus, dos espacios naturales protegidos del Mediterráneo.', highlight: 'Entorno de primera' } as any,
   { icon: MessageCircle, title: 'Trato directo', desc: 'Reservas con nosotros, no con una plataforma. Si tienes una duda o necesitas cambiar la fecha, llamas y te atendemos personalmente.', highlight: 'Atención personalizada' } as any,
 ];
 

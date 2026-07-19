@@ -391,7 +391,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
                 {
                   icon: Sparkles,
                   title: 'Zona de referencia',
-                  text: 'El Cap de Creus y la bahía de Roses son dos de los entornos naturales más singulares del Mediterráneo. Desde el agua se descubren rincones que desde tierra son inaccesibles.',
+                  text: 'El Cap de Creus y la bahía de Roses son parque natural y bahía protegida: dos entornos que pocas costas tienen juntos. Desde el agua se descubren rincones que desde tierra son inaccesibles.',
                 },
                 {
                   icon: Anchor,

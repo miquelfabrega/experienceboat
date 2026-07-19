@@ -10,7 +10,7 @@ const translations = {
     homeHref: '/',
     d1Name: 'Los canales de Santa Margarita',
     d1Desc:
-      'El punto de partida de todas las salidas y un destino en sí mismo. Casas con embarcadero privado y aguas completamente tranquilas. A primera hora de la mañana o al atardecer, los canales tienen una luz que no se encuentra en ningún otro punto de la Costa Brava.',
+      'El punto de partida de todas las salidas y la primera postal del día. Casas con embarcadero privado y aguas completamente tranquilas. A primera hora de la mañana o al atardecer, los canales tienen una luz que no se encuentra en ningún otro punto de la Costa Brava.',
     d2Name: 'La bahía de Roses',
     d2Pre: 'El escenario principal de nuestras salidas. Aguas protegidas, horizonte abierto y el Pirineo al fondo. Perfecta para el baño tranquilo y como punto de paso hacia los destinos más alejados. Al atardecer, la ',
     d2LinkText: 'bahía de Roses',

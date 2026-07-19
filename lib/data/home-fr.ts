@@ -129,7 +129,7 @@ export const homeDataFr = {
       {
         icon: 'MapPin',
         title: 'Zone unique',
-        text: 'Nous opérons dans l\'une des zones les plus singulières de la Costa Brava : la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus.'
+        text: 'Nous opérons dans une zone qui réunit tout : la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus, à quelques milles les uns des autres.'
       },
       {
         icon: 'MessageCircle',

@@ -37,9 +37,9 @@ export const pillarFr = {
     privateCta: 'Voir les bateaux disponibles',
     pointLabel: 'Point de départ exclusif :',
     pointName: 'Marina de Santa Margarita, Roses',
-    pointDesc: 'Vous ne partirez pas d\'un port bondé — vous partirez de l\'un des coins les plus singuliers de la Costa Brava.',
+    pointDesc: 'Vous ne partirez pas d\'un port bondé — vous partirez en naviguant par les canaux de Santa Margarita.',
     destinations: [
-      { name: 'Canaux de Santa Margarita', desc: 'Le point de départ et l\'une des visites les plus singulières de la Costa Brava nord. Maisons face à l\'eau et un cadre unique.' },
+      { name: 'Canaux de Santa Margarita', desc: 'Le point de départ : des maisons au bord de l\'eau et des pontons privés que l\'on ne voit vraiment qu\'en bateau.' },
       { name: 'Baie de Roses', desc: 'Eaux calmes, parfaites pour les débutants et les familles avec enfants. Vues incroyables.' },
       { name: 'Cala Canyelles Petites', desc: 'L\'une des plus belles criques du Cap de Creus, accessible en bateau.' },
       { name: 'Cala Almadraba', desc: 'Eaux cristallines et très peu fréquentée hors haute saison.' },
@@ -53,7 +53,7 @@ export const pillarFr = {
     reasons: [
       { title: 'Départ unique depuis Santa Margarita', desc: 'Nous partons depuis les canaux de Santa Margarita, un cadre qui vaut le détour avant même d\'arriver en mer.', highlight: 'Point de départ exclusif' },
       { title: 'Sans paperasse', desc: 'Pas de permis, pas d\'expérience nécessaire. Juste l\'envie de naviguer et de profiter de la mer.', highlight: 'Simple et rapide' },
-      { title: 'Zone protégée et spectaculaire', desc: 'Nous opérons dans la baie de Roses et le Parc Naturel du Cap de Creus, deux des environnements nautiques les plus singuliers de la Méditerranée.', highlight: 'Cadre exceptionnel' },
+      { title: 'Zone protégée et spectaculaire', desc: 'Nous opérons dans la baie de Roses et le Parc Naturel du Cap de Creus, deux espaces naturels protégés de la Méditerranée.', highlight: 'Cadre exceptionnel' },
       { title: 'Contact direct', desc: 'Vous réservez avec nous, pas avec une plateforme. Si vous avez une question ou besoin de changer la date, appelez et nous vous répondons personnellement.', highlight: 'Accueil personnalisé' },
     ],
   },

@@ -9,7 +9,7 @@ const enlaces = [
   {
     anchor: 'Canales de Santa Margarita',
     href: '/canales-santa-margarita',
-    desc: 'Descubre el punto de salida más singular de Roses',
+    desc: 'Descubre la salida navegando por los canales de Santa Margarita',
   },
   {
     anchor: 'Excursiones privadas con patrón',

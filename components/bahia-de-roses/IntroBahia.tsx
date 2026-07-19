@@ -11,7 +11,7 @@ const t: Record<
   es: {
     title: 'La bahía de Roses, a tu ritmo con licencia',
     before:
-      'La bahía de Roses es uno de los escenarios de navegación más completos de la Costa Brava: protegida al norte por el Cap de Creus y abierta al sur hacia el golfo de León, ofrece condiciones excelentes la mayor parte de la temporada. Salimos desde los canales de Santa Margarita — el acceso más singular a la bahía — con embarcaciones para patrones con licencia que buscan espacio, calas y libertad de ruta. La flota y precios para titulados están en nuestra página de ',
+      'La bahía de Roses es uno de los escenarios de navegación más completos de la Costa Brava: protegida al norte por el Cap de Creus y abierta al sur hacia el golfo de León, ofrece condiciones excelentes la mayor parte de la temporada. Salimos desde los canales de Santa Margarita — la única entrada a la bahía navegando entre canales — con embarcaciones para patrones con licencia que buscan espacio, calas y libertad de ruta. La flota y precios para titulados están en nuestra página de ',
     linkText: 'alquiler de barco con licencia en Roses',
     link: '/alquiler-barco-con-licencia-roses',
     after: '.',
@@ -19,7 +19,7 @@ const t: Record<
   fr: {
     title: 'La baie de Roses, à votre rythme avec permis',
     before:
-      'La baie de Roses est l\'un des décors de navigation les plus complets de la Costa Brava : protégée au nord par le Cap de Creus et ouverte au sud vers le golfe du Lion, elle offre d\'excellentes conditions la plupart de la saison. Nous partons des canaux de Santa Margarita — l\'accès le plus singulier à la baie — avec des bateaux pour les navigateurs titulaires du permis qui recherchent espace, criques et liberté d\'itinéraire. La flotte et les tarifs pour titulaires sont sur notre page de ',
+      'La baie de Roses est l\'un des décors de navigation les plus complets de la Costa Brava : protégée au nord par le Cap de Creus et ouverte au sud vers le golfe du Lion, elle offre d\'excellentes conditions la plupart de la saison. Nous partons des canaux de Santa Margarita — la seule entrée dans la baie en naviguant entre canaux — avec des bateaux pour les navigateurs titulaires du permis qui recherchent espace, criques et liberté d\'itinéraire. La flotte et les tarifs pour titulaires sont sur notre page de ',
     linkText: 'location de bateau avec permis à Roses',
     link: '/fr/location-bateau-avec-permis-roses',
     after: '.',
@@ -27,7 +27,7 @@ const t: Record<
   ca: {
     title: 'La badia de Roses, al vostre ritme amb llicència',
     before:
-      'La badia de Roses és un dels escenaris de navegació més complets de la Costa Brava: protegida al nord pel Cap de Creus i oberta al sud cap al golf de Lleó, ofereix condicions excel·lents la major part de la temporada. Sortim des dels canals de Santa Margarida — l\'accés més singular a la badia — amb embarcacions per a patrons amb llicència que cerquen espai, cales i llibertat de ruta. La flota i els preus per a titulats són a la nostra pàgina de ',
+      'La badia de Roses és un dels escenaris de navegació més complets de la Costa Brava: protegida al nord pel Cap de Creus i oberta al sud cap al golf de Lleó, ofereix condicions excel·lents la major part de la temporada. Sortim des dels canals de Santa Margarida — l\'única entrada a la badia navegant entre canals — amb embarcacions per a patrons amb llicència que cerquen espai, cales i llibertat de ruta. La flota i els preus per a titulats són a la nostra pàgina de ',
     linkText: 'lloguer de vaixell amb llicència a Roses',
     link: '/ca/lloguer-vaixell-amb-llicencia-roses',
     after: '.',

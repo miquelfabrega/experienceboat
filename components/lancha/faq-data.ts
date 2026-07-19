@@ -27,7 +27,7 @@ export const faqsLancha: FAQ[] = [
   {
     question: '¿Qué diferencia a Experience Boat de otras empresas de alquiler en la Costa Brava?',
     answer:
-      'Principalmente tres cosas: salimos desde los canales de Santa Margarita (un punto de partida único), todas las salidas son privadas (nunca compartís embarcación con desconocidos) y operamos en uno de los entornos naturales más singulares de la Costa Brava norte — la bahía de Roses y el Cap de Creus.',
+      'Principalmente tres cosas: salimos desde los canales de Santa Margarita (un punto de partida único), todas las salidas son privadas (nunca compartís embarcación con desconocidos) y operamos entre la bahía de Roses y el Parque Natural del Cap de Creus, a pocas millas el uno del otro.',
   },
 ];
 
@@ -55,7 +55,7 @@ export const faqsLanchaFr: FAQ[] = [
   {
     question: 'En quoi Experience Boat se distingue des autres sociétés de location sur la Costa Brava ?',
     answer:
-      'Principalement trois choses : nous partons depuis les canaux de Santa Margarita (un point de départ unique), toutes les sorties sont privées (vous ne partagez jamais l\'embarcation avec des inconnus) et nous opérons dans l\'un des environnements naturels les plus singuliers de la Costa Brava nord — la baie de Roses et le Cap de Creus.',
+      'Principalement trois choses : nous partons depuis les canaux de Santa Margarita (un point de départ unique), toutes les sorties sont privées (vous ne partagez jamais l\'embarcation avec des inconnus) et nous opérons entre la baie de Roses et le Parc Naturel du Cap de Creus, à quelques milles l\'un de l\'autre.',
   },
 ];
 
@@ -83,6 +83,6 @@ export const faqsLanchaCa: FAQ[] = [
   {
     question: 'Què diferencia Experience Boat d\'altres empreses de lloguer a la Costa Brava?',
     answer:
-      'Principalment tres coses: sortim des dels canals de Santa Margarida (un punt de partida únic), totes les sortides són privades (mai compartiu embarcació amb desconeguts) i operem en un dels entorns naturals més singulars de la Costa Brava nord — la badia de Roses i el Cap de Creus.',
+      'Principalment tres coses: sortim des dels canals de Santa Margarida (un punt de partida únic), totes les sortides són privades (mai compartiu embarcació amb desconeguts) i operem entre la badia de Roses i el Parc Natural del Cap de Creus, a poques milles l\'un de l\'altre.',
   },
 ];

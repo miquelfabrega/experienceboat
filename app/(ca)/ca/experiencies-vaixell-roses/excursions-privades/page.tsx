@@ -390,7 +390,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
                 {
                   icon: Sparkles,
                   title: 'Zona de referència',
-                  text: 'El Cap de Creus i la badia de Roses són dos dels entorns naturals més singulars de la Mediterrània. Des de l’aigua es descobreixen racons que des de terra són inaccessibles.',
+                  text: 'El Cap de Creus i la badia de Roses són parc natural i badia arrecerada: dos entorns que poques costes tenen junts. Des de l’aigua es descobreixen racons que des de terra són inaccessibles.',
                 },
                 {
                   icon: Anchor,

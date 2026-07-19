@@ -129,7 +129,7 @@ export const homeDataEn = {
       {
         icon: 'MapPin',
         title: 'Unique location',
-        text: 'We operate in one of the most singular areas of the Costa Brava: the Bay of Roses, the Santa Margarita canals and the Cap de Creus Natural Park.'
+        text: 'We operate in an area that has it all: the Bay of Roses, the Santa Margarita canals and the Cap de Creus Natural Park, all within a few miles of each other.'
       },
       {
         icon: 'MessageCircle',

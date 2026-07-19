@@ -20,7 +20,7 @@ const getEnlaces = (lang: Lang) => [
   {
     anchor: lang === 'es' ? 'Canales de Santa Margarita' : 'Canaux de Santa Margarita',
     href: lang === 'es' ? '/canales-santa-margarita' : '/fr/canaux-santa-margarita',
-    desc: lang === 'es' ? 'El punto de salida más singular de la Costa Brava norte' : 'Le point de départ le plus unique de la Costa Brava nord',
+    desc: lang === 'es' ? 'Salida navegando por los canales, directa a la bahía' : 'Départ en naviguant par les canaux, direct vers la baie',
   },
   {
     anchor: lang === 'es' ? 'Barco sin licencia' : 'Bateau sans permis',

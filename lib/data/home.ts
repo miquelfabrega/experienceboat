@@ -93,7 +93,7 @@ export const homeData = {
       {
         icon: 'MapPin',
         title: 'Zona única',
-        text: 'Operamos en una de las zonas más singulares de la Costa Brava: bahía de Roses, canales de Santa Margarita y Parque Natural del Cap de Creus.'
+        text: 'Operamos en una zona que lo junta todo: bahía de Roses, canales de Santa Margarita y Parque Natural del Cap de Creus, a pocas millas entre sí.'
       },
       {
         icon: 'MessageCircle',
