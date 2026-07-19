@@ -96,8 +96,8 @@ export default function ArticlePage() {
           <h2>3. Cala Murtra</h2>
           <p>A uns 10 minuts, a la zona de Punta Falconera. L&apos;accés per terra és tan incòmode que gairebé ningú la trepitja, i això es nota a l&apos;aigua: netíssima i amb fons de roca ple de vida. La sensació d&apos;aquari sense vidre de la llista.</p>
 
-          <h2>4. Illa de s&apos;Arenella</h2>
-          <p>Un illot a tocar de la costa amb fons espectaculars i una mica més de moviment d&apos;aigua. El deixem per a qui ja porta hores d&apos;esnòrquel.</p>
+          <h2>4. Cala Jóncols</h2>
+          <p>Entre penya-segats i pins, camí del Cap de Creus. La pista de terra és tan accidentada que la majoria hi arriba en barca, i el fons de còdols i roca dona una visibilitat excel·lent.</p>
 
           <h2>5. Cala Bona</h2>
           <p>Petita i protegida, amb aigües poc profundes perfectes per a famílies amb canalla: els peixos s&apos;acosten a la vora i no cal allunyar-se de la barca.</p>

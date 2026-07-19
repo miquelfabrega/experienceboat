@@ -537,9 +537,9 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       relatedTitle: 'Keep exploring',
     },
     ca: {
-      metaTitle: 'Cala Montjoi: com arribar-hi en barca i snorkel',
+      metaTitle: 'Cala Montjoi: com arribar-hi en barca i esnòrquel',
       metaDescription:
-        'Guia de Cala Montjoi (Roses): aigües transparents, snorkel i l’herència d’elBulli. Com arribar-hi en barca sense llicència des de Santa Margarida. Reserva la teva sortida.',
+        'Guia de Cala Montjoi (Roses): aigües transparents, esnòrquel i l’herència d’elBulli. Com arribar-hi en barca sense llicència des de Santa Margarida. Reserveu la vostra sortida.',
       breadcrumbHome: 'Inici',
       breadcrumbLabel: 'Cala Montjoi',
       kicker: 'Badia de Roses',
@@ -801,9 +801,9 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       relatedTitle: 'Keep exploring',
     },
     ca: {
-      metaTitle: 'Cala Murtra (Roses): arribar-hi en barca i snorkel',
+      metaTitle: 'Cala Murtra (Roses): arribar-hi en barca i esnòrquel',
       metaDescription:
-        'Guia de Cala Murtra (Roses): una cala tranquil·la d’aigües netes, més accessible en barca. Snorkel, fondeig i consells. Reserva la teva sortida des de Santa Margarida.',
+        'Guia de Cala Murtra (Roses): una cala tranquil·la d’aigües netes, més accessible en barca. Esnòrquel, fondeig i consells. Reserveu la vostra sortida des de Santa Margarida.',
       breadcrumbHome: 'Inici',
       breadcrumbLabel: 'Cala Murtra',
       kicker: 'Cala tranquil·la',

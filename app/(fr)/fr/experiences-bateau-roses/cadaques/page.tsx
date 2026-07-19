@@ -82,7 +82,7 @@ export default function CadaquesPage() {
             en haute saison. Visite et temps libre inclus ; repas et boissons non compris.
           </p>
           <Link
-            href="/fr/contact"
+            href="/fr/reservation"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
           >
             Réserver

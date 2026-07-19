@@ -4,21 +4,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Caves and Snorkeling by Boat in Roses | ExperienceBoat',
+  title: 'Caves and Snorkelling by Boat in Roses | ExperienceBoat',
   description:
     'Explore sea caves and snorkel in the best coves of Roses and Cap de Creus. A boat experience to discover the seabed.',
   keywords: [
-    'snorkeling Roses boat',
+    'snorkelling Roses boat',
     'sea caves Cap de Creus',
     'boat tour Roses',
   ],
   alternates: buildAlternates('expSnorkel', 'en'),
   openGraph: {
-    title: 'Caves and Snorkeling by Boat in Roses | ExperienceBoat',
+    title: 'Caves and Snorkelling by Boat in Roses | ExperienceBoat',
     description:
       'Explore sea caves and snorkel in the best coves of Roses and Cap de Creus. A boat experience to discover the seabed.',
     url: 'https://www.experienceboat.es/en/boat-experiences-roses/caves-snorkeling',
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
 };
@@ -43,7 +43,7 @@ export default function CavesSnorkelingPage() {
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <Image
           src="/images/experiencias/cuevas-snorkel.webp"
-          alt="Caves and snorkeling by boat in Roses"
+          alt="Caves and snorkelling by boat in Roses"
           fill
           priority
           className="object-cover"
@@ -51,7 +51,7 @@ export default function CavesSnorkelingPage() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            Caves and Snorkeling
+            Caves and Snorkelling
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
             Sea caves of Cap de Creus and guided snorkelling stops — gear included
@@ -84,7 +84,7 @@ export default function CavesSnorkelingPage() {
             confirm availability straight away.
           </p>
           <Link
-            href="/en/contact"
+            href="/en/booking"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
           >
             Book now

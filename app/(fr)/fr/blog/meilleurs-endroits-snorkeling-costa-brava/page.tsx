@@ -8,7 +8,7 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',
-  description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava. Cala Montjoi, îles Medas, Cap de Creus et plus encore.',
+  description: 'Découvrez les criques et réserves marines incontournables pour faire du snorkeling sur la Costa Brava. Cala Montjoi, Cala Murtra, Cap de Creus et plus encore.',
   alternates: buildAlternates('blogSnorkel', 'fr'),
   openGraph: {
 title: 'Meilleurs spots snorkeling sur la Costa Brava',

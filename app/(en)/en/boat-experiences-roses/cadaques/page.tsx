@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Reach Cadaqués by boat from Roses. A boat trip around Cap de Creus to the most bohemian village on the Costa Brava.',
     url: 'https://www.experienceboat.es/en/boat-experiences-roses/cadaques',
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
 };
@@ -82,7 +82,7 @@ export default function CadaquesPage() {
             season. Village visit and free time included; food and drinks are not.
           </p>
           <Link
-            href="/en/contact"
+            href="/en/booking"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
           >
             Book now

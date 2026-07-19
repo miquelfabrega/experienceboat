@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Cap de Creus and Coves by Boat | ExperienceBoat',
   description:
-    'Sail around Cap de Creus and discover the most hidden coves by boat from Roses. Crystal-clear waters and unique Costa Brava landscapes.',
+    'Sail around Cap de Creus and discover the most hidden coves by boat from Roses. 3 to 5 hours with three swimming stops at coves with no road access. Skipper included.',
   keywords: [
     'Cap de Creus boat trip',
     'Cap de Creus coves',
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cap de Creus and Coves by Boat | ExperienceBoat',
     description:
-      'Sail around Cap de Creus and discover the most hidden coves by boat from Roses. Crystal-clear waters and unique Costa Brava landscapes.',
+      'Sail around Cap de Creus and discover the most hidden coves by boat from Roses. 3 to 5 hours with three swimming stops at coves with no road access. Skipper included.',
     url: 'https://www.experienceboat.es/en/boat-experiences-roses/cap-de-creus-coves',
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
 };
@@ -82,7 +82,7 @@ export default function CapDeCreusCovesPage() {
             season. Drinks and snacks not included.
           </p>
           <Link
-            href="/en/contact"
+            href="/en/booking"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
           >
             Book now

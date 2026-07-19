@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Cap de Creus et Criques en Bateau | ExperienceBoat',
   description:
-    'Naviguez autour du Cap de Creus et découvrez les criques les plus secrètes en bateau depuis Roses. Eaux cristallines et paysages uniques de la Costa Brava.',
+    'Naviguez autour du Cap de Creus et découvrez les criques les plus secrètes en bateau depuis Roses. 3 à 5 heures avec trois arrêts baignade dans des criques sans accès routier. Skipper inclus.',
   keywords: [
     'excursion Cap de Creus en bateau',
     'criques Cap de Creus',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cap de Creus et Criques en Bateau | ExperienceBoat',
     description:
-      'Naviguez autour du Cap de Creus et découvrez les criques les plus secrètes en bateau depuis Roses. Eaux cristallines et paysages uniques de la Costa Brava.',
+      'Naviguez autour du Cap de Creus et découvrez les criques les plus secrètes en bateau depuis Roses. 3 à 5 heures avec trois arrêts baignade dans des criques sans accès routier. Skipper inclus.',
     url: 'https://www.experienceboat.es/fr/experiences-bateau-roses/cap-de-creus-criques',
     locale: 'fr_FR',
     type: 'website',
@@ -83,7 +83,7 @@ export default function CapDeCreusCriquesPage() {
             en haute saison. Boissons et en-cas non compris.
           </p>
           <Link
-            href="/fr/contact"
+            href="/fr/reservation"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition"
           >
             Réserver
