@@ -34,7 +34,7 @@ const t: Record<Lang, {
     h2: 'Tout ce que vous pouvez faire avec nous à Roses',
     p: 'Découvrez notre gamme de bateaux et de services pour profiter de la Méditerranée à votre façon.',
     services: [
-      { title: 'Bateaux sans permis', desc: "L'option idéale pour explorer les canaux et la baie de Roses sans titulaire nautique.", href: '/fr/location-bateau-sans-permis-roses', cta: 'Voir bateaux sans permis' },
+      { title: 'Bateaux sans permis', desc: "L'option idéale pour explorer les canaux et la baie de Roses sans permis bateau.", href: '/fr/location-bateau-sans-permis-roses', cta: 'Voir bateaux sans permis' },
       { title: 'Bateaux avec permis', desc: 'Pour les patrons diplômés. Des vedettes rapides pour naviguer librement sur la Costa Brava.', href: '/fr/location-bateau-avec-permis-roses', cta: 'Voir bateaux avec permis' },
       { title: 'Expériences en bateau à Roses', desc: 'Canal tour Santa Margarita, excursions privées au Cap de Creus et Sunset dans la baie de Roses.', href: '/fr/experiences-bateau-roses', cta: 'Voir les expériences' },
       { title: 'Canaux de Santa Margarita', desc: 'Une expérience unique en naviguant dans les canaux. Sans permis et avec un paysage garanti.', href: '/fr/experiences-bateau-roses/canal-tour-santa-margarita', cta: "Voir l'expérience" },

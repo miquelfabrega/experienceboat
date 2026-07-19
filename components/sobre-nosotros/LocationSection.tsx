@@ -16,11 +16,11 @@ const t: Record<Lang, {
     routeTitle: 'Ruta típica des de la Marina',
     imgAlt: 'Vista aèria de la Marina de Santa Margarida a Roses, base d\'Experience Boat',
     trustTitle: 'La teva empresa de confiança a Roses',
-    trustItems: ['Rutes exclusives pel Cap de Creus', 'Opcions amb i sense titulació nàutica', 'Reserves en línia i sense sorpreses', 'La millor experiència a la Costa Brava'],
+    trustItems: ['Rutes pel Cap de Creus i la badia', 'Opcions amb i sense titulació nàutica', 'Reserves en línia i sense sorpreses', 'Valoració de 5,0 a Google amb 276 ressenyes'],
     steps: [
       { title: 'Marina de Santa Margarida', desc: 'Punt de sortida base.' },
       { title: 'Canals navegables', desc: 'Navegació tranquil·la, perfecta sense llicència (~10 min).' },
-      { title: 'Badia de Roses', desc: 'Platges, snorkel i aigües cristal·lines (~20 min).' },
+      { title: 'Badia de Roses', desc: 'Platges, esnòrquel i aigües cristal·lines (~20 min).' },
       { title: 'Punta Falconera', desc: 'Entrada al Parc Natural del Cap de Creus (~35 min).' },
       { title: 'Cap de Creus', desc: 'Cales verges i paisatge únic (~55 min).' },
     ],
@@ -33,7 +33,7 @@ const t: Record<Lang, {
     routeTitle: 'Ruta típica desde la Marina',
     imgAlt: 'Vista aérea de la Marina de Santa Margarita en Roses, base de Experience Boat',
     trustTitle: 'Tu empresa de confianza en Roses',
-    trustItems: ['Rutas exclusivas por el Cap de Creus', 'Opciones con y sin titulación náutica', 'Reservas online y sin sorpresas', 'La mejor experiencia en la Costa Brava'],
+    trustItems: ['Rutas por el Cap de Creus y la bahía', 'Opciones con y sin titulación náutica', 'Reservas online y sin sorpresas', 'Valoración de 5,0 en Google con 276 reseñas'],
     steps: [
       { title: 'Marina de Santa Margarita', desc: 'Punto de salida base.' },
       { title: 'Canales navegables', desc: 'Navegación tranquila, perfecta sin licencia (~10 min).' },
@@ -50,7 +50,7 @@ const t: Record<Lang, {
     routeTitle: 'Itinéraire typique depuis la Marina',
     imgAlt: "Vue aérienne de la Marina de Santa Margarita à Roses, base d'Experience Boat",
     trustTitle: 'Votre spécialiste de confiance à Roses',
-    trustItems: ['Routes exclusives vers le Cap de Creus', 'Options avec et sans permis nautique', 'Réservation en ligne sans surprises', 'La meilleure expérience sur la Costa Brava'],
+    trustItems: ['Itinéraires vers le Cap de Creus et la baie', 'Options avec et sans permis nautique', 'Réservation en ligne sans surprises', 'Note de 5,0 sur Google avec 276 avis'],
     steps: [
       { title: 'Marina de Santa Margarita', desc: 'Point de départ · Roses, Girona.' },
       { title: 'Canaux navigables', desc: 'Navigation tranquille, idéale sans permis (~10 min).' },
@@ -67,7 +67,7 @@ const t: Record<Lang, {
     routeTitle: 'Typical route from the Marina',
     imgAlt: "Aerial view of Marina de Santa Margarita in Roses, Experience Boat's base",
     trustTitle: 'Your trusted company in Roses',
-    trustItems: ['Exclusive routes to Cap de Creus', 'Options with and without a nautical licence', 'Online booking with no hidden surprises', 'The best experience on the Costa Brava'],
+    trustItems: ['Routes to Cap de Creus and around the bay', 'Options with and without a nautical licence', 'Online booking with no hidden surprises', '5.0 rating on Google from 276 reviews'],
     steps: [
       { title: 'Marina de Santa Margarita', desc: 'Departure point · Roses, Girona.' },
       { title: 'Navigable canals', desc: 'Calm navigation, perfect without a licence (~10 min).' },

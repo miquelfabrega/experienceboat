@@ -9,8 +9,8 @@ const t: Record<Lang, {
 }> = {
   ca: {
     tag: 'El nostre equip',
-    h2: 'Experts nàutics compromesos amb la teva experiència',
-    p: 'L\'equip d\'Experience Boat està format per professionals amb titulació nàutica i un profund coneixement del mar de la Costa Brava. Cada integrant aporta la seva passió perquè la teva experiència sigui segura, divertida i memorable.',
+    h2: 'Un equip petit que viu a l\'aigua',
+    p: 'Experience Boat no és cap franquícia: som en Toto donant la cara i un equip fundador al darrere. Tots amb titulació nàutica, i tots navegant aquesta badia cada setmana de la temporada.',
     cta_p: 'Tens dubtes sobre quin vaixell o servei s\'adapta millor al teu grup? Contacta\'ns i t\'assessorem sense compromís.',
     cta: 'Contactar amb l\'equip',
     contactHref: '/ca/contacte',
@@ -25,8 +25,8 @@ const t: Record<Lang, {
   },
   es: {
     tag: 'Nuestro equipo',
-    h2: 'Expertos náuticos comprometidos con tu experiencia',
-    p: 'El equipo de Experience Boat está formado por profesionales con titulación náutica y un profundo conocimiento del mar de la Costa Brava. Cada integrante aporta su pasión para que tu experiencia sea segura, divertida y memorable.',
+    h2: 'Un equipo pequeño que vive en el agua',
+    p: 'Experience Boat no es una franquicia: somos Toto dando la cara y un equipo fundador detrás. Todos con titulación náutica, y todos navegando esta bahía cada semana de la temporada.',
     cta_p: '¿Tienes dudas sobre qué barco o servicio se adapta mejor a tu grupo? Contáctanos y te asesoramos sin compromiso.',
     cta: 'Contactar con el equipo',
     contactHref: '/contacto',
@@ -41,8 +41,8 @@ const t: Record<Lang, {
   },
   fr: {
     tag: 'Notre équipe',
-    h2: 'Des experts nautiques engagés pour votre expérience',
-    p: "L'équipe Experience Boat est composée de professionnels diplômés avec une connaissance approfondie de la mer de la Costa Brava. Chaque membre apporte sa passion pour que votre sortie soit sûre, fun et mémorable.",
+    h2: 'Une petite équipe qui vit sur l\'eau',
+    p: "Experience Boat n'est pas une franchise : c'est Toto en première ligne et une équipe fondatrice derrière. Tous diplômés, et tous sur cette baie chaque semaine de la saison.",
     cta_p: "Vous hésitez sur le bateau ou le service le mieux adapté à votre groupe ? Contactez-nous — nous vous conseillons sans engagement.",
     cta: "Contacter l'équipe",
     contactHref: '/fr/contact',
@@ -57,8 +57,8 @@ const t: Record<Lang, {
   },
   en: {
     tag: 'Our team',
-    h2: 'Nautical experts committed to your experience',
-    p: "The Experience Boat team is made up of qualified professionals with an in-depth knowledge of the Costa Brava sea. Every member brings their passion to ensure your outing is safe, fun and memorable.",
+    h2: 'A small team that lives on the water',
+    p: "Experience Boat isn't a franchise: it's Toto up front and a founding team behind him. All properly qualified, and all out on this bay every week of the season.",
     cta_p: "Not sure which boat or service suits your group best? Get in touch — we'll advise you with no obligation.",
     cta: 'Contact the team',
     contactHref: '/en/contact',

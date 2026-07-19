@@ -6,26 +6,26 @@ const t: Record<Lang, { alt: string; tag: string; h1: string; p: string }> = {
   ca: {
     alt: 'Experience Boat - Empresa de lloguer de vaixells a Roses',
     tag: 'Sobre nosaltres',
-    h1: 'La teva empresa de vaixells a Roses',
-    p: 'Ens dediquem al lloguer d\'embarcacions a la badia de Roses amb un únic propòsit: que cada sortida al mar sigui una experiència que vulguis repetir.',
+    h1: 'Els vaixells d\'en Toto a Roses',
+    p: 'Em dic Salvador, però aquí tothom em coneix com en Toto. Llogo vaixells a la badia de Roses amb el meu equip, i aquesta pàgina va de qui som i de com ens agrada sortir a navegar.',
   },
   es: {
     alt: 'Experience Boat - Empresa de alquiler de barcos en Roses',
     tag: 'Sobre Nosotros',
-    h1: 'Tu empresa de barcos en Roses',
-    p: 'Nos dedicamos al alquiler de embarcaciones en la bahía de Roses con un único propósito: que cada salida al mar sea una experiencia que quieras repetir.',
+    h1: 'Los barcos de Toto en Roses',
+    p: 'Me llamo Salvador, pero aquí todo el mundo me conoce como Toto. Alquilo barcos en la bahía de Roses con mi equipo, y esta página va de quiénes somos y de cómo nos gusta salir a navegar.',
   },
   fr: {
     alt: 'Experience Boat - Location de bateaux à Roses',
     tag: 'À propos de nous',
-    h1: 'Votre spécialiste de la location de bateaux à Roses',
-    p: "Nous proposons la location de bateaux dans la baie de Roses avec un seul objectif : faire de chaque sortie en mer une expérience inoubliable.",
+    h1: 'Les bateaux de Toto à Roses',
+    p: "Je m'appelle Salvador, mais ici tout le monde m'appelle Toto. Je loue des bateaux dans la baie de Roses avec mon équipe, et cette page raconte qui nous sommes et comment nous aimons naviguer.",
   },
   en: {
     alt: 'Experience Boat — Boat rental company in Roses',
     tag: 'About us',
-    h1: 'Your boat rental company in Roses',
-    p: "We specialise in boat rentals in the Bay of Roses with one single goal: to make every trip out to sea an experience you'll want to repeat.",
+    h1: 'Toto\'s boats in Roses',
+    p: "My name is Salvador, but around here everyone calls me Toto. I rent out boats in the Bay of Roses with my team, and this page is about who we are and how we like to go to sea.",
   },
 };
 
