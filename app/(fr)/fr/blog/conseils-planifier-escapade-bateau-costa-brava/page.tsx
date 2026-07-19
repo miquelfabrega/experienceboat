@@ -146,16 +146,16 @@ export default function ArticlePlanifierEscapadeFr() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              Explorer la Costa Brava en bateau est une expérience inoubliable, pleine de paysages impressionnants, d&apos;eaux cristallines et de criques cachées. Cependant, pour vous assurer que votre escapade soit une réussite totale, il est important de planifier à l&apos;avance.
+              Nous passons la saison à aider des groupes à monter leur journée en bateau sur cette côte. Voici donc les conseils que nous donnons vraiment au ponton : quel bateau correspond à votre projet, quoi emporter à bord et ce que tout le monde sous-estime — le vent.
             </p>
             <p>
-              Que ce soit votre première fois en mer ou que vous ayez des années d&apos;expérience, tenir compte de quelques aspects clés fait la différence entre une bonne journée et une journée parfaite. Voici 7 conseils pratiques pour planifier votre prochaine aventure en bateau sur la Costa Brava.
+              Première sortie ou des années de navigation derrière vous, ces 7 points font la différence entre une bonne journée et une journée parfaite sur la Costa Brava.
             </p>
 
             {/* H2 #1 */}
             <h2 id="embarcation">1. Choisissez le bon type d&apos;embarcation</h2>
             <p>
-              Avant de larguer les amarres, il est important de sélectionner l&apos;embarcation adaptée à votre voyage. Prenez en compte la taille du groupe, vos compétences de navigation et le type d&apos;expérience que vous souhaitez vivre. Des petites <Link href="/fr/location-bateau-sans-permis-roses">embarcations sans permis</Link> aux vedettes puissantes <Link href="/fr/location-bateau-avec-permis-roses">avec permis</Link> et tout le confort, la Costa Brava offre une large variété d&apos;options pour tous les goûts et tous les budgets.
+              La première question qu&apos;on pose toujours : combien êtes-vous, et jusqu&apos;où voulez-vous aller ? Pour les canaux et la baie jusqu&apos;à 5 personnes, un <Link href="/fr/location-bateau-sans-permis-roses">bateau sans permis</Link> suffit largement. Si vous avez le permis et visez le Cap de Creus avec de la marge, prenez une vedette <Link href="/fr/location-bateau-avec-permis-roses">avec permis</Link>. Et si personne ne veut tenir la barre, c&apos;est exactement à ça que servent nos sorties avec skipper.
             </p>
 
             {/* H2 #2 */}
@@ -164,7 +164,7 @@ export default function ArticlePlanifierEscapadeFr() {
               Une fois votre embarcation choisie, il est temps de planifier votre itinéraire. La Costa Brava nord regorge d&apos;endroits magnifiques à explorer, des tranquilles canaux de Santa Margarita aux impressionnantes formations rocheuses du <Link href="/fr/blog/itineraire-bateau-cap-de-creus-roses">Cap de Creus</Link>.
             </p>
             <p>
-              Renseignez-vous sur les différentes options et décidez quelles criques vous aimeriez visiter. Tenez compte des distances de navigation et du temps nécessaire pour vous déplacer entre elles, en vous rappelant toujours qu&apos;en mer, la précipitation n&apos;est jamais une bonne conseillère.
+              Notre conseil de toujours : moins de criques, plus de temps dans chacune. Une demi-journée suffit pour les canaux, une baignade à Cala Murtra et un déjeuner au mouillage à Montjoi sans regarder l&apos;heure ; vouloir tout voir en quatre heures, c&apos;est la recette pour ne profiter de rien. En mer, la précipitation n&apos;est jamais bonne conseillère.
             </p>
 
             {/* H2 #3 */}
@@ -186,12 +186,12 @@ export default function ArticlePlanifierEscapadeFr() {
             </p>
 
             {/* H2 #5 */}
-            <h2 id="provisions">5. Approvisionnez-vous en provisions</h2>
+            <h2 id="provisions">5. Prévoyez de quoi manger et boire</h2>
             <p>
               Avant de partir, assurez-vous d&apos;emporter suffisamment de provisions pour toute la traversée. La mer donne faim et soif, alors emportez des aliments légers, des fruits et des boissons en quantité suffisante — et surtout de l&apos;eau douce pour rester hydraté sous le soleil.
             </p>
             <p>
-              Une glacière de glace est indispensable en été. Si vous prévoyez de mouiller à midi, un bon pique-nique à bord ou réserver une table dans un bar-restaurant accessible en bateau (comme celui de Cala Pelosa) complètera parfaitement la journée.
+              Une glacière est indispensable en été. Si vous prévoyez de mouiller à midi, un bon pique-nique à bord ou réserver une table dans un bar-restaurant accessible en bateau (comme celui de Cala Pelosa) complètera parfaitement la journée.
             </p>
 
             {/* H2 #6 */}
@@ -211,7 +211,7 @@ export default function ArticlePlanifierEscapadeFr() {
               Enfin, une fois en mer et avec tout sous contrôle, détendez-vous et profitez. Prenez le temps de contempler les impressionnants paysages côtiers, plongez dans les eaux cristallines pour nager et faire du snorkeling, et explorez les criques qui jalonnent la côte.
             </p>
             <p>
-              Rappelez-vous que l&apos;important n&apos;est pas d&apos;arriver vite à une destination précise, mais de profiter de la navigation et de créer des souvenirs inoubliables avec votre groupe.
+              Rappelez-vous que l&apos;important n&apos;est pas d&apos;arriver vite quelque part, mais de profiter de la journée à votre rythme, avec votre groupe et sans l&apos;horaire de personne d&apos;autre.
             </p>
 
             {/* Inline CTA */}

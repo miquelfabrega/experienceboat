@@ -272,7 +272,7 @@ export default function ArticleCapDeCreus() {
                 <strong>Con barco con licencia</strong> — Con una embarcación más potente y con titulación náutica, la ruta completa al Cap de Creus es totalmente accesible. Mayor autonomía, mayor velocidad y más opciones de ruta.
               </li>
               <li>
-                <strong>Con excursión privada con patrón</strong> — La opción en la que tú no te preocupas de nada. Salvador conoce cada cala, cada roca y cada quirófano de esta costa. La ruta se adapta al grupo y al día. Es la manera más cómoda de hacer la ruta completa, especialmente si es la primera vez en la zona.
+                <strong>Con excursión privada con patrón</strong> — La opción en la que tú no te preocupas de nada. Salvador conoce cada cala, cada roca y cada rincón de esta costa. La ruta se adapta al grupo y al día. Es la manera más cómoda de hacer la ruta completa, especialmente si es la primera vez en la zona.
               </li>
             </ul>
 

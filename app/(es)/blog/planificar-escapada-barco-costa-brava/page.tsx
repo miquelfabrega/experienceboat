@@ -146,16 +146,16 @@ export default function ArticlePlanificarEscapada() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              Explorar la Costa Brava en barco es una experiencia inolvidable llena de paisajes impresionantes, aguas cristalinas y calas escondidas. Sin embargo, para asegurarte de que tu escapada sea todo un éxito, es importante planificar con anticipación.
+              Nos pasamos la temporada ayudando a grupos a montar su día de barco en esta costa, así que estos son los consejos que damos de verdad en el pantalán: qué barco encaja con tu plan, qué llevar a bordo y lo que todo el mundo subestima — el viento.
             </p>
             <p>
-              Ya sea tu primera vez navegando o tengas años de experiencia, tener en cuenta algunos aspectos clave marca la diferencia entre un buen día y una jornada perfecta. Aquí tienes 7 consejos prácticos para planificar tu próxima aventura en barco por la Costa Brava.
+              Da igual si es tu primera vez o llevas años navegando: estos 7 puntos marcan la diferencia entre un buen día y una jornada perfecta en la Costa Brava.
             </p>
 
             {/* H2 #1 */}
             <h2 id="embarcacion">1. Elige el tipo de embarcación adecuado</h2>
             <p>
-              Antes de zarpar, es importante seleccionar la embarcación adecuada para tu viaje. Considera el tamaño del grupo, tus habilidades de navegación y el tipo de experiencia que deseas tener. Desde pequeñas <Link href="/alquiler-barco-sin-licencia-roses">embarcaciones sin licencia</Link> hasta lanchas potentes <Link href="/alquiler-barco-con-licencia-roses">con licencia</Link> y con todas las comodidades, la Costa Brava ofrece una amplia variedad de opciones para todos los gustos y presupuestos.
+              La pregunta que hacemos siempre primero: ¿cuántos sois y hasta dónde queréis llegar? Para moverse por los canales y la bahía con hasta 5 personas, una <Link href="/alquiler-barco-sin-licencia-roses">embarcación sin licencia</Link> sobra. Si tienes titulación y quieres plantarte en el Cap de Creus con margen, mejor una lancha <Link href="/alquiler-barco-con-licencia-roses">con licencia</Link>. Y si nadie quiere llevar el timón, para eso están las excursiones con patrón.
             </p>
 
             {/* H2 #2 */}
@@ -164,7 +164,7 @@ export default function ArticlePlanificarEscapada() {
               Una vez que hayas elegido tu embarcación, es hora de planificar tu ruta. La Costa Brava norte está repleta de hermosos lugares para explorar, desde los tranquilos canales de Santa Margarita hasta las impresionantes formaciones rocosas del <Link href="/blog/ruta-barco-cap-de-creus-roses">Cap de Creus</Link>.
             </p>
             <p>
-              Investiga las diferentes opciones y decide qué calas te gustaría visitar. Ten en cuenta las distancias de navegación y el tiempo necesario para desplazarte entre ellas, recordando siempre que en el mar las prisas nunca son buenas consejeras.
+              Nuestro consejo de siempre: menos calas y más rato en cada una. Con medio día da para canales, un baño en Cala Murtra y comer fondeado en Montjoi sin mirar el reloj; querer verlo todo en cuatro horas es la receta para no disfrutar nada. En el mar las prisas nunca son buenas consejeras.
             </p>
 
             {/* H2 #3 */}
@@ -211,7 +211,7 @@ export default function ArticlePlanificarEscapada() {
               Finalmente, una vez que estés en el mar y con todo bajo control, relájate y disfruta. Toma tiempo para contemplar los impresionantes paisajes costeros, sumérgete en las aguas cristalinas para nadar y hacer snorkel, y explora las calas que salpican la costa.
             </p>
             <p>
-              Recuerda que lo importante no es llegar rápido a un destino concreto, sino disfrutar de la navegación y crear recuerdos inolvidables con tu grupo.
+              Recuerda que lo importante no es llegar rápido a un destino concreto, sino disfrutar del día a tu ritmo, con tu grupo y sin el horario de nadie más.
             </p>
 
             {/* Inline CTA */}

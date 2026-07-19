@@ -26,10 +26,10 @@ export const metadata: Metadata = {
 
 const toc = [
   { id: 'montjoi', label: 'Cala Montjoi' },
-  { id: 'medas', label: 'Islas Medas' },
+  { id: 'murtra', label: 'Cala Murtra' },
   { id: 'cap-creus', label: 'Cap de Creus' },
   { id: 'joncols', label: 'Cala Jóncols' },
-  { id: 'rovellada', label: 'Cala Rovellada' },
+  { id: 'medas', label: '¿Y las Islas Medas?' },
   { id: 'consejos', label: 'Consejos de seguridad' },
 ];
 
@@ -38,7 +38,7 @@ const consejos = [
   'Elige un lugar que coincida con tu nivel de habilidad y experiencia.',
   'Usa equipo adecuado: máscara, tubo y aletas ajustadas.',
   'Mantente atento a tu entorno y ten cuidado con el tráfico de barcos.',
-  'Respeta el ecosistema: evita tocar corales o molestar a la vida marina.',
+  'Respeta el ecosistema: no toques el fondo ni molestes a la fauna, y fondea siempre fuera de la posidonia.',
 ];
 
 function ArticleSchema() {
@@ -153,55 +153,52 @@ export default function ArticleSnorkel() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              La Costa Brava, con su costa escarpada y sus aguas cristalinas, es un paraíso para los amantes del snorkel. Desde calas escondidas hasta impresionantes reservas marinas, esta región ofrece una amplia variedad de lugares para sumergirse y descubrir la fascinante vida marina que habita en sus aguas.
+              Navegamos la bahía de Roses y el Cap de Creus casi a diario, y buena parte de nuestras paradas acaban con la máscara puesta. Estas son las calas de nuestra zona donde el snorkel de verdad vale la pena — todas alcanzables en barco desde la Marina de Santa Margarita.
             </p>
             <p>
-              En este artículo exploraremos algunos de los mejores lugares para hacer snorkel en la Costa Brava norte, qué vida marina esperar en cada zona, y consejos prácticos para sacarle el máximo provecho de forma segura.
+              Te contamos qué se ve en cada una, a cuánto queda de Roses y un apunte honesto sobre las Islas Medas, que no están en nuestra zona pero preguntáis mucho por ellas.
             </p>
 
             {/* H2 #1 */}
-            <h2 id="montjoi">1. Cala Montjoi: Explorando un paraíso submarino</h2>
+            <h2 id="montjoi">1. Cala Montjoi, la clásica que no falla</h2>
             <p>
-              Situada muy cerca de Roses, <strong>Cala Montjoi</strong> es uno de los destinos de snorkel más accesibles y populares. Con aguas tranquilas y protegidas, esta bahía es el hogar de una gran variedad de peces y criaturas marinas.
+              A unos 20 minutos de navegación desde Santa Margarita, <strong>Cala Montjoi</strong> es la parada de snorkel más accesible de nuestra zona. Aguas tranquilas y protegidas, fondo rocoso con posidonia y muy buena visibilidad casi todo el año.
             </p>
             <p>
-              Al sumergirse en sus aguas, es fácil encontrarse con bancos de peces de colores, pulpos escondidos en las rocas y pequeños corales que adornan el fondo marino. Gracias a su tamaño y protección natural, es un sitio ideal para principiantes y familias.
+              Bajo el agua verás peces de roca, algún pulpo escondido entre las piedras y praderas de posidonia. Por tamaño y protección natural es la que solemos recomendar a principiantes y familias — y por tierra tiene el aliciente de elBulli1846, aunque el aparcamiento en verano es otra historia.
             </p>
 
             {/* H2 #2 */}
-            <h2 id="medas">2. Islas Medas: Un santuario submarino</h2>
+            <h2 id="murtra">2. Cala Murtra, el acuario sin cristal</h2>
             <p>
-              Ubicadas frente a la costa de L&apos;Estartit, las <strong>Islas Medas</strong> forman un archipiélago que es reserva marina protegida desde hace décadas. Es considerado uno de los mejores puntos de inmersión de todo el Mediterráneo.
+              A unos 10 minutos de navegación, en la zona de Punta Falconera, <strong>Cala Murtra</strong> es la sorpresa de la lista. El acceso a pie es tan incómodo que casi nadie la pisa, y eso se nota en el agua: limpia, tranquila y con fondo de roca lleno de vida.
             </p>
             <p>
-              El nivel de vida marina aquí es asombroso. Haciendo snorkel se pueden observar meros enormes, abanicos de mar (gorgonias), bancos gigantes de sargos y, con suerte, alguna raya. Las aguas cristalinas y la prohibición total de pesca hacen de las Medas una parada obligatoria. Para llegar a ellas, lo más recomendable es alquilar una embarcación o contratar una excursión específica.
+              Solemos fondear en su agua poco profunda y la máscara sale sola: peces pequeños entre las rocas, anémonas y esa sensación de acuario sin cristal que solo dan las calas sin gente. Snorkel de natura mediterránea, discreto y silencioso.
             </p>
 
             {/* H2 #3 */}
-            <h2 id="cap-creus">3. Cap de Creus: Descubriendo tesoros escondidos</h2>
+            <h2 id="cap-creus">3. Cap de Creus: Culip, Jugadora y las cuevas</h2>
             <p>
-              La costa escarpada del <strong>Parque Natural del Cap de Creus</strong> está salpicada de calas escondidas y cuevas marinas, convirtiéndose en el lugar ideal para los que buscan aventura salvaje.
+              La costa escarpada del <strong>Parque Natural del Cap de Creus</strong> es el snorkel más salvaje de la zona. Cala Culip y Cala Jugadora, resguardadas cerca del faro, son nuestras paradas habituales cuando el mar lo permite; entre ellas, cuevas y arcos de roca a los que solo se llega por mar.
             </p>
             <p>
-              La zona destaca por la transparencia del agua, filtrada naturalmente por las praderas de posidonia. Mantén los ojos bien abiertos para ver morenas, estrellas de mar rojas, erizos y nudibranquios que habitan en los fondos rocosos. Debido a que el acceso por tierra es largo y complicado en muchas de sus calas, <Link href="/experiencias-barco-roses">llegar en barco es la mejor opción</Link> para explorar los mejores puntos de snorkel de la reserva.
+              El agua aquí es especialmente transparente, filtrada por las praderas de posidonia. Mantén los ojos abiertos para ver morenas, estrellas de mar rojas, erizos y nudibranquios en los fondos rocosos. Como el acceso por tierra es largo y complicado en la mayoría de estas calas, <Link href="/experiencias-barco-roses">llegar en barco es la mejor opción</Link> — nosotros subimos con patrón o con barco con licencia según el día.
             </p>
 
             {/* H2 #4 */}
-            <h2 id="joncols">4. Cala Jóncols: Un oasis tranquilo</h2>
+            <h2 id="joncols">4. Cala Jóncols, entre acantilados y pinos</h2>
             <p>
-              Aislada entre altos acantilados rocosos y pinares, <strong>Cala Jóncols</strong> es un oasis donde escapar de las multitudes. Su lecho marino es principalmente de guijarros y roca, lo que garantiza una visibilidad excelente bajo el agua.
+              Aislada entre acantilados y pinares, camino del Cap de Creus, <strong>Cala Jóncols</strong> es de las que se ganan por mar: la pista de tierra es tan accidentada que la mayoría de visitantes llega en barco. Su lecho de guijarros y roca da una visibilidad excelente.
             </p>
             <p>
-              Al estar más alejada y tener un acceso por pista de tierra muy accidentado, la presión humana es menor. Es fácil encontrar anémonas, doradas y pulpos cazando entre las rocas. Seas principiante o experimentado, Jóncols ofrece una experiencia muy auténtica.
+              Con menos presión humana que las calas de carretera, es fácil ver anémonas, doradas y pulpos cazando entre las rocas. Seas principiante o llevas años con la máscara, Jóncols compensa el trayecto.
             </p>
 
             {/* H2 #5 */}
-            <h2 id="rovellada">5. Cala Rovellada: Joya escondida</h2>
+            <h2 id="medas">5. ¿Y las Islas Medas?</h2>
             <p>
-              Más al norte, acercándonos a Colera y Portbou, encontramos <strong>Cala Rovellada</strong>. Es conocida por su rica biodiversidad marina y formaciones rocosas únicas.
-            </p>
-            <p>
-              Los snorkelers pueden explorar las paredes de roca y las pequeñas grietas submarinas donde se esconden caballitos de mar tímidos, sargos y castañuelas. Es una bahía con mucho encanto y perfecta para quienes buscan aguas prístinas fuera del circuito más habitual.
+              Nos lo preguntan mucho, así que respuesta honesta: las <strong>Islas Medas</strong>, frente a L&apos;Estartit, son una reserva marina extraordinaria — meros enormes, gorgonias, bancos de sargos — pero <strong>quedan fuera de nuestra zona de alquiler</strong>. Nuestros barcos operan entre la bahía de Roses y el Cap de Creus, y las Medas (igual que las calas de Colera o Portbou, más al norte) se visitan mejor con los operadores de su propia zona. Si tu plan es esa reserva, sal desde L&apos;Estartit; si quieres snorkel salvaje sin salir de aquí, el Cap de Creus no tiene nada que envidiarle.
             </p>
 
             {/* H2 #6 */}
@@ -222,7 +219,7 @@ export default function ArticleSnorkel() {
             </ul>
 
             <p className="mt-8">
-              Siguiendo estos consejos y explorando las zonas que hemos repasado, estarás seguro de tener una aventura submarina inolvidable. Coge tu máscara, embárcate y descubre las maravillas escondidas bajo la superficie de la Costa Brava.
+              Con esto y un poco de sentido común, el resto lo pone el agua. Si sales con nosotros, el equipo de snorkel va incluido en la excursión de cuevas — y si alquilas sin licencia, tráete la máscara: Montjoi y Murtra quedan a menos de media hora del pantalán.
             </p>
 
             {/* Inline CTA */}

@@ -26,10 +26,10 @@ title: 'Meilleurs spots snorkeling sur la Costa Brava',
 
 const toc = [
   { id: 'montjoi', label: 'Cala Montjoi' },
-  { id: 'medas', label: 'Îles Medas' },
+  { id: 'murtra', label: 'Cala Murtra' },
   { id: 'cap-creus', label: 'Cap de Creus' },
   { id: 'joncols', label: 'Cala Jóncols' },
-  { id: 'rovellada', label: 'Cala Rovellada' },
+  { id: 'medas', label: 'Et les îles Medes ?' },
   { id: 'conseils', label: 'Conseils de sécurité' },
 ];
 
@@ -38,7 +38,7 @@ const conseils = [
   'Choisissez un endroit adapté à votre niveau et à votre expérience.',
   'Utilisez un équipement adéquat : masque, tuba et palmes bien ajustés.',
   'Restez attentif à votre environnement et méfiez-vous du trafic de bateaux.',
-  'Respectez l\'écosystème : évitez de toucher les coraux ou de déranger la vie marine.',
+  'Respectez l\'écosystème : ne touchez ni le fond ni la faune, et mouillez toujours en dehors de la posidonie.',
 ];
 
 function ArticleSchema() {
@@ -153,55 +153,52 @@ export default function ArticleSnorkelingFr() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              La Costa Brava, avec sa côte déchiquetée et ses eaux cristallines, est un paradis pour les amateurs de snorkeling. Des criques cachées aux impressionnantes réserves marines, cette région offre une grande variété d&apos;endroits pour plonger et découvrir la fascinante vie marine qui peuple ses eaux.
+              Nous naviguons la baie de Roses et le Cap de Creus presque tous les jours, et bon nombre de nos arrêts finissent le masque sur le visage. Voici les criques de notre zone où le snorkeling vaut vraiment le coup — toutes accessibles en bateau depuis la Marina de Santa Margarita.
             </p>
             <p>
-              Dans cet article, nous explorerons quelques-uns des meilleurs endroits pour faire du snorkeling sur la Costa Brava nord, quelle vie marine attendre dans chaque zone, et des conseils pratiques pour en tirer le meilleur parti en toute sécurité.
+              On vous dit ce qu&apos;on voit dans chacune, à combien de Roses elle se trouve, et un mot honnête sur les îles Medes, qui ne sont pas dans notre zone mais qu&apos;on nous demande sans arrêt.
             </p>
 
             {/* H2 #1 */}
-            <h2 id="montjoi">1. Cala Montjoi : Explorer un paradis sous-marin</h2>
+            <h2 id="montjoi">1. Cala Montjoi, la valeur sûre</h2>
             <p>
-              Située tout près de Roses, <strong>Cala Montjoi</strong> est l&apos;une des destinations de snorkeling les plus accessibles et les plus populaires. Avec des eaux calmes et protégées, cette baie abrite une grande variété de poissons et de créatures marines.
+              À une vingtaine de minutes de navigation de Santa Margarita, <strong>Cala Montjoi</strong> est l&apos;arrêt snorkeling le plus accessible de notre zone. Eaux calmes et abritées, fond rocheux avec posidonie et très bonne visibilité presque toute l&apos;année.
             </p>
             <p>
-              En plongeant dans ses eaux, il est facile de croiser des bancs de poissons colorés, des pieuvres cachées dans les rochers et de petits coraux qui ornent les fonds marins. Grâce à sa taille et à sa protection naturelle, c&apos;est un endroit idéal pour les débutants et les familles.
+              Sous la surface : poissons de roche, un poulpe caché entre les pierres de temps en temps et des herbiers de posidonie. Par sa taille et sa protection naturelle, c&apos;est celle qu&apos;on recommande d&apos;habitude aux débutants et aux familles — et à terre il y a l&apos;héritage d&apos;elBulli1846, même si le parking en été est une autre affaire.
             </p>
 
             {/* H2 #2 */}
-            <h2 id="medas">2. Îles Medas : Un sanctuaire sous-marin</h2>
+            <h2 id="murtra">2. Cala Murtra, l&apos;aquarium sans la vitre</h2>
             <p>
-              Situées face à la côte de L&apos;Estartit, les <strong>îles Medas</strong> forment un archipel qui est réserve marine protégée depuis des décennies. Elles sont considérées comme l&apos;un des meilleurs sites de plongée de toute la Méditerranée.
+              À une dizaine de minutes de navigation, dans la zone de Punta Falconera, <strong>Cala Murtra</strong> est la surprise de la liste. L&apos;accès à pied est si pénible que presque personne ne s&apos;y aventure, et ça se voit dans l&apos;eau : propre, calme, avec un fond de roche plein de vie.
             </p>
             <p>
-              Le niveau de vie marine ici est stupéfiant. En faisant du snorkeling, on peut observer d&apos;énormes mérous, des gorgones, des bancs gigantesques de sars et, avec de la chance, quelques raies. Les eaux cristallines et l&apos;interdiction totale de pêche font des Medas un arrêt incontournable. Pour les atteindre, il est recommandé de louer une embarcation ou de prendre une excursion spécifique.
+              Nous mouillons souvent dans son eau peu profonde et le masque sort tout seul : petits poissons entre les rochers, anémones et cette sensation d&apos;aquarium sans vitre que seules donnent les criques désertes. Du snorkeling méditerranéen discret et silencieux.
             </p>
 
             {/* H2 #3 */}
-            <h2 id="cap-creus">3. Cap de Creus : À la découverte de trésors cachés</h2>
+            <h2 id="cap-creus">3. Cap de Creus : Culip, Jugadora et les grottes</h2>
             <p>
-              La côte escarpée du <strong>Parc Naturel du Cap de Creus</strong> est parsemée de criques cachées et de grottes marines, en faisant l&apos;endroit idéal pour ceux qui cherchent une aventure sauvage.
+              La côte escarpée du <strong>Parc Naturel du Cap de Creus</strong> offre le snorkeling le plus sauvage de la zone. Cala Culip et Cala Jugadora, abritées près du phare, sont nos arrêts habituels quand la mer le permet ; entre les deux, des grottes et des arches de roche accessibles uniquement par l&apos;eau.
             </p>
             <p>
-              La zone se distingue par la transparence de l&apos;eau, filtrée naturellement par les herbiers de posidonie. Gardez les yeux ouverts pour voir des murènes, des étoiles de mer rouges, des oursins et des nudibranches qui habitent les fonds rocheux. Comme l&apos;accès par terre est long et compliqué pour beaucoup de ses criques, <Link href="/fr/experiences-bateau-roses">arriver en bateau est la meilleure option</Link> pour explorer les meilleurs spots de snorkeling de la réserve.
+              L&apos;eau y est particulièrement transparente, filtrée par les herbiers de posidonie. Gardez les yeux ouverts pour repérer murènes, étoiles de mer rouges, oursins et nudibranches sur les fonds rocheux. Comme l&apos;accès par terre est long et compliqué pour la plupart de ces criques, <Link href="/fr/experiences-bateau-roses">arriver en bateau est la meilleure option</Link> — nous y montons avec skipper ou en bateau avec permis selon le jour.
             </p>
 
             {/* H2 #4 */}
-            <h2 id="joncols">4. Cala Jóncols : Une oasis tranquille</h2>
+            <h2 id="joncols">4. Cala Jóncols, entre falaises et pins</h2>
             <p>
-              Isolée entre de hautes falaises rocheuses et des pinèdes, <strong>Cala Jóncols</strong> est une oasis pour échapper aux foules. Son lit marin est principalement de galets et de roche, ce qui garantit une excellente visibilité sous l&apos;eau.
+              Nichée entre falaises et pinèdes sur la route du Cap de Creus, <strong>Cala Jóncols</strong> fait partie de celles qui se méritent par la mer : la piste est si accidentée que la plupart des visiteurs arrivent en bateau. Son fond de galets et de roche garantit une excellente visibilité.
             </p>
             <p>
-              Étant plus éloignée et accessible uniquement par une piste très accidentée, la pression humaine y est moindre. On trouve facilement des anémones, des daurades et des pieuvres chassant parmi les rochers. Que vous soyez débutant ou expérimenté, Jóncols offre une expérience très authentique.
+              Avec moins de pression humaine que les criques de bord de route, on y repère facilement anémones, daurades et poulpes en chasse entre les rochers. Débutant ou habitué du masque, Jóncols récompense le trajet.
             </p>
 
             {/* H2 #5 */}
-            <h2 id="rovellada">5. Cala Rovellada : Joyau caché</h2>
+            <h2 id="medas">5. Et les îles Medes ?</h2>
             <p>
-              Plus au nord, en s&apos;approchant de Colera et Portbou, on trouve <strong>Cala Rovellada</strong>. Elle est connue pour sa riche biodiversité marine et ses formations rocheuses uniques.
-            </p>
-            <p>
-              Les plongeurs en apnée peuvent explorer les parois rocheuses et les petites crevasses sous-marines où se cachent des hippocampes timides, des sars et des castagnoles. C&apos;est une baie pleine de charme et parfaite pour ceux qui cherchent des eaux immaculées en dehors des circuits habituels.
+              On nous pose la question sans arrêt, alors réponse honnête : les <strong>îles Medes</strong>, face à L&apos;Estartit, sont une réserve marine extraordinaire — la richesse de la vie marine y est stupéfiante : mérous énormes, gorgones, bancs de sars — mais <strong>elles sont en dehors de notre zone de location</strong>. Nos bateaux opèrent entre la baie de Roses et le Cap de Creus, et les Medes (comme les criques de Colera ou Portbou, plus au nord) se visitent mieux avec les opérateurs de leur zone. Si cette réserve est votre objectif, partez de L&apos;Estartit ; si vous voulez du snorkeling sauvage sans quitter la région, le Cap de Creus n&apos;a rien à lui envier.
             </p>
 
             {/* H2 #6 */}
@@ -222,7 +219,7 @@ export default function ArticleSnorkelingFr() {
             </ul>
 
             <p className="mt-8">
-              En suivant ces conseils et en explorant les zones que nous avons passées en revue, vous êtes assuré de vivre une aventure sous-marine inoubliable. Prenez votre masque, embarquez et découvrez les merveilles cachées sous la surface de la Costa Brava.
+              Avec ça et un peu de bon sens, l&apos;eau fait le reste. Si vous sortez avec nous, le matériel de snorkeling est inclus dans l&apos;excursion des grottes — et si vous louez un bateau sans permis, prenez votre masque : Montjoi et Murtra sont à moins d&apos;une demi-heure du ponton.
             </p>
 
             {/* Inline CTA */}

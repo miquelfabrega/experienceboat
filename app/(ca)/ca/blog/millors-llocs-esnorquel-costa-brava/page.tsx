@@ -84,29 +84,29 @@ export default function ArticlePage() {
 
         <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-a:text-blue-600 prose-p:text-gray-700 prose-li:text-gray-700">
           <p className="lead text-xl text-gray-600 font-medium">
-            La Costa Brava amaga algunes de les millors cales per fer esnòrquel del Mediterrani. Aigües cristal·lines, fons rocosos plens de vida i racons als quals només s&apos;arriba en vaixell.
+            Naveguem la badia de Roses i el Cap de Creus gairebé cada dia, i moltes de les nostres parades acaben amb les ulleres posades. Aquestes són les set cales de la nostra zona on l&apos;esnòrquel val més la pena — totes a l&apos;abast en vaixell des de la Marina de Santa Margarida.
           </p>
 
           <h2>1. Cala Montjoi</h2>
-          <p>A pocs minuts de Roses, aquesta cala ofereix aigües transparents i fons rocosos ideals per veure peixos. Perfecta per començar.</p>
+          <p>A uns 20 minuts de navegació, és la parada més accessible de la llista: aigües tranquil·les, fons rocós amb posidònia i molt bona visibilitat. És la que solem recomanar a famílies i a qui s&apos;estrena amb les ulleres.</p>
 
           <h2>2. Cala Jugadora</h2>
-          <p>Ja al <Link href="/ca/canals-santa-margarida/ruta-cap-de-creus">Cap de Creus</Link>, és una de les joies del parc natural. Aigua turquesa i molta vida marina.</p>
+          <p>Ja al <Link href="/ca/canals-santa-margarida/ruta-cap-de-creus">Cap de Creus</Link>, arrecerada prop del far. Aigua turquesa, molta vida marina i aquell paisatge de roca nua del parc natural. Hi parem sovint quan el mar ho permet.</p>
 
           <h2>3. Cala Murtra</h2>
-          <p>Una cala més recòndita, d&apos;aigües netíssimes. El seu accés per terra és complicat, cosa que la manté tranquil·la.</p>
+          <p>A uns 10 minuts, a la zona de Punta Falconera. L&apos;accés per terra és tan incòmode que gairebé ningú la trepitja, i això es nota a l&apos;aigua: netíssima i amb fons de roca ple de vida. La sensació d&apos;aquari sense vidre de la llista.</p>
 
           <h2>4. Illa de s&apos;Arenella</h2>
-          <p>Un illot a prop de la costa amb fons espectaculars. Ideal per a esnòrquel de nivell intermedi.</p>
+          <p>Un illot a tocar de la costa amb fons espectaculars i una mica més de moviment d&apos;aigua. El deixem per a qui ja porta hores d&apos;esnòrquel.</p>
 
           <h2>5. Cala Bona</h2>
-          <p>Petita i protegida, amb aigües poc profundes perfectes per a famílies amb canalla.</p>
+          <p>Petita i protegida, amb aigües poc profundes perfectes per a famílies amb canalla: els peixos s&apos;acosten a la vora i no cal allunyar-se de la barca.</p>
 
           <h2>6. Cala Culip</h2>
-          <p>En ple Cap de Creus, envoltada de paisatge lunar. Aigües fredes però increïblement clares.</p>
+          <p>En ple Cap de Creus, de les més arrecerades del cap, envoltada de paisatge lunar. Aigües més fresques però increïblement clares, amb fons rocós perfecte per a l&apos;esnòrquel.</p>
 
           <h2>7. Punta Falconera</h2>
-          <p>A prop de Roses, amb coves i parets submarines. Un clàssic per als amants de l&apos;esnòrquel i el busseig.</p>
+          <p>A prop de Roses, amb coves i parets submarines que canvien completament el paisatge de sota l&apos;aigua. Un clàssic per als amants de l&apos;esnòrquel i el busseig.</p>
 
           <div className="mt-10 p-6 bg-sky-50 rounded-2xl border border-sky-100 not-prose">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Arribeu a aquestes cales en vaixell</h3>

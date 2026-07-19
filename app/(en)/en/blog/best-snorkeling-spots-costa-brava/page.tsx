@@ -26,10 +26,10 @@ title: 'Best Snorkelling Spots on the Costa Brava',
 
 const toc = [
   { id: 'montjoi', label: 'Cala Montjoi' },
-  { id: 'medas', label: 'Medes Islands' },
+  { id: 'murtra', label: 'Cala Murtra' },
   { id: 'cap-creus', label: 'Cap de Creus' },
   { id: 'joncols', label: 'Cala Jóncols' },
-  { id: 'rovellada', label: 'Cala Rovellada' },
+  { id: 'medas', label: 'What about the Medes Islands?' },
   { id: 'safety', label: 'Safety tips' },
 ];
 
@@ -38,7 +38,7 @@ const tips = [
   'Choose a spot that matches your skill level and experience.',
   'Use proper equipment: a well-fitted mask, snorkel and fins.',
   'Stay aware of your surroundings and watch out for boat traffic.',
-  'Respect the ecosystem: avoid touching corals or disturbing marine life.',
+  'Respect the ecosystem: don\'t touch the seabed or disturb the wildlife, and always anchor clear of the posidonia.',
 ];
 
 function ArticleSchema() {
@@ -153,55 +153,52 @@ export default function ArticleSnorkellingEn() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              The Costa Brava, with its rugged coastline and crystal-clear waters, is a paradise for snorkelling enthusiasts. From hidden coves to impressive marine reserves, this region offers a wide variety of spots to dive in and discover the fascinating marine life that inhabits its waters.
+              We sail the Bay of Roses and Cap de Creus almost every day, and a good share of our stops end with a mask on. These are the coves in our patch where the snorkelling is genuinely worth it — all reachable by boat from the Marina de Santa Margarita.
             </p>
             <p>
-              In this article we explore some of the best snorkelling spots on the northern Costa Brava, what marine life to expect in each area, and practical tips to make the most of it safely.
+              Here&apos;s what you&apos;ll see at each one, how far it is from Roses, and an honest note about the Medes Islands, which aren&apos;t in our area but come up in questions all the time.
             </p>
 
             {/* H2 #1 */}
-            <h2 id="montjoi">1. Cala Montjoi: Exploring an underwater paradise</h2>
+            <h2 id="montjoi">1. Cala Montjoi, the reliable classic</h2>
             <p>
-              Located very close to Roses, <strong>Cala Montjoi</strong> is one of the most accessible and popular snorkelling destinations. With calm, sheltered waters, this bay is home to a great variety of fish and sea creatures.
+              About 20 minutes&apos; sailing from Santa Margarita, <strong>Cala Montjoi</strong> is the most accessible snorkelling stop in our area. Calm, sheltered water, a rocky seabed with posidonia and very good visibility most of the year.
             </p>
             <p>
-              Dip below the surface and you&apos;ll easily encounter shoals of colourful fish, octopuses hiding among the rocks and small corals adorning the seabed. Thanks to its size and natural shelter, it&apos;s an ideal spot for beginners and families.
+              Below the surface you&apos;ll find rockfish, the odd octopus tucked between the stones and posidonia meadows. Its size and natural shelter make it the one we usually recommend to beginners and families — and ashore there&apos;s the elBulli1846 connection, though the summer parking is another story.
             </p>
 
             {/* H2 #2 */}
-            <h2 id="medas">2. Medes Islands: An underwater sanctuary</h2>
+            <h2 id="murtra">2. Cala Murtra, the aquarium without the glass</h2>
             <p>
-              Situated off the coast of L&apos;Estartit, the <strong>Medes Islands</strong> form an archipelago that has been a protected marine reserve for decades. They are considered one of the finest diving spots in the entire Mediterranean.
+              Around 10 minutes&apos; sailing away, in the Punta Falconera area, <strong>Cala Murtra</strong> is the surprise on this list. Access on foot is so awkward that hardly anyone bothers, and the water shows it: clean, calm and with a rocky bottom full of life.
             </p>
             <p>
-              The level of marine life here is astounding. Snorkelling, you can observe enormous groupers, sea fans (gorgonians), vast shoals of white bream and, with luck, a ray or two. The crystal-clear waters and total fishing ban make the Medas a must-visit. To reach them, the best option is to rent a boat or book a dedicated excursion.
+              We often anchor in its shallow water and the mask comes out on its own: small fish between the rocks, anemones and that aquarium-without-the-glass feeling only empty coves give you. Quiet, understated Mediterranean snorkelling.
             </p>
 
             {/* H2 #3 */}
-            <h2 id="cap-creus">3. Cap de Creus: Discovering hidden treasures</h2>
+            <h2 id="cap-creus">3. Cap de Creus: Culip, Jugadora and the caves</h2>
             <p>
-              The rugged coastline of the <strong>Cap de Creus Natural Park</strong> is dotted with hidden coves and sea caves, making it the perfect place for those seeking wild adventure.
+              The rugged coastline of the <strong>Cap de Creus Natural Park</strong> is the wildest snorkelling in the area. Cala Culip and Cala Jugadora, sheltered near the lighthouse, are our usual stops when the sea allows; between them lie caves and rock arches you can only reach from the water.
             </p>
             <p>
-              The area stands out for its water clarity, naturally filtered by posidonia seagrass meadows. Keep your eyes open for moray eels, red starfish, sea urchins and nudibranchs that inhabit the rocky seabed. Since land access is long and complicated for many of its coves, <Link href="/en/boat-experiences-roses">arriving by boat is the best option</Link> to explore the reserve&apos;s best snorkelling spots.
+              The water here is exceptionally clear, filtered by the posidonia meadows. Keep your eyes open for moray eels, red starfish, sea urchins and nudibranchs on the rocky seabed. Since land access is long and complicated for most of these coves, <Link href="/en/boat-experiences-roses">arriving by boat is the best option</Link> — we head up with a skipper or a licensed boat depending on the day.
             </p>
 
             {/* H2 #4 */}
-            <h2 id="joncols">4. Cala Jóncols: A quiet oasis</h2>
+            <h2 id="joncols">4. Cala Jóncols, between cliffs and pines</h2>
             <p>
-              Isolated among tall rocky cliffs and pine forests, <strong>Cala Jóncols</strong> is an oasis away from the crowds. Its seabed is mainly pebble and rock, guaranteeing excellent underwater visibility.
+              Tucked between cliffs and pine forest on the way to Cap de Creus, <strong>Cala Jóncols</strong> is one you earn by sea: the dirt track is rough enough that most visitors arrive by boat. Its pebble-and-rock bottom gives excellent visibility.
             </p>
             <p>
-              Being more remote, with access only via a very rough track, human pressure is lower. It&apos;s easy to spot anemones, gilt-head bream and octopuses hunting among the rocks. Whether you&apos;re a beginner or experienced snorkeller, Jóncols delivers a very authentic experience.
+              With less human pressure than the roadside coves, it&apos;s easy to spot anemones, gilt-head bream and octopuses hunting among the rocks. Beginner or old hand with a mask, Jóncols repays the trip.
             </p>
 
             {/* H2 #5 */}
-            <h2 id="rovellada">5. Cala Rovellada: Hidden gem</h2>
+            <h2 id="medas">5. What about the Medes Islands?</h2>
             <p>
-              Further north, approaching Colera and Portbou, you&apos;ll find <strong>Cala Rovellada</strong>. It is known for its rich marine biodiversity and unique rock formations.
-            </p>
-            <p>
-              Snorkellers can explore the rock walls and small underwater crevices where shy seahorses, white bream and damselfish hide. It&apos;s a charming bay, perfect for those seeking pristine waters off the beaten track.
+              We get asked all the time, so here&apos;s the honest answer: the <strong>Medes Islands</strong>, off L&apos;Estartit, are an extraordinary marine reserve — huge groupers, gorgonians, shoals of white bream — but <strong>they sit outside our rental area</strong>. Our boats operate between the Bay of Roses and Cap de Creus, and the Medes (like the coves near Colera and Portbou further north) are best visited with operators based there. If that reserve is your plan, start from L&apos;Estartit; if you want wild snorkelling without leaving here, Cap de Creus concedes nothing to it.
             </p>
 
             {/* H2 #6 */}
@@ -222,7 +219,7 @@ export default function ArticleSnorkellingEn() {
             </ul>
 
             <p className="mt-8">
-              By following these tips and exploring the areas we&apos;ve covered, you&apos;re set for an unforgettable underwater adventure. Grab your mask, hop aboard and discover the hidden wonders beneath the surface of the Costa Brava.
+              That plus a little common sense, and the water does the rest. If you come out with us, snorkelling gear is included on the caves trip — and if you rent a no-licence boat, bring your mask: Montjoi and Murtra are under half an hour from the pontoon.
             </p>
 
             {/* Inline CTA */}

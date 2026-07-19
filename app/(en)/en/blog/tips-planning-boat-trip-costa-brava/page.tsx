@@ -146,7 +146,7 @@ export default function ArticlePlanningBoatTripEn() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              Exploring the Costa Brava by boat is an unforgettable experience filled with stunning scenery, crystal-clear water and hidden coves. But to make sure your trip is a complete success, a little forward planning goes a long way.
+              We spend every season helping people plan days out on this coast, so here is the advice we actually give: what boat fits your plan, what to bring aboard and the one thing everyone underestimates — the wind. A little forward planning goes a long way.
             </p>
             <p>
               Whether it&apos;s your first time on the water or you have years of experience, keeping a few key things in mind makes the difference between a good day and a perfect one. Here are 7 practical tips to plan your next boat adventure on the Costa Brava.
@@ -155,7 +155,7 @@ export default function ArticlePlanningBoatTripEn() {
             {/* H2 #1 */}
             <h2 id="vessel">1. Choose the right type of vessel</h2>
             <p>
-              Before casting off, it&apos;s important to select the right boat for your trip. Consider the group size, your navigation skills and the kind of experience you&apos;re after. From small <Link href="/en/boat-rental-without-licence-roses">no-licence boats</Link> to powerful <Link href="/en/boat-rental-with-licence-roses">licensed vessels</Link> with all the comforts, the Costa Brava offers a wide variety of options for every taste and budget.
+              The first thing we always ask: how many of you are there, and how far do you want to go? For the canals and the bay with up to 5 people, a <Link href="/en/boat-rental-without-licence-roses">no-licence boat</Link> is plenty. If you hold a licence and want to reach Cap de Creus with time to spare, go for a <Link href="/en/boat-rental-with-licence-roses">licensed motorboat</Link>. And if nobody fancies the helm, that&apos;s what our skippered trips are for.
             </p>
 
             {/* H2 #2 */}
@@ -164,7 +164,7 @@ export default function ArticlePlanningBoatTripEn() {
               Once you&apos;ve chosen your boat, it&apos;s time to plan your route. The northern Costa Brava is full of beautiful places to explore, from the tranquil Santa Margarita canals to the dramatic rock formations of <Link href="/en/blog/boat-trip-cap-de-creus-from-roses">Cap de Creus</Link>.
             </p>
             <p>
-              Research the different options and decide which coves you&apos;d like to visit. Factor in sailing distances and the time needed to travel between them, always remembering that on the water there&apos;s no point rushing.
+              Our standing advice: fewer coves, more time in each. Half a day comfortably covers the canals, a swim at Cala Murtra and lunch at anchor in Montjoi without watching the clock; trying to see everything in four hours is the recipe for enjoying none of it. On the water there&apos;s no point rushing.
             </p>
 
             {/* H2 #3 */}
@@ -211,7 +211,7 @@ export default function ArticlePlanningBoatTripEn() {
               Finally, once you&apos;re out on the water with everything under control, relax and enjoy. Take time to soak in the stunning coastal scenery, dive into the crystal-clear water for a swim and some snorkelling, and explore the coves that dot the coastline.
             </p>
             <p>
-              Remember, the point isn&apos;t to get somewhere quickly — it&apos;s to enjoy the journey and create unforgettable memories with your group.
+              Remember, the point isn&apos;t to get somewhere quickly — it&apos;s to enjoy the day at your own pace, with your group and nobody else&apos;s schedule.
             </p>
 
             {/* Inline CTA */}
