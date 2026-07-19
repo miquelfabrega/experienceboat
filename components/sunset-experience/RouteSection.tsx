@@ -72,7 +72,7 @@ const translations = {
     steps: [
       {
         title: 'La primera hora — els canals de Santa Margarida en caure la tarda',
-        desc: 'La sortida comença a la Marina de Santa Margarida quan el sol ja ha baixat prou perquè la llum sigui càlida i els reflexos a l\'aigua siguin perfectes. Les cases s\'entonen de taronja, les palmeres projecten ombres llargues i l\'ambient de la urbanització té una qualitat gairebé cinematogràfica. És el tram més fotogènic.'
+        desc: 'La sortida comença a la Marina de Santa Margarida quan el sol ja ha baixat prou perquè la llum sigui càlida i els reflexos a l\'aigua siguin perfectes. Les cases es tenyeixen de taronja, les palmeres projecten ombres llargues i l\'ambient de la urbanització té una qualitat gairebé cinematogràfica. És el tram més fotogènic.'
       },
       {
         title: 'La sortida a la badia — l\'espectacle comença',

@@ -33,7 +33,7 @@ function ArticleSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'La teva primera vegada en vaixell sense llicència: tot el que cal saber',
+    headline: 'La vostra primera vegada en vaixell sense llicència: tot el que cal saber',
     datePublished: '2025-12-28',
     dateModified: '2025-12-28',
     author: { '@type': 'Organization', name: 'Experience Boat' },
@@ -69,7 +69,7 @@ export default function ArticlePage() {
             Consells
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            La teva primera vegada en vaixell sense llicència: tot el que cal saber
+            La vostra primera vegada en vaixell sense llicència: tot el que cal saber
           </h1>
           <div className="flex items-center gap-3 text-sm text-gray-500">
             <span className="inline-flex items-center gap-1"><Calendar className="w-4 h-4" />28 de desembre de 2025</span>

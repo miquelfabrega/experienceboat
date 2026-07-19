@@ -49,7 +49,7 @@ const faqs = [
   {
     question: 'Cal experiència nàutica per fer aquesta ruta?',
     answer:
-      'No, si trieu l\'opció amb patró. En Tomàs o en Max porten l\'embarcació durant tota la jornada i coneixen la ruta en detall. Per a l\'opció amb llicència es requereix PNB o titulació equivalent, especialment per al tram del Cap de Creus, que pot tenir condicions de vent més exigents.',
+      'No, si trieu l\'opció amb patró. En Salvador o algú de l\'equip porten l\'embarcació durant tota la jornada i coneixen la ruta en detall. Per a l\'opció amb llicència es requereix PNB o titulació equivalent, especialment per al tram del Cap de Creus, que pot tenir condicions de vent més exigents.',
   },
   {
     question: 'Què passa si la tramuntana no permet arribar al Cap de Creus?',
@@ -306,7 +306,7 @@ export default function RutaCapDeCreusCA() {
             <h3>Amb patró (recomanat per a aquesta ruta)</h3>
             <p>
               Per a grups sense experiència nàutica o per a qui simplement vol gaudir sense preocupar-se de la
-              navegació, l&apos;excursió privada amb patró és l&apos;opció ideal. En Tomàs o en Max coneixen la
+              navegació, l&apos;excursió privada amb patró és l&apos;opció ideal. En Salvador o algú de l&apos;equip coneixen la
               ruta en detall, saben quines són les millors cales segons l&apos;època de l&apos;any i
               s&apos;adapten completament al ritme del grup. Vosaltres només us preocupeu de gaudir.
             </p>

@@ -143,7 +143,7 @@ export default function QueVeureCanalsSantaMargaridaCA() {
               d&apos;aquestes perspectives s&apos;assembla al que es veu des de l&apos;aigua. Des d&apos;un
               vaixell, els canals revelen una dimensió completament diferent: les cases es mostren des de
               la seva cara més íntima i el ritme del recorregut — lent, tranquil, sense cap pressa —
-              converteix el passeig en una cosa que no s&apos;assembla a cap altra experiència de la
+              converteix el passeig en un plaer que no s&apos;assembla a cap altra experiència de la
               Costa Brava.
             </p>
           </header>
@@ -262,12 +262,12 @@ export default function QueVeureCanalsSantaMargaridaCA() {
                 propietaris són a les seves cases, les terrasses tenen activitat i l&apos;ambient de la
                 urbanització és el d&apos;una petita ciutat costanera en plena temporada. Hi ha més
                 embarcacions als canals però també més ambient. La primera hora del matí continua sent el
-                millor moment per sortir abans que la calor estrenyi.
+                millor moment per sortir abans que el sol comenci a picar.
               </li>
               <li>
                 <strong>Al setembre i octubre</strong> — la temporada ideal per als qui prefereixen els
                 canals sense aglomeracions. Les aigües continuen càlides per al bany, els turistes han
-                reduït considerablement i els canals recuperen aquella quietud de principis de temporada.
+                minvat i els canals recuperen aquella quietud de principis de temporada.
                 Molts propietaris continuen a les seves cases durant el setembre, cosa que dona al recorregut
                 l&apos;ambient residencial que el fa únic.
               </li>

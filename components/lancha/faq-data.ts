@@ -17,7 +17,7 @@ export const faqsLancha: FAQ[] = [
   {
     question: '¿Cuál es la diferencia entre alquilar una lancha con licencia y con patrón?',
     answer:
-      'Con licencia tú llevas la embarcación con total libertad de ruta — necesitas titulación náutica válida. Con patrón, uno de nuestros patrones (Tomàs o Max) lleva el barco durante toda la salida — no necesitas ninguna titulación y puedes dedicarte completamente a disfrutar.',
+      'Con licencia tú llevas la embarcación con total libertad de ruta — necesitas titulación náutica válida. Con patrón, Salvador o alguien del equipo lleva el barco durante toda la salida — no necesitas ninguna titulación y puedes dedicarte completamente a disfrutar.',
   },
   {
     question: '¿Puedo alquilar una lancha en la Costa Brava en octubre?',
@@ -45,7 +45,7 @@ export const faqsLanchaFr: FAQ[] = [
   {
     question: 'Quelle est la différence entre louer une vedette avec permis et avec capitaine ?',
     answer:
-      'Avec permis, vous pilotez vous-même l\'embarcation avec une totale liberté d\'itinéraire — vous avez besoin d\'un permis nautique valide. Avec capitaine, l\'un de nos patrons (Tomàs ou Max) pilote le bateau pendant toute la sortie — aucun permis n\'est nécessaire et vous pouvez vous consacrer entièrement à profiter.',
+      'Avec permis, vous pilotez vous-même le bateau avec une totale liberté d\'itinéraire — vous avez besoin d\'un permis nautique valide. Avec capitaine, Salvador ou quelqu\'un de l\'équipe pilote le bateau pendant toute la sortie — aucun permis n\'est nécessaire et vous pouvez vous consacrer entièrement à profiter.',
   },
   {
     question: 'Peut-on louer une vedette sur la Costa Brava en octobre ?',
@@ -73,7 +73,7 @@ export const faqsLanchaCa: FAQ[] = [
   {
     question: 'Quina diferència hi ha entre llogar una llanxa amb llicència i amb patró?',
     answer:
-      'Amb llicència porteu l\'embarcació amb total llibertat de ruta — necessiteu titulació nàutica vàlida. Amb patró, un dels nostres patrons (Tomàs o Max) porta el vaixell durant tota la sortida — no necessiteu cap titulació i us podeu dedicar completament a gaudir.',
+      'Amb llicència porteu l\'embarcació amb total llibertat de ruta — necessiteu titulació nàutica vàlida. Amb patró, en Salvador o algú de l\'equip porta el vaixell durant tota la sortida — no necessiteu cap titulació i us podeu dedicar completament a gaudir.',
   },
   {
     question: 'Puc llogar una llanxa a la Costa Brava a l\'octubre?',

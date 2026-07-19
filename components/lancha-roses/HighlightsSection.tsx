@@ -100,7 +100,7 @@ const translations = {
         desc: 'Motors de fins a 250 CV i autonomia de sobres per arribar a les cales del Cap de Creus i Cadaqués sense presses. El litoral més espectacular de la Mediterrània, al teu abast.'
       },
       {
-        title: 'Barcs per a grups',
+        title: 'Llanxes per a grups',
         desc: 'Llanxes àmplies amb capacitat de fins a 12 persones. Perfectes per sortir amb la família o el grup d\'amics i gaudir tots junts del mar.'
       },
       {

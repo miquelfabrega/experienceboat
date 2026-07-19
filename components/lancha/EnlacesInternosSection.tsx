@@ -15,7 +15,7 @@ const getEnlaces = (lang: Lang) => [
   {
     anchor: lang === 'es' ? 'Excursiones privadas con patrón' : 'Excursions privées avec capitaine',
     href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiencias-barco-roses',
-    desc: lang === 'es' ? 'Salidas privadas con Tomàs o Max — sin titulación necesaria' : 'Sorties privées avec Tomàs ou Max — aucune qualification nécessaire',
+    desc: lang === 'es' ? 'Salidas privadas con Salvador y el equipo — sin titulación necesaria' : 'Sorties privées avec Salvador et l\'équipe — aucune qualification nécessaire',
   },
   {
     anchor: lang === 'es' ? 'Canales de Santa Margarita' : 'Canaux de Santa Margarita',

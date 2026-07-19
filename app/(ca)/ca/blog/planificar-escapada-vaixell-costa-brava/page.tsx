@@ -112,7 +112,7 @@ export default function ArticlePage() {
 
           <h2>4. Reserveu amb antelació</h2>
           <p>
-            En temporada alta (juliol i agost) les embarcacions volen. Us recomanem <Link href="/ca/reserves">reservar amb antelació</Link> per assegurar la disponibilitat, sobretot si voleu sortir un cap de setmana o un dia concret.
+            En temporada alta (juliol i agost) les sortides s&apos;esgoten de pressa. Us recomanem <Link href="/ca/reserves">reservar amb antelació</Link> per assegurar la disponibilitat, sobretot si voleu sortir un cap de setmana o un dia concret.
           </p>
 
           <h2>5. Respecteu l&apos;entorn</h2>

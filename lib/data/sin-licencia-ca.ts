@@ -62,7 +62,7 @@ export const pillarCa = {
     desc: 'Informació pràctica perquè ho tingueu tot clar abans de salpar.',
     cta: 'Consulteu disponibilitat ara',
     items: [
-      { question: 'Em cal experiència per governar el vaixell?', answer: "No. Les nostres embarcacions sense llicència tenen motors de baixa potència homologats per navegar sense titulació. Abans de salpar, en Tomàs o en Max us expliquen el funcionament en uns minuts. La majoria de clients surten sols sense cap problema des del primer dia." },
+      { question: 'Em cal experiència per governar el vaixell?', answer: "No. Les nostres embarcacions sense llicència tenen motors de baixa potència homologats per navegar sense titulació. Abans de salpar, en Salvador o algú de l'equip us expliquen el funcionament en uns minuts. La majoria de clients surten sols sense cap problema des del primer dia." },
       { question: 'Quantes persones hi caben?', answer: "Depèn de l'embarcació. Tenim vaixells des de 4 fins a 11 persones. Consulteu cada model per veure la capacitat exacta." },
       { question: 'Què inclou el lloguer?', list: ['Embarcació amb combustible inclòs (a consultar segons el model)', 'Armilla salvavides per a tots els passatgers', 'Instrucció inicial amb el patró', 'Mapa de la zona i recomanacions de ruta', "Equip bàsic d'esnòrquel (segons disponibilitat)"] },
       { question: 'Quins són els preus?', prices: [{ label: '1 hora', value: 'des de 70 €' }, { label: '2 hores', value: 'des de 135 €' }, { label: 'Mig dia (4 hores)', value: 'des de 165 €' }, { label: 'Dia complet (8 hores)', value: 'des de 225 €' }], note: 'Els preus varien segons l\'embarcació i la temporada. Consulteu disponibilitat per a la vostra data concreta.' },
@@ -152,7 +152,7 @@ export const couplesCa = {
   canales: {
     sectionLabel: 'Un inici romàntic',
     h2: 'Els canals de Santa Margarida — el començament perfecte',
-    p1: "Cada sortida d'Experience Boat comença pels canals de Santa Margarida, i per a les parelles aquest tram inicial és especialment especial.",
+    p1: "Cada sortida d'Experience Boat comença pels canals de Santa Margarida, i per a les parelles aquest tram inicial ja és part de l'encant.",
     p2: "Les aigües tranquil·les, les cases amb jardins que s'obren al canal i els ponts baixos de pedra creen un ambient que recorda més Amsterdam que la Costa Brava. És l'escenari perfecte per a fotografies i per començar el dia amb calma abans que el vaixell arribi a la badia de Roses i s'obri l'horitzó.",
     p3: 'Si us agrada la fotografia, prepareu la càmera: la llum de primera hora sobre els canals és difícil de superar.',
   },
@@ -196,7 +196,7 @@ export const couplesCa = {
   },
   patron: {
     h3: 'Preferiu que algú altre governi el vaixell?',
-    desc: "Si voleu desconnectar del tot i que algú altre s'encarregui de la navegació mentre vosaltres gaudiu del trajecte, les nostres excursions privades amb patró són exactament això. En Tomàs o en Max governen el vaixell, coneixen cada cala i s'adapten al ritme que vulgueu.",
+    desc: "Si voleu desconnectar del tot i que algú altre s'encarregui de la navegació mentre vosaltres gaudiu del trajecte, les nostres excursions privades amb patró són exactament això. En Salvador o algú de l'equip governen el vaixell, coneixen cada cala i s'adapten al ritme que vulgueu.",
     cta: 'Vegeu excursions privades amb patró',
     href: '/ca/experiencies-vaixell-roses',
   },
@@ -271,7 +271,7 @@ export const canauxCa = {
     sectionLabel: 'Rutes possibles',
     h2: 'Es pot arribar al Cap de Creus sense llicència des dels canals?',
     text: "Sí, amb algun matís. Les nostres embarcacions sense llicència estan pensades per a una navegació costanera tranquil·la. La badia de Roses és perfectament accessible i molt recomanable. Les cales més properes del Cap de Creus també hi són a l'abast quan les condicions del mar són bones.",
-    infoText: 'Per endinsar-vos més en el Parc Natural del Cap de Creus recomanem una de les nostres excursions privades amb patró: en Tomàs o en Max coneixen les rutes i les cales que val la pena visitar en qualsevol època.',
+    infoText: 'Per endinsar-vos més en el Parc Natural del Cap de Creus recomanem una de les nostres excursions privades amb patró: en Salvador i l\'equip coneixen les rutes i les cales que val la pena visitar en qualsevol època.',
     linkText: 'Vegeu excursions privades amb patró',
     linkHref: '/ca/experiencies-vaixell-roses',
   },

@@ -346,15 +346,15 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
     kicker: 'Tarifes transparents',
     h1: 'Preus de lloguer de vaixell a Roses',
     intro: [
-      'Abans de reservar vols saber quant costa, i nosaltres ho preferim dir clar. El preu depèn de tres coses: el vaixell, quantes hores navegues i la temporada. Tot el que veus aquí inclou armilles, briefing de seguretat, assegurança de responsabilitat civil i IVA. L’únic a part és el combustible.',
-      'Sortim de la Marina de Santa Margarida, a cinc minuts del centre de Roses, a la badia més arrecerada del nord de la Costa Brava. Cada sortida és privada: només el teu grup a bord. Dubtes entre un vaixell i un altre, o entre temporada mitjana i alta? Escriu-nos i t’ajudem a triar.',
+      'Abans de reservar voleu saber quant costa, i nosaltres ho preferim dir clar. El preu depèn de tres coses: el vaixell, quantes hores navegueu i la temporada. Tot el que veieu aquí inclou armilles, briefing de seguretat, assegurança de responsabilitat civil i IVA. L’únic a part és el combustible.',
+      'Sortim de la Marina de Santa Margarida, a cinc minuts del centre de Roses, a la badia més arrecerada del nord de la Costa Brava. Cada sortida és privada: només el vostre grup a bord. Dubteu entre un vaixell i un altre, o entre temporada mitjana i alta? Escriviu-nos i us ajudem a triar.',
     ],
     sinLicenciaTitle: 'Vaixells sense llicència',
     sinLicenciaLead:
-      'No necessites titulació. Et fem el briefing, agafes el timó i navegues per la badia i les cales properes. Ideals per a famílies i grups que surten per primera vegada.',
+      'No necessiteu titulació. Us fem el briefing, agafeu el timó i navegueu per la badia i les cales properes. Ideals per a famílies i grups que surten per primera vegada.',
     conLicenciaTitle: 'Vaixells amb llicència',
     conLicenciaLead:
-      'Amb el teu títol arribes més lluny: Cap de Creus, Cadaqués o una jornada de pesca. No tens llicència? Pots contractar patró en gairebé tots.',
+      'Amb el vostre títol arribeu més lluny: Cap de Creus, Cadaqués o una jornada de pesca. No teniu llicència? Podeu contractar patró en gairebé tots.',
     thBoat: 'Vaixell',
     thPax: 'Pax',
     th1h: '1 h',
@@ -381,11 +381,11 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
     ],
     seasonsTitle: 'Temporades',
     seasonsLead:
-      'El preu canvia segons l’època de l’any. Les dates són orientatives; confirma-les en reservar.',
+      'El preu canvia segons l’època de l’any. Les dates són orientatives; confirmeu-les en reservar.',
     seasons: [
       { name: 'Temporada baixa', months: 'abril, maig i octubre', note: 'Bon temps, mar tranquil·la i menys gent a l’aigua. El millor preu.' },
       { name: 'Temporada mitjana', months: 'juny i setembre', note: 'Entrada i sortida de l’estiu, temperatures ideals i preu intermedi.' },
-      { name: 'Temporada alta', months: 'juliol i agost', note: 'Ple estiu, dies llargs i postes de sol espectaculars. Reserva amb antelació.' },
+      { name: 'Temporada alta', months: 'juliol i agost', note: 'Ple estiu, dies llargs i postes de sol espectaculars. Reserveu amb antelació.' },
     ],
     sunsetTitle: 'Experiència Sunset',
     sunsetText:
@@ -394,7 +394,7 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
     faq: [
       {
         q: 'Quant costa llogar un vaixell a Roses?',
-        a: 'Des de 70€ l’hora en un vaixell sense llicència per a 4 persones. Si busques un vaixell més gran o amb llicència, des de 195€ el mig dia. El preu final depèn del vaixell, les hores i la temporada.',
+        a: 'Des de 70€ l’hora en un vaixell sense llicència per a 4 persones. Si busqueu un vaixell més gran o amb llicència, des de 195€ el mig dia. El preu final depèn del vaixell, les hores i la temporada.',
       },
       {
         q: 'Quina diferència hi ha entre temporades?',
@@ -402,23 +402,23 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
       },
       {
         q: 'El combustible està inclòs?',
-        a: 'No, el combustible va a part i es paga segons el consum real. Com a referència, un vaixell sense llicència gasta uns 5–8 litres per hora. T’expliquem el repostatge al briefing.',
+        a: 'No, el combustible va a part i es paga segons el consum real. Com a referència, un vaixell sense llicència gasta uns 5–8 litres per hora. Al briefing us expliquem com posar combustible.',
       },
       {
         q: 'Necessito llicència per llogar?',
-        a: 'No per als vaixells sense llicència (Dream Point, Remus, Marine Brezze): surten sense titulació després del briefing. Per als vaixells amb llicència necessites el títol costaner o contractar patró.',
+        a: 'No per als vaixells sense llicència (Dream Point, Remus, Marine Brezze): surten sense titulació després del briefing. Per als vaixells amb llicència necessiteu el títol costaner o contractar patró.',
       },
       {
         q: 'Cal deixar fiança?',
-        a: 'Sí, es deixa una fiança reemborsable que es retorna en tornar si tot està correcte. L’import depèn del vaixell; t’ho confirmem en reservar, sense sorpreses.',
+        a: 'Sí, es deixa una fiança reemborsable que es retorna en tornar si tot està correcte. L’import depèn del vaixell; us ho confirmem en reservar, sense sorpreses.',
       },
       {
         q: 'Puc contractar patró?',
         a: 'Sí, en gairebé tots els vaixells amb llicència. El suplement de patró és de +120€ el mig dia i +190€ el dia complet. Al llaüt Justi Saura el patró va sempre inclòs.',
       },
     ],
-    ctaTitle: 'Reserva la teva sortida',
-    ctaText: 'Tria data i vaixell i confirma la teva sortida privada a la Marina de Santa Margarida.',
+    ctaTitle: 'Reserveu la vostra sortida',
+    ctaText: 'Trieu data i vaixell i confirmeu la vostra sortida privada a la Marina de Santa Margarida.',
     ctaLabel: 'Consultar disponibilitat i reservar',
     relatedTitle: 'Continua explorant',
     relatedSinLicencia: 'Lloguer de vaixell sense llicència a Roses',

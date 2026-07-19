@@ -183,7 +183,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">
               Descobriu la Costa Brava nord des del mar sense preocupar-vos de res més que gaudir. A
               Experience Boat oferim excursions privades en vaixell des de Roses amb patró inclòs:
-              Tomàs o Max porten el timó, coneixen cada cala i cada ruta, i s’adapten al ritme i a les
+              En Salvador o algú de l'equip porten el timó, coneixen cada cala i cada ruta, i s’adapten al ritme i a les
               preferències del vostre grup. Sortim des dels{' '}
               <Link href="/ca/canals-santa-margarida" className="text-sky-300 hover:underline">
                 canals de Santa Margarida
@@ -257,7 +257,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
             <p>
               El Cap de Creus amaga algunes de les cales més verges de tota la Costa Brava. Cala Culip,
               Cala Jugadora, Cala Fredosa — cales que no surten a les guies turístiques genèriques perquè
-              només s’hi arriba en vaixell. Tomàs i Max saben quines valen la pena segons l’època de
+              només s’hi arriba en vaixell. En Salvador i l'equip saben quines valen la pena segons l’època de
               l’any i les condicions del mar.
             </p>
 
@@ -292,7 +292,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
               habitualment una excursió de dia complet:
             </p>
             <p>
-              Quedem al punt de trobada a la Marina de Santa Margarida a l’hora acordada. Tomàs o Max us
+              Quedem al punt de trobada a la Marina de Santa Margarida a l’hora acordada. En Salvador o algú de l'equip us
               reben, us expliquen el vaixell i us preguntem què voleu veure. Si teniu preferències de
               ruta, les incorporem. Si preferiu que us sorprenguem, proposem nosaltres. Sortim pels
               canals cap a la badia i des d’allà tracem rumb segons el pla.
@@ -344,7 +344,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
                 <dt className="font-bold text-slate-900">Què inclou l’excursió?</dt>
                 <dd className="mt-1">
                   <ul className="list-disc pl-5 space-y-1 mt-2">
-                    <li>Patró amb coneixement de la zona (Tomàs o Max)</li>
+                    <li>Patró amb coneixement de la zona (en Salvador o algú de l'equip)</li>
                     <li>Embarcació privada per al vostre grup</li>
                     <li>Combustible</li>
                     <li>Equipament de seguretat reglamentari</li>
@@ -380,7 +380,7 @@ export default function ExcursionsPrivadesVaixellRosesPage() {
                 {
                   icon: Users,
                   title: 'Patró local, no guia turístic',
-                  text: 'Tomàs i Max són patrons amb un tracte proper que coneixen la zona de primera mà. No reciten un guió — s’adapten a vosaltres i us porten als llocs que realment valen la pena.',
+                  text: 'En Salvador i l\'equip són patrons amb un tracte proper que coneixen la zona de primera mà. No reciten un guió — s’adapten a vosaltres i us porten als llocs que realment valen la pena.',
                 },
                 {
                   icon: Shield,
