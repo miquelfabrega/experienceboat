@@ -40,7 +40,7 @@ export const pillarCa = {
     destinations: [
       { name: 'Canals de Santa Margarida', desc: "El punt de sortida: cases a peu d'aigua i amarradors privats que només es veuen bé des del vaixell." },
       { name: 'Badia de Roses', desc: 'Aigües tranquil·les, perfectes per a principiants i famílies amb canalla. Vistes excepcionals.' },
-      { name: 'Cala Canyelles Petites', desc: 'Una de les cales més boniques del Cap de Creus, accessible en vaixell.' },
+      { name: 'Cala Canyelles Petites', desc: 'Una de les cales més boniques del camí cap al Cap de Creus, accessible en vaixell.' },
       { name: 'Cala Almadrava', desc: 'Aigües cristal·lines i molt poc concorreguda fora de temporada alta.' },
       { name: 'Parc Natural del Cap de Creus', desc: "El paisatge més impressionant de la Costa Brava vist des de l'aigua." },
     ],
@@ -144,7 +144,7 @@ export const couplesCa = {
     sectionLabel: 'Millor que qualsevol pla a terra',
     h2: 'Per què un vaixell és el pla perfecte per a una parella a Roses',
     features: [
-      { title: 'Privacitat total', desc: "La Costa Brava té platges i restaurants. Però cap d'aquestes opcions us ofereix el que us dóna un vaixell: privacitat completa i llibertat de moviment. És el tipus de dia que no s'oblida." },
+      { title: 'Privacitat total', desc: "La Costa Brava té platges i restaurants. Però cap d'aquestes opcions us ofereix el que us dona un vaixell: privacitat completa i llibertat de moviment. És el tipus de dia que no s'oblida." },
       { title: 'Cales inaccessibles', desc: 'Des del mar, Roses i el Cap de Creus tenen una dimensió completament diferent. Podeu fondejar en una cala deserta a mig matí i banyar-vos en aigües cristal·lines.' },
       { title: 'No cal experiència prèvia', desc: "No us cal experiència de navegació ni llicència. En 15 minuts d'haver sortit dels canals de Santa Margarida, navegareu sols amb total confiança." },
     ],
@@ -223,11 +223,11 @@ export const couplesCa = {
     waLink: 'Pregunteu-nos per WhatsApp →',
     waMessage: 'Hola%2C%20tinc%20una%20pregunta%20sobre%20el%20lloguer%20de%20vaixell%20sense%20llic%C3%A8ncia%20per%20a%20una%20parella',
     faqs: [
-      { question: 'Cal experiència de navegació per llogar un vaixell sense llicència en parella?', answer: "No. Les nostres embarcacions sense llicència estan pensades perquè qualsevol persona les governi sense experiència prèvia. Abans de salpar us expliquem l'essencial en uns minuts: la majoria de parelles n'agafen el truc en els primers 10-15 minuts recorrent els canals." },
+      { question: 'Cal experiència de navegació per llogar un vaixell sense llicència en parella?', answer: "No. Les nostres embarcacions sense llicència estan pensades perquè qualsevol persona les governi sense experiència prèvia. Abans de salpar us expliquem l'essencial en uns minuts: la majoria de parelles se'n surten sense problema en els primers 10-15 minuts recorrent els canals." },
       { question: 'Podem reservar una sortida per a una ocasió especial com un aniversari?', answer: "Sí. Moltes parelles que surten amb nosaltres ho fan per celebrar un aniversari, unes noces o simplement un dia especial. Si voleu que preparem alguna cosa concreta —una ampolla de cava a bord, una ruta específica— digueu-nos-ho en reservar i farem tot el possible." },
       { question: "Quina és la millor època de l'any per a una sortida en parella?", answer: "El maig, el juny i el setembre són els mesos ideals: aigua perfecta per banyar-se, cales tranquil·les i sense les aglomeracions de l'agost. Per a l'experiència de capvespre, el juliol i l'agost ofereixen els capvespres més espectaculars de l'any." },
-      { question: 'Podem portar el nostre propi menjar i begudes a bord?', answer: "Sí, és clar. Una nevera portàtil amb els vostres preferits i una parada en una cala tranquil·la per dinar és un dels plans més populars entre les parelles que surten amb nosaltres." },
-      { question: 'Quantes persones hi caben a bord?', answer: "Les nostres embarcacions sense llicència acullen entre 4 i 11 persones segons el model. Per a una parella, qualsevol d'elles ofereix espai de sobres per estar còmodes tot el dia." },
+      { question: 'Podem portar el nostre propi menjar i begudes a bord?', answer: "Sí, és clar. Una nevera portàtil amb les vostres begudes i alguna cosa per picar, i una parada en una cala tranquil·la per dinar: és un dels plans més populars entre les parelles que surten amb nosaltres." },
+      { question: 'Quantes persones hi caben a bord?', answer: "Les nostres embarcacions sense llicència acullen fins a 5 persones segons el model. Per a una parella, qualsevol d'elles ofereix espai de sobres per estar còmodes tot el dia." },
     ],
   },
 };
@@ -281,7 +281,7 @@ export const canauxCa = {
     cta: 'Consulteu disponibilitat',
     waMessage: 'Hola%2C%20m%27agradaria%20llogar%20un%20vaixell%20sense%20llic%C3%A8ncia%20per%20als%20canals%20de%20Santa%20Margarida',
     items: [
-      { question: 'Quant dura la ruta dels canals?', answer: "La ruta interior dels canals dura entre 60 i 90 minuts a un ritme relaxat. Combinada amb una sortida a la badia de Roses podeu omplir fàcilment un mig dia a l'aigua sense allunyar-vos gaire." },
+      { question: 'Quant dura la ruta dels canals?', answer: "La ruta interior dels canals dura entre 60 i 90 minuts a un ritme relaxat. Combinada amb una sortida a la badia de Roses podeu omplir fàcilment mig dia a l'aigua sense allunyar-vos gaire." },
       { question: 'És apta per a canalla petita?', answer: "És un dels entorns més segurs per a famílies amb canalla. L'aigua és tranquil·la, les velocitats són baixes i el paisatge manté els més petits entretinguts durant tota la ruta." },
       { question: 'Quan és el millor moment per anar-hi?', answer: "A primera hora del matí els canals estan completament tranquils i la llum és excepcional per a la fotografia. Al capvespre, els reflexos sobre l'aigua són igualment impressionants. A temporada mitjana (maig, juny, setembre) hi ha molt menys trànsit que a l'agost." },
       { question: 'Preu del lloguer', prices: [{ label: '1 hora', value: 'des de 70 €' }, { label: '2 hores', value: 'des de 135 €' }, { label: 'Mig dia (4 hores)', value: 'des de 165 €' }, { label: 'Dia complet (8 hores)', value: 'des de 225 €' }] },

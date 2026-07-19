@@ -10,12 +10,12 @@ const t: Record<Lang, {
 }> = {
   ca: {
     tag: 'On naveguem',
-    h2: 'La teva base a Santa Margarida, el teu horitzó el Cap de Creus',
-    p1: 'Operem des de la Marina de Santa Margarida a Roses, una ubicació estratègica que et permet accedir en minuts a tres ecosistemes nàutics completament diferents: els tranquils canals, l\'àmplia badia de Roses i la salvatge costa del Parc Natural del Cap de Creus.',
+    h2: 'La vostra base a Santa Margarida, el vostre horitzó el Cap de Creus',
+    p1: 'Operem des de la Marina de Santa Margarida a Roses, una ubicació que us permet accedir en minuts a tres entorns nàutics completament diferents: els canals tranquils, l\'àmplia badia de Roses i la costa salvatge del Parc Natural del Cap de Creus.',
     p2: 'Aquesta localització privilegiada ens converteix en l\'opció ideal tant per a qui cerca una navegació tranquil·la sense llicència com per als patrons amb experiència que volen explorar les cales més verges de la Costa Brava.',
     routeTitle: 'Ruta típica des de la Marina',
     imgAlt: 'Vista aèria de la Marina de Santa Margarida a Roses, base d\'Experience Boat',
-    trustTitle: 'La teva empresa de confiança a Roses',
+    trustTitle: 'La vostra empresa de confiança a Roses',
     trustItems: ['Rutes pel Cap de Creus i la badia', 'Opcions amb i sense titulació nàutica', 'Reserves en línia i sense sorpreses', 'Valoració de 5,0 a Google amb 276 ressenyes'],
     steps: [
       { title: 'Marina de Santa Margarida', desc: 'Punt de sortida base.' },
@@ -28,7 +28,7 @@ const t: Record<Lang, {
   es: {
     tag: 'Dónde navegamos',
     h2: 'Tu base en Santa Margarita, tu horizonte el Cap de Creus',
-    p1: 'Operamos desde la Marina de Santa Margarita en Roses, una ubicación estratégica que te permite acceder en minutos a tres ecosistemas náuticos completamente distintos: los tranquilos canales, la amplia bahía de Roses y la salvaje costa del Parque Natural del Cap de Creus.',
+    p1: 'Operamos desde la Marina de Santa Margarita en Roses, una ubicación que te permite acceder en minutos a tres entornos náuticos completamente distintos: los canales tranquilos, la amplia bahía de Roses y la costa salvaje del Parque Natural del Cap de Creus.',
     p2: 'Esta localización privilegiada nos convierte en la opción ideal tanto para quienes buscan una navegación tranquila sin licencia como para los patrones con experiencia que quieren explorar las calas más vírgenes de la Costa Brava.',
     routeTitle: 'Ruta típica desde la Marina',
     imgAlt: 'Vista aérea de la Marina de Santa Margarita en Roses, base de Experience Boat',
@@ -45,8 +45,8 @@ const t: Record<Lang, {
   fr: {
     tag: 'Où nous naviguons',
     h2: 'Notre base à Santa Margarita, votre horizon le Cap de Creus',
-    p1: "Nous opérons depuis la Marina de Santa Margarita à Roses — une localisation stratégique qui vous donne accès en quelques minutes à trois univers nautiques distincts : les calmes canaux, la vaste baie de Roses et le littoral sauvage du Parc Naturel du Cap de Creus.",
-    p2: "Cet emplacement privilégié fait de nous l'option idéale aussi bien pour ceux qui recherchent une navigation tranquille sans permis que pour les patrons expérimentés souhaitant explorer les criques les plus préservées de la Costa Brava.",
+    p1: "Nous opérons depuis la Marina de Santa Margarita à Roses — une localisation qui vous donne accès en quelques minutes à trois univers nautiques distincts : les canaux calmes, la vaste baie de Roses et le littoral sauvage du Parc Naturel du Cap de Creus.",
+    p2: "Cet emplacement fait de nous l'option idéale aussi bien pour ceux qui recherchent une navigation tranquille sans permis que pour les skippers expérimentés souhaitant explorer les criques les plus préservées de la Costa Brava.",
     routeTitle: 'Itinéraire typique depuis la Marina',
     imgAlt: "Vue aérienne de la Marina de Santa Margarita à Roses, base d'Experience Boat",
     trustTitle: 'Votre spécialiste de confiance à Roses',

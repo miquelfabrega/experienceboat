@@ -38,7 +38,7 @@ function ArticleSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Escapada perfecta en barco por la Costa Brava | Experience Boat',
+    headline: 'Escapada perfecta en barco por la Costa Brava',
     datePublished: '2026-04-06',
     dateModified: '2026-04-06',
     author: { '@type': 'Organization', name: 'Experience Boat' },
@@ -76,7 +76,7 @@ export default function ArticlePlanificarEscapada() {
               Consejos
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-              Escapada perfecta en barco por la Costa Brava | Experience Boat
+              Escapada perfecta en barco por la Costa Brava
             </h1>
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function ArticlePlanificarEscapada() {
             {/* H2 #2 */}
             <h2 id="ruta">2. Planifica tu ruta</h2>
             <p>
-              Una vez que hayas elegido tu embarcación, es hora de planificar tu ruta. La Costa Brava norte está repleta de hermosos lugares para explorar, desde los tranquilos canales de Santa Margarita hasta las impresionantes formaciones rocosas del <Link href="/blog/ruta-barco-cap-de-creus-roses">Cap de Creus</Link>.
+              Una vez que hayas elegido tu embarcación, es hora de planificar tu ruta. La Costa Brava norte tiene mucho donde elegir, de los canales de Santa Margarita a la roca pelada del <Link href="/blog/ruta-barco-cap-de-creus-roses">Cap de Creus</Link>.
             </p>
             <p>
               Nuestro consejo de siempre: menos calas y más rato en cada una. Con medio día da para canales, un baño en Cala Murtra y comer fondeado en Montjoi sin mirar el reloj; querer verlo todo en cuatro horas es la receta para no disfrutar nada. En el mar las prisas nunca son buenas consejeras.

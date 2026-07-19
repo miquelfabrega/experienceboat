@@ -40,7 +40,7 @@ export const homeDataEn = {
     ]
   },
   intro: {
-    title: 'Explore the Costa Brava at your own pace',
+    title: 'You set the course on the Costa Brava',
     description: 'With or without a licence, with a skipper or with the helm in your own hands — there\'s a boat for every plan. Our licence-free boats take up to 5 people and set off straight from the 15 km of canals at Santa Margarita Marina, at the entrance to Roses. Always private: the boat is for your group and nobody else.',
     pillars: [
       {

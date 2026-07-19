@@ -45,7 +45,7 @@ export const faqsLanchaFr: FAQ[] = [
   {
     question: 'Quelle est la différence entre louer une vedette avec permis et avec capitaine ?',
     answer:
-      'Avec permis, vous pilotez vous-même le bateau avec une totale liberté d\'itinéraire — vous avez besoin d\'un permis nautique valide. Avec capitaine, Salvador ou quelqu\'un de l\'équipe pilote le bateau pendant toute la sortie — aucun permis n\'est nécessaire et vous pouvez vous consacrer entièrement à profiter.',
+      'Avec permis, vous pilotez vous-même le bateau avec une totale liberté d\'itinéraire — vous avez besoin d\'un permis nautique valide. Avec capitaine, Salvador ou quelqu\'un de l\'équipe pilote le bateau pendant toute la sortie — aucun permis n\'est nécessaire et vous pouvez profiter pleinement de la sortie.',
   },
   {
     question: 'Peut-on louer une vedette sur la Costa Brava en octobre ?',
@@ -55,7 +55,7 @@ export const faqsLanchaFr: FAQ[] = [
   {
     question: 'En quoi Experience Boat se distingue des autres sociétés de location sur la Costa Brava ?',
     answer:
-      'Principalement trois choses : nous partons depuis les canaux de Santa Margarita (un point de départ unique), toutes les sorties sont privées (vous ne partagez jamais l\'embarcation avec des inconnus) et nous opérons entre la baie de Roses et le Parc Naturel du Cap de Creus, à quelques milles l\'un de l\'autre.',
+      'Principalement trois choses : nous partons depuis les canaux de Santa Margarita (un point de départ unique), toutes les sorties sont privées (vous ne partagez jamais le bateau avec des inconnus) et nous opérons entre la baie de Roses et le Parc Naturel du Cap de Creus, à quelques milles l\'un de l\'autre.',
   },
 ];
 

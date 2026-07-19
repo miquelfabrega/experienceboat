@@ -156,7 +156,7 @@ const t: Record<Lang, {
   fr: {
     label: 'Nos sorties',
     heading: 'Choisissez votre expérience',
-    subtitle: 'Trois types de sorties selon le moment de la journée et ce que vous recherchez\u00a0:',
+    subtitle: 'Nos sorties selon le moment de la journée et ce que vous recherchez\u00a0:',
     experiences: [
       {
         id: 'excursions',
@@ -223,7 +223,7 @@ const t: Record<Lang, {
   en: {
     label: 'Our boat trips',
     heading: 'Choose your experience',
-    subtitle: 'Three types of boat trips depending on the time of day and what you\u2019re looking for:',
+    subtitle: 'Our boat trips depending on the time of day and what you\u2019re looking for:',
     experiences: [
       {
         id: 'private-excursions',
@@ -277,13 +277,13 @@ const t: Record<Lang, {
       },
       {
         id: 'caves-snorkeling',
-        title: 'Caves and Snorkeling',
+        title: 'Caves and Snorkelling',
         image: '/images/experiencias/cuevas-snorkel.webp',
-        desc: 'Boat trip through the sea caves of Cap de Creus with snorkeling stops. Gear included.',
+        desc: 'Boat trip through the sea caves of Cap de Creus with snorkelling stops. Gear included.',
         duration: 'Half day',
         price: 'On request',
         href: '/en/boat-experiences-roses/caves-snorkeling',
-        ctaText: 'See Caves and Snorkeling',
+        ctaText: 'See Caves and Snorkelling',
       },
     ],
   },

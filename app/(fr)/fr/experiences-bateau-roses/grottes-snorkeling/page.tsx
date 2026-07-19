@@ -95,7 +95,7 @@ export default function GrottesSnorkelingPage() {
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold mb-10 text-center text-slate-900">
-          Questions Fréquentes
+          Questions fréquentes
         </h2>
         <div className="space-y-6 max-w-3xl mx-auto">
           {faqs.map((f, i) => (

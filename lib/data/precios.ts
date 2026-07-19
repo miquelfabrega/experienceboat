@@ -346,7 +346,7 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
     kicker: 'Tarifes transparents',
     h1: 'Preus de lloguer de vaixell a Roses',
     intro: [
-      'Abans de reservar voleu saber quant costa, i nosaltres ho preferim dir clar. El preu depèn de tres coses: el vaixell, quantes hores navegueu i la temporada. Tot el que veieu aquí inclou armilles, briefing de seguretat, assegurança de responsabilitat civil i IVA. L’únic a part és el combustible.',
+      'Abans de reservar voleu saber quant costa, i nosaltres preferim dir-ho clar. El preu depèn de tres coses: el vaixell, quantes hores navegueu i la temporada. Tot el que veieu aquí inclou armilles, briefing de seguretat, assegurança de responsabilitat civil i IVA. L’única cosa que va a part és el combustible.',
       'Sortim de la Marina de Santa Margarida, a cinc minuts del centre de Roses, a la badia més arrecerada del nord de la Costa Brava. Cada sortida és privada: només el vostre grup a bord. Dubteu entre un vaixell i un altre, o entre temporada mitjana i alta? Escriviu-nos i us ajudem a triar.',
     ],
     sinLicenciaTitle: 'Vaixells sense llicència',
@@ -420,7 +420,7 @@ export const PRECIOS_COPY: Record<Locale, PreciosCopy> = {
     ctaTitle: 'Reserveu la vostra sortida',
     ctaText: 'Trieu data i vaixell i confirmeu la vostra sortida privada a la Marina de Santa Margarida.',
     ctaLabel: 'Consultar disponibilitat i reservar',
-    relatedTitle: 'Continua explorant',
+    relatedTitle: 'Continueu explorant',
     relatedSinLicencia: 'Lloguer de vaixell sense llicència a Roses',
     relatedConLicencia: 'Lloguer de vaixell amb llicència a Roses',
     relatedExperiencias: 'Excursions en vaixell a Roses',

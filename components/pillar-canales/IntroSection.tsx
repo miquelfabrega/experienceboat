@@ -12,7 +12,7 @@ const t: Record<Lang, {
       'Hay un rincón de Roses que la mayoría ve desde tierra sin saber que desde el agua es completamente diferente. Los canales de Santa Margarita son una red de vías navegables bordeadas de casas con embarcadero privado, puentes de piedra y una calma que contrasta con el bullicio de la playa. En Experience Boat salimos desde aquí — y la excursión empieza antes de llegar al mar abierto.',
     h2: '¿Qué son los canales de Santa Margarita?',
     p1: 'Santa Margarita es una urbanización náutica única en la Costa Brava, construida sobre un sistema de canales artificiales que conectan con la bahía de Roses. Fue diseñada en los años 60 siguiendo el modelo de las ciudades canal holandesas y hoy es uno de los pocos enclaves de estas características en toda la costa mediterránea española.',
-    p2: 'Las casas tienen acceso directo al agua desde su jardín, cada una con su propio embarcadero, y en los canales conviven unos 1.600 amarres. Los canales se cruzan bajo puentes bajos de piedra blanca y crean una red de 15 kilómetros de vías navegables protegidas del viento y el oleaje.',
+    p2: 'Las casas tienen acceso directo al agua desde su jardín, cada una con su propio embarcadero, y en los canales se concentran unos 1.600 amarres. Los canales se cruzan bajo puentes bajos de piedra blanca y crean una red de 15 kilómetros de vías navegables protegidas del viento y el oleaje.',
     p3: 'Desde tierra, Santa Margarita parece un barrio residencial más de Roses. Desde el agua, es otro mundo.',
   },
   fr: {

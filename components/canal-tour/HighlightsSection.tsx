@@ -40,7 +40,7 @@ const translations = {
         desc: 'Villas et maisons avec anneau privé des deux côtés du canal. Chaque section a son style, et certains bateaux amarrés là valent plus cher que la maison.'
       },
       {
-        title: 'Ça marche avec des enfants',
+        title: 'Ça se passe très bien avec des enfants',
         desc: 'L\'eau des canaux est toujours plate et on avance doucement : c\'est une sortie calme. Gilets de sauvetage inclus pour tout le monde à bord.'
       }
     ]
@@ -54,7 +54,7 @@ const translations = {
         desc: 'No qualification needed. We go over the throttle, the steering and how to come alongside in five minutes on the pontoon, and after that you set the pace and decide where to stop.'
       },
       {
-        title: 'It only shows from the water',
+        title: 'You only see it from the water',
         desc: 'The canals make sense once you\'re on them: from the road you see walls, from the boat you see back gardens, private pontoons and the marina opening up at every bend.'
       },
       {

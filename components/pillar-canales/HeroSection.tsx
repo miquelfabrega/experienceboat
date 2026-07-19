@@ -30,7 +30,7 @@ const t: Record<Lang, {
   },
   en: {
     alt: 'Aerial view of the Santa Margarita canal network at sunset, Roses (Costa Brava)',
-    h1: 'The Santa Margarita canals by boat — the most singular experience in Roses',
+    h1: 'The Santa Margarita canals by boat — the most distinctive experience in Roses',
     optionsCta: 'See available options',
     whatsappCta: 'Message us on WhatsApp',
     whatsappText: 'Hello, I\'m interested in a boat trip on the Santa Margarita canals in Roses',

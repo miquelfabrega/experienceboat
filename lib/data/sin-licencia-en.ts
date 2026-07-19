@@ -41,7 +41,7 @@ export const pillarEn = {
     destinations: [
       { name: 'Santa Margarita Canals', desc: 'The departure point: a stretch of waterfront houses and private moorings you can only really see by boat.' },
       { name: 'Bay of Roses', desc: 'Calm waters, perfect for first-timers and families with children. Incredible views.' },
-      { name: 'Cala Canyelles Petites', desc: 'One of the most beautiful coves of Cap de Creus, reachable by boat.' },
+      { name: 'Cala Canyelles Petites', desc: 'One of the most beautiful coves on the way to Cap de Creus, reachable by boat.' },
       { name: 'Cala Almadraba', desc: 'Crystal-clear water and very quiet outside peak season.' },
       { name: 'Cap de Creus Natural Park', desc: 'The most spectacular landscape of the Costa Brava, seen from the water.' },
     ],

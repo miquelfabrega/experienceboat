@@ -3,7 +3,7 @@ import { Clock, Navigation, CheckCircle2, Euro, Anchor, MapPin } from 'lucide-re
 const translations = {
   es: {
     title: 'Información práctica y Detalles',
-    description: 'Todo lo que necesitas saber antes de embarcarte en tu aventura por los canales.',
+    description: 'Todo lo que necesitas saber antes de subir a bordo.',
     items: [
       {
         icon: Clock,
@@ -13,17 +13,17 @@ const translations = {
       {
         icon: Navigation,
         title: 'Horarios',
-        desc: 'Salimos todos los días de 9:00 a 20:00. A media mañana el agua está más tranquila; a última hora de la tarde la luz es mejor para las fotos.'
+        desc: 'Salimos todos los días de 9:00 a 20:00. A media mañana hay menos tráfico en los canales; a última hora de la tarde la luz es mejor para las fotos.'
       },
       {
         icon: Anchor,
         title: 'Nuestros Barcos',
-        desc: 'Contamos con embarcaciones de 4,3m a 4,5m de eslora con motor Mercury 15 C.V. Tienen capacidad para un máximo de 5 personas, solarium y chalecos salvavidas incluidos.'
+        desc: 'Contamos con embarcaciones de 4,3 m a 4,5 m de eslora con motor Mercury 15 CV. Tienen capacidad para un máximo de 5 personas, solárium y chalecos salvavidas incluidos.'
       },
       {
         icon: CheckCircle2,
         title: '¿Se necesita licencia?',
-        desc: 'No, nuestros barcos para el Canal Tour están diseñados para ser conducidos sin titulación. Te enseñaremos lo básico antes de zarpar.'
+        desc: 'No. Los barcos del Canal Tour se llevan sin titulación; te enseñamos lo básico en el pantalán, antes de zarpar.'
       },
       {
         icon: MapPin,
@@ -39,11 +39,11 @@ const translations = {
   },
   fr: {
     title: 'Informations pratiques et détails',
-    description: 'Tout ce que vous devez savoir avant de vous embarquer pour votre aventure sur les canaux.',
+    description: 'Tout ce que vous devez savoir avant d\'embarquer.',
     items: [
       {
         icon: Clock,
-        title: 'Quelle est la durée de la promenade?',
+        title: 'Quelle est la durée de la promenade ?',
         desc: 'Chaque parcours dure environ 90 minutes. C\'est le temps idéal pour naviguer tranquillement et profiter des vues.'
       },
       {
@@ -58,12 +58,12 @@ const translations = {
       },
       {
         icon: CheckCircle2,
-        title: 'Un permis est-il nécessaire?',
+        title: 'Un permis est-il nécessaire ?',
         desc: 'Non, nos bateaux de Canal Tour sont conçus pour être conduits sans qualification. Nous vous apprendrons le nécessaire avant de partir.'
       },
       {
         icon: MapPin,
-        title: 'Point de rencontre',
+        title: 'Point de rendez-vous',
         desc: 'Le départ se fait depuis Av. Clot Franquest Nord, 17480 Roses, Girona.'
       },
       {
@@ -75,12 +75,12 @@ const translations = {
   },
   en: {
     title: 'Practical Information and Details',
-    description: 'Everything you need to know before embarking on your canal adventure.',
+    description: 'Everything you need to know before you step aboard.',
     items: [
       {
         icon: Clock,
         title: 'How long is the tour?',
-        desc: 'Each tour lasts approximately 90 minutes. It\'s the ideal amount of time to sail leisurely and enjoy the views.'
+        desc: 'Each tour lasts approximately 90 minutes. It\'s the ideal amount of time to cruise at an easy pace and enjoy the views.'
       },
       {
         icon: Navigation,
@@ -111,7 +111,7 @@ const translations = {
   },
   ca: {
     title: 'Informació pràctica i detalls',
-    description: 'Tot el que necessiteu saber abans d\'embarcar-vos en la vostra aventura pels canals.',
+    description: 'Tot el que necessiteu saber abans de pujar a bord.',
     items: [
       {
         icon: Clock,

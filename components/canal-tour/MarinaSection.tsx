@@ -15,7 +15,7 @@ const translations = {
     label: 'L\'Environnement',
     title: 'Découvrez la Marina de Santa Margarita',
     paragraphs: [
-      'Santa Margarita est une marina résidentielle spectaculaire construite dans l\'ancienne zone de marais à l\'embouchure du Rio Grau. Elle serpente sur <strong>quinze kilomètres de canaux navigables</strong>, offrant un réseau aquatique fascinant.',
+      'Santa Margarita est une marina résidentielle construite dans l\'ancienne zone de marais à l\'embouchure du Grau. <strong>Quinze kilomètres de canaux navigables</strong> y serpentent d\'un bout à l\'autre.',
       'Elle est située en pleine baie de Roses, juste à gauche du Parc Naturel dels Aiguamolls de l\'Empordà et très proche du littoral impressionnant du Cap de Creus, ce qui lui confère un environnement naturel privilégié.',
       'Ce réseau compte environ mille six cents anneaux et des maisons avec accès direct à l\'eau. Les bateaux que vous croiserez vont du pneumatique de quatre mètres aux vingt mètres de long, la limite que les canaux acceptent.'
     ],
@@ -25,7 +25,7 @@ const translations = {
     label: 'The Setting',
     title: 'Discover Santa Margarita Marina',
     paragraphs: [
-      'Santa Margarita is a spectacular residential marina built in the former marshlands at the mouth of the Rio Grau. It winds through <strong>fifteen kilometres of navigable canals</strong>, offering a fascinating aquatic network.',
+      'Santa Margarita is a residential marina built on the former marshlands at the mouth of the Grau. <strong>Fifteen kilometres of navigable canals</strong> wind through it from end to end.',
       'It is located right in Roses Bay, just to the left of the Aiguamolls de l\'Empordà Natural Park and very close to the impressive coastline of Cap de Creus, giving it a privileged natural setting.',
       'The network holds around sixteen hundred moorings and houses with direct access to the water. The boats you\'ll pass range from four-metre inflatables up to twenty metres, which is as long as the canals take.'
     ],

@@ -13,24 +13,24 @@ const getEnlaces = (lang: Lang) => [
     desc: lang === 'es' ? 'Toda la flota con licencia disponible desde Santa Margarita' : 'Toute la flotte avec permis disponible depuis Santa Margarita',
   },
   {
-    anchor: lang === 'es' ? 'Excursiones privadas con patrón' : 'Excursions privées avec capitaine',
-    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiencias-barco-roses',
+    anchor: lang === 'es' ? 'Excursiones privadas con patrón' : 'Excursions privées avec skipper',
+    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiences-bateau-roses',
     desc: lang === 'es' ? 'Salidas privadas con Salvador y el equipo — sin titulación necesaria' : 'Sorties privées avec Salvador et l\'équipe — aucune qualification nécessaire',
   },
   {
     anchor: lang === 'es' ? 'Canales de Santa Margarita' : 'Canaux de Santa Margarita',
     href: lang === 'es' ? '/canales-santa-margarita' : '/fr/canaux-santa-margarita',
-    desc: lang === 'es' ? 'Salida navegando por los canales, directa a la bahía' : 'Départ en naviguant par les canaux, direct vers la baie',
+    desc: lang === 'es' ? 'Salida navegando por los canales, directa a la bahía' : 'Départ en naviguant par les canaux, directement vers la baie',
   },
   {
     anchor: lang === 'es' ? 'Barco sin licencia' : 'Bateau sans permis',
     href: lang === 'es' ? '/alquiler-barco-sin-licencia-roses' : '/fr/location-bateau-sans-permis-roses',
-    desc: lang === 'es' ? 'Opciones de alquiler incluido patrón para toda la familia' : 'Options de location incluant capitaine pour toute la famille',
+    desc: lang === 'es' ? 'Barcos fáciles de llevar, sin titulación — para toda la familia' : 'Des bateaux faciles à piloter, sans permis — pour toute la famille',
   },
   {
     anchor: lang === 'es' ? 'Cap de Creus' : 'Cap de Creus',
-    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiencias-barco-roses',
-    desc: lang === 'es' ? 'El parque natural que convierte cada jornada en una aventura' : 'Le parc naturel qui transforme chaque journée en une aventure',
+    href: lang === 'es' ? '/experiencias-barco-roses' : '/fr/experiences-bateau-roses',
+    desc: lang === 'es' ? 'El parque natural al que apuntan casi todas nuestras rutas' : 'Le parc naturel vers lequel pointent presque toutes nos routes',
   },
 ];
 

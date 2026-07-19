@@ -13,13 +13,13 @@ const t: Record<Lang, Record<string, string>> = {
   },
   fr: {
     title: 'Vedette sur la Costa Brava depuis les canaux de Roses',
-    intro: 'Si vous cherchez à louer une vedette sur la Costa Brava et souhaitez partir d\'un point différent, Experience Boat opère depuis les canaux de Santa Margarita — la seule marina du nord d\'où l\'on sort en naviguant entre les canaux — avec des embarcations pour ceux qui ont un permis et des sorties avec capitaine pour ceux qui préfèrent ne pas tenir le gouvernail. La baie de Roses et le Cap de Creus sont à quelques minutes. Pour la flotte et les tarifs avec permis, consultez',
+    intro: 'Si vous cherchez à louer une vedette sur la Costa Brava et souhaitez partir d\'un point différent, Experience Boat opère depuis les canaux de Santa Margarita — la seule marina du nord d\'où l\'on sort en naviguant entre les canaux — avec des bateaux pour ceux qui ont un permis et des sorties avec skipper pour ceux qui préfèrent ne pas tenir la barre. La baie de Roses et le Cap de Creus sont à quelques minutes. Pour la flotte et les tarifs avec permis, consultez',
     linkText: 'location de bateau avec permis à Roses',
     link: '/fr/location-bateau-avec-permis-roses',
   },
   ca: {
     title: 'Llanxa a la Costa Brava des dels canals de Roses',
-    intro: 'Si cerqueu llogar una llanxa a la Costa Brava i voleu sortir des d\'un punt diferent, a Experience Boat operem des dels canals de Santa Margarida — l\'única marina del nord des d\'on se surt navegant entre canals — amb embarcacions per a qui té llicència i sortides amb patró per a qui prefereix no portar el timó. La badia de Roses i el Cap de Creus queden a pocs minuts. Per a flota i preus amb titulació, reviseu',
+    intro: 'Si voleu llogar una llanxa a la Costa Brava i voleu sortir des d\'un punt diferent, a Experience Boat operem des dels canals de Santa Margarida — l\'única marina del nord des d\'on se surt navegant entre canals — amb embarcacions per a qui té llicència i sortides amb patró per a qui prefereix no portar el timó. La badia de Roses i el Cap de Creus queden a pocs minuts. Per a flota i preus amb titulació, reviseu',
     linkText: 'lloguer de vaixell amb llicència a Roses',
     link: '/ca/lloguer-vaixell-amb-llicencia-roses',
   },

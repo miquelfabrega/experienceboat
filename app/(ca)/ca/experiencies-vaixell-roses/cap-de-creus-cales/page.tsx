@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'Quines cales visitarem?',
     answer:
-      'Depèn del vent i del mar del dia: el patró tria el costat arrecerat. Cala Jugadora i Cala Culip hi cauen sovint, amb altres racons del Cap de Creus on només s’arriba en vaixell.',
+      'Depèn del vent i del mar del dia: el patró tria el costat arrecerat. Cala Jugadora i Cala Culip hi són habituals, amb altres racons del Cap de Creus on només s’arriba en vaixell.',
   },
   {
     question: 'Ens podem banyar?',

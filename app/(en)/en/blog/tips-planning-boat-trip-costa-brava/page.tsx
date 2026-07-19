@@ -149,7 +149,7 @@ export default function ArticlePlanningBoatTripEn() {
               We spend every season helping people plan days out on this coast, so here is the advice we actually give: what boat fits your plan, what to bring aboard and the one thing everyone underestimates — the wind. A little forward planning goes a long way.
             </p>
             <p>
-              Whether it&apos;s your first time on the water or you have years of experience, keeping a few key things in mind makes the difference between a good day and a perfect one. Here are 7 practical tips to plan your next boat adventure on the Costa Brava.
+              Whether it&apos;s your first time on the water or you have years of experience, keeping a few key things in mind makes the difference between a good day and a perfect one. Here are 7 practical tips to plan your next day out on the water on the Costa Brava.
             </p>
 
             {/* H2 #1 */}
@@ -161,7 +161,7 @@ export default function ArticlePlanningBoatTripEn() {
             {/* H2 #2 */}
             <h2 id="route">2. Plan your route</h2>
             <p>
-              Once you&apos;ve chosen your boat, it&apos;s time to plan your route. The northern Costa Brava is full of beautiful places to explore, from the tranquil Santa Margarita canals to the dramatic rock formations of <Link href="/en/blog/boat-trip-cap-de-creus-from-roses">Cap de Creus</Link>.
+              Once you&apos;ve chosen your boat, it&apos;s time to plan your route. The northern Costa Brava gives you plenty to choose from, from the Santa Margarita canals to the bare rock of <Link href="/en/blog/boat-trip-cap-de-creus-from-roses">Cap de Creus</Link>.
             </p>
             <p>
               Our standing advice: fewer coves, more time in each. Half a day comfortably covers the canals, a swim at Cala Murtra and lunch at anchor in Montjoi without watching the clock; trying to see everything in four hours is the recipe for enjoying none of it. On the water there&apos;s no point rushing.

@@ -45,7 +45,7 @@ function ArticleSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Meilleurs spots snorkeling sur la Costa Brava | Experience Boat',
+    headline: 'Meilleurs spots snorkeling sur la Costa Brava',
     datePublished: '2026-04-06',
     dateModified: '2026-04-06',
     author: { '@type': 'Organization', name: 'Experience Boat' },
@@ -83,7 +83,7 @@ export default function ArticleSnorkelingFr() {
               Découvrir
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-              Meilleurs spots snorkeling sur la Costa Brava | Experience Boat
+              Meilleurs spots snorkeling sur la Costa Brava
             </h1>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function ArticleSnorkelingFr() {
 
             {/* Intro */}
             <p className="text-xl text-gray-600 leading-relaxed font-normal not-prose mb-10 border-l-4 border-sky-500 pl-5 py-1">
-              Nous naviguons la baie de Roses et le Cap de Creus presque tous les jours, et bon nombre de nos arrêts finissent le masque sur le visage. Voici les criques de notre zone où le snorkeling vaut vraiment le coup — toutes accessibles en bateau depuis la Marina de Santa Margarita.
+              Nous naviguons dans la baie de Roses et le Cap de Creus presque tous les jours, et bon nombre de nos arrêts finissent le masque sur le visage. Voici les criques de notre zone où le snorkeling vaut vraiment le coup — toutes accessibles en bateau depuis la Marina de Santa Margarita.
             </p>
             <p>
               On vous dit ce qu&apos;on voit dans chacune, à combien de Roses elle se trouve, et un mot honnête sur les îles Medes, qui ne sont pas dans notre zone mais qu&apos;on nous demande sans arrêt.
@@ -204,7 +204,7 @@ export default function ArticleSnorkelingFr() {
             {/* H2 #6 */}
             <h2 id="conseils">Conseils de sécurité et recommandations d&apos;équipement</h2>
             <p>
-              Avant de vous lancer dans une aventure de snorkeling, il est important de garantir votre sécurité et celle de l&apos;environnement.
+              Avant de vous mettre à l'eau, quelques règles de base — pour votre sécurité et celle du milieu.
             </p>
 
             <ul className="not-prose mt-6 space-y-3">

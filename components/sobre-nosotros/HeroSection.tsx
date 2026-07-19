@@ -25,7 +25,7 @@ const t: Record<Lang, { alt: string; tag: string; h1: string; p: string }> = {
     alt: 'Experience Boat — Boat rental company in Roses',
     tag: 'About us',
     h1: 'Toto\'s boats in Roses',
-    p: "My name is Salvador, but around here everyone calls me Toto. I rent out boats in the Bay of Roses with my team, and this page is about who we are and how we like to go to sea.",
+    p: "My name is Salvador, but around here everyone calls me Toto. I rent out boats in the Bay of Roses with my team, and this page is about who we are and how we like to get out on the water.",
   },
 };
 

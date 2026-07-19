@@ -47,27 +47,27 @@ const t: Record<
     ],
   },
   fr: {
-    titlePre: 'La bahía de Roses desde el agua —',
-    titleHi: 'qué hace única esta zona',
+    titlePre: 'La baie de Roses depuis l\'eau —',
+    titleHi: 'ce qui rend cette zone unique',
     introPre:
-      'Si estás planificando una jornada completa por la bahía con tu licencia en Roses, consulta primero nuestra página de ',
-    introLink: 'alquiler de barco con licencia en Roses',
+      'Si vous préparez une journée complète dans la baie avec votre permis, consultez d\'abord notre page de ',
+    introLink: 'location de bateau avec permis à Roses',
     introHref: '/fr/location-bateau-avec-permis-roses',
     introPost:
-      ': allí encontrarás toda la flota disponible, precios por temporada y cómo reservar para la Costa Brava.',
-    p2pre: 'La bahía de Roses mide aproximadamente ',
-    p2km: '15 kilómetros de costa',
+      ' : vous y trouverez toute la flotte disponible, les tarifs par saison et comment réserver.',
+    p2pre: 'La baie de Roses compte environ ',
+    p2km: '15 kilomètres de côte',
     p2post:
-      ' y está delimitada por dos parques naturales protegidos: el Parque Natural de los Aiguamolls del Empordà al sur y el Parque Natural del Cap de Creus al norte. Desde el agua, esa combinación de naturaleza protegida, costa escarpada y aguas mediterráneas transparentes crea un escenario que muy pocos lugares del litoral español pueden igualar.',
+      ' et elle est encadrée par deux parcs naturels protégés : le Parc Naturel des Aiguamolls de l\'Empordà au sud et le Parc Naturel du Cap de Creus au nord. Depuis l\'eau, cette combinaison de nature protégée, de côte escarpée et d\'eaux méditerranéennes transparentes compose un décor que très peu d\'endroits du littoral espagnol peuvent égaler.',
     quotePre:
-      'Para un patrón con licencia, la bahía de Roses ofrece algo que no abunda en la Costa Brava: ',
-    quoteWord: 'espacio',
+      'Pour un skipper titulaire du permis, la baie de Roses offre quelque chose de rare sur la Costa Brava : ',
+    quoteWord: 'de l\'espace',
     quotePost:
-      '. Puedes alejarte de la costa, trazar rutas largas, explorar el Cap de Creus en profundidad o simplemente navegar durante horas sin cruzarte con nadie más que alguna barca de pesca local. Esa libertad de movimiento — sin límites de zona ni de tiempo de navegación — es el argumento principal para elegir una embarcación con licencia frente a otras opciones.',
+      '. Vous pouvez vous éloigner de la côte, tracer de longues routes, explorer le Cap de Creus en profondeur ou simplement naviguer des heures sans croiser personne, à part quelques barques de pêche locales. Cette liberté de mouvement — sans limite de zone ni de temps de navigation — est le principal argument pour choisir un bateau avec permis.',
     cards: [
-      { icon: '🌊', title: 'Costa protegida', desc: 'Dos parques naturales enmarcan la bahía' },
-      { icon: '⚓', title: 'Fondeos libres', desc: 'Calas volcánicas acceso libre por mar' },
-      { icon: '🧭', title: 'Rutas sin límite', desc: 'Navega a Cap de Creus, Llançà y más' },
+      { icon: '🌊', title: 'Côte protégée', desc: 'Deux parcs naturels encadrent la baie' },
+      { icon: '⚓', title: 'Mouillages libres', desc: 'Criques volcaniques accessibles uniquement par la mer' },
+      { icon: '🧭', title: 'Routes sans limite', desc: 'Naviguez vers le Cap de Creus, Llançà et au-delà' },
     ],
   },
   ca: {

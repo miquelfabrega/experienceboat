@@ -24,7 +24,7 @@ const translations = {
     title: 'The Canal Tour Experience',
     paragraphs: [
       'The Santa Margarita canals are best seen from the water. We run through the basics on the pontoon, you step aboard a 4.3 m boat with a Mercury 15 hp engine and you take the helm for 90 minutes. No licence, no previous experience.',
-      'Fifteen kilometres of canals cut into the old marshes at the mouth of the Grau, around sixteen hundred moorings and houses that open straight onto the water. From the boat you see what the street doesn\'t show you: the back gardens, the boats tied up at the front door, the marina coming and going in the late afternoon.',
+      'Fifteen kilometres of canals cut into the old marshes at the mouth of the Grau, around sixteen hundred moorings and houses that open straight onto the water. From the boat you see what the street doesn\'t show you: the back gardens, the boats tied up at the front door, the comings and goings of the marina in the late afternoon.',
       'The canals open out into the bay. Cap de Creus Natural Park lies two and a half miles off — it isn\'t part of this route, but you get a clear view of the headland from the entrance. Head out after seven and you come back with low sun and flat water.'
     ],
     quote: '"You take the helm. We show you just enough to head out relaxed."'

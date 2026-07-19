@@ -10,7 +10,7 @@ export const pillarFr = {
   },
   intro: {
     h2: 'Devenez capitaine le temps d\'une journée',
-    text: 'Devenez capitaine le temps d\'une journée, sans permis bateau. Chez Experience Boat, vous pouvez louer un bateau sans permis à Roses et partir directement depuis les canaux de Santa Margarita vers la baie de Roses et le Parc Naturel du Cap de Creus. Aucune expérience préalable requise — nos bateaux sont conçus pour que tout le monde puisse les piloter dès la première minute.',
+    text: 'Pas besoin de permis bateau : chez Experience Boat, vous pouvez louer un bateau sans permis à Roses et partir directement depuis les canaux de Santa Margarita vers la baie de Roses et le Parc Naturel du Cap de Creus. Aucune expérience préalable requise — nos bateaux sont conçus pour que tout le monde puisse les piloter dès la première minute.',
   },
   boatGrid: {
     sectionLabel: 'Flotte sans permis',
@@ -37,11 +37,11 @@ export const pillarFr = {
     privateCta: 'Voir les bateaux disponibles',
     pointLabel: 'Point de départ exclusif :',
     pointName: 'Marina de Santa Margarita, Roses',
-    pointDesc: 'Vous ne partirez pas d\'un port bondé — vous partirez en naviguant par les canaux de Santa Margarita.',
+    pointDesc: 'Vous ne partirez pas d\'un port bondé — vous sortirez en naviguant dans les canaux de Santa Margarita.',
     destinations: [
       { name: 'Canaux de Santa Margarita', desc: 'Le point de départ : des maisons au bord de l\'eau et des pontons privés que l\'on ne voit vraiment qu\'en bateau.' },
       { name: 'Baie de Roses', desc: 'Eaux calmes, parfaites pour les débutants et les familles avec enfants. Vues incroyables.' },
-      { name: 'Cala Canyelles Petites', desc: 'L\'une des plus belles criques du Cap de Creus, accessible en bateau.' },
+      { name: 'Cala Canyelles Petites', desc: 'L\'une des plus belles criques sur la route du Cap de Creus, accessible en bateau.' },
       { name: 'Cala Almadraba', desc: 'Eaux cristallines et très peu fréquentée hors haute saison.' },
       { name: 'Parc Naturel du Cap de Creus', desc: 'Le paysage le plus spectaculaire de la Costa Brava vu depuis l\'eau.' },
     ],
@@ -63,9 +63,9 @@ export const pillarFr = {
     desc: 'Tout ce que vous devez savoir avant de partir.',
     cta: 'Vérifier la disponibilité maintenant',
     items: [
-      { question: 'Ai-je besoin d\'expérience pour piloter le bateau ?', answer: 'Non. Nos bateaux sans permis ont des moteurs de faible puissance homologués pour la navigation sans titulaire. Avant de partir, Salvador ou son équipe vous expliquent le fonctionnement en quelques minutes. La plupart des clients partent seuls sans aucun problème dès la première sortie.' },
+      { question: 'Ai-je besoin d\'expérience pour piloter le bateau ?', answer: 'Non. Nos bateaux sans permis ont des moteurs de faible puissance homologués pour naviguer sans permis. Avant de partir, Salvador ou son équipe vous expliquent le fonctionnement en quelques minutes. La plupart des clients partent seuls sans aucun problème dès la première sortie.' },
       { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Nos bateaux sans permis accueillent jusqu\'à 5 personnes. Pour un groupe plus grand, notre flotte avec permis et les sorties avec skipper vont jusqu\'à 11 — consultez chaque modèle pour la capacité exacte.' },
-      { question: 'Qu\'est-ce qui est inclus dans la location ?', list: ['Embarcation avec carburant inclus (selon le modèle)', 'Gilets de sauvetage pour tous les passagers', 'Briefing initial avec le skipper', 'Carte de la zone et recommandations d\'itinéraire', 'Snorkeling basique (selon disponibilité)'] },
+      { question: 'Qu\'est-ce qui est inclus dans la location ?', list: ['Bateau avec carburant inclus (selon le modèle)', 'Gilets de sauvetage pour tous les passagers', 'Briefing initial avec le skipper', 'Carte de la zone et recommandations d\'itinéraire', 'Matériel de snorkeling basique (selon disponibilité)'] },
       { question: 'Quels sont les tarifs ?', prices: [{ label: '1 heure', value: 'à partir de 70 €' }, { label: '2 heures', value: 'à partir de 135 €' }, { label: 'Demi-journée (4 heures)', value: 'à partir de 165 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 225 €' }], note: 'Les tarifs varient selon le bateau et la saison. Consultez les disponibilités pour votre date.' },
       { question: 'Combien de temps à l\'avance dois-je réserver ?', answer: 'En juillet et août, nous recommandons de réserver au moins deux semaines à l\'avance. Le reste de la saison, 48 à 72 heures suffisent généralement.' },
     ],
@@ -100,7 +100,7 @@ export const pillarFr = {
     mapAriaLabel: 'Carte de l\'emplacement d\'Experience Boat à la Marina de Santa Margarita, Roses',
   },
   faq: {
-    sectionLabel: 'Répondre à vos questions',
+    sectionLabel: 'Réponses à vos questions',
     h2: 'Questions fréquentes',
     desc: 'Les questions les plus courantes sur la location de bateau sans permis à Roses.',
     waPrompt: 'Vous avez d\'autres questions ?',
@@ -173,7 +173,7 @@ export const couplesFr = {
     h2: 'Demi-journée ou journée complète — que choisir',
     desc: 'Cela dépend de ce que vous voulez faire et du temps dont vous disposez.',
     halfDayTitle: 'Demi-journée',
-    halfDayDesc: 'La demi-journée (environ 4 heures) est parfaite si vous souhaitez une matinée ou un après-midi en mer sans en faire une journée entière. Il y a le temps de parcourir les canaux, d\'atteindre les criques les plus proches comme Canyelles ou Almadraba, de se baigner et de rentrer.',
+    halfDayDesc: 'La demi-journée (environ 4 heures) est parfaite si vous souhaitez une matinée ou un après-midi en mer sans en faire une journée entière. Vous avez le temps de parcourir les canaux, d\'atteindre les criques les plus proches comme Canyelles ou Almadraba, de se baigner et de rentrer.',
     halfDayPriceLabel: 'Prix approximatif',
     halfDayPrice: 'à partir de 165 €',
     fullDayTitle: 'Journée complète',
@@ -217,7 +217,7 @@ export const couplesFr = {
     waMessage: 'Bonjour%2C%20je%20voudrais%20louer%20un%20bateau%20sans%20permis%20pour%20un%20couple',
   },
   faq: {
-    sectionLabel: 'Répondre à vos questions',
+    sectionLabel: 'Réponses à vos questions',
     h2: 'Questions fréquentes',
     desc: 'Questions habituelles sur la location de bateaux pour couples.',
     waPrompt: 'Vous avez d\'autres questions ou souhaitez organiser quelque chose de spécial ?',
@@ -228,7 +228,7 @@ export const couplesFr = {
       { question: 'Est-il possible de réserver une sortie pour une occasion spéciale comme un anniversaire ?', answer: 'Oui. Beaucoup de couples qui partent avec nous le font pour célébrer un anniversaire, un anniversaire de mariage ou simplement une journée spéciale. Si vous souhaitez que nous préparions quelque chose de particulier — une bouteille de cava à bord, un itinéraire spécifique — consultez-nous lors de la réservation et nous essayons de l\'organiser.' },
       { question: 'Quelle est la meilleure période de l\'année pour une sortie en couple ?', answer: 'Mai, juin et septembre sont les mois idéaux : eaux parfaites pour la baignade, criques tranquilles et sans la foule d\'août. Pour le Sunset Experience, juillet et août ont les plus beaux couchers de soleil de l\'année.' },
       { question: 'Pouvons-nous apporter notre propre nourriture et boissons à bord ?', answer: 'Oui, sans aucun problème. Une glacière avec vos boissons et snacks préférés et un arrêt dans une crique tranquille pour déjeuner : c\'est l\'une des formules préférées des couples qui partent avec nous.' },
-      { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Nos bateaux sans permis accueillent entre 4 et 11 personnes selon le modèle. Pour un couple, chacun d\'eux offre un espace plus que suffisant pour être à l\'aise toute la journée.' },
+      { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Nos bateaux sans permis accueillent jusqu\'à 5 personnes selon le modèle. Pour un couple, chacun d\'eux offre un espace plus que suffisant pour être à l\'aise toute la journée.' },
     ],
   },
 };

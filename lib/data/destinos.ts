@@ -288,7 +288,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'Cap de Creus: on acaba la península ibèrica',
           body: [
             'Cap de Creus és l’extrem més oriental de la Península. El Parc Natural de Cap de Creus —el primer marítim-terrestre de Catalunya— protegeix un paisatge únic: penya-segats retorçats per la tramuntana, roca polida per segles de vent i mar, i cales d’aigües clares entre pinedes.',
-            'Salvador Dalí, que vivia molt a prop, a Portlligat (Cadaqués), s’inspirava en aquestes formes impossibles. Des de la nostra base a la Marina de Santa Margarida (Roses), navegant cap al cap, ets tu qui porta el timó —si no necessites patró— o qui gaudeix sense preocupacions mentre el portem nosaltres.',
+            'Salvador Dalí, que vivia molt a prop, a Portlligat (Cadaqués), s’inspirava en aquestes formes impossibles. Des de la nostra base a la Marina de Santa Margarida (Roses), navegant cap al cap, sou vosaltres qui porteu el timó —si no necessiteu patró— o qui gaudeix sense preocupacions mentre el portem nosaltres.',
           ],
         },
         {
@@ -325,7 +325,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: 'Necessito llicència per anar en barca a Cap de Creus?',
-          a: 'Per a les cales properes, no: les barques sense llicència basten. Per al cap complet recomanem llicència o el nostre patró. Si teniu dubtes, us ho aclarim abans de reservar.',
+          a: 'Per a les cales properes, no: n\'hi ha prou amb una barca sense llicència. Per al cap complet recomanem llicència o el nostre patró. Si teniu dubtes, us ho aclarim abans de reservar.',
         },
         {
           q: 'Quan no convé anar-hi per la tramuntana?',
@@ -335,7 +335,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaTitle: 'Reserveu la vostra sortida a Cap de Creus',
       ctaText: 'Explora el cap més oriental, cales gairebé verges i el far. Barca sense llicència o amb patró, sempre privat.',
       ctaLabel: 'Consultar disponibilitat i reservar',
-      relatedTitle: 'Continua explorant',
+      relatedTitle: 'Continueu explorant',
     },
   },
 
@@ -599,7 +599,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaTitle: 'Exploreu Cala Montjoi en barca',
       ctaText: 'Des de la Marina de Santa Margarida, a uns 20 minuts. Llogueu una barca sense llicència o uniu-vos a una excursió privada.',
       ctaLabel: 'Consultar disponibilitat i reservar',
-      relatedTitle: 'Continua explorant',
+      relatedTitle: 'Continueu explorant',
     },
   },
 
@@ -863,7 +863,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaTitle: 'Navegueu a Cala Murtra',
       ctaText: 'Descobriu la calma de Cala Murtra en una sortida privada o amb una barca sense llicència des de Santa Margarida.',
       ctaLabel: 'Consultar disponibilitat i reservar',
-      relatedTitle: 'Continua explorant',
+      relatedTitle: 'Continueu explorant',
     },
   },
 
@@ -922,7 +922,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: '¿Qué calas se visitan desde Roses?',
-          a: 'Cala Montjoi o Cala Murtra en la bahía; las más lejanas —como Cala Culip— hacia Cap de Creus, con barco con licencia o excursión privada. Todas a pocos minutos de Santa Margarita.',
+          a: 'Cala Montjoi o Cala Murtra en la bahía, a pocos minutos de Santa Margarita; las más lejanas —como Cala Culip, hacia Cap de Creus— a unos 45, con barco con licencia o excursión privada.',
         },
         {
           q: '¿Cuándo es mejor visitar Roses?',
@@ -987,7 +987,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: 'Quelles criques visiter depuis Rosas ?',
-          a: 'Cala Montjoi ou Cala Murtra dans la baie ; les plus lointaines —comme Cala Culip— vers le Cap de Creus, avec un bateau avec permis ou une excursion privée. Toutes à quelques minutes de Santa Margarita.',
+          a: 'Cala Montjoi ou Cala Murtra dans la baie, à quelques minutes de Santa Margarita ; les plus lointaines — comme Cala Culip, vers le Cap de Creus — à 45 minutes environ, en bateau avec permis ou en excursion privée.',
         },
         {
           q: 'Quand est-il préférable de visiter Rosas ?',
@@ -1052,7 +1052,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: 'Which coves can you visit from Roses?',
-          a: 'Cala Montjoi or Cala Murtra in the bay; the further ones — like Cala Culip — toward Cap de Creus, with a licensed boat or a private excursion. All just minutes from Santa Margarita.',
+          a: 'Cala Montjoi or Cala Murtra in the bay, just minutes from Santa Margarita; the further ones — like Cala Culip, toward Cap de Creus — around 45 minutes away, with a licensed boat or a private excursion.',
         },
         {
           q: 'When is the best time to visit Roses?',
@@ -1117,7 +1117,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: 'Quines cales es visiten des de Roses?',
-          a: 'Cala Montjoi o Cala Murtra a la badia; les més llunyanes —com Cala Culip— cap a Cap de Creus, amb barca amb llicència o excursió privada. Totes a pocs minuts de Santa Margarida.',
+          a: 'Cala Montjoi o Cala Murtra a la badia, a pocs minuts de Santa Margarida; les més llunyanes —com Cala Culip, cap al Cap de Creus— a uns 45 minuts, amb barca amb llicència o excursió privada.',
         },
         {
           q: 'Quan és millor visitar Roses?',
@@ -1127,7 +1127,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       ctaTitle: 'Descobriu Roses des del mar',
       ctaText: 'Llogueu una barca sense llicència o reserveu una excursió privada al capvespre i recorreu les cales i els canals de Santa Margarida.',
       ctaLabel: 'Consultar disponibilitat i reservar',
-      relatedTitle: 'Continua explorant',
+      relatedTitle: 'Continueu explorant',
     },
   },
 
@@ -1338,7 +1338,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
       h1: 'Cadaqués en barca des de Roses: l’excursió privada al poble de Dalí',
       heroAlt: 'Costa del Cap de Creus camí de Cadaqués',
       introLead:
-        'Cadaqués t’espera a l’altre costat del Cap de Creus: un poble blanc de pescadors lligat per sempre a Salvador Dalí. No som una línia regular ni un ferry; des de Roses et portem en una excursió privada, vorejant penya-segats i parant a cales per banyar-t’hi abans d’arribar al poble.',
+        'Cadaqués us espera a l’altre costat del Cap de Creus: un poble blanc de pescadors lligat per sempre a Salvador Dalí. No som una línia regular ni un ferry; des de Roses us portem en una excursió privada, vorejant penya-segats i parant a cales per banyar-vos-hi abans d’arribar al poble.',
       sections: [
         {
           h2: 'Què és Cadaqués i per què val la pena',
@@ -1351,7 +1351,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           h2: 'Dalí, Portlligat i el poble',
           body: [
             'La Casa-Museu Salvador Dalí a Portlligat, a tocar de Cadaqués, va ser la seva llar i el seu taller: una arquitectura singular, ampliada durant anys, amb vistes al Cap de Creus. Convé consultar horaris i reservar entrada a la temporada alta.',
-            'Al poble, passeja sense pressa fins a l’església de Santa Maria, entra a les galeries i menja peix en una terrassa davant del mar. L’encant de Cadaqués és en la calma.',
+            'Al poble, passegeu sense pressa fins a l’església de Santa Maria, entreu a les galeries i mengeu peix en una terrassa davant del mar. L’encant de Cadaqués rau en la calma.',
           ],
         },
         {
@@ -1377,7 +1377,7 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
         },
         {
           q: 'Quant dura la travessia?',
-          a: 'Poc més d’una hora per trajecte, segons el mar. Amb parades a cales per banyar-t’hi, la sortida ocupa bona part del dia.',
+          a: 'Poc més d’una hora per trajecte, segons el mar. Amb parades a cales per banyar-vos-hi, la sortida ocupa bona part del dia.',
         },
         {
           q: 'Necessito llicència o patró?',
@@ -1388,10 +1388,10 @@ export const DESTINOS_COPY: Record<DestinoKey, Partial<Record<Locale, GuiaCopy>>
           a: 'El nucli antic i l’església de Santa Maria, les galeries d’art, la platja i, molt a prop, la Casa-Museu de Dalí a Portlligat.',
         },
       ],
-      ctaTitle: 'Navega a Cadaqués',
+      ctaTitle: 'Navegueu a Cadaqués',
       ctaText: 'Excursió privada des de Roses vorejant el Cap de Creus, amb patró i parades a cales. El poble de Dalí, al vostre ritme.',
       ctaLabel: 'Consultar disponibilitat i reservar',
-      relatedTitle: 'Continua explorant',
+      relatedTitle: 'Continueu explorant',
     },
   },
 };

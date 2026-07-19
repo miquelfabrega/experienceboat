@@ -1,7 +1,7 @@
 export const homeDataFr = {
   hero: {
     title: 'Location de bateau à Roses — Costa Brava',
-    description: 'Naviguez à votre rythme dans la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus. Chez Experience Boat, nous proposons la location de bateaux avec et sans permis, des excursions privées avec skipper et des balades au coucher du soleil. Tout privé — seulement votre groupe, aucun inconnu à bord.',
+    description: 'Naviguez à votre rythme dans la baie de Roses, les canaux de Santa Margarita et le Parc Naturel du Cap de Creus. Chez Experience Boat, nous proposons la location de bateaux avec et sans permis, des excursions privées avec skipper et des balades au coucher du soleil. Entièrement privé — seulement votre groupe, aucun inconnu à bord.',
     ctaPrimary: {
       text: 'Voir les bateaux disponibles',
       href: '/fr/bateaux/'
@@ -40,7 +40,7 @@ export const homeDataFr = {
     ]
   },
   intro: {
-    title: 'Naviguez à votre rythme sur la Costa Brava',
+    title: 'C\'est vous qui tracez la route sur la Costa Brava',
     description: 'Avec ou sans permis, avec skipper ou la barre entre vos mains : il y a un bateau pour chaque envie. Nos bateaux sans permis embarquent jusqu\'à 5 personnes et partent directement des 15 km de canaux de la marina de Santa Margarita, à l\'entrée de Roses. Et toujours en privé : le bateau n\'est que pour votre groupe.',
     pillars: [
       {
@@ -50,7 +50,7 @@ export const homeDataFr = {
       },
       {
         title: 'Avec permis',
-        text: 'Embarcations puissantes pour naviguer librement sur la Costa Brava nord.',
+        text: 'Bateaux puissants pour naviguer librement sur la Costa Brava nord.',
         href: '/fr/location-bateau-avec-permis-roses/',
       },
       {
@@ -118,7 +118,7 @@ export const homeDataFr = {
     items: [
       {
         icon: 'Users',
-        title: 'Tout privé',
+        title: 'Entièrement privé',
         text: 'Votre bateau est réservé uniquement à votre groupe. Vous ne le partagez avec aucun inconnu, contrairement aux autres excursions de la région.'
       },
       {

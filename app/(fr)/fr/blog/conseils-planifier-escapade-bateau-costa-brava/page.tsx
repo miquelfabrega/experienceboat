@@ -161,7 +161,7 @@ export default function ArticlePlanifierEscapadeFr() {
             {/* H2 #2 */}
             <h2 id="itineraire">2. Planifiez votre itinéraire</h2>
             <p>
-              Une fois votre embarcation choisie, il est temps de planifier votre itinéraire. La Costa Brava nord regorge d&apos;endroits magnifiques à explorer, des tranquilles canaux de Santa Margarita aux impressionnantes formations rocheuses du <Link href="/fr/blog/itineraire-bateau-cap-de-creus-roses">Cap de Creus</Link>.
+              Une fois votre embarcation choisie, il est temps de planifier votre itinéraire. La Costa Brava nord offre l&apos;embarras du choix, des canaux de Santa Margarita à la roche nue du <Link href="/fr/blog/itineraire-bateau-cap-de-creus-roses">Cap de Creus</Link>.
             </p>
             <p>
               Notre conseil de toujours : moins de criques, plus de temps dans chacune. Une demi-journée suffit pour les canaux, une baignade à Cala Murtra et un déjeuner au mouillage à Montjoi sans regarder l&apos;heure ; vouloir tout voir en quatre heures, c&apos;est la recette pour ne profiter de rien. En mer, la précipitation n&apos;est jamais bonne conseillère.
@@ -179,7 +179,7 @@ export default function ArticlePlanifierEscapadeFr() {
             {/* H2 #4 */}
             <h2 id="securite">4. Préparez le kit de sécurité</h2>
             <p>
-              La sécurité en mer est primordiale. Assurez-vous que l&apos;embarcation de location comprend un kit de sécurité complet : gilets de sauvetage pour tous les occupants (en particulier des tailles enfant s&apos;il y a des enfants à bord), fusées, trousse de premiers secours et ancre.
+              La sécurité en mer est primordiale. Assurez-vous que l&apos;embarcation de location comprend un kit de sécurité complet : gilets de sauvetage pour tous les occupants (en particulier des tailles enfant s&apos;il y a des enfants à bord), fusées de détresse, trousse de premiers secours et ancre.
             </p>
             <p>
               Lors du <em>briefing</em> avant le départ, familiarisez-vous avec le fonctionnement de chaque élément et assurez-vous que tous les passagers savent où les trouver en cas de besoin.

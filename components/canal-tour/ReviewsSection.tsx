@@ -21,9 +21,9 @@ const translations = {
   },
   ca: {
     eyebrow: 'Ressenyes de Google',
-    title: 'El que diuen els qui han navegat els canals',
+    title: 'El que diuen els qui han navegat pels canals',
     subtitle: 'Opinions reals de famílies, parelles i grups que han estat capitans per un dia a Santa Margarida.',
-    noscript: 'Les ressenyes requereixen JavaScript per carregar-se. Visita el nostre perfil de Google per llegir-les.',
+    noscript: 'Les ressenyes requereixen JavaScript per carregar-se. Visiteu el nostre perfil de Google per llegir-les.',
   },
 };
 

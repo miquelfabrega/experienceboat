@@ -156,7 +156,7 @@ export default function ArticleSnorkel() {
               Navegamos la bahía de Roses y el Cap de Creus casi a diario, y buena parte de nuestras paradas acaban con la máscara puesta. Estas son las calas de nuestra zona donde el snorkel de verdad vale la pena — todas alcanzables en barco desde la Marina de Santa Margarita.
             </p>
             <p>
-              Te contamos qué se ve en cada una, a cuánto queda de Roses y un apunte honesto sobre las Islas Medas, que no están en nuestra zona pero preguntáis mucho por ellas.
+              Te contamos qué se ve en cada una, a cuánto queda de Roses y un apunte honesto sobre las Islas Medas, que no están en nuestra zona pero nos preguntan mucho por ellas.
             </p>
 
             {/* H2 #1 */}
@@ -174,7 +174,7 @@ export default function ArticleSnorkel() {
               A unos 10 minutos de navegación, en la zona de Punta Falconera, <strong>Cala Murtra</strong> es la sorpresa de la lista. El acceso a pie es tan incómodo que casi nadie la pisa, y eso se nota en el agua: limpia, tranquila y con fondo de roca lleno de vida.
             </p>
             <p>
-              Solemos fondear en su agua poco profunda y la máscara sale sola: peces pequeños entre las rocas, anémonas y esa sensación de acuario sin cristal que solo dan las calas sin gente. Snorkel de natura mediterránea, discreto y silencioso.
+              Solemos fondear en su agua poco profunda y la máscara sale sola: peces pequeños entre las rocas, anémonas y esa sensación de acuario sin cristal que solo dan las calas sin gente. Snorkel de naturaleza mediterránea, discreto y silencioso.
             </p>
 
             {/* H2 #3 */}
@@ -204,7 +204,7 @@ export default function ArticleSnorkel() {
             {/* H2 #6 */}
             <h2 id="consejos">Consejos de seguridad y recomendaciones de equipo</h2>
             <p>
-              Antes de embarcarte en una aventura de snorkel, es importante garantizar tu seguridad y la del entorno.
+              Antes de meterte al agua, un par de cosas sobre seguridad — la tuya y la del entorno.
             </p>
 
             <ul className="not-prose mt-6 space-y-3">

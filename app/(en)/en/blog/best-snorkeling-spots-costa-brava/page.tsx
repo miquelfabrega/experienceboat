@@ -45,7 +45,7 @@ function ArticleSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Best Snorkelling Spots on the Costa Brava | Experience Boat',
+    headline: 'Best Snorkelling Spots on the Costa Brava',
     datePublished: '2026-04-06',
     dateModified: '2026-04-06',
     author: { '@type': 'Organization', name: 'Experience Boat' },
@@ -83,7 +83,7 @@ export default function ArticleSnorkellingEn() {
               Explore
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-              Best Snorkelling Spots on the Costa Brava | Experience Boat
+              Best Snorkelling Spots on the Costa Brava
             </h1>
           </div>
         </div>
@@ -198,13 +198,13 @@ export default function ArticleSnorkellingEn() {
             {/* H2 #5 */}
             <h2 id="medas">5. What about the Medes Islands?</h2>
             <p>
-              We get asked all the time, so here&apos;s the honest answer: the <strong>Medes Islands</strong>, off L&apos;Estartit, are an extraordinary marine reserve — huge groupers, gorgonians, shoals of white bream — but <strong>they sit outside our rental area</strong>. Our boats operate between the Bay of Roses and Cap de Creus, and the Medes (like the coves near Colera and Portbou further north) are best visited with operators based there. If that reserve is your plan, start from L&apos;Estartit; if you want wild snorkelling without leaving here, Cap de Creus concedes nothing to it.
+              We get asked all the time, so here&apos;s the honest answer: the <strong>Medes Islands</strong>, off L&apos;Estartit, are an extraordinary marine reserve — huge groupers, gorgonians, shoals of white bream — but <strong>they sit outside our rental area</strong>. Our boats operate between the Bay of Roses and Cap de Creus, and the Medes (like the coves near Colera and Portbou further north) are best visited with operators based there. If that reserve is your plan, start from L&apos;Estartit; if you want wild snorkelling without leaving here, Cap de Creus more than holds its own.
             </p>
 
             {/* H2 #6 */}
             <h2 id="safety">Safety tips and equipment recommendations</h2>
             <p>
-              Before embarking on a snorkelling adventure, it&apos;s important to ensure your safety and that of the environment.
+              Before you get in the water, a few basics — for your own safety and the environment's.
             </p>
 
             <ul className="not-prose mt-6 space-y-3">
