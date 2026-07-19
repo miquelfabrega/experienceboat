@@ -10,7 +10,7 @@ export const faqData: Record<Lang, FAQ[]> = {
     {
       question: 'Què són exactament els canals de Santa Margarida?',
       answer:
-        'Els canals de Santa Margarida són una xarxa de vies navegables artificials a Roses (Costa Brava) construïda als anys 60. Més de 500 habitatges tenen accés directe a l\'aigua des del seu embarcador privat. És un dels pocs enclavaments d\'aquest tipus a la costa mediterrània espanyola i només es pot descobrir del tot des de l\'aigua.',
+        'Els canals de Santa Margarida són una xarxa de vies navegables artificials a Roses (Costa Brava) construïda als anys 60. Centenars d\'habitatges tenen accés directe a l\'aigua des del seu embarcador privat. És un dels pocs enclavaments d\'aquest tipus a la costa mediterrània espanyola i només es pot descobrir del tot des de l\'aigua.',
     },
     {
       question: 'Es pot navegar pels canals de Santa Margarida sense llicència?',
@@ -37,7 +37,7 @@ export const faqData: Record<Lang, FAQ[]> = {
     {
       question: '¿Qué son exactamente los canales de Santa Margarita?',
       answer:
-        'Los canales de Santa Margarita son una red de vías navegables artificiales en Roses (Costa Brava) construida en los años 60. Más de 500 viviendas tienen acceso directo al agua desde su embarcadero privado. Es uno de los pocos enclaves de este tipo en la costa mediterránea española y solo se puede descubrir completamente desde el agua.',
+        'Los canales de Santa Margarita son una red de vías navegables artificiales en Roses (Costa Brava) construida en los años 60. Cientos de viviendas tienen acceso directo al agua desde su embarcadero privado. Es uno de los pocos enclaves de este tipo en la costa mediterránea española y solo se puede descubrir completamente desde el agua.',
     },
     {
       question: '¿Se puede navegar por los canales de Santa Margarita sin licencia?',
@@ -64,7 +64,7 @@ export const faqData: Record<Lang, FAQ[]> = {
     {
       question: 'Que sont exactement les canaux de Santa Margarita ?',
       answer:
-        'Les canaux de Santa Margarita sont un réseau de voies navigables artificielles à Roses (Costa Brava), construit dans les années 60. Plus de 500 maisons ont un accès direct à l\'eau depuis leur ponton privé. C\'est l\'un des rares endroits de ce type sur la côte méditerranéenne espagnole et il ne peut être découvert pleinement que depuis l\'eau.',
+        'Les canaux de Santa Margarita sont un réseau de voies navigables artificielles à Roses (Costa Brava), construit dans les années 60. Des centaines de maisons ont un accès direct à l\'eau depuis leur ponton privé. C\'est l\'un des rares endroits de ce type sur la côte méditerranéenne espagnole et il ne peut être découvert pleinement que depuis l\'eau.',
     },
     {
       question: 'Peut-on naviguer sur les canaux de Santa Margarita sans permis ?',

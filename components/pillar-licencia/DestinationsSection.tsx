@@ -48,7 +48,7 @@ const translations = {
     departureLabel: 'Punto de salida exclusivo:',
     departurePlace: 'Marina de Santa Margarita, Roses',
     departureNote:
-      'No saldrás desde un puerto masificado — saldrás desde uno de los rincones más singulares de la Costa Brava.',
+      'Zarpas por los canales de Santa Margarita, con las casas y sus amarres a ambos lados, y en unos minutos estás en mar abierto.',
   },
   en: {
     region: 'Northern Costa Brava',
@@ -195,7 +195,7 @@ const translations = {
     departureLabel: 'Punt de sortida:',
     departurePlace: 'Marina de Santa Margarida, Roses',
     departureNote:
-      'No sortireu d’un port massificat — salpareu des d’un dels racons més tranquils de la Costa Brava.',
+      'Salpeu pels canals de Santa Margarida, amb les cases i els seus amarradors a banda i banda, i en uns minuts sou a mar obert.',
   },
 };
 

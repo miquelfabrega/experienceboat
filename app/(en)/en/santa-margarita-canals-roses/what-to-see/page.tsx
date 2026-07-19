@@ -122,7 +122,7 @@ export default function WhatToSeeCanals() {
             <h2>Waterfront houses — unique architecture on the Costa Brava</h2>
             <p>
               The most characteristic image of the Santa Margarita canals is that of houses with private
-              jetties. More than 500 homes have direct water access from their gardens — each with its own
+              jetties. Hundreds of homes have direct water access from their gardens — each with its own
               small dock, a moored dinghy and a terrace overlooking the canal.
             </p>
             <p>

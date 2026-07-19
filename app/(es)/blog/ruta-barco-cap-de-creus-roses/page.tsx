@@ -188,7 +188,7 @@ export default function ArticleCapDeCreus() {
               Salimos siempre desde la Marina de Santa Margarita, en la entrada de Roses. Los primeros minutos de la ruta discurren por los propios canales — un trayecto de 20-25 minutos por vías navegables interiores que ya de por sí son un espectáculo.
             </p>
             <p>
-              A ambos lados de los canales, más de 500 casas tienen acceso directo al agua con sus embarcaderos privados. Es un entorno completamente diferente a lo que se espera de la Costa Brava y que muchos visitantes descubren por primera vez en esta ruta. Para los que no conocen los canales, esta primera parte suele ser una de las favoritas del día.
+              A ambos lados de los canales, cientos de casas tienen acceso directo al agua con sus embarcaderos privados. Es un entorno completamente diferente a lo que se espera de la Costa Brava y que muchos visitantes descubren por primera vez en esta ruta. Para los que no conocen los canales, esta primera parte suele ser una de las favoritas del día.
             </p>
             <p>
               Al salir de los canales, se entra en la bahía de Roses. Desde aquí, el Cap de Creus asoma al fondo y la ruta hacia el norte ya no tiene pérdida.

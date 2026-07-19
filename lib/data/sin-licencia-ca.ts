@@ -63,7 +63,7 @@ export const pillarCa = {
     cta: 'Consulteu disponibilitat ara',
     items: [
       { question: 'Em cal experiència per governar el vaixell?', answer: "No. Les nostres embarcacions sense llicència tenen motors de baixa potència homologats per navegar sense titulació. Abans de salpar, en Salvador o algú de l'equip us expliquen el funcionament en uns minuts. La majoria de clients surten sols sense cap problema des del primer dia." },
-      { question: 'Quantes persones hi caben?', answer: "Depèn de l'embarcació. Tenim vaixells des de 4 fins a 11 persones. Consulteu cada model per veure la capacitat exacta." },
+      { question: 'Quantes persones hi caben?', answer: "Els nostres vaixells sense llicència acullen fins a 5 persones. Si el grup és més gran, la flota amb llicència i les sortides amb patró arriben fins a 11 — consulteu cada model per veure la capacitat exacta." },
       { question: 'Què inclou el lloguer?', list: ['Embarcació amb combustible inclòs (a consultar segons el model)', 'Armilla salvavides per a tots els passatgers', 'Instrucció inicial amb el patró', 'Mapa de la zona i recomanacions de ruta', "Equip bàsic d'esnòrquel (segons disponibilitat)"] },
       { question: 'Quins són els preus?', prices: [{ label: '1 hora', value: 'des de 70 €' }, { label: '2 hores', value: 'des de 135 €' }, { label: 'Mig dia (4 hores)', value: 'des de 165 €' }, { label: 'Dia complet (8 hores)', value: 'des de 225 €' }], note: 'Els preus varien segons l\'embarcació i la temporada. Consulteu disponibilitat per a la vostra data concreta.' },
       { question: 'Amb quanta antelació cal reservar?', answer: "Al juliol i a l'agost recomanem reservar amb almenys dues setmanes d'antelació. La resta de la temporada, amb 48-72 hores acostuma a ser suficient." },
@@ -107,7 +107,7 @@ export const pillarCa = {
     waMessage: 'Hola%2C%20tinc%20una%20pregunta%20sobre%20el%20lloguer%20de%20vaixell%20sense%20llic%C3%A8ncia%20a%20Roses',
     faqs: [
       { question: 'Em cal una llicència nàutica per llogar un vaixell a Roses?', answer: "No. A l'Estat espanyol podeu llogar embarcacions de fins a 5 metres d'eslora amb motors de fins a 15 CV sense cap llicència nàutica. Totes les nostres embarcacions sense llicència compleixen aquesta normativa." },
-      { question: 'Puc sortir sol o cal anar acompanyat?', answer: "Podeu sortir sols o en grup. Les nostres embarcacions sense llicència acullen entre 4 i 6 persones segons el model." },
+      { question: 'Puc sortir sol o cal anar acompanyat?', answer: "Podeu sortir sols o en grup. Les nostres embarcacions sense llicència acullen fins a 5 persones segons el model." },
       { question: 'Què passa si el temps no acompanya?', answer: "La seguretat és el primer. Si les condicions meteorològiques són desfavorables, cancel·lem la sortida sense cap cost i busquem una altra data amb vosaltres." },
       { question: 'Ens podem banyar a les cales?', answer: "Sí. Totes les nostres embarcacions disposen d'escala de bany. Us podeu aturar a qualsevol cala que vulgueu al llarg de la ruta." },
       { question: 'Com es reserva?', answer: 'Per WhatsApp, per telèfon o directament des del web. Us confirmem la disponibilitat i us enviem els detalls en 24 hores.' },
@@ -261,7 +261,7 @@ export const canauxCa = {
     sectionLabel: "Punts d'interès",
     h2: 'Què veureu mentre navegueu pels canals',
     items: [
-      { title: 'Cases amb amarratge privat', desc: "Més de 500 habitatges tenen accés directe a l'aigua. Des del vaixell veureu la vida de Santa Margarida des d'una perspectiva que cap turista a peu pot tenir." },
+      { title: 'Cases amb amarratge privat', desc: "Centenars d'habitatges tenen accés directe a l'aigua. Des del vaixell veureu la vida de Santa Margarida des d'una perspectiva que cap turista a peu pot tenir." },
       { title: 'Ponts de pedra', desc: 'Els canals estan creuats per ponts baixos que obliguen a navegar a poc a poc. Aquesta lentitud converteix la ruta en una cosa contemplativa i molt fotogènica.' },
       { title: 'Fauna local', desc: "Als canals és habitual veure ocells aquàtics, ànecs i, de tant en tant, un bernat pescaire. Especialment entretingut per a famílies amb canalla." },
       { title: 'La sortida a la badia', desc: "Quan els canals s'obren al mar, el contrast és impressionant. La badia de Roses amb els Pirineus de fons i el Cap de Creus a l'horitzó." },

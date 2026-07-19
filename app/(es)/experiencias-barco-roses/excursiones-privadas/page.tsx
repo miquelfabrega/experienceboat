@@ -182,7 +182,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">
               Descubre la Costa Brava norte desde el mar sin preocuparte de nada más que disfrutar. En
               Experience Boat ofrecemos excursiones privadas en barco desde Roses con patrón incluido:
-              Tomàs o Max llevan el timón, conocen cada cala y cada ruta, y se adaptan al ritmo y las
+              Salvador o el equipo llevan el timón, conocen cada cala y cada ruta, y se adaptan al ritmo y las
               preferencias de tu grupo. Salimos desde los{' '}
               <Link href="/canales-santa-margarita" className="text-sky-300 hover:underline">
                 canales de Santa Margarita
@@ -257,7 +257,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
             <p>
               El Cap de Creus esconde algunas de las calas más vírgenes de toda la Costa Brava. Cala
               Culip, Cala Jugadora, Cala Fredosa — calas que no aparecen en las guías turísticas
-              genéricas porque solo se llegan en barco. Tomàs y Max conocen cuáles merecen la pena según
+              genéricas porque solo se llegan en barco. Salvador y el equipo conocen cuáles merecen la pena según
               la época del año y las condiciones del mar.
             </p>
 
@@ -294,7 +294,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
             </p>
             <p>
               Quedamos en el punto de encuentro en la Marina de Santa Margarita a la hora acordada.
-              Tomàs o Max os reciben, os explican el barco y preguntamos qué queréis ver. Si tenéis
+              Salvador o el equipo os reciben, os explican el barco y preguntamos qué queréis ver. Si tenéis
               preferencias de ruta, las incorporamos. Si preferís que os sorprendamos, proponemos
               nosotros. Salimos por los canales hacia la bahía y desde ahí trazamos rumbo según el plan.
             </p>
@@ -345,7 +345,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
                 <dt className="font-bold text-slate-900">¿Qué incluye la excursión?</dt>
                 <dd className="mt-1">
                   <ul className="list-disc pl-5 space-y-1 mt-2">
-                    <li>Patrón con conocimiento de la zona (Tomàs o Max)</li>
+                    <li>Patrón con conocimiento de la zona (Salvador o el equipo)</li>
                     <li>Embarcación privada para tu grupo</li>
                     <li>Combustible</li>
                     <li>Equipamiento de seguridad reglamentario</li>
@@ -381,7 +381,7 @@ export default function ExcursionesPrivadasBarcoRosesPage() {
                 {
                   icon: Users,
                   title: 'Patrón local, no guía turístico',
-                  text: 'Tomàs y Max son patrones con perfil cercano que conocen la zona de primera mano. No recitan un guión — se adaptan a vosotros y os llevan a los sitios que de verdad merecen la pena.',
+                  text: 'Salvador y el equipo son patrones con perfil cercano que conocen la zona de primera mano. No recitan un guión — se adaptan a vosotros y os llevan a los sitios que de verdad merecen la pena.',
                 },
                 {
                   icon: Shield,

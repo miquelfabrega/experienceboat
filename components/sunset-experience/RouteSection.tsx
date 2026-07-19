@@ -14,7 +14,7 @@ const translations = {
       },
       {
         title: 'El momento del atardecer',
-        desc: 'Cuando el sol toca el horizonte, el tiempo se detiene un poco. El cielo pasa del naranja al rosa, del rosa al violeta. El Pirineo al fondo, el Cap de Creus a la derecha, el agua perfectamente quieta. Si habéis traído algo para brindar, Tomàs o Max saben exactamente cuándo parar el motor y dejar que el silencio y el color lo llenen todo.'
+        desc: 'Cuando el sol toca el horizonte, el tiempo se detiene un poco. El cielo pasa del naranja al rosa, del rosa al violeta. El Pirineo al fondo, el Cap de Creus a la derecha, el agua perfectamente quieta. Si habéis traído algo para brindar, Salvador o el equipo saben exactamente cuándo parar el motor y dejar que el silencio y el color lo llenen todo.'
       },
       {
         title: 'El regreso por los canales de noche',
@@ -62,7 +62,7 @@ const translations = {
       },
       {
         title: 'The return through the canals at night',
-        desc: 'The return through the canals after dark has a completely different atmosphere. The houses have their lights on, the reflections in the water are a different colour, and the canals have that almost surreal nighttime tranquility. It\'s the perfect ending to a trip that started with light and ends with darkness.'
+        desc: 'The return through the canals after dark has a completely different atmosphere. The houses have their lights on, the reflections in the water are a different colour, and the canals have that almost surreal nighttime tranquillity. It\'s the perfect ending to a trip that started with light and ends with darkness.'
       }
     ]
   },

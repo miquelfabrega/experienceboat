@@ -63,8 +63,8 @@ export const pillarFr = {
     desc: 'Tout ce que vous devez savoir avant de partir.',
     cta: 'Vérifier la disponibilité maintenant',
     items: [
-      { question: 'Ai-je besoin d\'expérience pour piloter le bateau ?', answer: 'Non. Nos bateaux sans permis ont des moteurs de faible puissance homologués pour la navigation sans titulaire. Avant de partir, Tomàs ou Max vous expliquent le fonctionnement en quelques minutes. La plupart des clients partent seuls sans aucun problème dès la première sortie.' },
-      { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Cela dépend du bateau. Nous avons des bateaux pour 4 à 11 personnes. Consultez chaque modèle pour la capacité exacte.' },
+      { question: 'Ai-je besoin d\'expérience pour piloter le bateau ?', answer: 'Non. Nos bateaux sans permis ont des moteurs de faible puissance homologués pour la navigation sans titulaire. Avant de partir, Salvador ou son équipe vous expliquent le fonctionnement en quelques minutes. La plupart des clients partent seuls sans aucun problème dès la première sortie.' },
+      { question: 'Combien de personnes peuvent monter à bord ?', answer: 'Nos bateaux sans permis accueillent jusqu\'à 5 personnes. Pour un groupe plus grand, notre flotte avec permis et les sorties avec skipper vont jusqu\'à 11 — consultez chaque modèle pour la capacité exacte.' },
       { question: 'Qu\'est-ce qui est inclus dans la location ?', list: ['Embarcation avec carburant inclus (selon le modèle)', 'Gilets de sauvetage pour tous les passagers', 'Briefing initial avec le skipper', 'Carte de la zone et recommandations d\'itinéraire', 'Snorkeling basique (selon disponibilité)'] },
       { question: 'Quels sont les tarifs ?', prices: [{ label: '1 heure', value: 'à partir de 70 €' }, { label: '2 heures', value: 'à partir de 135 €' }, { label: 'Demi-journée (4 heures)', value: 'à partir de 165 €' }, { label: 'Journée complète (8 heures)', value: 'à partir de 225 €' }], note: 'Les tarifs varient selon le bateau et la saison. Consultez les disponibilités pour votre date.' },
       { question: 'Combien de temps à l\'avance dois-je réserver ?', answer: 'En juillet et août, nous recommandons de réserver au moins deux semaines à l\'avance. Le reste de la saison, 48 à 72 heures suffisent généralement.' },
@@ -108,7 +108,7 @@ export const pillarFr = {
     waMessage: 'Bonjour%2C%20j\'ai%20une%20question%20sur%20la%20location%20de%20bateau%20sans%20permis%20%C3%A0%20Roses',
     faqs: [
       { question: 'Faut-il un permis nautique pour louer un bateau à Roses ?', answer: 'Non. En Espagne, vous pouvez louer des embarcations jusqu\'à 5 mètres de longueur et des moteurs jusqu\'à 15 CV sans aucun permis. Tous nos bateaux sans permis respectent cette réglementation.' },
-      { question: 'Puis-je partir seul ou dois-je être accompagné ?', answer: 'Vous pouvez partir seul ou en groupe. Nos bateaux sans permis accueillent entre 4 et 6 personnes selon le modèle.' },
+      { question: 'Puis-je partir seul ou dois-je être accompagné ?', answer: 'Vous pouvez partir seul ou en groupe. Nos bateaux sans permis accueillent jusqu\'à 5 personnes selon le modèle.' },
       { question: 'Que se passe-t-il si la météo n\'est pas favorable ?', answer: 'La sécurité est prioritaire. En cas de conditions météorologiques défavorables, nous annulons la sortie sans frais et cherchons une autre date avec vous.' },
       { question: 'Peut-on se baigner dans les criques ?', answer: 'Oui. Tous nos bateaux sont équipés d\'une échelle de bain. Vous pouvez vous arrêter dans les criques de votre choix pendant votre itinéraire.' },
       { question: 'Comment réserver ?', answer: 'Par WhatsApp, téléphone ou directement via le site. Nous confirmons la disponibilité et vous envoyons les détails en moins de 24 heures.' },
@@ -197,7 +197,7 @@ export const couplesFr = {
   },
   patron: {
     h3: 'Vous préférez que quelqu\'un d\'autre pilote le bateau ?',
-    desc: 'Si vous souhaitez vous déconnecter complètement et qu\'une autre personne s\'occupe de la navigation pendant que vous profitez, nos excursions privées avec skipper sont exactement cela. Tomàs ou Max pilotent le bateau, connaissent chaque crique et s\'adaptent au rythme que vous souhaitez.',
+    desc: 'Si vous souhaitez vous déconnecter complètement et qu\'une autre personne s\'occupe de la navigation pendant que vous profitez, nos excursions privées avec skipper sont exactement cela. Salvador ou son équipe pilotent le bateau, connaissent chaque crique et s\'adaptent au rythme que vous souhaitez.',
     cta: 'Voir les excursions privées avec skipper',
     href: '/fr/experiences-bateau-roses/',
   },
@@ -262,7 +262,7 @@ export const canauxFr = {
     sectionLabel: 'Points d\'intérêt',
     h2: 'Ce que vous allez voir en naviguant dans les canaux',
     items: [
-      { title: 'Maisons avec embarcadère privé', desc: 'Plus de 500 maisons ont un accès direct à l\'eau. Depuis le bateau, vous voyez la vie de Santa Margarita depuis une perspective qu\'aucun touriste à pied ne peut avoir.' },
+      { title: 'Maisons avec embarcadère privé', desc: 'Des centaines de maisons ont un accès direct à l\'eau. Depuis le bateau, vous voyez la vie de Santa Margarita depuis une perspective qu\'aucun touriste à pied ne peut avoir.' },
       { title: 'Ponts en pierre', desc: 'Les canaux sont traversés par des ponts bas qui obligent à naviguer lentement. Cette lenteur transforme le parcours en quelque chose de contemplatif et très photogénique.' },
       { title: 'Faune locale', desc: 'Dans les canaux, il est habituel de voir des oiseaux aquatiques, des canards et parfois une aigrette. Particulièrement intéressant pour les familles avec enfants.' },
       { title: 'La sortie vers la baie', desc: 'Quand les canaux s\'ouvrent sur la mer, le contraste est spectaculaire. La baie de Roses avec les Pyrénées en fond et le Cap de Creus à l\'horizon.' },
@@ -272,7 +272,7 @@ export const canauxFr = {
     sectionLabel: 'Itinéraires possibles',
     h2: 'Peut-on atteindre le Cap de Creus sans permis depuis les canaux ?',
     text: 'Oui, mais avec des nuances. Nos bateaux sans permis sont conçus pour la navigation côtière tranquille. La baie de Roses est parfaitement accessible et très recommandée. Les criques les plus proches du Cap de Creus sont également accessibles si les conditions en mer sont bonnes.',
-    infoText: 'Pour s\'aventurer plus profondément dans le Parc Naturel du Cap de Creus, nous recommandons l\'une de nos excursions privées avec skipper — Tomàs ou Max connaissent les itinéraires et les criques qui valent le détour selon la période de l\'année.',
+    infoText: 'Pour s\'aventurer plus profondément dans le Parc Naturel du Cap de Creus, nous recommandons l\'une de nos excursions privées avec skipper — Salvador ou son équipe connaissent les itinéraires et les criques qui valent le détour selon la période de l\'année.',
     linkText: 'Voir les excursions privées avec skipper',
     linkHref: '/fr/experiences-bateau-roses/',
   },

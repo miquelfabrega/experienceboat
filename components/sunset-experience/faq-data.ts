@@ -33,7 +33,7 @@ export const faqData: Record<'es' | 'fr' | 'en' | 'ca', FAQ[]> = {
     },
     {
       question: '¿Se puede reservar el Sunset Experience para una ocasión especial como un aniversario?',
-      answer: 'Sí, es exactamente para ese tipo de momentos. Si queréis preparar algo especial a bordo —una botella de cava, decoración, una sorpresa— consultadnos al reservar e intentamos organizarlo. Tomàs y Max han organizado decenas de salidas especiales y saben cómo hacer que el momento sea memorable.'
+      answer: 'Sí, es exactamente para ese tipo de momentos. Si queréis preparar algo especial a bordo —una botella de cava, decoración, una sorpresa— consultadnos al reservar e intentamos organizarlo. Salvador y el equipo han organizado decenas de salidas especiales y saben cómo hacer que el momento sea memorable.'
     },
     {
       question: '¿Qué pasa si el día del Sunset Experience está nublado?',

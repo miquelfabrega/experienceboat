@@ -179,7 +179,7 @@ export default function PrivateExcursionsRosesPage() {
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">
               Discover the northern Costa Brava from the sea without worrying about anything other than
               enjoying the moment. At Experience Boat we offer private boat excursions from Roses with
-              skipper included: Tomàs or Max take the helm, know every cove and every route, and adapt
+              skipper included: Salvador or the team take the helm, know every cove and every route, and adapt
               to the pace and preferences of your group. We depart from the{' '}
               <Link href="/en/santa-margarita-canals-roses" className="text-sky-300 hover:underline">
                 Santa Margarita canals
@@ -255,7 +255,7 @@ export default function PrivateExcursionsRosesPage() {
             <p>
               Cap de Creus is home to some of the most unspoilt coves on the entire Costa Brava. Cala
               Culip, Cala Jugadora, Cala Fredosa — inlets that don&apos;t appear in generic tourist guides
-              because they are only reachable by boat. Tomàs and Max know which ones are worth the trip
+              because they are only reachable by boat. Salvador and the team know which ones are worth the trip
               depending on the season and sea conditions.
             </p>
 
@@ -292,8 +292,8 @@ export default function PrivateExcursionsRosesPage() {
               excursion usually unfolds:
             </p>
             <p>
-              We meet at the agreed time at the departure point in Marina de Santa Margarita. Tomàs or
-              Max greet you, walk you through the boat and ask what you would like to see. If you have
+              We meet at the agreed time at the departure point in Marina de Santa Margarita. Salvador
+              or the team greet you, walk you through the boat and ask what you would like to see. If you have
               specific route preferences, we work them in. If you prefer to be surprised, we suggest.
               We head out through the canals towards the bay and then plot the course according to the
               plan.
@@ -347,7 +347,7 @@ export default function PrivateExcursionsRosesPage() {
                 <dt className="font-bold text-slate-900">What is included in the excursion?</dt>
                 <dd className="mt-1">
                   <ul className="list-disc pl-5 space-y-1 mt-2">
-                    <li>Local skipper with first-hand knowledge of the area (Tomàs or Max)</li>
+                    <li>Local skipper with first-hand knowledge of the area (Salvador or the team)</li>
                     <li>Private vessel for your group</li>
                     <li>Fuel</li>
                     <li>Mandatory safety equipment</li>
@@ -384,7 +384,7 @@ export default function PrivateExcursionsRosesPage() {
                 {
                   icon: Users,
                   title: 'Local skipper, not a tour guide',
-                  text: 'Tomàs and Max are approachable skippers who know the area first-hand. They do not recite a prepared script — they adapt to you and take you to the places genuinely worth visiting.',
+                  text: 'Salvador and the team are approachable skippers who know the area first-hand. They do not recite a prepared script — they adapt to you and take you to the places genuinely worth visiting.',
                 },
                 {
                   icon: Shield,

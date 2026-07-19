@@ -9,7 +9,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Salida desde Santa Margarita',
-        desc: 'Partimos desde los canales de Santa Margarita, un enclave único en la Costa Brava. No saldrás desde un puerto masificado — saldrás desde uno de los rincones más singulares de Roses.',
+        desc: 'Partimos desde los canales de Santa Margarita, un enclave único en la Costa Brava: sales navegando entre casas con embarcadero antes de abrirte a la bahía, sin colas de bocana ni tráfico de puerto grande.',
         highlight: 'Propuesta de valor única',
       },
       {
@@ -27,7 +27,7 @@ const translations = {
       {
         icon: MessageCircle,
         title: 'Reserva directa sin intermediarios',
-        desc: 'Hablas con Tomàs o Max directamente, y si necesitas ajustar algo — fecha, duración, modelo — lo resolvemos sin burocracia.',
+        desc: 'Hablas con Salvador o el equipo directamente, y si necesitas ajustar algo — fecha, duración, modelo — lo resolvemos sin burocracia.',
         highlight: 'Atención personalizada',
       },
     ],
@@ -102,7 +102,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Sortida des de Santa Margarida',
-        desc: 'Salpem des dels canals de Santa Margarida, un indret únic a la Costa Brava. No sortireu d’un port massificat — salpareu des d’un dels racons més tranquils de Roses.',
+        desc: 'Salpem des dels canals de Santa Margarida, un indret únic a la Costa Brava: sortiu navegant entre cases amb embarcador abans d’obrir-vos a la badia, sense cues de bocana ni trànsit de port gran.',
         highlight: 'Un punt de sortida diferent',
       },
       {

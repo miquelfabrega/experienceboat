@@ -212,7 +212,7 @@ export default function ArticlePremiereFoisFr() {
               Les voies navigables intérieures de Santa Margarita sont des eaux totalement protégées : sans houle, sans courants et avec des limites de vitesse basses. C&apos;est l&apos;environnement idéal pour prendre confiance avec le bateau avant de rejoindre la baie de Roses.
             </p>
             <p>
-              Mais ce qui est le plus intéressant, c&apos;est que les canaux ne sont pas seulement un terrain d&apos;entraînement — ils sont une destination en soi. Des deux côtés des voies navigables, plus de 500 maisons ont un accès direct à l&apos;eau depuis leur jardin. Chacune avec son ponton privé, sa terrasse sur le canal et sa petite embarcation amarrée. C&apos;est une image que l&apos;on ne s&apos;attend pas à trouver sur la Costa Brava et qui reste gravée dans la mémoire.
+              Mais ce qui est le plus intéressant, c&apos;est que les canaux ne sont pas seulement un terrain d&apos;entraînement — ils sont une destination en soi. Des deux côtés des voies navigables, des centaines de maisons ont un accès direct à l&apos;eau depuis leur jardin. Chacune avec son ponton privé, sa terrasse sur le canal et sa petite embarcation amarrée. C&apos;est une image que l&apos;on ne s&apos;attend pas à trouver sur la Costa Brava et qui reste gravée dans la mémoire.
             </p>
             <p>
               Quand vous atteignez la baie de Roses après avoir parcouru les canaux, vous avez déjà navigué 30-40 minutes et la conduite du bateau n&apos;est plus une préoccupation. Vous pouvez vous concentrer sur le plaisir de l&apos;horizon.
@@ -224,7 +224,7 @@ export default function ArticlePremiereFoisFr() {
 
             <h3 className="text-lg font-bold text-gray-900 mt-6 mb-2">Avant le départ — le briefing</h3>
             <p>
-              Nous vous retrouvons à la Marina de Santa Margarita à l&apos;heure convenue. L&apos;un de nos skippers — Tomàs ou Max — vous accueille et consacre 10 à 15 minutes à vous expliquer le fonctionnement du bateau : comment démarrer, accélérer, tourner, arrêter et manœuvrer dans les canaux. Nous vous orienterons également avec une carte de la zone et vous recommanderons un itinéraire selon le temps disponible et les conditions de mer.
+              Nous vous retrouvons à la Marina de Santa Margarita à l&apos;heure convenue. L&apos;un de nos skippers — Salvador ou son équipe — vous accueille et consacre 10 à 15 minutes à vous expliquer le fonctionnement du bateau : comment démarrer, accélérer, tourner, arrêter et manœuvrer dans les canaux. Nous vous orienterons également avec une carte de la zone et vous recommanderons un itinéraire selon le temps disponible et les conditions de mer.
             </p>
             <p>Ce n&apos;est pas un cours magistral. C&apos;est une conversation pratique devant le bateau. Si vous avez des questions, c&apos;est le moment de les poser.</p>
 
@@ -283,7 +283,7 @@ export default function ArticlePremiereFoisFr() {
             {/* H2 #8 */}
             <h2 id="skipper">Et si vous préférez que quelqu&apos;un d&apos;autre pilote ?</h2>
             <p>
-              Si après avoir lu ceci vous décidez que vous préférez profiter de la journée sans vous soucier de la conduite, nous avons aussi cette option. Nos excursions privées avec skipper combinent la traversée des canaux de Santa Margarita avec la sortie vers le Cap de Creus et les criques les plus spectaculaires de la Costa Brava nord. Tomàs ou Max s&apos;occupent de tout — vous vous occupez juste de profiter.
+              Si après avoir lu ceci vous décidez que vous préférez profiter de la journée sans vous soucier de la conduite, nous avons aussi cette option. Nos excursions privées avec skipper combinent la traversée des canaux de Santa Margarita avec la sortie vers le Cap de Creus et les criques les plus spectaculaires de la Costa Brava nord. Salvador ou son équipe s&apos;occupent de tout — vous vous occupez juste de profiter.
             </p>
 
             {/* Inline CTA */}
@@ -309,7 +309,7 @@ export default function ArticlePremiereFoisFr() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Prêt à réserver ?</h2>
           <p className="text-gray-400 mb-10 text-lg">
-            L&apos;étape suivante est de voir quelles embarcations sont disponibles et de choisir celle qui convient le mieux à votre groupe. Si vous avez des questions, écrivez-nous — Tomàs ou Max vous répondent personnellement.
+            L&apos;étape suivante est de voir quelles embarcations sont disponibles et de choisir celle qui convient le mieux à votre groupe. Si vous avez des questions, écrivez-nous — Salvador ou son équipe vous répondent personnellement.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

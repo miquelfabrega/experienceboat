@@ -188,7 +188,7 @@ export default function ArticleCapDeCreusFr() {
               Nous partons toujours depuis la Marina de Santa Margarita, à l&apos;entrée de Roses. Les premières minutes de l&apos;itinéraire se déroulent dans les canaux eux-mêmes — un trajet de 20-25 minutes par des voies navigables intérieures qui sont déjà en elles-mêmes un spectacle.
             </p>
             <p>
-              Des deux côtés des canaux, plus de 500 maisons ont un accès direct à l&apos;eau avec leurs pontons privés. C&apos;est un environnement complètement différent de ce à quoi on s&apos;attend de la Costa Brava et que de nombreux visiteurs découvrent pour la première fois lors de cet itinéraire. Pour ceux qui ne connaissent pas les canaux, cette première partie est souvent l&apos;une des préférées de la journée.
+              Des deux côtés des canaux, des centaines de maisons ont un accès direct à l&apos;eau avec leurs pontons privés. C&apos;est un environnement complètement différent de ce à quoi on s&apos;attend de la Costa Brava et que de nombreux visiteurs découvrent pour la première fois lors de cet itinéraire. Pour ceux qui ne connaissent pas les canaux, cette première partie est souvent l&apos;une des préférées de la journée.
             </p>
             <p>
               En sortant des canaux, on entre dans la baie de Roses. De là, le Cap de Creus se profile au fond et l&apos;itinéraire vers le nord ne peut plus se rater.

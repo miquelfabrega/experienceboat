@@ -139,7 +139,7 @@ export default function QueVoirCanauxSantaMargarita() {
             <h2>Les maisons sur l&apos;eau — une architecture unique sur la Costa Brava</h2>
             <p>
               L&apos;image la plus caractéristique des canaux de Santa Margarita est celle des maisons avec
-              leur embarcadère privé. Plus de 500 habitations ont un accès direct à l&apos;eau depuis leur
+              leur embarcadère privé. Des centaines d'habitations ont un accès direct à l&apos;eau depuis leur
               jardin — chacune avec son petit ponton, son bateau amarré et sa terrasse donnant sur le canal.
             </p>
             <p>

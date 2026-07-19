@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: '¿Puedo salir solo o necesito ir acompañado?',
     answer:
-      'Puedes salir solo o en grupo. Nuestras embarcaciones sin licencia tienen capacidad para entre 4 y 6 personas según el modelo.',
+      'Puedes salir solo o en grupo. Nuestras embarcaciones sin licencia tienen capacidad para un máximo de 5 personas según el modelo.',
   },
   {
     question: '¿Qué pasa si el tiempo no acompaña?',

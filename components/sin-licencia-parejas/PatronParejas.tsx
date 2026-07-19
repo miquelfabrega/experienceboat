@@ -9,7 +9,7 @@ export interface PatronParejasT {
 
 const defaults: Required<PatronParejasT> = {
   h3: '¿Preferís que alguien más lleve el barco?',
-  desc: 'Si lo que buscáis es desconectar completamente y que alguien más se encargue de la navegación mientras vosotros disfrutáis, nuestras excursiones privadas con patrón son exactamente eso. Tomàs o Max llevan el barco, conocen cada cala y se adaptan al ritmo que queráis — más activo o más relajado.',
+  desc: 'Si lo que buscáis es desconectar completamente y que alguien más se encargue de la navegación mientras vosotros disfrutáis, nuestras excursiones privadas con patrón son exactamente eso. Salvador o el equipo llevan el barco, conocen cada cala y se adaptan al ritmo que queráis — más activo o más relajado.',
   cta: 'Ver excursiones privadas con patrón',
   href: '/experiencias-barco-roses',
 };

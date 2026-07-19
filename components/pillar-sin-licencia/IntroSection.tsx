@@ -5,7 +5,7 @@ export interface IntroSectionT {
 
 const defaults: Required<IntroSectionT> = {
   h2: 'Conviértete en capitán por un día',
-  text: 'Conviértete en capitán por un día sin necesitar ninguna titulación. En Experience Boat puedes alquilar un barco sin licencia en Roses y salir directamente desde los canales de Santa Margarita hacia la bahía de Roses y el Parque Natural del Cap de Creus. No hace falta experiencia previa — nuestras embarcaciones están diseñadas para que cualquier persona pueda llevarlas desde el primer minuto.',
+  text: 'Sin necesitar ninguna titulación: en Experience Boat puedes alquilar un barco sin licencia en Roses y salir directamente desde los canales de Santa Margarita hacia la bahía de Roses y el Parque Natural del Cap de Creus. No hace falta experiencia previa — nuestras embarcaciones están diseñadas para que cualquier persona pueda llevarlas desde el primer minuto.',
 };
 
 export default function IntroSection({ t }: { t?: IntroSectionT }) {

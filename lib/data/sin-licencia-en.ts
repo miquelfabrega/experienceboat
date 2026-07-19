@@ -63,8 +63,8 @@ export const pillarEn = {
     desc: 'Everything you need to know before you set off.',
     cta: 'Check availability now',
     items: [
-      { question: 'Do I need experience to drive the boat?', answer: 'No. Our no-licence boats have low-power engines approved for navigation without a nautical licence. Before you set off, Tomàs or Max will explain how everything works in a few minutes. Most guests head out on their own without any issues from the very first trip.' },
-      { question: 'How many people can come on board?', answer: 'It depends on the boat. We have vessels for 4 to 11 people. Check each model for the exact capacity.' },
+      { question: 'Do I need experience to drive the boat?', answer: 'No. Our no-licence boats have low-power engines approved for navigation without a nautical licence. Before you set off, Salvador or the team will explain how everything works in a few minutes. Most guests head out on their own without any issues from the very first trip.' },
+      { question: 'How many people can come on board?', answer: 'Our no-licence boats take up to 5 people. If your group is bigger, our licensed fleet and skippered trips go up to 11 — check each model for the exact capacity.' },
       { question: 'What\'s included in the rental?', list: ['Boat with fuel included (depending on the model)', 'Life jackets for all passengers', 'Initial briefing with the skipper', 'Area map and route recommendations', 'Basic snorkelling equipment (subject to availability)'] },
       { question: 'What are the prices?', prices: [{ label: '1 hour', value: 'from €70' }, { label: '2 hours', value: 'from €135' }, { label: 'Half day (4 hours)', value: 'from €165' }, { label: 'Full day (8 hours)', value: 'from €225' }], note: 'Prices vary by boat and season. Check availability for your dates.' },
       { question: 'How far in advance do I need to book?', answer: 'In July and August, we recommend booking at least two weeks ahead. The rest of the season, 48–72 hours is usually enough.' },
@@ -197,7 +197,7 @@ export const couplesEn = {
   },
   patron: {
     h3: 'Would you prefer someone else to skipper the boat?',
-    desc: 'If you want to completely switch off and have someone else handle the navigation while you enjoy the ride, our private excursions with a skipper are exactly that. Tomàs or Max skipper the boat, know every cove and adapt to the pace you want.',
+    desc: 'If you want to completely switch off and have someone else handle the navigation while you enjoy the ride, our private excursions with a skipper are exactly that. Salvador or the team skipper the boat, know every cove and adapt to the pace you want.',
     cta: 'See private excursions with skipper',
     href: '/en/boat-experiences-roses/',
   },
@@ -262,7 +262,7 @@ export const canauxEn = {
     sectionLabel: 'Points of interest',
     h2: 'What you will see while boating the canals',
     items: [
-      { title: 'Houses with private jetties', desc: 'More than 500 homes have direct water access. From the boat you see Santa Margarita life from a perspective no pedestrian tourist can have.' },
+      { title: 'Houses with private jetties', desc: 'Hundreds of homes have direct water access. From the boat you see Santa Margarita life from a perspective no pedestrian tourist can have.' },
       { title: 'Stone bridges', desc: 'The canals are crossed by low bridges that require you to navigate slowly. That slowness turns the route into something contemplative and very photogenic.' },
       { title: 'Local wildlife', desc: 'In the canals it is common to see water birds, ducks and occasionally a heron. Particularly entertaining for families with children.' },
       { title: 'The exit to the bay', desc: 'When the canals open out to the sea, the contrast is spectacular. The Bay of Roses with the Pyrenees in the background and Cap de Creus on the horizon.' },
@@ -272,7 +272,7 @@ export const canauxEn = {
     sectionLabel: 'Possible routes',
     h2: 'Can you reach Cap de Creus without a licence from the canals?',
     text: 'Yes, with some nuance. Our no-licence boats are designed for calm coastal navigation. The Bay of Roses is perfectly accessible and highly recommended. The nearest Cap de Creus coves are also reachable when sea conditions are good.',
-    infoText: 'For venturing deeper into the Cap de Creus Natural Park we recommend one of our private excursions with a skipper — Tomàs or Max know the routes and the coves worth visiting at any time of year.',
+    infoText: 'For venturing deeper into the Cap de Creus Natural Park we recommend one of our private excursions with a skipper — Salvador or the team know the routes and the coves worth visiting at any time of year.',
     linkText: 'See private excursions with skipper',
     linkHref: '/en/boat-experiences-roses/',
   },

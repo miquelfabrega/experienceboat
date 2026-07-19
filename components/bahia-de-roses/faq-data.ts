@@ -12,7 +12,7 @@ export const faqsBahia: FAQ[] = [
   {
     question: '¿Es seguro navegar en la bahía de Roses?',
     answer:
-      'Totalmente. La bahía ofrece protección natural contra los vientos del norte. Comparada con otros puntos de la Costa Brava, es de las más seguras para navegación de ocio. De todas formas, siempre recomendamos revisar las previsiones metereológicas antes de salir.',
+      'Totalmente. La bahía ofrece protección natural contra los vientos del norte. Comparada con otros puntos de la Costa Brava, es de las más seguras para navegación de ocio. De todas formas, siempre recomendamos revisar las previsiones meteorológicas antes de salir.',
   },
   {
     question: '¿Puedo pescar desde el alquiler de barco?',

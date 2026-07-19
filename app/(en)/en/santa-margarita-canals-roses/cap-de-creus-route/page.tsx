@@ -44,7 +44,7 @@ const faqs = [
   {
     question: 'Do you need sailing experience to do this route?',
     answer:
-      'Not if you choose the skippered option. Tomàs or Max skipper the vessel throughout the day and know the route in detail. For the with-licence option a PNB or equivalent qualification is required, especially for the Cap de Creus stretch which can have more demanding wind conditions.',
+      'Not if you choose the skippered option. Salvador or the team skipper the vessel throughout the day and know the route in detail. For the with-licence option a PNB or equivalent qualification is required, especially for the Cap de Creus stretch which can have more demanding wind conditions.',
   },
   {
     question: 'What happens if the tramuntana wind prevents reaching Cap de Creus?',
@@ -133,7 +133,7 @@ export default function CapDeCreusRouteEn() {
             <p>
               The route begins where Experience Boat is based: Marina de Santa Margarita, at the entrance
               to the canals. From the first minute the boat navigates through the inland waterways of the
-              urbanisation, lined by more than 500 houses with private jetties.
+              urbanisation, lined by hundreds of houses with private jetties.
             </p>
             <p>
               This is the quietest stretch of the day and the most photogenic. The water is completely

@@ -212,7 +212,7 @@ export default function ArticleFirstTimeBotEn() {
               The Santa Margarita inland waterways are completely sheltered: no swell, no currents and low speed limits. It&apos;s the ideal environment to gain confidence with the boat before venturing into the Bay of Roses.
             </p>
             <p>
-              But what&apos;s most interesting is that the canals aren&apos;t just a practice ground — they&apos;re a destination in their own right. On both sides of the waterways, over 500 homes have direct water access from their gardens. Each with its own private pontoon, terrace overlooking the canal and small boat tied up alongside. It&apos;s an image you don&apos;t expect to find on the Costa Brava and one that stays with you.
+              But what&apos;s most interesting is that the canals aren&apos;t just a practice ground — they&apos;re a destination in their own right. On both sides of the waterways, hundreds of homes have direct water access from their gardens. Each with its own private pontoon, terrace overlooking the canal and small boat tied up alongside. It&apos;s an image you don&apos;t expect to find on the Costa Brava and one that stays with you.
             </p>
             <p>
               By the time you reach the Bay of Roses after navigating the canals, you&apos;ve already been on the water 30–40 minutes and handling the boat is no longer a worry. You can focus on enjoying the view.
@@ -224,7 +224,7 @@ export default function ArticleFirstTimeBotEn() {
 
             <h3 className="text-lg font-bold text-gray-900 mt-6 mb-2">Before you set off — the briefing</h3>
             <p>
-              We meet you at the Santa Margarita Marina at the agreed time. One of our skippers — Tomàs or Max — welcomes you and spends 10–15 minutes explaining how the boat works: how to start it, accelerate, steer, stop and manoeuvre in the canals. We also orient you with a map of the area and recommend a route based on available time and sea conditions.
+              We meet you at the Santa Margarita Marina at the agreed time. One of our skippers — Salvador or the team — welcomes you and spends 10–15 minutes explaining how the boat works: how to start it, accelerate, steer, stop and manoeuvre in the canals. We also orient you with a map of the area and recommend a route based on available time and sea conditions.
             </p>
             <p>It&apos;s not a lecture. It&apos;s a practical conversation in front of the boat. If you have questions, that&apos;s the time to ask them.</p>
 
@@ -283,7 +283,7 @@ export default function ArticleFirstTimeBotEn() {
             {/* H2 #8 */}
             <h2 id="skipper">What if you&apos;d rather someone else take the wheel?</h2>
             <p>
-              If after reading this you decide you&apos;d prefer to enjoy the day without worrying about navigation, we have that option too. Our private skippered excursions combine a journey through the Santa Margarita canals with a trip to Cap de Creus and the most spectacular coves on the northern Costa Brava. Tomàs or Max take care of everything — you just focus on enjoying the ride.
+              If after reading this you decide you&apos;d prefer to enjoy the day without worrying about navigation, we have that option too. Our private skippered excursions combine a journey through the Santa Margarita canals with a trip to Cap de Creus and the most spectacular coves on the northern Costa Brava. Salvador or the team take care of everything — you just focus on enjoying the ride.
             </p>
 
             {/* Inline CTA */}
@@ -309,7 +309,7 @@ export default function ArticleFirstTimeBotEn() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to book?</h2>
           <p className="text-gray-400 mb-10 text-lg">
-            The next step is to see which boats we have available and choose the one that best suits your group. If you have any questions, write to us — Tomàs or Max will reply personally.
+            The next step is to see which boats we have available and choose the one that best suits your group. If you have any questions, write to us — Salvador or the team will reply personally.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

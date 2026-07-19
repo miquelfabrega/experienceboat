@@ -188,7 +188,7 @@ export default function ArticleCapDeCreusEn() {
               We always depart from the Santa Margarita Marina at the entrance to Roses. The first minutes of the route pass through the canals themselves — a 20–25-minute journey along inland waterways that are already a spectacle in their own right.
             </p>
             <p>
-              On both sides of the canals, over 500 homes have direct water access with their own private pontoons. It&apos;s an environment completely different from what you&apos;d expect of the Costa Brava, and one that many visitors discover for the first time on this route. For those who don&apos;t know the canals, this first section tends to be one of the highlights of the day.
+              On both sides of the canals, hundreds of homes have direct water access with their own private pontoons. It&apos;s an environment completely different from what you&apos;d expect of the Costa Brava, and one that many visitors discover for the first time on this route. For those who don&apos;t know the canals, this first section tends to be one of the highlights of the day.
             </p>
             <p>
               On leaving the canals, you enter the Bay of Roses. From here, Cap de Creus appears in the distance and the northward route is unmistakable.

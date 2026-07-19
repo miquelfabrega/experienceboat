@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'Do I need a nautical licence to explore the canals?',
     answer:
-      'No. You can navigate the Santa Margarita canals with one of our no-licence boats. No prior experience is needed — Tomàs or Max will give you a brief explanation before you set off.',
+      'No. You can navigate the Santa Margarita canals with one of our no-licence boats. No prior experience is needed — Salvador or the team will give you a brief explanation before you set off.',
   },
   {
     question: 'How long does the canal tour take?',
@@ -234,7 +234,7 @@ export default function SantaMargaritaCanalsRosesPage() {
                   Private excursion with skipper
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed mb-6 flex-1">
-                  Tomàs or Max will take you through the canals and on to Cap de Creus. You relax, they navigate. Perfect for groups who want to focus entirely on enjoying the experience.
+                  Salvador or the team will take you through the canals and on to Cap de Creus. You relax, they navigate. Perfect for groups who want to focus entirely on enjoying the experience.
                 </p>
                 <div className="mb-6 space-y-1 text-sm text-slate-700">
                   <p><span className="font-semibold">Half day (4h):</span> from €300</p>
@@ -263,7 +263,7 @@ export default function SantaMargaritaCanalsRosesPage() {
             {[
               {
                 title: 'Houses with private moorings',
-                desc: 'More than 500 homes have direct water access. From the boat you see life in Santa Margarita from an angle no land-based visitor can reach.',
+                desc: 'Hundreds of homes have direct water access. From the boat you see life in Santa Margarita from an angle no land-based visitor can reach.',
               },
               {
                 title: 'Low stone bridges',

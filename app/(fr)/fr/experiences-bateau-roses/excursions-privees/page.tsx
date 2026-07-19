@@ -179,7 +179,7 @@ export default function ExcursionsPriveesRosesPage() {
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl">
               Découvrez la Costa Brava nord depuis la mer sans vous préoccuper d&apos;autre chose que de
               profiter. Chez Experience Boat, nous proposons des excursions privées en bateau depuis
-              Roses avec skipper inclus : Tomàs ou Max tiennent le gouvernail, connaissent chaque crique
+              Roses avec skipper inclus : Salvador ou son équipe tiennent le gouvernail, connaissent chaque crique
               et chaque itinéraire, et s&apos;adaptent au rythme et aux préférences de votre groupe. Nous
               partons depuis les{' '}
               <Link href="/fr/canaux-santa-margarita" className="text-sky-300 hover:underline">
@@ -257,7 +257,7 @@ export default function ExcursionsPriveesRosesPage() {
             <p>
               Le Cap de Creus abrite quelques-unes des criques les plus vierges de toute la Costa Brava.
               Cala Culip, Cala Jugadora, Cala Fredosa — des criques qui n&apos;apparaissent pas dans les
-              guides touristiques génériques car elles ne sont accessibles qu&apos;en bateau. Tomàs et Max
+              guides touristiques génériques car elles ne sont accessibles qu&apos;en bateau. Salvador et son équipe
               savent lesquelles valent le détour selon la saison et l&apos;état de la mer.
             </p>
 
@@ -296,7 +296,7 @@ export default function ExcursionsPriveesRosesPage() {
             </p>
             <p>
               Nous nous retrouvons au point de rendez-vous à la Marina de Santa Margarita à l&apos;heure
-              convenue. Tomàs ou Max vous accueillent, vous expliquent le bateau et vous demandent ce que
+              convenue. Salvador ou son équipe vous accueillent, vous expliquent le bateau et vous demandent ce que
               vous souhaitez voir. Si vous avez des préférences d&apos;itinéraire, nous les intégrons. Si vous
               préférez la surprise, nous proposons. Nous partons par les canaux vers la baie, puis nous
               traçons la route selon le programme.
@@ -351,7 +351,7 @@ export default function ExcursionsPriveesRosesPage() {
                 <dt className="font-bold text-slate-900">Qu&apos;est-ce qui est inclus dans l&apos;excursion ?</dt>
                 <dd className="mt-1">
                   <ul className="list-disc pl-5 space-y-1 mt-2">
-                    <li>Skipper avec connaissance de la zone (Tomàs ou Max)</li>
+                    <li>Skipper avec connaissance de la zone (Salvador ou son équipe)</li>
                     <li>Embarcation privée pour votre groupe</li>
                     <li>Carburant</li>
                     <li>Équipement de sécurité réglementaire</li>

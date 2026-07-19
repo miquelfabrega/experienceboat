@@ -212,7 +212,7 @@ export default function ArticlePrimeraVez() {
               Las vías navegables interiores de Santa Margarita son aguas completamente protegidas: sin oleaje, sin corrientes y con límites de velocidad bajos. Es el entorno ideal para coger confianza con el barco antes de salir a la bahía de Roses.
             </p>
             <p>
-              Pero lo más interesante es que los canales no son solo un campo de prácticas — son un destino en sí mismos. A ambos lados de las vías navegables, más de 500 casas tienen acceso directo al agua desde su jardín. Cada una con su embarcadero privado, su terraza sobre el canal y su pequeña embarcación amarrada. Es una imagen que no esperas encontrar en la Costa Brava y que se queda grabada.
+              Pero lo más interesante es que los canales no son solo un campo de prácticas — son un destino en sí mismos. A ambos lados de las vías navegables, cientos de casas tienen acceso directo al agua desde su jardín. Cada una con su embarcadero privado, su terraza sobre el canal y su pequeña embarcación amarrada. Es una imagen que no esperas encontrar en la Costa Brava y que se queda grabada.
             </p>
             <p>
               Para cuando llegas a la bahía de Roses tras recorrer los canales, ya llevas 30-40 minutos navegando y el manejo del barco ya no es una preocupación. Puedes dedicarte a disfrutar del horizonte.
@@ -224,7 +224,7 @@ export default function ArticlePrimeraVez() {
 
             <h3 className="text-lg font-bold text-gray-900 mt-6 mb-2">Antes de salir — el briefing</h3>
             <p>
-              Quedamos en la Marina de Santa Margarita a la hora acordada. Uno de nuestros patrones — Tomàs o Max — te recibe y dedica entre 10 y 15 minutos a explicarte el funcionamiento del barco: cómo arrancar, cómo acelerar, cómo girar, cómo parar y cómo maniobrar en los canales. También te orientamos con un mapa de la zona y te recomendamos ruta según el tiempo disponible y las condiciones del mar.
+              Quedamos en la Marina de Santa Margarita a la hora acordada. Uno de nuestros patrones — Salvador o el equipo — te recibe y dedica entre 10 y 15 minutos a explicarte el funcionamiento del barco: cómo arrancar, cómo acelerar, cómo girar, cómo parar y cómo maniobrar en los canales. También te orientamos con un mapa de la zona y te recomendamos ruta según el tiempo disponible y las condiciones del mar.
             </p>
             <p>No es una clase magistral. Es una conversación práctica frente al barco. Si tienes preguntas, ese es el momento de hacerlas.</p>
 
@@ -283,7 +283,7 @@ export default function ArticlePrimeraVez() {
             {/* H2 #8 */}
             <h2 id="patron">¿Y si prefieres que alguien más lleve el barco?</h2>
             <p>
-              Si después de leer esto decides que prefieres disfrutar del día sin preocuparte del manejo, también tenemos esa opción. Nuestras excursiones privadas con patrón combinan el recorrido por los canales de Santa Margarita con la salida al Cap de Creus y las calas más espectaculares de la Costa Brava norte. Tomàs o Max se encargan de todo — tú solo te preocupas de disfrutar.
+              Si después de leer esto decides que prefieres disfrutar del día sin preocuparte del manejo, también tenemos esa opción. Nuestras excursiones privadas con patrón combinan el recorrido por los canales de Santa Margarita con la salida al Cap de Creus y las calas más espectaculares de la Costa Brava norte. Salvador o el equipo se encargan de todo — tú solo te preocupas de disfrutar.
             </p>
 
             {/* Inline CTA — con patrón */}
@@ -309,7 +309,7 @@ export default function ArticlePrimeraVez() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">¿Listo para reservar?</h2>
           <p className="text-gray-400 mb-10 text-lg">
-            El siguiente paso es ver qué embarcaciones tenemos disponibles y elegir la que mejor encaja con tu grupo. Si tienes alguna duda, escríbenos — Tomàs o Max te responden personalmente.
+            El siguiente paso es ver qué embarcaciones tenemos disponibles y elegir la que mejor encaja con tu grupo. Si tienes alguna duda, escríbenos — Salvador o el equipo te responden personalmente.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

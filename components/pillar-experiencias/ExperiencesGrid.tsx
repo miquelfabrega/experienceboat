@@ -115,7 +115,7 @@ const t: Record<Lang, {
         id: 'canal-tour',
         title: 'Canal Tour Santa Margarita',
         image: '/santa-margarita/hero-canal-tour.webp',
-        desc: 'Conviértete en capitán explorando los impresionantes canales de Santa Margarita en nuestros barcos sin licencia.',
+        desc: 'Lleva tú el timón por los canales de Santa Margarita en nuestros barcos sin licencia — 90 minutos y sin titulación.',
         duration: '90 minutos',
         price: 'Consultar tarifas',
         href: '/experiencias-barco-roses/canal-tour-santa-margarita',

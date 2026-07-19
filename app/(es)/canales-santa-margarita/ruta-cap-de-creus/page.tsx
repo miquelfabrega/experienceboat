@@ -44,7 +44,7 @@ const faqs = [
   {
     question: '¿Hace falta experiencia náutica para hacer esta ruta?',
     answer:
-      'No si eliges la opción con patrón. Tomàs o Max llevan la embarcación durante toda la jornada y conocen la ruta en detalle. Para la opción con licencia se requiere PNB o titulación equivalente, especialmente para el tramo del Cap de Creus que puede tener condiciones de viento más exigentes.',
+      'No si eliges la opción con patrón. Salvador o el equipo llevan la embarcación durante toda la jornada y conocen la ruta en detalle. Para la opción con licencia se requiere PNB o titulación equivalente, especialmente para el tramo del Cap de Creus que puede tener condiciones de viento más exigentes.',
   },
   {
     question: '¿Qué ocurre si la tramuntana no permite llegar al Cap de Creus?',
@@ -159,7 +159,7 @@ export default function RutaCapDeCreus() {
             <p>
               La ruta empieza donde está la base de Experience Boat: la Marina de Santa Margarita, en la
               entrada de los canales. Desde el primer minuto la embarcación navega por las vías
-              navegables interiores de la urbanización, bordeadas por más de 500 casas con embarcadero
+              navegables interiores de la urbanización, bordeadas por cientos de casas con embarcadero
               privado.
             </p>
             <p>
@@ -216,7 +216,7 @@ export default function RutaCapDeCreus() {
               La llegada al Parque Natural del Cap de Creus es el momento culminante de la ruta. El
               paisaje cambia drásticamente: la vegetación desaparece, la roca volcánica domina el
               horizonte y las{' '}
-              <Link href="/experiencias-barco-roses/calas-cap-de-creus" className="text-sky-600 hover:underline">
+              <Link href="/experiencias-barco-roses/cap-de-creus-calas" className="text-sky-600 hover:underline">
                 calas del Cap de Creus
               </Link>{' '}
               tienen una transparencia y un color que no se parece a nada que hayáis visto antes en la
@@ -308,8 +308,8 @@ export default function RutaCapDeCreus() {
             <h3>Con patrón (recomendado para esta ruta)</h3>
             <p>
               Para grupos sin experiencia náutica o para quienes simplemente quieren disfrutar sin
-              preocuparse de la navegación, la excursión privada con patrón es la opción ideal. Tomàs o
-              Max conocen la ruta en detalle, saben cuáles son las mejores calas según la época del año
+              preocuparse de la navegación, la excursión privada con patrón es la opción ideal. Salvador
+              y el equipo conocen la ruta en detalle, saben cuáles son las mejores calas según la época del año
               y se adaptan completamente al ritmo del grupo. Vosotros solo os preocupáis de disfrutar.
             </p>
             <div className="mt-4 mb-10 flex justify-center sm:justify-start">

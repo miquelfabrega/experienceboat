@@ -67,7 +67,7 @@ const translations = {
       },
       {
         title: 'May and October',
-        subtitle: 'Total tranquility',
+        subtitle: 'Total tranquillity',
         desc: 'For those who prefer the Sunset Experience out of season. The sun sets earlier (19:30-20:30), cold starts to appear, and there is much less traffic in the canals. The solitude of Santa Margarita at sunset in October has a different quality.',
         icon: Moon
       },

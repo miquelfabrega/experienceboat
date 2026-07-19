@@ -18,7 +18,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Nuestros Barcos',
-        desc: 'Contamos con embarcaciones de 4,3m a 4,5m de eslora con motor Mercury 15 C.V. Tienen capacidad para 4 a 6 personas, solarium y chalecos salvavidas incluidos.'
+        desc: 'Contamos con embarcaciones de 4,3m a 4,5m de eslora con motor Mercury 15 C.V. Tienen capacidad para un máximo de 5 personas, solarium y chalecos salvavidas incluidos.'
       },
       {
         icon: CheckCircle2,
@@ -54,7 +54,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Nos bateaux',
-        desc: 'Nous disposons d\'embarcations de 4,3 m à 4,5 m avec moteur Mercury 15 ch. Ils peuvent accueillir 4 à 6 personnes, avec solarium et gilets de sauvetage inclus.'
+        desc: 'Nous disposons de bateaux de 4,3 m à 4,5 m avec moteur Mercury 15 ch. Ils peuvent accueillir jusqu\'à 5 personnes, avec solarium et gilets de sauvetage inclus.'
       },
       {
         icon: CheckCircle2,
@@ -90,7 +90,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Our Boats',
-        desc: 'We have boats ranging from 4.3 m to 4.5 m long with Mercury 15 HP engines. They can accommodate 4 to 6 people, with sun deck and life jackets included.'
+        desc: 'We have boats ranging from 4.3 m to 4.5 m long with Mercury 15 HP engines. They can accommodate up to 5 people, with sun deck and life jackets included.'
       },
       {
         icon: CheckCircle2,
@@ -126,7 +126,7 @@ const translations = {
       {
         icon: Anchor,
         title: 'Les nostres embarcacions',
-        desc: 'Disposem d\'embarcacions de 4,3 m a 4,5 m d\'eslora amb motor Mercury 15 CV. Tenen capacitat per a 4 a 6 persones, solàrium i armilles salvavides incloses.'
+        desc: 'Disposem d\'embarcacions de 4,3 m a 4,5 m d\'eslora amb motor Mercury 15 CV. Tenen capacitat per a un màxim de 5 persones, solàrium i armilles salvavides incloses.'
       },
       {
         icon: CheckCircle2,

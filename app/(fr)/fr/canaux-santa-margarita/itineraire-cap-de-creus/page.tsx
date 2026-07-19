@@ -43,7 +43,7 @@ const faqs = [
   {
     question: 'Faut-il de l\'expérience nautique pour faire cet itinéraire ?',
     answer:
-      'Non, si vous choisissez l\'option avec skipper. Tomàs ou Max pilotent l\'embarcation pendant toute la journée et connaissent l\'itinéraire dans les moindres détails. Pour l\'option avec permis, un PNB ou un titre équivalent est requis, notamment pour le tronçon du Cap de Creus qui peut présenter des conditions de vent plus exigeantes.',
+      'Non, si vous choisissez l\'option avec skipper. Salvador ou son équipe pilotent l\'embarcation pendant toute la journée et connaissent l\'itinéraire dans les moindres détails. Pour l\'option avec permis, un PNB ou un titre équivalent est requis, notamment pour le tronçon du Cap de Creus qui peut présenter des conditions de vent plus exigeantes.',
   },
   {
     question: 'Que se passe-t-il si la tramontane empêche d\'atteindre le Cap de Creus ?',
@@ -146,7 +146,7 @@ export default function ItineraireCapDeCreus() {
             <p>
               L&apos;itinéraire commence là où se trouve la base d&apos;Experience Boat : la Marina de Santa
               Margarita, à l&apos;entrée des canaux. Dès la première minute, l&apos;embarcation navigue sur les
-              voies navigables intérieures du lotissement, bordées de plus de 500 maisons avec ponton privé.
+              voies navigables intérieures du lotissement, bordées de des centaines de maisons avec ponton privé.
             </p>
             <p>
               C&apos;est le tronçon le plus tranquille de la journée et le plus photogénique. Les eaux sont
@@ -283,7 +283,7 @@ export default function ItineraireCapDeCreus() {
             <p>
               Pour les groupes sans expérience nautique ou pour ceux qui veulent simplement profiter
               sans se soucier de la navigation, l&apos;excursion privée avec skipper est l&apos;option idéale.
-              Tomàs ou Max connaissent l&apos;itinéraire dans ses moindres détails, savent quelles sont les
+              Salvador ou son équipe connaissent l&apos;itinéraire dans ses moindres détails, savent quelles sont les
               meilleures criques selon la saison et s&apos;adaptent complètement au rythme du groupe.
               Vous ne vous occupez que de profiter.
             </p>

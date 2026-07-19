@@ -152,7 +152,7 @@ export default function QueVeureCanalsSantaMargaridaCA() {
             <h2>Les cases sobre l&apos;aigua — arquitectura única a la Costa Brava</h2>
             <p>
               La imatge més característica dels canals de Santa Margarida és la de les cases amb
-              embarcador privat. Més de 500 habitatges tenen accés directe a l&apos;aigua des del seu jardí
+              embarcador privat. Centenars d'habitatges tenen accés directe a l&apos;aigua des del seu jardí
               — cadascun amb el seu petit moll, la seva barca amarrada i la seva terrassa abocada al canal.
             </p>
             <p>
